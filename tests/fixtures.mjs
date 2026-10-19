@@ -1,0 +1,17 @@
+import fs from "node:fs";
+import path from "node:path";
+export function settingsFixture(root){
+ fs.mkdirSync(path.join(root,"styles"),{recursive:true});
+ const blueprint={schemaVersion:1,id:"split-settings",task:"设置",user:"桌面用户",workObject:"页面偏好",primaryJob:"查看并操作设置",designRationale:"保留导航与设置操作，复用独立组件",pattern:{id:"pattern-a-two-pane"},regions:[{id:"primary-navigation",purpose:"导航"},{id:"main-content",purpose:"设置"}],contentGroups:[{id:"navigation",region:"primary-navigation",purpose:"导航",dataEntities:["preference"]},{id:"preferences",region:"main-content",purpose:"操作设置",dataEntities:["preference"]}],dataEntities:[{id:"preference",fields:["name","value"]}],interactions:[{id:"toggle-status",sourceGroup:"preferences",targetGroup:"preferences",trigger:"点击按钮",stateChange:"切换提示显示",preserves:["导航"],taskOutcome:"确认动态事件绑定"}],states:[{id:"default",kind:"default",appliesTo:["preferences"]}],successCriteria:["独立组件渲染且事件生效"],recoveryPaths:["重新加载恢复默认状态"]};
+ const bindings={schemaVersion:1,blueprintRef:{id:blueprint.id},componentBindings:[
+ {id:"title",logicalName:"Titlebar/Default",region:"primary-navigation",patternSlot:"global-title-layer",semanticContext:"global-titlebar",options:{label:"设置",layout:"two-column",segmentRole:"global",size:"large"}},
+ {id:"nav",logicalName:"Primary Navigation Item/Level 1",region:"primary-navigation",patternSlot:"primary-navigation-shell",semanticContext:"primary-navigation-shell",options:{label:"设置",icon:"action/settings",selected:true},behaviorId:"navigate"},
+ {id:"toggle",logicalName:"Button/Primary/Default",region:"main-content",semanticContext:"page-primary-action",options:{label:"切换提示",variant:"primary",size:"standard",mode:"text"},behaviorId:"toggle-status"}],
+ composition:{regions:{"primary-navigation":[{kind:"group",id:"navigation-content",children:[{kind:"component",bindingId:"title"},{kind:"component",bindingId:"nav"}]}],"main-content":[{kind:"group",id:"preferences-content",className:"verification-content",children:[{kind:"text",id:"status",tag:"p",text:"动态组件已加载"},{kind:"component",bindingId:"toggle"}]}]}},
+ stylePlan:{schemaVersion:1,compositions:[{id:"navigation-content",region:"primary-navigation",tokenRoles:["space/5"],componentBoundary:"preserve"},{id:"preferences-content",region:"main-content",className:"verification-content",tokenRoles:["space/5"],componentBoundary:"preserve"}]},
+ behaviorPlan:{schemaVersion:1,interactions:[{id:"navigate",kind:"component-native",triggerBindingIds:["nav"],outcome:"选择设置导航"},{id:"toggle-status",kind:"toggle-hidden",sourceGroup:"preferences",triggerBindingIds:["toggle"],targetSelector:'[data-composition-id="status"]',outcome:"切换状态文字显示"}]}};
+ const recipes={schemaVersion:1,blueprintRef:{id:blueprint.id},recipes:[{id:"navigation-recipe",contentGroupId:"navigation",region:"primary-navigation",compositionId:"navigation-content",kind:"registered-composition",bindingIds:["title","nav"]},{id:"settings-recipe",contentGroupId:"preferences",region:"main-content",compositionId:"preferences-content",kind:"registered-composition",bindingIds:["toggle"]}]};
+ for(const[file,value]of Object.entries({"page-blueprint.json":blueprint,"page-bindings.json":bindings,"page-content-recipes.json":recipes}))fs.writeFileSync(path.join(root,file),JSON.stringify(value,null,2)+"\n");
+ fs.writeFileSync(path.join(root,"styles/page-composition.css"),".verification-content { display: flex; flex-direction: column; gap: var(--space-5); }\n");
+ return {blueprint,bindings,recipes};
+}

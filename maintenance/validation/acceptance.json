@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "release": "1.0.0-rc.1",
+  "status": "candidate",
+  "unitTests": {
+    "html": 12,
+    "pixso": 16,
+    "failed": 0
+  },
+  "officialSkillValidator": "passed for both",
+  "independentPackageChecks": [
+    "text-to-ui-html moved indexes manifest snapshot passed",
+    "text-to-ui-pixso moved indexes manifest snapshot passed",
+    "HTML generation from moved ZIP with no source/sibling lookup passed",
+    "handoff portable across project and skill directories passed",
+    "stale component JS/CSS and missing dependencies rejected",
+    "consumer snapshot tamper rejected",
+    "external HTML without generator handoff accepted"
+  ],
+  "demoBrowser": {
+    "ok": true,
+    "checks": [
+      "original content and toggle passed",
+      "normalized content and toggle passed",
+      "original unchanged",
+      "all preservation items passed and handoff accepted"
+    ]
+  },
+  "browser": {
+    "width": 1728,
+    "height": 1152,
+    "readiness": "passed",
+    "toggle": "passed",
+    "horizontalOverflow": false,
+    "gap": "16px"
+  },
+  "pixso": {
+    "pageId": "292:614",
+    "frameId": "292:615",
+    "target": "new isolated test page",
+    "runId": "20261019030424-7d353565-49137b",
+    "status": "completed",
+    "readback": true,
+    "nodes": 37,
+    "instances": 7,
+    "issues": [],
+    "differentPixels": 2387,
+    "differentRatio": 0.0011991022055041153,
+    "maxDifferentRatio": 0.005,
+    "componentFallbackCount": 3,
+    "fallbacks": [
+      "Titlebar/Default: mapping unavailable",
+      "Titlebar Controls/Normal: missing component spec",
+      "Primary Navigation Item/Level 1: mapping unavailable"
+    ],
+    "priorPreflightFailure": "Initial target page did not exist; no frame was created. Created authorized empty test page, then used a new run and new capture. Failed run retained locally.",
+    "collectorScrollRegression": "Current collector reproduces identical DOM geometry and records scroll0; wrong scroll rejected."
+  },
+  "pending": [
+    "GLM or another external model actual task execution",
+    "Broader customer Demo and cross-platform browser acceptance"
+  ],
+  "compatibility": {
+    "handoffSchemaVersions": [
+      1
+    ],
+    "sharedDataVersion": "1.0.0",
+    "sharedDigest": "827c6de3020c2aaf20acd662c8d2a3b1b684d2e8d486dff9c6abdd82017018c6"
+  }
+}

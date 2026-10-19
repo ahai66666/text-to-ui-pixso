@@ -1,0 +1,25 @@
+$ node --test tests/*.test.mjs
+✔ pinned data is intact and local (14.144419ms)
+✔ stage projection rejects the other skill (66.603245ms)
+✔ runtime delivery excludes tests layout references and history (3.096777ms)
+✔ complete dependency digest covers modules CSS resources and moves (33.566375ms)
+✔ handoff rejects unknown versions before dependency use (1.708094ms)
+✔ browser-observed dynamic dependencies remain part of identity (2.769642ms)
+✔ import blocks a missing accepted handoff before publication (0.583793ms)
+✔ upstream test-dom-visual-ir.mjs (108.419381ms)
+✔ upstream test-pixso-capture-bundle.mjs (1087.385627ms)
+✔ upstream test-pixso-gradient-runtime.mjs (71.164781ms)
+✔ upstream test-pixso-image-runtime.mjs (101.847074ms)
+✔ upstream test-pixso-import-governance.mjs (2572.40363ms)
+✔ upstream test-pixso-import-run.mjs (236.426433ms)
+✔ upstream test-pixso-permanent-agent-protocol.mjs (873.407549ms)
+✔ upstream test-pixso-radius-runtime.mjs (75.138737ms)
+✔ upstream test-pixso-readback-applicable-properties.mjs (83.420035ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5299.490934
