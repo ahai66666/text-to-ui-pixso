@@ -66,5 +66,14 @@
     ],
     "sharedDataVersion": "1.0.0",
     "sharedDigest": "827c6de3020c2aaf20acd662c8d2a3b1b684d2e8d486dff9c6abdd82017018c6"
-  }
+  },
+  "movedBridge": {
+    "ok": true,
+    "standaloneMovedBridge": "passed",
+    "protocolVersion": 4,
+    "bridgeVersion": 7,
+    "root": "moved skill directory",
+    "otherServiceModified": false
+  },
+  "pluginSourceBuild": "passed"
 }
