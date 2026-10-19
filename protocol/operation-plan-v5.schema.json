@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://text-to-ui.local/schemas/pixso-operation-plan-v5.schema.json",
+  "title": "Text-to-UI Pixso Operation Plan v5 Agent Contract",
+  "type": "object",
+  "required": ["kind", "execution", "page", "operations"],
+  "properties": {
+    "kind": {
+      "enum": ["pixso-operation-plan", "pixso-component-library-plan"]
+    },
+    "execution": {
+      "type": "object",
+      "required": ["agentContract"],
+      "properties": {
+        "agentContract": {
+          "type": "object",
+          "required": ["protocolVersion", "planSchemaVersion", "executorProtocol", "minimumKernelVersion", "requiredCapabilities", "idempotencyKey"],
+          "properties": {
+            "protocolVersion": { "const": 4 },
+            "planSchemaVersion": { "const": 5 },
+            "executorProtocol": { "const": 1 },
+            "minimumKernelVersion": { "type": "string", "minLength": 1 },
+            "requiredCapabilities": {
+              "type": "array",
+              "items": { "type": "string", "minLength": 1 },
+              "uniqueItems": true
+            },
+            "idempotencyKey": { "type": "string", "minLength": 8 },
+            "planHash": { "type": ["string", "null"] }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "page": { "type": "object" },
+    "resources": { "type": "object" },
+    "operations": { "type": "array" },
+    "acceptance": { "type": "object" }
+  },
+  "additionalProperties": true
+}

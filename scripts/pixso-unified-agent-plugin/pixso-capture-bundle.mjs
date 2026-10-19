@@ -81,6 +81,7 @@ function validateVisualManifest({ runManifest, visualManifest, visualManifestPat
   if (visualManifest.source !== "browser-computed-visual-manifest") failures.push("capture visual manifest is not browser computed");
   if (visualManifest.runId !== runManifest?.runId) failures.push("capture visual manifest runId mismatch");
   if (visualManifest.htmlSourceFingerprint !== runManifest?.source?.htmlSourceFingerprint) failures.push("capture visual manifest HTML fingerprint mismatch");
+  if(viewport.scroll && (!visualManifest.viewport?.scroll || Math.abs(visualManifest.viewport.scroll.x-viewport.scroll.x)>0.5 || Math.abs(visualManifest.viewport.scroll.y-viewport.scroll.y)>0.5))failures.push("capture scroll position differs from accepted handoff");
   if (visualManifest.stateId !== viewport.stateId) failures.push("capture visual manifest stateId mismatch");
   if (Number(visualManifest?.viewport?.width) !== Number(viewport.width) || Number(visualManifest?.viewport?.height) !== Number(viewport.height)) {
     failures.push(`capture visual manifest viewport ${visualManifest?.viewport?.width ?? "?"}x${visualManifest?.viewport?.height ?? "?"} does not match ${viewport.width}x${viewport.height}`);

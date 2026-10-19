@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://text-to-ui.local/schemas/pixso-bridge-message.schema.json",
+  "title": "Text-to-UI Pixso Bridge Protocol v4",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["type", "sessionId", "kernelVersion", "protocolVersion", "capabilities"],
+      "properties": {
+        "type": { "const": "HELLO" },
+        "sessionId": { "type": "string", "minLength": 1 },
+        "kernelVersion": { "type": "string", "minLength": 1 },
+        "protocolVersion": { "type": "integer", "minimum": 3 },
+        "operationPlanVersions": { "type": "array", "items": { "type": "integer" } },
+        "capabilities": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "revision": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    {
+      "type": "object",
+      "required": ["type", "sessionId"],
+      "properties": {
+        "type": { "const": "HEARTBEAT" },
+        "sessionId": { "type": "string", "minLength": 1 },
+        "revision": { "type": "string" },
+        "busy": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    {
+      "type": "object",
+      "required": ["type", "revision", "runId"],
+      "properties": {
+        "type": { "enum": ["PROGRESS", "RESULT", "CANCEL"] },
+        "revision": { "type": "string", "minLength": 1 },
+        "runId": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    }
+  ]
+}

@@ -567,6 +567,12 @@
         "menuItems",
         "disabled"
       ],
+      "ignoredFrameworkProps": [
+        "iconSize"
+      ],
+      "ignoredFrameworkPropReasons": {
+        "iconSize": "The registered Button mapping has no independent Pixso icon-size axis; retain the approved component geometry and stop for review when a requested size differs from that spec."
+      },
       "supportedSlots": [
         "icon",
         "label",
@@ -1179,8 +1185,14 @@
       ],
       "ignoredFrameworkProps": [
         "items",
+        "groups",
         "ariaLabel"
       ],
+      "ignoredFrameworkPropReasons": {
+        "items": "This mapping creates one Pixso Sidebar Item per .tui-sidebar-item; the parent collection is composed separately.",
+        "groups": "This mapping creates one Pixso Sidebar Item per .tui-sidebar-item; group structure belongs to the parent container, not the row instance.",
+        "ariaLabel": "ariaLabel belongs to the parent navigation container and is not a visual property of a Sidebar Item instance."
+      },
       "supportedSlots": [
         "leading",
         "label",
