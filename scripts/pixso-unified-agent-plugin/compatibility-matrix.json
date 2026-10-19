@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "bridgeVersion": 6,
+  "bridgeProtocolVersion": 4,
+  "supportedPluginProtocols": [3, 4],
+  "preferredPluginProtocol": 4,
+  "preferredKernelVersion": "5.0.0",
+  "permanentExecutorProtocol": 1,
+  "legacyRuntimeFloor": "4.16",
+  "planSchemaVersions": {
+    "1": {
+      "protocolVersions": [3, 4],
+      "status": "legacy-compatible"
+    },
+    "5": {
+      "protocolVersions": [4],
+      "minimumKernelVersion": "5.0.0",
+      "status": "preferred"
+    }
+  },
+  "policy": {
+    "arbitraryRemoteJavaScript": "forbidden",
+    "executableRuntimeDelivery": "forbidden",
+    "sharedPluginMode": "self-contained-data-plan-executor",
+    "localhostOnly": true,
+    "capabilityNegotiationRequiredForV5": true,
+    "mcpAutomaticFallback": "forbidden"
+  }
+}

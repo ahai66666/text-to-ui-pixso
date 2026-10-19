@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "bridgeVersion": 1,
+  "target": {
+    "pageName": "coremail",
+    "frameNamePrefix": "Coremail Mail Workbench",
+    "pageRole": "product"
+  },
+  "markerTransport": {
+    "pluginDataKey": "text-to-ui-px-key",
+    "nodeNamePrefix": "px-key:",
+    "htmlAttribute": "data-px-key",
+    "utilityClassPrefix": "u-",
+    "utilityClassesAreCssOnly": true,
+    "semanticMarkerRequired": true
+  },
+  "bindings": [
+    { "key": "page.root.surface", "token": "neutral-light/100", "property": "fills", "required": true, "selector": "[data-component='mail-app']" },
+    { "key": "pane.primary.surface", "token": "neutral-light/100", "property": "fills", "required": true, "selector": "[data-component='primary-nav']" },
+    { "key": "pane.list.surface", "token": "neutral-light/100", "property": "fills", "required": true, "selector": "[data-component='mail-list']" },
+    { "key": "pane.detail.surface", "token": "neutral-light/100", "property": "fills", "required": true, "selector": "[data-component='mail-detail']" },
+    { "key": "nav.selected.surface", "token": "brand/10", "property": "fills", "required": false, "selector": "[data-component='mail-row'][data-state='selected']" },
+    { "key": "nav.selected.label", "token": "brand/100", "property": "fills", "required": false },
+    { "key": "text.primary", "token": "neutral-dark/90", "property": "fills", "required": false },
+    { "key": "text.secondary", "token": "neutral-dark/60", "property": "fills", "required": false },
+    { "key": "divider.default", "token": "neutral-dark/05", "property": "fills", "required": false }
+  ],
+  "components": [
+    {
+      "key": "action.compose",
+      "logicalName": "Icon Text Button/Primary/Default",
+      "status": "audit-only",
+      "reason": "Page Binding Bridge 不替换组件实例；组件替换由 strict registered-reuse 流程负责。"
+    },
+    {
+      "key": "mail.search",
+      "logicalName": "Search/White Surface/Default",
+      "status": "audit-only",
+      "reason": "避免在页面阶段使用旧 GUID 或同名 Frame 冒充实例。"
+    },
+    {
+      "key": "mail.list.item",
+      "logicalName": "List Item/White Surface/Default",
+      "status": "audit-only",
+      "reason": "先完成页面 Token 绑定，再单独做已验证变体替换。"
+    }
+  ]
+}

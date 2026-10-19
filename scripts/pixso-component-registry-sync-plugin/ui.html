@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      :root { font: 13px system-ui, -apple-system, sans-serif; color: #18212f; background: #fff; }
+      body { margin: 0; padding: 16px; display: grid; gap: 12px; align-content: start; }
+      .title { display: flex; align-items: center; gap: 8px; font-weight: 650; }
+      .dot { width: 9px; height: 9px; border-radius: 50%; background: #aab2bf; }
+      .dot.online { background: #21a366; }
+      .dot.warn { background: #f59e0b; }
+      .panel { padding: 12px; border-radius: 10px; background: #f5f7fa; }
+      #status { min-height: 38px; white-space: pre-wrap; color: #586273; line-height: 1.5; }
+      #stats { display: grid; gap: 4px; }
+      .stat { display: flex; justify-content: space-between; gap: 12px; }
+      .stat span:first-child { color: #697386; }
+      details { border: 1px solid #e3e7ed; border-radius: 9px; overflow: hidden; }
+      summary { padding: 10px 12px; cursor: pointer; color: #586273; }
+      #changes { margin: 0; padding: 0 12px 10px 28px; display: grid; gap: 6px; color: #586273; }
+      #changes li { line-height: 1.35; }
+      .safe { color: #237a45; }
+      .review { color: #a26400; }
+      .blocked { color: #b42318; }
+      .actions { display: flex; gap: 8px; }
+      button { border: 0; border-radius: 8px; padding: 9px 12px; cursor: pointer; background: #0a59f7; color: white; }
+      button.secondary { color: #18212f; background: #eef1f5; }
+      button:disabled { opacity: .45; cursor: default; }
+      small { color: #7a8494; line-height: 1.45; }
+    </style>
+  </head>
+  <body>
+    <div class="title"><span id="dot" class="dot"></span><span>Text-to-UI · 组件事实同步</span></div>
+    <div id="status" class="panel">正在读取当前 Pixso 组件…</div>
+    <div id="stats" class="panel" hidden>
+      <div class="stat"><span>组件集 / 独立组件</span><strong id="inventory">—</strong></div>
+      <div class="stat"><span>安全变更</span><strong id="safe-count">—</strong></div>
+      <div class="stat"><span>待确认变更</span><strong id="review-count">—</strong></div>
+      <div class="stat"><span>待处理项</span><strong id="blocked-count">—</strong></div>
+    </div>
+    <details id="change-panel" hidden>
+      <summary>查看同步明细</summary>
+      <ul id="changes"></ul>
+    </details>
+    <small>同步只读取 Pixso 组件集和 Variant 的真实属性，不修改 Pixso 组件；可确定的映射变化会自动写回 Text-to-UI，无法安全推断的变化会保留为待确认项。</small>
+    <div class="actions">
+      <button id="retry" disabled>重试同步</button>
+      <button id="close" class="secondary">关闭</button>
+    </div>
+    <script>
+      const bridgeUrl = "http://127.0.0.1:43982";
+      let latestFacts = null;
+      let busy = false;
+      const status = document.querySelector("#status");
+      const dot = document.querySelector("#dot");
+      const retry = document.querySelector("#retry");
+      const setStatus = (message, tone = "") => {
+        status.textContent = message;
+        dot.className = `dot ${tone}`.trim();
+      };
+      const text = (value) => String(value ?? "");
+      const kindLabel = (kind) => ({
+        "remove-unsupported-variant-axis": "移除已不存在的 Variant 轴",
+        "normalize-variant-values": "规范化 Variant 值",
+        "normalize-native-source-variant": "同步 Native Source Variant",
+        "sync-geometry-token": "同步几何 Token",
+        "refresh-component-facts": "刷新组件事实",
+        "component-added": "新增组件事实",
+        "component-removed": "移除组件事实",
+        "incomplete-component-inventory": "组件快照不完整",
+        "unmapped-geometry-token": "几何暂无对应 Token",
+        "asymmetric-geometry": "非对称几何待确认",
+        "target-component-missing": "映射目标缺失",
+        "native-target-component-missing": "Native Source 目标缺失",
+        "variant-not-found": "Variant 不存在",
+        "variant-ambiguous": "Variant 匹配不明确",
+        }[kind] || kind);
+      function renderProposal(result) {
+        const proposal = result.proposal || {};
+        const componentSets = latestFacts?.componentSets?.length ?? 0;
+        const standalone = latestFacts?.standaloneComponents?.length ?? 0;
+        document.querySelector("#stats").hidden = false;
+        document.querySelector("#inventory").textContent = `${componentSets} / ${standalone}`;
+        document.querySelector("#safe-count").textContent = text(proposal.safeChangeCount || 0);
+        document.querySelector("#review-count").textContent = text(proposal.reviewChangeCount || 0);
+        document.querySelector("#blocked-count").textContent = text(proposal.blockingChangeCount || 0);
+        const changes = document.querySelector("#changes");
+        changes.textContent = "";
+        for (const item of (proposal.changes || []).slice(0, 24)) {
+          const row = document.createElement("li");
+          row.className = item.blocking ? "blocked" : item.safe ? "safe" : "review";
+          row.textContent = `${kindLabel(item.kind)} · ${text(item.path)}${item.reason ? ` · ${item.reason}` : ""}`;
+          changes.appendChild(row);
+        }
+        document.querySelector("#change-panel").hidden = !(proposal.changes || []).length;
+        const pending = Number(result.pendingReviewCount || proposal.reviewChangeCount || 0);
+        if (result.applied) {
+          const factsNote = result.appliedFacts === false
+            ? "\n因注册组件目标缺失，规范事实文件暂保留旧版本；确定的映射仍已同步。"
+            : "";
+          setStatus(
+            pending
+              ? `已自动应用 ${result.appliedOperationCount || 0} 项安全同步；另有 ${pending} 项待确认。${factsNote}\n规格和映射投影已重新生成并校验。`
+              : `已完成同步：${result.appliedOperationCount || 0} 项安全变更已写回。${factsNote}\n规格和映射投影已重新生成并校验。`,
+            pending ? "warn" : "online",
+          );
+        } else if (proposal.status === "up-to-date") {
+          setStatus("当前 Pixso 组件事实与 Text-to-UI 映射已经一致。", "online");
+        } else if (proposal.blockingChangeCount) {
+          setStatus(
+            proposal.factsWriteAllowed === false
+              ? (proposal.completeInventory === false
+                ? "当前插件版本的组件快照不完整；已保护原有事实和映射，不会移除任何组件。请更新并重新加载 Text-to-UI Pixso 插件后重试。"
+                : "发现注册组件目标缺失；已保留旧规范事实，但仍可继续同步确定的映射。请修正缺失组件后再同步规范事实。")
+              : "发现少量无法安全判断的组件目标或 Variant；确定项已保留在提案中，待处理项不会影响本次可用同步。",
+            "warn",
+          );
+        } else {
+          setStatus("提案已生成，未执行写回。", "warn");
+        }
+      }
+      async function syncFacts() {
+        if (!latestFacts || busy) return;
+        busy = true;
+        retry.disabled = true;
+        setStatus("正在根据当前 Pixso 事实生成并应用安全同步…");
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 15000);
+        try {
+          const response = await fetch(`${bridgeUrl}/component-sync`, {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            signal: controller.signal,
+            body: JSON.stringify({ mode: "apply-safe", facts: latestFacts }),
+          });
+          const result = await response.json().catch(() => ({}));
+          if (!response.ok || !result.ok) throw new Error(result.error || `同步服务返回 ${response.status}`);
+          renderProposal(result);
+        } catch (error) {
+          setStatus(`同步服务暂时不可用：${error.name === "AbortError" ? "请求超时" : error.message}\n请确认 Text-to-UI 本地服务已启动后重试。`, "warn");
+          retry.disabled = false;
+        } finally {
+          clearTimeout(timeout);
+          busy = false;
+        }
+      }
+      retry.addEventListener("click", syncFacts);
+      document.querySelector("#close").addEventListener("click", () => {
+        parent.postMessage({ pluginMessage: { type: "CLOSE" } }, "*");
+      });
+      window.onmessage = (event) => {
+        const message = event.data?.pluginMessage;
+        if (message?.type !== "COMPONENT_FACTS") return;
+        latestFacts = message.facts;
+        retry.disabled = false;
+        syncFacts();
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "Text-to-UI Component Registry Sync v5",
+  "id": "text-to-ui-component-registry-sync-v5",
+  "editorType": ["pixso"],
+  "main": "./main.js",
+  "ui": "./ui.html",
+  "menu": [
+    { "name": "自检 Pixso 连接（只读）", "command": "health" },
+    { "name": "审计 Coremail 注册组件（由 MCP 只读）", "command": "audit" },
+    { "name": "同步当前组件事实与导入映射", "command": "sync" },
+    { "name": "补齐 NewComponents 文字槽位", "command": "slots" },
+    { "name": "图标槽位诊断（只读）", "command": "icons" },
+    { "name": "执行安全修复（仅文字槽位）", "command": "repair" }
+  ]
+}

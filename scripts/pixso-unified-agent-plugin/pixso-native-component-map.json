@@ -1,0 +1,1693 @@
+{
+  "$schema": "./pixso-native-component-map.schema.json",
+  "schemaVersion": 1,
+  "resolution": "exact-symbolic-name-at-runtime",
+  "policy": {
+    "persistDocumentGuids": false,
+    "mappedOnlyWhenAvailabilityIsMapped": true,
+    "unmappedFallback": "native-composition",
+    "doNotGuessAliases": true,
+    "editSource": "mapping-registry.json",
+    "mappedInstanceColorOwner": "pixso-variant",
+    "mappedIconColorSource": "variant-content"
+  },
+  "projectionKind": "generated-compatibility-projection",
+  "generatedFrom": "mapping-registry.json",
+  "generatedBy": "scripts/sync-mapping-registry.mjs",
+  "readOnly": true,
+  "libraryPage": "NewComponents",
+  "mappings": [
+    {
+      "logicalName": "Selection Dropdown/Default",
+      "rendererKey": "selection-dropdown",
+      "pixsoName": "Selection Dropdown",
+      "componentSetName": "Selection Dropdown",
+      "pixsoSpecKey": "Selection Dropdown/Default",
+      "availability": "mapped",
+      "variant": {
+        "size": "Medium",
+        "state": "Default"
+      },
+      "supportedProps": [
+        "label",
+        "variant",
+        "menuItems",
+        "disabled"
+      ],
+      "supportedSlots": [
+        "label",
+        "trigger"
+      ]
+    },
+    {
+      "logicalName": "Icon Text Button/Primary/Default",
+      "rendererKey": "button",
+      "pixsoName": "icon-text",
+      "componentSetName": "icon-text",
+      "availability": "mapped",
+      "variant": {
+        "size": "Medium",
+        "state": "Default",
+        "type": "primary"
+      },
+      "supportedProps": [
+        "label",
+        "variant",
+        "size",
+        "mode",
+        "disabled"
+      ],
+      "supportedSlots": [
+        "icon",
+        "label"
+      ],
+      "contentColor": {
+        "text": "$variable/neutral-light/100",
+        "icon": "$variable/neutral-light/100"
+      },
+      "iconColorSource": "variant-content"
+    },
+    {
+      "logicalName": "Icon Text Button/Ghost/Default",
+      "rendererKey": "button",
+      "pixsoName": "icon-text",
+      "componentSetName": "icon-text",
+      "availability": "mapped",
+      "variant": {
+        "size": "Medium",
+        "state": "Default",
+        "type": "ghost"
+      },
+      "supportedProps": [
+        "label",
+        "variant",
+        "size",
+        "mode",
+        "disabled"
+      ],
+      "supportedSlots": [
+        "icon",
+        "label"
+      ],
+      "contentColor": {
+        "text": "$variable/neutral-dark/90",
+        "icon": "$variable/neutral-dark/90"
+      },
+      "iconColorSource": "variant-content"
+    },
+    {
+      "logicalName": "Icon Button/Ghost/Default",
+      "rendererKey": "button",
+      "pixsoName": "Icon Button",
+      "componentSetName": "Icon Button",
+      "availability": "mapped",
+      "variant": {
+        "size": "Medium",
+        "state": "Default",
+        "type": "Ghost"
+      },
+      "supportedProps": [
+        "label",
+        "variant",
+        "size",
+        "mode",
+        "disabled"
+      ],
+      "supportedSlots": [
+        "icon"
+      ],
+      "contentColor": {
+        "text": "$variable/neutral-dark/90",
+        "icon": "$variable/neutral-dark/90"
+      },
+      "iconColorSource": "variant-content"
+    },
+    {
+      "logicalName": "Input/Gray Surface/Default",
+      "rendererKey": "input",
+      "pixsoName": "Input",
+      "componentSetName": "Input",
+      "availability": "mapped",
+      "variant": {
+        "surface": "gb-gray",
+        "state": "Default"
+      },
+      "supportedProps": [
+        "value",
+        "placeholder",
+        "surface",
+        "disabled"
+      ],
+      "supportedSlots": [
+        "leading",
+        "value",
+        "trailing",
+        "help"
+      ],
+      "contentColor": {
+        "text": "$variable/neutral-dark/90",
+        "icon": "$variable/neutral-dark/90"
+      },
+      "iconColorSource": "variant-content"
+    },
+    {
+      "logicalName": "Search/Gray Surface/Default",
+      "rendererKey": "search",
+      "pixsoName": "Search",
+      "componentSetName": "Search",
+      "availability": "mapped",
+      "variant": {
+        "surface": "gb-gray",
+        "state": "Default"
+      },
+      "supportedProps": [
+        "value",
+        "placeholder",
+        "surface",
+        "advancedSearch",
+        "advancedSearchLabel",
+        "disabled"
+      ],
+      "supportedSlots": [
+        "leading",
+        "value",
+        "clear",
+        "advanced-search"
+      ],
+      "contentColor": {
+        "text": "$variable/neutral-dark/90",
+        "icon": "$variable/neutral-dark/90"
+      },
+      "iconColorSource": "variant-content"
+    },
+    {
+      "logicalName": "Input/Tag Entry/Default",
+      "rendererKey": "input",
+      "pixsoName": "Input/Tag Entry/Default",
+      "componentSetName": "Input/Tag Entry/Default",
+      "pixsoSpecKey": "Input/Tag Entry/Default",
+      "availability": "mapped",
+      "variant": {},
+      "supportedProps": [
+        "value",
+        "placeholder",
+        "disabled",
+        "error",
+        "variant",
+        "label",
+        "options",
+        "tags",
+        "defaultTags",
+        "surface"
+      ],
+      "supportedSlots": [
+        "label",
+        "leading",
+        "value",
+        "trailing",
+        "help",
+        "tags",
+        "suggestions"
+      ],
+      "contentColor": {
+        "text": "$variable/neutral-dark/90",
+        "icon": "$variable/neutral-dark/90"
+      },
+      "iconColorSource": "variant-content"
+    },
+    {
+      "logicalName": "Search/Scoped/Default",
+      "rendererKey": "search",
+      "pixsoName": "Search/Scoped/Default",
+      "componentSetName": "Search/Scoped/Default",
+      "pixsoSpecKey": "Search/Scoped/Default",
+      "availability": "mapped",
+      "variant": {},
+      "supportedProps": [
+        "value",
+        "defaultValue",
+        "placeholder",
+        "disabled",
+        "state",
+        "surface",
+        "scope",
+        "defaultScope",
+        "scopeOptions",
+        "scopeLabel",
+        "onScopeChange",
+        "advancedSearch",
+        "advancedSearchLabel",
+        "onAdvancedSearch",
+        "onChange",
+        "onClear"
+      ],
+      "supportedSlots": [
+        "scope-selector",
+        "leading",
+        "value",
+        "clear",
+        "advanced-search"
+      ],
+      "contentColor": {
+        "text": "$variable/neutral-dark/90",
+        "icon": "$variable/neutral-dark/90"
+      },
+      "iconColorSource": "variant-content"
+    },
+    {
+      "logicalName": "Checkbox/Unchecked/Default",
+      "rendererKey": "checkbox",
+      "pixsoName": "CheckBox",
+      "componentSetName": "CheckBox",
+      "availability": "mapped",
+      "variant": {
+        "checked": "false",
+        "state": "Default"
+      },
+      "supportedProps": [
+        "checked",
+        "label",
+        "description",
+        "ariaLabel",
+        "disabled"
+      ],
+      "supportedSlots": [
+        "label",
+        "description"
+      ],
+      "contentColor": {
+        "text": "$variable/neutral-dark/90",
+        "icon": "$variable/neutral-dark/90"
+      }
+    },
+    {
+      "logicalName": "Titlebar/L/Normal",
+      "rendererKey": "titlebar",
+      "pixsoName": null,
+      "availability": "native-only",
+      "supportedProps": [
+        "label",
+        "paneRole",
+        "size",
+        "layout",
+        "mainDetailActions",
+        "actionOverflow"
+      ],
+      "supportedSlots": [
+        "leading",
+        "label",
+        "main-detail-actions"
+      ],
+      "subcomponentMappings": [
+        {
+          "htmlRole": "window-controls",
+          "htmlSlot": "actions",
+          "htmlSelector": ".tui-titlebar__actions",
+          "cardinality": "1",
+          "htmlLogicalName": "Titlebar Controls/Normal",
+          "pixsoTarget": "control button",
+          "textToUiSpecKey": "Titlebar/L/Normal",
+          "variantByHtmlSize": {
+            "small": {
+              "状态": "Small size"
+            },
+            "medium": {
+              "状态": "Normal size"
+            },
+            "large": {
+              "状态": "Normal size"
+            },
+            "xlarge": {
+              "状态": "Normal size"
+            }
+          },
+          "runtimeBinding": {
+            "rendererKey": "titlebar-controls",
+            "pixsoName": "control button",
+            "componentSetName": "control button",
+            "availability": "mapped",
+            "variant": {
+              "状态": "Normal size"
+            }
+          },
+          "actions": [
+            {
+              "htmlAction": "minimize",
+              "pixsoLayer": "最小化",
+              "iconAlias": "window/minimize"
+            },
+            {
+              "htmlAction": "maximize",
+              "pixsoLayer": "最大化",
+              "iconAlias": "window/maximize"
+            },
+            {
+              "htmlAction": "close",
+              "pixsoLayer": "关闭",
+              "iconAlias": "window/close"
+            }
+          ],
+          "sourceEvidence": "用户提供的 Titlebar actions DOM 片段；以语义 data-slot/data-action 为稳定身份，不把长 CSS nth-child 选择器作为映射主键。",
+          "providedSelectorEvidence": "#runtime-directory > div:nth-child(4) > div > section > div > article > div > div.tui-runtime-titlebar-gallery > div > div:nth-child(1) > div > header:nth-child(2) > div",
+          "notes": "这是 Titlebar 内部的窗口控制组映射，不是把整个 Titlebar 映射成 control button。"
+        }
+      ]
+    },
+    {
+      "logicalName": "Avatar/40/Fallback",
+      "rendererKey": "avatar",
+      "pixsoName": null,
+      "availability": "native-only",
+      "supportedProps": [
+        "initials",
+        "name",
+        "size"
+      ],
+      "supportedSlots": [
+        "content"
+      ]
+    },
+    {
+      "logicalName": "Badge/Success/Default",
+      "rendererKey": "badge",
+      "pixsoName": null,
+      "availability": "native-only",
+      "supportedProps": [
+        "label",
+        "tone"
+      ],
+      "supportedSlots": [
+        "label"
+      ]
+    },
+    {
+      "rendererKey": "accordion",
+      "pixsoName": "Accordion",
+      "componentSetName": "Accordion",
+      "availability": "mapped",
+      "variant": {
+        "State": "Collapsed"
+      },
+      "supportedProps": [
+        "label",
+        "size",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "supportedSlots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "logicalName": "Accordion/Default",
+      "pixsoSpecKey": "Accordion/Collapsed"
+    },
+    {
+      "rendererKey": "alert",
+      "pixsoName": "Alert",
+      "componentSetName": "Alert",
+      "availability": "mapped",
+      "variant": {
+        "属性 1": "Info"
+      },
+      "variantByHtml": {
+        "info": {
+          "属性 1": "Info"
+        },
+        "success": {
+          "属性 1": "Success"
+        },
+        "warning": {
+          "属性 1": "Warning"
+        },
+        "danger": {
+          "属性 1": "Error"
+        },
+        "neutral": {
+          "属性 1": "Neutral"
+        }
+      },
+      "supportedProps": [
+        "title",
+        "detail",
+        "expanded",
+        "contentId",
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "supportedSlots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "logicalName": "Alert/Default",
+      "pixsoSpecKey": "Alert/Info"
+    },
+    {
+      "logicalName": "Alert Dialog/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "alert-dialog",
+      "availability": "blocked",
+      "pixsoName": null,
+      "componentSetName": null
+    },
+    {
+      "rendererKey": "attachment",
+      "pixsoName": null,
+      "availability": "blocked",
+      "supportedProps": [
+        "type",
+        "name",
+        "meta",
+        "disabled"
+      ],
+      "supportedSlots": [
+        "leading",
+        "title",
+        "description",
+        "actions"
+      ],
+      "logicalName": "Attachment/Default",
+      "pixsoSpecKey": null,
+      "componentSetName": null
+    },
+    {
+      "logicalName": "Avatar/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "avatar",
+      "availability": "excluded",
+      "pixsoName": null,
+      "componentSetName": null,
+      "mappingReason": "按当前展示类组件映射范围保留框架实现，但不映射为 Pixso 组件。"
+    },
+    {
+      "rendererKey": "badge",
+      "pixsoName": "Badge",
+      "componentSetName": "Badge",
+      "availability": "mapped",
+      "variant": {
+        "属性 1": "Neutral"
+      },
+      "variantByHtml": {
+        "default": {
+          "属性 1": "Neutral"
+        },
+        "info": {
+          "属性 1": "Info"
+        },
+        "success": {
+          "属性 1": "Success"
+        },
+        "warning": {
+          "属性 1": "Warning"
+        },
+        "danger": {
+          "属性 1": "Error"
+        },
+        "neutral": {
+          "属性 1": "Neutral"
+        }
+      },
+      "supportedProps": [
+        "label",
+        "tone",
+        "disabled",
+        "className"
+      ],
+      "supportedSlots": [
+        "label"
+      ],
+      "logicalName": "Badge/Default",
+      "pixsoSpecKey": "Badge/Neutral"
+    },
+    {
+      "rendererKey": "breadcrumb",
+      "pixsoName": "Breadcrumb",
+      "componentSetName": "Breadcrumb",
+      "availability": "mapped",
+      "variant": {
+        "level": "3"
+      },
+      "supportedProps": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "supportedSlots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "logicalName": "Breadcrumb/Default",
+      "pixsoSpecKey": "Breadcrumb/Default"
+    },
+    {
+      "rendererKey": "button",
+      "pixsoName": "Button",
+      "componentSetName": "Button",
+      "availability": "mapped",
+      "variant": {
+        "type": "Primary",
+        "size": "Medium",
+        "state": "Default"
+      },
+      "supportedProps": [
+        "label",
+        "variant",
+        "size",
+        "mode",
+        "iconOnly",
+        "icon",
+        "menuItems",
+        "disabled"
+      ],
+      "supportedSlots": [
+        "icon",
+        "label",
+        "trigger",
+        "menu"
+      ],
+      "contentColor": {
+        "text": "$variable/neutral-light/100",
+        "icon": "$variable/neutral-light/100"
+      },
+      "logicalName": "Button/Primary/Default",
+      "pixsoSpecKey": "Button/Primary/Default",
+      "iconColorSource": "variant-content"
+    },
+    {
+      "logicalName": "Calendar/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "calendar",
+      "availability": "blocked",
+      "pixsoName": null,
+      "componentSetName": null
+    },
+    {
+      "rendererKey": "checkbox",
+      "pixsoName": "CheckBox",
+      "componentSetName": "CheckBox",
+      "availability": "mapped",
+      "variant": {
+        "checked": "false",
+        "state": "Default"
+      },
+      "supportedProps": [
+        "checked",
+        "label",
+        "description",
+        "ariaLabel",
+        "value",
+        "state",
+        "className",
+        "disabled"
+      ],
+      "supportedSlots": [
+        "label",
+        "description",
+        "content"
+      ],
+      "logicalName": "Checkbox/Default",
+      "pixsoSpecKey": "Checkbox/Unchecked/Default"
+    },
+    {
+      "rendererKey": "chips",
+      "pixsoName": "Chips",
+      "componentSetName": "Chips",
+      "availability": "mapped",
+      "variant": {
+        "状态": "Default"
+      },
+      "supportedProps": [
+        "label",
+        "icon",
+        "closable",
+        "disabled",
+        "state",
+        "onClose"
+      ],
+      "supportedSlots": [
+        "leading",
+        "label",
+        "close"
+      ],
+      "logicalName": "Chips/Default",
+      "pixsoSpecKey": "Chips/Default",
+      "iconColorSource": "variant-content"
+    },
+    {
+      "rendererKey": "radio",
+      "pixsoName": "Radio",
+      "componentSetName": "Radio",
+      "availability": "mapped",
+      "variant": {
+        "checked": "false",
+        "state": "Default"
+      },
+      "supportedProps": [
+        "checked",
+        "defaultChecked",
+        "label",
+        "name",
+        "value",
+        "state",
+        "className",
+        "disabled"
+      ],
+      "supportedSlots": [
+        "control",
+        "label"
+      ],
+      "logicalName": "Radio/Unselected/Default",
+      "pixsoSpecKey": "Radio/Unselected/Default"
+    },
+    {
+      "rendererKey": "collapsible",
+      "pixsoName": "Collapsible",
+      "componentSetName": "Collapsible",
+      "availability": "mapped",
+      "variant": {
+        "State": "Collapsed"
+      },
+      "variantByHtml": {
+        "default": {
+          "State": "Collapsed"
+        },
+        "open": {
+          "State": "Expanded"
+        }
+      },
+      "supportedProps": [
+        "title",
+        "detail",
+        "expanded",
+        "contentId",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "supportedSlots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "logicalName": "Collapsible/Default",
+      "pixsoSpecKey": "Collapsible/Collapsed"
+    },
+    {
+      "logicalName": "Combobox/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "combobox",
+      "availability": "excluded",
+      "pixsoName": null,
+      "componentSetName": null,
+      "mappingReason": "按当前输入类组件映射范围保留框架实现，但不映射为 Pixso 组件。"
+    },
+    {
+      "logicalName": "Context Menu/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "context-menu",
+      "availability": "excluded",
+      "pixsoName": null,
+      "componentSetName": null,
+      "mappingReason": "按当前操作类组件映射范围保留框架实现，但不映射为 Pixso 组件。"
+    },
+    {
+      "logicalName": "Date Picker/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "date-picker",
+      "availability": "blocked",
+      "pixsoName": null,
+      "componentSetName": null
+    },
+    {
+      "rendererKey": "dialog",
+      "pixsoName": "Dialog-2in1",
+      "componentSetName": "Dialog-2in1",
+      "availability": "mapped",
+      "variant": {
+        "style": "1button"
+      },
+      "variantByHtml": {
+        "single": {
+          "style": "1button"
+        },
+        "double": {
+          "style": "title+2 button"
+        },
+        "triple": {
+          "style": "title+3 button"
+        }
+      },
+      "slots": {
+        "titlebar": {
+          "cardinality": "1",
+          "pixsoComponent": ".Title",
+          "variants": {
+            "title-only": "属性 1=title+single line",
+            "title-subtitle": "属性 1=title+2lines"
+          }
+        },
+        "actions": {
+          "cardinality": "1",
+          "acceptedComponent": "Button",
+          "buttonCount": "1..3",
+          "variants": {
+            "one-button": "style=1button",
+            "two-buttons": "style=title+2 button",
+            "three-buttons": "style=title+3 button"
+          },
+          "internalPixsoVariants": {
+            "one-button": "quantity=1_normal",
+            "two-buttons": [
+              "quantity=2_normal",
+              "quantity=2_emphasize"
+            ],
+            "three-buttons": "quantity=3_emphasize_port"
+          }
+        }
+      },
+      "supportedProps": [
+        "open",
+        "title",
+        "description",
+        "intent",
+        "actionLayout",
+        "confirmLabel",
+        "cancelLabel",
+        "thirdActionLabel",
+        "onConfirm",
+        "onCancel",
+        "onThirdAction",
+        "onOpenChange"
+      ],
+      "supportedSlots": [
+        "titlebar",
+        "description",
+        "content",
+        "actions"
+      ],
+      "logicalName": "Dialog/Default",
+      "pixsoSpecKey": "Dialog/Default"
+    },
+    {
+      "logicalName": "Dropdown Menu/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "dropdown-menu",
+      "availability": "excluded",
+      "pixsoName": null,
+      "componentSetName": null,
+      "mappingReason": "保留 HTML/框架组件契约；Pixso 页面需要菜单时按 Token 直接组合普通节点，不导入、创建或引用可复用 Dropdown Menu 主组件。"
+    },
+    {
+      "logicalName": "Field/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "field",
+      "availability": "excluded",
+      "pixsoName": null,
+      "componentSetName": null,
+      "mappingReason": "按当前输入类组件映射范围保留框架实现，但不映射为 Pixso 组件。"
+    },
+    {
+      "rendererKey": "form-field",
+      "pixsoName": "Form Field",
+      "componentSetName": "Form Field",
+      "availability": "mapped",
+      "variant": {
+        "surface": "White",
+        "state": "Default"
+      },
+      "variantByProp": {
+        "surface": {
+          "white": {
+            "surface": "White"
+          },
+          "gray": {
+            "surface": "Gray"
+          },
+          "grey": {
+            "surface": "Gray"
+          }
+        },
+        "state": {
+          "default": {
+            "state": "Default"
+          },
+          "hover": {
+            "state": "Hover"
+          },
+          "focus": {
+            "state": "Focus"
+          },
+          "disabled": {
+            "state": "Disabled"
+          },
+          "error": {
+            "state": "Error"
+          }
+        }
+      },
+      "slots": {
+        "label": {
+          "cardinality": "1",
+          "pixsoLayer": "#label"
+        },
+        "control": {
+          "cardinality": "1",
+          "pixsoLayer": "#control"
+        },
+        "error": {
+          "cardinality": "0..1",
+          "pixsoLayer": "#error"
+        }
+      },
+      "supportedProps": [
+        "label",
+        "required",
+        "error",
+        "disabled",
+        "state",
+        "surface",
+        "className"
+      ],
+      "supportedSlots": [
+        "label",
+        "control",
+        "error"
+      ],
+      "logicalName": "Form Field/Default",
+      "pixsoSpecKey": "Form Field/Default"
+    },
+    {
+      "logicalName": "Hover Card/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "hover-card",
+      "availability": "excluded",
+      "pixsoName": null,
+      "componentSetName": null,
+      "mappingReason": "按当前展示类组件映射范围保留框架实现，但不映射为 Pixso 组件。"
+    },
+    {
+      "rendererKey": "input",
+      "pixsoName": "Input",
+      "componentSetName": "Input",
+      "availability": "mapped",
+      "variant": {
+        "surface": "bg-white",
+        "state": "Default"
+      },
+      "supportedProps": [
+        "value",
+        "placeholder",
+        "surface",
+        "error",
+        "disabled",
+        "variant",
+        "label",
+        "options",
+        "tags",
+        "defaultTags"
+      ],
+      "supportedSlots": [
+        "label",
+        "leading",
+        "value",
+        "trailing",
+        "help",
+        "tags",
+        "suggestions"
+      ],
+      "contentColor": {
+        "text": "$variable/neutral-dark/90",
+        "icon": "$variable/neutral-dark/90"
+      },
+      "logicalName": "Input/White Surface/Default",
+      "pixsoSpecKey": "Input/White Surface/Default",
+      "iconColorSource": "variant-content"
+    },
+    {
+      "logicalName": "Label/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "label",
+      "availability": "excluded",
+      "pixsoName": null,
+      "componentSetName": null,
+      "mappingReason": "按当前输入类组件映射范围保留框架实现，但不映射为 Pixso 组件。"
+    },
+    {
+      "logicalName": "List Item/White Surface/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "list-card",
+      "availability": "excluded",
+      "pixsoName": null,
+      "componentSetName": null,
+      "mappingReason": "List Item 样例结构复杂，按当前容器类范围保留框架实现，不映射为 Pixso 组件。"
+    },
+    {
+      "rendererKey": "menubar",
+      "pixsoName": "Menubar",
+      "componentSetName": "Menubar",
+      "availability": "mapped",
+      "variant": {
+        "state": "Default",
+        "surface": "bg-white"
+      },
+      "supportedProps": [
+        "label",
+        "value",
+        "items",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "supportedSlots": [
+        "label",
+        "content",
+        "description",
+        "item-leading",
+        "item-label",
+        "item-trailing"
+      ],
+      "logicalName": "Menubar/Default",
+      "pixsoSpecKey": "Menubar/Default"
+    },
+    {
+      "logicalName": "Native Select/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "native-select",
+      "availability": "blocked",
+      "pixsoName": null,
+      "componentSetName": null
+    },
+    {
+      "rendererKey": "number-selector",
+      "pixsoName": "Number Selector/Default",
+      "componentSetName": "Number Selector/Default",
+      "availability": "mapped",
+      "supportedProps": [
+        "label",
+        "value",
+        "defaultValue",
+        "min",
+        "max",
+        "step",
+        "disabled",
+        "onChange"
+      ],
+      "supportedSlots": [
+        "label",
+        "decrement",
+        "value",
+        "increment"
+      ],
+      "logicalName": "Number Selector/Default",
+      "pixsoSpecKey": "Number Selector/Default"
+    },
+    {
+      "rendererKey": "pagination",
+      "pixsoName": "Pagination/Default",
+      "componentSetName": "Pagination/Default",
+      "availability": "mapped",
+      "variant": {},
+      "supportedProps": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "supportedSlots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "logicalName": "Pagination/Default",
+      "pixsoSpecKey": "Pagination/Default"
+    },
+    {
+      "logicalName": "Popover/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "popover",
+      "availability": "excluded",
+      "pixsoName": null,
+      "componentSetName": null,
+      "mappingReason": "按当前展示类组件映射范围保留框架实现，但不映射为 Pixso 组件。"
+    },
+    {
+      "rendererKey": "primary-navigation-item",
+      "pixsoName": null,
+      "availability": "blocked",
+      "supportedProps": [
+        "label",
+        "iconName",
+        "selected",
+        "disabled"
+      ],
+      "supportedSlots": [
+        "icon",
+        "label"
+      ],
+      "logicalName": "Primary Navigation Item/Level 1",
+      "pixsoSpecKey": null,
+      "componentSetName": null
+    },
+    {
+      "rendererKey": "progress",
+      "pixsoName": "Progress/Default",
+      "componentSetName": "Progress/Default",
+      "availability": "mapped",
+      "supportedProps": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "supportedSlots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "logicalName": "Progress/Default",
+      "pixsoSpecKey": "Progress/Default"
+    },
+    {
+      "logicalName": "Radio Group/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "radio-group",
+      "availability": "blocked",
+      "pixsoName": null,
+      "componentSetName": null
+    },
+    {
+      "rendererKey": "search",
+      "pixsoName": "Search",
+      "componentSetName": "Search",
+      "availability": "mapped",
+      "variant": {
+        "surface": "bg-white",
+        "state": "Default"
+      },
+      "supportedProps": [
+        "value",
+        "defaultValue",
+        "placeholder",
+        "disabled",
+        "state",
+        "surface",
+        "scope",
+        "defaultScope",
+        "scopeOptions",
+        "scopeLabel",
+        "onScopeChange",
+        "advancedSearch",
+        "advancedSearchLabel",
+        "onAdvancedSearch",
+        "onChange",
+        "onClear"
+      ],
+      "supportedSlots": [
+        "scope-selector",
+        "leading",
+        "value",
+        "clear",
+        "advanced-search"
+      ],
+      "contentColor": {
+        "text": "$variable/neutral-dark/90",
+        "icon": "$variable/neutral-dark/90"
+      },
+      "logicalName": "Search/White Surface/Default",
+      "pixsoSpecKey": "Search/White Surface/Default",
+      "iconColorSource": "variant-content"
+    },
+    {
+      "logicalName": "Select/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "select",
+      "availability": "blocked",
+      "pixsoName": null,
+      "componentSetName": null
+    },
+    {
+      "logicalName": "Semi-modal/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "semi-modal",
+      "availability": "blocked",
+      "pixsoName": null,
+      "componentSetName": null
+    },
+    {
+      "rendererKey": "segmented-button",
+      "pixsoName": "Segmented Button",
+      "componentSetName": "Segmented Button",
+      "variant": {
+        "count": "3"
+      },
+      "availability": "mapped",
+      "supportedProps": [
+        "options",
+        "value",
+        "defaultValue",
+        "label",
+        "disabled",
+        "onChange"
+      ],
+      "supportedSlots": [
+        "option"
+      ],
+      "logicalName": "Segmented Button/Default",
+      "pixsoSpecKey": "Segmented Button/Default"
+    },
+    {
+      "rendererKey": "sidebar",
+      "pixsoName": "Sidebar Item",
+      "availability": "mapped",
+      "supportedProps": [
+        "label",
+        "icon",
+        "count",
+        "selected",
+        "collapsed",
+        "disabled"
+      ],
+      "ignoredFrameworkProps": [
+        "items",
+        "ariaLabel"
+      ],
+      "supportedSlots": [
+        "leading",
+        "label",
+        "trailing"
+      ],
+      "componentSetName": "Sidebar Item",
+      "variant": {
+        "state": "default"
+      },
+      "cardinality": "many",
+      "mappingScope": "every child .tui-sidebar-item",
+      "childMapping": {
+        "htmlSelector": ".tui-sidebar > .tui-sidebar-item",
+        "pixsoTarget": "Sidebar Item",
+        "textToUiSpecKey": "Sidebar Item/Default",
+        "states": [
+          "default",
+          "hover",
+          "selected"
+        ],
+        "rule": "Each rendered sidebar child is one Sidebar Item instance; the parent Sidebar only provides the collection container. The current Pixso set supplies default, hover, and selected only; other interaction states retain their code-side behavior."
+      },
+      "logicalName": "Sidebar Item/Default",
+      "pixsoSpecKey": "Sidebar Item/Default",
+      "iconColorSource": "variant-content"
+    },
+    {
+      "rendererKey": "slider",
+      "pixsoName": "Slider",
+      "componentSetName": "Slider",
+      "variant": {
+        "style": "style-1"
+      },
+      "availability": "mapped",
+      "supportedProps": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "supportedSlots": [
+        "label",
+        "control",
+        "value"
+      ],
+      "logicalName": "Slider/Default",
+      "pixsoSpecKey": "Slider/Default"
+    },
+    {
+      "rendererKey": "color-picker",
+      "pixsoName": "Snackbar/ColorPicker-Tablet",
+      "componentSetName": "Snackbar/ColorPicker-Tablet",
+      "availability": "mapped",
+      "supportedProps": [
+        "value",
+        "defaultValue",
+        "disabled",
+        "state",
+        "className",
+        "onChange"
+      ],
+      "supportedSlots": [
+        "title",
+        "tabs",
+        "mode",
+        "hue",
+        "saturation",
+        "brightness",
+        "alpha",
+        "preview",
+        "eyedropper",
+        "hex",
+        "favorites"
+      ],
+      "logicalName": "ColorPicker/Tablet",
+      "pixsoSpecKey": "ColorPicker/Tablet"
+    },
+    {
+      "rendererKey": "switch",
+      "pixsoName": "Switch",
+      "componentSetName": "Switch",
+      "availability": "mapped",
+      "variant": {
+        "checked": "false",
+        "state": "Default"
+      },
+      "supportedProps": [
+        "checked",
+        "label",
+        "description",
+        "value",
+        "state",
+        "className",
+        "disabled"
+      ],
+      "supportedSlots": [
+        "label",
+        "description",
+        "content"
+      ],
+      "logicalName": "Switch/Default",
+      "pixsoSpecKey": "Switch/Off/Default"
+    },
+    {
+      "logicalName": "Table/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "table",
+      "availability": "excluded",
+      "pixsoName": null,
+      "componentSetName": null,
+      "mappingReason": "按当前展示类组件映射范围保留框架实现，但不映射为 Pixso 组件。"
+    },
+    {
+      "logicalName": "Tabs/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "tabs",
+      "availability": "blocked",
+      "pixsoName": null,
+      "componentSetName": null
+    },
+    {
+      "rendererKey": "sub-tabs",
+      "pixsoName": "Sub Tabs Item",
+      "availability": "mapped",
+      "supportedProps": [
+        "tabs",
+        "value",
+        "defaultValue",
+        "onChange",
+        "disabled"
+      ],
+      "supportedSlots": [
+        "label",
+        "content"
+      ],
+      "componentSetName": "Sub Tabs Item",
+      "variant": {
+        "state": "Unselected"
+      },
+      "cardinality": "many",
+      "mappingScope": "every child .tui-sub-tabs__list [role=tab]",
+      "childMapping": {
+        "htmlSelector": ".tui-sub-tabs__list > [role=tab]",
+        "pixsoTarget": "Sub Tabs Item",
+        "textToUiSpecKey": "Sub Tabs/Default",
+        "states": [
+          "Unselected",
+          "Selected"
+        ],
+        "stateResolution": {
+          "default": "Unselected",
+          "selected": "Selected"
+        },
+        "rule": "Each rendered sub-tab is one Sub Tabs Item instance; the parent Sub Tabs retains the tablist and content-panel structure."
+      },
+      "logicalName": "Sub Tabs/Default",
+      "pixsoSpecKey": "Sub Tabs/Default"
+    },
+    {
+      "logicalName": "Tree View/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "tree-view",
+      "availability": "blocked",
+      "pixsoName": null,
+      "componentSetName": null
+    },
+    {
+      "rendererKey": "textarea",
+      "pixsoName": "Textarea",
+      "componentSetName": "Textarea",
+      "availability": "mapped",
+      "variant": {
+        "surface": "bg-white",
+        "state": "Default"
+      },
+      "supportedProps": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className",
+        "surface"
+      ],
+      "supportedSlots": [
+        "label",
+        "leading",
+        "value",
+        "trailing",
+        "help"
+      ],
+      "logicalName": "Textarea/Default",
+      "pixsoSpecKey": "Textarea/White Surface/Default",
+      "iconColorSource": "variant-content"
+    },
+    {
+      "logicalName": "Time Picker/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "time-picker",
+      "availability": "blocked",
+      "pixsoName": null,
+      "componentSetName": null
+    },
+    {
+      "logicalName": "Titlebar/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "titlebar",
+      "availability": "blocked",
+      "pixsoName": null,
+      "componentSetName": null
+    },
+    {
+      "logicalName": "Titlebar Controls/Normal",
+      "rendererKey": "titlebar-controls",
+      "pixsoName": "control button",
+      "componentSetName": "control button",
+      "availability": "mapped",
+      "variant": {
+        "状态": "Normal size"
+      },
+      "mappingSource": "subcomponent"
+    },
+    {
+      "rendererKey": "snackbar",
+      "pixsoName": "Snackbar",
+      "componentSetName": "Snackbar",
+      "availability": "mapped",
+      "variant": {
+        "左侧区域": "1"
+      },
+      "supportedProps": [
+        "title",
+        "subtitle",
+        "actionLabel",
+        "leftArea",
+        "closable",
+        "onAction",
+        "onClose"
+      ],
+      "supportedSlots": [
+        "leading",
+        "title",
+        "subtitle",
+        "action",
+        "close"
+      ],
+      "logicalName": "Snackbar/Default",
+      "pixsoSpecKey": "Snackbar/Default",
+      "iconColorSource": "variant-content"
+    },
+    {
+      "logicalName": "Tooltip/Default",
+      "pixsoSpecKey": null,
+      "rendererKey": "tooltip",
+      "availability": "excluded",
+      "pixsoName": null,
+      "componentSetName": null,
+      "mappingReason": "按当前展示类组件映射范围保留框架实现，但不映射为 Pixso 组件。"
+    }
+  ],
+  "endpointComponentMappings": [
+    {
+      "endpointComponentId": "menubar",
+      "contractId": "menubar",
+      "logicalName": "Menubar/Default",
+      "pixsoName": "Menubar",
+      "componentSetName": "Menubar",
+      "availability": "mapped",
+      "variant": {
+        "state": "Default",
+        "surface": "bg-white"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Menubar/Default"
+    },
+    {
+      "endpointComponentId": "button",
+      "contractId": "button",
+      "logicalName": "Button/Primary/Default",
+      "pixsoName": "Button",
+      "componentSetName": "Button",
+      "availability": "mapped",
+      "variant": {
+        "type": "Primary",
+        "size": "Medium",
+        "state": "Default"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Button/Primary/Default"
+    },
+    {
+      "endpointComponentId": "checkbox",
+      "contractId": "checkbox",
+      "logicalName": "Checkbox/Default",
+      "pixsoName": "CheckBox",
+      "componentSetName": "CheckBox",
+      "availability": "mapped",
+      "variant": {
+        "checked": "false",
+        "state": "Default"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Checkbox/Unchecked/Default"
+    },
+    {
+      "endpointComponentId": "radio",
+      "contractId": "radio",
+      "logicalName": "Radio/Unselected/Default",
+      "pixsoName": "Radio",
+      "componentSetName": "Radio",
+      "availability": "mapped",
+      "variant": {
+        "checked": "false",
+        "state": "Default"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Radio/Unselected/Default"
+    },
+    {
+      "endpointComponentId": "input",
+      "contractId": "input",
+      "logicalName": "Input/White Surface/Default",
+      "pixsoName": "Input",
+      "componentSetName": "Input",
+      "availability": "mapped",
+      "variant": {
+        "surface": "bg-white",
+        "state": "Default"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Input/White Surface/Default"
+    },
+    {
+      "endpointComponentId": "search",
+      "contractId": "search",
+      "logicalName": "Search/White Surface/Default",
+      "pixsoName": "Search",
+      "componentSetName": "Search",
+      "availability": "mapped",
+      "variant": {
+        "surface": "bg-white",
+        "state": "Default"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Search/White Surface/Default"
+    },
+    {
+      "endpointComponentId": "textarea",
+      "contractId": "textarea",
+      "logicalName": "Textarea/Default",
+      "pixsoName": "Textarea",
+      "componentSetName": "Textarea",
+      "availability": "mapped",
+      "variant": {
+        "surface": "bg-white",
+        "state": "Default"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Textarea/White Surface/Default"
+    },
+    {
+      "endpointComponentId": "number-selector",
+      "contractId": "number-selector",
+      "logicalName": "Number Selector/Default",
+      "pixsoName": "Number Selector/Default",
+      "componentSetName": "Number Selector/Default",
+      "availability": "mapped",
+      "variant": {},
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Number Selector/Default"
+    },
+    {
+      "endpointComponentId": "progress",
+      "contractId": "progress",
+      "logicalName": "Progress/Default",
+      "pixsoName": "Progress/Default",
+      "componentSetName": "Progress/Default",
+      "availability": "mapped",
+      "variant": {},
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Progress/Default"
+    },
+    {
+      "endpointComponentId": "sidebar",
+      "contractId": "sidebar",
+      "logicalName": "Sidebar Item/Default",
+      "pixsoName": "Sidebar Item",
+      "componentSetName": "Sidebar Item",
+      "availability": "mapped",
+      "variant": {
+        "state": "default"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Sidebar Item/Default"
+    },
+    {
+      "endpointComponentId": "switch",
+      "contractId": "switch",
+      "logicalName": "Switch/Default",
+      "pixsoName": "Switch",
+      "componentSetName": "Switch",
+      "availability": "mapped",
+      "variant": {
+        "checked": "false",
+        "state": "Default"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Switch/Off/Default"
+    },
+    {
+      "endpointComponentId": "color-picker",
+      "contractId": "color-picker",
+      "logicalName": "ColorPicker/Tablet",
+      "pixsoName": "Snackbar/ColorPicker-Tablet",
+      "componentSetName": "Snackbar/ColorPicker-Tablet",
+      "availability": "mapped",
+      "variant": {},
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "ColorPicker/Tablet"
+    },
+    {
+      "endpointComponentId": "icon-text-primary",
+      "contractId": "button",
+      "logicalName": "Icon Text Button/Primary/Default",
+      "pixsoName": "icon-text",
+      "componentSetName": "icon-text",
+      "availability": "mapped",
+      "variant": {
+        "size": "Medium",
+        "state": "Default",
+        "type": "primary"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Icon Text Button/Primary/Default"
+    },
+    {
+      "endpointComponentId": "icon-text-secondary",
+      "contractId": "button",
+      "logicalName": "Icon Text Button/Secondary/Default",
+      "pixsoName": "icon-text",
+      "componentSetName": "icon-text",
+      "availability": "mapped",
+      "variant": {
+        "size": "Medium",
+        "state": "Default",
+        "type": "secondary"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Icon Text Button/Secondary/Default"
+    },
+    {
+      "endpointComponentId": "icon-text-ghost",
+      "contractId": "button",
+      "logicalName": "Icon Text Button/Ghost/Default",
+      "pixsoName": "icon-text",
+      "componentSetName": "icon-text",
+      "availability": "mapped",
+      "variant": {
+        "size": "Medium",
+        "state": "Default",
+        "type": "ghost"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Icon Text Button/Ghost/Default"
+    },
+    {
+      "endpointComponentId": "icon",
+      "contractId": "button",
+      "logicalName": "Icon Button/Ghost/Default",
+      "pixsoName": "Icon Button",
+      "componentSetName": "Icon Button",
+      "availability": "mapped",
+      "variant": {
+        "size": "Medium",
+        "state": "Default",
+        "type": "Ghost"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Icon Button/Ghost/Default"
+    },
+    {
+      "endpointComponentId": "split-dropdown",
+      "contractId": "button",
+      "logicalName": "Split Dropdown Button/Icon Text/Default",
+      "pixsoName": "split-dropdown",
+      "componentSetName": "split-dropdown",
+      "availability": "mapped",
+      "variant": {
+        "type": "ghost",
+        "state": "Default"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Split Dropdown Button/Icon Text/Default"
+    },
+    {
+      "endpointComponentId": "split-dropdown-icon",
+      "contractId": "button",
+      "logicalName": "Split Dropdown Button/Icon Only/Default",
+      "pixsoName": "split-dropdown",
+      "componentSetName": "split-dropdown",
+      "availability": "mapped",
+      "variant": {
+        "type": "icon",
+        "state": "Default"
+      },
+      "mappingStatus": "mapped-pending-verification",
+      "sourceMappingTarget": "Split Dropdown Button/Icon Only/Default"
+    }
+  ]
+}

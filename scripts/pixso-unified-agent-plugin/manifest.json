@@ -1,0 +1,17 @@
+{
+  "name": "Text-to-UI Pixso Unified Agent v2",
+  "id": "text-to-ui-pixso-agent-v2",
+  "editorType": ["pixso"],
+  "main": "./main.js",
+  "ui": "./ui.html",
+  "menu": [
+    { "name": "打开导入与同步界面", "command": "open" },
+    { "name": "同步当前组件事实与导入映射", "command": "sync" },
+    { "name": "自检服务与 Pixso 连接（只读）", "command": "health" },
+    { "name": "生成当前计划", "command": "generate" },
+    { "name": "Coremail 组件审计（只读）", "command": "audit" },
+    { "name": "补齐 NewComponents 文字槽位", "command": "slots" },
+    { "name": "图标槽位诊断（只读）", "command": "icons" },
+    { "name": "关闭", "command": "close" }
+  ]
+}

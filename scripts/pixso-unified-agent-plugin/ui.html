@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      :root { font: 13px system-ui, sans-serif; color: #18212f; background: #fff; }
+      html { min-height: 100%; overflow-y: auto; }
+      *, *::before, *::after { box-sizing: border-box; }
+      body { margin: 0; padding: 8px; min-width: 0; min-height: 100vh; display: grid; grid-auto-rows: max-content; align-content: start; gap: 6px; overflow-x: hidden; overflow-y: auto; }
+      button { max-width: 100%; border: 0; border-radius: 6px; padding: 6px 8px; cursor: pointer; background: #0a59f7; color: white; white-space: normal; }
+      button.secondary { color: #18212f; background: #eef1f5; }
+      button:disabled { opacity: .45; cursor: default; }
+      .bridge { display: grid; grid-auto-rows: max-content; align-content: start; gap: 5px; padding: 8px; border-radius: 8px; background: #f5f7fa; }
+      .bridge-line { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0; flex-wrap: wrap; }
+      .dot { width: 8px; height: 8px; border-radius: 50%; background: #aab2bf; }
+      .dot.online { background: #21a366; }
+      .component-sync { display: grid; grid-auto-rows: max-content; align-content: start; gap: 5px; padding: 8px; border: 1px solid #e3e7ed; border-radius: 8px; }
+      .sync-line { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0; flex-wrap: wrap; }
+      #component-sync-status { min-height: 18px; white-space: pre-wrap; color: #586273; line-height: 1.3; font-size: 11px; }
+      #component-sync-changes { margin: 0; padding-left: 20px; display: grid; gap: 4px; color: #586273; }
+      #component-sync-changes .safe { color: #237a45; }
+      #component-sync-changes .review { color: #a26400; }
+      #component-sync-changes .blocked { color: #b42318; }
+      .actions { display: flex; gap: 6px; flex-wrap: wrap; }
+      #run-timing { min-height: 0; color: #7a8494; line-height: 1.3; font-size: 11px; }
+      details { align-content: start; border: 1px solid #e3e7ed; border-radius: 10px; background: #fff; }
+      summary { padding: 8px 9px; cursor: pointer; color: #586273; user-select: none; }
+      .manual-tools { display: grid; grid-auto-rows: max-content; align-content: start; gap: 6px; padding: 0 9px 9px; }
+      .manual-tools small { color: #7a8494; line-height: 1.45; }
+      .title { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; min-width: 0; flex-wrap: wrap; }
+      .title strong { min-width: 0; flex: 1 1 180px; overflow-wrap: anywhere; }
+      .version { color: #8b95a5; font-size: 10px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: right; }
+      label { display: flex; gap: 8px; align-items: center; min-width: 0; }
+      label input { flex: none; }
+      small { overflow-wrap: anywhere; }
+      #status { min-height: 18px; white-space: pre-wrap; color: #586273; font-size: 11px; line-height: 1.3; }
+      #file { display: none; }
+    </style>
+  </head>
+  <body>
+    <div class="title"><strong>Text-to-UI · Pixso Unified Agent</strong></div>
+    <div class="bridge">
+      <div class="bridge-line"><span><span id="bridge-dot" class="dot"></span> 本地自动桥接</span><span id="bridge-state">等待连接</span></div>
+      <label><input id="auto" type="checkbox" checked /> 自动接收并替换当前画板</label>
+      <button id="pause" class="secondary" hidden disabled>暂停当前导入</button>
+      <button id="reset-import" class="secondary" hidden>重置当前导入</button>
+    </div>
+    <div class="component-sync">
+      <div class="sync-line"><strong>组件同步</strong><span id="component-sync-state">未同步</span></div>
+      <div class="actions">
+        <button id="sync-components">同步组件</button>
+        <button id="component-health" class="secondary">检查服务</button>
+      </div>
+      <div id="component-sync-status">需要时手动同步组件事实。</div>
+      <details id="component-sync-details" hidden>
+        <summary>查看同步明细</summary>
+        <ul id="component-sync-changes"></ul>
+      </details>
+    </div>
+    <input id="file" type="file" accept="application/json,.json" />
+    <details hidden>
+      <summary>手动调试</summary>
+      <div class="manual-tools">
+        <small>仅在自动桥接不可用、需要重放计划或保留旧稿对比时使用。</small>
+        <button id="open">选择页面计划或 HTML 组件库计划</button>
+        <button id="generate" class="secondary">重新执行已载入计划</button>
+        <button id="new-version" class="secondary">保留旧画板并新建版本</button>
+      </div>
+    </details>
+    <div id="status">等待 Text-to-UI 发布计划。</div>
+    <div id="run-timing" hidden>等待任务计时数据。</div>
+    <div id="runtime-version" class="version">Kernel</div>
+    <script>
+      let plan = null;
+      let bridgeRevision = "";
+      let bridgeBusy = false;
+      let executionProgress = null;
+      let pendingBridgeStart = null;
+      let blockedRevision = "";
+      let runtimeVersion = "unknown";
+      const protocolVersion = 4;
+      let operationPlanVersions = [1, 5];
+      let capabilities = [];
+      let pendingBridgeResult = null;
+      let bridgeResultBusy = false;
+      let pendingBridgeProgress = null;
+      let bridgeProgressBusy = false;
+      let cancelSignalSent = false;
+      let ignoreRunningState = false;
+      let ignoreLateResult = false;
+      const pendingResultStorageKey = "text-to-ui-pending-bridge-result-v1";
+      try { pendingBridgeResult = JSON.parse(localStorage.getItem(pendingResultStorageKey) || "null"); } catch (_) {}
+      const bridgeSessionId = `pixso-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
+      const bridgeUrl = "http://127.0.0.1:43982";
+      const fitPanelHeight = (() => {
+        let scheduled = false;
+        let lastHeight = 0;
+        const measure = () => {
+          scheduled = false;
+          const height = Math.ceil(Math.max(document.documentElement.scrollHeight, document.body.scrollHeight));
+          if (!Number.isFinite(height) || height <= 0 || height === lastHeight) return;
+          lastHeight = height;
+          parent.postMessage({ pluginMessage: { type: "RESIZE_UI", height } }, "*");
+        };
+        return () => {
+          if (scheduled) return;
+          scheduled = true;
+          if (typeof window.requestAnimationFrame === "function") window.requestAnimationFrame(measure);
+          else window.setTimeout(measure, 0);
+        };
+      })();
+      fitPanelHeight();
+      new MutationObserver(fitPanelHeight).observe(document.body, {
+        subtree: true,
+        childList: true,
+        characterData: true,
+        attributes: true,
+        attributeFilter: ["class", "hidden", "open", "style"],
+      });
+      if (typeof ResizeObserver === "function") new ResizeObserver(fitPanelHeight).observe(document.body);
+      const status = (message) => { document.querySelector("#status").textContent = message; };
+      const formatDuration = (milliseconds) => {
+        const value = Number(milliseconds);
+        if (!Number.isFinite(value)) return "—";
+        if (value < 1000) return `${Math.round(value)}毫秒`;
+        if (value < 60000) return `${(value / 1000).toFixed(1)}秒`;
+        return `${(value / 60000).toFixed(1)}分钟`;
+      };
+      const renderRunTiming = (payload) => {
+        const run = payload?.importRun;
+        if (!run) {
+          document.querySelector("#run-timing").textContent = "等待任务计时数据。";
+          return;
+        }
+        const wall = Number(run.timing?.wallElapsedMs);
+        const work = Number(run.timing?.workElapsedMs);
+        const waiting = Number.isFinite(wall) && Number.isFinite(work) ? Math.max(0, wall - work) : null;
+        const reason = payload.job?.blockingReason ? ` · ${payload.job.blockingReason}` : "";
+        document.querySelector("#run-timing").textContent = `实际执行 ${formatDuration(work)} · 等待/调度 ${formatDuration(waiting)} · 墙钟 ${formatDuration(wall)}${reason}`;
+      };
+      let latestComponentFacts = null;
+      let componentSyncBusy = false;
+      const componentSyncStatus = (message, state = "") => {
+        document.querySelector("#component-sync-status").textContent = message;
+        document.querySelector("#component-sync-state").textContent = state;
+      };
+      const componentChangeLabel = (kind) => ({
+        "remove-unsupported-variant-axis": "移除已不存在的 Variant 轴",
+        "normalize-variant-values": "规范化 Variant 值",
+        "normalize-native-source-variant": "同步 Native Source Variant",
+        "sync-geometry-token": "同步几何 Token",
+        "refresh-component-facts": "刷新组件事实",
+        "component-added": "新增组件事实",
+        "component-removed": "移除组件事实",
+        "incomplete-component-inventory": "组件快照不完整",
+        "unmapped-geometry-token": "几何暂无对应 Token",
+        "asymmetric-geometry": "非对称几何待确认",
+        "target-component-missing": "映射目标缺失",
+        "native-target-component-missing": "Native Source 目标缺失",
+        "variant-not-found": "Variant 不存在",
+        "variant-ambiguous": "Variant 匹配不明确",
+      }[kind] || kind);
+      function renderComponentProposal(result) {
+        const proposal = result.proposal || {};
+        const componentSets = latestComponentFacts?.componentSets?.length ?? 0;
+        const standalone = latestComponentFacts?.standaloneComponents?.length ?? 0;
+        const safe = Number(proposal.safeChangeCount || 0);
+        const review = Number(proposal.reviewChangeCount || 0);
+        const blocked = Number(proposal.blockingChangeCount || 0);
+        const pending = Number(result.pendingReviewCount || review);
+        const changes = document.querySelector("#component-sync-changes");
+        changes.textContent = "";
+        for (const item of (proposal.changes || []).slice(0, 24)) {
+          const row = document.createElement("li");
+          row.className = item.blocking ? "blocked" : item.safe ? "safe" : "review";
+          row.textContent = `${componentChangeLabel(item.kind)} · ${String(item.path || "")}${item.reason ? ` · ${item.reason}` : ""}`;
+          changes.appendChild(row);
+        }
+        document.querySelector("#component-sync-details").hidden = !(proposal.changes || []).length;
+        if (result.applied) {
+          const factsNote = result.appliedFacts === false
+            ? " 注册组件缺失，已保留旧事实；确定的映射仍已同步。"
+            : "";
+          componentSyncStatus(
+            `组件集 ${componentSets} / 独立组件 ${standalone}；安全同步 ${result.appliedOperationCount || 0} 项；待确认 ${pending} 项。${factsNote}`,
+            pending ? "有待确认项" : "已同步",
+          );
+        } else if (proposal.status === "up-to-date") {
+          componentSyncStatus("当前 Pixso 组件事实与 Text-to-UI 映射已经一致。", "已同步");
+        } else {
+          componentSyncStatus(`组件集 ${componentSets} / 独立组件 ${standalone}；安全 ${safe}，待确认 ${review}，待处理 ${blocked}。`, "待处理");
+        }
+      }
+      async function applyComponentFacts() {
+        if (!latestComponentFacts || componentSyncBusy) return;
+        componentSyncBusy = true;
+        document.querySelector("#sync-components").disabled = true;
+        componentSyncStatus("正在生成并应用安全同步…", "同步中");
+        try {
+          const response = await fetch(`${bridgeUrl}/component-sync`, {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({ mode: "apply-safe", facts: latestComponentFacts }),
+          });
+          const result = await response.json().catch(() => ({}));
+          if (!response.ok || !result.ok) throw new Error(result.error || `同步服务返回 ${response.status}`);
+          renderComponentProposal(result);
+        } catch (error) {
+          componentSyncStatus(`同步服务暂时不可用：${error.message}\n请确认 Text-to-UI 本地服务已启动后重试。`, "连接失败");
+        } finally {
+          componentSyncBusy = false;
+          document.querySelector("#sync-components").disabled = false;
+        }
+      }
+      document.querySelector("#sync-components").addEventListener("click", () => {
+        if (componentSyncBusy) return;
+        componentSyncStatus("正在读取 Pixso 组件事实…", "读取中");
+        parent.postMessage({ pluginMessage: { type: "SYNC_COMPONENTS" } }, "*");
+      });
+      document.querySelector("#component-health").addEventListener("click", async () => {
+        componentSyncStatus("正在检查本地 Bridge…", "检查中");
+        try {
+          const response = await fetch(`${bridgeUrl}/health`, { cache: "no-store" });
+          const result = await response.json();
+          if (!response.ok || !result.ok) throw new Error(result.error || `HTTP ${response.status}`);
+          componentSyncStatus(`Bridge 已连接；组件同步接口 ${result.componentSync?.enabled ? "已启用" : "未启用"}。`, "正常");
+        } catch (error) {
+          componentSyncStatus(`Bridge 暂不可用：${error.message}`, "连接失败");
+        }
+      });
+      const bridgeState = (online, message) => {
+        document.querySelector("#bridge-dot").classList.toggle("online", online);
+        document.querySelector("#bridge-state").textContent = message;
+      };
+      const setImportControls = ({ running = false, resetVisible = false, resetDisabled = false } = {}) => {
+        const pause = document.querySelector("#pause");
+        const reset = document.querySelector("#reset-import");
+        pause.disabled = !running;
+        pause.hidden = !running;
+        reset.hidden = !resetVisible;
+        reset.disabled = resetDisabled;
+      };
+      function postBridgeProgress(progress, resultReady = false) {
+        if (!bridgeRevision) return;
+        // Coalesce progress while a Bridge request is in flight. A fast page
+        // can emit several samples in one event-loop turn; keeping one latest
+        // payload prevents concurrent /progress requests from creating their
+        // own UI/Bridge backpressure and preserves result-ready priority.
+        pendingBridgeProgress = {
+          progress,
+          resultReady: Boolean(resultReady) || Boolean(pendingBridgeProgress?.resultReady),
+        };
+        void flushBridgeProgress();
+      }
+      async function flushBridgeProgress() {
+        if (bridgeProgressBusy || !pendingBridgeProgress || !bridgeRevision) return;
+        bridgeProgressBusy = true;
+        try {
+          while (pendingBridgeProgress && bridgeRevision) {
+            const payload = pendingBridgeProgress;
+            pendingBridgeProgress = null;
+            try {
+              const response = await fetch(`${bridgeUrl}/progress`, {
+                method: "POST",
+                headers: { "content-type": "application/json" },
+                body: JSON.stringify({ revision: bridgeRevision, progress: payload.progress, resultReady: payload.resultReady }),
+              });
+              if (!response.ok) {
+                pendingBridgeProgress = payload;
+                break;
+              }
+            } catch (_) {
+              pendingBridgeProgress = payload;
+              break;
+            }
+          }
+        } finally {
+          bridgeProgressBusy = false;
+        }
+      }
+      async function confirmBridgeStart() {
+        const pending = pendingBridgeStart;
+        if (!pending) return;
+        pendingBridgeStart = null;
+        try {
+          const response = await fetch(`${bridgeUrl}/start`, {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(pending),
+          });
+          const payload = await response.json().catch(() => ({}));
+          if (!response.ok || !payload.ok) throw new Error(payload.error ?? "领取计划后无法确认执行启动");
+          bridgeRevision = pending.revision ?? bridgeRevision;
+        } catch (error) {
+          bridgeBusy = false;
+          bridgeState(false, "等待连接");
+          status(`插件启动确认失败：${error.message ?? "网络请求失败"}`);
+          parent.postMessage({ pluginMessage: { type: "CANCEL_GENERATION" } }, "*");
+        }
+      }
+      const showBlockedState = (payload) => {
+        const labels = {
+          "plugin-runtime-mismatch": "需要更新插件",
+          "plugin-protocol-mismatch": "需要更新插件",
+          "plugin-disconnected": "插件未连接",
+          "stale-publication": payload.cleared ? "旧计划已清理" : "计划已失效",
+          "executor-route-locked": "计划已由其他执行器处理",
+          "native-plugin-required": "等待插件就绪",
+          "plugin-plan-schema-mismatch": "计划版本不兼容",
+          "plugin-capability-mismatch": "执行能力不足",
+          "publication-cancelled": "计划已取消",
+          "plugin-start-timeout": "插件启动超时",
+          "module-heartbeat-timeout": "模块心跳超时",
+          "result-ack-timeout": "结果确认超时",
+        };
+        bridgeState(true, labels[payload.reason] ?? "计划已阻断");
+        status(payload.error ?? "当前计划暂时不能执行，请由 Text-to-UI 发布一份新计划。");
+        setImportControls({ resetVisible: true });
+      };
+      const rememberBridgeResult = (payload) => {
+        pendingBridgeResult = payload;
+        try { localStorage.setItem(pendingResultStorageKey, JSON.stringify(payload)); } catch (_) {}
+      };
+      async function flushBridgeResult() {
+        if (!pendingBridgeResult || bridgeResultBusy) return;
+        bridgeResultBusy = true;
+        try {
+          const response = await fetch(`${bridgeUrl}/result`, {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(pendingBridgeResult)
+          });
+          const payload = await response.json().catch(() => ({}));
+          if (response.ok && payload.ok) {
+            pendingBridgeResult = null;
+            try { localStorage.removeItem(pendingResultStorageKey); } catch (_) {}
+          } else if (response.status === 409 && /revision|runId/.test(String(payload.error ?? ""))) {
+            pendingBridgeResult = null;
+            try { localStorage.removeItem(pendingResultStorageKey); } catch (_) {}
+            status(`执行结果对应的旧计划已被新计划取代：${payload.error}`);
+          }
+        } catch (_) {
+          // Keep the durable pending result and retry after the Bridge returns.
+        } finally {
+          bridgeResultBusy = false;
+        }
+      }
+      document.querySelector("#open").addEventListener("click", () => document.querySelector("#file").click());
+      document.querySelector("#file").addEventListener("change", async (event) => {
+        const file = event.target.files?.[0];
+        if (!file) return;
+        try {
+          plan = JSON.parse(await file.text());
+          if (!["pixso-operation-plan", "pixso-component-library-plan"].includes(plan.kind)) throw new Error("文件不是页面计划或 HTML 组件库计划");
+          const phases = (plan.phases ?? []).map((phase) => `${phase.label ?? phase.id} ${phase.operationCount}`).join(" → ");
+          const kindLabel = plan.kind === "pixso-component-library-plan" ? "HTML 组件库" : "页面";
+          status(`已载入 ${kindLabel}：${plan.page?.name ?? "页面"}\n${phases || `操作 ${plan.operations?.length ?? 0} 个`}`);
+          parent.postMessage({ pluginMessage: { type: "LOAD_PLAN", plan } }, "*");
+        } catch (error) { status(`载入失败：${error.message}`); }
+      });
+      document.querySelector("#generate").addEventListener("click", () => {
+        if (!plan) return status("请先选择 Operation Plan。");
+        parent.postMessage({ pluginMessage: { type: "GENERATE_PAGE" } }, "*");
+      });
+      document.querySelector("#new-version").addEventListener("click", () => {
+        if (!plan) return status("请先选择 Operation Plan。");
+        if (!confirm("将保留当前输出，并新建一个版本。是否继续？")) return;
+        parent.postMessage({ pluginMessage: { type: "GENERATE_NEW_VERSION" } }, "*");
+      });
+      document.querySelector("#pause").addEventListener("click", () => {
+        const button = document.querySelector("#pause");
+        button.disabled = true;
+        status("正在请求暂停；旧正式画板会保留，未完成草稿将清理。");
+        fetch(`${bridgeUrl}/cancel`, { method: "POST" }).catch(() => {});
+        if (!cancelSignalSent) {
+          cancelSignalSent = true;
+          parent.postMessage({ pluginMessage: { type: "CANCEL_GENERATION" } }, "*");
+        }
+      });
+      document.querySelector("#reset-import").addEventListener("click", async () => {
+        if (!confirm("将取消当前导入并复位插件状态；旧正式画板不会删除，未完成草稿会在当前小批次结束后清理。是否继续？")) return;
+        const button = document.querySelector("#reset-import");
+        const wasBusy = bridgeBusy || Boolean(pendingBridgeStart);
+        button.disabled = true;
+        ignoreRunningState = true;
+        ignoreLateResult = true;
+        pendingBridgeStart = null;
+        bridgeBusy = false;
+        executionProgress = null;
+        cancelSignalSent = true;
+        setImportControls({ resetVisible: false });
+        status(wasBusy
+          ? "已发送复位请求；当前 Pixso 小批次结束后会清理未完成草稿。若长时间不变，请关闭并重新打开插件。"
+          : "插件导入状态已复位；请由 Text-to-UI 发布一份新计划。旧正式画板未修改。");
+        try {
+          const response = await fetch(`${bridgeUrl}/cancel`, { method: "POST" });
+          if (!response.ok && response.status !== 404 && response.status !== 409) throw new Error(`HTTP ${response.status}`);
+        } catch (_) {
+          // The local UI reset remains useful when the Bridge has already
+          // expired the job or is temporarily unavailable.
+        }
+        if (wasBusy) parent.postMessage({ pluginMessage: { type: "CANCEL_GENERATION" } }, "*");
+      });
+      window.onmessage = (event) => {
+        const message = event.data?.pluginMessage;
+        if (message?.type === "RUNTIME_VERSION") {
+          runtimeVersion = String(message.version ?? "unknown");
+          operationPlanVersions = message.operationPlanVersions ?? operationPlanVersions;
+          capabilities = message.capabilities ?? capabilities;
+          blockedRevision = "";
+          bridgeRevision = "";
+          ignoreRunningState = false;
+          ignoreLateResult = false;
+          setImportControls();
+          document.querySelector("#runtime-version").textContent = `Kernel v${runtimeVersion} · 固定执行器 v${message.executorVersion ?? "1"}`;
+        }
+        if (message?.type === "STATUS") status(message.message);
+        if (message?.type === "COMPONENT_FACTS") {
+          latestComponentFacts = message.facts;
+          applyComponentFacts();
+        }
+        if (message?.type === "COMPONENT_SYNC_ERROR") {
+          componentSyncBusy = false;
+          document.querySelector("#sync-components").disabled = false;
+          componentSyncStatus(`组件事实读取失败：${message.message}`, "读取失败");
+        }
+        if (message?.type === "RUN_STATE") {
+          if (message.running && ignoreRunningState) {
+            parent.postMessage({ pluginMessage: { type: "CANCEL_GENERATION" } }, "*");
+            return;
+          }
+          if (!message.running && ignoreRunningState) ignoreRunningState = false;
+          document.querySelector("#pause").disabled = !message.running;
+          document.querySelector("#pause").hidden = !message.running;
+          if (message.running) {
+            cancelSignalSent = false;
+            bridgeBusy = true;
+            bridgeState(true, "正在导入，可暂停");
+            setImportControls({ running: true, resetVisible: true });
+            void confirmBridgeStart();
+          } else {
+            setImportControls({ resetVisible: false });
+          }
+        }
+        if (message?.type === "EXECUTION_PROGRESS") {
+          executionProgress = message.progress ?? executionProgress;
+          if (["operation-start", "layout-start"].includes(executionProgress?.activePhase ?? executionProgress?.phase)) {
+            status(`正在处理：${executionProgress.operationName ?? executionProgress.operationId}\n步骤：${executionProgress.activePhase ?? executionProgress.phase}；已完成 ${executionProgress.completedOperations}/${executionProgress.operationCount}`);
+          }
+          void postBridgeProgress(executionProgress);
+        }
+        if (message?.type === "AUTO_PLAN_RESULT") {
+          const lateAfterReset = ignoreLateResult;
+          bridgeRevision = message.revision ?? bridgeRevision;
+          void postBridgeProgress({
+            ...(executionProgress ?? { id: "result", label: "等待结果确认" }),
+            phase: "result-ready",
+            resultReadyAt: new Date().toISOString(),
+          }, true);
+          bridgeBusy = false;
+          ignoreRunningState = false;
+          setImportControls({ resetVisible: false });
+          if (lateAfterReset) {
+            status("旧导入结果已回收；当前面板保持复位状态，请发布一份新计划。");
+            rememberBridgeResult({ revision: message.revision, runId: message.runId, runtimeVersion: message.runtimeVersion ?? runtimeVersion, protocolVersion: message.protocolVersion ?? protocolVersion, ok: message.ok, result: message.result, error: message.error });
+            flushBridgeResult();
+            return;
+          }
+          if (message.ok) {
+            const iconFailures = message.result?.audit?.iconFailures?.length ?? 0;
+            const imageFailures = message.result?.audit?.imageFailures?.length ?? 0;
+            const assetFailures = iconFailures + imageFailures;
+            bridgeState(true, assetFailures ? `结构已同步，${assetFailures} 项资源待优化` : "已同步");
+            if (assetFailures) status(`主体结构已完成并提交；${iconFailures} 项图标、${imageFailures} 项图片进入后续优化，不会回滚已导入内容。`);
+          } else if (message.result?.phase === "paused") {
+            bridgeState(true, "已暂停");
+            const cleanup = message.result?.cleanup;
+            const cleanupText = cleanup?.status === "removed" ? "本次草稿已清理" : cleanup?.status === "not-created" ? "本次尚未创建草稿" : "草稿清理待确认";
+            status(`导入已暂停。${cleanupText}；旧正式画板保留。`);
+          } else {
+            bridgeState(true, "执行失败，已停止重试");
+            status(`自动生成失败：${message.error ?? "未知错误"}\n当前计划不会自动重试；Text-to-UI 发布新版本后再执行。`);
+          }
+          rememberBridgeResult({ revision: message.revision, runId: message.runId, runtimeVersion: message.runtimeVersion ?? runtimeVersion, protocolVersion: message.protocolVersion ?? protocolVersion, ok: message.ok, result: message.result, error: message.error });
+          flushBridgeResult();
+        }
+      };
+      async function pollBridge() {
+        if (!document.querySelector("#auto").checked || bridgeBusy || runtimeVersion === "unknown") return;
+        try {
+          const response = await fetch(`${bridgeUrl}/claim?after=${encodeURIComponent(bridgeRevision)}&session=${encodeURIComponent(bridgeSessionId)}&runtime=${encodeURIComponent(runtimeVersion)}&protocol=${protocolVersion}&capabilities=${encodeURIComponent(JSON.stringify(capabilities))}`, { cache: "no-store" });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const payload = await response.json();
+          if (payload.blocked) {
+            bridgeRevision = payload.revision ?? bridgeRevision;
+            blockedRevision = payload.revision ?? blockedRevision;
+            showBlockedState(payload);
+            return;
+          }
+          bridgeState(true, payload.changed ? "收到新计划" : "已连接");
+          if (payload.changed && payload.plan) {
+            ignoreRunningState = false;
+            ignoreLateResult = false;
+            bridgeBusy = true;
+            executionProgress = null;
+            // Claiming only reserves a short lease. The bridge moves the job
+            // The main Pixso executor confirms /start by posting RUN_STATE.
+            // Keeping the job in CLAIMED until that message arrives makes the
+            // 45-second startup deadline meaningful when the module is frozen.
+            pendingBridgeStart = { revision: payload.revision, claimToken: payload.claimToken, sessionId: bridgeSessionId };
+            bridgeRevision = payload.revision ?? bridgeRevision;
+            plan = payload.plan;
+            setImportControls({ resetVisible: true });
+            parent.postMessage({ pluginMessage: { type: "AUTO_PLAN", plan, revision: payload.revision } }, "*");
+          }
+        } catch (error) {
+          bridgeBusy = false;
+          setImportControls();
+          bridgeState(false, "等待连接");
+          status(`桥接暂不可用：${error.message ?? "网络请求失败"}`);
+        }
+      }
+      async function pollRunTelemetry() {
+        if (!document.querySelector("#auto").checked) return;
+        try {
+          const response = await fetch(`${bridgeUrl}/job`, { cache: "no-store" });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          renderRunTiming(await response.json());
+        } catch (_) {
+          document.querySelector("#run-timing").textContent = "等待 Bridge 计时数据。";
+        }
+      }
+      async function heartbeatBridge() {
+        if (!document.querySelector("#auto").checked) return;
+        try {
+          if (runtimeVersion === "unknown") return;
+          const response = await fetch(`${bridgeUrl}/session`, {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({
+              type: "HEARTBEAT",
+              sessionId: bridgeSessionId,
+              revision: bridgeRevision,
+              runtimeVersion,
+              kernelVersion: runtimeVersion,
+              protocolVersion,
+              operationPlanVersions,
+              capabilities
+            })
+          });
+          const payload = await response.json().catch(() => ({}));
+          if (payload.cancelRequested && bridgeBusy && !cancelSignalSent) {
+            cancelSignalSent = true;
+            parent.postMessage({ pluginMessage: { type: "CANCEL_GENERATION" } }, "*");
+          }
+        } catch (_) {}
+      }
+      setInterval(pollBridge, 1000);
+      setInterval(pollRunTelemetry, 1000);
+      setInterval(heartbeatBridge, 1000);
+      setInterval(flushBridgeResult, 1500);
+      window.addEventListener("focus", () => { heartbeatBridge(); pollBridge(); pollRunTelemetry(); flushBridgeResult(); });
+      document.addEventListener("visibilitychange", () => { if (!document.hidden) { heartbeatBridge(); pollBridge(); pollRunTelemetry(); flushBridgeResult(); } });
+      (async () => { await heartbeatBridge(); await pollBridge(); })();
+      pollRunTelemetry();
+      flushBridgeResult();
+    </script>
+  </body>
+</html>

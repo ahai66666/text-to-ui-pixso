@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "bridgeVersion": 1,
+  "target": { "pageName": "coremail", "frameNamePrefix": "Coremail Mail Workbench" },
+  "markerTransport": { "pluginDataKey": "text-to-ui-px-key", "nodeNamePrefix": "px-key:" },
+  "bindings": [
+    { "key": "page.root.surface", "token": "#FFFFFF", "property": "fills", "required": true },
+    { "key": "page.root.surface", "token": "neutral-light/100", "property": "fills", "required": true }
+  ],
+  "components": []
+}
