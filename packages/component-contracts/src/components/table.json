@@ -1,0 +1,104 @@
+{
+  "id": "table",
+  "logicalName": "Table/Default",
+  "variants": [
+    "default"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "focus",
+    "disabled",
+    "selected"
+  ],
+  "props": [
+    "title",
+    "columns",
+    "rows",
+    "label",
+    "value",
+    "disabled",
+    "state",
+    "className"
+  ],
+  "slots": [
+    "leading",
+    "title",
+    "description",
+    "content",
+    "trailing"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.surface",
+    "color.border",
+    "typography.body-l",
+    "spacing.component-gap",
+    "spacing.content-inset"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/index.js#table"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/index.js#table"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "display",
+  "categoryLabel": "展示类",
+  "order": 218,
+  "canonicalSection": "[data-runtime-category=\"display\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"display\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-table\"]",
+  "specimens": [
+    {
+      "id": "default",
+      "variant": "default",
+      "state": "default"
+    }
+  ],
+  "fixtureId": "fixture-table",
+  "surface": "white",
+  "sizing": "fill",
+  "behaviors": [
+    "focus",
+    "disabled"
+  ],
+  "iconSemantic": null,
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "data-display",
+  "canonicalSpecimen": "gallery:display:table",
+  "allowedStates": [
+    "default",
+    "hover",
+    "focus",
+    "disabled",
+    "selected"
+  ],
+  "textRoles": [
+    "header:body-m",
+    "cell:body-l"
+  ],
+  "iconSlots": [],
+  "iconAliases": [],
+  "comparisonGroup": "display"
+}

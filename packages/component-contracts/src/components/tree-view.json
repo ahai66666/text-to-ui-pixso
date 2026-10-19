@@ -1,0 +1,142 @@
+{
+  "id": "tree-view",
+  "logicalName": "Tree View/Default",
+  "variants": [
+    "default"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "focus",
+    "selected",
+    "expanded",
+    "disabled"
+  ],
+  "props": [
+    "nodes",
+    "selectedId",
+    "expandedIds",
+    "defaultSelectedId",
+    "defaultExpandedIds",
+    "disabled",
+    "onSelect",
+    "onToggle"
+  ],
+  "slots": [
+    "node-leading",
+    "node-label",
+    "node-trailing"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.text-muted",
+    "color.surface",
+    "color.border",
+    "color.primary",
+    "spacing.menu-item-content",
+    "size.tree-item-height",
+    "radius.subtab",
+    "typography.body-l",
+    "typography.body-m"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/index.js#treeView"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/index.js#treeView"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "navigation",
+  "categoryLabel": "导航类",
+  "order": 14.5,
+  "canonicalSection": "[data-runtime-category=\"navigation\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-tree-view\"]",
+  "legacyVisualGroup": "navigation",
+  "canonicalSpecimen": "gallery:navigation:tree-view",
+  "specimens": [
+    {
+      "id": "default",
+      "variant": "default",
+      "state": "default"
+    }
+  ],
+  "fixtureId": "fixture-tree-view",
+  "surface": "white",
+  "sizing": "fill",
+  "allowedStates": [
+    "default",
+    "hover",
+    "focus",
+    "selected",
+    "expanded",
+    "disabled"
+  ],
+  "behaviors": [
+    "select",
+    "toggle",
+    "arrow-keys",
+    "focus"
+  ],
+  "textRoles": [
+    "node-label:body-l",
+    "node-trailing:body-m"
+  ],
+  "iconAliases": [
+    "navigation/chevron-right",
+    "navigation/grid",
+    "object/file"
+  ],
+  "iconSlots": [
+    {
+      "alias": "navigation/chevron-right",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "navigation/grid",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "object/file",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconSemantic": "navigation/chevron-right",
+  "comparisonGroup": "navigation"
+}

@@ -1,0 +1,119 @@
+{
+  "id": "dropdown-menu",
+  "logicalName": "Dropdown Menu/Default",
+  "variants": [
+    "default"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "focus",
+    "disabled",
+    "open"
+  ],
+  "props": [
+    "label",
+    "value",
+    "disabled",
+    "state",
+    "className"
+  ],
+  "slots": [
+    "label",
+    "content",
+    "description"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.surface",
+    "color.border",
+    "typography.body-l",
+    "spacing.component-gap",
+    "shadow.overlay",
+    "radius.card"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/advanced.js#dropdown-menu"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/advanced.js#dropdown-menu"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "actions",
+  "categoryLabel": "操作类",
+  "order": 113,
+  "canonicalSection": "[data-runtime-category=\"actions\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"actions\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-dropdown-menu\"]",
+  "specimens": [
+    {
+      "id": "default",
+      "variant": "default",
+      "state": "default"
+    }
+  ],
+  "fixtureId": "fixture-dropdown-menu",
+  "surface": [
+    "white",
+    "gray"
+  ],
+  "sizing": "overlay",
+  "behaviors": [
+    "open",
+    "select",
+    "escape",
+    "arrow-keys"
+  ],
+  "iconSemantic": "action/more",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "overlays",
+  "canonicalSpecimen": "gallery:actions:dropdown-menu",
+  "allowedStates": [
+    "default",
+    "hover",
+    "focus",
+    "disabled",
+    "open"
+  ],
+  "textRoles": [
+    "title:title-s",
+    "content:body-l",
+    "description:body-m",
+    "help:body-s"
+  ],
+  "iconSlots": [
+    {
+      "alias": "action/more",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconAliases": [
+    "action/more"
+  ],
+  "comparisonGroup": "actions"
+}

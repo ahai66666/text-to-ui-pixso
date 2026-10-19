@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "kind": "text-to-ui-titlebar-scene-contracts",
+  "description": "Deterministic Titlebar scene presets. Every generated Pattern page has one renderer-owned Titlebar scene; page size selects the registered Titlebar variant while the scene owns segment placement, alignment, action ownership, and window controls.",
+  "pagePolicy": {
+    "required": true,
+    "defaultSize": "large",
+    "allowedSizes": ["medium", "large", "xlarge"],
+    "smallSizeRule": "Titlebar_S is reserved for standalone Secondary Page titlebars; it is not valid in a canonical Pattern page title layer."
+  },
+  "scenes": {
+    "pattern-a-two-pane": {
+      "id": "pattern-a-two-pane-default-titlebar",
+      "kind": "generic-pattern-page",
+      "titleLayer": {
+        "heightToken": "layout/titlebar-height",
+        "crossAxisAlignment": "center",
+        "segmentOrder": ["primary-navigation", "main-content"],
+        "sizePolicy": {
+          "defaultSize": "large",
+          "allowedSizes": ["medium", "large", "xlarge"]
+        }
+      },
+      "segments": [],
+      "rule": "one global Titlebar binding is mandatory; additional pane title segments are resolved from the Pattern contract"
+    },
+    "pattern-b-three-pane": {
+      "id": "pattern-b-three-pane-default-titlebar",
+      "titleLayer": {
+        "heightToken": "layout/titlebar-height",
+        "crossAxisAlignment": "center",
+        "segmentOrder": ["primary-navigation", "secondary-list", "main-detail"],
+        "sizePolicy": {
+          "defaultSize": "large",
+          "allowedSizes": ["medium", "large", "xlarge"]
+        }
+      },
+      "segments": [
+        {
+          "id": "primary-navigation",
+          "kind": "titlebar",
+          "patternSlot": "global-title-layer",
+          "semanticContexts": ["primary-navigation-titlebar", "global-titlebar"],
+          "layout": "three-column",
+          "segmentRole": "primary-navigation",
+          "windowControls": "forbidden",
+          "surfaceOwner": "pattern-runtime"
+        },
+        {
+          "id": "secondary-list",
+          "kind": "search",
+          "patternSlot": "secondary-list-title",
+          "semanticContext": "secondary-list-search",
+          "mode": "search",
+          "maxBindings": 1,
+          "crossAxisAlignment": "center",
+          "inlineInsetToken": "space/5",
+          "surfaceOwner": "pattern-runtime"
+        },
+        {
+          "id": "main-detail",
+          "kind": "titlebar",
+          "patternSlot": "main-detail-title",
+          "semanticContext": "main-detail-titlebar",
+          "layout": "three-column",
+          "segmentRole": "main-detail",
+          "businessActionSlot": "main-detail-actions",
+          "businessActionModes": ["icon", "icon-text-ghost"],
+          "businessActionMode": "uniform",
+          "defaultBusinessActionMode": "icon-text-ghost",
+          "overflow": "collapse-to-more",
+          "windowControls": {
+            "owner": "titlebar-component",
+            "component": "Icon Button/Ghost/Default",
+            "actions": ["minimize", "maximize", "close"],
+            "buttonSizeToken": "size/11",
+            "iconSizeToken": "size/7"
+          },
+          "surfaceOwner": "pattern-runtime"
+        }
+      ]
+    },
+    "pattern-c-tool-workspace": {
+      "id": "pattern-c-tool-workspace-default-titlebar",
+      "kind": "generic-pattern-page",
+      "titleLayer": {
+        "heightToken": "layout/titlebar-height",
+        "crossAxisAlignment": "center",
+        "segmentOrder": ["primary-navigation", "tool-workspace"],
+        "sizePolicy": {
+          "defaultSize": "large",
+          "allowedSizes": ["medium", "large", "xlarge"]
+        }
+      },
+      "segments": [],
+      "rule": "one global Titlebar binding is mandatory; additional pane title segments are resolved from the Pattern contract"
+    },
+    "pattern-d-inspector": {
+      "id": "pattern-d-inspector-default-titlebar",
+      "kind": "generic-pattern-page",
+      "titleLayer": {
+        "heightToken": "layout/titlebar-height",
+        "crossAxisAlignment": "center",
+        "segmentOrder": ["primary-navigation", "secondary-or-canvas", "main-content", "inspector"],
+        "sizePolicy": {
+          "defaultSize": "large",
+          "allowedSizes": ["medium", "large", "xlarge"]
+        }
+      },
+      "segments": [],
+      "rule": "one global Titlebar binding is mandatory; additional pane title segments are resolved from the Pattern contract"
+    }
+  }
+}

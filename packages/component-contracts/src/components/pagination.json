@@ -1,0 +1,123 @@
+{
+  "id": "pagination",
+  "logicalName": "Pagination/Default",
+  "variants": [
+    "default"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "focus",
+    "disabled"
+  ],
+  "props": [
+    "label",
+    "value",
+    "disabled",
+    "state",
+    "className"
+  ],
+  "slots": [
+    "label",
+    "content",
+    "description"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.surface",
+    "color.border",
+    "typography.body-l",
+    "spacing.component-gap",
+    "spacing.content-inset"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/index.js#pagination"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/index.js#pagination"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "navigation",
+  "categoryLabel": "导航类",
+  "order": 17,
+  "canonicalSection": "[data-runtime-category=\"navigation\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-pagination\"]",
+  "specimens": [
+    {
+      "id": "default",
+      "variant": "default",
+      "state": "default"
+    }
+  ],
+  "fixtureId": "fixture-pagination",
+  "surface": "white",
+  "sizing": "intrinsic",
+  "behaviors": [
+    "focus",
+    "disabled"
+  ],
+  "iconSemantic": "navigation/back",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "navigation",
+  "canonicalSpecimen": "gallery:navigation:pagination",
+  "allowedStates": [
+    "default",
+    "hover",
+    "focus",
+    "disabled"
+  ],
+  "textRoles": [
+    "title:title-s",
+    "content:body-l",
+    "description:body-m",
+    "help:body-s"
+  ],
+  "iconSlots": [
+    {
+      "slot": "previous",
+      "alias": "navigation/back",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "slot": "next",
+      "alias": "navigation/forward",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconAliases": [
+    "navigation/back",
+    "navigation/forward"
+  ],
+  "comparisonGroup": "navigation"
+}

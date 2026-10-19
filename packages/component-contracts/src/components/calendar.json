@@ -1,0 +1,111 @@
+{
+  "id": "calendar",
+  "logicalName": "Calendar/Default",
+  "variants": [
+    "default"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "focus",
+    "disabled"
+  ],
+  "props": [
+    "label",
+    "value",
+    "disabled",
+    "state",
+    "className"
+  ],
+  "slots": [
+    "label",
+    "content",
+    "description"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.surface",
+    "color.border",
+    "typography.body-l",
+    "spacing.component-gap",
+    "spacing.content-inset"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/advanced.js#calendar"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/advanced.js#calendar"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "choices",
+  "categoryLabel": "选择类",
+  "order": 419,
+  "canonicalSection": "[data-runtime-category=\"choices\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"choices\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-calendar\"]",
+  "specimens": [
+    {
+      "id": "default",
+      "variant": "default",
+      "state": "default"
+    }
+  ],
+  "fixtureId": "fixture-calendar",
+  "surface": "white",
+  "sizing": "intrinsic",
+  "behaviors": [
+    "select",
+    "arrow-keys"
+  ],
+  "iconSemantic": "field/calendar",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "loading-data",
+  "canonicalSpecimen": "gallery:choices:calendar",
+  "allowedStates": [
+    "default",
+    "hover",
+    "focus",
+    "disabled"
+  ],
+  "textRoles": [
+    "title:title-s",
+    "content:body-l",
+    "description:body-m",
+    "help:body-s"
+  ],
+  "iconSlots": [
+    {
+      "alias": "field/calendar",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconAliases": [
+    "field/calendar"
+  ],
+  "comparisonGroup": "choices"
+}

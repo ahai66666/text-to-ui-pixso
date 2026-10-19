@@ -1,0 +1,287 @@
+{
+  "id": "button",
+  "logicalName": "Button/Primary/Default",
+  "variants": [
+    "primary",
+    "secondary",
+    "ghost",
+    "danger"
+  ],
+  "sizes": [
+    "standard",
+    "small"
+  ],
+  "modes": [
+    "text",
+    "icon-text",
+    "icon",
+    "split-dropdown"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "pressed",
+    "focus",
+    "disabled"
+  ],
+  "props": [
+    "label",
+    "variant",
+    "size",
+    "mode",
+    "iconOnly",
+    "icon",
+    "iconSize",
+    "disabled",
+    "menuItems"
+  ],
+  "slots": [
+    "icon",
+    "label",
+    "trigger",
+    "menu"
+  ],
+  "tokenRoles": [
+    "color.primary",
+    "color.primary-text",
+    "color.text",
+    "size.button-height",
+    "size.button-sm-height",
+    "radius.button",
+    "spacing.padding-button-x",
+    "spacing.padding-button-sm-x",
+    "typography.body-m",
+    "typography.body-l"
+  ],
+  "sizePolicy": {
+    "defaultSize": "standard",
+    "defaultHeightToken": "size.button-height",
+    "defaultHeight": "40px",
+    "compactSize": "small",
+    "compactHeightToken": "size.button-sm-height",
+    "compactHeight": "28px",
+    "compactRequiresExplicitContract": true
+  },
+  "iconAliases": [
+    "action/add",
+    "action/download",
+    "action/settings",
+    "action/close",
+    "navigation/chevron-down",
+    "action/refresh",
+    "action/more"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/button.html"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/button.html"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "category": "actions",
+  "categoryLabel": "操作类",
+  "order": 110,
+  "canonicalSection": "[data-runtime-category=\"actions\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"actions\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-button\"]",
+  "legacyVisualGroup": "buttons",
+  "canonicalSpecimen": "gallery:actions:button",
+  "specimens": [
+    {
+      "id": "primary",
+      "variant": "primary",
+      "state": "default",
+      "mode": "text"
+    },
+    {
+      "id": "secondary",
+      "variant": "secondary",
+      "state": "default",
+      "mode": "text"
+    },
+    {
+      "id": "ghost",
+      "variant": "ghost",
+      "state": "default",
+      "mode": "text"
+    },
+    {
+      "id": "danger",
+      "variant": "danger",
+      "state": "default",
+      "mode": "text"
+    },
+    {
+      "id": "small-primary",
+      "variant": "primary",
+      "state": "default",
+      "mode": "text",
+      "size": "small"
+    },
+    {
+      "id": "small-secondary",
+      "variant": "secondary",
+      "state": "default",
+      "mode": "text",
+      "size": "small"
+    },
+    {
+      "id": "small-ghost",
+      "variant": "ghost",
+      "state": "default",
+      "mode": "text",
+      "size": "small"
+    },
+    {
+      "id": "small-danger",
+      "variant": "danger",
+      "state": "default",
+      "mode": "text",
+      "size": "small"
+    },
+    {
+      "id": "icon",
+      "variant": "ghost",
+      "state": "default",
+      "mode": "icon"
+    },
+    {
+      "id": "icon-text-primary",
+      "variant": "primary",
+      "state": "default",
+      "mode": "icon-text"
+    },
+    {
+      "id": "icon-text-secondary",
+      "variant": "secondary",
+      "state": "default",
+      "mode": "icon-text"
+    },
+    {
+      "id": "icon-text-ghost",
+      "variant": "ghost",
+      "state": "default",
+      "mode": "icon-text"
+    },
+    {
+      "id": "split-dropdown",
+      "variant": "ghost",
+      "state": "default",
+      "mode": "split-dropdown"
+    },
+    {
+      "id": "split-dropdown-icon",
+      "variant": "ghost",
+      "state": "default",
+      "mode": "split-dropdown",
+      "iconOnly": true
+    }
+  ],
+  "fixtureId": "fixture-button",
+  "surface": "white",
+  "sizing": "intrinsic",
+  "allowedStates": [
+    "default",
+    "hover",
+    "pressed",
+    "focus",
+    "disabled"
+  ],
+  "behaviors": [
+    "click",
+    "keyboard-activation",
+    "disabled"
+  ],
+  "textRoles": [
+    "label:body-l",
+    "small-label:body-m"
+  ],
+  "iconSlots": [
+    {
+      "alias": "action/add",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "action/download",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "action/settings",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "action/close",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "navigation/chevron-down",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "action/refresh",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "action/more",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconSemantic": "action/add",
+  "comparisonGroup": "actions"
+}

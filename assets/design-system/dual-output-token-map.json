@@ -1,0 +1,5457 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": [
+    "assets/design-system/tokens.*.json",
+    "assets/design-system/tokens.*.css",
+    "assets/design-system/pixso-variables.json",
+    "assets/design-system/token-runtime-map.json"
+  ],
+  "rules": {
+    "sourceOfTruth": "tokens.*.json",
+    "webRendering": "CSS custom properties",
+    "pixsoRendering": "local variable bindings",
+    "primitiveColorVariableCount": 56,
+    "semanticPixsoVariables": false,
+    "semanticColorPolicy": "Resolve semantic Web aliases to the same core Pixso variable; layered semantics bind one variable per paint layer.",
+    "hardcodedPageColors": false
+  },
+  "summary": {
+    "mappedPixsoVariables": 130,
+    "primitiveColors": 56,
+    "semanticColors": 99,
+    "semanticTokenMappings": 290
+  },
+  "variableMappings": [
+    {
+      "sourceToken": "tokens.colors.json:brand.05",
+      "webCssVariable": "--color-brand-05",
+      "webContractPath": null,
+      "pixsoVariable": "brand/05",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0A59F70C",
+      "pixsoValue": "#0A59F70C",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:brand.10",
+      "webCssVariable": "--color-brand-10",
+      "webContractPath": null,
+      "pixsoVariable": "brand/10",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0A59F719",
+      "pixsoValue": "#0A59F719",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:brand.15",
+      "webCssVariable": "--color-brand-15",
+      "webContractPath": null,
+      "pixsoVariable": "brand/15",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0A59F726",
+      "pixsoValue": "#0A59F726",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:brand.20",
+      "webCssVariable": "--color-brand-20",
+      "webContractPath": null,
+      "pixsoVariable": "brand/20",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0A59F733",
+      "pixsoValue": "#0A59F733",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:brand.30",
+      "webCssVariable": "--color-brand-30",
+      "webContractPath": null,
+      "pixsoVariable": "brand/30",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0A59F74D",
+      "pixsoValue": "#0A59F74D",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:brand.40",
+      "webCssVariable": "--color-brand-40",
+      "webContractPath": null,
+      "pixsoVariable": "brand/40",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0A59F766",
+      "pixsoValue": "#0A59F766",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:brand.50",
+      "webCssVariable": "--color-brand-50",
+      "webContractPath": null,
+      "pixsoVariable": "brand/50",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0A59F77F",
+      "pixsoValue": "#0A59F77F",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:brand.60",
+      "webCssVariable": "--color-brand-60",
+      "webContractPath": null,
+      "pixsoVariable": "brand/60",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0A59F799",
+      "pixsoValue": "#0A59F799",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:brand.70",
+      "webCssVariable": "--color-brand-70",
+      "webContractPath": null,
+      "pixsoVariable": "brand/70",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0A59F7B2",
+      "pixsoValue": "#0A59F7B2",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:brand.80",
+      "webCssVariable": "--color-brand-80",
+      "webContractPath": null,
+      "pixsoVariable": "brand/80",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0A59F7CC",
+      "pixsoValue": "#0A59F7CC",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:brand.90",
+      "webCssVariable": "--color-brand-90",
+      "webContractPath": null,
+      "pixsoVariable": "brand/90",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0A59F7E5",
+      "pixsoValue": "#0A59F7E5",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:brand.100",
+      "webCssVariable": "--color-brand-100",
+      "webContractPath": null,
+      "pixsoVariable": "brand/100",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-dark.05",
+      "webCssVariable": "--color-neutral-dark-05",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-dark/05",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-dark.10",
+      "webCssVariable": "--color-neutral-dark-10",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-dark/10",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-dark.15",
+      "webCssVariable": "--color-neutral-dark-15",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-dark/15",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#00000026",
+      "pixsoValue": "#00000026",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-dark.20",
+      "webCssVariable": "--color-neutral-dark-20",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-dark/20",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#00000033",
+      "pixsoValue": "#00000033",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-dark.30",
+      "webCssVariable": "--color-neutral-dark-30",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-dark/30",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0000004D",
+      "pixsoValue": "#0000004D",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-dark.40",
+      "webCssVariable": "--color-neutral-dark-40",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-dark/40",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#00000066",
+      "pixsoValue": "#00000066",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-dark.50",
+      "webCssVariable": "--color-neutral-dark-50",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-dark/50",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#0000007F",
+      "pixsoValue": "#0000007F",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-dark.60",
+      "webCssVariable": "--color-neutral-dark-60",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-dark/60",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#00000099",
+      "pixsoValue": "#00000099",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-dark.70",
+      "webCssVariable": "--color-neutral-dark-70",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-dark/70",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#000000B2",
+      "pixsoValue": "#000000B2",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-dark.80",
+      "webCssVariable": "--color-neutral-dark-80",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-dark/80",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#000000CC",
+      "pixsoValue": "#000000CC",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-dark.90",
+      "webCssVariable": "--color-neutral-dark-90",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-dark/90",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#000000E5",
+      "pixsoValue": "#000000E5",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-dark.100",
+      "webCssVariable": "--color-neutral-dark-100",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-dark/100",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#000000FF",
+      "pixsoValue": "#000000FF",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-light.05",
+      "webCssVariable": "--color-neutral-light-05",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-light/05",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#FFFFFF0C",
+      "pixsoValue": "#FFFFFF0C",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-light.10",
+      "webCssVariable": "--color-neutral-light-10",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-light/10",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#FFFFFF19",
+      "pixsoValue": "#FFFFFF19",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-light.15",
+      "webCssVariable": "--color-neutral-light-15",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-light/15",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#FFFFFF26",
+      "pixsoValue": "#FFFFFF26",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-light.20",
+      "webCssVariable": "--color-neutral-light-20",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-light/20",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#FFFFFF33",
+      "pixsoValue": "#FFFFFF33",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-light.30",
+      "webCssVariable": "--color-neutral-light-30",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-light/30",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#FFFFFF4D",
+      "pixsoValue": "#FFFFFF4D",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-light.40",
+      "webCssVariable": "--color-neutral-light-40",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-light/40",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#FFFFFF66",
+      "pixsoValue": "#FFFFFF66",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-light.50",
+      "webCssVariable": "--color-neutral-light-50",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-light/50",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#FFFFFF7F",
+      "pixsoValue": "#FFFFFF7F",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-light.60",
+      "webCssVariable": "--color-neutral-light-60",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-light/60",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#FFFFFF99",
+      "pixsoValue": "#FFFFFF99",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-light.70",
+      "webCssVariable": "--color-neutral-light-70",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-light/70",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#FFFFFFB2",
+      "pixsoValue": "#FFFFFFB2",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-light.80",
+      "webCssVariable": "--color-neutral-light-80",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-light/80",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#FFFFFFCC",
+      "pixsoValue": "#FFFFFFCC",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-light.90",
+      "webCssVariable": "--color-neutral-light-90",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-light/90",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#FFFFFFE5",
+      "pixsoValue": "#FFFFFFE5",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:neutral-light.100",
+      "webCssVariable": "--color-neutral-light-100",
+      "webContractPath": null,
+      "pixsoVariable": "neutral-light/100",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:function.success.10",
+      "webCssVariable": "--color-function-success-10",
+      "webContractPath": null,
+      "pixsoVariable": "function/success/10",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#64BB5C19",
+      "pixsoValue": "#64BB5C19",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:function.success.20",
+      "webCssVariable": "--color-function-success-20",
+      "webContractPath": null,
+      "pixsoVariable": "function/success/20",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#64BB5C33",
+      "pixsoValue": "#64BB5C33",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:function.success.100",
+      "webCssVariable": "--color-function-success-100",
+      "webContractPath": null,
+      "pixsoVariable": "function/success/100",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#64BB5CFF",
+      "pixsoValue": "#64BB5CFF",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:function.warning.10",
+      "webCssVariable": "--color-function-warning-10",
+      "webContractPath": null,
+      "pixsoVariable": "function/warning/10",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#ED6F2119",
+      "pixsoValue": "#ED6F2119",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:function.warning.20",
+      "webCssVariable": "--color-function-warning-20",
+      "webContractPath": null,
+      "pixsoVariable": "function/warning/20",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#ED6F2133",
+      "pixsoValue": "#ED6F2133",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:function.warning.100",
+      "webCssVariable": "--color-function-warning-100",
+      "webContractPath": null,
+      "pixsoVariable": "function/warning/100",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#ED6F21FF",
+      "pixsoValue": "#ED6F21FF",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:function.danger.10",
+      "webCssVariable": "--color-function-danger-10",
+      "webContractPath": null,
+      "pixsoVariable": "function/danger/10",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#E8402619",
+      "pixsoValue": "#E8402619",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:function.danger.20",
+      "webCssVariable": "--color-function-danger-20",
+      "webContractPath": null,
+      "pixsoVariable": "function/danger/20",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#E8402633",
+      "pixsoValue": "#E8402633",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:function.danger.100",
+      "webCssVariable": "--color-function-danger-100",
+      "webContractPath": null,
+      "pixsoVariable": "function/danger/100",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#E84026FF",
+      "pixsoValue": "#E84026FF",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:multi.01",
+      "webCssVariable": "--color-multi-01",
+      "webContractPath": null,
+      "pixsoVariable": "multi/01",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#564AF7",
+      "pixsoValue": "#564AF7",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:multi.02",
+      "webCssVariable": "--color-multi-02",
+      "webContractPath": null,
+      "pixsoVariable": "multi/02",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#46B1E3",
+      "pixsoValue": "#46B1E3",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:multi.03",
+      "webCssVariable": "--color-multi-03",
+      "webContractPath": null,
+      "pixsoVariable": "multi/03",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#61CFBE",
+      "pixsoValue": "#61CFBE",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:multi.04",
+      "webCssVariable": "--color-multi-04",
+      "webContractPath": null,
+      "pixsoVariable": "multi/04",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#A5D61D",
+      "pixsoValue": "#A5D61D",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:multi.05",
+      "webCssVariable": "--color-multi-05",
+      "webContractPath": null,
+      "pixsoVariable": "multi/05",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#AC49F5",
+      "pixsoValue": "#AC49F5",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:multi.06",
+      "webCssVariable": "--color-multi-06",
+      "webContractPath": null,
+      "pixsoVariable": "multi/06",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#E64566",
+      "pixsoValue": "#E64566",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:multi.07",
+      "webCssVariable": "--color-multi-07",
+      "webContractPath": null,
+      "pixsoVariable": "multi/07",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#F9A01E",
+      "pixsoValue": "#F9A01E",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:multi.08",
+      "webCssVariable": "--color-multi-08",
+      "webContractPath": null,
+      "pixsoVariable": "multi/08",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#F7CE00",
+      "pixsoValue": "#F7CE00",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:multi.09",
+      "webCssVariable": "--color-multi-09",
+      "webContractPath": null,
+      "pixsoVariable": "multi/09",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#64BB5C",
+      "pixsoValue": "#64BB5C",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:multi.10",
+      "webCssVariable": "--color-multi-10",
+      "webContractPath": null,
+      "pixsoVariable": "multi/10",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#E84026",
+      "pixsoValue": "#E84026",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:multi.11",
+      "webCssVariable": "--color-multi-11",
+      "webContractPath": null,
+      "pixsoVariable": "multi/11",
+      "collection": "Color",
+      "type": "color",
+      "resolvedValue": "#ED6F21",
+      "pixsoValue": "#ED6F21",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.spacing.json:space.0",
+      "webCssVariable": "--space-0",
+      "webContractPath": null,
+      "pixsoVariable": "space/0",
+      "collection": "Spacing",
+      "type": "number",
+      "resolvedValue": 0,
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.spacing.json:space.1",
+      "webCssVariable": "--space-1",
+      "webContractPath": null,
+      "pixsoVariable": "space/1",
+      "collection": "Spacing",
+      "type": "number",
+      "resolvedValue": 2,
+      "pixsoValue": 2,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.spacing.json:space.2",
+      "webCssVariable": "--space-2",
+      "webContractPath": null,
+      "pixsoVariable": "space/2",
+      "collection": "Spacing",
+      "type": "number",
+      "resolvedValue": 4,
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.spacing.json:space.3",
+      "webCssVariable": "--space-3",
+      "webContractPath": null,
+      "pixsoVariable": "space/3",
+      "collection": "Spacing",
+      "type": "number",
+      "resolvedValue": 8,
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.spacing.json:space.4",
+      "webCssVariable": "--space-4",
+      "webContractPath": null,
+      "pixsoVariable": "space/4",
+      "collection": "Spacing",
+      "type": "number",
+      "resolvedValue": 12,
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.spacing.json:space.5",
+      "webCssVariable": "--space-5",
+      "webContractPath": null,
+      "pixsoVariable": "space/5",
+      "collection": "Spacing",
+      "type": "number",
+      "resolvedValue": 16,
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.spacing.json:space.6",
+      "webCssVariable": "--space-6",
+      "webContractPath": null,
+      "pixsoVariable": "space/6",
+      "collection": "Spacing",
+      "type": "number",
+      "resolvedValue": 24,
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.spacing.json:space.7",
+      "webCssVariable": "--space-7",
+      "webContractPath": null,
+      "pixsoVariable": "space/7",
+      "collection": "Spacing",
+      "type": "number",
+      "resolvedValue": 32,
+      "pixsoValue": 32,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.1",
+      "webCssVariable": "--size-1",
+      "webContractPath": null,
+      "pixsoVariable": "size/04",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 4,
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.2",
+      "webCssVariable": "--size-2",
+      "webContractPath": null,
+      "pixsoVariable": "size/06",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 6,
+      "pixsoValue": 6,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.3",
+      "webCssVariable": "--size-3",
+      "webContractPath": null,
+      "pixsoVariable": "size/08",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 8,
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.4",
+      "webCssVariable": "--size-4",
+      "webContractPath": null,
+      "pixsoVariable": "size/12",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 12,
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.5",
+      "webCssVariable": "--size-5",
+      "webContractPath": null,
+      "pixsoVariable": "size/16",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 16,
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.6",
+      "webCssVariable": "--size-6",
+      "webContractPath": null,
+      "pixsoVariable": "size/20",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 20,
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.7",
+      "webCssVariable": "--size-7",
+      "webContractPath": null,
+      "pixsoVariable": "size/24",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 24,
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.8",
+      "webCssVariable": "--size-8",
+      "webContractPath": null,
+      "pixsoVariable": "size/28",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 28,
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.9",
+      "webCssVariable": "--size-9",
+      "webContractPath": null,
+      "pixsoVariable": "size/32",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 32,
+      "pixsoValue": 32,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.10",
+      "webCssVariable": "--size-10",
+      "webContractPath": null,
+      "pixsoVariable": "size/36",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 36,
+      "pixsoValue": 36,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.11",
+      "webCssVariable": "--size-11",
+      "webContractPath": null,
+      "pixsoVariable": "size/40",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 40,
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.12",
+      "webCssVariable": "--size-12",
+      "webContractPath": null,
+      "pixsoVariable": "size/44",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 44,
+      "pixsoValue": 44,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.13",
+      "webCssVariable": "--size-13",
+      "webContractPath": null,
+      "pixsoVariable": "size/48",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 48,
+      "pixsoValue": 48,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.14",
+      "webCssVariable": "--size-14",
+      "webContractPath": null,
+      "pixsoVariable": "size/56",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 56,
+      "pixsoValue": 56,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.15",
+      "webCssVariable": "--size-15",
+      "webContractPath": null,
+      "pixsoVariable": "size/64",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 64,
+      "pixsoValue": 64,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.16",
+      "webCssVariable": "--size-16",
+      "webContractPath": null,
+      "pixsoVariable": "size/72",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 72,
+      "pixsoValue": 72,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:size.17",
+      "webCssVariable": "--size-17",
+      "webContractPath": null,
+      "pixsoVariable": "size/80",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 80,
+      "pixsoValue": 80,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.icon.json:lucide.project-stroke-width-by-display-size.16",
+      "webCssVariable": "--icon-outline-stroke-width-16",
+      "webContractPath": null,
+      "pixsoVariable": "icon/stroke/16",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 1,
+      "pixsoValue": 1,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.icon.json:lucide.project-stroke-width-by-display-size.20",
+      "webCssVariable": "--icon-outline-stroke-width-20",
+      "webContractPath": null,
+      "pixsoVariable": "icon/stroke/20",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 1.25,
+      "pixsoValue": 1.25,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.icon.json:lucide.project-stroke-width-by-display-size.24",
+      "webCssVariable": "--icon-outline-stroke-width-24",
+      "webContractPath": null,
+      "pixsoVariable": "icon/stroke/24",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 1.5,
+      "pixsoValue": 1.5,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.radius.json:radius.0",
+      "webCssVariable": "--radius-0",
+      "webContractPath": null,
+      "pixsoVariable": "radius/0",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 0,
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.radius.json:radius.1",
+      "webCssVariable": "--radius-1",
+      "webContractPath": null,
+      "pixsoVariable": "radius/04",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 4,
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.radius.json:radius.2",
+      "webCssVariable": "--radius-2",
+      "webContractPath": null,
+      "pixsoVariable": "radius/06",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 6,
+      "pixsoValue": 6,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.radius.json:radius.3",
+      "webCssVariable": "--radius-3",
+      "webContractPath": null,
+      "pixsoVariable": "radius/08",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 8,
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.radius.json:radius.4",
+      "webCssVariable": "--radius-4",
+      "webContractPath": null,
+      "pixsoVariable": "radius/12",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 12,
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.radius.json:radius.5",
+      "webCssVariable": "--radius-5",
+      "webContractPath": null,
+      "pixsoVariable": "radius/16",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 16,
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.radius.json:radius.full",
+      "webCssVariable": "--radius-full",
+      "webContractPath": null,
+      "pixsoVariable": "radius/full",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 999,
+      "pixsoValue": 999,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.layout.json:shell.navigation-divider-width",
+      "webCssVariable": "--layout-navigation-divider-width",
+      "webContractPath": null,
+      "pixsoVariable": "layout/divider/0.5",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 0.5,
+      "pixsoValue": 0.5,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.layout.json:shell.sidebar-width",
+      "webCssVariable": "--layout-sidebar-width",
+      "webContractPath": null,
+      "pixsoVariable": "layout/width/240",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 240,
+      "pixsoValue": 240,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.layout.json:shell.secondary-pane-width",
+      "webCssVariable": "--layout-secondary-pane-width",
+      "webContractPath": null,
+      "pixsoVariable": "layout/width/360",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 360,
+      "pixsoValue": 360,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:modal.dialog-width",
+      "webCssVariable": "--width-dialog",
+      "webContractPath": null,
+      "pixsoVariable": "layout/width/400",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 400,
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:modal.width-s",
+      "webCssVariable": "--width-modal-sm",
+      "webContractPath": null,
+      "pixsoVariable": "layout/width/480",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 480,
+      "pixsoValue": 480,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:modal.width-m",
+      "webCssVariable": "--width-modal-md",
+      "webContractPath": null,
+      "pixsoVariable": "layout/width/640",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 640,
+      "pixsoValue": 640,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.size.json:modal.width-l",
+      "webCssVariable": "--width-modal-lg",
+      "webContractPath": null,
+      "pixsoVariable": "layout/width/800",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 800,
+      "pixsoValue": 800,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.layout.json:window.min-width",
+      "webCssVariable": "--layout-window-min-width",
+      "webContractPath": null,
+      "pixsoVariable": "layout/width/1100",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 1100,
+      "pixsoValue": 1100,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.layout.json:frame.width",
+      "webCssVariable": "--layout-frame-width",
+      "webContractPath": null,
+      "pixsoVariable": "layout/width/1728",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 1728,
+      "pixsoValue": 1728,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.layout.json:window.min-height",
+      "webCssVariable": "--layout-window-min-height",
+      "webContractPath": null,
+      "pixsoVariable": "layout/height/720",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 720,
+      "pixsoValue": 720,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.layout.json:frame.height",
+      "webCssVariable": "--layout-frame-height",
+      "webContractPath": null,
+      "pixsoVariable": "layout/height/1152",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 1152,
+      "pixsoValue": 1152,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.colors.json:semantic.state-disabled-opacity",
+      "webCssVariable": "--opacity-40",
+      "webContractPath": null,
+      "pixsoVariable": "opacity/40",
+      "collection": "Size & Layout",
+      "type": "number",
+      "resolvedValue": 0.4,
+      "pixsoValue": 40,
+      "valueTransform": "pixso-percent-to-css-unit-interval"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-family.sans",
+      "webCssVariable": "--font-sans",
+      "webContractPath": null,
+      "pixsoVariable": "font/family/sans",
+      "collection": "Typography",
+      "type": "string",
+      "resolvedValue": "HarmonyOS Sans",
+      "pixsoValue": "HarmonyOS Sans",
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-size.10",
+      "webCssVariable": "--font-size-10",
+      "webContractPath": null,
+      "pixsoVariable": "font/size/10",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 10,
+      "pixsoValue": 10,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-size.12",
+      "webCssVariable": "--font-size-12",
+      "webContractPath": null,
+      "pixsoVariable": "font/size/12",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 12,
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-size.14",
+      "webCssVariable": "--font-size-14",
+      "webContractPath": null,
+      "pixsoVariable": "font/size/14",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 14,
+      "pixsoValue": 14,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-size.16",
+      "webCssVariable": "--font-size-16",
+      "webContractPath": null,
+      "pixsoVariable": "font/size/16",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 16,
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-size.18",
+      "webCssVariable": "--font-size-18",
+      "webContractPath": null,
+      "pixsoVariable": "font/size/18",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 18,
+      "pixsoValue": 18,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-size.20",
+      "webCssVariable": "--font-size-20",
+      "webContractPath": null,
+      "pixsoVariable": "font/size/20",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 20,
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-size.24",
+      "webCssVariable": "--font-size-24",
+      "webContractPath": null,
+      "pixsoVariable": "font/size/24",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 24,
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-size.30",
+      "webCssVariable": "--font-size-30",
+      "webContractPath": null,
+      "pixsoVariable": "font/size/30",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 30,
+      "pixsoValue": 30,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-size.38",
+      "webCssVariable": "--font-size-38",
+      "webContractPath": null,
+      "pixsoVariable": "font/size/38",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 38,
+      "pixsoValue": 38,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-size.48",
+      "webCssVariable": "--font-size-48",
+      "webContractPath": null,
+      "pixsoVariable": "font/size/48",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 48,
+      "pixsoValue": 48,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-size.56",
+      "webCssVariable": "--font-size-56",
+      "webContractPath": null,
+      "pixsoVariable": "font/size/56",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 56,
+      "pixsoValue": 56,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:line-height.12",
+      "webCssVariable": "--line-height-12",
+      "webContractPath": null,
+      "pixsoVariable": "font/line-height/12",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 12,
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:line-height.14",
+      "webCssVariable": "--line-height-14",
+      "webContractPath": null,
+      "pixsoVariable": "font/line-height/14",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 14,
+      "pixsoValue": 14,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:line-height.16",
+      "webCssVariable": "--line-height-16",
+      "webContractPath": null,
+      "pixsoVariable": "font/line-height/16",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 16,
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:line-height.20",
+      "webCssVariable": "--line-height-20",
+      "webContractPath": null,
+      "pixsoVariable": "font/line-height/20",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 20,
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:line-height.22",
+      "webCssVariable": "--line-height-22",
+      "webContractPath": null,
+      "pixsoVariable": "font/line-height/22",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 22,
+      "pixsoValue": 22,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:line-height.24",
+      "webCssVariable": "--line-height-24",
+      "webContractPath": null,
+      "pixsoVariable": "font/line-height/24",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 24,
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:line-height.28",
+      "webCssVariable": "--line-height-28",
+      "webContractPath": null,
+      "pixsoVariable": "font/line-height/28",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 28,
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:line-height.36",
+      "webCssVariable": "--line-height-36",
+      "webContractPath": null,
+      "pixsoVariable": "font/line-height/36",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 36,
+      "pixsoValue": 36,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:line-height.44",
+      "webCssVariable": "--line-height-44",
+      "webContractPath": null,
+      "pixsoVariable": "font/line-height/44",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 44,
+      "pixsoValue": 44,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:line-height.58",
+      "webCssVariable": "--line-height-58",
+      "webContractPath": null,
+      "pixsoVariable": "font/line-height/58",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 58,
+      "pixsoValue": 58,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:line-height.66",
+      "webCssVariable": "--line-height-66",
+      "webContractPath": null,
+      "pixsoVariable": "font/line-height/66",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 66,
+      "pixsoValue": 66,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "webCssVariable": "--font-weight-400",
+      "webContractPath": null,
+      "pixsoVariable": "font/weight/400",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 400,
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-weight.500",
+      "webCssVariable": "--font-weight-500",
+      "webContractPath": null,
+      "pixsoVariable": "font/weight/500",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 500,
+      "pixsoValue": 500,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:font-weight.700",
+      "webCssVariable": "--font-weight-700",
+      "webContractPath": null,
+      "pixsoVariable": "font/weight/700",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 700,
+      "pixsoValue": 700,
+      "valueTransform": "identity"
+    },
+    {
+      "sourceToken": "tokens.typography.json:letter-spacing.normal",
+      "webCssVariable": "--letter-spacing-normal",
+      "webContractPath": null,
+      "pixsoVariable": "font/letter-spacing/0",
+      "collection": "Typography",
+      "type": "number",
+      "resolvedValue": 0,
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    }
+  ],
+  "semanticTokenMappings": [
+    {
+      "role": "action/primary/background",
+      "sourceToken": "tokens.colors.json:brand.100",
+      "webCssVariable": "--color-brand-100",
+      "pixsoVariable": "brand/100",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/text",
+      "sourceToken": "tokens.colors.json:semantic.text",
+      "webCssVariable": "--color-text",
+      "pixsoVariable": "neutral-dark/90",
+      "resolvedCssValue": "#000000E5",
+      "pixsoValue": "#000000E5",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/text-muted",
+      "sourceToken": "tokens.colors.json:semantic.text-muted",
+      "webCssVariable": "--color-text-muted",
+      "pixsoVariable": "neutral-dark/60",
+      "resolvedCssValue": "#00000099",
+      "pixsoValue": "#00000099",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/text-subtle",
+      "sourceToken": "tokens.colors.json:semantic.text-subtle",
+      "webCssVariable": "--color-text-subtle",
+      "pixsoVariable": "neutral-dark/40",
+      "resolvedCssValue": "#00000066",
+      "pixsoValue": "#00000066",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/text-inverse",
+      "sourceToken": "tokens.colors.json:semantic.text-inverse",
+      "webCssVariable": "--color-text-inverse",
+      "pixsoVariable": "neutral-light/100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/surface",
+      "sourceToken": "tokens.colors.json:semantic.surface",
+      "webCssVariable": "--color-surface",
+      "pixsoVariable": "neutral-light/100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/surface-muted",
+      "sourceToken": "tokens.colors.json:semantic.surface-muted",
+      "webCssVariable": "--color-surface-muted",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/sidebar-selected",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-selected",
+      "webCssVariable": "--color-sidebar-selected",
+      "pixsoVariable": "brand/10",
+      "resolvedCssValue": "#0A59F719",
+      "pixsoValue": "#0A59F719",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/state-layer-hover",
+      "sourceToken": "tokens.colors.json:semantic.state-layer-hover",
+      "webCssVariable": "--state-layer-hover",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/state-layer-pressed",
+      "sourceToken": "tokens.colors.json:semantic.state-layer-pressed",
+      "webCssVariable": "--state-layer-pressed",
+      "pixsoVariable": "neutral-dark/10",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/button-icon-label",
+      "sourceToken": "tokens.spacing.json:gap.button-icon-label",
+      "webCssVariable": "--gap-button-icon-label",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/button-group",
+      "sourceToken": "tokens.spacing.json:gap.button-group",
+      "webCssVariable": "--gap-button-group",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/field-label",
+      "sourceToken": "tokens.spacing.json:gap.field-label",
+      "webCssVariable": "--gap-field-label",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/form-field",
+      "sourceToken": "tokens.spacing.json:gap.form-field",
+      "webCssVariable": "--gap-form-field",
+      "pixsoVariable": "space/5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/button-x",
+      "sourceToken": "tokens.spacing.json:padding.button-x",
+      "webCssVariable": "--padding-button-x",
+      "pixsoVariable": "space/5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/card",
+      "sourceToken": "tokens.spacing.json:padding.card",
+      "webCssVariable": "--padding-card",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/table",
+      "sourceToken": "tokens.spacing.json:padding.table",
+      "webCssVariable": "--padding-table",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/button-height",
+      "sourceToken": "tokens.size.json:component.button-height",
+      "webCssVariable": "--height-button",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/icon/sm",
+      "sourceToken": "tokens.size.json:icon.sm",
+      "webCssVariable": "--icon-size-sm",
+      "pixsoVariable": "size/16",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/icon/md",
+      "sourceToken": "tokens.size.json:icon.md",
+      "webCssVariable": "--icon-size-md",
+      "pixsoVariable": "size/20",
+      "resolvedCssValue": "20px",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/icon/lg",
+      "sourceToken": "tokens.size.json:icon.lg",
+      "webCssVariable": "--icon-size-lg",
+      "pixsoVariable": "size/24",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/button",
+      "sourceToken": "tokens.radius.json:semantic.button",
+      "webCssVariable": "--radius-button",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/card",
+      "sourceToken": "tokens.radius.json:semantic.card",
+      "webCssVariable": "--radius-card",
+      "pixsoVariable": "radius/12",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/frame-width",
+      "sourceToken": "tokens.layout.json:frame.width",
+      "webCssVariable": "--layout-frame-width",
+      "pixsoVariable": "layout/width/1728",
+      "resolvedCssValue": "1728px",
+      "pixsoValue": 1728,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/frame-height",
+      "sourceToken": "tokens.layout.json:frame.height",
+      "webCssVariable": "--layout-frame-height",
+      "pixsoVariable": "layout/height/1152",
+      "resolvedCssValue": "1152px",
+      "pixsoValue": 1152,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/sidebar-expanded",
+      "sourceToken": "tokens.layout.json:shell.sidebar-width",
+      "webCssVariable": "--layout-sidebar-width",
+      "pixsoVariable": "layout/width/240",
+      "resolvedCssValue": "240px",
+      "pixsoValue": 240,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/sidebar-width-collapsed",
+      "sourceToken": "tokens.layout.json:shell.sidebar-width-collapsed",
+      "webCssVariable": "--layout-sidebar-width-collapsed",
+      "pixsoVariable": "size/64",
+      "resolvedCssValue": "64px",
+      "pixsoValue": 64,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/secondary-pane",
+      "sourceToken": "tokens.layout.json:shell.secondary-pane-width",
+      "webCssVariable": "--layout-secondary-pane-width",
+      "pixsoVariable": "layout/width/360",
+      "resolvedCssValue": "360px",
+      "pixsoValue": 360,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/navigation-divider",
+      "sourceToken": "tokens.layout.json:shell.navigation-divider-width",
+      "webCssVariable": "--layout-navigation-divider-width",
+      "pixsoVariable": "layout/divider/0.5",
+      "resolvedCssValue": "0.5px",
+      "pixsoValue": 0.5,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "opacity/disabled",
+      "sourceToken": "tokens.colors.json:semantic.state-disabled-opacity",
+      "webCssVariable": "--state-disabled-opacity",
+      "pixsoVariable": "opacity/40",
+      "resolvedCssValue": "0.4",
+      "pixsoValue": 40,
+      "valueTransform": "pixso-percent-to-css-unit-interval"
+    },
+    {
+      "role": "opacity/window-unfocus",
+      "sourceToken": "tokens.colors.json:semantic.state-disabled-opacity",
+      "webCssVariable": "--state-window-unfocus-opacity",
+      "pixsoVariable": "opacity/40",
+      "resolvedCssValue": "0.4",
+      "pixsoValue": 40,
+      "valueTransform": "pixso-percent-to-css-unit-interval"
+    },
+    {
+      "role": "color/bg",
+      "sourceToken": "tokens.colors.json:semantic.bg",
+      "webCssVariable": "--color-bg",
+      "pixsoVariable": "neutral-light/100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/bg-subtle",
+      "sourceToken": "tokens.colors.json:semantic.bg-subtle",
+      "webCssVariable": "--color-bg-subtle",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/surface-raised",
+      "sourceToken": "tokens.colors.json:semantic.surface-raised",
+      "webCssVariable": "--color-surface-raised",
+      "pixsoVariable": "neutral-light/100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/overlay",
+      "sourceToken": "tokens.colors.json:semantic.overlay",
+      "webCssVariable": "--color-overlay",
+      "pixsoVariable": "neutral-dark/40",
+      "resolvedCssValue": "#00000066",
+      "pixsoValue": "#00000066",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/secondary",
+      "sourceToken": "tokens.colors.json:semantic.secondary",
+      "webCssVariable": "--color-secondary",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/secondary-hover",
+      "sourceToken": "tokens.colors.json:semantic.secondary-hover",
+      "webCssVariable": "--color-secondary-hover",
+      "pixsoVariable": "neutral-dark/10",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/button-ghost-hover-bg",
+      "sourceToken": "tokens.colors.json:semantic.button-ghost-hover-bg",
+      "webCssVariable": "--color-button-ghost-hover-bg",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/button-ghost-text",
+      "sourceToken": "tokens.colors.json:semantic.button-ghost-text",
+      "webCssVariable": "--color-button-ghost-text",
+      "pixsoVariable": "brand/100",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/button-danger-text",
+      "sourceToken": "tokens.colors.json:semantic.button-danger-text",
+      "webCssVariable": "--color-button-danger-text",
+      "pixsoVariable": "function/danger/100",
+      "resolvedCssValue": "#E84026FF",
+      "pixsoValue": "#E84026FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/icon-text-button-ghost-hover-bg",
+      "sourceToken": "tokens.colors.json:semantic.icon-text-button-ghost-hover-bg",
+      "webCssVariable": "--color-icon-text-button-ghost-hover-bg",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/icon-text-button-ghost-content",
+      "sourceToken": "tokens.colors.json:semantic.icon-text-button-ghost-content",
+      "webCssVariable": "--color-icon-text-button-ghost-content",
+      "pixsoVariable": "neutral-dark/90",
+      "resolvedCssValue": "#000000E5",
+      "pixsoValue": "#000000E5",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/accent",
+      "sourceToken": "tokens.colors.json:semantic.accent",
+      "webCssVariable": "--color-accent",
+      "pixsoVariable": "brand/100",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/sidebar-bg",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-bg",
+      "webCssVariable": "--color-sidebar-bg",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/sidebar-accent",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-accent",
+      "webCssVariable": "--color-sidebar-accent",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/sidebar-accent-text",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-accent-text",
+      "webCssVariable": "--color-sidebar-accent-text",
+      "pixsoVariable": "brand/100",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/sidebar-selected-text",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-selected-text",
+      "webCssVariable": "--color-sidebar-selected-text",
+      "pixsoVariable": "brand/100",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/tab-list-bg",
+      "sourceToken": "tokens.colors.json:semantic.tab-list-bg",
+      "webCssVariable": "--color-tab-list-bg",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/tab-text",
+      "sourceToken": "tokens.colors.json:semantic.tab-text",
+      "webCssVariable": "--color-tab-text",
+      "pixsoVariable": "neutral-dark/60",
+      "resolvedCssValue": "#00000099",
+      "pixsoValue": "#00000099",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/tab-hover-bg",
+      "sourceToken": "tokens.colors.json:semantic.tab-hover-bg",
+      "webCssVariable": "--color-tab-hover-bg",
+      "pixsoVariable": "neutral-dark/10",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/tab-selected-bg",
+      "sourceToken": "tokens.colors.json:semantic.tab-selected-bg",
+      "webCssVariable": "--color-tab-selected-bg",
+      "pixsoVariable": "neutral-light/100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/tab-selected-text",
+      "sourceToken": "tokens.colors.json:semantic.tab-selected-text",
+      "webCssVariable": "--color-tab-selected-text",
+      "pixsoVariable": "neutral-dark/90",
+      "resolvedCssValue": "#000000E5",
+      "pixsoValue": "#000000E5",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/tooltip-bg",
+      "sourceToken": "tokens.colors.json:semantic.tooltip-bg",
+      "webCssVariable": "--color-tooltip-bg",
+      "pixsoVariable": "neutral-light/100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/tooltip-text",
+      "sourceToken": "tokens.colors.json:semantic.tooltip-text",
+      "webCssVariable": "--color-tooltip-text",
+      "pixsoVariable": "neutral-dark/90",
+      "resolvedCssValue": "#000000E5",
+      "pixsoValue": "#000000E5",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/input-bg",
+      "sourceToken": "tokens.colors.json:semantic.input-bg",
+      "webCssVariable": "--color-input-bg",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/input-bg-on-default",
+      "sourceToken": "tokens.colors.json:semantic.input-bg-on-default",
+      "webCssVariable": "--color-input-bg-on-default",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/input-hover-bg",
+      "sourceToken": "tokens.colors.json:semantic.input-hover-bg",
+      "webCssVariable": "--color-input-hover-bg",
+      "pixsoVariable": "neutral-dark/10",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/input-hover-bg-on-default",
+      "sourceToken": "tokens.colors.json:semantic.input-hover-bg-on-default",
+      "webCssVariable": "--color-input-hover-bg-on-default",
+      "pixsoVariable": "neutral-dark/10",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/input-focus-bg",
+      "sourceToken": "tokens.colors.json:semantic.input-focus-bg",
+      "webCssVariable": "--color-input-focus-bg",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/input-focus-bg-on-default",
+      "sourceToken": "tokens.colors.json:semantic.input-focus-bg-on-default",
+      "webCssVariable": "--color-input-focus-bg-on-default",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/input-error-bg",
+      "sourceToken": "tokens.colors.json:semantic.input-error-bg",
+      "webCssVariable": "--color-input-error-bg",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/input-error-bg-on-default",
+      "sourceToken": "tokens.colors.json:semantic.input-error-bg-on-default",
+      "webCssVariable": "--color-input-error-bg-on-default",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/input-bg-on-subtle",
+      "sourceToken": "tokens.colors.json:semantic.input-bg-on-subtle",
+      "webCssVariable": "--color-input-bg-on-subtle",
+      "pixsoVariable": "neutral-light/100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/input-hover-border-on-subtle",
+      "sourceToken": "tokens.colors.json:semantic.input-hover-border-on-subtle",
+      "webCssVariable": "--color-input-hover-border-on-subtle",
+      "pixsoVariable": "neutral-light/100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/input-focus-bg-on-subtle",
+      "sourceToken": "tokens.colors.json:semantic.input-focus-bg-on-subtle",
+      "webCssVariable": "--color-input-focus-bg-on-subtle",
+      "pixsoVariable": "neutral-light/100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/input-error-bg-on-subtle",
+      "sourceToken": "tokens.colors.json:semantic.input-error-bg-on-subtle",
+      "webCssVariable": "--color-input-error-bg-on-subtle",
+      "pixsoVariable": "neutral-light/100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/input-error-border",
+      "sourceToken": "tokens.colors.json:semantic.input-error-border",
+      "webCssVariable": "--color-input-error-border",
+      "pixsoVariable": "function/danger/100",
+      "resolvedCssValue": "#E84026FF",
+      "pixsoValue": "#E84026FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/text-brand",
+      "sourceToken": "tokens.colors.json:semantic.text-brand",
+      "webCssVariable": "--color-text-brand",
+      "pixsoVariable": "brand/100",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/link",
+      "sourceToken": "tokens.colors.json:semantic.link",
+      "webCssVariable": "--color-link",
+      "pixsoVariable": "neutral-dark/100",
+      "resolvedCssValue": "#000000FF",
+      "pixsoValue": "#000000FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/icon",
+      "sourceToken": "tokens.colors.json:semantic.icon",
+      "webCssVariable": "--color-icon",
+      "pixsoVariable": "neutral-dark/90",
+      "resolvedCssValue": "#000000E5",
+      "pixsoValue": "#000000E5",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/icon-muted",
+      "sourceToken": "tokens.colors.json:semantic.icon-muted",
+      "webCssVariable": "--color-icon-muted",
+      "pixsoVariable": "neutral-dark/60",
+      "resolvedCssValue": "#00000099",
+      "pixsoValue": "#00000099",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/icon-subtle",
+      "sourceToken": "tokens.colors.json:semantic.icon-subtle",
+      "webCssVariable": "--color-icon-subtle",
+      "pixsoVariable": "neutral-dark/40",
+      "resolvedCssValue": "#00000066",
+      "pixsoValue": "#00000066",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/icon-inverse",
+      "sourceToken": "tokens.colors.json:semantic.icon-inverse",
+      "webCssVariable": "--color-icon-inverse",
+      "pixsoVariable": "neutral-light/100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/border",
+      "sourceToken": "tokens.colors.json:semantic.border",
+      "webCssVariable": "--color-border",
+      "pixsoVariable": "neutral-dark/10",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/divider",
+      "sourceToken": "tokens.colors.json:semantic.divider",
+      "webCssVariable": "--color-divider",
+      "pixsoVariable": "neutral-dark/20",
+      "resolvedCssValue": "#00000033",
+      "pixsoValue": "#00000033",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/focus-ring",
+      "sourceToken": "tokens.colors.json:semantic.focus-ring",
+      "webCssVariable": "--color-focus-ring",
+      "pixsoVariable": "brand/100",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/primary",
+      "sourceToken": "tokens.colors.json:semantic.primary",
+      "webCssVariable": "--color-primary",
+      "pixsoVariable": "brand/100",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/primary-text",
+      "sourceToken": "tokens.colors.json:semantic.primary-text",
+      "webCssVariable": "--color-primary-text",
+      "pixsoVariable": "neutral-light/100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/success",
+      "sourceToken": "tokens.colors.json:semantic.success",
+      "webCssVariable": "--color-success",
+      "pixsoVariable": "function/success/100",
+      "resolvedCssValue": "#64BB5CFF",
+      "pixsoValue": "#64BB5CFF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/success-subtle",
+      "sourceToken": "tokens.colors.json:semantic.success-subtle",
+      "webCssVariable": "--color-success-subtle",
+      "pixsoVariable": "function/success/10",
+      "resolvedCssValue": "#64BB5C19",
+      "pixsoValue": "#64BB5C19",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/warning",
+      "sourceToken": "tokens.colors.json:semantic.warning",
+      "webCssVariable": "--color-warning",
+      "pixsoVariable": "function/warning/100",
+      "resolvedCssValue": "#ED6F21FF",
+      "pixsoValue": "#ED6F21FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/warning-subtle",
+      "sourceToken": "tokens.colors.json:semantic.warning-subtle",
+      "webCssVariable": "--color-warning-subtle",
+      "pixsoVariable": "function/warning/10",
+      "resolvedCssValue": "#ED6F2119",
+      "pixsoValue": "#ED6F2119",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/danger",
+      "sourceToken": "tokens.colors.json:semantic.danger",
+      "webCssVariable": "--color-danger",
+      "pixsoVariable": "function/danger/100",
+      "resolvedCssValue": "#E84026FF",
+      "pixsoValue": "#E84026FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/danger-subtle",
+      "sourceToken": "tokens.colors.json:semantic.danger-subtle",
+      "webCssVariable": "--color-danger-subtle",
+      "pixsoVariable": "function/danger/10",
+      "resolvedCssValue": "#E8402619",
+      "pixsoValue": "#E8402619",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/info",
+      "sourceToken": "tokens.colors.json:semantic.info",
+      "webCssVariable": "--color-info",
+      "pixsoVariable": "brand/100",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/info-subtle",
+      "sourceToken": "tokens.colors.json:semantic.info-subtle",
+      "webCssVariable": "--color-info-subtle",
+      "pixsoVariable": "brand/10",
+      "resolvedCssValue": "#0A59F719",
+      "pixsoValue": "#0A59F719",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/alert-neutral-subtle",
+      "sourceToken": "tokens.colors.json:semantic.alert-neutral-subtle",
+      "webCssVariable": "--color-alert-neutral-subtle",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/badge-neutral-bg",
+      "sourceToken": "tokens.colors.json:semantic.badge-neutral-bg",
+      "webCssVariable": "--color-badge-neutral-bg",
+      "pixsoVariable": "neutral-dark/10",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/badge-info-bg",
+      "sourceToken": "tokens.colors.json:semantic.badge-info-bg",
+      "webCssVariable": "--color-badge-info-bg",
+      "pixsoVariable": "brand/10",
+      "resolvedCssValue": "#0A59F719",
+      "pixsoValue": "#0A59F719",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/badge-success-text",
+      "sourceToken": "tokens.colors.json:semantic.badge-success-text",
+      "webCssVariable": "--color-badge-success-text",
+      "pixsoVariable": "function/success/100",
+      "resolvedCssValue": "#64BB5CFF",
+      "pixsoValue": "#64BB5CFF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/badge-success-bg",
+      "sourceToken": "tokens.colors.json:semantic.badge-success-bg",
+      "webCssVariable": "--color-badge-success-bg",
+      "pixsoVariable": "function/success/10",
+      "resolvedCssValue": "#64BB5C19",
+      "pixsoValue": "#64BB5C19",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/badge-warning-text",
+      "sourceToken": "tokens.colors.json:semantic.badge-warning-text",
+      "webCssVariable": "--color-badge-warning-text",
+      "pixsoVariable": "function/warning/100",
+      "resolvedCssValue": "#ED6F21FF",
+      "pixsoValue": "#ED6F21FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/badge-warning-bg",
+      "sourceToken": "tokens.colors.json:semantic.badge-warning-bg",
+      "webCssVariable": "--color-badge-warning-bg",
+      "pixsoVariable": "function/warning/10",
+      "resolvedCssValue": "#ED6F2119",
+      "pixsoValue": "#ED6F2119",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/badge-danger-text",
+      "sourceToken": "tokens.colors.json:semantic.badge-danger-text",
+      "webCssVariable": "--color-badge-danger-text",
+      "pixsoVariable": "function/danger/100",
+      "resolvedCssValue": "#E84026FF",
+      "pixsoValue": "#E84026FF",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/badge-danger-bg",
+      "sourceToken": "tokens.colors.json:semantic.badge-danger-bg",
+      "webCssVariable": "--color-badge-danger-bg",
+      "pixsoVariable": "function/danger/10",
+      "resolvedCssValue": "#E8402619",
+      "pixsoValue": "#E8402619",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/chart-1",
+      "sourceToken": "tokens.colors.json:semantic.chart-1",
+      "webCssVariable": "--color-chart-1",
+      "pixsoVariable": "multi/01",
+      "resolvedCssValue": "#564AF7",
+      "pixsoValue": "#564AF7",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/chart-2",
+      "sourceToken": "tokens.colors.json:semantic.chart-2",
+      "webCssVariable": "--color-chart-2",
+      "pixsoVariable": "multi/02",
+      "resolvedCssValue": "#46B1E3",
+      "pixsoValue": "#46B1E3",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/chart-3",
+      "sourceToken": "tokens.colors.json:semantic.chart-3",
+      "webCssVariable": "--color-chart-3",
+      "pixsoVariable": "multi/03",
+      "resolvedCssValue": "#61CFBE",
+      "pixsoValue": "#61CFBE",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/chart-4",
+      "sourceToken": "tokens.colors.json:semantic.chart-4",
+      "webCssVariable": "--color-chart-4",
+      "pixsoVariable": "multi/04",
+      "resolvedCssValue": "#A5D61D",
+      "pixsoValue": "#A5D61D",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/chart-5",
+      "sourceToken": "tokens.colors.json:semantic.chart-5",
+      "webCssVariable": "--color-chart-5",
+      "pixsoVariable": "multi/05",
+      "resolvedCssValue": "#AC49F5",
+      "pixsoValue": "#AC49F5",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/state-layer-selected",
+      "sourceToken": "tokens.colors.json:semantic.state-layer-selected",
+      "webCssVariable": "--state-layer-selected",
+      "pixsoVariable": "neutral-dark/10",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "color/state-layer-focus",
+      "sourceToken": "tokens.colors.json:semantic.state-layer-focus",
+      "webCssVariable": "--state-layer-focus",
+      "pixsoVariable": "brand/10",
+      "resolvedCssValue": "#0A59F719",
+      "pixsoValue": "#0A59F719",
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/list-item",
+      "sourceToken": "tokens.spacing.json:gap.list-item",
+      "webCssVariable": "--gap-list-item",
+      "pixsoVariable": "space/1",
+      "resolvedCssValue": "2px",
+      "pixsoValue": 2,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/selection-option",
+      "sourceToken": "tokens.spacing.json:gap.selection-option",
+      "webCssVariable": "--gap-selection-option",
+      "pixsoVariable": "space/1",
+      "resolvedCssValue": "2px",
+      "pixsoValue": 2,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/tabs-list",
+      "sourceToken": "tokens.spacing.json:gap.tabs-list",
+      "webCssVariable": "--gap-tabs-list",
+      "pixsoVariable": "space/1",
+      "resolvedCssValue": "2px",
+      "pixsoValue": 2,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/menu-item",
+      "sourceToken": "tokens.spacing.json:gap.menu-item",
+      "webCssVariable": "--gap-menu-item",
+      "pixsoVariable": "space/1",
+      "resolvedCssValue": "2px",
+      "pixsoValue": 2,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/nav-item",
+      "sourceToken": "tokens.spacing.json:gap.nav-item",
+      "webCssVariable": "--gap-nav-item",
+      "pixsoVariable": "space/1",
+      "resolvedCssValue": "2px",
+      "pixsoValue": 2,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/menu-item-content",
+      "sourceToken": "tokens.spacing.json:gap.menu-item-content",
+      "webCssVariable": "--gap-menu-item-content",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/breadcrumb-item",
+      "sourceToken": "tokens.spacing.json:gap.breadcrumb-item",
+      "webCssVariable": "--gap-breadcrumb-item",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/subtab-item",
+      "sourceToken": "tokens.spacing.json:gap.subtab-item",
+      "webCssVariable": "--gap-subtab-item",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/alert-content",
+      "sourceToken": "tokens.spacing.json:gap.alert-content",
+      "webCssVariable": "--gap-alert-content",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/choice-label",
+      "sourceToken": "tokens.spacing.json:gap.choice-label",
+      "webCssVariable": "--gap-choice-label",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/titlebar-brand",
+      "sourceToken": "tokens.spacing.json:gap.titlebar-brand",
+      "webCssVariable": "--gap-titlebar-brand",
+      "pixsoVariable": "space/4",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/cross-group-control",
+      "sourceToken": "tokens.spacing.json:gap.cross-group-control",
+      "webCssVariable": "--gap-cross-group-control",
+      "pixsoVariable": "space/5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/menu-section",
+      "sourceToken": "tokens.spacing.json:gap.menu-section",
+      "webCssVariable": "--gap-menu-section",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/gap/page-section",
+      "sourceToken": "tokens.spacing.json:gap.page-section",
+      "webCssVariable": "--gap-page-section",
+      "pixsoVariable": "space/7",
+      "resolvedCssValue": "32px",
+      "pixsoValue": 32,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/segmented-control",
+      "sourceToken": "tokens.spacing.json:padding.segmented-control",
+      "webCssVariable": "--padding-segmented-control",
+      "pixsoVariable": "space/1",
+      "resolvedCssValue": "2px",
+      "pixsoValue": 2,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/popup-menu",
+      "sourceToken": "tokens.spacing.json:padding.popup-menu",
+      "webCssVariable": "--padding-popup-menu",
+      "pixsoVariable": "space/2",
+      "resolvedCssValue": "4px",
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/list-card",
+      "sourceToken": "tokens.spacing.json:padding.list-card",
+      "webCssVariable": "--padding-list-card",
+      "pixsoVariable": "space/2",
+      "resolvedCssValue": "4px",
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/tooltip",
+      "sourceToken": "tokens.spacing.json:padding.tooltip",
+      "webCssVariable": "--padding-tooltip",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/alert",
+      "sourceToken": "tokens.spacing.json:padding.alert",
+      "webCssVariable": "--padding-alert",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/alert-left",
+      "sourceToken": "tokens.spacing.json:padding.alert-left",
+      "webCssVariable": "--padding-alert-left",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/alert-right",
+      "sourceToken": "tokens.spacing.json:padding.alert-right",
+      "webCssVariable": "--padding-alert-right",
+      "pixsoVariable": "space/2",
+      "resolvedCssValue": "4px",
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/selection-option",
+      "sourceToken": "tokens.spacing.json:padding.selection-option",
+      "webCssVariable": "--padding-selection-option",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/tab-x",
+      "sourceToken": "tokens.spacing.json:padding.tab-x",
+      "webCssVariable": "--padding-tab-x",
+      "pixsoVariable": "space/4",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/tab-panel",
+      "sourceToken": "tokens.spacing.json:padding.tab-panel",
+      "webCssVariable": "--padding-tab-panel",
+      "pixsoVariable": "space/5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/titlebar-leading",
+      "sourceToken": "tokens.spacing.json:padding.titlebar-leading",
+      "webCssVariable": "--padding-titlebar-leading",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/titlebar-trailing-s",
+      "sourceToken": "tokens.spacing.json:padding.titlebar-trailing-s",
+      "webCssVariable": "--padding-titlebar-trailing-s",
+      "pixsoVariable": "space/0",
+      "resolvedCssValue": "0px",
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/titlebar-trailing-m",
+      "sourceToken": "tokens.spacing.json:padding.titlebar-trailing-m",
+      "webCssVariable": "--padding-titlebar-trailing-m",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/titlebar-trailing-l",
+      "sourceToken": "tokens.spacing.json:padding.titlebar-trailing-l",
+      "webCssVariable": "--padding-titlebar-trailing-l",
+      "pixsoVariable": "space/4",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/titlebar-trailing-xl",
+      "sourceToken": "tokens.spacing.json:padding.titlebar-trailing-xl",
+      "webCssVariable": "--padding-titlebar-trailing-xl",
+      "pixsoVariable": "space/5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/button-sm-x",
+      "sourceToken": "tokens.spacing.json:padding.button-sm-x",
+      "webCssVariable": "--padding-button-sm-x",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/split-button-main-x",
+      "sourceToken": "tokens.spacing.json:padding.split-button-main-x",
+      "webCssVariable": "--padding-split-button-main-x",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/split-button-trigger",
+      "sourceToken": "tokens.spacing.json:padding.split-button-trigger",
+      "webCssVariable": "--padding-split-button-trigger",
+      "pixsoVariable": "space/0",
+      "resolvedCssValue": "0px",
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/list",
+      "sourceToken": "tokens.spacing.json:padding.list",
+      "webCssVariable": "--padding-list",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/tag-x",
+      "sourceToken": "tokens.spacing.json:padding.tag-x",
+      "webCssVariable": "--padding-tag-x",
+      "pixsoVariable": "space/4",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/select-x",
+      "sourceToken": "tokens.spacing.json:padding.select-x",
+      "webCssVariable": "--padding-select-x",
+      "pixsoVariable": "space/4",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/textarea-x",
+      "sourceToken": "tokens.spacing.json:padding.textarea-x",
+      "webCssVariable": "--padding-textarea-x",
+      "pixsoVariable": "space/4",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/textarea-y",
+      "sourceToken": "tokens.spacing.json:padding.textarea-y",
+      "webCssVariable": "--padding-textarea-y",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/search-x",
+      "sourceToken": "tokens.spacing.json:padding.search-x",
+      "webCssVariable": "--padding-search-x",
+      "pixsoVariable": "space/4",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/menu-item-x",
+      "sourceToken": "tokens.spacing.json:padding.menu-item-x",
+      "webCssVariable": "--padding-menu-item-x",
+      "pixsoVariable": "space/4",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/dialog",
+      "sourceToken": "tokens.spacing.json:padding.dialog",
+      "webCssVariable": "--padding-dialog",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/dialog-content",
+      "sourceToken": "tokens.spacing.json:padding.dialog-content",
+      "webCssVariable": "--padding-dialog-content",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/modal-content-x",
+      "sourceToken": "tokens.spacing.json:padding.modal-content-x",
+      "webCssVariable": "--padding-modal-content-x",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/modal-content-y",
+      "sourceToken": "tokens.spacing.json:padding.modal-content-y",
+      "webCssVariable": "--padding-modal-content-y",
+      "pixsoVariable": "space/0",
+      "resolvedCssValue": "0px",
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/modal-header-top",
+      "sourceToken": "tokens.spacing.json:padding.modal-header-top",
+      "webCssVariable": "--padding-modal-header-top",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/modal-header-x",
+      "sourceToken": "tokens.spacing.json:padding.modal-header-x",
+      "webCssVariable": "--padding-modal-header-x",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "spacing/padding/modal-footer-x",
+      "sourceToken": "tokens.spacing.json:padding.modal-footer-x",
+      "webCssVariable": "--padding-modal-footer-x",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/icon/xs",
+      "sourceToken": "tokens.size.json:icon.xs",
+      "webCssVariable": "--icon-size-xs",
+      "pixsoVariable": "size/12",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/indicator/notification-dot-sm",
+      "sourceToken": "tokens.size.json:indicator.notification-dot-sm",
+      "webCssVariable": "--notification-dot-sm",
+      "pixsoVariable": "size/06",
+      "resolvedCssValue": "6px",
+      "pixsoValue": 6,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/indicator/notification-badge-size",
+      "sourceToken": "tokens.size.json:indicator.notification-badge-size",
+      "webCssVariable": "--notification-badge-size",
+      "pixsoVariable": "size/16",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/indicator/checkbox-size",
+      "sourceToken": "tokens.size.json:indicator.checkbox-size",
+      "webCssVariable": "--checkbox-size",
+      "pixsoVariable": "size/20",
+      "resolvedCssValue": "20px",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/indicator/radio-size",
+      "sourceToken": "tokens.size.json:indicator.radio-size",
+      "webCssVariable": "--radio-size",
+      "pixsoVariable": "size/20",
+      "resolvedCssValue": "20px",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/indicator/switch-height",
+      "sourceToken": "tokens.size.json:indicator.switch-height",
+      "webCssVariable": "--switch-height",
+      "pixsoVariable": "size/20",
+      "resolvedCssValue": "20px",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/indicator/switch-width",
+      "sourceToken": "tokens.size.json:indicator.switch-width",
+      "webCssVariable": "--switch-width",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/indicator/badge-height",
+      "sourceToken": "tokens.size.json:indicator.badge-height",
+      "webCssVariable": "--height-badge",
+      "pixsoVariable": "size/24",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/indicator/progress-height",
+      "sourceToken": "tokens.size.json:indicator.progress-height",
+      "webCssVariable": "--height-progress",
+      "pixsoVariable": "size/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/indicator/avatar-sm-size",
+      "sourceToken": "tokens.size.json:indicator.avatar-sm-size",
+      "webCssVariable": "--size-avatar-sm",
+      "pixsoVariable": "size/32",
+      "resolvedCssValue": "32px",
+      "pixsoValue": 32,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/indicator/avatar-md-size",
+      "sourceToken": "tokens.size.json:indicator.avatar-md-size",
+      "webCssVariable": "--size-avatar-md",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/button-sm-height",
+      "sourceToken": "tokens.size.json:component.button-sm-height",
+      "webCssVariable": "--height-button-sm",
+      "pixsoVariable": "size/28",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/input-sm-height",
+      "sourceToken": "tokens.size.json:component.input-sm-height",
+      "webCssVariable": "--height-input-sm",
+      "pixsoVariable": "size/28",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/select-sm-height",
+      "sourceToken": "tokens.size.json:component.select-sm-height",
+      "webCssVariable": "--height-select-sm",
+      "pixsoVariable": "size/28",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/search-sm-height",
+      "sourceToken": "tokens.size.json:component.search-sm-height",
+      "webCssVariable": "--height-search-sm",
+      "pixsoVariable": "size/28",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/tag-height",
+      "sourceToken": "tokens.size.json:component.tag-height",
+      "webCssVariable": "--height-tag",
+      "pixsoVariable": "size/28",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/selection-option-height",
+      "sourceToken": "tokens.size.json:component.selection-option-height",
+      "webCssVariable": "--height-selection-option",
+      "pixsoVariable": "size/28",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/selection-block-height",
+      "sourceToken": "tokens.size.json:component.selection-block-height",
+      "webCssVariable": "--height-selection-block",
+      "pixsoVariable": "size/32",
+      "resolvedCssValue": "32px",
+      "pixsoValue": 32,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/chips-tab-height",
+      "sourceToken": "tokens.size.json:component.chips-tab-height",
+      "webCssVariable": "--height-chips-tab",
+      "pixsoVariable": "size/36",
+      "resolvedCssValue": "36px",
+      "pixsoValue": 36,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/tab-line-height",
+      "sourceToken": "tokens.size.json:component.tab-line-height",
+      "webCssVariable": "--height-tab-line",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/tab-vertical-height",
+      "sourceToken": "tokens.size.json:component.tab-vertical-height",
+      "webCssVariable": "--height-tab-vertical",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/menu-item-height",
+      "sourceToken": "tokens.size.json:component.menu-item-height",
+      "webCssVariable": "--height-menu-item",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/list-item-height",
+      "sourceToken": "tokens.size.json:component.list-item-height",
+      "webCssVariable": "--height-list-item",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/list-item-single-line-height",
+      "sourceToken": "tokens.size.json:component.list-item-single-line-height",
+      "webCssVariable": "--height-list-item-single-line",
+      "pixsoVariable": "size/48",
+      "resolvedCssValue": "48px",
+      "pixsoValue": 48,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/list-item-double-line-height",
+      "sourceToken": "tokens.size.json:component.list-item-double-line-height",
+      "webCssVariable": "--height-list-item-double-line",
+      "pixsoVariable": "size/56",
+      "resolvedCssValue": "56px",
+      "pixsoValue": 56,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/list-item-triple-line-height",
+      "sourceToken": "tokens.size.json:component.list-item-triple-line-height",
+      "webCssVariable": "--height-list-item-triple-line",
+      "pixsoVariable": "size/80",
+      "resolvedCssValue": "80px",
+      "pixsoValue": 80,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/list-heading-height",
+      "sourceToken": "tokens.size.json:component.list-heading-height",
+      "webCssVariable": "--height-list-heading",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/tree-item-height",
+      "sourceToken": "tokens.size.json:component.tree-item-height",
+      "webCssVariable": "--height-tree-item",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/icon-button-size",
+      "sourceToken": "tokens.size.json:component.icon-button-size",
+      "webCssVariable": "--size-icon-button",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/icon-text-button-height",
+      "sourceToken": "tokens.size.json:component.icon-text-button-height",
+      "webCssVariable": "--height-icon-text-button",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/dropdown-control-height",
+      "sourceToken": "tokens.size.json:component.dropdown-control-height",
+      "webCssVariable": "--height-dropdown-control",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/split-button-trigger-width",
+      "sourceToken": "tokens.size.json:component.split-button-trigger-width",
+      "webCssVariable": "--width-split-button-trigger",
+      "pixsoVariable": "size/16",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/select-height",
+      "sourceToken": "tokens.size.json:component.select-height",
+      "webCssVariable": "--height-select",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/search-height",
+      "sourceToken": "tokens.size.json:component.search-height",
+      "webCssVariable": "--height-search",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/input-height",
+      "sourceToken": "tokens.size.json:component.input-height",
+      "webCssVariable": "--height-input",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/textarea-min-height",
+      "sourceToken": "tokens.size.json:component.textarea-min-height",
+      "webCssVariable": "--min-height-textarea",
+      "pixsoVariable": "size/80",
+      "resolvedCssValue": "80px",
+      "pixsoValue": 80,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/alert-height",
+      "sourceToken": "tokens.size.json:component.alert-height",
+      "webCssVariable": "--height-alert",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/alert-min-height",
+      "sourceToken": "tokens.size.json:component.alert-min-height",
+      "webCssVariable": "--min-height-alert",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/snackbar-height",
+      "sourceToken": "tokens.size.json:component.snackbar-height",
+      "webCssVariable": "--height-snackbar",
+      "pixsoVariable": "size/48",
+      "resolvedCssValue": "48px",
+      "pixsoValue": 48,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/pagination-item-height",
+      "sourceToken": "tokens.size.json:component.pagination-item-height",
+      "webCssVariable": "--height-pagination-item",
+      "pixsoVariable": "size/32",
+      "resolvedCssValue": "32px",
+      "pixsoValue": 32,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/table-header-height",
+      "sourceToken": "tokens.size.json:component.table-header-height",
+      "webCssVariable": "--height-table-header",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/table-row-height",
+      "sourceToken": "tokens.size.json:component.table-row-height",
+      "webCssVariable": "--height-table-row",
+      "pixsoVariable": "size/48",
+      "resolvedCssValue": "48px",
+      "pixsoValue": 48,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/titlebar-sm-height",
+      "sourceToken": "tokens.size.json:component.titlebar-sm-height",
+      "webCssVariable": "--height-titlebar-sm",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/titlebar-md-height",
+      "sourceToken": "tokens.size.json:component.titlebar-md-height",
+      "webCssVariable": "--height-titlebar-md",
+      "pixsoVariable": "size/56",
+      "resolvedCssValue": "56px",
+      "pixsoValue": 56,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/titlebar-lg-height",
+      "sourceToken": "tokens.size.json:component.titlebar-lg-height",
+      "webCssVariable": "--height-titlebar-lg",
+      "pixsoVariable": "size/64",
+      "resolvedCssValue": "64px",
+      "pixsoValue": 64,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/titlebar-xl-height",
+      "sourceToken": "tokens.size.json:component.titlebar-xl-height",
+      "webCssVariable": "--height-titlebar-xl",
+      "pixsoVariable": "size/72",
+      "resolvedCssValue": "72px",
+      "pixsoValue": 72,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/dialog-header-height",
+      "sourceToken": "tokens.size.json:component.dialog-header-height",
+      "webCssVariable": "--height-dialog-header",
+      "pixsoVariable": "size/56",
+      "resolvedCssValue": "56px",
+      "pixsoValue": 56,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/modal-header-height",
+      "sourceToken": "tokens.size.json:component.modal-header-height",
+      "webCssVariable": "--height-modal-header",
+      "pixsoVariable": "size/56",
+      "resolvedCssValue": "56px",
+      "pixsoValue": 56,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/component/modal-footer-height",
+      "sourceToken": "tokens.size.json:component.modal-footer-height",
+      "webCssVariable": "--height-modal-footer",
+      "pixsoVariable": "size/80",
+      "resolvedCssValue": "80px",
+      "pixsoValue": 80,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/modal/width-s",
+      "sourceToken": "tokens.size.json:modal.width-s",
+      "webCssVariable": "--width-modal-sm",
+      "pixsoVariable": "layout/width/480",
+      "resolvedCssValue": "480px",
+      "pixsoValue": 480,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/modal/width-m",
+      "sourceToken": "tokens.size.json:modal.width-m",
+      "webCssVariable": "--width-modal-md",
+      "pixsoVariable": "layout/width/640",
+      "resolvedCssValue": "640px",
+      "pixsoValue": 640,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/modal/width-l",
+      "sourceToken": "tokens.size.json:modal.width-l",
+      "webCssVariable": "--width-modal-lg",
+      "pixsoVariable": "layout/width/800",
+      "resolvedCssValue": "800px",
+      "pixsoValue": 800,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "size/modal/dialog-width",
+      "sourceToken": "tokens.size.json:modal.dialog-width",
+      "webCssVariable": "--width-dialog",
+      "pixsoVariable": "layout/width/400",
+      "resolvedCssValue": "400px",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/popup-menu-item",
+      "sourceToken": "tokens.radius.json:semantic.popup-menu-item",
+      "webCssVariable": "--radius-popup-menu-item",
+      "pixsoVariable": "radius/04",
+      "resolvedCssValue": "4px",
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/checkbox",
+      "sourceToken": "tokens.radius.json:semantic.checkbox",
+      "webCssVariable": "--radius-checkbox",
+      "pixsoVariable": "radius/04",
+      "resolvedCssValue": "4px",
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/subtab",
+      "sourceToken": "tokens.radius.json:semantic.subtab",
+      "webCssVariable": "--radius-subtab",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/sidebar-nav-item",
+      "sourceToken": "tokens.radius.json:semantic.sidebar-nav-item",
+      "webCssVariable": "--radius-sidebar-nav-item",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/icon-text-button",
+      "sourceToken": "tokens.radius.json:semantic.icon-text-button",
+      "webCssVariable": "--radius-icon-text-button",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/icon-button",
+      "sourceToken": "tokens.radius.json:semantic.icon-button",
+      "webCssVariable": "--radius-icon-button",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/status-button",
+      "sourceToken": "tokens.radius.json:semantic.status-button",
+      "webCssVariable": "--radius-status-button",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/dropdown-button",
+      "sourceToken": "tokens.radius.json:semantic.dropdown-button",
+      "webCssVariable": "--radius-dropdown-button",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/alert",
+      "sourceToken": "tokens.radius.json:semantic.alert",
+      "webCssVariable": "--radius-alert",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/select",
+      "sourceToken": "tokens.radius.json:semantic.select",
+      "webCssVariable": "--radius-select",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/input",
+      "sourceToken": "tokens.radius.json:semantic.input",
+      "webCssVariable": "--radius-input",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/textarea",
+      "sourceToken": "tokens.radius.json:semantic.textarea",
+      "webCssVariable": "--radius-textarea",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/tooltip",
+      "sourceToken": "tokens.radius.json:semantic.tooltip",
+      "webCssVariable": "--radius-tooltip",
+      "pixsoVariable": "radius/06",
+      "resolvedCssValue": "6px",
+      "pixsoValue": 6,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/search",
+      "sourceToken": "tokens.radius.json:semantic.search",
+      "webCssVariable": "--radius-search",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/number-input",
+      "sourceToken": "tokens.radius.json:semantic.number-input",
+      "webCssVariable": "--radius-number-input",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/tag",
+      "sourceToken": "tokens.radius.json:semantic.tag",
+      "webCssVariable": "--radius-tag",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/selection-block",
+      "sourceToken": "tokens.radius.json:semantic.selection-block",
+      "webCssVariable": "--radius-selection-block",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/selection-option",
+      "sourceToken": "tokens.radius.json:semantic.selection-option",
+      "webCssVariable": "--radius-selection-option",
+      "pixsoVariable": "radius/06",
+      "resolvedCssValue": "6px",
+      "pixsoValue": 6,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/tab",
+      "sourceToken": "tokens.radius.json:semantic.tab",
+      "webCssVariable": "--radius-tab",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/list",
+      "sourceToken": "tokens.radius.json:semantic.list",
+      "webCssVariable": "--radius-list",
+      "pixsoVariable": "radius/12",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/list-item",
+      "sourceToken": "tokens.radius.json:semantic.list-item",
+      "webCssVariable": "--radius-list-item",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/badge",
+      "sourceToken": "tokens.radius.json:semantic.badge",
+      "webCssVariable": "--radius-badge",
+      "pixsoVariable": "radius/full",
+      "resolvedCssValue": "999px",
+      "pixsoValue": 999,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/progress",
+      "sourceToken": "tokens.radius.json:semantic.progress",
+      "webCssVariable": "--radius-progress",
+      "pixsoVariable": "radius/full",
+      "resolvedCssValue": "999px",
+      "pixsoValue": 999,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/avatar",
+      "sourceToken": "tokens.radius.json:semantic.avatar",
+      "webCssVariable": "--radius-avatar",
+      "pixsoVariable": "radius/full",
+      "resolvedCssValue": "999px",
+      "pixsoValue": 999,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/table",
+      "sourceToken": "tokens.radius.json:semantic.table",
+      "webCssVariable": "--radius-table",
+      "pixsoVariable": "radius/12",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/pagination-item",
+      "sourceToken": "tokens.radius.json:semantic.pagination-item",
+      "webCssVariable": "--radius-pagination-item",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/dialog",
+      "sourceToken": "tokens.radius.json:semantic.dialog",
+      "webCssVariable": "--radius-dialog",
+      "pixsoVariable": "radius/16",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "radius/modal",
+      "sourceToken": "tokens.radius.json:semantic.modal",
+      "webCssVariable": "--radius-modal",
+      "pixsoVariable": "radius/16",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/window-min-width",
+      "sourceToken": "tokens.layout.json:window.min-width",
+      "webCssVariable": "--layout-window-min-width",
+      "pixsoVariable": "layout/width/1100",
+      "resolvedCssValue": "1100px",
+      "pixsoValue": 1100,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/window-min-height",
+      "sourceToken": "tokens.layout.json:window.min-height",
+      "webCssVariable": "--layout-window-min-height",
+      "pixsoVariable": "layout/height/720",
+      "resolvedCssValue": "720px",
+      "pixsoValue": 720,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/titlebar-height",
+      "sourceToken": "tokens.layout.json:shell.titlebar-height",
+      "webCssVariable": "--layout-titlebar-height",
+      "pixsoVariable": "size/64",
+      "resolvedCssValue": "64px",
+      "pixsoValue": 64,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/sidebar-width-wide",
+      "sourceToken": "tokens.layout.json:shell.sidebar-width-wide",
+      "webCssVariable": "--layout-sidebar-width-wide",
+      "pixsoVariable": "layout/width/360",
+      "resolvedCssValue": "360px",
+      "pixsoValue": 360,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/main-content-padding-x",
+      "sourceToken": "tokens.layout.json:spacing.main-content-padding-x",
+      "webCssVariable": "--layout-main-content-padding-x",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/main-content-padding-top",
+      "sourceToken": "tokens.layout.json:spacing.main-content-padding-top",
+      "webCssVariable": "--layout-main-content-padding-top",
+      "pixsoVariable": "space/5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/main-content-padding-bottom",
+      "sourceToken": "tokens.layout.json:spacing.main-content-padding-bottom",
+      "webCssVariable": "--layout-main-content-padding-bottom",
+      "pixsoVariable": "space/0",
+      "resolvedCssValue": "0px",
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/header-padding-x",
+      "sourceToken": "tokens.layout.json:spacing.header-padding-x",
+      "webCssVariable": "--layout-header-padding-x",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/main-title-leading-padding",
+      "sourceToken": "tokens.layout.json:spacing.main-title-leading-padding",
+      "webCssVariable": "--layout-main-title-leading-padding",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/main-detail-action-leading-padding",
+      "sourceToken": "tokens.layout.json:spacing.main-detail-action-leading-padding",
+      "webCssVariable": "--layout-main-detail-action-leading-padding",
+      "pixsoVariable": "space/5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/sidebar-padding-x",
+      "sourceToken": "tokens.layout.json:spacing.sidebar-padding-x",
+      "webCssVariable": "--layout-sidebar-padding-x",
+      "pixsoVariable": "space/5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/sidebar-padding-y",
+      "sourceToken": "tokens.layout.json:spacing.sidebar-padding-y",
+      "webCssVariable": "--layout-sidebar-padding-y",
+      "pixsoVariable": "space/5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/primary-action-slot-gap-top",
+      "sourceToken": "tokens.layout.json:spacing.primary-action-slot-gap-top",
+      "webCssVariable": "--layout-primary-action-slot-gap-top",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/primary-action-slot-gap-bottom",
+      "sourceToken": "tokens.layout.json:spacing.primary-action-slot-gap-bottom",
+      "webCssVariable": "--layout-primary-action-slot-gap-bottom",
+      "pixsoVariable": "space/4",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/secondary-list-card-inset-x",
+      "sourceToken": "tokens.layout.json:spacing.secondary-list-card-inset-x",
+      "webCssVariable": "--layout-secondary-list-card-inset-x",
+      "pixsoVariable": "space/5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/secondary-list-card-padding-x",
+      "sourceToken": "tokens.layout.json:spacing.secondary-list-card-padding-x",
+      "webCssVariable": "--layout-secondary-list-card-padding-x",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/secondary-content-axis-x",
+      "sourceToken": "tokens.layout.json:spacing.secondary-content-axis-x",
+      "webCssVariable": "--layout-secondary-content-axis-x",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/secondary-pane-padding-x",
+      "sourceToken": "tokens.layout.json:spacing.secondary-pane-padding-x",
+      "webCssVariable": "--layout-secondary-pane-padding-x",
+      "pixsoVariable": "space/5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/secondary-pane-padding-y",
+      "sourceToken": "tokens.layout.json:spacing.secondary-pane-padding-y",
+      "webCssVariable": "--layout-secondary-pane-padding-y",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/main-detail-padding-x",
+      "sourceToken": "tokens.layout.json:spacing.main-detail-padding-x",
+      "webCssVariable": "--layout-main-detail-padding-x",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/main-detail-padding-top",
+      "sourceToken": "tokens.layout.json:spacing.main-detail-padding-top",
+      "webCssVariable": "--layout-main-detail-padding-top",
+      "pixsoVariable": "space/5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "layout/spacing/main-detail-padding-bottom",
+      "sourceToken": "tokens.layout.json:spacing.main-detail-padding-bottom",
+      "webCssVariable": "--layout-main-detail-padding-bottom",
+      "pixsoVariable": "space/0",
+      "resolvedCssValue": "0px",
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/display-l/font-size",
+      "sourceToken": "tokens.typography.json:font-size.56",
+      "webCssVariable": "--type-display-l-size",
+      "pixsoVariable": "font/size/56",
+      "resolvedCssValue": "56px",
+      "pixsoValue": 56,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/display-l/line-height",
+      "sourceToken": "tokens.typography.json:line-height.66",
+      "webCssVariable": "--type-display-l-leading",
+      "pixsoVariable": "font/line-height/66",
+      "resolvedCssValue": "66px",
+      "pixsoValue": 66,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/display-l/font-weight",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "webCssVariable": "--type-display-l-weight",
+      "pixsoVariable": "font/weight/400",
+      "resolvedCssValue": "400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/display-m/font-size",
+      "sourceToken": "tokens.typography.json:font-size.48",
+      "webCssVariable": "--type-display-m-size",
+      "pixsoVariable": "font/size/48",
+      "resolvedCssValue": "48px",
+      "pixsoValue": 48,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/display-m/line-height",
+      "sourceToken": "tokens.typography.json:line-height.58",
+      "webCssVariable": "--type-display-m-leading",
+      "pixsoVariable": "font/line-height/58",
+      "resolvedCssValue": "58px",
+      "pixsoValue": 58,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/display-m/font-weight",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "webCssVariable": "--type-display-m-weight",
+      "pixsoVariable": "font/weight/400",
+      "resolvedCssValue": "400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/display-s/font-size",
+      "sourceToken": "tokens.typography.json:font-size.38",
+      "webCssVariable": "--type-display-s-size",
+      "pixsoVariable": "font/size/38",
+      "resolvedCssValue": "38px",
+      "pixsoValue": 38,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/display-s/line-height",
+      "sourceToken": "tokens.typography.json:line-height.44",
+      "webCssVariable": "--type-display-s-leading",
+      "pixsoVariable": "font/line-height/44",
+      "resolvedCssValue": "44px",
+      "pixsoValue": 44,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/display-s/font-weight",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "webCssVariable": "--type-display-s-weight",
+      "pixsoVariable": "font/weight/400",
+      "resolvedCssValue": "400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/title-l/font-size",
+      "sourceToken": "tokens.typography.json:font-size.30",
+      "webCssVariable": "--type-title-l-size",
+      "pixsoVariable": "font/size/30",
+      "resolvedCssValue": "30px",
+      "pixsoValue": 30,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/title-l/line-height",
+      "sourceToken": "tokens.typography.json:line-height.36",
+      "webCssVariable": "--type-title-l-leading",
+      "pixsoVariable": "font/line-height/36",
+      "resolvedCssValue": "36px",
+      "pixsoValue": 36,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/title-l/font-weight",
+      "sourceToken": "tokens.typography.json:font-weight.700",
+      "webCssVariable": "--type-title-l-weight",
+      "pixsoVariable": "font/weight/700",
+      "resolvedCssValue": "700",
+      "pixsoValue": 700,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/title-m/font-size",
+      "sourceToken": "tokens.typography.json:font-size.24",
+      "webCssVariable": "--type-title-m-size",
+      "pixsoVariable": "font/size/24",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/title-m/line-height",
+      "sourceToken": "tokens.typography.json:line-height.28",
+      "webCssVariable": "--type-title-m-leading",
+      "pixsoVariable": "font/line-height/28",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/title-m/font-weight",
+      "sourceToken": "tokens.typography.json:font-weight.700",
+      "webCssVariable": "--type-title-m-weight",
+      "pixsoVariable": "font/weight/700",
+      "resolvedCssValue": "700",
+      "pixsoValue": 700,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/title-s/font-size",
+      "sourceToken": "tokens.typography.json:font-size.20",
+      "webCssVariable": "--type-title-s-size",
+      "pixsoVariable": "font/size/20",
+      "resolvedCssValue": "20px",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/title-s/line-height",
+      "sourceToken": "tokens.typography.json:line-height.24",
+      "webCssVariable": "--type-title-s-leading",
+      "pixsoVariable": "font/line-height/24",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/title-s/font-weight",
+      "sourceToken": "tokens.typography.json:font-weight.700",
+      "webCssVariable": "--type-title-s-weight",
+      "pixsoVariable": "font/weight/700",
+      "resolvedCssValue": "700",
+      "pixsoValue": 700,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/subtitle-l/font-size",
+      "sourceToken": "tokens.typography.json:font-size.18",
+      "webCssVariable": "--type-subtitle-l-size",
+      "pixsoVariable": "font/size/18",
+      "resolvedCssValue": "18px",
+      "pixsoValue": 18,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/subtitle-l/line-height",
+      "sourceToken": "tokens.typography.json:line-height.22",
+      "webCssVariable": "--type-subtitle-l-leading",
+      "pixsoVariable": "font/line-height/22",
+      "resolvedCssValue": "22px",
+      "pixsoValue": 22,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/subtitle-l/font-weight",
+      "sourceToken": "tokens.typography.json:font-weight.500",
+      "webCssVariable": "--type-subtitle-l-weight",
+      "pixsoVariable": "font/weight/500",
+      "resolvedCssValue": "500",
+      "pixsoValue": 500,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/subtitle-m/font-size",
+      "sourceToken": "tokens.typography.json:font-size.16",
+      "webCssVariable": "--type-subtitle-m-size",
+      "pixsoVariable": "font/size/16",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/subtitle-m/line-height",
+      "sourceToken": "tokens.typography.json:line-height.20",
+      "webCssVariable": "--type-subtitle-m-leading",
+      "pixsoVariable": "font/line-height/20",
+      "resolvedCssValue": "20px",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/subtitle-m/font-weight",
+      "sourceToken": "tokens.typography.json:font-weight.500",
+      "webCssVariable": "--type-subtitle-m-weight",
+      "pixsoVariable": "font/weight/500",
+      "resolvedCssValue": "500",
+      "pixsoValue": 500,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/subtitle-s/font-size",
+      "sourceToken": "tokens.typography.json:font-size.14",
+      "webCssVariable": "--type-subtitle-s-size",
+      "pixsoVariable": "font/size/14",
+      "resolvedCssValue": "14px",
+      "pixsoValue": 14,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/subtitle-s/line-height",
+      "sourceToken": "tokens.typography.json:line-height.16",
+      "webCssVariable": "--type-subtitle-s-leading",
+      "pixsoVariable": "font/line-height/16",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/subtitle-s/font-weight",
+      "sourceToken": "tokens.typography.json:font-weight.500",
+      "webCssVariable": "--type-subtitle-s-weight",
+      "pixsoVariable": "font/weight/500",
+      "resolvedCssValue": "500",
+      "pixsoValue": 500,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/body-l/font-size",
+      "sourceToken": "tokens.typography.json:font-size.16",
+      "webCssVariable": "--type-body-l-size",
+      "pixsoVariable": "font/size/16",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/body-l/line-height",
+      "sourceToken": "tokens.typography.json:line-height.20",
+      "webCssVariable": "--type-body-l-leading",
+      "pixsoVariable": "font/line-height/20",
+      "resolvedCssValue": "20px",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/body-l/font-weight",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "webCssVariable": "--type-body-l-weight",
+      "pixsoVariable": "font/weight/400",
+      "resolvedCssValue": "400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/body-m/font-size",
+      "sourceToken": "tokens.typography.json:font-size.14",
+      "webCssVariable": "--type-body-m-size",
+      "pixsoVariable": "font/size/14",
+      "resolvedCssValue": "14px",
+      "pixsoValue": 14,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/body-m/line-height",
+      "sourceToken": "tokens.typography.json:line-height.16",
+      "webCssVariable": "--type-body-m-leading",
+      "pixsoVariable": "font/line-height/16",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/body-m/font-weight",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "webCssVariable": "--type-body-m-weight",
+      "pixsoVariable": "font/weight/400",
+      "resolvedCssValue": "400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/body-s/font-size",
+      "sourceToken": "tokens.typography.json:font-size.12",
+      "webCssVariable": "--type-body-s-size",
+      "pixsoVariable": "font/size/12",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/body-s/line-height",
+      "sourceToken": "tokens.typography.json:line-height.14",
+      "webCssVariable": "--type-body-s-leading",
+      "pixsoVariable": "font/line-height/14",
+      "resolvedCssValue": "14px",
+      "pixsoValue": 14,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/body-s/font-weight",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "webCssVariable": "--type-body-s-weight",
+      "pixsoVariable": "font/weight/400",
+      "resolvedCssValue": "400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/caption-m/font-size",
+      "sourceToken": "tokens.typography.json:font-size.10",
+      "webCssVariable": "--type-caption-m-size",
+      "pixsoVariable": "font/size/10",
+      "resolvedCssValue": "10px",
+      "pixsoValue": 10,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/caption-m/line-height",
+      "sourceToken": "tokens.typography.json:line-height.12",
+      "webCssVariable": "--type-caption-m-leading",
+      "pixsoVariable": "font/line-height/12",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "role": "typography/caption-m/font-weight",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "webCssVariable": "--type-caption-m-weight",
+      "pixsoVariable": "font/weight/400",
+      "resolvedCssValue": "400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    }
+  ],
+  "semanticColorMappings": [
+    {
+      "role": "bg",
+      "sourceToken": "tokens.colors.json:semantic.bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF"
+      ]
+    },
+    {
+      "role": "bg-subtle",
+      "sourceToken": "tokens.colors.json:semantic.bg-subtle",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-bg-subtle"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "surface",
+      "sourceToken": "tokens.colors.json:semantic.surface",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-surface"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF"
+      ]
+    },
+    {
+      "role": "surface-raised",
+      "sourceToken": "tokens.colors.json:semantic.surface-raised",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-surface-raised"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF"
+      ]
+    },
+    {
+      "role": "surface-muted",
+      "sourceToken": "tokens.colors.json:semantic.surface-muted",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-surface-muted"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "titlebar-normal-bg",
+      "sourceToken": "tokens.colors.json:semantic.titlebar-normal-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-titlebar-normal-bg"
+      ],
+      "pixsoVariables": [],
+      "literal": "transparent",
+      "resolvedValues": [
+        "#00000000"
+      ]
+    },
+    {
+      "role": "titlebar-unfocus-bg",
+      "sourceToken": "tokens.colors.json:semantic.titlebar-unfocus-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-titlebar-unfocus-bg"
+      ],
+      "pixsoVariables": [],
+      "literal": "transparent",
+      "resolvedValues": [
+        "#00000000"
+      ]
+    },
+    {
+      "role": "overlay",
+      "sourceToken": "tokens.colors.json:semantic.overlay",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-overlay"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/40"
+      ],
+      "resolvedValues": [
+        "#00000066"
+      ]
+    },
+    {
+      "role": "dialog-bg",
+      "sourceToken": "tokens.colors.json:semantic.dialog-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-dialog-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF"
+      ]
+    },
+    {
+      "role": "modal-bg-white",
+      "sourceToken": "tokens.colors.json:semantic.modal-bg-white",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-modal-bg-white"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF"
+      ]
+    },
+    {
+      "role": "modal-bg-gray",
+      "sourceToken": "tokens.colors.json:semantic.modal-bg-gray",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-modal-bg-gray"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "secondary",
+      "sourceToken": "tokens.colors.json:semantic.secondary",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-secondary"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "secondary-hover",
+      "sourceToken": "tokens.colors.json:semantic.secondary-hover",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-secondary-hover"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/10"
+      ],
+      "resolvedValues": [
+        "#00000019"
+      ]
+    },
+    {
+      "role": "button-secondary-bg",
+      "sourceToken": "tokens.colors.json:semantic.button-secondary-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-button-secondary-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "button-secondary-hover-bg",
+      "sourceToken": "tokens.colors.json:semantic.button-secondary-hover-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-button-secondary-hover-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/10"
+      ],
+      "resolvedValues": [
+        "#00000019"
+      ]
+    },
+    {
+      "role": "button-secondary-text",
+      "sourceToken": "tokens.colors.json:semantic.button-secondary-text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-button-secondary-text"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/90"
+      ],
+      "resolvedValues": [
+        "#000000E5"
+      ]
+    },
+    {
+      "role": "button-ghost-bg",
+      "sourceToken": "tokens.colors.json:semantic.button-ghost-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-button-ghost-bg"
+      ],
+      "pixsoVariables": [],
+      "literal": "transparent",
+      "resolvedValues": [
+        "#00000000"
+      ]
+    },
+    {
+      "role": "button-ghost-hover-bg",
+      "sourceToken": "tokens.colors.json:semantic.button-ghost-hover-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-button-ghost-hover-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "button-ghost-text",
+      "sourceToken": "tokens.colors.json:semantic.button-ghost-text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-button-ghost-text"
+      ],
+      "pixsoVariables": [
+        "brand/100"
+      ],
+      "resolvedValues": [
+        "#0A59F7FF"
+      ]
+    },
+    {
+      "role": "button-danger-bg",
+      "sourceToken": "tokens.colors.json:semantic.button-danger-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-button-danger-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "button-danger-hover-bg",
+      "sourceToken": "tokens.colors.json:semantic.button-danger-hover-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-button-danger-hover-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/10"
+      ],
+      "resolvedValues": [
+        "#00000019"
+      ]
+    },
+    {
+      "role": "button-danger-text",
+      "sourceToken": "tokens.colors.json:semantic.button-danger-text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-button-danger-text"
+      ],
+      "pixsoVariables": [
+        "function/danger/100"
+      ],
+      "resolvedValues": [
+        "#E84026FF"
+      ]
+    },
+    {
+      "role": "icon-text-button-ghost-bg",
+      "sourceToken": "tokens.colors.json:semantic.icon-text-button-ghost-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-icon-text-button-ghost-bg"
+      ],
+      "pixsoVariables": [],
+      "literal": "transparent",
+      "resolvedValues": [
+        "#00000000"
+      ]
+    },
+    {
+      "role": "icon-text-button-ghost-hover-bg",
+      "sourceToken": "tokens.colors.json:semantic.icon-text-button-ghost-hover-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-icon-text-button-ghost-hover-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "icon-text-button-ghost-content",
+      "sourceToken": "tokens.colors.json:semantic.icon-text-button-ghost-content",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-icon-text-button-ghost-content"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/90"
+      ],
+      "resolvedValues": [
+        "#000000E5"
+      ]
+    },
+    {
+      "role": "accent",
+      "sourceToken": "tokens.colors.json:semantic.accent",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-accent"
+      ],
+      "pixsoVariables": [
+        "brand/100"
+      ],
+      "resolvedValues": [
+        "#0A59F7FF"
+      ]
+    },
+    {
+      "role": "accent-hover",
+      "sourceToken": "tokens.colors.json:semantic.accent-hover",
+      "composition": "layered",
+      "webCssVariables": [
+        "--color-accent-hover",
+        "--color-accent-hover-layer"
+      ],
+      "pixsoVariables": [
+        "brand/100",
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0A59F7FF",
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "sidebar-bg",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-sidebar-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "sidebar-accent",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-accent",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-sidebar-accent"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "sidebar-accent-text",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-accent-text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-sidebar-accent-text"
+      ],
+      "pixsoVariables": [
+        "brand/100"
+      ],
+      "resolvedValues": [
+        "#0A59F7FF"
+      ]
+    },
+    {
+      "role": "sidebar-selected",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-selected",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-sidebar-selected"
+      ],
+      "pixsoVariables": [
+        "brand/10"
+      ],
+      "resolvedValues": [
+        "#0A59F719"
+      ]
+    },
+    {
+      "role": "sidebar-selected-text",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-selected-text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-sidebar-selected-text"
+      ],
+      "pixsoVariables": [
+        "brand/100"
+      ],
+      "resolvedValues": [
+        "#0A59F7FF"
+      ]
+    },
+    {
+      "role": "tab-list-bg",
+      "sourceToken": "tokens.colors.json:semantic.tab-list-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-tab-list-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "tab-text",
+      "sourceToken": "tokens.colors.json:semantic.tab-text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-tab-text"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/60"
+      ],
+      "resolvedValues": [
+        "#00000099"
+      ]
+    },
+    {
+      "role": "tab-hover-bg",
+      "sourceToken": "tokens.colors.json:semantic.tab-hover-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-tab-hover-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/10"
+      ],
+      "resolvedValues": [
+        "#00000019"
+      ]
+    },
+    {
+      "role": "tab-selected-bg",
+      "sourceToken": "tokens.colors.json:semantic.tab-selected-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-tab-selected-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF"
+      ]
+    },
+    {
+      "role": "tab-selected-text",
+      "sourceToken": "tokens.colors.json:semantic.tab-selected-text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-tab-selected-text"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/90"
+      ],
+      "resolvedValues": [
+        "#000000E5"
+      ]
+    },
+    {
+      "role": "tooltip-bg",
+      "sourceToken": "tokens.colors.json:semantic.tooltip-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-tooltip-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF"
+      ]
+    },
+    {
+      "role": "tooltip-text",
+      "sourceToken": "tokens.colors.json:semantic.tooltip-text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-tooltip-text"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/90"
+      ],
+      "resolvedValues": [
+        "#000000E5"
+      ]
+    },
+    {
+      "role": "input-bg",
+      "sourceToken": "tokens.colors.json:semantic.input-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-input-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "input-border",
+      "sourceToken": "tokens.colors.json:semantic.input-border",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-input-border"
+      ],
+      "pixsoVariables": [],
+      "literal": "transparent",
+      "resolvedValues": [
+        "#00000000"
+      ]
+    },
+    {
+      "role": "input-bg-on-default",
+      "sourceToken": "tokens.colors.json:semantic.input-bg-on-default",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-input-bg-on-default"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "input-hover-bg",
+      "sourceToken": "tokens.colors.json:semantic.input-hover-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-input-hover-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/10"
+      ],
+      "resolvedValues": [
+        "#00000019"
+      ]
+    },
+    {
+      "role": "input-hover-bg-on-default",
+      "sourceToken": "tokens.colors.json:semantic.input-hover-bg-on-default",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-input-hover-bg-on-default"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/10"
+      ],
+      "resolvedValues": [
+        "#00000019"
+      ]
+    },
+    {
+      "role": "input-focus-bg",
+      "sourceToken": "tokens.colors.json:semantic.input-focus-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-input-focus-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "input-focus-bg-on-default",
+      "sourceToken": "tokens.colors.json:semantic.input-focus-bg-on-default",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-input-focus-bg-on-default"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "input-error-bg",
+      "sourceToken": "tokens.colors.json:semantic.input-error-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-input-error-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "input-error-bg-on-default",
+      "sourceToken": "tokens.colors.json:semantic.input-error-bg-on-default",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-input-error-bg-on-default"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "input-bg-on-subtle",
+      "sourceToken": "tokens.colors.json:semantic.input-bg-on-subtle",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-input-bg-on-subtle"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF"
+      ]
+    },
+    {
+      "role": "input-hover-bg-on-subtle",
+      "sourceToken": "tokens.colors.json:semantic.input-hover-bg-on-subtle",
+      "composition": "layered",
+      "webCssVariables": [
+        "--color-input-hover-bg-on-subtle",
+        "--color-input-hover-bg-on-subtle-layer"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100",
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF",
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "input-hover-border-on-subtle",
+      "sourceToken": "tokens.colors.json:semantic.input-hover-border-on-subtle",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-input-hover-border-on-subtle"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF"
+      ]
+    },
+    {
+      "role": "input-focus-bg-on-subtle",
+      "sourceToken": "tokens.colors.json:semantic.input-focus-bg-on-subtle",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-input-focus-bg-on-subtle"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF"
+      ]
+    },
+    {
+      "role": "input-error-bg-on-subtle",
+      "sourceToken": "tokens.colors.json:semantic.input-error-bg-on-subtle",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-input-error-bg-on-subtle"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF"
+      ]
+    },
+    {
+      "role": "input-error-border",
+      "sourceToken": "tokens.colors.json:semantic.input-error-border",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-input-error-border"
+      ],
+      "pixsoVariables": [
+        "function/danger/100"
+      ],
+      "resolvedValues": [
+        "#E84026FF"
+      ]
+    },
+    {
+      "role": "text",
+      "sourceToken": "tokens.colors.json:semantic.text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-text"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/90"
+      ],
+      "resolvedValues": [
+        "#000000E5"
+      ]
+    },
+    {
+      "role": "text-muted",
+      "sourceToken": "tokens.colors.json:semantic.text-muted",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-text-muted"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/60"
+      ],
+      "resolvedValues": [
+        "#00000099"
+      ]
+    },
+    {
+      "role": "text-subtle",
+      "sourceToken": "tokens.colors.json:semantic.text-subtle",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-text-subtle"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/40"
+      ],
+      "resolvedValues": [
+        "#00000066"
+      ]
+    },
+    {
+      "role": "text-inverse",
+      "sourceToken": "tokens.colors.json:semantic.text-inverse",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-text-inverse"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF"
+      ]
+    },
+    {
+      "role": "text-brand",
+      "sourceToken": "tokens.colors.json:semantic.text-brand",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-text-brand"
+      ],
+      "pixsoVariables": [
+        "brand/100"
+      ],
+      "resolvedValues": [
+        "#0A59F7FF"
+      ]
+    },
+    {
+      "role": "link",
+      "sourceToken": "tokens.colors.json:semantic.link",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-link"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/100"
+      ],
+      "resolvedValues": [
+        "#000000FF"
+      ]
+    },
+    {
+      "role": "icon",
+      "sourceToken": "tokens.colors.json:semantic.icon",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-icon"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/90"
+      ],
+      "resolvedValues": [
+        "#000000E5"
+      ]
+    },
+    {
+      "role": "icon-muted",
+      "sourceToken": "tokens.colors.json:semantic.icon-muted",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-icon-muted"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/60"
+      ],
+      "resolvedValues": [
+        "#00000099"
+      ]
+    },
+    {
+      "role": "primary-level-unselected",
+      "sourceToken": "tokens.colors.json:semantic.primary-level-unselected",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-primary-level-unselected"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/40"
+      ],
+      "resolvedValues": [
+        "#00000066"
+      ]
+    },
+    {
+      "role": "icon-subtle",
+      "sourceToken": "tokens.colors.json:semantic.icon-subtle",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-icon-subtle"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/40"
+      ],
+      "resolvedValues": [
+        "#00000066"
+      ]
+    },
+    {
+      "role": "icon-inverse",
+      "sourceToken": "tokens.colors.json:semantic.icon-inverse",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-icon-inverse"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF"
+      ]
+    },
+    {
+      "role": "border",
+      "sourceToken": "tokens.colors.json:semantic.border",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-border"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/10"
+      ],
+      "resolvedValues": [
+        "#00000019"
+      ]
+    },
+    {
+      "role": "divider",
+      "sourceToken": "tokens.colors.json:semantic.divider",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-divider"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/20"
+      ],
+      "resolvedValues": [
+        "#00000033"
+      ]
+    },
+    {
+      "role": "focus-ring",
+      "sourceToken": "tokens.colors.json:semantic.focus-ring",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-focus-ring"
+      ],
+      "pixsoVariables": [
+        "brand/100"
+      ],
+      "resolvedValues": [
+        "#0A59F7FF"
+      ]
+    },
+    {
+      "role": "primary",
+      "sourceToken": "tokens.colors.json:semantic.primary",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-primary"
+      ],
+      "pixsoVariables": [
+        "brand/100"
+      ],
+      "resolvedValues": [
+        "#0A59F7FF"
+      ]
+    },
+    {
+      "role": "primary-text",
+      "sourceToken": "tokens.colors.json:semantic.primary-text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-primary-text"
+      ],
+      "pixsoVariables": [
+        "neutral-light/100"
+      ],
+      "resolvedValues": [
+        "#FFFFFFFF"
+      ]
+    },
+    {
+      "role": "success",
+      "sourceToken": "tokens.colors.json:semantic.success",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-success"
+      ],
+      "pixsoVariables": [
+        "function/success/100"
+      ],
+      "resolvedValues": [
+        "#64BB5CFF"
+      ]
+    },
+    {
+      "role": "success-subtle",
+      "sourceToken": "tokens.colors.json:semantic.success-subtle",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-success-subtle"
+      ],
+      "pixsoVariables": [
+        "function/success/10"
+      ],
+      "resolvedValues": [
+        "#64BB5C19"
+      ]
+    },
+    {
+      "role": "warning",
+      "sourceToken": "tokens.colors.json:semantic.warning",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-warning"
+      ],
+      "pixsoVariables": [
+        "function/warning/100"
+      ],
+      "resolvedValues": [
+        "#ED6F21FF"
+      ]
+    },
+    {
+      "role": "warning-subtle",
+      "sourceToken": "tokens.colors.json:semantic.warning-subtle",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-warning-subtle"
+      ],
+      "pixsoVariables": [
+        "function/warning/10"
+      ],
+      "resolvedValues": [
+        "#ED6F2119"
+      ]
+    },
+    {
+      "role": "danger",
+      "sourceToken": "tokens.colors.json:semantic.danger",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-danger"
+      ],
+      "pixsoVariables": [
+        "function/danger/100"
+      ],
+      "resolvedValues": [
+        "#E84026FF"
+      ]
+    },
+    {
+      "role": "danger-subtle",
+      "sourceToken": "tokens.colors.json:semantic.danger-subtle",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-danger-subtle"
+      ],
+      "pixsoVariables": [
+        "function/danger/10"
+      ],
+      "resolvedValues": [
+        "#E8402619"
+      ]
+    },
+    {
+      "role": "info",
+      "sourceToken": "tokens.colors.json:semantic.info",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-info"
+      ],
+      "pixsoVariables": [
+        "brand/100"
+      ],
+      "resolvedValues": [
+        "#0A59F7FF"
+      ]
+    },
+    {
+      "role": "info-subtle",
+      "sourceToken": "tokens.colors.json:semantic.info-subtle",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-info-subtle"
+      ],
+      "pixsoVariables": [
+        "brand/10"
+      ],
+      "resolvedValues": [
+        "#0A59F719"
+      ]
+    },
+    {
+      "role": "alert-neutral",
+      "sourceToken": "tokens.colors.json:semantic.alert-neutral",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-alert-neutral"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/60"
+      ],
+      "resolvedValues": [
+        "#00000099"
+      ]
+    },
+    {
+      "role": "alert-neutral-subtle",
+      "sourceToken": "tokens.colors.json:semantic.alert-neutral-subtle",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-alert-neutral-subtle"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "badge-neutral-text",
+      "sourceToken": "tokens.colors.json:semantic.badge-neutral-text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-badge-neutral-text"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/60"
+      ],
+      "resolvedValues": [
+        "#00000099"
+      ]
+    },
+    {
+      "role": "badge-neutral-bg",
+      "sourceToken": "tokens.colors.json:semantic.badge-neutral-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-badge-neutral-bg"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/10"
+      ],
+      "resolvedValues": [
+        "#00000019"
+      ]
+    },
+    {
+      "role": "badge-info-text",
+      "sourceToken": "tokens.colors.json:semantic.badge-info-text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-badge-info-text"
+      ],
+      "pixsoVariables": [
+        "brand/100"
+      ],
+      "resolvedValues": [
+        "#0A59F7FF"
+      ]
+    },
+    {
+      "role": "badge-info-bg",
+      "sourceToken": "tokens.colors.json:semantic.badge-info-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-badge-info-bg"
+      ],
+      "pixsoVariables": [
+        "brand/10"
+      ],
+      "resolvedValues": [
+        "#0A59F719"
+      ]
+    },
+    {
+      "role": "badge-success-text",
+      "sourceToken": "tokens.colors.json:semantic.badge-success-text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-badge-success-text"
+      ],
+      "pixsoVariables": [
+        "function/success/100"
+      ],
+      "resolvedValues": [
+        "#64BB5CFF"
+      ]
+    },
+    {
+      "role": "badge-success-bg",
+      "sourceToken": "tokens.colors.json:semantic.badge-success-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-badge-success-bg"
+      ],
+      "pixsoVariables": [
+        "function/success/10"
+      ],
+      "resolvedValues": [
+        "#64BB5C19"
+      ]
+    },
+    {
+      "role": "badge-warning-text",
+      "sourceToken": "tokens.colors.json:semantic.badge-warning-text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-badge-warning-text"
+      ],
+      "pixsoVariables": [
+        "function/warning/100"
+      ],
+      "resolvedValues": [
+        "#ED6F21FF"
+      ]
+    },
+    {
+      "role": "badge-warning-bg",
+      "sourceToken": "tokens.colors.json:semantic.badge-warning-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-badge-warning-bg"
+      ],
+      "pixsoVariables": [
+        "function/warning/10"
+      ],
+      "resolvedValues": [
+        "#ED6F2119"
+      ]
+    },
+    {
+      "role": "badge-danger-text",
+      "sourceToken": "tokens.colors.json:semantic.badge-danger-text",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-badge-danger-text"
+      ],
+      "pixsoVariables": [
+        "function/danger/100"
+      ],
+      "resolvedValues": [
+        "#E84026FF"
+      ]
+    },
+    {
+      "role": "badge-danger-bg",
+      "sourceToken": "tokens.colors.json:semantic.badge-danger-bg",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-badge-danger-bg"
+      ],
+      "pixsoVariables": [
+        "function/danger/10"
+      ],
+      "resolvedValues": [
+        "#E8402619"
+      ]
+    },
+    {
+      "role": "chart-1",
+      "sourceToken": "tokens.colors.json:semantic.chart-1",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-chart-1"
+      ],
+      "pixsoVariables": [
+        "multi/01"
+      ],
+      "resolvedValues": [
+        "#564AF7FF"
+      ]
+    },
+    {
+      "role": "chart-2",
+      "sourceToken": "tokens.colors.json:semantic.chart-2",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-chart-2"
+      ],
+      "pixsoVariables": [
+        "multi/02"
+      ],
+      "resolvedValues": [
+        "#46B1E3FF"
+      ]
+    },
+    {
+      "role": "chart-3",
+      "sourceToken": "tokens.colors.json:semantic.chart-3",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-chart-3"
+      ],
+      "pixsoVariables": [
+        "multi/03"
+      ],
+      "resolvedValues": [
+        "#61CFBEFF"
+      ]
+    },
+    {
+      "role": "chart-4",
+      "sourceToken": "tokens.colors.json:semantic.chart-4",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-chart-4"
+      ],
+      "pixsoVariables": [
+        "multi/04"
+      ],
+      "resolvedValues": [
+        "#A5D61DFF"
+      ]
+    },
+    {
+      "role": "chart-5",
+      "sourceToken": "tokens.colors.json:semantic.chart-5",
+      "composition": "single",
+      "webCssVariables": [
+        "--color-chart-5"
+      ],
+      "pixsoVariables": [
+        "multi/05"
+      ],
+      "resolvedValues": [
+        "#AC49F5FF"
+      ]
+    },
+    {
+      "role": "state-layer-hover",
+      "sourceToken": "tokens.colors.json:semantic.state-layer-hover",
+      "composition": "single",
+      "webCssVariables": [
+        "--state-layer-hover"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/05"
+      ],
+      "resolvedValues": [
+        "#0000000C"
+      ]
+    },
+    {
+      "role": "state-layer-pressed",
+      "sourceToken": "tokens.colors.json:semantic.state-layer-pressed",
+      "composition": "single",
+      "webCssVariables": [
+        "--state-layer-pressed"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/10"
+      ],
+      "resolvedValues": [
+        "#00000019"
+      ]
+    },
+    {
+      "role": "state-layer-selected",
+      "sourceToken": "tokens.colors.json:semantic.state-layer-selected",
+      "composition": "single",
+      "webCssVariables": [
+        "--state-layer-selected"
+      ],
+      "pixsoVariables": [
+        "neutral-dark/10"
+      ],
+      "resolvedValues": [
+        "#00000019"
+      ]
+    },
+    {
+      "role": "state-layer-focus",
+      "sourceToken": "tokens.colors.json:semantic.state-layer-focus",
+      "composition": "single",
+      "webCssVariables": [
+        "--state-layer-focus"
+      ],
+      "pixsoVariables": [
+        "brand/10"
+      ],
+      "resolvedValues": [
+        "#0A59F719"
+      ]
+    }
+  ]
+}

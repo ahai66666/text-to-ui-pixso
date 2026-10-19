@@ -1,0 +1,94 @@
+{
+  "id": "badge",
+  "logicalName": "Badge/Default",
+  "variants": [
+    "default",
+    "info",
+    "success",
+    "warning",
+    "danger",
+    "neutral"
+  ],
+  "states": [
+    "default",
+    "disabled"
+  ],
+  "props": [
+    "label",
+    "tone",
+    "disabled",
+    "className"
+  ],
+  "slots": [
+    "label"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.surface",
+    "color.border",
+    "typography.body-l",
+    "spacing.component-gap",
+    "color.primary"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/index.js#badge"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/index.js#badge"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "display",
+  "categoryLabel": "展示类",
+  "order": 216,
+  "canonicalSection": "[data-runtime-category=\"display\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"display\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-badge\"]",
+  "specimens": [
+    {
+      "id": "default",
+      "variant": "default",
+      "state": "default"
+    }
+  ],
+  "fixtureId": "fixture-badge",
+  "surface": "white",
+  "sizing": "intrinsic",
+  "behaviors": [
+    "focus",
+    "disabled"
+  ],
+  "iconSemantic": null,
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "data-display",
+  "canonicalSpecimen": "gallery:display:badge",
+  "allowedStates": [
+    "default",
+    "disabled"
+  ],
+  "textRoles": [
+    "label:body-s"
+  ],
+  "iconSlots": [],
+  "iconAliases": [],
+  "comparisonGroup": "display"
+}

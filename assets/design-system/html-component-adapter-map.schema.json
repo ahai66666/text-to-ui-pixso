@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.text-to-ui/html-component-adapter-map.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "contractVersion",
+    "registry",
+    "canonicalAttributes",
+    "connectionModes",
+    "frameworks",
+    "strictDelivery"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "contractVersion": {
+      "const": 2
+    },
+    "registry": {
+      "const": "assets/design-system/pixso-component-registry.json"
+    },
+    "canonicalAttributes": {
+      "type": "object",
+      "required": [
+        "componentId",
+        "logicalName",
+        "variant",
+        "state"
+      ]
+    },
+    "connectionModes": {
+      "type": "object",
+      "required": [
+        "source-component",
+        "third-party-wrapper",
+        "compiled-runtime-fallback"
+      ]
+    },
+    "frameworks": {
+      "type": "object",
+      "required": [
+        "html"
+      ],
+      "additionalProperties": false
+    },
+    "styleEngines": {
+      "type": "object"
+    },
+    "strictDelivery": {
+      "type": "object",
+      "required": [
+        "requireFrameworkSourceEvidence",
+        "requireRegisteredLogicalName",
+        "requirePixsoLinkedInstance",
+        "requireInstanceSafeContent",
+        "forbidRuntimeFallback",
+        "forbidDetachedPixsoComponents",
+        "forbidComponentColorFindings",
+        "forbidComponentContentFindings"
+      ]
+    }
+  }
+}

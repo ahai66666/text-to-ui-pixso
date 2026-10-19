@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": 2,
+  "registry": "assets/design-system/pixso-component-registry.json",
+  "canonicalAttributes": {
+    "componentId": "data-component",
+    "logicalName": "data-logical-component",
+    "variant": "data-variant",
+    "state": "data-state"
+  },
+  "connectionModes": {
+    "source-component": {
+      "strictEligible": true,
+      "description": "The first-party HTML component renderer implements the canonical contract from props and state."
+    },
+    "third-party-wrapper": {
+      "strictEligible": true,
+      "description": "A first-party HTML wrapper translates a third-party component into the canonical contract."
+    },
+    "compiled-runtime-fallback": {
+      "strictEligible": false,
+      "description": "A runtime adapter annotates compiled output. It can prove visual Token coverage but not source component reuse."
+    }
+  },
+  "frameworks": {
+    "html": {
+      "sourceExtensions": [
+        ".html"
+      ],
+      "stateSource": "attributes-and-script",
+      "requiredAttributes": [
+        "data-component",
+        "data-logical-component",
+        "data-variant",
+        "data-state"
+      ]
+    }
+  },
+  "styleEngines": {
+    "tailwind": {
+      "role": "implementation-only",
+      "forbidAsContractSource": true,
+      "forbidArbitraryVisibleValues": true,
+      "requiredValueSource": "canonical-css-custom-properties"
+    }
+  },
+  "strictDelivery": {
+    "requireRegisteredLogicalName": true,
+    "requirePixsoLinkedInstance": true,
+    "requireInstanceSafeContent": true,
+    "forbidRuntimeFallback": true,
+    "forbidDetachedPixsoComponents": true,
+    "forbidComponentColorFindings": true,
+    "forbidComponentContentFindings": true,
+    "requireHtmlSourceEvidence": true
+  }
+}

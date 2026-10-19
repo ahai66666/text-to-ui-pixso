@@ -1,0 +1,131 @@
+{
+  "id": "form-field",
+  "logicalName": "Form Field/Default",
+  "variants": [
+    "input",
+    "select"
+  ],
+  "states": [
+    "default",
+    "error",
+    "disabled"
+  ],
+  "props": [
+    "label",
+    "required",
+    "error",
+    "disabled",
+    "state",
+    "surface",
+    "className"
+  ],
+  "slots": [
+    "label",
+    "control",
+    "error"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.alert",
+    "typography.subtitle-s",
+    "typography.body-s",
+    "spacing.component-gap"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/index.js#form-field"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/index.js#form-field"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "containers",
+  "categoryLabel": "容器类",
+  "order": 509,
+  "canonicalSection": "[data-runtime-category=\"containers\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"containers\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-form-field\"]",
+  "specimens": [
+    {
+      "id": "default-white",
+      "variant": "input",
+      "state": "default",
+      "surface": "white"
+    },
+    {
+      "id": "default-gray",
+      "variant": "input",
+      "state": "default",
+      "surface": "gray"
+    },
+    {
+      "id": "required-white",
+      "variant": "select",
+      "state": "default",
+      "surface": "white",
+      "required": true
+    },
+    {
+      "id": "required-gray",
+      "variant": "select",
+      "state": "default",
+      "surface": "gray",
+      "required": true
+    },
+    {
+      "id": "error-white",
+      "variant": "input",
+      "state": "error",
+      "surface": "white"
+    },
+    {
+      "id": "error-gray",
+      "variant": "input",
+      "state": "error",
+      "surface": "gray"
+    }
+  ],
+  "fixtureId": "fixture-form-field",
+  "surface": "white",
+  "sizing": "fill",
+  "behaviors": [
+    "slot-control",
+    "validation",
+    "disabled"
+  ],
+  "iconSemantic": null,
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "fields",
+  "canonicalSpecimen": "gallery:containers:form-field",
+  "allowedStates": [
+    "default",
+    "error",
+    "disabled"
+  ],
+  "textRoles": [
+    "label:subtitle-s",
+    "error:body-s"
+  ],
+  "iconSlots": [],
+  "iconAliases": [],
+  "comparisonGroup": "containers"
+}

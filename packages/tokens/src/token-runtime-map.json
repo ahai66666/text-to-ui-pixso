@@ -1,0 +1,3851 @@
+{
+  "schemaVersion": 1,
+  "purpose": "One-to-one bridge between HTML CSS variables and the approved Pixso core/runtime variables.",
+  "policy": {
+    "cssSemanticAliasesRemainCodeOnly": true,
+    "forbidPixsoLegacyAliases": [
+      "brand/primary",
+      "surface/*",
+      "text/*",
+      "icon/*",
+      "border/*",
+      "divider/*",
+      "state/*",
+      "status/*",
+      "overlay/*",
+      "gap/*",
+      "padding/*",
+      "component/*",
+      "display/*",
+      "title/*",
+      "subtitle/*",
+      "body/*",
+      "caption/*"
+    ],
+    "sourceArtboardIsNotDisplaySize": true
+  },
+  "mappings": [
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "brand/05",
+      "sourceToken": "tokens.colors.json:brand.05",
+      "cssVariable": "--color-brand-05",
+      "resolvedCssValue": "#0A59F70C",
+      "pixsoValue": "#0A59F70C",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "brand/10",
+      "sourceToken": "tokens.colors.json:brand.10",
+      "cssVariable": "--color-brand-10",
+      "resolvedCssValue": "#0A59F719",
+      "pixsoValue": "#0A59F719",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "brand/15",
+      "sourceToken": "tokens.colors.json:brand.15",
+      "cssVariable": "--color-brand-15",
+      "resolvedCssValue": "#0A59F726",
+      "pixsoValue": "#0A59F726",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "brand/20",
+      "sourceToken": "tokens.colors.json:brand.20",
+      "cssVariable": "--color-brand-20",
+      "resolvedCssValue": "#0A59F733",
+      "pixsoValue": "#0A59F733",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "brand/30",
+      "sourceToken": "tokens.colors.json:brand.30",
+      "cssVariable": "--color-brand-30",
+      "resolvedCssValue": "#0A59F74D",
+      "pixsoValue": "#0A59F74D",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "brand/40",
+      "sourceToken": "tokens.colors.json:brand.40",
+      "cssVariable": "--color-brand-40",
+      "resolvedCssValue": "#0A59F766",
+      "pixsoValue": "#0A59F766",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "brand/50",
+      "sourceToken": "tokens.colors.json:brand.50",
+      "cssVariable": "--color-brand-50",
+      "resolvedCssValue": "#0A59F77F",
+      "pixsoValue": "#0A59F77F",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "brand/60",
+      "sourceToken": "tokens.colors.json:brand.60",
+      "cssVariable": "--color-brand-60",
+      "resolvedCssValue": "#0A59F799",
+      "pixsoValue": "#0A59F799",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "brand/70",
+      "sourceToken": "tokens.colors.json:brand.70",
+      "cssVariable": "--color-brand-70",
+      "resolvedCssValue": "#0A59F7B2",
+      "pixsoValue": "#0A59F7B2",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "brand/80",
+      "sourceToken": "tokens.colors.json:brand.80",
+      "cssVariable": "--color-brand-80",
+      "resolvedCssValue": "#0A59F7CC",
+      "pixsoValue": "#0A59F7CC",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "brand/90",
+      "sourceToken": "tokens.colors.json:brand.90",
+      "cssVariable": "--color-brand-90",
+      "resolvedCssValue": "#0A59F7E5",
+      "pixsoValue": "#0A59F7E5",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "brand/100",
+      "sourceToken": "tokens.colors.json:brand.100",
+      "cssVariable": "--color-brand-100",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:neutral-dark.05",
+      "cssVariable": "--color-neutral-dark-05",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-dark/10",
+      "sourceToken": "tokens.colors.json:neutral-dark.10",
+      "cssVariable": "--color-neutral-dark-10",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-dark/15",
+      "sourceToken": "tokens.colors.json:neutral-dark.15",
+      "cssVariable": "--color-neutral-dark-15",
+      "resolvedCssValue": "#00000026",
+      "pixsoValue": "#00000026",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-dark/20",
+      "sourceToken": "tokens.colors.json:neutral-dark.20",
+      "cssVariable": "--color-neutral-dark-20",
+      "resolvedCssValue": "#00000033",
+      "pixsoValue": "#00000033",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-dark/30",
+      "sourceToken": "tokens.colors.json:neutral-dark.30",
+      "cssVariable": "--color-neutral-dark-30",
+      "resolvedCssValue": "#0000004D",
+      "pixsoValue": "#0000004D",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-dark/40",
+      "sourceToken": "tokens.colors.json:neutral-dark.40",
+      "cssVariable": "--color-neutral-dark-40",
+      "resolvedCssValue": "#00000066",
+      "pixsoValue": "#00000066",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-dark/50",
+      "sourceToken": "tokens.colors.json:neutral-dark.50",
+      "cssVariable": "--color-neutral-dark-50",
+      "resolvedCssValue": "#0000007F",
+      "pixsoValue": "#0000007F",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-dark/60",
+      "sourceToken": "tokens.colors.json:neutral-dark.60",
+      "cssVariable": "--color-neutral-dark-60",
+      "resolvedCssValue": "#00000099",
+      "pixsoValue": "#00000099",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-dark/70",
+      "sourceToken": "tokens.colors.json:neutral-dark.70",
+      "cssVariable": "--color-neutral-dark-70",
+      "resolvedCssValue": "#000000B2",
+      "pixsoValue": "#000000B2",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-dark/80",
+      "sourceToken": "tokens.colors.json:neutral-dark.80",
+      "cssVariable": "--color-neutral-dark-80",
+      "resolvedCssValue": "#000000CC",
+      "pixsoValue": "#000000CC",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-dark/90",
+      "sourceToken": "tokens.colors.json:neutral-dark.90",
+      "cssVariable": "--color-neutral-dark-90",
+      "resolvedCssValue": "#000000E5",
+      "pixsoValue": "#000000E5",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-dark/100",
+      "sourceToken": "tokens.colors.json:neutral-dark.100",
+      "cssVariable": "--color-neutral-dark-100",
+      "resolvedCssValue": "#000000FF",
+      "pixsoValue": "#000000FF",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-light/05",
+      "sourceToken": "tokens.colors.json:neutral-light.05",
+      "cssVariable": "--color-neutral-light-05",
+      "resolvedCssValue": "#FFFFFF0C",
+      "pixsoValue": "#FFFFFF0C",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-light/10",
+      "sourceToken": "tokens.colors.json:neutral-light.10",
+      "cssVariable": "--color-neutral-light-10",
+      "resolvedCssValue": "#FFFFFF19",
+      "pixsoValue": "#FFFFFF19",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-light/15",
+      "sourceToken": "tokens.colors.json:neutral-light.15",
+      "cssVariable": "--color-neutral-light-15",
+      "resolvedCssValue": "#FFFFFF26",
+      "pixsoValue": "#FFFFFF26",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-light/20",
+      "sourceToken": "tokens.colors.json:neutral-light.20",
+      "cssVariable": "--color-neutral-light-20",
+      "resolvedCssValue": "#FFFFFF33",
+      "pixsoValue": "#FFFFFF33",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-light/30",
+      "sourceToken": "tokens.colors.json:neutral-light.30",
+      "cssVariable": "--color-neutral-light-30",
+      "resolvedCssValue": "#FFFFFF4D",
+      "pixsoValue": "#FFFFFF4D",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-light/40",
+      "sourceToken": "tokens.colors.json:neutral-light.40",
+      "cssVariable": "--color-neutral-light-40",
+      "resolvedCssValue": "#FFFFFF66",
+      "pixsoValue": "#FFFFFF66",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-light/50",
+      "sourceToken": "tokens.colors.json:neutral-light.50",
+      "cssVariable": "--color-neutral-light-50",
+      "resolvedCssValue": "#FFFFFF7F",
+      "pixsoValue": "#FFFFFF7F",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-light/60",
+      "sourceToken": "tokens.colors.json:neutral-light.60",
+      "cssVariable": "--color-neutral-light-60",
+      "resolvedCssValue": "#FFFFFF99",
+      "pixsoValue": "#FFFFFF99",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-light/70",
+      "sourceToken": "tokens.colors.json:neutral-light.70",
+      "cssVariable": "--color-neutral-light-70",
+      "resolvedCssValue": "#FFFFFFB2",
+      "pixsoValue": "#FFFFFFB2",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-light/80",
+      "sourceToken": "tokens.colors.json:neutral-light.80",
+      "cssVariable": "--color-neutral-light-80",
+      "resolvedCssValue": "#FFFFFFCC",
+      "pixsoValue": "#FFFFFFCC",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-light/90",
+      "sourceToken": "tokens.colors.json:neutral-light.90",
+      "cssVariable": "--color-neutral-light-90",
+      "resolvedCssValue": "#FFFFFFE5",
+      "pixsoValue": "#FFFFFFE5",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "neutral-light/100",
+      "sourceToken": "tokens.colors.json:neutral-light.100",
+      "cssVariable": "--color-neutral-light-100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "function/success/10",
+      "sourceToken": "tokens.colors.json:function.success.10",
+      "cssVariable": "--color-function-success-10",
+      "resolvedCssValue": "#64BB5C19",
+      "pixsoValue": "#64BB5C19",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "function/success/20",
+      "sourceToken": "tokens.colors.json:function.success.20",
+      "cssVariable": "--color-function-success-20",
+      "resolvedCssValue": "#64BB5C33",
+      "pixsoValue": "#64BB5C33",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "function/success/100",
+      "sourceToken": "tokens.colors.json:function.success.100",
+      "cssVariable": "--color-function-success-100",
+      "resolvedCssValue": "#64BB5CFF",
+      "pixsoValue": "#64BB5CFF",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "function/warning/10",
+      "sourceToken": "tokens.colors.json:function.warning.10",
+      "cssVariable": "--color-function-warning-10",
+      "resolvedCssValue": "#ED6F2119",
+      "pixsoValue": "#ED6F2119",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "function/warning/20",
+      "sourceToken": "tokens.colors.json:function.warning.20",
+      "cssVariable": "--color-function-warning-20",
+      "resolvedCssValue": "#ED6F2133",
+      "pixsoValue": "#ED6F2133",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "function/warning/100",
+      "sourceToken": "tokens.colors.json:function.warning.100",
+      "cssVariable": "--color-function-warning-100",
+      "resolvedCssValue": "#ED6F21FF",
+      "pixsoValue": "#ED6F21FF",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "function/danger/10",
+      "sourceToken": "tokens.colors.json:function.danger.10",
+      "cssVariable": "--color-function-danger-10",
+      "resolvedCssValue": "#E8402619",
+      "pixsoValue": "#E8402619",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "function/danger/20",
+      "sourceToken": "tokens.colors.json:function.danger.20",
+      "cssVariable": "--color-function-danger-20",
+      "resolvedCssValue": "#E8402633",
+      "pixsoValue": "#E8402633",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "function/danger/100",
+      "sourceToken": "tokens.colors.json:function.danger.100",
+      "cssVariable": "--color-function-danger-100",
+      "resolvedCssValue": "#E84026FF",
+      "pixsoValue": "#E84026FF",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "multi/01",
+      "sourceToken": "tokens.colors.json:multi.01",
+      "cssVariable": "--color-multi-01",
+      "resolvedCssValue": "#564AF7",
+      "pixsoValue": "#564AF7",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "multi/02",
+      "sourceToken": "tokens.colors.json:multi.02",
+      "cssVariable": "--color-multi-02",
+      "resolvedCssValue": "#46B1E3",
+      "pixsoValue": "#46B1E3",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "multi/03",
+      "sourceToken": "tokens.colors.json:multi.03",
+      "cssVariable": "--color-multi-03",
+      "resolvedCssValue": "#61CFBE",
+      "pixsoValue": "#61CFBE",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "multi/04",
+      "sourceToken": "tokens.colors.json:multi.04",
+      "cssVariable": "--color-multi-04",
+      "resolvedCssValue": "#A5D61D",
+      "pixsoValue": "#A5D61D",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "multi/05",
+      "sourceToken": "tokens.colors.json:multi.05",
+      "cssVariable": "--color-multi-05",
+      "resolvedCssValue": "#AC49F5",
+      "pixsoValue": "#AC49F5",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "multi/06",
+      "sourceToken": "tokens.colors.json:multi.06",
+      "cssVariable": "--color-multi-06",
+      "resolvedCssValue": "#E64566",
+      "pixsoValue": "#E64566",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "multi/07",
+      "sourceToken": "tokens.colors.json:multi.07",
+      "cssVariable": "--color-multi-07",
+      "resolvedCssValue": "#F9A01E",
+      "pixsoValue": "#F9A01E",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "multi/08",
+      "sourceToken": "tokens.colors.json:multi.08",
+      "cssVariable": "--color-multi-08",
+      "resolvedCssValue": "#F7CE00",
+      "pixsoValue": "#F7CE00",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "multi/09",
+      "sourceToken": "tokens.colors.json:multi.09",
+      "cssVariable": "--color-multi-09",
+      "resolvedCssValue": "#64BB5C",
+      "pixsoValue": "#64BB5C",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "multi/10",
+      "sourceToken": "tokens.colors.json:multi.10",
+      "cssVariable": "--color-multi-10",
+      "resolvedCssValue": "#E84026",
+      "pixsoValue": "#E84026",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Color",
+      "pixsoMode": "Light",
+      "pixsoVariable": "multi/11",
+      "sourceToken": "tokens.colors.json:multi.11",
+      "cssVariable": "--color-multi-11",
+      "resolvedCssValue": "#ED6F21",
+      "pixsoValue": "#ED6F21",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Spacing",
+      "pixsoMode": "Compact",
+      "pixsoVariable": "space/0",
+      "sourceToken": "tokens.spacing.json:space.0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px",
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Spacing",
+      "pixsoMode": "Compact",
+      "pixsoVariable": "space/1",
+      "sourceToken": "tokens.spacing.json:space.1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px",
+      "pixsoValue": 2,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Spacing",
+      "pixsoMode": "Compact",
+      "pixsoVariable": "space/2",
+      "sourceToken": "tokens.spacing.json:space.2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px",
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Spacing",
+      "pixsoMode": "Compact",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:space.3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Spacing",
+      "pixsoMode": "Compact",
+      "pixsoVariable": "space/4",
+      "sourceToken": "tokens.spacing.json:space.4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Spacing",
+      "pixsoMode": "Compact",
+      "pixsoVariable": "space/5",
+      "sourceToken": "tokens.spacing.json:space.5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Spacing",
+      "pixsoMode": "Compact",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.spacing.json:space.6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Spacing",
+      "pixsoMode": "Compact",
+      "pixsoVariable": "space/7",
+      "sourceToken": "tokens.spacing.json:space.7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px",
+      "pixsoValue": 32,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/04",
+      "sourceToken": "tokens.size.json:size.1",
+      "cssVariable": "--size-1",
+      "resolvedCssValue": "4px",
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/06",
+      "sourceToken": "tokens.size.json:size.2",
+      "cssVariable": "--size-2",
+      "resolvedCssValue": "6px",
+      "pixsoValue": 6,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/08",
+      "sourceToken": "tokens.size.json:size.3",
+      "cssVariable": "--size-3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/12",
+      "sourceToken": "tokens.size.json:size.4",
+      "cssVariable": "--size-4",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/16",
+      "sourceToken": "tokens.size.json:size.5",
+      "cssVariable": "--size-5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/20",
+      "sourceToken": "tokens.size.json:size.6",
+      "cssVariable": "--size-6",
+      "resolvedCssValue": "20px",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/24",
+      "sourceToken": "tokens.size.json:size.7",
+      "cssVariable": "--size-7",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/28",
+      "sourceToken": "tokens.size.json:size.8",
+      "cssVariable": "--size-8",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/32",
+      "sourceToken": "tokens.size.json:size.9",
+      "cssVariable": "--size-9",
+      "resolvedCssValue": "32px",
+      "pixsoValue": 32,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/36",
+      "sourceToken": "tokens.size.json:size.10",
+      "cssVariable": "--size-10",
+      "resolvedCssValue": "36px",
+      "pixsoValue": 36,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:size.11",
+      "cssVariable": "--size-11",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/44",
+      "sourceToken": "tokens.size.json:size.12",
+      "cssVariable": "--size-12",
+      "resolvedCssValue": "44px",
+      "pixsoValue": 44,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/48",
+      "sourceToken": "tokens.size.json:size.13",
+      "cssVariable": "--size-13",
+      "resolvedCssValue": "48px",
+      "pixsoValue": 48,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/56",
+      "sourceToken": "tokens.size.json:size.14",
+      "cssVariable": "--size-14",
+      "resolvedCssValue": "56px",
+      "pixsoValue": 56,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/64",
+      "sourceToken": "tokens.size.json:size.15",
+      "cssVariable": "--size-15",
+      "resolvedCssValue": "64px",
+      "pixsoValue": 64,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/72",
+      "sourceToken": "tokens.size.json:size.16",
+      "cssVariable": "--size-16",
+      "resolvedCssValue": "72px",
+      "pixsoValue": 72,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "size/80",
+      "sourceToken": "tokens.size.json:size.17",
+      "cssVariable": "--size-17",
+      "resolvedCssValue": "80px",
+      "pixsoValue": 80,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "icon/stroke/16",
+      "sourceToken": "tokens.icon.json:lucide.project-stroke-width-by-display-size.16",
+      "cssVariable": "--icon-outline-stroke-width-16",
+      "resolvedCssValue": "1",
+      "pixsoValue": 1,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "icon/stroke/20",
+      "sourceToken": "tokens.icon.json:lucide.project-stroke-width-by-display-size.20",
+      "cssVariable": "--icon-outline-stroke-width-20",
+      "resolvedCssValue": "1.25",
+      "pixsoValue": 1.25,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "icon/stroke/24",
+      "sourceToken": "tokens.icon.json:lucide.project-stroke-width-by-display-size.24",
+      "cssVariable": "--icon-outline-stroke-width-24",
+      "resolvedCssValue": "1.5",
+      "pixsoValue": 1.5,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "radius/0",
+      "sourceToken": "tokens.radius.json:radius.0",
+      "cssVariable": "--radius-0",
+      "resolvedCssValue": "0px",
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "radius/04",
+      "sourceToken": "tokens.radius.json:radius.1",
+      "cssVariable": "--radius-1",
+      "resolvedCssValue": "4px",
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "radius/06",
+      "sourceToken": "tokens.radius.json:radius.2",
+      "cssVariable": "--radius-2",
+      "resolvedCssValue": "6px",
+      "pixsoValue": 6,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:radius.3",
+      "cssVariable": "--radius-3",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "radius/12",
+      "sourceToken": "tokens.radius.json:radius.4",
+      "cssVariable": "--radius-4",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "radius/16",
+      "sourceToken": "tokens.radius.json:radius.5",
+      "cssVariable": "--radius-5",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "radius/full",
+      "sourceToken": "tokens.radius.json:radius.full",
+      "cssVariable": "--radius-full",
+      "resolvedCssValue": "999px",
+      "pixsoValue": 999,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "layout/divider/0.5",
+      "sourceToken": "tokens.layout.json:shell.navigation-divider-width",
+      "cssVariable": "--layout-navigation-divider-width",
+      "resolvedCssValue": "0.5px",
+      "pixsoValue": 0.5,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "layout/width/240",
+      "sourceToken": "tokens.layout.json:shell.sidebar-width",
+      "cssVariable": "--layout-sidebar-width",
+      "resolvedCssValue": "240px",
+      "pixsoValue": 240,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "layout/width/360",
+      "sourceToken": "tokens.layout.json:shell.secondary-pane-width",
+      "cssVariable": "--layout-secondary-pane-width",
+      "resolvedCssValue": "360px",
+      "pixsoValue": 360,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "layout/width/400",
+      "sourceToken": "tokens.size.json:modal.dialog-width",
+      "cssVariable": "--width-dialog",
+      "resolvedCssValue": "400px",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "layout/width/480",
+      "sourceToken": "tokens.size.json:modal.width-s",
+      "cssVariable": "--width-modal-sm",
+      "resolvedCssValue": "480px",
+      "pixsoValue": 480,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "layout/width/640",
+      "sourceToken": "tokens.size.json:modal.width-m",
+      "cssVariable": "--width-modal-md",
+      "resolvedCssValue": "640px",
+      "pixsoValue": 640,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "layout/width/800",
+      "sourceToken": "tokens.size.json:modal.width-l",
+      "cssVariable": "--width-modal-lg",
+      "resolvedCssValue": "800px",
+      "pixsoValue": 800,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "layout/width/1100",
+      "sourceToken": "tokens.layout.json:window.min-width",
+      "cssVariable": "--layout-window-min-width",
+      "resolvedCssValue": "1100px",
+      "pixsoValue": 1100,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "layout/width/1728",
+      "sourceToken": "tokens.layout.json:frame.width",
+      "cssVariable": "--layout-frame-width",
+      "resolvedCssValue": "1728px",
+      "pixsoValue": 1728,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "layout/height/720",
+      "sourceToken": "tokens.layout.json:window.min-height",
+      "cssVariable": "--layout-window-min-height",
+      "resolvedCssValue": "720px",
+      "pixsoValue": 720,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "layout/height/1152",
+      "sourceToken": "tokens.layout.json:frame.height",
+      "cssVariable": "--layout-frame-height",
+      "resolvedCssValue": "1152px",
+      "pixsoValue": 1152,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Size & Layout",
+      "pixsoMode": "Desktop",
+      "pixsoVariable": "opacity/40",
+      "sourceToken": "tokens.colors.json:semantic.state-disabled-opacity",
+      "cssVariable": "--opacity-40",
+      "resolvedCssValue": "0.4",
+      "pixsoValue": 40,
+      "valueTransform": "pixso-percent-to-css-unit-interval"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/family/sans",
+      "sourceToken": "tokens.typography.json:font-family.sans",
+      "cssVariable": "--font-sans",
+      "resolvedCssValue": "\"HarmonyOS Sans\", \"HarmonyOS Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "pixsoValue": "HarmonyOS Sans SC",
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/size/10",
+      "sourceToken": "tokens.typography.json:font-size.10",
+      "cssVariable": "--font-size-10",
+      "resolvedCssValue": "10px",
+      "pixsoValue": 10,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/size/12",
+      "sourceToken": "tokens.typography.json:font-size.12",
+      "cssVariable": "--font-size-12",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/size/14",
+      "sourceToken": "tokens.typography.json:font-size.14",
+      "cssVariable": "--font-size-14",
+      "resolvedCssValue": "14px",
+      "pixsoValue": 14,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/size/16",
+      "sourceToken": "tokens.typography.json:font-size.16",
+      "cssVariable": "--font-size-16",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/size/18",
+      "sourceToken": "tokens.typography.json:font-size.18",
+      "cssVariable": "--font-size-18",
+      "resolvedCssValue": "18px",
+      "pixsoValue": 18,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/size/20",
+      "sourceToken": "tokens.typography.json:font-size.20",
+      "cssVariable": "--font-size-20",
+      "resolvedCssValue": "20px",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/size/24",
+      "sourceToken": "tokens.typography.json:font-size.24",
+      "cssVariable": "--font-size-24",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/size/30",
+      "sourceToken": "tokens.typography.json:font-size.30",
+      "cssVariable": "--font-size-30",
+      "resolvedCssValue": "30px",
+      "pixsoValue": 30,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/size/38",
+      "sourceToken": "tokens.typography.json:font-size.38",
+      "cssVariable": "--font-size-38",
+      "resolvedCssValue": "38px",
+      "pixsoValue": 38,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/size/48",
+      "sourceToken": "tokens.typography.json:font-size.48",
+      "cssVariable": "--font-size-48",
+      "resolvedCssValue": "48px",
+      "pixsoValue": 48,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/size/56",
+      "sourceToken": "tokens.typography.json:font-size.56",
+      "cssVariable": "--font-size-56",
+      "resolvedCssValue": "56px",
+      "pixsoValue": 56,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/line-height/12",
+      "sourceToken": "tokens.typography.json:line-height.12",
+      "cssVariable": "--line-height-12",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/line-height/14",
+      "sourceToken": "tokens.typography.json:line-height.14",
+      "cssVariable": "--line-height-14",
+      "resolvedCssValue": "14px",
+      "pixsoValue": 14,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/line-height/16",
+      "sourceToken": "tokens.typography.json:line-height.16",
+      "cssVariable": "--line-height-16",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/line-height/20",
+      "sourceToken": "tokens.typography.json:line-height.20",
+      "cssVariable": "--line-height-20",
+      "resolvedCssValue": "20px",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/line-height/22",
+      "sourceToken": "tokens.typography.json:line-height.22",
+      "cssVariable": "--line-height-22",
+      "resolvedCssValue": "22px",
+      "pixsoValue": 22,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/line-height/24",
+      "sourceToken": "tokens.typography.json:line-height.24",
+      "cssVariable": "--line-height-24",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/line-height/28",
+      "sourceToken": "tokens.typography.json:line-height.28",
+      "cssVariable": "--line-height-28",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/line-height/36",
+      "sourceToken": "tokens.typography.json:line-height.36",
+      "cssVariable": "--line-height-36",
+      "resolvedCssValue": "36px",
+      "pixsoValue": 36,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/line-height/44",
+      "sourceToken": "tokens.typography.json:line-height.44",
+      "cssVariable": "--line-height-44",
+      "resolvedCssValue": "44px",
+      "pixsoValue": 44,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/line-height/58",
+      "sourceToken": "tokens.typography.json:line-height.58",
+      "cssVariable": "--line-height-58",
+      "resolvedCssValue": "58px",
+      "pixsoValue": 58,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/line-height/66",
+      "sourceToken": "tokens.typography.json:line-height.66",
+      "cssVariable": "--line-height-66",
+      "resolvedCssValue": "66px",
+      "pixsoValue": 66,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/weight/400",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "cssVariable": "--font-weight-400",
+      "resolvedCssValue": "400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/weight/500",
+      "sourceToken": "tokens.typography.json:font-weight.500",
+      "cssVariable": "--font-weight-500",
+      "resolvedCssValue": "500",
+      "pixsoValue": 500,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/weight/700",
+      "sourceToken": "tokens.typography.json:font-weight.700",
+      "cssVariable": "--font-weight-700",
+      "resolvedCssValue": "700",
+      "pixsoValue": 700,
+      "valueTransform": "identity"
+    },
+    {
+      "pixsoCollection": "Typography",
+      "pixsoMode": "HarmonyOS Sans",
+      "pixsoVariable": "font/letter-spacing/0",
+      "sourceToken": "tokens.typography.json:letter-spacing.normal",
+      "cssVariable": "--letter-spacing-normal",
+      "resolvedCssValue": "0",
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    }
+  ],
+  "semanticRoles": {
+    "action/primary/background": {
+      "cssVariable": "--color-brand-100",
+      "pixsoVariable": "brand/100",
+      "resolvedCssValue": "#0A59F7FF",
+      "sourceToken": "tokens.colors.json:brand.100",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    "content/primary": {
+      "cssVariable": "--color-text",
+      "pixsoVariable": "neutral-dark/90",
+      "resolvedCssValue": "#000000E5",
+      "sourceToken": "tokens.colors.json:neutral-dark.90",
+      "pixsoValue": "#000000E5",
+      "valueTransform": "identity"
+    },
+    "content/secondary": {
+      "cssVariable": "--color-text-muted",
+      "pixsoVariable": "neutral-dark/60",
+      "resolvedCssValue": "#00000099",
+      "sourceToken": "tokens.colors.json:neutral-dark.60",
+      "pixsoValue": "#00000099",
+      "valueTransform": "identity"
+    },
+    "content/tertiary": {
+      "cssVariable": "--color-text-subtle",
+      "pixsoVariable": "neutral-dark/40",
+      "resolvedCssValue": "#00000066",
+      "sourceToken": "tokens.colors.json:neutral-dark.40",
+      "pixsoValue": "#00000066",
+      "valueTransform": "identity"
+    },
+    "content/inverse": {
+      "cssVariable": "--color-text-inverse",
+      "pixsoVariable": "neutral-light/100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "sourceToken": "tokens.colors.json:neutral-light.100",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    "surface/default": {
+      "cssVariable": "--color-surface",
+      "pixsoVariable": "neutral-light/100",
+      "resolvedCssValue": "#FFFFFFFF",
+      "sourceToken": "tokens.colors.json:neutral-light.100",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    "surface/subtle": {
+      "cssVariable": "--color-surface-muted",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "sourceToken": "tokens.colors.json:neutral-dark.05",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "state/selected": {
+      "cssVariable": "--color-sidebar-selected",
+      "pixsoVariable": "brand/10",
+      "resolvedCssValue": "#0A59F719",
+      "sourceToken": "tokens.colors.json:brand.10",
+      "pixsoValue": "#0A59F719",
+      "valueTransform": "identity"
+    },
+    "state/hover": {
+      "cssVariable": "--state-layer-hover",
+      "pixsoVariable": "neutral-dark/05",
+      "resolvedCssValue": "#0000000C",
+      "sourceToken": "tokens.colors.json:neutral-dark.05",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "state/pressed": {
+      "cssVariable": "--state-layer-pressed",
+      "pixsoVariable": "neutral-dark/10",
+      "resolvedCssValue": "#00000019",
+      "sourceToken": "tokens.colors.json:neutral-dark.10",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    "spacing/button-icon-label": {
+      "cssVariable": "--gap-button-icon-label",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "sourceToken": "tokens.spacing.json:space.3",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/button-group": {
+      "cssVariable": "--gap-button-group",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "sourceToken": "tokens.spacing.json:space.3",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/field-label": {
+      "cssVariable": "--gap-field-label",
+      "pixsoVariable": "space/3",
+      "resolvedCssValue": "8px",
+      "sourceToken": "tokens.spacing.json:space.3",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/form-field": {
+      "cssVariable": "--gap-form-field",
+      "pixsoVariable": "space/5",
+      "resolvedCssValue": "16px",
+      "sourceToken": "tokens.spacing.json:space.5",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "spacing/button-padding-x": {
+      "cssVariable": "--padding-button-x",
+      "pixsoVariable": "space/5",
+      "resolvedCssValue": "16px",
+      "sourceToken": "tokens.spacing.json:space.5",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "spacing/card-padding": {
+      "cssVariable": "--padding-card",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "sourceToken": "tokens.spacing.json:space.6",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "spacing/table-padding": {
+      "cssVariable": "--padding-table",
+      "pixsoVariable": "space/6",
+      "resolvedCssValue": "24px",
+      "sourceToken": "tokens.spacing.json:space.6",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "size/control": {
+      "cssVariable": "--height-button",
+      "pixsoVariable": "size/40",
+      "resolvedCssValue": "40px",
+      "sourceToken": "tokens.size.json:size.11",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/icon-sm": {
+      "cssVariable": "--icon-size-sm",
+      "pixsoVariable": "size/16",
+      "resolvedCssValue": "16px",
+      "sourceToken": "tokens.size.json:size.5",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "size/icon-md": {
+      "cssVariable": "--icon-size-md",
+      "pixsoVariable": "size/20",
+      "resolvedCssValue": "20px",
+      "sourceToken": "tokens.size.json:size.6",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    "size/icon-lg": {
+      "cssVariable": "--icon-size-lg",
+      "pixsoVariable": "size/24",
+      "resolvedCssValue": "24px",
+      "sourceToken": "tokens.size.json:size.7",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "radius/control": {
+      "cssVariable": "--radius-button",
+      "pixsoVariable": "radius/08",
+      "resolvedCssValue": "8px",
+      "sourceToken": "tokens.radius.json:radius.3",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/card": {
+      "cssVariable": "--radius-card",
+      "pixsoVariable": "radius/12",
+      "sourceToken": "tokens.radius.json:semantic.card",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "layout/frame-width": {
+      "cssVariable": "--layout-frame-width",
+      "pixsoVariable": "layout/width/1728",
+      "sourceToken": "tokens.layout.json:frame.width",
+      "resolvedCssValue": "1728px",
+      "pixsoValue": 1728,
+      "valueTransform": "identity"
+    },
+    "layout/frame-height": {
+      "cssVariable": "--layout-frame-height",
+      "pixsoVariable": "layout/height/1152",
+      "sourceToken": "tokens.layout.json:frame.height",
+      "resolvedCssValue": "1152px",
+      "pixsoValue": 1152,
+      "valueTransform": "identity"
+    },
+    "layout/sidebar-expanded": {
+      "cssVariable": "--layout-sidebar-width",
+      "pixsoVariable": "layout/width/240",
+      "resolvedCssValue": "240px",
+      "sourceToken": "tokens.layout.json:shell.sidebar-width",
+      "pixsoValue": 240,
+      "valueTransform": "identity"
+    },
+    "layout/sidebar-collapsed": {
+      "cssVariable": "--layout-sidebar-width-collapsed",
+      "pixsoVariable": "size/64",
+      "resolvedCssValue": "64px",
+      "sourceToken": "tokens.size.json:size.15",
+      "pixsoValue": 64,
+      "valueTransform": "identity"
+    },
+    "layout/secondary-pane": {
+      "cssVariable": "--layout-secondary-pane-width",
+      "pixsoVariable": "layout/width/360",
+      "resolvedCssValue": "360px",
+      "sourceToken": "tokens.layout.json:shell.secondary-pane-width",
+      "pixsoValue": 360,
+      "valueTransform": "identity"
+    },
+    "layout/navigation-divider": {
+      "cssVariable": "--layout-navigation-divider-width",
+      "pixsoVariable": "layout/divider/0.5",
+      "resolvedCssValue": "0.5px",
+      "sourceToken": "tokens.layout.json:shell.navigation-divider-width",
+      "pixsoValue": 0.5,
+      "valueTransform": "identity"
+    },
+    "opacity/disabled": {
+      "cssVariable": "--state-disabled-opacity",
+      "pixsoVariable": "opacity/40",
+      "resolvedCssValue": "0.4",
+      "sourceToken": "tokens.colors.json:semantic.state-disabled-opacity",
+      "pixsoValue": 40,
+      "valueTransform": "pixso-percent-to-css-unit-interval"
+    },
+    "opacity/window-unfocus": {
+      "cssVariable": "--state-window-unfocus-opacity",
+      "pixsoVariable": "opacity/40",
+      "resolvedCssValue": "0.4",
+      "sourceToken": "tokens.colors.json:semantic.state-disabled-opacity",
+      "pixsoValue": 40,
+      "valueTransform": "pixso-percent-to-css-unit-interval"
+    },
+    "color/bg": {
+      "cssVariable": "--color-bg",
+      "pixsoVariable": "neutral-light/100",
+      "sourceToken": "tokens.colors.json:semantic.bg",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    "color/bg-subtle": {
+      "cssVariable": "--color-bg-subtle",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.bg-subtle",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/surface": {
+      "cssVariable": "--color-surface",
+      "pixsoVariable": "neutral-light/100",
+      "sourceToken": "tokens.colors.json:semantic.surface",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    "color/surface-raised": {
+      "cssVariable": "--color-surface-raised",
+      "pixsoVariable": "neutral-light/100",
+      "sourceToken": "tokens.colors.json:semantic.surface-raised",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    "color/surface-muted": {
+      "cssVariable": "--color-surface-muted",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.surface-muted",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/overlay": {
+      "cssVariable": "--color-overlay",
+      "pixsoVariable": "neutral-dark/40",
+      "sourceToken": "tokens.colors.json:semantic.overlay",
+      "resolvedCssValue": "#00000066",
+      "pixsoValue": "#00000066",
+      "valueTransform": "identity"
+    },
+    "color/secondary": {
+      "cssVariable": "--color-secondary",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.secondary",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/secondary-hover": {
+      "cssVariable": "--color-secondary-hover",
+      "pixsoVariable": "neutral-dark/10",
+      "sourceToken": "tokens.colors.json:semantic.secondary-hover",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    "color/button-ghost-hover-bg": {
+      "cssVariable": "--color-button-ghost-hover-bg",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.button-ghost-hover-bg",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/button-ghost-text": {
+      "cssVariable": "--color-button-ghost-text",
+      "pixsoVariable": "brand/100",
+      "sourceToken": "tokens.colors.json:semantic.button-ghost-text",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    "color/button-danger-text": {
+      "cssVariable": "--color-button-danger-text",
+      "pixsoVariable": "function/danger/100",
+      "sourceToken": "tokens.colors.json:semantic.button-danger-text",
+      "resolvedCssValue": "#E84026FF",
+      "pixsoValue": "#E84026FF",
+      "valueTransform": "identity"
+    },
+    "color/icon-text-button-ghost-hover-bg": {
+      "cssVariable": "--color-icon-text-button-ghost-hover-bg",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.icon-text-button-ghost-hover-bg",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/icon-text-button-ghost-content": {
+      "cssVariable": "--color-icon-text-button-ghost-content",
+      "pixsoVariable": "neutral-dark/90",
+      "sourceToken": "tokens.colors.json:semantic.icon-text-button-ghost-content",
+      "resolvedCssValue": "#000000E5",
+      "pixsoValue": "#000000E5",
+      "valueTransform": "identity"
+    },
+    "color/accent": {
+      "cssVariable": "--color-accent",
+      "pixsoVariable": "brand/100",
+      "sourceToken": "tokens.colors.json:semantic.accent",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    "color/sidebar-bg": {
+      "cssVariable": "--color-sidebar-bg",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-bg",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/sidebar-accent": {
+      "cssVariable": "--color-sidebar-accent",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-accent",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/sidebar-accent-text": {
+      "cssVariable": "--color-sidebar-accent-text",
+      "pixsoVariable": "brand/100",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-accent-text",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    "color/sidebar-selected": {
+      "cssVariable": "--color-sidebar-selected",
+      "pixsoVariable": "brand/10",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-selected",
+      "resolvedCssValue": "#0A59F719",
+      "pixsoValue": "#0A59F719",
+      "valueTransform": "identity"
+    },
+    "color/sidebar-selected-text": {
+      "cssVariable": "--color-sidebar-selected-text",
+      "pixsoVariable": "brand/100",
+      "sourceToken": "tokens.colors.json:semantic.sidebar-selected-text",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    "color/tab-list-bg": {
+      "cssVariable": "--color-tab-list-bg",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.tab-list-bg",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/tab-text": {
+      "cssVariable": "--color-tab-text",
+      "pixsoVariable": "neutral-dark/60",
+      "sourceToken": "tokens.colors.json:semantic.tab-text",
+      "resolvedCssValue": "#00000099",
+      "pixsoValue": "#00000099",
+      "valueTransform": "identity"
+    },
+    "color/tab-hover-bg": {
+      "cssVariable": "--color-tab-hover-bg",
+      "pixsoVariable": "neutral-dark/10",
+      "sourceToken": "tokens.colors.json:semantic.tab-hover-bg",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    "color/tab-selected-bg": {
+      "cssVariable": "--color-tab-selected-bg",
+      "pixsoVariable": "neutral-light/100",
+      "sourceToken": "tokens.colors.json:semantic.tab-selected-bg",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    "color/tab-selected-text": {
+      "cssVariable": "--color-tab-selected-text",
+      "pixsoVariable": "neutral-dark/90",
+      "sourceToken": "tokens.colors.json:semantic.tab-selected-text",
+      "resolvedCssValue": "#000000E5",
+      "pixsoValue": "#000000E5",
+      "valueTransform": "identity"
+    },
+    "color/tooltip-bg": {
+      "cssVariable": "--color-tooltip-bg",
+      "pixsoVariable": "neutral-light/100",
+      "sourceToken": "tokens.colors.json:semantic.tooltip-bg",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    "color/tooltip-text": {
+      "cssVariable": "--color-tooltip-text",
+      "pixsoVariable": "neutral-dark/90",
+      "sourceToken": "tokens.colors.json:semantic.tooltip-text",
+      "resolvedCssValue": "#000000E5",
+      "pixsoValue": "#000000E5",
+      "valueTransform": "identity"
+    },
+    "color/input-bg": {
+      "cssVariable": "--color-input-bg",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.input-bg",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/input-bg-on-default": {
+      "cssVariable": "--color-input-bg-on-default",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.input-bg-on-default",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/input-hover-bg": {
+      "cssVariable": "--color-input-hover-bg",
+      "pixsoVariable": "neutral-dark/10",
+      "sourceToken": "tokens.colors.json:semantic.input-hover-bg",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    "color/input-hover-bg-on-default": {
+      "cssVariable": "--color-input-hover-bg-on-default",
+      "pixsoVariable": "neutral-dark/10",
+      "sourceToken": "tokens.colors.json:semantic.input-hover-bg-on-default",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    "color/input-focus-bg": {
+      "cssVariable": "--color-input-focus-bg",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.input-focus-bg",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/input-focus-bg-on-default": {
+      "cssVariable": "--color-input-focus-bg-on-default",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.input-focus-bg-on-default",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/input-error-bg": {
+      "cssVariable": "--color-input-error-bg",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.input-error-bg",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/input-error-bg-on-default": {
+      "cssVariable": "--color-input-error-bg-on-default",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.input-error-bg-on-default",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/input-bg-on-subtle": {
+      "cssVariable": "--color-input-bg-on-subtle",
+      "pixsoVariable": "neutral-light/100",
+      "sourceToken": "tokens.colors.json:semantic.input-bg-on-subtle",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    "color/input-hover-border-on-subtle": {
+      "cssVariable": "--color-input-hover-border-on-subtle",
+      "pixsoVariable": "neutral-light/100",
+      "sourceToken": "tokens.colors.json:semantic.input-hover-border-on-subtle",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    "color/input-focus-bg-on-subtle": {
+      "cssVariable": "--color-input-focus-bg-on-subtle",
+      "pixsoVariable": "neutral-light/100",
+      "sourceToken": "tokens.colors.json:semantic.input-focus-bg-on-subtle",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    "color/input-error-bg-on-subtle": {
+      "cssVariable": "--color-input-error-bg-on-subtle",
+      "pixsoVariable": "neutral-light/100",
+      "sourceToken": "tokens.colors.json:semantic.input-error-bg-on-subtle",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    "color/input-error-border": {
+      "cssVariable": "--color-input-error-border",
+      "pixsoVariable": "function/danger/100",
+      "sourceToken": "tokens.colors.json:semantic.input-error-border",
+      "resolvedCssValue": "#E84026FF",
+      "pixsoValue": "#E84026FF",
+      "valueTransform": "identity"
+    },
+    "color/text": {
+      "cssVariable": "--color-text",
+      "pixsoVariable": "neutral-dark/90",
+      "sourceToken": "tokens.colors.json:semantic.text",
+      "resolvedCssValue": "#000000E5",
+      "pixsoValue": "#000000E5",
+      "valueTransform": "identity"
+    },
+    "color/text-muted": {
+      "cssVariable": "--color-text-muted",
+      "pixsoVariable": "neutral-dark/60",
+      "sourceToken": "tokens.colors.json:semantic.text-muted",
+      "resolvedCssValue": "#00000099",
+      "pixsoValue": "#00000099",
+      "valueTransform": "identity"
+    },
+    "color/text-subtle": {
+      "cssVariable": "--color-text-subtle",
+      "pixsoVariable": "neutral-dark/40",
+      "sourceToken": "tokens.colors.json:semantic.text-subtle",
+      "resolvedCssValue": "#00000066",
+      "pixsoValue": "#00000066",
+      "valueTransform": "identity"
+    },
+    "color/text-inverse": {
+      "cssVariable": "--color-text-inverse",
+      "pixsoVariable": "neutral-light/100",
+      "sourceToken": "tokens.colors.json:semantic.text-inverse",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    "color/text-brand": {
+      "cssVariable": "--color-text-brand",
+      "pixsoVariable": "brand/100",
+      "sourceToken": "tokens.colors.json:semantic.text-brand",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    "color/link": {
+      "cssVariable": "--color-link",
+      "pixsoVariable": "neutral-dark/100",
+      "sourceToken": "tokens.colors.json:semantic.link",
+      "resolvedCssValue": "#000000FF",
+      "pixsoValue": "#000000FF",
+      "valueTransform": "identity"
+    },
+    "color/icon": {
+      "cssVariable": "--color-icon",
+      "pixsoVariable": "neutral-dark/90",
+      "sourceToken": "tokens.colors.json:semantic.icon",
+      "resolvedCssValue": "#000000E5",
+      "pixsoValue": "#000000E5",
+      "valueTransform": "identity"
+    },
+    "color/icon-muted": {
+      "cssVariable": "--color-icon-muted",
+      "pixsoVariable": "neutral-dark/60",
+      "sourceToken": "tokens.colors.json:semantic.icon-muted",
+      "resolvedCssValue": "#00000099",
+      "pixsoValue": "#00000099",
+      "valueTransform": "identity"
+    },
+    "color/icon-subtle": {
+      "cssVariable": "--color-icon-subtle",
+      "pixsoVariable": "neutral-dark/40",
+      "sourceToken": "tokens.colors.json:semantic.icon-subtle",
+      "resolvedCssValue": "#00000066",
+      "pixsoValue": "#00000066",
+      "valueTransform": "identity"
+    },
+    "color/icon-inverse": {
+      "cssVariable": "--color-icon-inverse",
+      "pixsoVariable": "neutral-light/100",
+      "sourceToken": "tokens.colors.json:semantic.icon-inverse",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    "color/border": {
+      "cssVariable": "--color-border",
+      "pixsoVariable": "neutral-dark/10",
+      "sourceToken": "tokens.colors.json:semantic.border",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    "color/divider": {
+      "cssVariable": "--color-divider",
+      "pixsoVariable": "neutral-dark/20",
+      "sourceToken": "tokens.colors.json:semantic.divider",
+      "resolvedCssValue": "#00000033",
+      "pixsoValue": "#00000033",
+      "valueTransform": "identity"
+    },
+    "color/focus-ring": {
+      "cssVariable": "--color-focus-ring",
+      "pixsoVariable": "brand/100",
+      "sourceToken": "tokens.colors.json:semantic.focus-ring",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    "color/primary": {
+      "cssVariable": "--color-primary",
+      "pixsoVariable": "brand/100",
+      "sourceToken": "tokens.colors.json:semantic.primary",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    "color/primary-text": {
+      "cssVariable": "--color-primary-text",
+      "pixsoVariable": "neutral-light/100",
+      "sourceToken": "tokens.colors.json:semantic.primary-text",
+      "resolvedCssValue": "#FFFFFFFF",
+      "pixsoValue": "#FFFFFFFF",
+      "valueTransform": "identity"
+    },
+    "color/success": {
+      "cssVariable": "--color-success",
+      "pixsoVariable": "function/success/100",
+      "sourceToken": "tokens.colors.json:semantic.success",
+      "resolvedCssValue": "#64BB5CFF",
+      "pixsoValue": "#64BB5CFF",
+      "valueTransform": "identity"
+    },
+    "color/success-subtle": {
+      "cssVariable": "--color-success-subtle",
+      "pixsoVariable": "function/success/10",
+      "sourceToken": "tokens.colors.json:semantic.success-subtle",
+      "resolvedCssValue": "#64BB5C19",
+      "pixsoValue": "#64BB5C19",
+      "valueTransform": "identity"
+    },
+    "color/warning": {
+      "cssVariable": "--color-warning",
+      "pixsoVariable": "function/warning/100",
+      "sourceToken": "tokens.colors.json:semantic.warning",
+      "resolvedCssValue": "#ED6F21FF",
+      "pixsoValue": "#ED6F21FF",
+      "valueTransform": "identity"
+    },
+    "color/warning-subtle": {
+      "cssVariable": "--color-warning-subtle",
+      "pixsoVariable": "function/warning/10",
+      "sourceToken": "tokens.colors.json:semantic.warning-subtle",
+      "resolvedCssValue": "#ED6F2119",
+      "pixsoValue": "#ED6F2119",
+      "valueTransform": "identity"
+    },
+    "color/danger": {
+      "cssVariable": "--color-danger",
+      "pixsoVariable": "function/danger/100",
+      "sourceToken": "tokens.colors.json:semantic.danger",
+      "resolvedCssValue": "#E84026FF",
+      "pixsoValue": "#E84026FF",
+      "valueTransform": "identity"
+    },
+    "color/danger-subtle": {
+      "cssVariable": "--color-danger-subtle",
+      "pixsoVariable": "function/danger/10",
+      "sourceToken": "tokens.colors.json:semantic.danger-subtle",
+      "resolvedCssValue": "#E8402619",
+      "pixsoValue": "#E8402619",
+      "valueTransform": "identity"
+    },
+    "color/info": {
+      "cssVariable": "--color-info",
+      "pixsoVariable": "brand/100",
+      "sourceToken": "tokens.colors.json:semantic.info",
+      "resolvedCssValue": "#0A59F7FF",
+      "pixsoValue": "#0A59F7FF",
+      "valueTransform": "identity"
+    },
+    "color/info-subtle": {
+      "cssVariable": "--color-info-subtle",
+      "pixsoVariable": "brand/10",
+      "sourceToken": "tokens.colors.json:semantic.info-subtle",
+      "resolvedCssValue": "#0A59F719",
+      "pixsoValue": "#0A59F719",
+      "valueTransform": "identity"
+    },
+    "color/alert-neutral-subtle": {
+      "cssVariable": "--color-alert-neutral-subtle",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.alert-neutral-subtle",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/badge-neutral-bg": {
+      "cssVariable": "--color-badge-neutral-bg",
+      "pixsoVariable": "neutral-dark/10",
+      "sourceToken": "tokens.colors.json:semantic.badge-neutral-bg",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    "color/badge-info-bg": {
+      "cssVariable": "--color-badge-info-bg",
+      "pixsoVariable": "brand/10",
+      "sourceToken": "tokens.colors.json:semantic.badge-info-bg",
+      "resolvedCssValue": "#0A59F719",
+      "pixsoValue": "#0A59F719",
+      "valueTransform": "identity"
+    },
+    "color/badge-success-text": {
+      "cssVariable": "--color-badge-success-text",
+      "pixsoVariable": "function/success/100",
+      "sourceToken": "tokens.colors.json:semantic.badge-success-text",
+      "resolvedCssValue": "#64BB5CFF",
+      "pixsoValue": "#64BB5CFF",
+      "valueTransform": "identity"
+    },
+    "color/badge-success-bg": {
+      "cssVariable": "--color-badge-success-bg",
+      "pixsoVariable": "function/success/10",
+      "sourceToken": "tokens.colors.json:semantic.badge-success-bg",
+      "resolvedCssValue": "#64BB5C19",
+      "pixsoValue": "#64BB5C19",
+      "valueTransform": "identity"
+    },
+    "color/badge-warning-text": {
+      "cssVariable": "--color-badge-warning-text",
+      "pixsoVariable": "function/warning/100",
+      "sourceToken": "tokens.colors.json:semantic.badge-warning-text",
+      "resolvedCssValue": "#ED6F21FF",
+      "pixsoValue": "#ED6F21FF",
+      "valueTransform": "identity"
+    },
+    "color/badge-warning-bg": {
+      "cssVariable": "--color-badge-warning-bg",
+      "pixsoVariable": "function/warning/10",
+      "sourceToken": "tokens.colors.json:semantic.badge-warning-bg",
+      "resolvedCssValue": "#ED6F2119",
+      "pixsoValue": "#ED6F2119",
+      "valueTransform": "identity"
+    },
+    "color/badge-danger-text": {
+      "cssVariable": "--color-badge-danger-text",
+      "pixsoVariable": "function/danger/100",
+      "sourceToken": "tokens.colors.json:semantic.badge-danger-text",
+      "resolvedCssValue": "#E84026FF",
+      "pixsoValue": "#E84026FF",
+      "valueTransform": "identity"
+    },
+    "color/badge-danger-bg": {
+      "cssVariable": "--color-badge-danger-bg",
+      "pixsoVariable": "function/danger/10",
+      "sourceToken": "tokens.colors.json:semantic.badge-danger-bg",
+      "resolvedCssValue": "#E8402619",
+      "pixsoValue": "#E8402619",
+      "valueTransform": "identity"
+    },
+    "color/chart-1": {
+      "cssVariable": "--color-chart-1",
+      "pixsoVariable": "multi/01",
+      "sourceToken": "tokens.colors.json:semantic.chart-1",
+      "resolvedCssValue": "#564AF7",
+      "pixsoValue": "#564AF7",
+      "valueTransform": "identity"
+    },
+    "color/chart-2": {
+      "cssVariable": "--color-chart-2",
+      "pixsoVariable": "multi/02",
+      "sourceToken": "tokens.colors.json:semantic.chart-2",
+      "resolvedCssValue": "#46B1E3",
+      "pixsoValue": "#46B1E3",
+      "valueTransform": "identity"
+    },
+    "color/chart-3": {
+      "cssVariable": "--color-chart-3",
+      "pixsoVariable": "multi/03",
+      "sourceToken": "tokens.colors.json:semantic.chart-3",
+      "resolvedCssValue": "#61CFBE",
+      "pixsoValue": "#61CFBE",
+      "valueTransform": "identity"
+    },
+    "color/chart-4": {
+      "cssVariable": "--color-chart-4",
+      "pixsoVariable": "multi/04",
+      "sourceToken": "tokens.colors.json:semantic.chart-4",
+      "resolvedCssValue": "#A5D61D",
+      "pixsoValue": "#A5D61D",
+      "valueTransform": "identity"
+    },
+    "color/chart-5": {
+      "cssVariable": "--color-chart-5",
+      "pixsoVariable": "multi/05",
+      "sourceToken": "tokens.colors.json:semantic.chart-5",
+      "resolvedCssValue": "#AC49F5",
+      "pixsoValue": "#AC49F5",
+      "valueTransform": "identity"
+    },
+    "color/state-layer-hover": {
+      "cssVariable": "--state-layer-hover",
+      "pixsoVariable": "neutral-dark/05",
+      "sourceToken": "tokens.colors.json:semantic.state-layer-hover",
+      "resolvedCssValue": "#0000000C",
+      "pixsoValue": "#0000000C",
+      "valueTransform": "identity"
+    },
+    "color/state-layer-pressed": {
+      "cssVariable": "--state-layer-pressed",
+      "pixsoVariable": "neutral-dark/10",
+      "sourceToken": "tokens.colors.json:semantic.state-layer-pressed",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    "color/state-layer-selected": {
+      "cssVariable": "--state-layer-selected",
+      "pixsoVariable": "neutral-dark/10",
+      "sourceToken": "tokens.colors.json:semantic.state-layer-selected",
+      "resolvedCssValue": "#00000019",
+      "pixsoValue": "#00000019",
+      "valueTransform": "identity"
+    },
+    "color/state-layer-focus": {
+      "cssVariable": "--state-layer-focus",
+      "pixsoVariable": "brand/10",
+      "sourceToken": "tokens.colors.json:semantic.state-layer-focus",
+      "resolvedCssValue": "#0A59F719",
+      "pixsoValue": "#0A59F719",
+      "valueTransform": "identity"
+    },
+    "spacing/gap/list-item": {
+      "cssVariable": "--gap-list-item",
+      "pixsoVariable": "space/1",
+      "sourceToken": "tokens.spacing.json:gap.list-item",
+      "resolvedCssValue": "2px",
+      "pixsoValue": 2,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/selection-option": {
+      "cssVariable": "--gap-selection-option",
+      "pixsoVariable": "space/1",
+      "sourceToken": "tokens.spacing.json:gap.selection-option",
+      "resolvedCssValue": "2px",
+      "pixsoValue": 2,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/tabs-list": {
+      "cssVariable": "--gap-tabs-list",
+      "pixsoVariable": "space/1",
+      "sourceToken": "tokens.spacing.json:gap.tabs-list",
+      "resolvedCssValue": "2px",
+      "pixsoValue": 2,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/menu-item": {
+      "cssVariable": "--gap-menu-item",
+      "pixsoVariable": "space/1",
+      "sourceToken": "tokens.spacing.json:gap.menu-item",
+      "resolvedCssValue": "2px",
+      "pixsoValue": 2,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/nav-item": {
+      "cssVariable": "--gap-nav-item",
+      "pixsoVariable": "space/1",
+      "sourceToken": "tokens.spacing.json:gap.nav-item",
+      "resolvedCssValue": "2px",
+      "pixsoValue": 2,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/button-icon-label": {
+      "cssVariable": "--gap-button-icon-label",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:gap.button-icon-label",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/button-group": {
+      "cssVariable": "--gap-button-group",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:gap.button-group",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/menu-item-content": {
+      "cssVariable": "--gap-menu-item-content",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:gap.menu-item-content",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/breadcrumb-item": {
+      "cssVariable": "--gap-breadcrumb-item",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:gap.breadcrumb-item",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/subtab-item": {
+      "cssVariable": "--gap-subtab-item",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:gap.subtab-item",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/alert-content": {
+      "cssVariable": "--gap-alert-content",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:gap.alert-content",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/field-label": {
+      "cssVariable": "--gap-field-label",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:gap.field-label",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/form-field": {
+      "cssVariable": "--gap-form-field",
+      "pixsoVariable": "space/5",
+      "sourceToken": "tokens.spacing.json:gap.form-field",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/choice-label": {
+      "cssVariable": "--gap-choice-label",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:gap.choice-label",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/titlebar-brand": {
+      "cssVariable": "--gap-titlebar-brand",
+      "pixsoVariable": "space/4",
+      "sourceToken": "tokens.spacing.json:gap.titlebar-brand",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/cross-group-control": {
+      "cssVariable": "--gap-cross-group-control",
+      "pixsoVariable": "space/5",
+      "sourceToken": "tokens.spacing.json:gap.cross-group-control",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/menu-section": {
+      "cssVariable": "--gap-menu-section",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.spacing.json:gap.menu-section",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "spacing/gap/page-section": {
+      "cssVariable": "--gap-page-section",
+      "pixsoVariable": "space/7",
+      "sourceToken": "tokens.spacing.json:gap.page-section",
+      "resolvedCssValue": "32px",
+      "pixsoValue": 32,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/segmented-control": {
+      "cssVariable": "--padding-segmented-control",
+      "pixsoVariable": "space/1",
+      "sourceToken": "tokens.spacing.json:padding.segmented-control",
+      "resolvedCssValue": "2px",
+      "pixsoValue": 2,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/popup-menu": {
+      "cssVariable": "--padding-popup-menu",
+      "pixsoVariable": "space/2",
+      "sourceToken": "tokens.spacing.json:padding.popup-menu",
+      "resolvedCssValue": "4px",
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/list-card": {
+      "cssVariable": "--padding-list-card",
+      "pixsoVariable": "space/2",
+      "sourceToken": "tokens.spacing.json:padding.list-card",
+      "resolvedCssValue": "4px",
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/tooltip": {
+      "cssVariable": "--padding-tooltip",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:padding.tooltip",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/alert": {
+      "cssVariable": "--padding-alert",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:padding.alert",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/alert-left": {
+      "cssVariable": "--padding-alert-left",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:padding.alert-left",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/alert-right": {
+      "cssVariable": "--padding-alert-right",
+      "pixsoVariable": "space/2",
+      "sourceToken": "tokens.spacing.json:padding.alert-right",
+      "resolvedCssValue": "4px",
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/selection-option": {
+      "cssVariable": "--padding-selection-option",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:padding.selection-option",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/tab-x": {
+      "cssVariable": "--padding-tab-x",
+      "pixsoVariable": "space/4",
+      "sourceToken": "tokens.spacing.json:padding.tab-x",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/tab-panel": {
+      "cssVariable": "--padding-tab-panel",
+      "pixsoVariable": "space/5",
+      "sourceToken": "tokens.spacing.json:padding.tab-panel",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/titlebar-leading": {
+      "cssVariable": "--padding-titlebar-leading",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.spacing.json:padding.titlebar-leading",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/titlebar-trailing-s": {
+      "cssVariable": "--padding-titlebar-trailing-s",
+      "pixsoVariable": "space/0",
+      "sourceToken": "tokens.spacing.json:padding.titlebar-trailing-s",
+      "resolvedCssValue": "0px",
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/titlebar-trailing-m": {
+      "cssVariable": "--padding-titlebar-trailing-m",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:padding.titlebar-trailing-m",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/titlebar-trailing-l": {
+      "cssVariable": "--padding-titlebar-trailing-l",
+      "pixsoVariable": "space/4",
+      "sourceToken": "tokens.spacing.json:padding.titlebar-trailing-l",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/titlebar-trailing-xl": {
+      "cssVariable": "--padding-titlebar-trailing-xl",
+      "pixsoVariable": "space/5",
+      "sourceToken": "tokens.spacing.json:padding.titlebar-trailing-xl",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/button-sm-x": {
+      "cssVariable": "--padding-button-sm-x",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:padding.button-sm-x",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/split-button-main-x": {
+      "cssVariable": "--padding-split-button-main-x",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:padding.split-button-main-x",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/split-button-trigger": {
+      "cssVariable": "--padding-split-button-trigger",
+      "pixsoVariable": "space/0",
+      "sourceToken": "tokens.spacing.json:padding.split-button-trigger",
+      "resolvedCssValue": "0px",
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/list": {
+      "cssVariable": "--padding-list",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:padding.list",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/tag-x": {
+      "cssVariable": "--padding-tag-x",
+      "pixsoVariable": "space/4",
+      "sourceToken": "tokens.spacing.json:padding.tag-x",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/select-x": {
+      "cssVariable": "--padding-select-x",
+      "pixsoVariable": "space/4",
+      "sourceToken": "tokens.spacing.json:padding.select-x",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/textarea-x": {
+      "cssVariable": "--padding-textarea-x",
+      "pixsoVariable": "space/4",
+      "sourceToken": "tokens.spacing.json:padding.textarea-x",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/textarea-y": {
+      "cssVariable": "--padding-textarea-y",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:padding.textarea-y",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/search-x": {
+      "cssVariable": "--padding-search-x",
+      "pixsoVariable": "space/4",
+      "sourceToken": "tokens.spacing.json:padding.search-x",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/menu-item-x": {
+      "cssVariable": "--padding-menu-item-x",
+      "pixsoVariable": "space/4",
+      "sourceToken": "tokens.spacing.json:padding.menu-item-x",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/button-x": {
+      "cssVariable": "--padding-button-x",
+      "pixsoVariable": "space/5",
+      "sourceToken": "tokens.spacing.json:padding.button-x",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/card": {
+      "cssVariable": "--padding-card",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.spacing.json:padding.card",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/table": {
+      "cssVariable": "--padding-table",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.spacing.json:padding.table",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/dialog": {
+      "cssVariable": "--padding-dialog",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.spacing.json:padding.dialog",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/dialog-content": {
+      "cssVariable": "--padding-dialog-content",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.spacing.json:padding.dialog-content",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/modal-content-x": {
+      "cssVariable": "--padding-modal-content-x",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.spacing.json:padding.modal-content-x",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/modal-content-y": {
+      "cssVariable": "--padding-modal-content-y",
+      "pixsoVariable": "space/0",
+      "sourceToken": "tokens.spacing.json:padding.modal-content-y",
+      "resolvedCssValue": "0px",
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/modal-header-top": {
+      "cssVariable": "--padding-modal-header-top",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.spacing.json:padding.modal-header-top",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/modal-header-x": {
+      "cssVariable": "--padding-modal-header-x",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.spacing.json:padding.modal-header-x",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "spacing/padding/modal-footer-x": {
+      "cssVariable": "--padding-modal-footer-x",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.spacing.json:padding.modal-footer-x",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "size/icon/xs": {
+      "cssVariable": "--icon-size-xs",
+      "pixsoVariable": "size/12",
+      "sourceToken": "tokens.size.json:icon.xs",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "size/icon/sm": {
+      "cssVariable": "--icon-size-sm",
+      "pixsoVariable": "size/16",
+      "sourceToken": "tokens.size.json:icon.sm",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "size/icon/md": {
+      "cssVariable": "--icon-size-md",
+      "pixsoVariable": "size/20",
+      "sourceToken": "tokens.size.json:icon.md",
+      "resolvedCssValue": "20px",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    "size/icon/lg": {
+      "cssVariable": "--icon-size-lg",
+      "pixsoVariable": "size/24",
+      "sourceToken": "tokens.size.json:icon.lg",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "size/indicator/notification-dot-sm": {
+      "cssVariable": "--notification-dot-sm",
+      "pixsoVariable": "size/06",
+      "sourceToken": "tokens.size.json:indicator.notification-dot-sm",
+      "resolvedCssValue": "6px",
+      "pixsoValue": 6,
+      "valueTransform": "identity"
+    },
+    "size/indicator/notification-badge-size": {
+      "cssVariable": "--notification-badge-size",
+      "pixsoVariable": "size/16",
+      "sourceToken": "tokens.size.json:indicator.notification-badge-size",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "size/indicator/checkbox-size": {
+      "cssVariable": "--checkbox-size",
+      "pixsoVariable": "size/20",
+      "sourceToken": "tokens.size.json:indicator.checkbox-size",
+      "resolvedCssValue": "20px",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    "size/indicator/radio-size": {
+      "cssVariable": "--radio-size",
+      "pixsoVariable": "size/20",
+      "sourceToken": "tokens.size.json:indicator.radio-size",
+      "resolvedCssValue": "20px",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    "size/indicator/switch-height": {
+      "cssVariable": "--switch-height",
+      "pixsoVariable": "size/20",
+      "sourceToken": "tokens.size.json:indicator.switch-height",
+      "resolvedCssValue": "20px",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    "size/indicator/switch-width": {
+      "cssVariable": "--switch-width",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:indicator.switch-width",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/indicator/badge-height": {
+      "cssVariable": "--height-badge",
+      "pixsoVariable": "size/24",
+      "sourceToken": "tokens.size.json:indicator.badge-height",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "size/indicator/progress-height": {
+      "cssVariable": "--height-progress",
+      "pixsoVariable": "size/08",
+      "sourceToken": "tokens.size.json:indicator.progress-height",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "size/indicator/avatar-sm-size": {
+      "cssVariable": "--size-avatar-sm",
+      "pixsoVariable": "size/32",
+      "sourceToken": "tokens.size.json:indicator.avatar-sm-size",
+      "resolvedCssValue": "32px",
+      "pixsoValue": 32,
+      "valueTransform": "identity"
+    },
+    "size/indicator/avatar-md-size": {
+      "cssVariable": "--size-avatar-md",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:indicator.avatar-md-size",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/button-sm-height": {
+      "cssVariable": "--height-button-sm",
+      "pixsoVariable": "size/28",
+      "sourceToken": "tokens.size.json:component.button-sm-height",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    "size/component/input-sm-height": {
+      "cssVariable": "--height-input-sm",
+      "pixsoVariable": "size/28",
+      "sourceToken": "tokens.size.json:component.input-sm-height",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    "size/component/select-sm-height": {
+      "cssVariable": "--height-select-sm",
+      "pixsoVariable": "size/28",
+      "sourceToken": "tokens.size.json:component.select-sm-height",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    "size/component/search-sm-height": {
+      "cssVariable": "--height-search-sm",
+      "pixsoVariable": "size/28",
+      "sourceToken": "tokens.size.json:component.search-sm-height",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    "size/component/tag-height": {
+      "cssVariable": "--height-tag",
+      "pixsoVariable": "size/28",
+      "sourceToken": "tokens.size.json:component.tag-height",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    "size/component/selection-option-height": {
+      "cssVariable": "--height-selection-option",
+      "pixsoVariable": "size/28",
+      "sourceToken": "tokens.size.json:component.selection-option-height",
+      "resolvedCssValue": "28px",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    "size/component/selection-block-height": {
+      "cssVariable": "--height-selection-block",
+      "pixsoVariable": "size/32",
+      "sourceToken": "tokens.size.json:component.selection-block-height",
+      "resolvedCssValue": "32px",
+      "pixsoValue": 32,
+      "valueTransform": "identity"
+    },
+    "size/component/chips-tab-height": {
+      "cssVariable": "--height-chips-tab",
+      "pixsoVariable": "size/36",
+      "sourceToken": "tokens.size.json:component.chips-tab-height",
+      "resolvedCssValue": "36px",
+      "pixsoValue": 36,
+      "valueTransform": "identity"
+    },
+    "size/component/tab-line-height": {
+      "cssVariable": "--height-tab-line",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.tab-line-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/tab-vertical-height": {
+      "cssVariable": "--height-tab-vertical",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.tab-vertical-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/menu-item-height": {
+      "cssVariable": "--height-menu-item",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.menu-item-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/list-item-height": {
+      "cssVariable": "--height-list-item",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.list-item-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/list-item-single-line-height": {
+      "cssVariable": "--height-list-item-single-line",
+      "pixsoVariable": "size/48",
+      "sourceToken": "tokens.size.json:component.list-item-single-line-height",
+      "resolvedCssValue": "48px",
+      "pixsoValue": 48,
+      "valueTransform": "identity"
+    },
+    "size/component/list-item-double-line-height": {
+      "cssVariable": "--height-list-item-double-line",
+      "pixsoVariable": "size/56",
+      "sourceToken": "tokens.size.json:component.list-item-double-line-height",
+      "resolvedCssValue": "56px",
+      "pixsoValue": 56,
+      "valueTransform": "identity"
+    },
+    "size/component/list-item-triple-line-height": {
+      "cssVariable": "--height-list-item-triple-line",
+      "pixsoVariable": "size/80",
+      "sourceToken": "tokens.size.json:component.list-item-triple-line-height",
+      "resolvedCssValue": "80px",
+      "pixsoValue": 80,
+      "valueTransform": "identity"
+    },
+    "size/component/list-heading-height": {
+      "cssVariable": "--height-list-heading",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.list-heading-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/tree-item-height": {
+      "cssVariable": "--height-tree-item",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.tree-item-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/button-height": {
+      "cssVariable": "--height-button",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.button-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/icon-button-size": {
+      "cssVariable": "--size-icon-button",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.icon-button-size",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/icon-text-button-height": {
+      "cssVariable": "--height-icon-text-button",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.icon-text-button-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/dropdown-control-height": {
+      "cssVariable": "--height-dropdown-control",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.dropdown-control-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/split-button-trigger-width": {
+      "cssVariable": "--width-split-button-trigger",
+      "pixsoVariable": "size/16",
+      "sourceToken": "tokens.size.json:component.split-button-trigger-width",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "size/component/select-height": {
+      "cssVariable": "--height-select",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.select-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/search-height": {
+      "cssVariable": "--height-search",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.search-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/input-height": {
+      "cssVariable": "--height-input",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.input-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/textarea-min-height": {
+      "cssVariable": "--min-height-textarea",
+      "pixsoVariable": "size/80",
+      "sourceToken": "tokens.size.json:component.textarea-min-height",
+      "resolvedCssValue": "80px",
+      "pixsoValue": 80,
+      "valueTransform": "identity"
+    },
+    "size/component/alert-height": {
+      "cssVariable": "--height-alert",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.alert-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/alert-min-height": {
+      "cssVariable": "--min-height-alert",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.alert-min-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/snackbar-height": {
+      "cssVariable": "--height-snackbar",
+      "pixsoVariable": "size/48",
+      "sourceToken": "tokens.size.json:component.snackbar-height",
+      "resolvedCssValue": "48px",
+      "pixsoValue": 48,
+      "valueTransform": "identity"
+    },
+    "size/component/pagination-item-height": {
+      "cssVariable": "--height-pagination-item",
+      "pixsoVariable": "size/32",
+      "sourceToken": "tokens.size.json:component.pagination-item-height",
+      "resolvedCssValue": "32px",
+      "pixsoValue": 32,
+      "valueTransform": "identity"
+    },
+    "size/component/table-header-height": {
+      "cssVariable": "--height-table-header",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.table-header-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/table-row-height": {
+      "cssVariable": "--height-table-row",
+      "pixsoVariable": "size/48",
+      "sourceToken": "tokens.size.json:component.table-row-height",
+      "resolvedCssValue": "48px",
+      "pixsoValue": 48,
+      "valueTransform": "identity"
+    },
+    "size/component/titlebar-sm-height": {
+      "cssVariable": "--height-titlebar-sm",
+      "pixsoVariable": "size/40",
+      "sourceToken": "tokens.size.json:component.titlebar-sm-height",
+      "resolvedCssValue": "40px",
+      "pixsoValue": 40,
+      "valueTransform": "identity"
+    },
+    "size/component/titlebar-md-height": {
+      "cssVariable": "--height-titlebar-md",
+      "pixsoVariable": "size/56",
+      "sourceToken": "tokens.size.json:component.titlebar-md-height",
+      "resolvedCssValue": "56px",
+      "pixsoValue": 56,
+      "valueTransform": "identity"
+    },
+    "size/component/titlebar-lg-height": {
+      "cssVariable": "--height-titlebar-lg",
+      "pixsoVariable": "size/64",
+      "sourceToken": "tokens.size.json:component.titlebar-lg-height",
+      "resolvedCssValue": "64px",
+      "pixsoValue": 64,
+      "valueTransform": "identity"
+    },
+    "size/component/titlebar-xl-height": {
+      "cssVariable": "--height-titlebar-xl",
+      "pixsoVariable": "size/72",
+      "sourceToken": "tokens.size.json:component.titlebar-xl-height",
+      "resolvedCssValue": "72px",
+      "pixsoValue": 72,
+      "valueTransform": "identity"
+    },
+    "size/component/dialog-header-height": {
+      "cssVariable": "--height-dialog-header",
+      "pixsoVariable": "size/56",
+      "sourceToken": "tokens.size.json:component.dialog-header-height",
+      "resolvedCssValue": "56px",
+      "pixsoValue": 56,
+      "valueTransform": "identity"
+    },
+    "size/component/modal-header-height": {
+      "cssVariable": "--height-modal-header",
+      "pixsoVariable": "size/56",
+      "sourceToken": "tokens.size.json:component.modal-header-height",
+      "resolvedCssValue": "56px",
+      "pixsoValue": 56,
+      "valueTransform": "identity"
+    },
+    "size/component/modal-footer-height": {
+      "cssVariable": "--height-modal-footer",
+      "pixsoVariable": "size/80",
+      "sourceToken": "tokens.size.json:component.modal-footer-height",
+      "resolvedCssValue": "80px",
+      "pixsoValue": 80,
+      "valueTransform": "identity"
+    },
+    "size/modal/width-s": {
+      "cssVariable": "--width-modal-sm",
+      "pixsoVariable": "layout/width/480",
+      "sourceToken": "tokens.size.json:modal.width-s",
+      "resolvedCssValue": "480px",
+      "pixsoValue": 480,
+      "valueTransform": "identity"
+    },
+    "size/modal/width-m": {
+      "cssVariable": "--width-modal-md",
+      "pixsoVariable": "layout/width/640",
+      "sourceToken": "tokens.size.json:modal.width-m",
+      "resolvedCssValue": "640px",
+      "pixsoValue": 640,
+      "valueTransform": "identity"
+    },
+    "size/modal/width-l": {
+      "cssVariable": "--width-modal-lg",
+      "pixsoVariable": "layout/width/800",
+      "sourceToken": "tokens.size.json:modal.width-l",
+      "resolvedCssValue": "800px",
+      "pixsoValue": 800,
+      "valueTransform": "identity"
+    },
+    "size/modal/dialog-width": {
+      "cssVariable": "--width-dialog",
+      "pixsoVariable": "layout/width/400",
+      "sourceToken": "tokens.size.json:modal.dialog-width",
+      "resolvedCssValue": "400px",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    "radius/popup-menu-item": {
+      "cssVariable": "--radius-popup-menu-item",
+      "pixsoVariable": "radius/04",
+      "sourceToken": "tokens.radius.json:semantic.popup-menu-item",
+      "resolvedCssValue": "4px",
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    "radius/checkbox": {
+      "cssVariable": "--radius-checkbox",
+      "pixsoVariable": "radius/04",
+      "sourceToken": "tokens.radius.json:semantic.checkbox",
+      "resolvedCssValue": "4px",
+      "pixsoValue": 4,
+      "valueTransform": "identity"
+    },
+    "radius/subtab": {
+      "cssVariable": "--radius-subtab",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.subtab",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/sidebar-nav-item": {
+      "cssVariable": "--radius-sidebar-nav-item",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.sidebar-nav-item",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/button": {
+      "cssVariable": "--radius-button",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.button",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/icon-text-button": {
+      "cssVariable": "--radius-icon-text-button",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.icon-text-button",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/icon-button": {
+      "cssVariable": "--radius-icon-button",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.icon-button",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/status-button": {
+      "cssVariable": "--radius-status-button",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.status-button",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/dropdown-button": {
+      "cssVariable": "--radius-dropdown-button",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.dropdown-button",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/alert": {
+      "cssVariable": "--radius-alert",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.alert",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/select": {
+      "cssVariable": "--radius-select",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.select",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/input": {
+      "cssVariable": "--radius-input",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.input",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/textarea": {
+      "cssVariable": "--radius-textarea",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.textarea",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/tooltip": {
+      "cssVariable": "--radius-tooltip",
+      "pixsoVariable": "radius/06",
+      "sourceToken": "tokens.radius.json:semantic.tooltip",
+      "resolvedCssValue": "6px",
+      "pixsoValue": 6,
+      "valueTransform": "identity"
+    },
+    "radius/search": {
+      "cssVariable": "--radius-search",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.search",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/number-input": {
+      "cssVariable": "--radius-number-input",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.number-input",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/tag": {
+      "cssVariable": "--radius-tag",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.tag",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/selection-block": {
+      "cssVariable": "--radius-selection-block",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.selection-block",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/selection-option": {
+      "cssVariable": "--radius-selection-option",
+      "pixsoVariable": "radius/06",
+      "sourceToken": "tokens.radius.json:semantic.selection-option",
+      "resolvedCssValue": "6px",
+      "pixsoValue": 6,
+      "valueTransform": "identity"
+    },
+    "radius/tab": {
+      "cssVariable": "--radius-tab",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.tab",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/list": {
+      "cssVariable": "--radius-list",
+      "pixsoVariable": "radius/12",
+      "sourceToken": "tokens.radius.json:semantic.list",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "radius/list-item": {
+      "cssVariable": "--radius-list-item",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.list-item",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/badge": {
+      "cssVariable": "--radius-badge",
+      "pixsoVariable": "radius/full",
+      "sourceToken": "tokens.radius.json:semantic.badge",
+      "resolvedCssValue": "999px",
+      "pixsoValue": 999,
+      "valueTransform": "identity"
+    },
+    "radius/progress": {
+      "cssVariable": "--radius-progress",
+      "pixsoVariable": "radius/full",
+      "sourceToken": "tokens.radius.json:semantic.progress",
+      "resolvedCssValue": "999px",
+      "pixsoValue": 999,
+      "valueTransform": "identity"
+    },
+    "radius/avatar": {
+      "cssVariable": "--radius-avatar",
+      "pixsoVariable": "radius/full",
+      "sourceToken": "tokens.radius.json:semantic.avatar",
+      "resolvedCssValue": "999px",
+      "pixsoValue": 999,
+      "valueTransform": "identity"
+    },
+    "radius/table": {
+      "cssVariable": "--radius-table",
+      "pixsoVariable": "radius/12",
+      "sourceToken": "tokens.radius.json:semantic.table",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "radius/pagination-item": {
+      "cssVariable": "--radius-pagination-item",
+      "pixsoVariable": "radius/08",
+      "sourceToken": "tokens.radius.json:semantic.pagination-item",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "radius/dialog": {
+      "cssVariable": "--radius-dialog",
+      "pixsoVariable": "radius/16",
+      "sourceToken": "tokens.radius.json:semantic.dialog",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "radius/modal": {
+      "cssVariable": "--radius-modal",
+      "pixsoVariable": "radius/16",
+      "sourceToken": "tokens.radius.json:semantic.modal",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "layout/window-min-width": {
+      "cssVariable": "--layout-window-min-width",
+      "pixsoVariable": "layout/width/1100",
+      "sourceToken": "tokens.layout.json:window.min-width",
+      "resolvedCssValue": "1100px",
+      "pixsoValue": 1100,
+      "valueTransform": "identity"
+    },
+    "layout/window-min-height": {
+      "cssVariable": "--layout-window-min-height",
+      "pixsoVariable": "layout/height/720",
+      "sourceToken": "tokens.layout.json:window.min-height",
+      "resolvedCssValue": "720px",
+      "pixsoValue": 720,
+      "valueTransform": "identity"
+    },
+    "layout/titlebar-height": {
+      "cssVariable": "--layout-titlebar-height",
+      "pixsoVariable": "size/64",
+      "sourceToken": "tokens.layout.json:shell.titlebar-height",
+      "resolvedCssValue": "64px",
+      "pixsoValue": 64,
+      "valueTransform": "identity"
+    },
+    "layout/sidebar-width": {
+      "cssVariable": "--layout-sidebar-width",
+      "pixsoVariable": "layout/width/240",
+      "sourceToken": "tokens.layout.json:shell.sidebar-width",
+      "resolvedCssValue": "240px",
+      "pixsoValue": 240,
+      "valueTransform": "identity"
+    },
+    "layout/sidebar-width-collapsed": {
+      "cssVariable": "--layout-sidebar-width-collapsed",
+      "pixsoVariable": "size/64",
+      "sourceToken": "tokens.layout.json:shell.sidebar-width-collapsed",
+      "resolvedCssValue": "64px",
+      "pixsoValue": 64,
+      "valueTransform": "identity"
+    },
+    "layout/sidebar-width-wide": {
+      "cssVariable": "--layout-sidebar-width-wide",
+      "pixsoVariable": "layout/width/360",
+      "sourceToken": "tokens.layout.json:shell.sidebar-width-wide",
+      "resolvedCssValue": "360px",
+      "pixsoValue": 360,
+      "valueTransform": "identity"
+    },
+    "layout/secondary-pane-width": {
+      "cssVariable": "--layout-secondary-pane-width",
+      "pixsoVariable": "layout/width/360",
+      "sourceToken": "tokens.layout.json:shell.secondary-pane-width",
+      "resolvedCssValue": "360px",
+      "pixsoValue": 360,
+      "valueTransform": "identity"
+    },
+    "layout/navigation-divider-width": {
+      "cssVariable": "--layout-navigation-divider-width",
+      "pixsoVariable": "layout/divider/0.5",
+      "sourceToken": "tokens.layout.json:shell.navigation-divider-width",
+      "resolvedCssValue": "0.5px",
+      "pixsoValue": 0.5,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/main-content-padding-x": {
+      "cssVariable": "--layout-main-content-padding-x",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.layout.json:spacing.main-content-padding-x",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/main-content-padding-top": {
+      "cssVariable": "--layout-main-content-padding-top",
+      "pixsoVariable": "space/5",
+      "sourceToken": "tokens.layout.json:spacing.main-content-padding-top",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/main-content-padding-bottom": {
+      "cssVariable": "--layout-main-content-padding-bottom",
+      "pixsoVariable": "space/0",
+      "sourceToken": "tokens.layout.json:spacing.main-content-padding-bottom",
+      "resolvedCssValue": "0px",
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/header-padding-x": {
+      "cssVariable": "--layout-header-padding-x",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.layout.json:spacing.header-padding-x",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/main-title-leading-padding": {
+      "cssVariable": "--layout-main-title-leading-padding",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.layout.json:spacing.main-title-leading-padding",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/main-detail-action-leading-padding": {
+      "cssVariable": "--layout-main-detail-action-leading-padding",
+      "pixsoVariable": "space/5",
+      "sourceToken": "tokens.layout.json:spacing.main-detail-action-leading-padding",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/sidebar-padding-x": {
+      "cssVariable": "--layout-sidebar-padding-x",
+      "pixsoVariable": "space/5",
+      "sourceToken": "tokens.layout.json:spacing.sidebar-padding-x",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/sidebar-padding-y": {
+      "cssVariable": "--layout-sidebar-padding-y",
+      "pixsoVariable": "space/5",
+      "sourceToken": "tokens.layout.json:spacing.sidebar-padding-y",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/primary-action-slot-gap-top": {
+      "cssVariable": "--layout-primary-action-slot-gap-top",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.layout.json:spacing.primary-action-slot-gap-top",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/primary-action-slot-gap-bottom": {
+      "cssVariable": "--layout-primary-action-slot-gap-bottom",
+      "pixsoVariable": "space/4",
+      "sourceToken": "tokens.layout.json:spacing.primary-action-slot-gap-bottom",
+      "resolvedCssValue": "12px",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/secondary-list-card-inset-x": {
+      "cssVariable": "--layout-secondary-list-card-inset-x",
+      "pixsoVariable": "space/5",
+      "sourceToken": "tokens.layout.json:spacing.secondary-list-card-inset-x",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/secondary-list-card-padding-x": {
+      "cssVariable": "--layout-secondary-list-card-padding-x",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.layout.json:spacing.secondary-list-card-padding-x",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/secondary-content-axis-x": {
+      "cssVariable": "--layout-secondary-content-axis-x",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.layout.json:spacing.secondary-content-axis-x",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/secondary-pane-padding-x": {
+      "cssVariable": "--layout-secondary-pane-padding-x",
+      "pixsoVariable": "space/5",
+      "sourceToken": "tokens.layout.json:spacing.secondary-pane-padding-x",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/secondary-pane-padding-y": {
+      "cssVariable": "--layout-secondary-pane-padding-y",
+      "pixsoVariable": "space/3",
+      "sourceToken": "tokens.layout.json:spacing.secondary-pane-padding-y",
+      "resolvedCssValue": "8px",
+      "pixsoValue": 8,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/main-detail-padding-x": {
+      "cssVariable": "--layout-main-detail-padding-x",
+      "pixsoVariable": "space/6",
+      "sourceToken": "tokens.layout.json:spacing.main-detail-padding-x",
+      "resolvedCssValue": "24px",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/main-detail-padding-top": {
+      "cssVariable": "--layout-main-detail-padding-top",
+      "pixsoVariable": "space/5",
+      "sourceToken": "tokens.layout.json:spacing.main-detail-padding-top",
+      "resolvedCssValue": "16px",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "layout/spacing/main-detail-padding-bottom": {
+      "cssVariable": "--layout-main-detail-padding-bottom",
+      "pixsoVariable": "space/0",
+      "sourceToken": "tokens.layout.json:spacing.main-detail-padding-bottom",
+      "resolvedCssValue": "0px",
+      "pixsoValue": 0,
+      "valueTransform": "identity"
+    },
+    "typography/display-l/font-size": {
+      "cssVariable": "--type-display-l-size",
+      "pixsoVariable": "font/size/56",
+      "resolvedCssValue": "56px",
+      "sourceToken": "tokens.typography.json:font-size.56",
+      "pixsoValue": 56,
+      "valueTransform": "identity"
+    },
+    "typography/display-l/line-height": {
+      "cssVariable": "--type-display-l-leading",
+      "pixsoVariable": "font/line-height/66",
+      "resolvedCssValue": "66px",
+      "sourceToken": "tokens.typography.json:line-height.66",
+      "pixsoValue": 66,
+      "valueTransform": "identity"
+    },
+    "typography/display-l/font-weight": {
+      "cssVariable": "--type-display-l-weight",
+      "pixsoVariable": "font/weight/400",
+      "resolvedCssValue": "400",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    "typography/display-m/font-size": {
+      "cssVariable": "--type-display-m-size",
+      "pixsoVariable": "font/size/48",
+      "resolvedCssValue": "48px",
+      "sourceToken": "tokens.typography.json:font-size.48",
+      "pixsoValue": 48,
+      "valueTransform": "identity"
+    },
+    "typography/display-m/line-height": {
+      "cssVariable": "--type-display-m-leading",
+      "pixsoVariable": "font/line-height/58",
+      "resolvedCssValue": "58px",
+      "sourceToken": "tokens.typography.json:line-height.58",
+      "pixsoValue": 58,
+      "valueTransform": "identity"
+    },
+    "typography/display-m/font-weight": {
+      "cssVariable": "--type-display-m-weight",
+      "pixsoVariable": "font/weight/400",
+      "resolvedCssValue": "400",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    "typography/display-s/font-size": {
+      "cssVariable": "--type-display-s-size",
+      "pixsoVariable": "font/size/38",
+      "resolvedCssValue": "38px",
+      "sourceToken": "tokens.typography.json:font-size.38",
+      "pixsoValue": 38,
+      "valueTransform": "identity"
+    },
+    "typography/display-s/line-height": {
+      "cssVariable": "--type-display-s-leading",
+      "pixsoVariable": "font/line-height/44",
+      "resolvedCssValue": "44px",
+      "sourceToken": "tokens.typography.json:line-height.44",
+      "pixsoValue": 44,
+      "valueTransform": "identity"
+    },
+    "typography/display-s/font-weight": {
+      "cssVariable": "--type-display-s-weight",
+      "pixsoVariable": "font/weight/400",
+      "resolvedCssValue": "400",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    "typography/title-l/font-size": {
+      "cssVariable": "--type-title-l-size",
+      "pixsoVariable": "font/size/30",
+      "resolvedCssValue": "30px",
+      "sourceToken": "tokens.typography.json:font-size.30",
+      "pixsoValue": 30,
+      "valueTransform": "identity"
+    },
+    "typography/title-l/line-height": {
+      "cssVariable": "--type-title-l-leading",
+      "pixsoVariable": "font/line-height/36",
+      "resolvedCssValue": "36px",
+      "sourceToken": "tokens.typography.json:line-height.36",
+      "pixsoValue": 36,
+      "valueTransform": "identity"
+    },
+    "typography/title-l/font-weight": {
+      "cssVariable": "--type-title-l-weight",
+      "pixsoVariable": "font/weight/700",
+      "resolvedCssValue": "700",
+      "sourceToken": "tokens.typography.json:font-weight.700",
+      "pixsoValue": 700,
+      "valueTransform": "identity"
+    },
+    "typography/title-m/font-size": {
+      "cssVariable": "--type-title-m-size",
+      "pixsoVariable": "font/size/24",
+      "resolvedCssValue": "24px",
+      "sourceToken": "tokens.typography.json:font-size.24",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "typography/title-m/line-height": {
+      "cssVariable": "--type-title-m-leading",
+      "pixsoVariable": "font/line-height/28",
+      "resolvedCssValue": "28px",
+      "sourceToken": "tokens.typography.json:line-height.28",
+      "pixsoValue": 28,
+      "valueTransform": "identity"
+    },
+    "typography/title-m/font-weight": {
+      "cssVariable": "--type-title-m-weight",
+      "pixsoVariable": "font/weight/700",
+      "resolvedCssValue": "700",
+      "sourceToken": "tokens.typography.json:font-weight.700",
+      "pixsoValue": 700,
+      "valueTransform": "identity"
+    },
+    "typography/title-s/font-size": {
+      "cssVariable": "--type-title-s-size",
+      "pixsoVariable": "font/size/20",
+      "resolvedCssValue": "20px",
+      "sourceToken": "tokens.typography.json:font-size.20",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    "typography/title-s/line-height": {
+      "cssVariable": "--type-title-s-leading",
+      "pixsoVariable": "font/line-height/24",
+      "resolvedCssValue": "24px",
+      "sourceToken": "tokens.typography.json:line-height.24",
+      "pixsoValue": 24,
+      "valueTransform": "identity"
+    },
+    "typography/title-s/font-weight": {
+      "cssVariable": "--type-title-s-weight",
+      "pixsoVariable": "font/weight/700",
+      "resolvedCssValue": "700",
+      "sourceToken": "tokens.typography.json:font-weight.700",
+      "pixsoValue": 700,
+      "valueTransform": "identity"
+    },
+    "typography/subtitle-l/font-size": {
+      "cssVariable": "--type-subtitle-l-size",
+      "pixsoVariable": "font/size/18",
+      "resolvedCssValue": "18px",
+      "sourceToken": "tokens.typography.json:font-size.18",
+      "pixsoValue": 18,
+      "valueTransform": "identity"
+    },
+    "typography/subtitle-l/line-height": {
+      "cssVariable": "--type-subtitle-l-leading",
+      "pixsoVariable": "font/line-height/22",
+      "resolvedCssValue": "22px",
+      "sourceToken": "tokens.typography.json:line-height.22",
+      "pixsoValue": 22,
+      "valueTransform": "identity"
+    },
+    "typography/subtitle-l/font-weight": {
+      "cssVariable": "--type-subtitle-l-weight",
+      "pixsoVariable": "font/weight/500",
+      "resolvedCssValue": "500",
+      "sourceToken": "tokens.typography.json:font-weight.500",
+      "pixsoValue": 500,
+      "valueTransform": "identity"
+    },
+    "typography/subtitle-m/font-size": {
+      "cssVariable": "--type-subtitle-m-size",
+      "pixsoVariable": "font/size/16",
+      "resolvedCssValue": "16px",
+      "sourceToken": "tokens.typography.json:font-size.16",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "typography/subtitle-m/line-height": {
+      "cssVariable": "--type-subtitle-m-leading",
+      "pixsoVariable": "font/line-height/20",
+      "resolvedCssValue": "20px",
+      "sourceToken": "tokens.typography.json:line-height.20",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    "typography/subtitle-m/font-weight": {
+      "cssVariable": "--type-subtitle-m-weight",
+      "pixsoVariable": "font/weight/500",
+      "resolvedCssValue": "500",
+      "sourceToken": "tokens.typography.json:font-weight.500",
+      "pixsoValue": 500,
+      "valueTransform": "identity"
+    },
+    "typography/subtitle-s/font-size": {
+      "cssVariable": "--type-subtitle-s-size",
+      "pixsoVariable": "font/size/14",
+      "resolvedCssValue": "14px",
+      "sourceToken": "tokens.typography.json:font-size.14",
+      "pixsoValue": 14,
+      "valueTransform": "identity"
+    },
+    "typography/subtitle-s/line-height": {
+      "cssVariable": "--type-subtitle-s-leading",
+      "pixsoVariable": "font/line-height/16",
+      "resolvedCssValue": "16px",
+      "sourceToken": "tokens.typography.json:line-height.16",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "typography/subtitle-s/font-weight": {
+      "cssVariable": "--type-subtitle-s-weight",
+      "pixsoVariable": "font/weight/500",
+      "resolvedCssValue": "500",
+      "sourceToken": "tokens.typography.json:font-weight.500",
+      "pixsoValue": 500,
+      "valueTransform": "identity"
+    },
+    "typography/body-l/font-size": {
+      "cssVariable": "--type-body-l-size",
+      "pixsoVariable": "font/size/16",
+      "resolvedCssValue": "16px",
+      "sourceToken": "tokens.typography.json:font-size.16",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "typography/body-l/line-height": {
+      "cssVariable": "--type-body-l-leading",
+      "pixsoVariable": "font/line-height/20",
+      "resolvedCssValue": "20px",
+      "sourceToken": "tokens.typography.json:line-height.20",
+      "pixsoValue": 20,
+      "valueTransform": "identity"
+    },
+    "typography/body-l/font-weight": {
+      "cssVariable": "--type-body-l-weight",
+      "pixsoVariable": "font/weight/400",
+      "resolvedCssValue": "400",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    "typography/body-m/font-size": {
+      "cssVariable": "--type-body-m-size",
+      "pixsoVariable": "font/size/14",
+      "resolvedCssValue": "14px",
+      "sourceToken": "tokens.typography.json:font-size.14",
+      "pixsoValue": 14,
+      "valueTransform": "identity"
+    },
+    "typography/body-m/line-height": {
+      "cssVariable": "--type-body-m-leading",
+      "pixsoVariable": "font/line-height/16",
+      "resolvedCssValue": "16px",
+      "sourceToken": "tokens.typography.json:line-height.16",
+      "pixsoValue": 16,
+      "valueTransform": "identity"
+    },
+    "typography/body-m/font-weight": {
+      "cssVariable": "--type-body-m-weight",
+      "pixsoVariable": "font/weight/400",
+      "resolvedCssValue": "400",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    "typography/body-s/font-size": {
+      "cssVariable": "--type-body-s-size",
+      "pixsoVariable": "font/size/12",
+      "resolvedCssValue": "12px",
+      "sourceToken": "tokens.typography.json:font-size.12",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "typography/body-s/line-height": {
+      "cssVariable": "--type-body-s-leading",
+      "pixsoVariable": "font/line-height/14",
+      "resolvedCssValue": "14px",
+      "sourceToken": "tokens.typography.json:line-height.14",
+      "pixsoValue": 14,
+      "valueTransform": "identity"
+    },
+    "typography/body-s/font-weight": {
+      "cssVariable": "--type-body-s-weight",
+      "pixsoVariable": "font/weight/400",
+      "resolvedCssValue": "400",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    },
+    "typography/caption-m/font-size": {
+      "cssVariable": "--type-caption-m-size",
+      "pixsoVariable": "font/size/10",
+      "resolvedCssValue": "10px",
+      "sourceToken": "tokens.typography.json:font-size.10",
+      "pixsoValue": 10,
+      "valueTransform": "identity"
+    },
+    "typography/caption-m/line-height": {
+      "cssVariable": "--type-caption-m-leading",
+      "pixsoVariable": "font/line-height/12",
+      "resolvedCssValue": "12px",
+      "sourceToken": "tokens.typography.json:line-height.12",
+      "pixsoValue": 12,
+      "valueTransform": "identity"
+    },
+    "typography/caption-m/font-weight": {
+      "cssVariable": "--type-caption-m-weight",
+      "pixsoVariable": "font/weight/400",
+      "resolvedCssValue": "400",
+      "sourceToken": "tokens.typography.json:font-weight.400",
+      "pixsoValue": 400,
+      "valueTransform": "identity"
+    }
+  }
+}

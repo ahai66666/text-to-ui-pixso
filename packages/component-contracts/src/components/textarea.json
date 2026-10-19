@@ -1,0 +1,115 @@
+{
+  "id": "textarea",
+  "logicalName": "Textarea/Default",
+  "variants": [
+    "default"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "focus",
+    "disabled",
+    "error"
+  ],
+  "props": [
+    "label",
+    "value",
+    "disabled",
+    "state",
+    "className"
+  ],
+  "slots": [
+    "label",
+    "leading",
+    "value",
+    "trailing",
+    "help"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.surface",
+    "color.border",
+    "typography.body-l",
+    "spacing.component-gap"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/index.js#textarea"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/index.js#textarea"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "input",
+  "categoryLabel": "输入类",
+  "order": 312,
+  "canonicalSection": "[data-runtime-category=\"input\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"input\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-textarea\"]",
+  "specimens": [
+    {
+      "id": "white-surface",
+      "variant": "default",
+      "state": "default",
+      "surface": "white"
+    },
+    {
+      "id": "gray-surface",
+      "variant": "default",
+      "state": "default",
+      "surface": "gray"
+    }
+  ],
+  "fixtureId": "fixture-textarea",
+  "surface": [
+    "white",
+    "gray"
+  ],
+  "sizing": "fill",
+  "behaviors": [
+    "input",
+    "focus",
+    "disabled",
+    "error"
+  ],
+  "iconSemantic": null,
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "fields",
+  "canonicalSpecimen": "gallery:input:textarea",
+  "allowedStates": [
+    "default",
+    "hover",
+    "focus",
+    "filled",
+    "error",
+    "disabled"
+  ],
+  "textRoles": [
+    "value:body-l",
+    "placeholder:body-l",
+    "label:body-m",
+    "help:body-s"
+  ],
+  "iconSlots": [],
+  "iconAliases": [],
+  "comparisonGroup": "input"
+}

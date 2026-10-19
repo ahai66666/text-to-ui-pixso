@@ -1,0 +1,112 @@
+{
+  "id": "label",
+  "logicalName": "Label/Default",
+  "variants": [
+    "default"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "focus",
+    "disabled"
+  ],
+  "props": [
+    "label",
+    "value",
+    "disabled",
+    "state",
+    "className"
+  ],
+  "slots": [
+    "label",
+    "content",
+    "description"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.surface",
+    "color.border",
+    "typography.body-m",
+    "spacing.component-gap",
+    "spacing.padding-tag-x",
+    "size.tag-height"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/index.js#label"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/index.js#label"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "input",
+  "categoryLabel": "输入类",
+  "order": 314,
+  "canonicalSection": "[data-runtime-category=\"input\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"input\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-label\"]",
+  "specimens": [
+    {
+      "id": "default",
+      "variant": "default",
+      "state": "default"
+    }
+  ],
+  "fixtureId": "fixture-label",
+  "surface": "white",
+  "sizing": "intrinsic",
+  "behaviors": [
+    "focus",
+    "disabled"
+  ],
+  "iconSemantic": "field/search",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "form-plus",
+  "canonicalSpecimen": "gallery:input:label",
+  "allowedStates": [
+    "default",
+    "hover",
+    "focus",
+    "disabled"
+  ],
+  "textRoles": [
+    "title:title-s",
+    "content:body-l",
+    "description:body-m",
+    "help:body-s"
+  ],
+  "iconSlots": [
+    {
+      "alias": "field/search",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconAliases": [
+    "field/search"
+  ],
+  "comparisonGroup": "input"
+}

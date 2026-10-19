@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "selectedSourceFiles": [
+    "assets/design-system/component-usage.schema.json",
+    "assets/design-system/core-color-token-table.md",
+    "assets/design-system/core-foundation-token-table.md",
+    "assets/design-system/design.md",
+    "assets/design-system/dual-output-token-map.json",
+    "assets/design-system/effect-style-map.json",
+    "assets/design-system/harmonyos-component-adapter-map.json",
+    "assets/design-system/harmonyos-component-mapping-table.json",
+    "assets/design-system/html-component-adapter-map.json",
+    "assets/design-system/html-component-adapter-map.schema.json",
+    "assets/design-system/mapping-registry.json",
+    "assets/design-system/mapping-registry.schema.json",
+    "assets/design-system/page-binding-audit.schema.json",
+    "assets/design-system/page-spec.example.json",
+    "assets/design-system/page-spec.schema.json",
+    "assets/design-system/pattern-contracts.json",
+    "assets/design-system/pattern-contracts.schema.json",
+    "assets/design-system/pixso-binding-audit.schema.json",
+    "assets/design-system/pixso-component-facts.json",
+    "assets/design-system/pixso-component-facts.schema.json",
+    "assets/design-system/pixso-component-library-plan.schema.json",
+    "assets/design-system/pixso-component-migration.json",
+    "assets/design-system/pixso-component-registry.json",
+    "assets/design-system/pixso-component-specs.json",
+    "assets/design-system/pixso-core-baseline.json",
+    "assets/design-system/pixso-icon-map.json",
+    "assets/design-system/pixso-manual-additions.json",
+    "assets/design-system/pixso-native-component-map.json",
+    "assets/design-system/pixso-native-component-map.schema.json",
+    "assets/design-system/pixso-operation-plan.schema.json",
+    "assets/design-system/pixso-scene.schema.json",
+    "assets/design-system/pixso-tokens-studio.json",
+    "assets/design-system/pixso-variables.json",
+    "assets/design-system/titlebar-scene-contracts.json",
+    "assets/design-system/token-runtime-map.json",
+    "assets/design-system/token-utility-map.json",
+    "assets/design-system/tokens.colors.css",
+    "assets/design-system/tokens.colors.json",
+    "assets/design-system/tokens.icon.css",
+    "assets/design-system/tokens.icon.json",
+    "assets/design-system/tokens.layout.css",
+    "assets/design-system/tokens.layout.json",
+    "assets/design-system/tokens.radius.css",
+    "assets/design-system/tokens.radius.json",
+    "assets/design-system/tokens.shadow.css",
+    "assets/design-system/tokens.shadow.json",
+    "assets/design-system/tokens.size.css",
+    "assets/design-system/tokens.size.json",
+    "assets/design-system/tokens.spacing.css",
+    "assets/design-system/tokens.spacing.json",
+    "assets/design-system/tokens.typography.css",
+    "assets/design-system/tokens.typography.json",
+    "assets/design-system/tokens.utility.css",
+    "assets/design-system/typography-style-map.json",
+    "assets/design-system/ui-scene.schema.json",
+    "assets/icons/components/checkbox-check.svg",
+    "assets/icons/icon-aliases.json",
+    "assets/icons/status/danger-circle.svg",
+    "assets/icons/status/info-circle.svg",
+    "assets/icons/status/neutral-circle.svg",
+    "assets/icons/status/success-circle.svg",
+    "assets/icons/status/warning-circle.svg",
+    "assets/icons/titlebar/README.md",
+    "assets/icons/titlebar/window-close.svg",
+    "assets/icons/titlebar/window-maximize.svg",
+    "assets/icons/titlebar/window-minimize.svg",
+    "packages/component-contracts/package.json",
+    "packages/component-contracts/src/components.json",
+    "packages/component-contracts/src/components/accordion.json",
+    "packages/component-contracts/src/components/alert-dialog.json",
+    "packages/component-contracts/src/components/alert.json",
+    "packages/component-contracts/src/components/attachment.json",
+    "packages/component-contracts/src/components/avatar.json",
+    "packages/component-contracts/src/components/badge.json",
+    "packages/component-contracts/src/components/breadcrumb.json",
+    "packages/component-contracts/src/components/button.json",
+    "packages/component-contracts/src/components/calendar.json",
+    "packages/component-contracts/src/components/checkbox.json",
+    "packages/component-contracts/src/components/chips.json",
+    "packages/component-contracts/src/components/collapsible.json",
+    "packages/component-contracts/src/components/color-picker.json",
+    "packages/component-contracts/src/components/combobox.json",
+    "packages/component-contracts/src/components/context-menu.json",
+    "packages/component-contracts/src/components/date-picker.json",
+    "packages/component-contracts/src/components/dialog.json",
+    "packages/component-contracts/src/components/dropdown-menu.json",
+    "packages/component-contracts/src/components/field.json",
+    "packages/component-contracts/src/components/form-field.json",
+    "packages/component-contracts/src/components/hover-card.json",
+    "packages/component-contracts/src/components/input.json",
+    "packages/component-contracts/src/components/label.json",
+    "packages/component-contracts/src/components/list-card.json",
+    "packages/component-contracts/src/components/menubar.json",
+    "packages/component-contracts/src/components/native-select.json",
+    "packages/component-contracts/src/components/number-selector.json",
+    "packages/component-contracts/src/components/pagination.json",
+    "packages/component-contracts/src/components/popover.json",
+    "packages/component-contracts/src/components/primary-navigation-item.json",
+    "packages/component-contracts/src/components/progress.json",
+    "packages/component-contracts/src/components/radio-group.json",
+    "packages/component-contracts/src/components/radio.json",
+    "packages/component-contracts/src/components/search.json",
+    "packages/component-contracts/src/components/segmented-button.json",
+    "packages/component-contracts/src/components/select.json",
+    "packages/component-contracts/src/components/semi-modal.json",
+    "packages/component-contracts/src/components/sidebar.json",
+    "packages/component-contracts/src/components/slider.json",
+    "packages/component-contracts/src/components/snackbar.json",
+    "packages/component-contracts/src/components/sub-tabs.json",
+    "packages/component-contracts/src/components/switch.json",
+    "packages/component-contracts/src/components/table.json",
+    "packages/component-contracts/src/components/tabs.json",
+    "packages/component-contracts/src/components/textarea.json",
+    "packages/component-contracts/src/components/time-picker.json",
+    "packages/component-contracts/src/components/titlebar.json",
+    "packages/component-contracts/src/components/tooltip.json",
+    "packages/component-contracts/src/components/tree-view.json",
+    "packages/component-contracts/src/readiness-policy.js",
+    "packages/component-contracts/src/registry.json",
+    "packages/component-contracts/src/titlebar-segments.js",
+    "packages/tokens/package.json",
+    "packages/tokens/src/dual-output-token-map.json",
+    "packages/tokens/src/index.css",
+    "packages/tokens/src/token-runtime-map.json",
+    "packages/tokens/src/token-utility-map.json",
+    "packages/tokens/src/tokens.colors.css",
+    "packages/tokens/src/tokens.icon.css",
+    "packages/tokens/src/tokens.layout.css",
+    "packages/tokens/src/tokens.radius.css",
+    "packages/tokens/src/tokens.shadow.css",
+    "packages/tokens/src/tokens.size.css",
+    "packages/tokens/src/tokens.spacing.css",
+    "packages/tokens/src/tokens.typography.css",
+    "packages/tokens/src/tokens.utility.css",
+    "protocol/README.md",
+    "protocol/bridge-message.schema.json",
+    "protocol/compatibility-matrix.json",
+    "protocol/operation-plan-v5.schema.json",
+    "protocol/permanent-agent-capabilities.json",
+    "references/components/component-readiness-policy.json",
+    "references/components/component-selection-rules.json",
+    "references/components/source-resolution.md",
+    "references/distribution.md",
+    "references/dual-output-contract.md",
+    "references/icon-selection.md",
+    "references/index/capability-aliases.source.json",
+    "references/index/layout-routes.source.json",
+    "references/index/task-routes.source.json",
+    "references/mapping-registry.md",
+    "references/offline-distribution.md",
+    "references/pixso-component-bindings.md",
+    "references/pixso-component-maintenance.md",
+    "references/pixso-component-usage.md",
+    "references/pixso-execution-invariants.md",
+    "references/pixso-fidelity-routing.md",
+    "references/pixso-performance.md",
+    "references/pixso-visual-parity.md",
+    "references/resource-workflow.md",
+    "references/resources/core/delivery.md",
+    "references/resources/delivery/pixso.md",
+    "references/resources/layout/pixso-mapping.md",
+    "references/resources/pixso-detail/cross-source-mapping-registry.md",
+    "references/resources/pixso-detail/html-text-sizing-and-truncation.md",
+    "references/resources/pixso-detail/icon-sizing-stroke-and-hot-zone-contract.md",
+    "references/resources/pixso-detail/overview.md",
+    "references/resources/pixso-detail/pixso-component-facts-sync.md",
+    "references/resources/pixso-detail/typography-mapping-policy.md",
+    "references/resources/pixso-mcp/binding-audit.md",
+    "references/resources/pixso-mcp/connection.md",
+    "references/resources/pixso-mcp/creation-sequence.md",
+    "references/resources/pixso-mcp/deliverable-reference.md",
+    "references/resources/pixso-mcp/existing-design-and-html-handoff.md",
+    "references/resources/pixso-mcp/failure-handling.md",
+    "references/resources/pixso-mcp/overview.md",
+    "references/resources/pixso-mcp/page-binding-bridge-token.md",
+    "references/resources/pixso-mcp/registered-reuse-performance-and-icon-gates.md",
+    "references/resources/pixso-mcp/target-page-and-path-preflight-failure-derived.md",
+    "references/resources/pixso-mcp/token-gate.md",
+    "references/resources/pixso-pipeline/acceptance-gates.md",
+    "references/resources/pixso-pipeline/capture-browser-computed-evidence.md",
+    "references/resources/pixso-pipeline/compile-dom-visual-ir-only-from-the-current-run.md",
+    "references/resources/pixso-pipeline/execute-transactionally.md",
+    "references/resources/pixso-pipeline/keep-two-evidence-layers-and-one-pixso-output.md",
+    "references/resources/pixso-pipeline/normal-fast-path-and-diagnostic-boundary.md",
+    "references/resources/pixso-pipeline/overview.md",
+    "references/resources/pixso-pipeline/resolve-components-without-changing-geometry.md",
+    "references/resources/pixso-pipeline/start-an-isolated-run.md",
+    "references/resources/pixso-scene/divider-ownership.md",
+    "references/resources/pixso-scene/dom-visual-ir.md",
+    "references/resources/pixso-scene/html-computed-visual-state.md",
+    "references/resources/pixso-scene/mcp-10.md",
+    "references/resources/pixso-scene/mcp.md",
+    "references/resources/pixso-scene/overview.md",
+    "references/resources/pixso-scene/scene.md",
+    "references/resources/pixso-scene/section-11.md",
+    "references/resources/pixso-scene/section-6.md",
+    "references/resources/pixso-scene/section-7.md",
+    "references/resources/pixso-scene/section-8.md",
+    "references/resources/pixso-scene/surface.md",
+    "references/resources/source.schema.json",
+    "references/routes/converter-diagnosis.md",
+    "references/routes/existing-html-to-pixso.md",
+    "references/routes/pixso-component-library.md",
+    "references/routes/skill-maintenance.md",
+    "scripts/build-component-route-index.mjs",
+    "scripts/build-navigation-index.mjs",
+    "scripts/build-pixso-component-specs.mjs",
+    "scripts/build-pixso-unified-agent-plugin.mjs",
+    "scripts/build-resource-index.mjs",
+    "scripts/compact-paths.mjs",
+    "scripts/compare-pixso-screenshots.mjs",
+    "scripts/compile-dom-visual-ir.mjs",
+    "scripts/compile-pixso-import.mjs",
+    "scripts/component-mapping-resolver.mjs",
+    "scripts/component-readiness-policy.mjs",
+    "scripts/component-route-index.mjs",
+    "scripts/coremail-semantic-adapter.mjs",
+    "scripts/create-pixso-import-run.mjs",
+    "scripts/dom-visual-ir.mjs",
+    "scripts/generate-pixso-component-library-plan.mjs",
+    "scripts/generate-pixso-operation-plan.mjs",
+    "scripts/generate-pixso-scene.mjs",
+    "scripts/html-visual-contract.mjs",
+    "scripts/icon-tools.mjs",
+    "scripts/mapping-registry-lib.mjs",
+    "scripts/navigation-index-lib.mjs",
+    "scripts/pixso-capture-bundle.mjs",
+    "scripts/pixso-component-facts-sync.mjs",
+    "scripts/pixso-component-registry-sync-plugin/README.md",
+    "scripts/pixso-component-registry-sync-plugin/main.js",
+    "scripts/pixso-component-registry-sync-plugin/manifest.json",
+    "scripts/pixso-component-registry-sync-plugin/ui.html",
+    "scripts/pixso-import-governance.mjs",
+    "scripts/pixso-import-orchestrator.mjs",
+    "scripts/pixso-import-run-state.mjs",
+    "scripts/pixso-native-scene-lib.mjs",
+    "scripts/pixso-official-adapter.mjs",
+    "scripts/pixso-page-binding-bridge-plugin/README.md",
+    "scripts/pixso-page-binding-bridge-plugin/fixtures/page-binding-audit.valid.json",
+    "scripts/pixso-page-binding-bridge-plugin/fixtures/page-binding-manifest.invalid.json",
+    "scripts/pixso-page-binding-bridge-plugin/fixtures/page-binding-source.html",
+    "scripts/pixso-page-binding-bridge-plugin/main.js",
+    "scripts/pixso-page-binding-bridge-plugin/manifest.json",
+    "scripts/pixso-page-binding-bridge-plugin/page-binding-manifest.json",
+    "scripts/pixso-plugin-bridge.mjs",
+    "scripts/pixso-unified-agent-plugin/README.md",
+    "scripts/pixso-unified-agent-plugin/compatibility-matrix.json",
+    "scripts/pixso-unified-agent-plugin/main.js",
+    "scripts/pixso-unified-agent-plugin/main.template.js",
+    "scripts/pixso-unified-agent-plugin/manifest.json",
+    "scripts/pixso-unified-agent-plugin/permanent-agent-capabilities.json",
+    "scripts/pixso-unified-agent-plugin/pixso-capture-bundle.mjs",
+    "scripts/pixso-unified-agent-plugin/pixso-native-component-map.json",
+    "scripts/pixso-unified-agent-plugin/pixso-native-execution-runtime.js",
+    "scripts/pixso-unified-agent-plugin/pixso-official-adapter.mjs",
+    "scripts/pixso-unified-agent-plugin/pixso-plugin-bridge.mjs",
+    "scripts/pixso-unified-agent-plugin/ui.html",
+    "scripts/pixso-visual-reconcile.mjs",
+    "scripts/preflight-pixso-import.mjs",
+    "scripts/prepare-pixso-binding-html.mjs",
+    "scripts/prepare-pixso-html.mjs",
+    "scripts/prepare-pixso-mcp-batches.mjs",
+    "scripts/prepare-pixso-operation-batches.mjs",
+    "scripts/query-resources.mjs",
+    "scripts/resolve-pixso-import-url.mjs",
+    "scripts/resolve-workflow-route.mjs",
+    "scripts/resource-index-lib.mjs",
+    "scripts/route-material-lib.mjs",
+    "scripts/stage-context-lib.mjs",
+    "scripts/start-text-to-ui-services.mjs",
+    "scripts/task-route-lib.mjs",
+    "scripts/update-pixso-import-run.mjs",
+    "scripts/validate-harmonyos-component-adapter-map.mjs",
+    "scripts/validate-navigation-index.mjs",
+    "scripts/validate-pixso-component-library-plan.mjs",
+    "scripts/validate-pixso-component-migration.mjs",
+    "scripts/validate-pixso-component-registry.mjs",
+    "scripts/validate-pixso-component-specs.mjs",
+    "scripts/validate-pixso-icon-map.mjs",
+    "scripts/validate-pixso-import-run.mjs"
+  ],
+  "sourceResources": [
+    {
+      "id": "layout.pixso-mapping",
+      "path": "references/resources/layout/pixso-mapping.md"
+    },
+    {
+      "id": "delivery.pixso",
+      "path": "references/resources/delivery/pixso.md"
+    },
+    {
+      "id": "pixso-pipeline.overview",
+      "path": "references/resources/pixso-pipeline/overview.md"
+    },
+    {
+      "id": "pixso-pipeline.normal-fast-path-and-diagnostic-boundary",
+      "path": "references/resources/pixso-pipeline/normal-fast-path-and-diagnostic-boundary.md"
+    },
+    {
+      "id": "pixso-pipeline.start-an-isolated-run",
+      "path": "references/resources/pixso-pipeline/start-an-isolated-run.md"
+    },
+    {
+      "id": "pixso-pipeline.capture-browser-computed-evidence",
+      "path": "references/resources/pixso-pipeline/capture-browser-computed-evidence.md"
+    },
+    {
+      "id": "pixso-pipeline.keep-two-evidence-layers-and-one-pixso-output",
+      "path": "references/resources/pixso-pipeline/keep-two-evidence-layers-and-one-pixso-output.md"
+    },
+    {
+      "id": "pixso-pipeline.compile-dom-visual-ir-only-from-the-current-run",
+      "path": "references/resources/pixso-pipeline/compile-dom-visual-ir-only-from-the-current-run.md"
+    },
+    {
+      "id": "pixso-pipeline.resolve-components-without-changing-geometry",
+      "path": "references/resources/pixso-pipeline/resolve-components-without-changing-geometry.md"
+    },
+    {
+      "id": "pixso-pipeline.execute-transactionally",
+      "path": "references/resources/pixso-pipeline/execute-transactionally.md"
+    },
+    {
+      "id": "pixso-pipeline.acceptance-gates",
+      "path": "references/resources/pixso-pipeline/acceptance-gates.md"
+    },
+    {
+      "id": "pixso-mcp.overview",
+      "path": "references/resources/pixso-mcp/overview.md"
+    },
+    {
+      "id": "pixso-mcp.connection",
+      "path": "references/resources/pixso-mcp/connection.md"
+    },
+    {
+      "id": "pixso-mcp.target-page-and-path-preflight-failure-derived",
+      "path": "references/resources/pixso-mcp/target-page-and-path-preflight-failure-derived.md"
+    },
+    {
+      "id": "pixso-mcp.creation-sequence",
+      "path": "references/resources/pixso-mcp/creation-sequence.md"
+    },
+    {
+      "id": "pixso-mcp.registered-reuse-performance-and-icon-gates",
+      "path": "references/resources/pixso-mcp/registered-reuse-performance-and-icon-gates.md"
+    },
+    {
+      "id": "pixso-mcp.page-binding-bridge-token",
+      "path": "references/resources/pixso-mcp/page-binding-bridge-token.md"
+    },
+    {
+      "id": "pixso-mcp.token-gate",
+      "path": "references/resources/pixso-mcp/token-gate.md"
+    },
+    {
+      "id": "pixso-mcp.binding-audit",
+      "path": "references/resources/pixso-mcp/binding-audit.md"
+    },
+    {
+      "id": "pixso-mcp.existing-design-and-html-handoff",
+      "path": "references/resources/pixso-mcp/existing-design-and-html-handoff.md"
+    },
+    {
+      "id": "pixso-mcp.failure-handling",
+      "path": "references/resources/pixso-mcp/failure-handling.md"
+    },
+    {
+      "id": "pixso-mcp.deliverable-reference",
+      "path": "references/resources/pixso-mcp/deliverable-reference.md"
+    },
+    {
+      "id": "pixso-scene.overview",
+      "path": "references/resources/pixso-scene/overview.md"
+    },
+    {
+      "id": "pixso-scene.html-computed-visual-state",
+      "path": "references/resources/pixso-scene/html-computed-visual-state.md"
+    },
+    {
+      "id": "pixso-scene.dom-visual-ir",
+      "path": "references/resources/pixso-scene/dom-visual-ir.md"
+    },
+    {
+      "id": "pixso-scene.scene",
+      "path": "references/resources/pixso-scene/scene.md"
+    },
+    {
+      "id": "pixso-scene.surface",
+      "path": "references/resources/pixso-scene/surface.md"
+    },
+    {
+      "id": "pixso-scene.divider-ownership",
+      "path": "references/resources/pixso-scene/divider-ownership.md"
+    },
+    {
+      "id": "pixso-scene.section-6",
+      "path": "references/resources/pixso-scene/section-6.md"
+    },
+    {
+      "id": "pixso-scene.section-7",
+      "path": "references/resources/pixso-scene/section-7.md"
+    },
+    {
+      "id": "pixso-scene.section-8",
+      "path": "references/resources/pixso-scene/section-8.md"
+    },
+    {
+      "id": "pixso-scene.mcp",
+      "path": "references/resources/pixso-scene/mcp.md"
+    },
+    {
+      "id": "pixso-scene.mcp-10",
+      "path": "references/resources/pixso-scene/mcp-10.md"
+    },
+    {
+      "id": "pixso-scene.section-11",
+      "path": "references/resources/pixso-scene/section-11.md"
+    },
+    {
+      "id": "pixso-detail.overview",
+      "path": "references/resources/pixso-detail/overview.md"
+    },
+    {
+      "id": "pixso-detail.html-text-sizing-and-truncation",
+      "path": "references/resources/pixso-detail/html-text-sizing-and-truncation.md"
+    },
+    {
+      "id": "pixso-detail.icon-sizing-stroke-and-hot-zone-contract",
+      "path": "references/resources/pixso-detail/icon-sizing-stroke-and-hot-zone-contract.md"
+    },
+    {
+      "id": "pixso-detail.cross-source-mapping-registry",
+      "path": "references/resources/pixso-detail/cross-source-mapping-registry.md"
+    },
+    {
+      "id": "pixso-detail.typography-mapping-policy",
+      "path": "references/resources/pixso-detail/typography-mapping-policy.md"
+    },
+    {
+      "id": "pixso-detail.pixso-component-facts-sync",
+      "path": "references/resources/pixso-detail/pixso-component-facts-sync.md"
+    },
+    {
+      "id": "core.delivery",
+      "path": "references/resources/core/delivery.md"
+    },
+    {
+      "id": "pixso.invariants",
+      "path": "references/pixso-execution-invariants.md"
+    },
+    {
+      "id": "components.resolution",
+      "path": "references/components/source-resolution.md"
+    }
+  ],
+  "sharedAuthority": "HTML publishes contracts/Tokens/icon identity snapshots; Pixso owns mappings and execution."
+}

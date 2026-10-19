@@ -1,0 +1,464 @@
+{
+  "id": "titlebar",
+  "logicalName": "Titlebar/Default",
+  "variants": [
+    "small",
+    "medium",
+    "large",
+    "xlarge"
+  ],
+  "states": [
+    "default",
+    "unfocus",
+    "disabled"
+  ],
+  "props": [
+    "label",
+    "paneTitle",
+    "size",
+    "layout",
+    "segmentRole",
+    "slots",
+    "showWindowControls",
+    "showLogo",
+    "logoSrc",
+    "logoAlt",
+    "disabled",
+    "state",
+    "mainDetailActions",
+    "onMainDetailAction",
+    "onAction",
+    "className"
+  ],
+  "slots": [
+    "logo",
+    "label",
+    "secondary-pane-content",
+    "main-content-title",
+    "main-detail-actions",
+    "actions"
+  ],
+  "slotContracts": {
+    "logo": {
+      "cardinality": "0..1",
+      "scope": "titlebar-logo",
+      "valueType": "image-object",
+      "activeRoles": [
+        "global",
+        "primary-navigation",
+        "secondary-pane",
+        "final-pane"
+      ],
+      "fields": [
+        "src",
+        "alt"
+      ],
+      "visibilityProp": "showLogo",
+      "defaultVisibility": {
+        "global": true,
+        "primary-navigation": true,
+        "secondary-pane": false,
+        "final-pane": false
+      }
+    },
+    "secondary-pane-content": {
+      "cardinality": "0..1",
+      "scope": "secondary-pane-titlebar",
+      "valueType": "registered-component-binding",
+      "activeWhen": {
+        "layout": "three-column",
+        "paneRole": "secondary-pane"
+      },
+      "allowedComponents": [
+        "Search/White Surface/Default"
+      ],
+      "defaultPlacement": "secondary-pane-titlebar-content",
+      "horizontalInsetToken": "space/5",
+      "horizontalInset": "16px",
+      "crossAxisAlignment": "center",
+      "verticalInset": "none",
+      "owner": "titlebar-component"
+    },
+    "main-content-leading": {
+      "cardinality": "0..1",
+      "scope": "main-content-pane-global",
+      "valueType": "action-object",
+      "activeWhen": {
+        "layout": "two-column",
+        "paneRole": "final-pane"
+      },
+      "defaultPlacement": "final-pane-leading-slot",
+      "gapToken": "space/2",
+      "gap": "4px",
+      "iconSize": "24px",
+      "allowedButtonVariants": [
+        "ghost"
+      ],
+      "allowedButtonTypes": [
+        "icon",
+        "icon-text-ghost"
+      ],
+      "fields": [
+        "id",
+        "label",
+        "icon",
+        "buttonType"
+      ]
+    },
+    "main-detail-actions": {
+      "cardinality": "0..n",
+      "scope": "main-detail-pane-global",
+      "defaultPlacement": "final-pane-leading-slot",
+      "layout": "compact-horizontal-group",
+      "leadingInsetToken": "layout/main-detail-action-leading-padding",
+      "overflow": {
+        "strategy": "collapse-to-more",
+        "triggerLogicalName": "Icon Button/Ghost/Default",
+        "triggerActionId": "more",
+        "triggerIconAlias": "action/more",
+        "triggerPosition": "last",
+        "eligibleButtonTypes": [
+          "icon",
+          "icon-text-ghost"
+        ],
+        "preserveMode": true,
+        "preserveOrder": true,
+        "fit": "available-width",
+        "staticBoard": {
+          "renderTrigger": true,
+          "renderMenu": false
+        }
+      },
+      "modePolicy": {
+        "type": "uniform-business-actions",
+        "allowedModes": [
+          "icon",
+          "icon-text"
+        ],
+        "mixedModes": "forbidden",
+        "overflowTriggerExcluded": true
+      },
+      "allowedButtonVariants": [
+        "ghost"
+      ],
+      "forbidden": [
+        "page-global-primary",
+        "card-action",
+        "field-action",
+        "section-action",
+        "selection-action",
+        "inline-action"
+      ],
+      "activeWhen": {
+        "layout": "three-column",
+        "paneRole": "final-pane"
+      },
+      "allowedButtonTypes": [
+        "icon",
+        "icon-text-ghost"
+      ],
+      "allowedButtonLogicalNames": [
+        "Icon Button/Ghost/Default",
+        "Icon Text Button/Ghost/Default"
+      ],
+      "buttonTypeContracts": {
+        "icon": {
+          "logicalName": "Icon Button/Ghost/Default",
+          "mode": "icon",
+          "requiredSlots": [
+            "icon"
+          ],
+          "forbiddenSlots": [
+            "label"
+          ]
+        },
+        "icon-text-ghost": {
+          "logicalName": "Icon Text Button/Ghost/Default",
+          "mode": "icon-text",
+          "requiredSlots": [
+            "icon",
+            "label"
+          ]
+        }
+      },
+      "valueType": "action-array"
+    },
+    "main-content-title": {
+      "cardinality": "0..1",
+      "scope": "main-content-pane-global",
+      "valueType": "text",
+      "activeWhen": {
+        "layout": "two-column",
+        "paneRole": "final-pane"
+      },
+      "defaultPlacement": "final-pane-leading-slot",
+      "leadingInsetToken": "layout/main-title-leading-padding"
+    },
+    "label": {
+      "cardinality": "0..1",
+      "valueType": "text",
+      "activeRoles": [
+        "global",
+        "primary-navigation"
+      ]
+    },
+    "actions": {
+      "cardinality": "0..1",
+      "valueType": "boolean",
+      "activeRoles": [
+        "global",
+        "final-pane"
+      ],
+      "implementation": "component-owned-window-controls"
+    },
+    "leading": {
+      "cardinality": "0..1",
+      "valueType": "image-object",
+      "activeRoles": [
+        "global",
+        "primary-navigation"
+      ],
+      "fields": [
+        "src",
+        "alt"
+      ],
+      "deprecatedAliasFor": "logo"
+    }
+  },
+  "layoutRules": {
+    "secondaryListPane": {
+      "surfaceInset": "16px",
+      "contentAxis": "24px",
+      "scrollWrapperPadding": "16px 16px"
+    },
+    "secondaryPaneTitlebar": {
+      "horizontalInsetToken": "space/5",
+      "horizontalInset": "16px",
+      "crossAxisAlignment": "center",
+      "verticalInset": "none",
+      "contentOwner": "titlebar-component",
+      "contentSlot": "secondary-pane-content"
+    },
+    "mainDetailPane": {
+      "paddingInline": "24px",
+      "paddingTop": "16px",
+      "paddingBottom": "0px",
+      "insetOwner": "direct-content-scroll-wrapper"
+    },
+    "mainDetailActions": {
+      "leadingInset": "16px",
+      "insetOwner": "titlebar-final-pane-segment"
+    }
+  },
+  "tokenRoles": [
+    "color.text",
+    "color.surface",
+    "color.border",
+    "typography.body-l",
+    "typography.subtitle-m",
+    "typography.title-s",
+    "spacing.component-gap"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/index.js#titlebar"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/index.js#titlebar"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "navigation",
+  "categoryLabel": "导航类",
+  "order": 10,
+  "canonicalSection": "[data-runtime-category=\"navigation\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-titlebar\"]",
+  "specimens": [
+    {
+      "id": "small-normal",
+      "variant": "small",
+      "state": "default"
+    },
+    {
+      "id": "small-unfocus",
+      "variant": "small",
+      "state": "unfocus"
+    },
+    {
+      "id": "medium-normal",
+      "variant": "medium",
+      "state": "default"
+    },
+    {
+      "id": "medium-unfocus",
+      "variant": "medium",
+      "state": "unfocus"
+    },
+    {
+      "id": "large-normal",
+      "variant": "large",
+      "state": "default"
+    },
+    {
+      "id": "large-unfocus",
+      "variant": "large",
+      "state": "unfocus"
+    },
+    {
+      "id": "xlarge-normal",
+      "variant": "xlarge",
+      "state": "default"
+    },
+    {
+      "id": "xlarge-unfocus",
+      "variant": "xlarge",
+      "state": "unfocus"
+    }
+  ],
+  "fixtureId": "fixture-titlebar",
+  "surface": "white",
+  "sizing": "intrinsic",
+  "behaviors": [
+    "focus",
+    "disabled"
+  ],
+  "iconSemantic": "window/minimize",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "titlebars",
+  "canonicalSpecimen": "gallery:navigation:titlebar",
+  "allowedStates": [
+    "default",
+    "unfocus",
+    "disabled"
+  ],
+  "textRoles": [
+    "title:title-s",
+    "content:body-l",
+    "description:body-m",
+    "help:body-s"
+  ],
+  "textRolesByVariant": {
+    "small": [
+      "title:subtitle-m"
+    ],
+    "medium": [
+      "title:title-s"
+    ],
+    "large": [
+      "title:title-s"
+    ],
+    "xlarge": [
+      "title:title-s"
+    ]
+  },
+  "iconSlots": [
+    {
+      "alias": "window/minimize",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "window/maximize",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "window/close",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconAliases": [
+    "window/minimize",
+    "window/maximize",
+    "window/close"
+  ],
+  "structuralAxes": {
+    "size": [
+      "small",
+      "medium",
+      "large",
+      "xlarge"
+    ],
+    "layout": [
+      "standalone",
+      "two-column",
+      "three-column"
+    ],
+    "paneRole": [
+      "global",
+      "primary-navigation",
+      "secondary-pane",
+      "final-pane"
+    ],
+    "segmentRole": [
+      "global",
+      "primary-navigation",
+      "secondary-list",
+      "main-content",
+      "main-detail",
+      "secondary-pane",
+      "final-pane"
+    ]
+  },
+  "dividerRules": {
+    "default": "no-horizontal-divider",
+    "standalone": "no-horizontal-divider",
+    "two-column": {
+      "primary-navigation": "no-horizontal-divider",
+      "final-pane": "no-horizontal-divider"
+    },
+    "three-column": {
+      "primary-navigation": "no-horizontal-divider",
+      "secondary-pane": "no-horizontal-divider",
+      "final-pane": "bottom-divider"
+    },
+    "verticalPaneDividers": "owned-by-layout-and-continuous"
+  },
+  "segmentContract": {
+    "owner": "pattern-title-layer",
+    "orderedBy": "titleLayer.segments",
+    "widthOwner": "pattern-renderer",
+    "roles": [
+      "primary-navigation",
+      "secondary-list",
+      "main-content",
+      "main-detail"
+    ],
+    "middleSegments": "optional-registered-content; alignment-owned-by-titlebar",
+    "windowControls": "final-segment-only",
+    "slotAPI": "declarative-content; no arbitrary HTML"
+  },
+  "comparisonGroup": "navigation"
+}

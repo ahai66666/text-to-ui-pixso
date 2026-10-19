@@ -1,0 +1,3131 @@
+{
+  "schemaVersion": 1,
+  "source": "assets/design-system/token-runtime-map.json",
+  "classPrefix": "u-",
+  "policy": {
+    "classesAreCssUtilities": true,
+    "pixsoBindingRequiresDataPxKey": true,
+    "arbitraryValuesForbidden": true,
+    "pixsoMarkerAttribute": "data-px-key",
+    "pixsoMarkerIdPrefix": "px-key:"
+  },
+  "utilities": [
+    {
+      "className": "u-bg-brand-05",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "brand/05",
+      "cssVariable": "--color-brand-05",
+      "resolvedCssValue": "#0A59F70C"
+    },
+    {
+      "className": "u-text-brand-05",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "brand/05",
+      "cssVariable": "--color-brand-05",
+      "resolvedCssValue": "#0A59F70C"
+    },
+    {
+      "className": "u-stroke-brand-05",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "brand/05",
+      "cssVariable": "--color-brand-05",
+      "resolvedCssValue": "#0A59F70C"
+    },
+    {
+      "className": "u-bg-brand-10",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "brand/10",
+      "cssVariable": "--color-brand-10",
+      "resolvedCssValue": "#0A59F719"
+    },
+    {
+      "className": "u-text-brand-10",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "brand/10",
+      "cssVariable": "--color-brand-10",
+      "resolvedCssValue": "#0A59F719"
+    },
+    {
+      "className": "u-stroke-brand-10",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "brand/10",
+      "cssVariable": "--color-brand-10",
+      "resolvedCssValue": "#0A59F719"
+    },
+    {
+      "className": "u-bg-brand-15",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "brand/15",
+      "cssVariable": "--color-brand-15",
+      "resolvedCssValue": "#0A59F726"
+    },
+    {
+      "className": "u-text-brand-15",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "brand/15",
+      "cssVariable": "--color-brand-15",
+      "resolvedCssValue": "#0A59F726"
+    },
+    {
+      "className": "u-stroke-brand-15",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "brand/15",
+      "cssVariable": "--color-brand-15",
+      "resolvedCssValue": "#0A59F726"
+    },
+    {
+      "className": "u-bg-brand-20",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "brand/20",
+      "cssVariable": "--color-brand-20",
+      "resolvedCssValue": "#0A59F733"
+    },
+    {
+      "className": "u-text-brand-20",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "brand/20",
+      "cssVariable": "--color-brand-20",
+      "resolvedCssValue": "#0A59F733"
+    },
+    {
+      "className": "u-stroke-brand-20",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "brand/20",
+      "cssVariable": "--color-brand-20",
+      "resolvedCssValue": "#0A59F733"
+    },
+    {
+      "className": "u-bg-brand-30",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "brand/30",
+      "cssVariable": "--color-brand-30",
+      "resolvedCssValue": "#0A59F74D"
+    },
+    {
+      "className": "u-text-brand-30",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "brand/30",
+      "cssVariable": "--color-brand-30",
+      "resolvedCssValue": "#0A59F74D"
+    },
+    {
+      "className": "u-stroke-brand-30",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "brand/30",
+      "cssVariable": "--color-brand-30",
+      "resolvedCssValue": "#0A59F74D"
+    },
+    {
+      "className": "u-bg-brand-40",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "brand/40",
+      "cssVariable": "--color-brand-40",
+      "resolvedCssValue": "#0A59F766"
+    },
+    {
+      "className": "u-text-brand-40",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "brand/40",
+      "cssVariable": "--color-brand-40",
+      "resolvedCssValue": "#0A59F766"
+    },
+    {
+      "className": "u-stroke-brand-40",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "brand/40",
+      "cssVariable": "--color-brand-40",
+      "resolvedCssValue": "#0A59F766"
+    },
+    {
+      "className": "u-bg-brand-50",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "brand/50",
+      "cssVariable": "--color-brand-50",
+      "resolvedCssValue": "#0A59F77F"
+    },
+    {
+      "className": "u-text-brand-50",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "brand/50",
+      "cssVariable": "--color-brand-50",
+      "resolvedCssValue": "#0A59F77F"
+    },
+    {
+      "className": "u-stroke-brand-50",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "brand/50",
+      "cssVariable": "--color-brand-50",
+      "resolvedCssValue": "#0A59F77F"
+    },
+    {
+      "className": "u-bg-brand-60",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "brand/60",
+      "cssVariable": "--color-brand-60",
+      "resolvedCssValue": "#0A59F799"
+    },
+    {
+      "className": "u-text-brand-60",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "brand/60",
+      "cssVariable": "--color-brand-60",
+      "resolvedCssValue": "#0A59F799"
+    },
+    {
+      "className": "u-stroke-brand-60",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "brand/60",
+      "cssVariable": "--color-brand-60",
+      "resolvedCssValue": "#0A59F799"
+    },
+    {
+      "className": "u-bg-brand-70",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "brand/70",
+      "cssVariable": "--color-brand-70",
+      "resolvedCssValue": "#0A59F7B2"
+    },
+    {
+      "className": "u-text-brand-70",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "brand/70",
+      "cssVariable": "--color-brand-70",
+      "resolvedCssValue": "#0A59F7B2"
+    },
+    {
+      "className": "u-stroke-brand-70",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "brand/70",
+      "cssVariable": "--color-brand-70",
+      "resolvedCssValue": "#0A59F7B2"
+    },
+    {
+      "className": "u-bg-brand-80",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "brand/80",
+      "cssVariable": "--color-brand-80",
+      "resolvedCssValue": "#0A59F7CC"
+    },
+    {
+      "className": "u-text-brand-80",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "brand/80",
+      "cssVariable": "--color-brand-80",
+      "resolvedCssValue": "#0A59F7CC"
+    },
+    {
+      "className": "u-stroke-brand-80",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "brand/80",
+      "cssVariable": "--color-brand-80",
+      "resolvedCssValue": "#0A59F7CC"
+    },
+    {
+      "className": "u-bg-brand-90",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "brand/90",
+      "cssVariable": "--color-brand-90",
+      "resolvedCssValue": "#0A59F7E5"
+    },
+    {
+      "className": "u-text-brand-90",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "brand/90",
+      "cssVariable": "--color-brand-90",
+      "resolvedCssValue": "#0A59F7E5"
+    },
+    {
+      "className": "u-stroke-brand-90",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "brand/90",
+      "cssVariable": "--color-brand-90",
+      "resolvedCssValue": "#0A59F7E5"
+    },
+    {
+      "className": "u-bg-brand-100",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "brand/100",
+      "cssVariable": "--color-brand-100",
+      "resolvedCssValue": "#0A59F7FF"
+    },
+    {
+      "className": "u-text-brand-100",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "brand/100",
+      "cssVariable": "--color-brand-100",
+      "resolvedCssValue": "#0A59F7FF"
+    },
+    {
+      "className": "u-stroke-brand-100",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "brand/100",
+      "cssVariable": "--color-brand-100",
+      "resolvedCssValue": "#0A59F7FF"
+    },
+    {
+      "className": "u-bg-neutral-dark-05",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-dark/05",
+      "cssVariable": "--color-neutral-dark-05",
+      "resolvedCssValue": "#0000000C"
+    },
+    {
+      "className": "u-text-neutral-dark-05",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-dark/05",
+      "cssVariable": "--color-neutral-dark-05",
+      "resolvedCssValue": "#0000000C"
+    },
+    {
+      "className": "u-stroke-neutral-dark-05",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-dark/05",
+      "cssVariable": "--color-neutral-dark-05",
+      "resolvedCssValue": "#0000000C"
+    },
+    {
+      "className": "u-bg-neutral-dark-10",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-dark/10",
+      "cssVariable": "--color-neutral-dark-10",
+      "resolvedCssValue": "#00000019"
+    },
+    {
+      "className": "u-text-neutral-dark-10",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-dark/10",
+      "cssVariable": "--color-neutral-dark-10",
+      "resolvedCssValue": "#00000019"
+    },
+    {
+      "className": "u-stroke-neutral-dark-10",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-dark/10",
+      "cssVariable": "--color-neutral-dark-10",
+      "resolvedCssValue": "#00000019"
+    },
+    {
+      "className": "u-bg-neutral-dark-15",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-dark/15",
+      "cssVariable": "--color-neutral-dark-15",
+      "resolvedCssValue": "#00000026"
+    },
+    {
+      "className": "u-text-neutral-dark-15",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-dark/15",
+      "cssVariable": "--color-neutral-dark-15",
+      "resolvedCssValue": "#00000026"
+    },
+    {
+      "className": "u-stroke-neutral-dark-15",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-dark/15",
+      "cssVariable": "--color-neutral-dark-15",
+      "resolvedCssValue": "#00000026"
+    },
+    {
+      "className": "u-bg-neutral-dark-20",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-dark/20",
+      "cssVariable": "--color-neutral-dark-20",
+      "resolvedCssValue": "#00000033"
+    },
+    {
+      "className": "u-text-neutral-dark-20",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-dark/20",
+      "cssVariable": "--color-neutral-dark-20",
+      "resolvedCssValue": "#00000033"
+    },
+    {
+      "className": "u-stroke-neutral-dark-20",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-dark/20",
+      "cssVariable": "--color-neutral-dark-20",
+      "resolvedCssValue": "#00000033"
+    },
+    {
+      "className": "u-bg-neutral-dark-30",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-dark/30",
+      "cssVariable": "--color-neutral-dark-30",
+      "resolvedCssValue": "#0000004D"
+    },
+    {
+      "className": "u-text-neutral-dark-30",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-dark/30",
+      "cssVariable": "--color-neutral-dark-30",
+      "resolvedCssValue": "#0000004D"
+    },
+    {
+      "className": "u-stroke-neutral-dark-30",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-dark/30",
+      "cssVariable": "--color-neutral-dark-30",
+      "resolvedCssValue": "#0000004D"
+    },
+    {
+      "className": "u-bg-neutral-dark-40",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-dark/40",
+      "cssVariable": "--color-neutral-dark-40",
+      "resolvedCssValue": "#00000066"
+    },
+    {
+      "className": "u-text-neutral-dark-40",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-dark/40",
+      "cssVariable": "--color-neutral-dark-40",
+      "resolvedCssValue": "#00000066"
+    },
+    {
+      "className": "u-stroke-neutral-dark-40",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-dark/40",
+      "cssVariable": "--color-neutral-dark-40",
+      "resolvedCssValue": "#00000066"
+    },
+    {
+      "className": "u-bg-neutral-dark-50",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-dark/50",
+      "cssVariable": "--color-neutral-dark-50",
+      "resolvedCssValue": "#0000007F"
+    },
+    {
+      "className": "u-text-neutral-dark-50",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-dark/50",
+      "cssVariable": "--color-neutral-dark-50",
+      "resolvedCssValue": "#0000007F"
+    },
+    {
+      "className": "u-stroke-neutral-dark-50",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-dark/50",
+      "cssVariable": "--color-neutral-dark-50",
+      "resolvedCssValue": "#0000007F"
+    },
+    {
+      "className": "u-bg-neutral-dark-60",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-dark/60",
+      "cssVariable": "--color-neutral-dark-60",
+      "resolvedCssValue": "#00000099"
+    },
+    {
+      "className": "u-text-neutral-dark-60",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-dark/60",
+      "cssVariable": "--color-neutral-dark-60",
+      "resolvedCssValue": "#00000099"
+    },
+    {
+      "className": "u-stroke-neutral-dark-60",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-dark/60",
+      "cssVariable": "--color-neutral-dark-60",
+      "resolvedCssValue": "#00000099"
+    },
+    {
+      "className": "u-bg-neutral-dark-70",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-dark/70",
+      "cssVariable": "--color-neutral-dark-70",
+      "resolvedCssValue": "#000000B2"
+    },
+    {
+      "className": "u-text-neutral-dark-70",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-dark/70",
+      "cssVariable": "--color-neutral-dark-70",
+      "resolvedCssValue": "#000000B2"
+    },
+    {
+      "className": "u-stroke-neutral-dark-70",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-dark/70",
+      "cssVariable": "--color-neutral-dark-70",
+      "resolvedCssValue": "#000000B2"
+    },
+    {
+      "className": "u-bg-neutral-dark-80",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-dark/80",
+      "cssVariable": "--color-neutral-dark-80",
+      "resolvedCssValue": "#000000CC"
+    },
+    {
+      "className": "u-text-neutral-dark-80",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-dark/80",
+      "cssVariable": "--color-neutral-dark-80",
+      "resolvedCssValue": "#000000CC"
+    },
+    {
+      "className": "u-stroke-neutral-dark-80",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-dark/80",
+      "cssVariable": "--color-neutral-dark-80",
+      "resolvedCssValue": "#000000CC"
+    },
+    {
+      "className": "u-bg-neutral-dark-90",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-dark/90",
+      "cssVariable": "--color-neutral-dark-90",
+      "resolvedCssValue": "#000000E5"
+    },
+    {
+      "className": "u-text-neutral-dark-90",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-dark/90",
+      "cssVariable": "--color-neutral-dark-90",
+      "resolvedCssValue": "#000000E5"
+    },
+    {
+      "className": "u-stroke-neutral-dark-90",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-dark/90",
+      "cssVariable": "--color-neutral-dark-90",
+      "resolvedCssValue": "#000000E5"
+    },
+    {
+      "className": "u-bg-neutral-dark-100",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-dark/100",
+      "cssVariable": "--color-neutral-dark-100",
+      "resolvedCssValue": "#000000FF"
+    },
+    {
+      "className": "u-text-neutral-dark-100",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-dark/100",
+      "cssVariable": "--color-neutral-dark-100",
+      "resolvedCssValue": "#000000FF"
+    },
+    {
+      "className": "u-stroke-neutral-dark-100",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-dark/100",
+      "cssVariable": "--color-neutral-dark-100",
+      "resolvedCssValue": "#000000FF"
+    },
+    {
+      "className": "u-bg-neutral-light-05",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-light/05",
+      "cssVariable": "--color-neutral-light-05",
+      "resolvedCssValue": "#FFFFFF0C"
+    },
+    {
+      "className": "u-text-neutral-light-05",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-light/05",
+      "cssVariable": "--color-neutral-light-05",
+      "resolvedCssValue": "#FFFFFF0C"
+    },
+    {
+      "className": "u-stroke-neutral-light-05",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-light/05",
+      "cssVariable": "--color-neutral-light-05",
+      "resolvedCssValue": "#FFFFFF0C"
+    },
+    {
+      "className": "u-bg-neutral-light-10",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-light/10",
+      "cssVariable": "--color-neutral-light-10",
+      "resolvedCssValue": "#FFFFFF19"
+    },
+    {
+      "className": "u-text-neutral-light-10",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-light/10",
+      "cssVariable": "--color-neutral-light-10",
+      "resolvedCssValue": "#FFFFFF19"
+    },
+    {
+      "className": "u-stroke-neutral-light-10",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-light/10",
+      "cssVariable": "--color-neutral-light-10",
+      "resolvedCssValue": "#FFFFFF19"
+    },
+    {
+      "className": "u-bg-neutral-light-15",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-light/15",
+      "cssVariable": "--color-neutral-light-15",
+      "resolvedCssValue": "#FFFFFF26"
+    },
+    {
+      "className": "u-text-neutral-light-15",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-light/15",
+      "cssVariable": "--color-neutral-light-15",
+      "resolvedCssValue": "#FFFFFF26"
+    },
+    {
+      "className": "u-stroke-neutral-light-15",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-light/15",
+      "cssVariable": "--color-neutral-light-15",
+      "resolvedCssValue": "#FFFFFF26"
+    },
+    {
+      "className": "u-bg-neutral-light-20",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-light/20",
+      "cssVariable": "--color-neutral-light-20",
+      "resolvedCssValue": "#FFFFFF33"
+    },
+    {
+      "className": "u-text-neutral-light-20",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-light/20",
+      "cssVariable": "--color-neutral-light-20",
+      "resolvedCssValue": "#FFFFFF33"
+    },
+    {
+      "className": "u-stroke-neutral-light-20",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-light/20",
+      "cssVariable": "--color-neutral-light-20",
+      "resolvedCssValue": "#FFFFFF33"
+    },
+    {
+      "className": "u-bg-neutral-light-30",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-light/30",
+      "cssVariable": "--color-neutral-light-30",
+      "resolvedCssValue": "#FFFFFF4D"
+    },
+    {
+      "className": "u-text-neutral-light-30",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-light/30",
+      "cssVariable": "--color-neutral-light-30",
+      "resolvedCssValue": "#FFFFFF4D"
+    },
+    {
+      "className": "u-stroke-neutral-light-30",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-light/30",
+      "cssVariable": "--color-neutral-light-30",
+      "resolvedCssValue": "#FFFFFF4D"
+    },
+    {
+      "className": "u-bg-neutral-light-40",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-light/40",
+      "cssVariable": "--color-neutral-light-40",
+      "resolvedCssValue": "#FFFFFF66"
+    },
+    {
+      "className": "u-text-neutral-light-40",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-light/40",
+      "cssVariable": "--color-neutral-light-40",
+      "resolvedCssValue": "#FFFFFF66"
+    },
+    {
+      "className": "u-stroke-neutral-light-40",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-light/40",
+      "cssVariable": "--color-neutral-light-40",
+      "resolvedCssValue": "#FFFFFF66"
+    },
+    {
+      "className": "u-bg-neutral-light-50",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-light/50",
+      "cssVariable": "--color-neutral-light-50",
+      "resolvedCssValue": "#FFFFFF7F"
+    },
+    {
+      "className": "u-text-neutral-light-50",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-light/50",
+      "cssVariable": "--color-neutral-light-50",
+      "resolvedCssValue": "#FFFFFF7F"
+    },
+    {
+      "className": "u-stroke-neutral-light-50",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-light/50",
+      "cssVariable": "--color-neutral-light-50",
+      "resolvedCssValue": "#FFFFFF7F"
+    },
+    {
+      "className": "u-bg-neutral-light-60",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-light/60",
+      "cssVariable": "--color-neutral-light-60",
+      "resolvedCssValue": "#FFFFFF99"
+    },
+    {
+      "className": "u-text-neutral-light-60",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-light/60",
+      "cssVariable": "--color-neutral-light-60",
+      "resolvedCssValue": "#FFFFFF99"
+    },
+    {
+      "className": "u-stroke-neutral-light-60",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-light/60",
+      "cssVariable": "--color-neutral-light-60",
+      "resolvedCssValue": "#FFFFFF99"
+    },
+    {
+      "className": "u-bg-neutral-light-70",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-light/70",
+      "cssVariable": "--color-neutral-light-70",
+      "resolvedCssValue": "#FFFFFFB2"
+    },
+    {
+      "className": "u-text-neutral-light-70",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-light/70",
+      "cssVariable": "--color-neutral-light-70",
+      "resolvedCssValue": "#FFFFFFB2"
+    },
+    {
+      "className": "u-stroke-neutral-light-70",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-light/70",
+      "cssVariable": "--color-neutral-light-70",
+      "resolvedCssValue": "#FFFFFFB2"
+    },
+    {
+      "className": "u-bg-neutral-light-80",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-light/80",
+      "cssVariable": "--color-neutral-light-80",
+      "resolvedCssValue": "#FFFFFFCC"
+    },
+    {
+      "className": "u-text-neutral-light-80",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-light/80",
+      "cssVariable": "--color-neutral-light-80",
+      "resolvedCssValue": "#FFFFFFCC"
+    },
+    {
+      "className": "u-stroke-neutral-light-80",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-light/80",
+      "cssVariable": "--color-neutral-light-80",
+      "resolvedCssValue": "#FFFFFFCC"
+    },
+    {
+      "className": "u-bg-neutral-light-90",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-light/90",
+      "cssVariable": "--color-neutral-light-90",
+      "resolvedCssValue": "#FFFFFFE5"
+    },
+    {
+      "className": "u-text-neutral-light-90",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-light/90",
+      "cssVariable": "--color-neutral-light-90",
+      "resolvedCssValue": "#FFFFFFE5"
+    },
+    {
+      "className": "u-stroke-neutral-light-90",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-light/90",
+      "cssVariable": "--color-neutral-light-90",
+      "resolvedCssValue": "#FFFFFFE5"
+    },
+    {
+      "className": "u-bg-neutral-light-100",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "neutral-light/100",
+      "cssVariable": "--color-neutral-light-100",
+      "resolvedCssValue": "#FFFFFFFF"
+    },
+    {
+      "className": "u-text-neutral-light-100",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "neutral-light/100",
+      "cssVariable": "--color-neutral-light-100",
+      "resolvedCssValue": "#FFFFFFFF"
+    },
+    {
+      "className": "u-stroke-neutral-light-100",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "neutral-light/100",
+      "cssVariable": "--color-neutral-light-100",
+      "resolvedCssValue": "#FFFFFFFF"
+    },
+    {
+      "className": "u-bg-function-success-10",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "function/success/10",
+      "cssVariable": "--color-function-success-10",
+      "resolvedCssValue": "#64BB5C19"
+    },
+    {
+      "className": "u-text-function-success-10",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "function/success/10",
+      "cssVariable": "--color-function-success-10",
+      "resolvedCssValue": "#64BB5C19"
+    },
+    {
+      "className": "u-stroke-function-success-10",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "function/success/10",
+      "cssVariable": "--color-function-success-10",
+      "resolvedCssValue": "#64BB5C19"
+    },
+    {
+      "className": "u-bg-function-success-20",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "function/success/20",
+      "cssVariable": "--color-function-success-20",
+      "resolvedCssValue": "#64BB5C33"
+    },
+    {
+      "className": "u-text-function-success-20",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "function/success/20",
+      "cssVariable": "--color-function-success-20",
+      "resolvedCssValue": "#64BB5C33"
+    },
+    {
+      "className": "u-stroke-function-success-20",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "function/success/20",
+      "cssVariable": "--color-function-success-20",
+      "resolvedCssValue": "#64BB5C33"
+    },
+    {
+      "className": "u-bg-function-success-100",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "function/success/100",
+      "cssVariable": "--color-function-success-100",
+      "resolvedCssValue": "#64BB5CFF"
+    },
+    {
+      "className": "u-text-function-success-100",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "function/success/100",
+      "cssVariable": "--color-function-success-100",
+      "resolvedCssValue": "#64BB5CFF"
+    },
+    {
+      "className": "u-stroke-function-success-100",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "function/success/100",
+      "cssVariable": "--color-function-success-100",
+      "resolvedCssValue": "#64BB5CFF"
+    },
+    {
+      "className": "u-bg-function-warning-10",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "function/warning/10",
+      "cssVariable": "--color-function-warning-10",
+      "resolvedCssValue": "#ED6F2119"
+    },
+    {
+      "className": "u-text-function-warning-10",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "function/warning/10",
+      "cssVariable": "--color-function-warning-10",
+      "resolvedCssValue": "#ED6F2119"
+    },
+    {
+      "className": "u-stroke-function-warning-10",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "function/warning/10",
+      "cssVariable": "--color-function-warning-10",
+      "resolvedCssValue": "#ED6F2119"
+    },
+    {
+      "className": "u-bg-function-warning-20",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "function/warning/20",
+      "cssVariable": "--color-function-warning-20",
+      "resolvedCssValue": "#ED6F2133"
+    },
+    {
+      "className": "u-text-function-warning-20",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "function/warning/20",
+      "cssVariable": "--color-function-warning-20",
+      "resolvedCssValue": "#ED6F2133"
+    },
+    {
+      "className": "u-stroke-function-warning-20",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "function/warning/20",
+      "cssVariable": "--color-function-warning-20",
+      "resolvedCssValue": "#ED6F2133"
+    },
+    {
+      "className": "u-bg-function-warning-100",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "function/warning/100",
+      "cssVariable": "--color-function-warning-100",
+      "resolvedCssValue": "#ED6F21FF"
+    },
+    {
+      "className": "u-text-function-warning-100",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "function/warning/100",
+      "cssVariable": "--color-function-warning-100",
+      "resolvedCssValue": "#ED6F21FF"
+    },
+    {
+      "className": "u-stroke-function-warning-100",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "function/warning/100",
+      "cssVariable": "--color-function-warning-100",
+      "resolvedCssValue": "#ED6F21FF"
+    },
+    {
+      "className": "u-bg-function-danger-10",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "function/danger/10",
+      "cssVariable": "--color-function-danger-10",
+      "resolvedCssValue": "#E8402619"
+    },
+    {
+      "className": "u-text-function-danger-10",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "function/danger/10",
+      "cssVariable": "--color-function-danger-10",
+      "resolvedCssValue": "#E8402619"
+    },
+    {
+      "className": "u-stroke-function-danger-10",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "function/danger/10",
+      "cssVariable": "--color-function-danger-10",
+      "resolvedCssValue": "#E8402619"
+    },
+    {
+      "className": "u-bg-function-danger-20",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "function/danger/20",
+      "cssVariable": "--color-function-danger-20",
+      "resolvedCssValue": "#E8402633"
+    },
+    {
+      "className": "u-text-function-danger-20",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "function/danger/20",
+      "cssVariable": "--color-function-danger-20",
+      "resolvedCssValue": "#E8402633"
+    },
+    {
+      "className": "u-stroke-function-danger-20",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "function/danger/20",
+      "cssVariable": "--color-function-danger-20",
+      "resolvedCssValue": "#E8402633"
+    },
+    {
+      "className": "u-bg-function-danger-100",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "function/danger/100",
+      "cssVariable": "--color-function-danger-100",
+      "resolvedCssValue": "#E84026FF"
+    },
+    {
+      "className": "u-text-function-danger-100",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "function/danger/100",
+      "cssVariable": "--color-function-danger-100",
+      "resolvedCssValue": "#E84026FF"
+    },
+    {
+      "className": "u-stroke-function-danger-100",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "function/danger/100",
+      "cssVariable": "--color-function-danger-100",
+      "resolvedCssValue": "#E84026FF"
+    },
+    {
+      "className": "u-bg-multi-01",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "multi/01",
+      "cssVariable": "--color-multi-01",
+      "resolvedCssValue": "#564AF7"
+    },
+    {
+      "className": "u-text-multi-01",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "multi/01",
+      "cssVariable": "--color-multi-01",
+      "resolvedCssValue": "#564AF7"
+    },
+    {
+      "className": "u-stroke-multi-01",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "multi/01",
+      "cssVariable": "--color-multi-01",
+      "resolvedCssValue": "#564AF7"
+    },
+    {
+      "className": "u-bg-multi-02",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "multi/02",
+      "cssVariable": "--color-multi-02",
+      "resolvedCssValue": "#46B1E3"
+    },
+    {
+      "className": "u-text-multi-02",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "multi/02",
+      "cssVariable": "--color-multi-02",
+      "resolvedCssValue": "#46B1E3"
+    },
+    {
+      "className": "u-stroke-multi-02",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "multi/02",
+      "cssVariable": "--color-multi-02",
+      "resolvedCssValue": "#46B1E3"
+    },
+    {
+      "className": "u-bg-multi-03",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "multi/03",
+      "cssVariable": "--color-multi-03",
+      "resolvedCssValue": "#61CFBE"
+    },
+    {
+      "className": "u-text-multi-03",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "multi/03",
+      "cssVariable": "--color-multi-03",
+      "resolvedCssValue": "#61CFBE"
+    },
+    {
+      "className": "u-stroke-multi-03",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "multi/03",
+      "cssVariable": "--color-multi-03",
+      "resolvedCssValue": "#61CFBE"
+    },
+    {
+      "className": "u-bg-multi-04",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "multi/04",
+      "cssVariable": "--color-multi-04",
+      "resolvedCssValue": "#A5D61D"
+    },
+    {
+      "className": "u-text-multi-04",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "multi/04",
+      "cssVariable": "--color-multi-04",
+      "resolvedCssValue": "#A5D61D"
+    },
+    {
+      "className": "u-stroke-multi-04",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "multi/04",
+      "cssVariable": "--color-multi-04",
+      "resolvedCssValue": "#A5D61D"
+    },
+    {
+      "className": "u-bg-multi-05",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "multi/05",
+      "cssVariable": "--color-multi-05",
+      "resolvedCssValue": "#AC49F5"
+    },
+    {
+      "className": "u-text-multi-05",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "multi/05",
+      "cssVariable": "--color-multi-05",
+      "resolvedCssValue": "#AC49F5"
+    },
+    {
+      "className": "u-stroke-multi-05",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "multi/05",
+      "cssVariable": "--color-multi-05",
+      "resolvedCssValue": "#AC49F5"
+    },
+    {
+      "className": "u-bg-multi-06",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "multi/06",
+      "cssVariable": "--color-multi-06",
+      "resolvedCssValue": "#E64566"
+    },
+    {
+      "className": "u-text-multi-06",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "multi/06",
+      "cssVariable": "--color-multi-06",
+      "resolvedCssValue": "#E64566"
+    },
+    {
+      "className": "u-stroke-multi-06",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "multi/06",
+      "cssVariable": "--color-multi-06",
+      "resolvedCssValue": "#E64566"
+    },
+    {
+      "className": "u-bg-multi-07",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "multi/07",
+      "cssVariable": "--color-multi-07",
+      "resolvedCssValue": "#F9A01E"
+    },
+    {
+      "className": "u-text-multi-07",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "multi/07",
+      "cssVariable": "--color-multi-07",
+      "resolvedCssValue": "#F9A01E"
+    },
+    {
+      "className": "u-stroke-multi-07",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "multi/07",
+      "cssVariable": "--color-multi-07",
+      "resolvedCssValue": "#F9A01E"
+    },
+    {
+      "className": "u-bg-multi-08",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "multi/08",
+      "cssVariable": "--color-multi-08",
+      "resolvedCssValue": "#F7CE00"
+    },
+    {
+      "className": "u-text-multi-08",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "multi/08",
+      "cssVariable": "--color-multi-08",
+      "resolvedCssValue": "#F7CE00"
+    },
+    {
+      "className": "u-stroke-multi-08",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "multi/08",
+      "cssVariable": "--color-multi-08",
+      "resolvedCssValue": "#F7CE00"
+    },
+    {
+      "className": "u-bg-multi-09",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "multi/09",
+      "cssVariable": "--color-multi-09",
+      "resolvedCssValue": "#64BB5C"
+    },
+    {
+      "className": "u-text-multi-09",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "multi/09",
+      "cssVariable": "--color-multi-09",
+      "resolvedCssValue": "#64BB5C"
+    },
+    {
+      "className": "u-stroke-multi-09",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "multi/09",
+      "cssVariable": "--color-multi-09",
+      "resolvedCssValue": "#64BB5C"
+    },
+    {
+      "className": "u-bg-multi-10",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "multi/10",
+      "cssVariable": "--color-multi-10",
+      "resolvedCssValue": "#E84026"
+    },
+    {
+      "className": "u-text-multi-10",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "multi/10",
+      "cssVariable": "--color-multi-10",
+      "resolvedCssValue": "#E84026"
+    },
+    {
+      "className": "u-stroke-multi-10",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "multi/10",
+      "cssVariable": "--color-multi-10",
+      "resolvedCssValue": "#E84026"
+    },
+    {
+      "className": "u-bg-multi-11",
+      "property": "fills",
+      "cssProperty": "background-color",
+      "pixsoVariable": "multi/11",
+      "cssVariable": "--color-multi-11",
+      "resolvedCssValue": "#ED6F21"
+    },
+    {
+      "className": "u-text-multi-11",
+      "property": "fills",
+      "cssProperty": "color",
+      "pixsoVariable": "multi/11",
+      "cssVariable": "--color-multi-11",
+      "resolvedCssValue": "#ED6F21"
+    },
+    {
+      "className": "u-stroke-multi-11",
+      "property": "strokes",
+      "cssProperty": "stroke",
+      "pixsoVariable": "multi/11",
+      "cssVariable": "--color-multi-11",
+      "resolvedCssValue": "#ED6F21"
+    },
+    {
+      "className": "u-gap-space-0",
+      "property": "gap",
+      "cssProperty": "gap",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-p-space-0",
+      "property": "padding",
+      "cssProperty": "padding",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-px-space-0",
+      "property": "padding-inline",
+      "cssProperty": "padding-inline",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-py-space-0",
+      "property": "padding-block",
+      "cssProperty": "padding-block",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-pt-space-0",
+      "property": "padding-top",
+      "cssProperty": "padding-top",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-pr-space-0",
+      "property": "padding-right",
+      "cssProperty": "padding-right",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-pb-space-0",
+      "property": "padding-bottom",
+      "cssProperty": "padding-bottom",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-pl-space-0",
+      "property": "padding-left",
+      "cssProperty": "padding-left",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-m-space-0",
+      "property": "margin",
+      "cssProperty": "margin",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-mx-space-0",
+      "property": "margin-inline",
+      "cssProperty": "margin-inline",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-my-space-0",
+      "property": "margin-block",
+      "cssProperty": "margin-block",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-mt-space-0",
+      "property": "margin-top",
+      "cssProperty": "margin-top",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-mr-space-0",
+      "property": "margin-right",
+      "cssProperty": "margin-right",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-mb-space-0",
+      "property": "margin-bottom",
+      "cssProperty": "margin-bottom",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-ml-space-0",
+      "property": "margin-left",
+      "cssProperty": "margin-left",
+      "pixsoVariable": "space/0",
+      "cssVariable": "--space-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-gap-space-1",
+      "property": "gap",
+      "cssProperty": "gap",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-p-space-1",
+      "property": "padding",
+      "cssProperty": "padding",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-px-space-1",
+      "property": "padding-inline",
+      "cssProperty": "padding-inline",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-py-space-1",
+      "property": "padding-block",
+      "cssProperty": "padding-block",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-pt-space-1",
+      "property": "padding-top",
+      "cssProperty": "padding-top",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-pr-space-1",
+      "property": "padding-right",
+      "cssProperty": "padding-right",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-pb-space-1",
+      "property": "padding-bottom",
+      "cssProperty": "padding-bottom",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-pl-space-1",
+      "property": "padding-left",
+      "cssProperty": "padding-left",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-m-space-1",
+      "property": "margin",
+      "cssProperty": "margin",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-mx-space-1",
+      "property": "margin-inline",
+      "cssProperty": "margin-inline",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-my-space-1",
+      "property": "margin-block",
+      "cssProperty": "margin-block",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-mt-space-1",
+      "property": "margin-top",
+      "cssProperty": "margin-top",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-mr-space-1",
+      "property": "margin-right",
+      "cssProperty": "margin-right",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-mb-space-1",
+      "property": "margin-bottom",
+      "cssProperty": "margin-bottom",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-ml-space-1",
+      "property": "margin-left",
+      "cssProperty": "margin-left",
+      "pixsoVariable": "space/1",
+      "cssVariable": "--space-1",
+      "resolvedCssValue": "2px"
+    },
+    {
+      "className": "u-gap-space-2",
+      "property": "gap",
+      "cssProperty": "gap",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-p-space-2",
+      "property": "padding",
+      "cssProperty": "padding",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-px-space-2",
+      "property": "padding-inline",
+      "cssProperty": "padding-inline",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-py-space-2",
+      "property": "padding-block",
+      "cssProperty": "padding-block",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-pt-space-2",
+      "property": "padding-top",
+      "cssProperty": "padding-top",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-pr-space-2",
+      "property": "padding-right",
+      "cssProperty": "padding-right",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-pb-space-2",
+      "property": "padding-bottom",
+      "cssProperty": "padding-bottom",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-pl-space-2",
+      "property": "padding-left",
+      "cssProperty": "padding-left",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-m-space-2",
+      "property": "margin",
+      "cssProperty": "margin",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-mx-space-2",
+      "property": "margin-inline",
+      "cssProperty": "margin-inline",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-my-space-2",
+      "property": "margin-block",
+      "cssProperty": "margin-block",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-mt-space-2",
+      "property": "margin-top",
+      "cssProperty": "margin-top",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-mr-space-2",
+      "property": "margin-right",
+      "cssProperty": "margin-right",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-mb-space-2",
+      "property": "margin-bottom",
+      "cssProperty": "margin-bottom",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-ml-space-2",
+      "property": "margin-left",
+      "cssProperty": "margin-left",
+      "pixsoVariable": "space/2",
+      "cssVariable": "--space-2",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-gap-space-3",
+      "property": "gap",
+      "cssProperty": "gap",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-p-space-3",
+      "property": "padding",
+      "cssProperty": "padding",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-px-space-3",
+      "property": "padding-inline",
+      "cssProperty": "padding-inline",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-py-space-3",
+      "property": "padding-block",
+      "cssProperty": "padding-block",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-pt-space-3",
+      "property": "padding-top",
+      "cssProperty": "padding-top",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-pr-space-3",
+      "property": "padding-right",
+      "cssProperty": "padding-right",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-pb-space-3",
+      "property": "padding-bottom",
+      "cssProperty": "padding-bottom",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-pl-space-3",
+      "property": "padding-left",
+      "cssProperty": "padding-left",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-m-space-3",
+      "property": "margin",
+      "cssProperty": "margin",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-mx-space-3",
+      "property": "margin-inline",
+      "cssProperty": "margin-inline",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-my-space-3",
+      "property": "margin-block",
+      "cssProperty": "margin-block",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-mt-space-3",
+      "property": "margin-top",
+      "cssProperty": "margin-top",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-mr-space-3",
+      "property": "margin-right",
+      "cssProperty": "margin-right",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-mb-space-3",
+      "property": "margin-bottom",
+      "cssProperty": "margin-bottom",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-ml-space-3",
+      "property": "margin-left",
+      "cssProperty": "margin-left",
+      "pixsoVariable": "space/3",
+      "cssVariable": "--space-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-gap-space-4",
+      "property": "gap",
+      "cssProperty": "gap",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-p-space-4",
+      "property": "padding",
+      "cssProperty": "padding",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-px-space-4",
+      "property": "padding-inline",
+      "cssProperty": "padding-inline",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-py-space-4",
+      "property": "padding-block",
+      "cssProperty": "padding-block",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-pt-space-4",
+      "property": "padding-top",
+      "cssProperty": "padding-top",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-pr-space-4",
+      "property": "padding-right",
+      "cssProperty": "padding-right",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-pb-space-4",
+      "property": "padding-bottom",
+      "cssProperty": "padding-bottom",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-pl-space-4",
+      "property": "padding-left",
+      "cssProperty": "padding-left",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-m-space-4",
+      "property": "margin",
+      "cssProperty": "margin",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-mx-space-4",
+      "property": "margin-inline",
+      "cssProperty": "margin-inline",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-my-space-4",
+      "property": "margin-block",
+      "cssProperty": "margin-block",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-mt-space-4",
+      "property": "margin-top",
+      "cssProperty": "margin-top",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-mr-space-4",
+      "property": "margin-right",
+      "cssProperty": "margin-right",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-mb-space-4",
+      "property": "margin-bottom",
+      "cssProperty": "margin-bottom",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-ml-space-4",
+      "property": "margin-left",
+      "cssProperty": "margin-left",
+      "pixsoVariable": "space/4",
+      "cssVariable": "--space-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-gap-space-5",
+      "property": "gap",
+      "cssProperty": "gap",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-p-space-5",
+      "property": "padding",
+      "cssProperty": "padding",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-px-space-5",
+      "property": "padding-inline",
+      "cssProperty": "padding-inline",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-py-space-5",
+      "property": "padding-block",
+      "cssProperty": "padding-block",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-pt-space-5",
+      "property": "padding-top",
+      "cssProperty": "padding-top",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-pr-space-5",
+      "property": "padding-right",
+      "cssProperty": "padding-right",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-pb-space-5",
+      "property": "padding-bottom",
+      "cssProperty": "padding-bottom",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-pl-space-5",
+      "property": "padding-left",
+      "cssProperty": "padding-left",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-m-space-5",
+      "property": "margin",
+      "cssProperty": "margin",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-mx-space-5",
+      "property": "margin-inline",
+      "cssProperty": "margin-inline",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-my-space-5",
+      "property": "margin-block",
+      "cssProperty": "margin-block",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-mt-space-5",
+      "property": "margin-top",
+      "cssProperty": "margin-top",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-mr-space-5",
+      "property": "margin-right",
+      "cssProperty": "margin-right",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-mb-space-5",
+      "property": "margin-bottom",
+      "cssProperty": "margin-bottom",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-ml-space-5",
+      "property": "margin-left",
+      "cssProperty": "margin-left",
+      "pixsoVariable": "space/5",
+      "cssVariable": "--space-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-gap-space-6",
+      "property": "gap",
+      "cssProperty": "gap",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-p-space-6",
+      "property": "padding",
+      "cssProperty": "padding",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-px-space-6",
+      "property": "padding-inline",
+      "cssProperty": "padding-inline",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-py-space-6",
+      "property": "padding-block",
+      "cssProperty": "padding-block",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-pt-space-6",
+      "property": "padding-top",
+      "cssProperty": "padding-top",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-pr-space-6",
+      "property": "padding-right",
+      "cssProperty": "padding-right",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-pb-space-6",
+      "property": "padding-bottom",
+      "cssProperty": "padding-bottom",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-pl-space-6",
+      "property": "padding-left",
+      "cssProperty": "padding-left",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-m-space-6",
+      "property": "margin",
+      "cssProperty": "margin",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-mx-space-6",
+      "property": "margin-inline",
+      "cssProperty": "margin-inline",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-my-space-6",
+      "property": "margin-block",
+      "cssProperty": "margin-block",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-mt-space-6",
+      "property": "margin-top",
+      "cssProperty": "margin-top",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-mr-space-6",
+      "property": "margin-right",
+      "cssProperty": "margin-right",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-mb-space-6",
+      "property": "margin-bottom",
+      "cssProperty": "margin-bottom",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-ml-space-6",
+      "property": "margin-left",
+      "cssProperty": "margin-left",
+      "pixsoVariable": "space/6",
+      "cssVariable": "--space-6",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-gap-space-7",
+      "property": "gap",
+      "cssProperty": "gap",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-p-space-7",
+      "property": "padding",
+      "cssProperty": "padding",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-px-space-7",
+      "property": "padding-inline",
+      "cssProperty": "padding-inline",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-py-space-7",
+      "property": "padding-block",
+      "cssProperty": "padding-block",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-pt-space-7",
+      "property": "padding-top",
+      "cssProperty": "padding-top",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-pr-space-7",
+      "property": "padding-right",
+      "cssProperty": "padding-right",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-pb-space-7",
+      "property": "padding-bottom",
+      "cssProperty": "padding-bottom",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-pl-space-7",
+      "property": "padding-left",
+      "cssProperty": "padding-left",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-m-space-7",
+      "property": "margin",
+      "cssProperty": "margin",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-mx-space-7",
+      "property": "margin-inline",
+      "cssProperty": "margin-inline",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-my-space-7",
+      "property": "margin-block",
+      "cssProperty": "margin-block",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-mt-space-7",
+      "property": "margin-top",
+      "cssProperty": "margin-top",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-mr-space-7",
+      "property": "margin-right",
+      "cssProperty": "margin-right",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-mb-space-7",
+      "property": "margin-bottom",
+      "cssProperty": "margin-bottom",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-ml-space-7",
+      "property": "margin-left",
+      "cssProperty": "margin-left",
+      "pixsoVariable": "space/7",
+      "cssVariable": "--space-7",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-w-size-04",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/04",
+      "cssVariable": "--size-1",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-h-size-04",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/04",
+      "cssVariable": "--size-1",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-w-size-06",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/06",
+      "cssVariable": "--size-2",
+      "resolvedCssValue": "6px"
+    },
+    {
+      "className": "u-h-size-06",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/06",
+      "cssVariable": "--size-2",
+      "resolvedCssValue": "6px"
+    },
+    {
+      "className": "u-w-size-08",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/08",
+      "cssVariable": "--size-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-h-size-08",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/08",
+      "cssVariable": "--size-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-w-size-12",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/12",
+      "cssVariable": "--size-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-h-size-12",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/12",
+      "cssVariable": "--size-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-w-size-16",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/16",
+      "cssVariable": "--size-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-h-size-16",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/16",
+      "cssVariable": "--size-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-w-size-20",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/20",
+      "cssVariable": "--size-6",
+      "resolvedCssValue": "20px"
+    },
+    {
+      "className": "u-h-size-20",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/20",
+      "cssVariable": "--size-6",
+      "resolvedCssValue": "20px"
+    },
+    {
+      "className": "u-w-size-24",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/24",
+      "cssVariable": "--size-7",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-h-size-24",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/24",
+      "cssVariable": "--size-7",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-w-size-28",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/28",
+      "cssVariable": "--size-8",
+      "resolvedCssValue": "28px"
+    },
+    {
+      "className": "u-h-size-28",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/28",
+      "cssVariable": "--size-8",
+      "resolvedCssValue": "28px"
+    },
+    {
+      "className": "u-w-size-32",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/32",
+      "cssVariable": "--size-9",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-h-size-32",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/32",
+      "cssVariable": "--size-9",
+      "resolvedCssValue": "32px"
+    },
+    {
+      "className": "u-w-size-36",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/36",
+      "cssVariable": "--size-10",
+      "resolvedCssValue": "36px"
+    },
+    {
+      "className": "u-h-size-36",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/36",
+      "cssVariable": "--size-10",
+      "resolvedCssValue": "36px"
+    },
+    {
+      "className": "u-w-size-40",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/40",
+      "cssVariable": "--size-11",
+      "resolvedCssValue": "40px"
+    },
+    {
+      "className": "u-h-size-40",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/40",
+      "cssVariable": "--size-11",
+      "resolvedCssValue": "40px"
+    },
+    {
+      "className": "u-w-size-44",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/44",
+      "cssVariable": "--size-12",
+      "resolvedCssValue": "44px"
+    },
+    {
+      "className": "u-h-size-44",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/44",
+      "cssVariable": "--size-12",
+      "resolvedCssValue": "44px"
+    },
+    {
+      "className": "u-w-size-48",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/48",
+      "cssVariable": "--size-13",
+      "resolvedCssValue": "48px"
+    },
+    {
+      "className": "u-h-size-48",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/48",
+      "cssVariable": "--size-13",
+      "resolvedCssValue": "48px"
+    },
+    {
+      "className": "u-w-size-56",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/56",
+      "cssVariable": "--size-14",
+      "resolvedCssValue": "56px"
+    },
+    {
+      "className": "u-h-size-56",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/56",
+      "cssVariable": "--size-14",
+      "resolvedCssValue": "56px"
+    },
+    {
+      "className": "u-w-size-64",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/64",
+      "cssVariable": "--size-15",
+      "resolvedCssValue": "64px"
+    },
+    {
+      "className": "u-h-size-64",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/64",
+      "cssVariable": "--size-15",
+      "resolvedCssValue": "64px"
+    },
+    {
+      "className": "u-w-size-72",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/72",
+      "cssVariable": "--size-16",
+      "resolvedCssValue": "72px"
+    },
+    {
+      "className": "u-h-size-72",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/72",
+      "cssVariable": "--size-16",
+      "resolvedCssValue": "72px"
+    },
+    {
+      "className": "u-w-size-80",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "size/80",
+      "cssVariable": "--size-17",
+      "resolvedCssValue": "80px"
+    },
+    {
+      "className": "u-h-size-80",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "size/80",
+      "cssVariable": "--size-17",
+      "resolvedCssValue": "80px"
+    },
+    {
+      "className": "u-radius-0",
+      "property": "borderRadius",
+      "cssProperty": "border-radius",
+      "pixsoVariable": "radius/0",
+      "cssVariable": "--radius-0",
+      "resolvedCssValue": "0px"
+    },
+    {
+      "className": "u-radius-04",
+      "property": "borderRadius",
+      "cssProperty": "border-radius",
+      "pixsoVariable": "radius/04",
+      "cssVariable": "--radius-1",
+      "resolvedCssValue": "4px"
+    },
+    {
+      "className": "u-radius-06",
+      "property": "borderRadius",
+      "cssProperty": "border-radius",
+      "pixsoVariable": "radius/06",
+      "cssVariable": "--radius-2",
+      "resolvedCssValue": "6px"
+    },
+    {
+      "className": "u-radius-08",
+      "property": "borderRadius",
+      "cssProperty": "border-radius",
+      "pixsoVariable": "radius/08",
+      "cssVariable": "--radius-3",
+      "resolvedCssValue": "8px"
+    },
+    {
+      "className": "u-radius-12",
+      "property": "borderRadius",
+      "cssProperty": "border-radius",
+      "pixsoVariable": "radius/12",
+      "cssVariable": "--radius-4",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-radius-16",
+      "property": "borderRadius",
+      "cssProperty": "border-radius",
+      "pixsoVariable": "radius/16",
+      "cssVariable": "--radius-5",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-radius-full",
+      "property": "borderRadius",
+      "cssProperty": "border-radius",
+      "pixsoVariable": "radius/full",
+      "cssVariable": "--radius-full",
+      "resolvedCssValue": "999px"
+    },
+    {
+      "className": "u-w-layout-width-240",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "layout/width/240",
+      "cssVariable": "--layout-sidebar-width",
+      "resolvedCssValue": "240px"
+    },
+    {
+      "className": "u-w-layout-width-360",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "layout/width/360",
+      "cssVariable": "--layout-secondary-pane-width",
+      "resolvedCssValue": "360px"
+    },
+    {
+      "className": "u-w-layout-width-400",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "layout/width/400",
+      "cssVariable": "--width-dialog",
+      "resolvedCssValue": "400px"
+    },
+    {
+      "className": "u-w-layout-width-480",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "layout/width/480",
+      "cssVariable": "--width-modal-sm",
+      "resolvedCssValue": "480px"
+    },
+    {
+      "className": "u-w-layout-width-640",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "layout/width/640",
+      "cssVariable": "--width-modal-md",
+      "resolvedCssValue": "640px"
+    },
+    {
+      "className": "u-w-layout-width-800",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "layout/width/800",
+      "cssVariable": "--width-modal-lg",
+      "resolvedCssValue": "800px"
+    },
+    {
+      "className": "u-w-layout-width-1100",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "layout/width/1100",
+      "cssVariable": "--layout-window-min-width",
+      "resolvedCssValue": "1100px"
+    },
+    {
+      "className": "u-w-layout-width-1728",
+      "property": "width",
+      "cssProperty": "width",
+      "pixsoVariable": "layout/width/1728",
+      "cssVariable": "--layout-frame-width",
+      "resolvedCssValue": "1728px"
+    },
+    {
+      "className": "u-h-layout-height-720",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "layout/height/720",
+      "cssVariable": "--layout-window-min-height",
+      "resolvedCssValue": "720px"
+    },
+    {
+      "className": "u-h-layout-height-1152",
+      "property": "height",
+      "cssProperty": "height",
+      "pixsoVariable": "layout/height/1152",
+      "cssVariable": "--layout-frame-height",
+      "resolvedCssValue": "1152px"
+    },
+    {
+      "className": "u-opacity-40",
+      "property": "opacity",
+      "cssProperty": "opacity",
+      "pixsoVariable": "opacity/40",
+      "cssVariable": "--opacity-40",
+      "resolvedCssValue": "0.4"
+    },
+    {
+      "className": "u-font-size-10",
+      "property": "fontSize",
+      "cssProperty": "font-size",
+      "pixsoVariable": "font/size/10",
+      "cssVariable": "--font-size-10",
+      "resolvedCssValue": "10px"
+    },
+    {
+      "className": "u-font-size-12",
+      "property": "fontSize",
+      "cssProperty": "font-size",
+      "pixsoVariable": "font/size/12",
+      "cssVariable": "--font-size-12",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-font-size-14",
+      "property": "fontSize",
+      "cssProperty": "font-size",
+      "pixsoVariable": "font/size/14",
+      "cssVariable": "--font-size-14",
+      "resolvedCssValue": "14px"
+    },
+    {
+      "className": "u-font-size-16",
+      "property": "fontSize",
+      "cssProperty": "font-size",
+      "pixsoVariable": "font/size/16",
+      "cssVariable": "--font-size-16",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-font-size-18",
+      "property": "fontSize",
+      "cssProperty": "font-size",
+      "pixsoVariable": "font/size/18",
+      "cssVariable": "--font-size-18",
+      "resolvedCssValue": "18px"
+    },
+    {
+      "className": "u-font-size-20",
+      "property": "fontSize",
+      "cssProperty": "font-size",
+      "pixsoVariable": "font/size/20",
+      "cssVariable": "--font-size-20",
+      "resolvedCssValue": "20px"
+    },
+    {
+      "className": "u-font-size-24",
+      "property": "fontSize",
+      "cssProperty": "font-size",
+      "pixsoVariable": "font/size/24",
+      "cssVariable": "--font-size-24",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-font-size-30",
+      "property": "fontSize",
+      "cssProperty": "font-size",
+      "pixsoVariable": "font/size/30",
+      "cssVariable": "--font-size-30",
+      "resolvedCssValue": "30px"
+    },
+    {
+      "className": "u-font-size-38",
+      "property": "fontSize",
+      "cssProperty": "font-size",
+      "pixsoVariable": "font/size/38",
+      "cssVariable": "--font-size-38",
+      "resolvedCssValue": "38px"
+    },
+    {
+      "className": "u-font-size-48",
+      "property": "fontSize",
+      "cssProperty": "font-size",
+      "pixsoVariable": "font/size/48",
+      "cssVariable": "--font-size-48",
+      "resolvedCssValue": "48px"
+    },
+    {
+      "className": "u-font-size-56",
+      "property": "fontSize",
+      "cssProperty": "font-size",
+      "pixsoVariable": "font/size/56",
+      "cssVariable": "--font-size-56",
+      "resolvedCssValue": "56px"
+    },
+    {
+      "className": "u-leading-12",
+      "property": "lineHeight",
+      "cssProperty": "line-height",
+      "pixsoVariable": "font/line-height/12",
+      "cssVariable": "--line-height-12",
+      "resolvedCssValue": "12px"
+    },
+    {
+      "className": "u-leading-14",
+      "property": "lineHeight",
+      "cssProperty": "line-height",
+      "pixsoVariable": "font/line-height/14",
+      "cssVariable": "--line-height-14",
+      "resolvedCssValue": "14px"
+    },
+    {
+      "className": "u-leading-16",
+      "property": "lineHeight",
+      "cssProperty": "line-height",
+      "pixsoVariable": "font/line-height/16",
+      "cssVariable": "--line-height-16",
+      "resolvedCssValue": "16px"
+    },
+    {
+      "className": "u-leading-20",
+      "property": "lineHeight",
+      "cssProperty": "line-height",
+      "pixsoVariable": "font/line-height/20",
+      "cssVariable": "--line-height-20",
+      "resolvedCssValue": "20px"
+    },
+    {
+      "className": "u-leading-22",
+      "property": "lineHeight",
+      "cssProperty": "line-height",
+      "pixsoVariable": "font/line-height/22",
+      "cssVariable": "--line-height-22",
+      "resolvedCssValue": "22px"
+    },
+    {
+      "className": "u-leading-24",
+      "property": "lineHeight",
+      "cssProperty": "line-height",
+      "pixsoVariable": "font/line-height/24",
+      "cssVariable": "--line-height-24",
+      "resolvedCssValue": "24px"
+    },
+    {
+      "className": "u-leading-28",
+      "property": "lineHeight",
+      "cssProperty": "line-height",
+      "pixsoVariable": "font/line-height/28",
+      "cssVariable": "--line-height-28",
+      "resolvedCssValue": "28px"
+    },
+    {
+      "className": "u-leading-36",
+      "property": "lineHeight",
+      "cssProperty": "line-height",
+      "pixsoVariable": "font/line-height/36",
+      "cssVariable": "--line-height-36",
+      "resolvedCssValue": "36px"
+    },
+    {
+      "className": "u-leading-44",
+      "property": "lineHeight",
+      "cssProperty": "line-height",
+      "pixsoVariable": "font/line-height/44",
+      "cssVariable": "--line-height-44",
+      "resolvedCssValue": "44px"
+    },
+    {
+      "className": "u-leading-58",
+      "property": "lineHeight",
+      "cssProperty": "line-height",
+      "pixsoVariable": "font/line-height/58",
+      "cssVariable": "--line-height-58",
+      "resolvedCssValue": "58px"
+    },
+    {
+      "className": "u-leading-66",
+      "property": "lineHeight",
+      "cssProperty": "line-height",
+      "pixsoVariable": "font/line-height/66",
+      "cssVariable": "--line-height-66",
+      "resolvedCssValue": "66px"
+    },
+    {
+      "className": "u-font-weight-400",
+      "property": "fontWeight",
+      "cssProperty": "font-weight",
+      "pixsoVariable": "font/weight/400",
+      "cssVariable": "--font-weight-400",
+      "resolvedCssValue": "400"
+    },
+    {
+      "className": "u-font-weight-500",
+      "property": "fontWeight",
+      "cssProperty": "font-weight",
+      "pixsoVariable": "font/weight/500",
+      "cssVariable": "--font-weight-500",
+      "resolvedCssValue": "500"
+    },
+    {
+      "className": "u-font-weight-700",
+      "property": "fontWeight",
+      "cssProperty": "font-weight",
+      "pixsoVariable": "font/weight/700",
+      "cssVariable": "--font-weight-700",
+      "resolvedCssValue": "700"
+    }
+  ],
+  "semanticTypes": [
+    {
+      "className": "u-type-display-l",
+      "role": "typography/display-l",
+      "property": "typography",
+      "pixsoVariables": [
+        "font/size/56",
+        "font/line-height/66",
+        "font/weight/400"
+      ],
+      "cssVariables": {
+        "fontSize": "--type-display-l-size",
+        "lineHeight": "--type-display-l-leading",
+        "fontWeight": "--type-display-l-weight"
+      }
+    },
+    {
+      "className": "u-type-display-m",
+      "role": "typography/display-m",
+      "property": "typography",
+      "pixsoVariables": [
+        "font/size/48",
+        "font/line-height/58",
+        "font/weight/400"
+      ],
+      "cssVariables": {
+        "fontSize": "--type-display-m-size",
+        "lineHeight": "--type-display-m-leading",
+        "fontWeight": "--type-display-m-weight"
+      }
+    },
+    {
+      "className": "u-type-display-s",
+      "role": "typography/display-s",
+      "property": "typography",
+      "pixsoVariables": [
+        "font/size/38",
+        "font/line-height/44",
+        "font/weight/400"
+      ],
+      "cssVariables": {
+        "fontSize": "--type-display-s-size",
+        "lineHeight": "--type-display-s-leading",
+        "fontWeight": "--type-display-s-weight"
+      }
+    },
+    {
+      "className": "u-type-title-l",
+      "role": "typography/title-l",
+      "property": "typography",
+      "pixsoVariables": [
+        "font/size/30",
+        "font/line-height/36",
+        "font/weight/700"
+      ],
+      "cssVariables": {
+        "fontSize": "--type-title-l-size",
+        "lineHeight": "--type-title-l-leading",
+        "fontWeight": "--type-title-l-weight"
+      }
+    },
+    {
+      "className": "u-type-title-m",
+      "role": "typography/title-m",
+      "property": "typography",
+      "pixsoVariables": [
+        "font/size/24",
+        "font/line-height/28",
+        "font/weight/700"
+      ],
+      "cssVariables": {
+        "fontSize": "--type-title-m-size",
+        "lineHeight": "--type-title-m-leading",
+        "fontWeight": "--type-title-m-weight"
+      }
+    },
+    {
+      "className": "u-type-title-s",
+      "role": "typography/title-s",
+      "property": "typography",
+      "pixsoVariables": [
+        "font/size/20",
+        "font/line-height/24",
+        "font/weight/700"
+      ],
+      "cssVariables": {
+        "fontSize": "--type-title-s-size",
+        "lineHeight": "--type-title-s-leading",
+        "fontWeight": "--type-title-s-weight"
+      }
+    },
+    {
+      "className": "u-type-subtitle-l",
+      "role": "typography/subtitle-l",
+      "property": "typography",
+      "pixsoVariables": [
+        "font/size/18",
+        "font/line-height/22",
+        "font/weight/500"
+      ],
+      "cssVariables": {
+        "fontSize": "--type-subtitle-l-size",
+        "lineHeight": "--type-subtitle-l-leading",
+        "fontWeight": "--type-subtitle-l-weight"
+      }
+    },
+    {
+      "className": "u-type-subtitle-m",
+      "role": "typography/subtitle-m",
+      "property": "typography",
+      "pixsoVariables": [
+        "font/size/16",
+        "font/line-height/20",
+        "font/weight/500"
+      ],
+      "cssVariables": {
+        "fontSize": "--type-subtitle-m-size",
+        "lineHeight": "--type-subtitle-m-leading",
+        "fontWeight": "--type-subtitle-m-weight"
+      }
+    },
+    {
+      "className": "u-type-subtitle-s",
+      "role": "typography/subtitle-s",
+      "property": "typography",
+      "pixsoVariables": [
+        "font/size/14",
+        "font/line-height/16",
+        "font/weight/500"
+      ],
+      "cssVariables": {
+        "fontSize": "--type-subtitle-s-size",
+        "lineHeight": "--type-subtitle-s-leading",
+        "fontWeight": "--type-subtitle-s-weight"
+      }
+    },
+    {
+      "className": "u-type-body-l",
+      "role": "typography/body-l",
+      "property": "typography",
+      "pixsoVariables": [
+        "font/size/16",
+        "font/line-height/20",
+        "font/weight/400"
+      ],
+      "cssVariables": {
+        "fontSize": "--type-body-l-size",
+        "lineHeight": "--type-body-l-leading",
+        "fontWeight": "--type-body-l-weight"
+      }
+    },
+    {
+      "className": "u-type-body-m",
+      "role": "typography/body-m",
+      "property": "typography",
+      "pixsoVariables": [
+        "font/size/14",
+        "font/line-height/16",
+        "font/weight/400"
+      ],
+      "cssVariables": {
+        "fontSize": "--type-body-m-size",
+        "lineHeight": "--type-body-m-leading",
+        "fontWeight": "--type-body-m-weight"
+      }
+    },
+    {
+      "className": "u-type-body-s",
+      "role": "typography/body-s",
+      "property": "typography",
+      "pixsoVariables": [
+        "font/size/12",
+        "font/line-height/14",
+        "font/weight/400"
+      ],
+      "cssVariables": {
+        "fontSize": "--type-body-s-size",
+        "lineHeight": "--type-body-s-leading",
+        "fontWeight": "--type-body-s-weight"
+      }
+    },
+    {
+      "className": "u-type-caption-m",
+      "role": "typography/caption-m",
+      "property": "typography",
+      "pixsoVariables": [
+        "font/size/10",
+        "font/line-height/12",
+        "font/weight/400"
+      ],
+      "cssVariables": {
+        "fontSize": "--type-caption-m-size",
+        "lineHeight": "--type-caption-m-leading",
+        "fontWeight": "--type-caption-m-weight"
+      }
+    }
+  ]
+}

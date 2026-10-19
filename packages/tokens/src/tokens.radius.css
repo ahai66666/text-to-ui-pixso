@@ -1,0 +1,40 @@
+:root {
+  --radius-0: 0px;
+  --radius-1: 4px;
+  --radius-2: 6px;
+  --radius-3: 8px;
+  --radius-4: 12px;
+  --radius-5: 16px;
+  --radius-full: 999px;
+
+  --radius-popup-menu-item: var(--radius-1);
+  --radius-checkbox: var(--radius-1);
+  --radius-subtab: var(--radius-3);
+  --radius-sidebar-nav-item: var(--radius-3);
+  --radius-button: var(--radius-3);
+  --radius-icon-text-button: var(--radius-3);
+  --radius-icon-button: var(--radius-3);
+  --radius-status-button: var(--radius-3);
+  --radius-dropdown-button: var(--radius-3);
+  --radius-alert: var(--radius-3);
+  --radius-select: var(--radius-3);
+  --radius-input: var(--radius-3);
+  --radius-textarea: var(--radius-3);
+  --radius-tooltip: var(--radius-2);
+  --radius-search: var(--radius-3);
+  --radius-number-input: var(--radius-3);
+  --radius-tag: var(--radius-3);
+  --radius-selection-block: var(--radius-3);
+  --radius-selection-option: var(--radius-2);
+  --radius-tab: var(--radius-3);
+  --radius-list: var(--radius-4);
+  --radius-list-item: var(--radius-3);
+  --radius-badge: var(--radius-full);
+  --radius-progress: var(--radius-full);
+  --radius-avatar: var(--radius-full);
+  --radius-card: var(--radius-4);
+  --radius-table: var(--radius-4);
+  --radius-pagination-item: var(--radius-3);
+  --radius-dialog: var(--radius-5);
+  --radius-modal: var(--radius-5);
+}

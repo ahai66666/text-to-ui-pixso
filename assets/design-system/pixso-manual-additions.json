@@ -1,0 +1,13 @@
+{
+  "name": "HarmonyOS PC Pixso Manual Additions",
+  "version": 3,
+  "purpose": "No manual variables are approved. Extend code-side semantics first; add a new Pixso primitive only when no existing foundation value can represent it.",
+  "counts": {
+    "total": 0
+  },
+  "collections": [],
+  "alreadyPresent": {
+    "coreBaseline": "assets/design-system/pixso-core-baseline.json",
+    "coreTotal": 127
+  }
+}

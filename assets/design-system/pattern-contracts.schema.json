@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.text-to-ui/pattern-contracts.schema.json",
+  "title": "Text-to-UI Pattern Contract registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "kind", "authority", "patterns"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "kind": { "const": "text-to-ui-pattern-contracts" },
+    "authority": { "const": "pattern-contract" },
+    "patterns": {
+      "type": "array",
+      "minItems": 4,
+      "items": { "$ref": "#/$defs/pattern" }
+    }
+  },
+  "$defs": {
+    "tokenDimension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode"],
+      "properties": {
+        "mode": { "enum": ["fixed", "fill", "hug"] },
+        "token": { "type": "string", "minLength": 1 },
+        "min": { "type": "number", "minimum": 0 },
+        "max": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    },
+    "region": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "width", "height", "insetOwner", "scrollOwner", "surface"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "width": { "$ref": "#/$defs/tokenDimension" },
+        "height": { "$ref": "#/$defs/tokenDimension" },
+        "insetOwner": { "type": "string", "minLength": 1 },
+        "scrollOwner": { "type": ["string", "null"] },
+        "surface": { "enum": ["transparent", "surface", "subtle", "inherit"] },
+        "dividerEdges": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "enum": ["top", "right", "bottom", "left"] }
+        }
+      }
+    },
+    "slot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "owner", "cardinality"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "owner": { "type": "string", "minLength": 1 },
+        "cardinality": { "enum": ["1", "0..1", "0..n", "1..n"] },
+        "allowedComponentModes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "overflow": { "enum": ["none", "more-menu"] }
+      }
+    },
+    "navigationMode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "region", "shellSlots"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "region": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "shellSlots": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "placement"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+              "placement": { "enum": ["top", "middle-scroll", "bottom"] },
+              "requiredSemanticContexts": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+            }
+          }
+        }
+      }
+    },
+    "inset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["inlineStart", "inlineEnd", "blockStart", "blockEnd"],
+      "properties": {
+        "inlineStart": { "type": "string", "pattern": "^(layout|space|size|radius|font|opacity)/[a-z0-9-]+$" },
+        "inlineEnd": { "type": "string", "pattern": "^(layout|space|size|radius|font|opacity)/[a-z0-9-]+$" },
+        "blockStart": { "type": "string", "pattern": "^(layout|space|size|radius|font|opacity)/[a-z0-9-]+$" },
+        "blockEnd": { "type": "string", "pattern": "^(layout|space|size|radius|font|opacity)/[a-z0-9-]+$" }
+      }
+    },
+    "contentAxis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "inlineStart", "inlineEnd"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "inlineStart": { "type": "string", "minLength": 1 },
+        "inlineEnd": { "type": "string", "minLength": 1 },
+        "purpose": { "type": "string", "minLength": 1 }
+      }
+    },
+    "regionGeometry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "scrollBody", "surfaceInset", "contentAxes"],
+      "properties": {
+        "title": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "heightToken", "inlineStart", "inlineEnd"],
+          "properties": {
+            "kind": { "enum": ["global-shell-slot", "pane-segment", "none"] },
+            "heightToken": { "type": "string", "minLength": 1 },
+            "inlineStart": { "type": "string", "minLength": 1 },
+            "inlineEnd": { "type": "string", "minLength": 1 }
+          }
+        },
+        "scrollBody": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["owner", "overflow", "inset"],
+          "properties": {
+            "owner": { "type": "string", "minLength": 1 },
+            "overflow": { "const": "auto" },
+            "inset": { "$ref": "#/$defs/inset" }
+          }
+        },
+        "surfaceInset": { "$ref": "#/$defs/inset" },
+        "contentAxes": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/contentAxis" }
+        }
+      }
+    },
+    "patternGeometry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["owner", "gridGapToken", "titleLayer", "regions"],
+      "properties": {
+        "owner": { "const": "pattern-renderer" },
+        "gridGapToken": { "type": "string", "minLength": 1 },
+        "titleLayer": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["heightToken", "alignToPaneBoundaries"],
+          "properties": {
+            "heightToken": { "type": "string", "minLength": 1 },
+            "alignToPaneBoundaries": { "const": true },
+            "crossAxisAlignment": { "enum": ["center"] },
+            "middleSegmentInsetToken": { "type": "string", "minLength": 1 }
+          }
+        },
+        "regions": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/regionGeometry" }
+        }
+      }
+    },
+    "pattern": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "workflow", "compositionOnly", "paneOrder", "minimumWindow", "titleLayer", "regions", "slots", "geometry", "resizeBehavior", "rendererPolicy", "references"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^pattern-[a-d]-[a-z0-9-]+$" },
+        "label": { "type": "string", "minLength": 1 },
+        "workflow": { "type": "string", "minLength": 1 },
+        "compositionOnly": { "const": true },
+        "extends": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "paneOrder": { "type": "array", "minItems": 2, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z0-9-]+$" } },
+        "minimumWindow": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["width", "height"],
+          "properties": { "width": { "type": "number", "exclusiveMinimum": 0 }, "height": { "type": "number", "exclusiveMinimum": 0 } }
+        },
+        "titleLayer": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["global", "heightToken", "segments"],
+          "properties": {
+            "global": { "const": true },
+            "heightToken": { "type": "string", "minLength": 1 },
+            "segments": { "type": "array", "minItems": 2, "items": { "type": "string" } }
+          }
+        },
+        "regions": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/region" } },
+        "slots": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slot" } },
+        "navigationModes": { "type": "array", "uniqueItems": false, "items": { "$ref": "#/$defs/navigationMode" } },
+        "geometry": { "$ref": "#/$defs/patternGeometry" },
+        "resizeBehavior": { "type": "string", "minLength": 1 },
+        "rendererPolicy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["web", "pixso"],
+          "properties": {
+            "web": { "const": "shared-resolved-pattern" },
+            "pixso": { "const": "native-frame-composition" }
+          }
+        },
+        "references": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+      }
+    }
+  }
+}

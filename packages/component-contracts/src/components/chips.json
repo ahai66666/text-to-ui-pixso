@@ -1,0 +1,139 @@
+{
+  "id": "chips",
+  "logicalName": "Chips/Default",
+  "variants": [
+    "default",
+    "with-icon",
+    "closable"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "pressed",
+    "disabled"
+  ],
+  "props": [
+    "label",
+    "icon",
+    "closable",
+    "disabled",
+    "state",
+    "onClose"
+  ],
+  "slots": [
+    "leading",
+    "label",
+    "close"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.surface-muted",
+    "color.state-layer-hover",
+    "color.state-layer-pressed",
+    "size.tag-height",
+    "spacing.padding-tag-x",
+    "typography.body-m",
+    "radius.tag"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/index.js#chips"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/index.js#chips"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "actions",
+  "categoryLabel": "操作类",
+  "order": 111,
+  "canonicalSection": "[data-runtime-category=\"actions\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"actions\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-chips\"]",
+  "specimens": [
+    {
+      "id": "default",
+      "variant": "default",
+      "state": "default"
+    },
+    {
+      "id": "hover",
+      "variant": "with-icon",
+      "state": "hover"
+    },
+    {
+      "id": "pressed",
+      "variant": "closable",
+      "state": "pressed"
+    },
+    {
+      "id": "disabled",
+      "variant": "closable",
+      "state": "disabled"
+    }
+  ],
+  "fixtureId": "fixture-chips",
+  "surface": "white",
+  "sizing": "intrinsic",
+  "behaviors": [
+    "focus",
+    "disabled"
+  ],
+  "iconSemantic": null,
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "actions",
+  "canonicalSpecimen": "gallery:actions:chips",
+  "allowedStates": [
+    "default",
+    "hover",
+    "pressed",
+    "disabled"
+  ],
+  "textRoles": [
+    "title:title-s",
+    "content:body-l",
+    "description:body-m",
+    "help:body-s"
+  ],
+  "iconSlots": [],
+  "iconAliases": [],
+  "slotContracts": {
+    "leading": {
+      "cardinality": "0..1",
+      "scope": "chips",
+      "iconSize": "16px"
+    },
+    "label": {
+      "cardinality": "1",
+      "scope": "chips",
+      "typographyRole": "body-m"
+    },
+    "close": {
+      "cardinality": "0..1",
+      "scope": "chips",
+      "control": "icon-button",
+      "iconAlias": "action/close",
+      "iconSize": "16px",
+      "requiresAccessibleName": true
+    }
+  },
+  "comparisonGroup": "actions"
+}

@@ -1,0 +1,298 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.text-to-ui/mapping-registry.schema.json",
+  "title": "Text-to-UI cross-source mapping registry",
+  "description": "Editable relationship layer for HTML contracts, Pixso design documents, Pixso component libraries, and external component libraries.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "kind",
+    "name",
+    "purpose",
+    "policy",
+    "sources",
+    "componentLibraries",
+    "profiles",
+    "defaultProfile",
+    "projections"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": 1 },
+    "kind": { "const": "text-to-ui.mapping-registry" },
+    "name": { "type": "string", "minLength": 1 },
+    "purpose": { "type": "string", "minLength": 1 },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "editSurface",
+        "identity",
+        "guidPolicy",
+        "candidatePolicy",
+        "projectionPolicy",
+        "partialMappingAllowed"
+      ],
+      "properties": {
+        "editSurface": { "type": "string", "minLength": 1 },
+        "identity": { "type": "object", "minProperties": 1, "additionalProperties": { "type": "string" } },
+        "guidPolicy": { "type": "string", "minLength": 1 },
+        "candidatePolicy": { "type": "string", "minLength": 1 },
+        "projectionPolicy": { "type": "string", "minLength": 1 },
+        "partialMappingAllowed": { "type": "boolean" }
+      }
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["html", "pixso"],
+      "properties": {
+        "html": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/source" } },
+        "pixso": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/pixsoDocument" } }
+      }
+    },
+    "componentLibraries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "role", "kind", "libraryName", "page"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "role": { "enum": ["source", "target", "reference"] },
+          "kind": { "type": "string", "minLength": 1 },
+          "libraryName": { "type": "string", "minLength": 1 },
+          "page": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": true
+      }
+    },
+    "profiles": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/profile" }
+    },
+    "defaultProfile": { "type": "string", "minLength": 1 },
+    "projections": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": ["id", "kind", "root"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "kind": { "type": "string", "minLength": 1 },
+        "root": { "type": "string", "minLength": 1 },
+        "optionalPaths": { "type": "array", "items": { "type": "string" } },
+        "frameworks": { "type": "array", "items": { "const": "html" } }
+      },
+      "additionalProperties": true
+    },
+    "pixsoDocument": {
+      "type": "object",
+      "required": ["id", "kind", "fileName", "componentLibraryPage"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "kind": { "const": "pixso-document" },
+        "fileName": { "type": "string", "minLength": 1 },
+        "componentLibraryPage": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    },
+    "tokenMapping": {
+      "type": "object",
+      "required": ["htmlCssVariable", "pixsoVariable"],
+      "properties": {
+        "htmlCssVariable": { "type": ["string", "null"] },
+        "htmlSourceToken": { "type": ["string", "null"] },
+        "pixsoVariable": { "type": ["string", "null"] },
+        "pixsoCollection": { "type": ["string", "null"] },
+        "pixsoMode": { "type": ["string", "null"] },
+        "valueTransform": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "semanticTokenMapping": {
+      "type": "object",
+      "required": ["role", "htmlCssVariable", "pixsoVariable"],
+      "properties": {
+        "role": { "type": "string", "minLength": 1 },
+        "htmlCssVariable": { "type": ["string", "null"] },
+        "htmlSourceToken": { "type": ["string", "null"] },
+        "pixsoVariable": { "type": ["string", "null"] },
+        "valueTransform": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "semanticColorMapping": {
+      "type": "object",
+      "required": ["role", "htmlCssVariables", "pixsoVariables", "composition"],
+      "properties": {
+        "role": { "type": "string", "minLength": 1 },
+        "htmlCssVariables": { "type": "array", "items": { "type": "string" } },
+        "pixsoVariables": { "type": "array", "items": { "type": "string" } },
+        "composition": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    },
+    "styleMapping": {
+      "type": "object",
+      "required": ["kind", "htmlToken", "pixsoStyle"],
+      "properties": {
+        "kind": { "enum": ["text", "effect"] },
+        "htmlToken": { "type": "string", "minLength": 1 },
+        "htmlCssPrefix": { "type": "string" },
+        "htmlCssVariable": { "type": "string" },
+        "pixsoStyle": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "componentMapping": {
+      "type": "object",
+      "required": ["htmlLogicalName", "pixsoTargetStatus", "nativeSourceStatus"],
+      "properties": {
+        "htmlLogicalName": { "type": "string", "minLength": 1 },
+        "htmlRendererKey": { "type": ["string", "null"] },
+        "pixsoTarget": { "type": ["string", "null"] },
+        "pixsoTargetStatus": { "enum": ["registered", "pending-review", "unregistered"] },
+        "pixsoMappingPolicy": { "enum": ["required", "excluded"] },
+        "pixsoMappingReason": { "type": "string", "minLength": 1 },
+        "pixsoSpecKey": { "type": ["string", "null"] },
+        "nativeSourceStatus": { "enum": ["mapped-pending-verification", "mapped-needs-rebuild", "verified", "missing-target", "not-applicable"] },
+        "runtimeBinding": { "type": ["object", "null"] },
+        "subcomponentMappings": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/componentSubMapping" }
+        }
+      },
+      "additionalProperties": true
+    },
+    "endpointComponentMapping": {
+      "type": "object",
+      "required": [
+        "endpointComponentId",
+        "contractId",
+        "htmlLogicalName",
+        "pixsoTarget",
+        "pixsoTargetStatus",
+        "pixsoVariant",
+        "mappingStatus"
+      ],
+      "properties": {
+        "endpointComponentId": { "type": "string", "minLength": 1 },
+        "contractId": { "type": "string", "minLength": 1 },
+        "htmlLogicalName": { "type": "string", "minLength": 1 },
+        "pixsoTarget": { "type": ["string", "null"] },
+        "pixsoTargetStatus": { "enum": ["registered", "pending-review", "unregistered"] },
+        "pixsoVariant": { "type": ["object", "null"] },
+        "mappingStatus": { "enum": ["mapped-pending-verification", "verified", "mapped-needs-rebuild", "unavailable"] },
+        "sourceMappingTarget": { "type": ["string", "null"] },
+        "notes": { "type": ["string", "array"] }
+      },
+      "additionalProperties": true
+    },
+    "componentSubMapping": {
+      "type": "object",
+      "required": [
+        "htmlRole",
+        "htmlSlot",
+        "htmlSelector",
+        "cardinality",
+        "pixsoTarget",
+        "textToUiSpecKey",
+        "variantByHtmlSize",
+        "actions"
+      ],
+      "properties": {
+        "htmlRole": { "type": "string", "minLength": 1 },
+        "htmlSlot": { "type": "string", "minLength": 1 },
+        "htmlSelector": { "type": "string", "minLength": 1 },
+        "cardinality": { "type": "string", "minLength": 1 },
+        "pixsoTarget": { "type": "string", "minLength": 1 },
+        "textToUiSpecKey": { "type": "string", "minLength": 1 },
+        "variantByHtmlSize": { "type": "object", "additionalProperties": { "type": "object" } },
+        "actions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["htmlAction", "pixsoLayer", "iconAlias"],
+            "properties": {
+              "htmlAction": { "type": "string", "minLength": 1 },
+              "pixsoLayer": { "type": "string", "minLength": 1 },
+              "iconAlias": { "type": "string", "minLength": 1 }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "profile": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "sourceHtml",
+        "targetPixsoDocument",
+        "targetComponentLibrary",
+        "status",
+        "tokenMappings",
+        "semanticTokenMappings",
+        "runtimeSemanticAliases",
+        "semanticColorMappings",
+        "styleMappings",
+        "componentMappings",
+        "endpointComponentMappings",
+        "nativeSourceMappings",
+        "sourceOnly"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "label": { "type": "string", "minLength": 1 },
+        "sourceHtml": { "type": "string", "minLength": 1 },
+        "targetPixsoDocument": { "type": "string", "minLength": 1 },
+        "targetComponentLibrary": { "type": "string", "minLength": 1 },
+        "nativeSourceLibrary": { "type": ["string", "null"] },
+        "status": { "enum": ["active", "draft", "deprecated"] },
+        "tokenMappings": { "type": "array", "items": { "$ref": "#/$defs/tokenMapping" } },
+        "semanticTokenMappings": { "type": "array", "items": { "$ref": "#/$defs/semanticTokenMapping" } },
+        "runtimeSemanticAliases": {
+          "type": "array",
+          "description": "Only runtime roles that are not already defined by semanticTokenMappings. The complete runtime index is generated.",
+          "items": { "$ref": "#/$defs/semanticTokenMapping" }
+        },
+        "runtimeSemanticMappings": {
+          "type": "array",
+          "deprecated": true,
+          "description": "Legacy generated field. Do not edit or persist in new profiles; derive it from semanticTokenMappings and runtimeSemanticAliases.",
+          "items": { "$ref": "#/$defs/semanticTokenMapping" }
+        },
+        "semanticColorMappings": { "type": "array", "items": { "$ref": "#/$defs/semanticColorMapping" } },
+        "styleMappings": { "type": "array", "items": { "$ref": "#/$defs/styleMapping" } },
+        "componentMappings": { "type": "array", "items": { "$ref": "#/$defs/componentMapping" } },
+        "componentAliases": {
+          "type": "array",
+          "description": "Explicit compatibility variants, not a second component catalog. Names must not duplicate formal mappings or other aliases.",
+          "items": {
+            "type": "object",
+            "required": ["logicalName"],
+            "properties": { "logicalName": { "type": "string", "minLength": 1 } },
+            "additionalProperties": true
+          }
+        },
+        "endpointComponentMappings": { "type": "array", "items": { "$ref": "#/$defs/endpointComponentMapping" } },
+        "nativeSourceMappings": { "type": "array", "items": { "type": "object", "minProperties": 1 } },
+        "sourceOnly": { "type": "array", "items": { "type": "object", "required": ["name"], "properties": { "name": { "type": "string", "minLength": 1 } }, "additionalProperties": true } },
+        "projections": { "type": "object", "additionalProperties": { "type": "string", "minLength": 1 } },
+        "summary": { "type": "object", "additionalProperties": true }
+      },
+      "additionalProperties": true
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.text-to-ui/pixso-component-library-plan.schema.json",
+  "type": "object",
+  "required": ["schemaVersion", "kind", "execution", "page", "resources", "operations"],
+  "$defs": {
+    "hotZone": {
+      "type": "object",
+      "required": ["alignment", "axes"],
+      "properties": {
+        "alignment": { "const": "CENTER" },
+        "axes": { "const": "BOTH" },
+        "overflow": { "const": "VISIBLE" },
+        "verificationTolerance": { "type": "number", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "iconSlot": {
+      "type": "object",
+      "required": ["alias", "size", "hotZone"],
+      "properties": {
+        "alias": { "type": "string", "minLength": 1 },
+        "size": { "type": "number", "exclusiveMinimum": 0 },
+        "hotZone": { "$ref": "#/$defs/hotZone" }
+      },
+      "additionalProperties": false
+    },
+    "iconRef": {
+      "type": "object",
+      "required": ["alias"],
+      "properties": {
+        "alias": { "type": "string", "minLength": 1 },
+        "size": { "type": "number", "exclusiveMinimum": 0 },
+        "hotZone": { "$ref": "#/$defs/hotZone" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "kind": { "const": "pixso-component-library-plan" },
+    "execution": {
+      "type": "object",
+      "required": ["libraryPage", "mode", "agentContract"],
+      "properties": {
+        "libraryPage": { "type": "string", "minLength": 1 },
+        "mode": { "const": "component-library" },
+        "resolveGuidsAtRuntime": { "const": true },
+        "preserveExistingComponents": { "const": true },
+        "reviewOnly": { "type": "boolean" },
+        "agentContract": { "$ref": "../../protocol/operation-plan-v5.schema.json#/$defs/agentContract" }
+      }
+    },
+    "page": { "type": "object", "required": ["name"] },
+    "resources": {
+      "type": "object",
+      "required": ["componentLibraryPage", "variables", "styles", "icons"]
+    },
+    "operations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["op"],
+        "properties": {
+          "op": { "enum": ["create-page", "ensure-variable", "ensure-style", "ensure-icon", "ensure-font", "create-component", "create-frame", "create-text", "create-icon-slot", "hydrate-icon"] },
+          "name": { "type": "string" },
+          "nodeId": { "type": "string" },
+          "parentId": { "type": ["string", "null"] },
+          "slotName": { "type": "string" },
+          "componentContract": { "type": "object" },
+          "iconSlot": { "$ref": "#/$defs/iconSlot" },
+          "iconRef": { "$ref": "#/$defs/iconRef" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "id": "sidebar",
+  "logicalName": "Sidebar Item/Default",
+  "variants": [
+    "default",
+    "selected",
+    "collapsed"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "pressed",
+    "focus",
+    "selected",
+    "disabled"
+  ],
+  "props": [
+    "label",
+    "icon",
+    "selected",
+    "collapsed",
+    "count",
+    "items",
+    "groups",
+    "ariaLabel"
+  ],
+  "slots": [
+    "leading",
+    "label",
+    "trailing"
+  ],
+  "tokenRoles": [
+    "color.sidebar-bg",
+    "color.sidebar-selected",
+    "color.text",
+    "color.primary",
+    "size.list-item-height",
+    "radius.list-item",
+    "typography.body-l"
+  ],
+  "iconAliases": [
+    "navigation/grid",
+    "navigation/recent",
+    "action/more"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/sidebar.html"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/sidebar.html"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "category": "navigation",
+  "categoryLabel": "导航类",
+  "order": 12,
+  "canonicalSection": "[data-runtime-category=\"navigation\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-sidebar\"]",
+  "legacyVisualGroup": "navigation",
+  "canonicalSpecimen": "gallery:navigation:sidebar",
+  "specimens": [
+    {
+      "id": "default",
+      "variant": "default",
+      "state": "default",
+      "surface": "white"
+    }
+  ],
+  "fixtureId": "fixture-sidebar",
+  "surface": "white",
+  "sizing": "fill",
+  "allowedStates": [
+    "default",
+    "hover",
+    "pressed",
+    "focus",
+    "selected",
+    "disabled"
+  ],
+  "behaviors": [
+    "select",
+    "keyboard-activation",
+    "disabled"
+  ],
+  "textRoles": [
+    "label:body-l",
+    "count:body-m"
+  ],
+  "iconSlots": [
+    {
+      "alias": "navigation/grid",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "navigation/recent",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "action/more",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconSemantic": "navigation/grid",
+  "comparisonGroup": "navigation"
+}

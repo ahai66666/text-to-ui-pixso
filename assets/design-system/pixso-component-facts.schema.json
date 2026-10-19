@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.text-to-ui/pixso-component-facts.schema.json",
+  "title": "Current Pixso component facts",
+  "description": "A no-ID snapshot of the exact reusable component names currently resolved from a Pixso document.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "kind",
+    "document",
+    "page",
+    "source",
+    "capturedAt",
+    "scope",
+    "componentSets",
+    "standaloneComponents"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": 1 },
+    "kind": { "const": "text-to-ui.pixso-component-facts" },
+    "document": { "type": "string", "minLength": 1 },
+    "page": { "type": "string", "minLength": 1 },
+    "source": { "type": "string", "minLength": 1 },
+    "capturedAt": { "type": "string", "minLength": 1 },
+    "scope": { "type": "string", "minLength": 1 },
+    "policy": { "type": "object", "additionalProperties": true },
+    "componentSets": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/component" }
+    },
+    "standaloneComponents": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/component" }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind", "componentSet"],
+        "properties": {
+          "kind": { "type": "string", "minLength": 1 },
+          "componentSet": { "type": "string", "minLength": 1 },
+          "variantProperties": { "type": "object", "additionalProperties": { "type": "string" } },
+          "count": { "type": "integer", "minimum": 2 },
+          "message": { "type": "string" }
+        }
+      }
+    },
+    "supportingComponents": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "component": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "classification", "variantAxes"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "classification": { "enum": ["business", "helper", "supporting"] },
+        "variantAxes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "variants": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/variant" }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "variantProperties"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "variantProperties": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "geometry": { "$ref": "#/$defs/geometry" }
+      }
+    },
+    "geometry": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "width": { "type": "number" },
+        "height": { "type": "number" },
+        "itemSpacing": { "type": "number" },
+        "cornerRadius": { "type": "number" },
+        "padding": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "top": { "type": "number" },
+            "right": { "type": "number" },
+            "bottom": { "type": "number" },
+            "left": { "type": "number" }
+          }
+        },
+        "layoutMode": { "type": "string" },
+        "primaryAxisAlignItems": { "type": "string" },
+        "counterAxisAlignItems": { "type": "string" },
+        "layoutSizingHorizontal": { "type": "string" },
+        "layoutSizingVertical": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.text-to-ui/page-binding-audit.schema.json",
+  "title": "Text-to-UI managed page binding audit",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "bridgeVersion",
+    "auditScope",
+    "frameId",
+    "activePageMismatch",
+    "availableVariables",
+    "bindings",
+    "literalStyleFindings",
+    "coverageSummary"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "bridgeVersion": { "const": 1 },
+    "auditScope": { "const": "managed-bindings" },
+    "frameId": { "type": "string", "pattern": "^[0-9]+:[0-9]+$" },
+    "activePageMismatch": { "const": false },
+    "availableVariables": { "type": "array", "items": { "type": "string" } },
+    "bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["nodeId", "key", "property", "variable", "verified"],
+        "properties": {
+          "nodeId": { "type": "string" },
+          "key": { "type": "string", "minLength": 1 },
+          "property": { "enum": ["fills", "strokes"] },
+          "variable": { "type": "string", "minLength": 1 },
+          "verified": { "const": true }
+        }
+      }
+    },
+    "literalStyleFindings": { "const": [] },
+    "coverageSummary": {
+      "type": "object",
+      "required": [
+        "coverageScope",
+        "uniqueNodes",
+        "colorBearingNodes",
+        "variableBoundColorNodes",
+        "literalPaintNodes",
+        "layerOpacityLiteralNodes",
+        "intrinsicAlphaPaints"
+      ],
+      "properties": {
+        "coverageScope": { "const": "managed-bindings" },
+        "uniqueNodes": { "type": "integer", "minimum": 0 },
+        "colorBearingNodes": { "type": "integer", "minimum": 0 },
+        "variableBoundColorNodes": { "type": "integer", "minimum": 0 },
+        "literalPaintNodes": { "const": 0 },
+        "layerOpacityLiteralNodes": { "const": 0 },
+        "intrinsicAlphaPaints": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

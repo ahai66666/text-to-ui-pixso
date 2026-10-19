@@ -1,0 +1,12 @@
+:root {
+  --icon-source-size: 24px;
+  --icon-weight-regular: 400;
+  --icon-lucide-stroke-width: 1.5;
+  --icon-outline-source-stroke-width: 1.5;
+  --icon-outline-stroke-width-16: 1;
+  --icon-outline-stroke-width-20: 1.25;
+  --icon-outline-stroke-width-24: 1.5;
+  --icon-lucide-linecap: round;
+  --icon-lucide-linejoin: round;
+  --icon-manual-fallback-stroke-width: 1.5;
+}

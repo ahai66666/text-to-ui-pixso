@@ -1,0 +1,165 @@
+{
+  "id": "snackbar",
+  "logicalName": "Snackbar/Default",
+  "variants": [
+    "title-only",
+    "title-subtitle"
+  ],
+  "states": [
+    "default"
+  ],
+  "props": [
+    "title",
+    "subtitle",
+    "actionLabel",
+    "leftArea",
+    "closable",
+    "onAction",
+    "onClose"
+  ],
+  "slots": [
+    "leading",
+    "title",
+    "subtitle",
+    "action",
+    "close"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.surface",
+    "typography.subtitle-s",
+    "typography.body-s",
+    "typography.body-m",
+    "spacing.component-gap",
+    "color.primary",
+    "shadow.3",
+    "radius.5"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/index.js#snackbar"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/index.js#snackbar"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "display",
+  "categoryLabel": "展示类",
+  "order": 211,
+  "canonicalSection": "[data-runtime-category=\"display\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"display\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-snackbar\"]",
+  "specimens": [
+    {
+      "id": "title-only",
+      "variant": "title-only",
+      "state": "default",
+      "leftArea": "1"
+    },
+    {
+      "id": "title-subtitle",
+      "variant": "title-subtitle",
+      "state": "default",
+      "leftArea": "2"
+    }
+  ],
+  "fixtureId": "fixture-snackbar",
+  "surface": "white",
+  "sizing": "intrinsic",
+  "behaviors": [
+    "action",
+    "close"
+  ],
+  "iconSemantic": "status/info",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "feedback",
+  "canonicalSpecimen": "gallery:display:snackbar",
+  "allowedStates": [
+    "default"
+  ],
+  "textRoles": [
+    "title:subtitle-s",
+    "subtitle:body-s",
+    "action:body-m"
+  ],
+  "iconSlots": [
+    {
+      "slot": "leading",
+      "alias": "status/info",
+      "displaySizes": [
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "slot": "close",
+      "alias": "action/close",
+      "displaySizes": [
+        20
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconAliases": [
+    "status/info",
+    "action/close"
+  ],
+  "slotContracts": {
+    "leading": {
+      "cardinality": "1",
+      "scope": "snackbar-main",
+      "iconAlias": "status/info",
+      "iconSize": "24px",
+      "source": "lucide"
+    },
+    "title": {
+      "cardinality": "1",
+      "scope": "snackbar-content",
+      "typographyRole": "subtitle-s"
+    },
+    "subtitle": {
+      "cardinality": "0..1",
+      "scope": "snackbar-content",
+      "typographyRole": "body-s",
+      "activeWhen": "variant=title-subtitle"
+    },
+    "action": {
+      "cardinality": "0..1",
+      "scope": "snackbar-actions",
+      "control": "small-button-slot",
+      "acceptedComponentContract": "button",
+      "requiredSize": "small",
+      "accepts": "any shared Button mode and variant at small size",
+      "defaultControl": "Button/Ghost/Default"
+    },
+    "close": {
+      "cardinality": "0..1",
+      "scope": "snackbar-actions",
+      "control": "icon-button",
+      "iconAlias": "action/close",
+      "iconSize": "20px",
+      "hotZone": "40px",
+      "requiresAccessibleName": true
+    }
+  },
+  "comparisonGroup": "display"
+}

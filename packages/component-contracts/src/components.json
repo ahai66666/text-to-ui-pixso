@@ -1,0 +1,6908 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": 2,
+  "components": [
+    {
+      "id": "accordion",
+      "logicalName": "Accordion/Default",
+      "variants": [
+        "default",
+        "open"
+      ],
+      "states": [
+        "default",
+        "unfocus",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "size",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text-muted",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#accordion"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#accordion"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "navigation",
+      "categoryLabel": "导航类",
+      "order": 18,
+      "canonicalSection": "[data-runtime-category=\"navigation\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-accordion\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-accordion",
+      "surface": "white",
+      "sizing": "fill",
+      "behaviors": [
+        "toggle",
+        "keyboard-activation",
+        "focus"
+      ],
+      "iconSemantic": "navigation/chevron-right",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "disclosure",
+      "canonicalSpecimen": "gallery:navigation:accordion",
+      "allowedStates": [
+        "default",
+        "unfocus",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "navigation/chevron-right",
+          "displaySizes": [
+            20
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "navigation/chevron-right"
+      ],
+      "comparisonGroup": "navigation"
+    },
+    {
+      "id": "alert-dialog",
+      "logicalName": "Alert Dialog/Default",
+      "variants": [
+        "danger"
+      ],
+      "states": [
+        "closed",
+        "open"
+      ],
+      "props": [
+        "open",
+        "title",
+        "description",
+        "confirmLabel",
+        "cancelLabel",
+        "statusIcon",
+        "onConfirm",
+        "onCancel",
+        "onOpenChange"
+      ],
+      "slots": [
+        "title",
+        "description",
+        "content",
+        "actions"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "shadow.overlay",
+        "radius.card"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/advanced.js#alert-dialog"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/advanced.js#alert-dialog"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "containers",
+      "categoryLabel": "容器类",
+      "order": 513,
+      "canonicalSection": "[data-runtime-category=\"containers\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"containers\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-alert-dialog\"]",
+      "specimens": [
+        {
+          "id": "danger-confirm",
+          "variant": "danger",
+          "state": "closed",
+          "actionLayout": "double",
+          "intent": "danger"
+        }
+      ],
+      "fixtureId": "fixture-alert-dialog",
+      "surface": "white",
+      "sizing": "overlay",
+      "behaviors": [
+        "open",
+        "confirm",
+        "cancel",
+        "escape",
+        "focus-return",
+        "no-outside-dismiss"
+      ],
+      "iconSemantic": "status/warning",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "overlays",
+      "canonicalSpecimen": "gallery:containers:alert-dialog",
+      "allowedStates": [
+        "closed",
+        "open"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "status/warning",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "status/warning"
+      ],
+      "structuralAxes": {
+        "actionLayout": [
+          "double"
+        ],
+        "intent": [
+          "danger"
+        ],
+        "mode": [
+          "modal"
+        ]
+      },
+      "interactionStates": [
+        "closed",
+        "open"
+      ],
+      "comparisonGroup": "containers"
+    },
+    {
+      "id": "alert",
+      "logicalName": "Alert/Default",
+      "variants": [
+        "info",
+        "success",
+        "warning",
+        "danger",
+        "neutral"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "props": [
+        "title",
+        "detail",
+        "expanded",
+        "contentId",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.subtitle-s",
+        "typography.body-m",
+        "spacing.component-gap",
+        "spacing.padding-alert-left",
+        "spacing.padding-alert-right",
+        "spacing.padding-button-sm-x",
+        "size.button-sm-height",
+        "size.icon-md",
+        "size.icon-sm",
+        "color.icon",
+        "color.primary"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#alert"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#alert"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "display",
+      "categoryLabel": "展示类",
+      "order": 210,
+      "canonicalSection": "[data-runtime-category=\"display\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"display\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-alert\"]",
+      "specimens": [
+        {
+          "id": "info",
+          "variant": "info",
+          "state": "default",
+          "label": "Info / 信息",
+          "message": "系统将在今晚自动完成更新。",
+          "action": "查看详情"
+        },
+        {
+          "id": "success",
+          "variant": "success",
+          "state": "default",
+          "label": "Success / 成功",
+          "message": "所有修改已经同步到云端。",
+          "action": "查看详情"
+        },
+        {
+          "id": "warning",
+          "variant": "warning",
+          "state": "default",
+          "label": "Warning / 警告",
+          "message": "连接不稳定，部分内容可能暂时无法加载。",
+          "action": "重新连接"
+        },
+        {
+          "id": "danger",
+          "variant": "danger",
+          "state": "default",
+          "label": "Danger / 危险",
+          "message": "存储空间不足，请清理空间后重试。",
+          "action": "清理空间"
+        },
+        {
+          "id": "neutral",
+          "variant": "neutral",
+          "state": "default",
+          "label": "Neutral / 中性",
+          "message": "当前为只读模式，部分编辑操作暂不可用。",
+          "action": "知道了"
+        }
+      ],
+      "fixtureId": "fixture-alert",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "status/info",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "feedback",
+      "canonicalSpecimen": "gallery:display:alert",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "textRoles": [
+        "content:subtitle-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "status/info",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "status/success",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "status/warning",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "status/danger",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "status/neutral",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "action/close",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "status/info",
+        "status/success",
+        "status/warning",
+        "status/danger",
+        "status/neutral",
+        "action/close"
+      ],
+      "comparisonGroup": "display"
+    },
+    {
+      "id": "attachment",
+      "logicalName": "Attachment/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "props": [
+        "type",
+        "name",
+        "meta",
+        "leading",
+        "content",
+        "actions",
+        "disabled",
+        "onAction",
+        "onPreview",
+        "onDownload"
+      ],
+      "slots": [
+        "leading",
+        "title",
+        "content",
+        "description",
+        "actions",
+        "menu-trigger",
+        "menu"
+      ],
+      "slotContracts": {
+        "actions": {
+          "cardinality": "0..1",
+          "scope": "attachment-surface",
+          "defaultPlacement": "trailing-end",
+          "control": "attachment-action-menu",
+          "interaction": "open-attachment-action-menu",
+          "menuItems": [
+            "preview",
+            "download"
+          ]
+        },
+        "menu-trigger": {
+          "cardinality": "0..1",
+          "scope": "attachment-action-menu",
+          "defaultVisibility": "visible",
+          "iconAlias": "navigation/chevron-down",
+          "iconSize": "20px",
+          "ariaHasPopup": "menu"
+        },
+        "menu": {
+          "cardinality": "0..1",
+          "scope": "attachment-action-menu",
+          "role": "menu",
+          "items": [
+            "preview",
+            "download"
+          ],
+          "closeOn": [
+            "escape",
+            "outside-click",
+            "select"
+          ]
+        }
+      },
+      "tokenRoles": [
+        "color.text",
+        "color.surface-muted",
+        "typography.subtitle-s",
+        "typography.body-s",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/advanced.js#attachment"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/advanced.js#attachment"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "specialized",
+      "categoryLabel": "特殊组件",
+      "order": 610,
+      "canonicalSection": "[data-runtime-category=\"specialized\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"specialized\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-attachment\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-attachment",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "open",
+        "select",
+        "preview",
+        "download",
+        "escape",
+        "outside-click",
+        "disabled"
+      ],
+      "iconSemantic": "navigation/chevron-down",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "specialized",
+      "canonicalSpecimen": "gallery:specialized:attachment",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:subtitle-s",
+        "content:body-m",
+        "description:body-s",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "slot": "menu-trigger",
+          "alias": "navigation/chevron-down",
+          "displaySizes": [
+            20
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "navigation/chevron-down"
+      ],
+      "comparisonGroup": "specialized"
+    },
+    {
+      "id": "avatar",
+      "logicalName": "Avatar/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "value",
+        "description",
+        "checked",
+        "name",
+        "ariaLabel",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#avatar"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#avatar"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "display",
+      "categoryLabel": "展示类",
+      "order": 215,
+      "canonicalSection": "[data-runtime-category=\"display\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"display\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-avatar\"]",
+      "specimens": [
+        {
+          "id": "fallback-32",
+          "variant": "size-32",
+          "state": "default",
+          "size": 32,
+          "content": "initials"
+        },
+        {
+          "id": "fallback-40",
+          "variant": "size-40",
+          "state": "default",
+          "size": 40,
+          "content": "initials"
+        }
+      ],
+      "fixtureId": "fixture-avatar",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": null,
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "data-display",
+      "canonicalSpecimen": "gallery:display:avatar",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [],
+      "iconAliases": [],
+      "comparisonGroup": "display"
+    },
+    {
+      "id": "badge",
+      "logicalName": "Badge/Default",
+      "variants": [
+        "default",
+        "info",
+        "success",
+        "warning",
+        "danger",
+        "neutral"
+      ],
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "tone",
+        "disabled",
+        "className"
+      ],
+      "slots": [
+        "label"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "color.primary"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#badge"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#badge"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "display",
+      "categoryLabel": "展示类",
+      "order": 216,
+      "canonicalSection": "[data-runtime-category=\"display\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"display\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-badge\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-badge",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": null,
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "data-display",
+      "canonicalSpecimen": "gallery:display:badge",
+      "allowedStates": [
+        "default",
+        "disabled"
+      ],
+      "textRoles": [
+        "label:body-s"
+      ],
+      "iconSlots": [],
+      "iconAliases": [],
+      "comparisonGroup": "display"
+    },
+    {
+      "id": "breadcrumb",
+      "logicalName": "Breadcrumb/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#breadcrumb"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#breadcrumb"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "navigation",
+      "categoryLabel": "导航类",
+      "order": 14,
+      "canonicalSection": "[data-runtime-category=\"navigation\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-breadcrumb\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-breadcrumb",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "navigation/chevron-down",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "navigation",
+      "canonicalSpecimen": "gallery:navigation:breadcrumb",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "navigation/chevron-down",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "navigation/chevron-down"
+      ],
+      "comparisonGroup": "navigation"
+    },
+    {
+      "id": "button",
+      "logicalName": "Button/Primary/Default",
+      "variants": [
+        "primary",
+        "secondary",
+        "ghost",
+        "danger"
+      ],
+      "sizes": [
+        "standard",
+        "small"
+      ],
+      "modes": [
+        "text",
+        "icon-text",
+        "icon",
+        "split-dropdown"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "pressed",
+        "focus",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "variant",
+        "size",
+        "mode",
+        "iconOnly",
+        "icon",
+        "iconSize",
+        "disabled",
+        "menuItems"
+      ],
+      "slots": [
+        "icon",
+        "label",
+        "trigger",
+        "menu"
+      ],
+      "tokenRoles": [
+        "color.primary",
+        "color.primary-text",
+        "color.text",
+        "size.button-height",
+        "size.button-sm-height",
+        "radius.button",
+        "spacing.padding-button-x",
+        "spacing.padding-button-sm-x",
+        "typography.body-m",
+        "typography.body-l"
+      ],
+      "sizePolicy": {
+        "defaultSize": "standard",
+        "defaultHeightToken": "size.button-height",
+        "defaultHeight": "40px",
+        "compactSize": "small",
+        "compactHeightToken": "size.button-sm-height",
+        "compactHeight": "28px",
+        "compactRequiresExplicitContract": true
+      },
+      "iconAliases": [
+        "action/add",
+        "action/download",
+        "action/settings",
+        "action/close",
+        "navigation/chevron-down",
+        "action/refresh",
+        "action/more"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/button.html"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/button.html"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "category": "actions",
+      "categoryLabel": "操作类",
+      "order": 110,
+      "canonicalSection": "[data-runtime-category=\"actions\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"actions\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-button\"]",
+      "legacyVisualGroup": "buttons",
+      "canonicalSpecimen": "gallery:actions:button",
+      "specimens": [
+        {
+          "id": "primary",
+          "variant": "primary",
+          "state": "default",
+          "mode": "text"
+        },
+        {
+          "id": "secondary",
+          "variant": "secondary",
+          "state": "default",
+          "mode": "text"
+        },
+        {
+          "id": "ghost",
+          "variant": "ghost",
+          "state": "default",
+          "mode": "text"
+        },
+        {
+          "id": "danger",
+          "variant": "danger",
+          "state": "default",
+          "mode": "text"
+        },
+        {
+          "id": "small-primary",
+          "variant": "primary",
+          "state": "default",
+          "mode": "text",
+          "size": "small"
+        },
+        {
+          "id": "small-secondary",
+          "variant": "secondary",
+          "state": "default",
+          "mode": "text",
+          "size": "small"
+        },
+        {
+          "id": "small-ghost",
+          "variant": "ghost",
+          "state": "default",
+          "mode": "text",
+          "size": "small"
+        },
+        {
+          "id": "small-danger",
+          "variant": "danger",
+          "state": "default",
+          "mode": "text",
+          "size": "small"
+        },
+        {
+          "id": "icon",
+          "variant": "ghost",
+          "state": "default",
+          "mode": "icon"
+        },
+        {
+          "id": "icon-text-primary",
+          "variant": "primary",
+          "state": "default",
+          "mode": "icon-text"
+        },
+        {
+          "id": "icon-text-secondary",
+          "variant": "secondary",
+          "state": "default",
+          "mode": "icon-text"
+        },
+        {
+          "id": "icon-text-ghost",
+          "variant": "ghost",
+          "state": "default",
+          "mode": "icon-text"
+        },
+        {
+          "id": "split-dropdown",
+          "variant": "ghost",
+          "state": "default",
+          "mode": "split-dropdown"
+        },
+        {
+          "id": "split-dropdown-icon",
+          "variant": "ghost",
+          "state": "default",
+          "mode": "split-dropdown",
+          "iconOnly": true
+        }
+      ],
+      "fixtureId": "fixture-button",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "allowedStates": [
+        "default",
+        "hover",
+        "pressed",
+        "focus",
+        "disabled"
+      ],
+      "behaviors": [
+        "click",
+        "keyboard-activation",
+        "disabled"
+      ],
+      "textRoles": [
+        "label:body-l",
+        "small-label:body-m"
+      ],
+      "iconSlots": [
+        {
+          "alias": "action/add",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "action/download",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "action/settings",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "action/close",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "navigation/chevron-down",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "action/refresh",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "action/more",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconSemantic": "action/add",
+      "comparisonGroup": "actions"
+    },
+    {
+      "id": "calendar",
+      "logicalName": "Calendar/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "spacing.content-inset"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/advanced.js#calendar"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/advanced.js#calendar"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "choices",
+      "categoryLabel": "选择类",
+      "order": 419,
+      "canonicalSection": "[data-runtime-category=\"choices\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"choices\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-calendar\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-calendar",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "select",
+        "arrow-keys"
+      ],
+      "iconSemantic": "field/calendar",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "loading-data",
+      "canonicalSpecimen": "gallery:choices:calendar",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "field/calendar",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "field/calendar"
+      ],
+      "comparisonGroup": "choices"
+    },
+    {
+      "id": "checkbox",
+      "logicalName": "Checkbox/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "selected"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#checkbox"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#checkbox"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "choices",
+      "categoryLabel": "选择类",
+      "order": 410,
+      "canonicalSection": "[data-runtime-category=\"choices\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"choices\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-checkbox\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-checkbox",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "choice/check",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "choices",
+      "canonicalSpecimen": "gallery:choices:checkbox",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "selected"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "choice/check",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "choice/check"
+      ],
+      "comparisonGroup": "choices"
+    },
+    {
+      "id": "chips",
+      "logicalName": "Chips/Default",
+      "variants": [
+        "default",
+        "with-icon",
+        "closable"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "pressed",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "icon",
+        "closable",
+        "disabled",
+        "state",
+        "onClose"
+      ],
+      "slots": [
+        "leading",
+        "label",
+        "close"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface-muted",
+        "color.state-layer-hover",
+        "color.state-layer-pressed",
+        "size.tag-height",
+        "spacing.padding-tag-x",
+        "typography.body-m",
+        "radius.tag"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#chips"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#chips"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "actions",
+      "categoryLabel": "操作类",
+      "order": 111,
+      "canonicalSection": "[data-runtime-category=\"actions\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"actions\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-chips\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        },
+        {
+          "id": "hover",
+          "variant": "with-icon",
+          "state": "hover"
+        },
+        {
+          "id": "pressed",
+          "variant": "closable",
+          "state": "pressed"
+        },
+        {
+          "id": "disabled",
+          "variant": "closable",
+          "state": "disabled"
+        }
+      ],
+      "fixtureId": "fixture-chips",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": null,
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "actions",
+      "canonicalSpecimen": "gallery:actions:chips",
+      "allowedStates": [
+        "default",
+        "hover",
+        "pressed",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [],
+      "iconAliases": [],
+      "slotContracts": {
+        "leading": {
+          "cardinality": "0..1",
+          "scope": "chips",
+          "iconSize": "16px"
+        },
+        "label": {
+          "cardinality": "1",
+          "scope": "chips",
+          "typographyRole": "body-m"
+        },
+        "close": {
+          "cardinality": "0..1",
+          "scope": "chips",
+          "control": "icon-button",
+          "iconAlias": "action/close",
+          "iconSize": "16px",
+          "requiresAccessibleName": true
+        }
+      },
+      "comparisonGroup": "actions"
+    },
+    {
+      "id": "collapsible",
+      "logicalName": "Collapsible/Default",
+      "variants": [
+        "default",
+        "open"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open"
+      ],
+      "props": [
+        "title",
+        "detail",
+        "expanded",
+        "contentId",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text-muted",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#collapsible"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#collapsible"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "navigation",
+      "categoryLabel": "导航类",
+      "order": 19,
+      "canonicalSection": "[data-runtime-category=\"navigation\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-collapsible\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-collapsible",
+      "surface": "white",
+      "sizing": "fill",
+      "behaviors": [
+        "toggle",
+        "keyboard-activation",
+        "focus"
+      ],
+      "iconSemantic": "navigation/chevron-down",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "disclosure",
+      "canonicalSpecimen": "gallery:navigation:collapsible",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "navigation/chevron-down",
+          "displaySizes": [
+            20
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "navigation/chevron-down"
+      ],
+      "comparisonGroup": "navigation"
+    },
+    {
+      "id": "color-picker",
+      "logicalName": "ColorPicker/Tablet",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "props": [
+        "value",
+        "defaultValue",
+        "disabled",
+        "state",
+        "className",
+        "onChange"
+      ],
+      "slots": [
+        "title",
+        "tabs",
+        "mode",
+        "hue",
+        "saturation",
+        "brightness",
+        "alpha",
+        "preview",
+        "eyedropper",
+        "hex",
+        "favorites"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.title-s",
+        "typography.body-l",
+        "typography.body-m",
+        "typography.body-s",
+        "spacing.component-gap",
+        "radius.card"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/advanced.js#color-picker"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/advanced.js#color-picker"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "display",
+      "categoryLabel": "展示类",
+      "order": 217,
+      "canonicalSection": "[data-runtime-category=\"display\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"display\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-color-picker\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-color-picker",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "select",
+        "input",
+        "focus",
+        "disabled"
+      ],
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "form-plus",
+      "canonicalSpecimen": "gallery:display:color-picker",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [],
+      "iconAliases": [],
+      "iconSemantic": null,
+      "comparisonGroup": "display"
+    },
+    {
+      "id": "combobox",
+      "logicalName": "Combobox/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open",
+        "error"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "leading",
+        "value",
+        "trailing",
+        "help"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#combobox"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#combobox"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "input",
+      "categoryLabel": "输入类",
+      "order": 315,
+      "canonicalSection": "[data-runtime-category=\"input\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"input\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-combobox\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-combobox",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "open",
+        "select",
+        "escape",
+        "arrow-keys"
+      ],
+      "iconSemantic": "navigation/chevron-down",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "form-plus",
+      "canonicalSpecimen": "gallery:input:combobox",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open",
+        "error"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "navigation/chevron-down",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "navigation/chevron-down"
+      ],
+      "comparisonGroup": "input"
+    },
+    {
+      "id": "context-menu",
+      "logicalName": "Context Menu/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "shadow.overlay",
+        "radius.card"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/advanced.js#context-menu"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/advanced.js#context-menu"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "actions",
+      "categoryLabel": "操作类",
+      "order": 112,
+      "canonicalSection": "[data-runtime-category=\"actions\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"actions\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-context-menu\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-context-menu",
+      "surface": [
+        "white",
+        "gray"
+      ],
+      "sizing": "overlay",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "action/more",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "overlays",
+      "canonicalSpecimen": "gallery:actions:context-menu",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "action/more",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "action/more"
+      ],
+      "comparisonGroup": "actions"
+    },
+    {
+      "id": "date-picker",
+      "logicalName": "Date Picker/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open",
+        "error"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "leading",
+        "value",
+        "trailing",
+        "help"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "spacing.content-inset"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/advanced.js#date-picker"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/advanced.js#date-picker"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "choices",
+      "categoryLabel": "选择类",
+      "order": 420,
+      "canonicalSection": "[data-runtime-category=\"choices\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"choices\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-date-picker\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-date-picker",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "open",
+        "select",
+        "escape"
+      ],
+      "iconSemantic": "field/calendar",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "loading-data",
+      "canonicalSpecimen": "gallery:choices:date-picker",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open",
+        "error"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "field/calendar",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "field/calendar"
+      ],
+      "comparisonGroup": "choices"
+    },
+    {
+      "id": "dialog",
+      "logicalName": "Dialog/Default",
+      "variants": [
+        "single",
+        "double",
+        "triple"
+      ],
+      "states": [
+        "closed",
+        "open"
+      ],
+      "props": [
+        "open",
+        "title",
+        "description",
+        "intent",
+        "actionLayout",
+        "confirmLabel",
+        "cancelLabel",
+        "thirdActionLabel",
+        "onConfirm",
+        "onCancel",
+        "onThirdAction",
+        "onOpenChange"
+      ],
+      "slots": [
+        "titlebar",
+        "description",
+        "content",
+        "actions"
+      ],
+      "slotContracts": {
+        "titlebar": {
+          "cardinality": "1",
+          "scope": "dialog-header",
+          "acceptedContent": "Dialog title slot",
+          "variants": [
+            "title-only",
+            "title-subtitle"
+          ],
+          "pixsoComponent": ".Title",
+          "pixsoVariants": {
+            "title-only": "2 Line=OFF",
+            "title-subtitle": "2 Line=ON"
+          }
+        },
+        "actions": {
+          "cardinality": "1",
+          "scope": "dialog-actions",
+          "acceptedContent": "Button instances",
+          "buttonCount": {
+            "min": 1,
+            "max": 3
+          },
+          "layouts": [
+            "one-button",
+            "two-buttons",
+            "three-buttons"
+          ],
+          "pixsoComponent": ".Dialog_Container",
+          "pixsoVariants": {
+            "one-button": "quantity=1_normal",
+            "two-buttons": [
+              "quantity=2_normal",
+              "quantity=2_emphasize"
+            ],
+            "three-buttons": "quantity=3_emphasize_port"
+          }
+        }
+      },
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "shadow.overlay",
+        "radius.card"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/advanced.js#dialog"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/advanced.js#dialog"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "containers",
+      "categoryLabel": "容器类",
+      "order": 512,
+      "canonicalSection": "[data-runtime-category=\"containers\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"containers\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-dialog\"]",
+      "specimens": [
+        {
+          "id": "single-default",
+          "variant": "single",
+          "state": "closed",
+          "actionLayout": "single",
+          "intent": "default"
+        },
+        {
+          "id": "double-default",
+          "variant": "double",
+          "state": "closed",
+          "actionLayout": "double",
+          "intent": "default"
+        },
+        {
+          "id": "triple-default",
+          "variant": "triple",
+          "state": "closed",
+          "actionLayout": "triple",
+          "intent": "default"
+        }
+      ],
+      "fixtureId": "fixture-dialog",
+      "surface": "white",
+      "sizing": "overlay",
+      "behaviors": [
+        "open",
+        "confirm",
+        "cancel",
+        "escape",
+        "focus-return",
+        "no-outside-dismiss"
+      ],
+      "iconSemantic": null,
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "overlays",
+      "canonicalSpecimen": "gallery:containers:dialog",
+      "allowedStates": [
+        "closed",
+        "open"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [],
+      "iconAliases": [],
+      "structuralAxes": {
+        "actionLayout": [
+          "single",
+          "double",
+          "triple"
+        ],
+        "intent": [
+          "default",
+          "danger"
+        ]
+      },
+      "interactionStates": [
+        "closed",
+        "open"
+      ],
+      "comparisonGroup": "containers"
+    },
+    {
+      "id": "dropdown-menu",
+      "logicalName": "Dropdown Menu/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "shadow.overlay",
+        "radius.card"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/advanced.js#dropdown-menu"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/advanced.js#dropdown-menu"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "actions",
+      "categoryLabel": "操作类",
+      "order": 113,
+      "canonicalSection": "[data-runtime-category=\"actions\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"actions\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-dropdown-menu\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-dropdown-menu",
+      "surface": [
+        "white",
+        "gray"
+      ],
+      "sizing": "overlay",
+      "behaviors": [
+        "open",
+        "select",
+        "escape",
+        "arrow-keys"
+      ],
+      "iconSemantic": "action/more",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "overlays",
+      "canonicalSpecimen": "gallery:actions:dropdown-menu",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "action/more",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "action/more"
+      ],
+      "comparisonGroup": "actions"
+    },
+    {
+      "id": "field",
+      "logicalName": "Field/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "error"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "leading",
+        "value",
+        "trailing",
+        "help"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#field"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#field"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "input",
+      "categoryLabel": "输入类",
+      "order": 313,
+      "canonicalSection": "[data-runtime-category=\"input\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"input\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-field\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-field",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": null,
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "fields",
+      "canonicalSpecimen": "gallery:input:field",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "error"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [],
+      "iconAliases": [],
+      "comparisonGroup": "input"
+    },
+    {
+      "id": "form-field",
+      "logicalName": "Form Field/Default",
+      "variants": [
+        "input",
+        "select"
+      ],
+      "states": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "required",
+        "error",
+        "disabled",
+        "state",
+        "surface",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "control",
+        "error"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.alert",
+        "typography.subtitle-s",
+        "typography.body-s",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#form-field"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#form-field"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "containers",
+      "categoryLabel": "容器类",
+      "order": 509,
+      "canonicalSection": "[data-runtime-category=\"containers\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"containers\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-form-field\"]",
+      "specimens": [
+        {
+          "id": "default-white",
+          "variant": "input",
+          "state": "default",
+          "surface": "white"
+        },
+        {
+          "id": "default-gray",
+          "variant": "input",
+          "state": "default",
+          "surface": "gray"
+        },
+        {
+          "id": "required-white",
+          "variant": "select",
+          "state": "default",
+          "surface": "white",
+          "required": true
+        },
+        {
+          "id": "required-gray",
+          "variant": "select",
+          "state": "default",
+          "surface": "gray",
+          "required": true
+        },
+        {
+          "id": "error-white",
+          "variant": "input",
+          "state": "error",
+          "surface": "white"
+        },
+        {
+          "id": "error-gray",
+          "variant": "input",
+          "state": "error",
+          "surface": "gray"
+        }
+      ],
+      "fixtureId": "fixture-form-field",
+      "surface": "white",
+      "sizing": "fill",
+      "behaviors": [
+        "slot-control",
+        "validation",
+        "disabled"
+      ],
+      "iconSemantic": null,
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "fields",
+      "canonicalSpecimen": "gallery:containers:form-field",
+      "allowedStates": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "textRoles": [
+        "label:subtitle-s",
+        "error:body-s"
+      ],
+      "iconSlots": [],
+      "iconAliases": [],
+      "comparisonGroup": "containers"
+    },
+    {
+      "id": "hover-card",
+      "logicalName": "Hover Card/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "title",
+        "description",
+        "content",
+        "actions"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "shadow.overlay",
+        "radius.card"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/advanced.js#hover-card"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/advanced.js#hover-card"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "display",
+      "categoryLabel": "展示类",
+      "order": 214,
+      "canonicalSection": "[data-runtime-category=\"display\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"display\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-hover-card\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-hover-card",
+      "surface": [
+        "white",
+        "gray"
+      ],
+      "sizing": "overlay",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "action/more",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "overlays",
+      "canonicalSpecimen": "gallery:display:hover-card",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "action/more",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "action/more"
+      ],
+      "comparisonGroup": "display"
+    },
+    {
+      "id": "input",
+      "logicalName": "Input/White Surface/Default",
+      "variants": [
+        "default",
+        "error",
+        "disabled",
+        "tag-entry"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "error"
+      ],
+      "props": [
+        "value",
+        "placeholder",
+        "disabled",
+        "error",
+        "variant",
+        "label",
+        "options",
+        "tags",
+        "defaultTags",
+        "surface"
+      ],
+      "slots": [
+        "label",
+        "leading",
+        "value",
+        "trailing",
+        "help",
+        "tags",
+        "suggestions"
+      ],
+      "tokenRoles": [
+        "color.input-bg",
+        "color.icon",
+        "color.text",
+        "color.text-muted",
+        "color.text-subtle",
+        "color.border",
+        "size.input-height",
+        "radius.input",
+        "typography.body-l",
+        "typography.body-m"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/input.html"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/input.html"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "input",
+      "categoryLabel": "输入类",
+      "order": 310,
+      "canonicalSection": "[data-runtime-category=\"input\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"input\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-input\"]",
+      "legacyVisualGroup": "fields",
+      "canonicalSpecimen": "gallery:input:input",
+      "specimens": [
+        {
+          "id": "white-surface",
+          "variant": "default",
+          "state": "default",
+          "surface": "white"
+        },
+        {
+          "id": "gray-surface",
+          "variant": "default",
+          "state": "default",
+          "surface": "gray"
+        }
+      ],
+      "fixtureId": "fixture-input",
+      "surface": [
+        "white",
+        "gray"
+      ],
+      "sizing": "fill",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "behaviors": [
+        "input",
+        "focus",
+        "disabled",
+        "error"
+      ],
+      "textRoles": [
+        "value:body-l",
+        "placeholder:body-l",
+        "label:body-m",
+        "help:body-s"
+      ],
+      "iconAliases": [],
+      "iconSlots": [],
+      "iconSemantic": null,
+      "comparisonGroup": "input"
+    },
+    {
+      "id": "label",
+      "logicalName": "Label/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-m",
+        "spacing.component-gap",
+        "spacing.padding-tag-x",
+        "size.tag-height"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#label"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#label"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "input",
+      "categoryLabel": "输入类",
+      "order": 314,
+      "canonicalSection": "[data-runtime-category=\"input\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"input\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-label\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-label",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "field/search",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "form-plus",
+      "canonicalSpecimen": "gallery:input:label",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "field/search",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "field/search"
+      ],
+      "comparisonGroup": "input"
+    },
+    {
+      "id": "list-card",
+      "logicalName": "List Item/White Surface/Default",
+      "variants": [
+        "default",
+        "selected",
+        "unread"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "pressed",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "props": [
+        "title",
+        "description",
+        "meta",
+        "selected",
+        "unread"
+      ],
+      "slots": [
+        "leading",
+        "title",
+        "description",
+        "trailing"
+      ],
+      "tokenRoles": [
+        "color.surface",
+        "color.sidebar-selected",
+        "color.text",
+        "color.text-muted",
+        "size.list-item-height",
+        "radius.list-item",
+        "typography.body-l",
+        "typography.body-m"
+      ],
+      "iconAliases": [
+        "navigation/list"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/list-card.html"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/list-card.html"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "containers",
+      "categoryLabel": "容器类",
+      "order": 510,
+      "canonicalSection": "[data-runtime-category=\"containers\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"containers\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-list-card\"]",
+      "legacyVisualGroup": "navigation",
+      "canonicalSpecimen": "gallery:containers:list-card",
+      "specimens": [
+        {
+          "id": "single-text-arrow",
+          "variant": "single-line",
+          "state": "default",
+          "lines": 1,
+          "trailing": "text-arrow"
+        },
+        {
+          "id": "double-icon",
+          "variant": "double-line",
+          "state": "default",
+          "lines": 2,
+          "trailing": "icon"
+        },
+        {
+          "id": "triple-radio",
+          "variant": "triple-line",
+          "state": "default",
+          "lines": 3,
+          "trailing": "radio"
+        },
+        {
+          "id": "single-checkbox",
+          "variant": "single-line",
+          "state": "default",
+          "lines": 1,
+          "trailing": "checkbox"
+        },
+        {
+          "id": "single-switch",
+          "variant": "single-line",
+          "state": "default",
+          "lines": 1,
+          "trailing": "switch"
+        },
+        {
+          "id": "single-notification-arrow",
+          "variant": "single-line",
+          "state": "default",
+          "lines": 1,
+          "trailing": "notification-arrow"
+        }
+      ],
+      "fixtureId": "fixture-list-card",
+      "surface": "white",
+      "sizing": "fill",
+      "allowedStates": [
+        "default",
+        "hover",
+        "pressed",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "behaviors": [
+        "select",
+        "keyboard-activation",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "description:body-m",
+        "meta:body-m"
+      ],
+      "iconSlots": [
+        {
+          "alias": "navigation/list",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconSemantic": "navigation/list",
+      "comparisonGroup": "containers"
+    },
+    {
+      "id": "menubar",
+      "logicalName": "Menubar/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open"
+      ],
+      "props": [
+        "label",
+        "value",
+        "items",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description",
+        "item-leading",
+        "item-label",
+        "item-trailing"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "icon-size-lg",
+        "spacing.menu-item-content"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/advanced.js#menubar"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/advanced.js#menubar"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "navigation",
+      "categoryLabel": "导航类",
+      "order": 16,
+      "canonicalSection": "[data-runtime-category=\"navigation\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-menubar\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-menubar",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "open",
+        "select",
+        "escape",
+        "arrow-keys",
+        "hover-submenu",
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "navigation/grid",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "disclosure",
+      "canonicalSpecimen": "gallery:navigation:menubar",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "slot": "item-leading",
+          "alias": "navigation/grid",
+          "displaySizes": [
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "slot": "item-trailing",
+          "alias": "navigation/chevron-right",
+          "displaySizes": [
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "navigation/grid",
+        "navigation/chevron-right"
+      ],
+      "slotContracts": {
+        "item-leading": {
+          "cardinality": "0..1",
+          "scope": "menubar-item",
+          "iconSize": "24px",
+          "iconToken": "icon-size-lg",
+          "gapToken": "gap-menu-item-content",
+          "gap": "8px",
+          "source": "lucide"
+        },
+        "item-label": {
+          "cardinality": "1",
+          "scope": "menubar-item",
+          "typographyRole": "body-l"
+        },
+        "item-trailing": {
+          "cardinality": "0..1",
+          "scope": "menubar-item",
+          "iconAlias": "navigation/chevron-right",
+          "iconSize": "24px",
+          "iconToken": "icon-size-lg",
+          "activeWhen": "hasSubmenu",
+          "placement": "trailing-end"
+        }
+      },
+      "comparisonGroup": "navigation"
+    },
+    {
+      "id": "native-select",
+      "logicalName": "Native Select/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "leading",
+        "value",
+        "trailing",
+        "help"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#nativeSelect"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#nativeSelect"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "choices",
+      "categoryLabel": "选择类",
+      "order": 416,
+      "canonicalSection": "[data-runtime-category=\"choices\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"choices\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-native-select\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-native-select",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "navigation/chevron-down",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "form-plus",
+      "canonicalSpecimen": "gallery:choices:native-select",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "navigation/chevron-down",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "navigation/chevron-down"
+      ],
+      "comparisonGroup": "choices"
+    },
+    {
+      "id": "number-selector",
+      "logicalName": "Number Selector/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "value",
+        "defaultValue",
+        "min",
+        "max",
+        "step",
+        "disabled",
+        "onChange"
+      ],
+      "slots": [
+        "label",
+        "decrement",
+        "value",
+        "increment"
+      ],
+      "tokenRoles": [
+        "color.surface",
+        "color.text",
+        "color.border",
+        "color.primary",
+        "size.input-height",
+        "radius.input",
+        "typography.body-l"
+      ],
+      "source": "canonical-custom",
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#numberSelector"
+      },
+      "category": "input",
+      "categoryLabel": "输入类",
+      "order": 316,
+      "canonicalSection": "[data-runtime-category=\"input\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"input\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-number-selector\"]",
+      "legacyVisualGroup": "fields",
+      "canonicalSpecimen": "gallery:input:number-selector",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-number-selector",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "behaviors": [
+        "input",
+        "increment",
+        "decrement",
+        "focus",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconAliases": [],
+      "iconSlots": [],
+      "iconSemantic": null,
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "status": "partial",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#numberSelector"
+        }
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "comparisonGroup": "input"
+    },
+    {
+      "id": "pagination",
+      "logicalName": "Pagination/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "spacing.content-inset"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#pagination"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#pagination"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "navigation",
+      "categoryLabel": "导航类",
+      "order": 17,
+      "canonicalSection": "[data-runtime-category=\"navigation\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-pagination\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-pagination",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "navigation/back",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "navigation",
+      "canonicalSpecimen": "gallery:navigation:pagination",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "slot": "previous",
+          "alias": "navigation/back",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "slot": "next",
+          "alias": "navigation/forward",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "navigation/back",
+        "navigation/forward"
+      ],
+      "comparisonGroup": "navigation"
+    },
+    {
+      "id": "popover",
+      "logicalName": "Popover/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "title",
+        "description",
+        "content",
+        "actions"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "shadow.overlay",
+        "radius.card"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/advanced.js#popover"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/advanced.js#popover"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "display",
+      "categoryLabel": "展示类",
+      "order": 213,
+      "canonicalSection": "[data-runtime-category=\"display\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"display\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-popover\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-popover",
+      "surface": [
+        "white",
+        "gray"
+      ],
+      "sizing": "overlay",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "action/more",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "overlays",
+      "canonicalSpecimen": "gallery:display:popover",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "action/more",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "action/more"
+      ],
+      "comparisonGroup": "display"
+    },
+    {
+      "id": "primary-navigation-item",
+      "logicalName": "Primary Navigation Item/Level 1",
+      "variants": [
+        "default",
+        "selected"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "pressed",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "ariaLabel",
+        "icon",
+        "selected",
+        "disabled",
+        "state",
+        "onSelect",
+        "className"
+      ],
+      "slots": [
+        "icon",
+        "tooltip"
+      ],
+      "tokenRoles": [
+        "color.primary-level-unselected",
+        "color.sidebar-accent",
+        "color.sidebar-selected-text",
+        "color.focus-ring",
+        "size.icon-button",
+        "icon-size-lg",
+        "radius.icon-button"
+      ],
+      "structuralAxes": {
+        "placement": [
+          "primary-navigation-shell"
+        ],
+        "alignment": [
+          "bottom"
+        ],
+        "presentation": [
+          "icon-only"
+        ]
+      },
+      "iconAliases": [
+        "navigation/grid",
+        "field/calendar",
+        "navigation/mail-unread",
+        "action/settings"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/primary-navigation-item.html"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/primary-navigation-item.html"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "navigation",
+      "categoryLabel": "导航类",
+      "order": 11,
+      "canonicalSection": "[data-runtime-category=\"navigation\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-primary-navigation-item\"]",
+      "legacyVisualGroup": "navigation",
+      "canonicalSpecimen": "gallery:navigation:primary-navigation-item",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default",
+          "surface": "white"
+        }
+      ],
+      "fixtureId": "fixture-primary-navigation-item",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "allowedStates": [
+        "default",
+        "hover",
+        "pressed",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "behaviors": [
+        "select",
+        "keyboard-activation",
+        "disabled"
+      ],
+      "textRoles": [],
+      "iconSlots": [
+        {
+          "alias": "navigation/grid",
+          "displaySizes": [
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "field/calendar",
+          "displaySizes": [
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "navigation/mail-unread",
+          "displaySizes": [
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "action/settings",
+          "displaySizes": [
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconSemantic": "navigation/grid",
+      "slotContracts": {
+        "icon": {
+          "cardinality": "1",
+          "scope": "primary-navigation-item",
+          "displaySize": "24px",
+          "kind": "regular",
+          "source": "lucide"
+        }
+      },
+      "comparisonGroup": "navigation"
+    },
+    {
+      "id": "progress",
+      "logicalName": "Progress/Default",
+      "variants": [
+        "default",
+        "success",
+        "warning",
+        "danger",
+        "info"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "loading"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "color.primary"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#progress"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#progress"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "display",
+      "categoryLabel": "展示类",
+      "order": 220,
+      "canonicalSection": "[data-runtime-category=\"display\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"display\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-progress\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-progress",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "status/success",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "data-display",
+      "canonicalSpecimen": "gallery:display:progress",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "loading"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "status/success",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "status/success"
+      ],
+      "comparisonGroup": "display"
+    },
+    {
+      "id": "radio-group",
+      "logicalName": "Radio Group/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "selected"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#radioGroup"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#radioGroup"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "choices",
+      "categoryLabel": "选择类",
+      "order": 412,
+      "canonicalSection": "[data-runtime-category=\"choices\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"choices\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-radio-group\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-radio-group",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "action/check",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "choices",
+      "canonicalSpecimen": "gallery:choices:radio-group",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "selected"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "action/check",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "action/check"
+      ],
+      "comparisonGroup": "choices"
+    },
+    {
+      "id": "radio",
+      "logicalName": "Radio/Unselected/Default",
+      "variants": [
+        "unselected",
+        "selected"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "selected"
+      ],
+      "props": [
+        "checked",
+        "defaultChecked",
+        "label",
+        "name",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "control",
+        "label"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "color.primary",
+        "color.primary-text",
+        "size.indicator.radio-size",
+        "radius.full",
+        "spacing.gap.choice-label",
+        "typography.body-m"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#radio"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#radio"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "choices",
+      "categoryLabel": "选择类",
+      "order": 411,
+      "canonicalSection": "[data-runtime-category=\"choices\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"choices\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-radio\"]",
+      "legacyVisualGroup": "choices",
+      "canonicalSpecimen": "gallery:choices:radio",
+      "specimens": [
+        {
+          "id": "unselected",
+          "variant": "unselected",
+          "state": "default",
+          "checked": false
+        },
+        {
+          "id": "selected",
+          "variant": "selected",
+          "state": "selected",
+          "checked": true
+        }
+      ],
+      "fixtureId": "fixture-radio",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "selected"
+      ],
+      "behaviors": [
+        "select",
+        "keyboard-activation",
+        "disabled"
+      ],
+      "textRoles": [
+        "label:body-m"
+      ],
+      "iconAliases": [],
+      "iconSlots": [],
+      "iconSemantic": null,
+      "comparisonGroup": "choices"
+    },
+    {
+      "id": "search",
+      "logicalName": "Search/White Surface/Default",
+      "variants": [
+        "default",
+        "focused",
+        "with-value",
+        "advanced-search",
+        "scoped-search",
+        "scoped-advanced-search"
+      ],
+      "states": [
+        "default",
+        "focus",
+        "typing",
+        "filled",
+        "hover-left",
+        "hover-right",
+        "pressed-left",
+        "pressed-right",
+        "disabled"
+      ],
+      "props": [
+        "value",
+        "defaultValue",
+        "placeholder",
+        "disabled",
+        "state",
+        "surface",
+        "scope",
+        "defaultScope",
+        "scopeOptions",
+        "scopeLabel",
+        "onScopeChange",
+        "advancedSearch",
+        "advancedSearchLabel",
+        "onAdvancedSearch",
+        "onChange",
+        "onClear"
+      ],
+      "slots": [
+        "scope-selector",
+        "leading",
+        "value",
+        "clear",
+        "advanced-search"
+      ],
+      "tokenRoles": [
+        "color.input-bg",
+        "color.text",
+        "color.icon",
+        "size.search-height",
+        "radius.search",
+        "spacing.padding-search-x",
+        "typography.body-l"
+      ],
+      "iconAliases": [
+        "field/search",
+        "action/close"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#search"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#search"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "input",
+      "categoryLabel": "输入类",
+      "order": 311,
+      "canonicalSection": "[data-runtime-category=\"input\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"input\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-search\"]",
+      "legacyVisualGroup": "fields",
+      "canonicalSpecimen": "gallery:input:search",
+      "specimens": [
+        {
+          "id": "white-surface",
+          "variant": "default",
+          "state": "default",
+          "surface": "white"
+        },
+        {
+          "id": "gray-surface",
+          "variant": "default",
+          "state": "default",
+          "surface": "gray"
+        }
+      ],
+      "fixtureId": "fixture-search",
+      "surface": [
+        "white",
+        "gray"
+      ],
+      "sizing": "fill",
+      "allowedStates": [
+        "default",
+        "focus",
+        "typing",
+        "filled",
+        "hover-left",
+        "hover-right",
+        "pressed-left",
+        "pressed-right",
+        "disabled"
+      ],
+      "behaviors": [
+        "input",
+        "scope-select",
+        "clear",
+        "advanced-search",
+        "focus",
+        "disabled"
+      ],
+      "textRoles": [
+        "value:body-l",
+        "placeholder:body-l"
+      ],
+      "iconSlots": [
+        {
+          "alias": "field/search",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "action/close",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconSemantic": "field/search",
+      "slotContracts": {
+        "scope-selector": {
+          "cardinality": "0..1",
+          "optional": true,
+          "configurable": true,
+          "configurationProps": [
+            "scopeOptions",
+            "scope",
+            "defaultScope",
+            "scopeLabel",
+            "onScopeChange"
+          ],
+          "scope": "search-query-builder",
+          "defaultPlacement": "leading-before-search-icon",
+          "control": "dropdown-menu",
+          "defaultLabel": "搜索范围",
+          "defaultValue": "first-scope-option",
+          "dividerToken": "color.border",
+          "interaction": "change-search-scope",
+          "coexistenceOrder": [
+            "scope-selector",
+            "leading",
+            "value",
+            "clear",
+            "advanced-search"
+          ]
+        },
+        "advanced-search": {
+          "cardinality": "0..1",
+          "optional": true,
+          "configurable": true,
+          "configurationProps": [
+            "advancedSearch",
+            "advancedSearchLabel",
+            "onAdvancedSearch"
+          ],
+          "scope": "search-query-builder",
+          "defaultPlacement": "trailing-after-clear",
+          "control": "small-text-button",
+          "variant": "ghost",
+          "size": "small",
+          "mode": "text",
+          "textColorToken": "color.text-muted",
+          "trailingInsetToken": "space/2",
+          "requiresAccessibleName": true,
+          "interaction": "open-advanced-search-layer",
+          "coexistenceOrder": [
+            "clear",
+            "advanced-search"
+          ]
+        }
+      },
+      "comparisonGroup": "input"
+    },
+    {
+      "id": "segmented-button",
+      "logicalName": "Segmented Button/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "props": [
+        "options",
+        "value",
+        "defaultValue",
+        "label",
+        "disabled",
+        "onChange"
+      ],
+      "slots": [
+        "option"
+      ],
+      "tokenRoles": [
+        "color.surface",
+        "color.text",
+        "color.primary",
+        "radius.tab",
+        "spacing.padding-segmented-control",
+        "typography.body-m"
+      ],
+      "source": "canonical-custom",
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#segmentedButton"
+      },
+      "category": "choices",
+      "categoryLabel": "选择类",
+      "order": 414,
+      "canonicalSection": "[data-runtime-category=\"choices\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"choices\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-segmented-button\"]",
+      "legacyVisualGroup": "choices",
+      "canonicalSpecimen": "gallery:choices:segmented-button",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-segmented-button",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "behaviors": [
+        "select",
+        "keyboard-activation",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconAliases": [],
+      "iconSlots": [],
+      "iconSemantic": null,
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "status": "partial",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#segmentedButton"
+        }
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "comparisonGroup": "choices"
+    },
+    {
+      "id": "select",
+      "logicalName": "Select/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open",
+        "error"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "leading",
+        "value",
+        "trailing",
+        "help"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#select"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#select"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "choices",
+      "categoryLabel": "选择类",
+      "order": 415,
+      "canonicalSection": "[data-runtime-category=\"choices\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"choices\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-select\"]",
+      "specimens": [
+        {
+          "id": "white-surface",
+          "variant": "default",
+          "state": "default",
+          "surface": "white"
+        },
+        {
+          "id": "gray-surface",
+          "variant": "default",
+          "state": "default",
+          "surface": "gray"
+        }
+      ],
+      "fixtureId": "fixture-select",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "navigation/chevron-down",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "fields",
+      "canonicalSpecimen": "gallery:choices:select",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open",
+        "error"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "navigation/chevron-down",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "navigation/chevron-down"
+      ],
+      "comparisonGroup": "choices"
+    },
+    {
+      "id": "semi-modal",
+      "logicalName": "Semi-modal/Default",
+      "variants": [
+        "s",
+        "m",
+        "l",
+        "white",
+        "gray",
+        "non-modal",
+        "modal"
+      ],
+      "states": [
+        "closed",
+        "open"
+      ],
+      "props": [
+        "open",
+        "size",
+        "surface",
+        "mode",
+        "title",
+        "onConfirm",
+        "onCancel",
+        "onClose",
+        "onOpenChange"
+      ],
+      "slots": [
+        "title",
+        "description",
+        "content",
+        "actions",
+        "close"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "shadow.overlay",
+        "radius.card"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/advanced.js#semi-modal"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/advanced.js#semi-modal"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "containers",
+      "categoryLabel": "容器类",
+      "order": 514,
+      "canonicalSection": "[data-runtime-category=\"containers\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"containers\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-semi-modal\"]",
+      "specimens": [
+        {
+          "id": "s-white-non-modal",
+          "variant": "s-white-non-modal",
+          "state": "closed",
+          "size": "s",
+          "surface": "white",
+          "mode": "non-modal"
+        },
+        {
+          "id": "m-white-non-modal",
+          "variant": "m-white-non-modal",
+          "state": "closed",
+          "size": "m",
+          "surface": "white",
+          "mode": "non-modal"
+        },
+        {
+          "id": "l-white-non-modal",
+          "variant": "l-white-non-modal",
+          "state": "closed",
+          "size": "l",
+          "surface": "white",
+          "mode": "non-modal"
+        },
+        {
+          "id": "s-gray-non-modal",
+          "variant": "s-gray-non-modal",
+          "state": "closed",
+          "size": "s",
+          "surface": "gray",
+          "mode": "non-modal"
+        },
+        {
+          "id": "m-gray-non-modal",
+          "variant": "m-gray-non-modal",
+          "state": "closed",
+          "size": "m",
+          "surface": "gray",
+          "mode": "non-modal"
+        },
+        {
+          "id": "l-gray-non-modal",
+          "variant": "l-gray-non-modal",
+          "state": "closed",
+          "size": "l",
+          "surface": "gray",
+          "mode": "non-modal"
+        },
+        {
+          "id": "m-white-modal",
+          "variant": "m-white-modal",
+          "state": "closed",
+          "size": "m",
+          "surface": "white",
+          "mode": "modal"
+        }
+      ],
+      "fixtureId": "fixture-semi-modal",
+      "surface": [
+        "white",
+        "gray"
+      ],
+      "sizing": "overlay",
+      "behaviors": [
+        "open",
+        "confirm",
+        "cancel",
+        "close",
+        "escape",
+        "focus-return",
+        "no-outside-dismiss",
+        "modal-focus-trap"
+      ],
+      "iconSemantic": "action/close",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "overlays",
+      "canonicalSpecimen": "gallery:containers:semi-modal",
+      "allowedStates": [
+        "closed",
+        "open"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "slot": "close",
+          "alias": "action/close",
+          "displaySizes": [
+            20
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "action/close"
+      ],
+      "structuralAxes": {
+        "size": [
+          "s",
+          "m",
+          "l"
+        ],
+        "surface": [
+          "white",
+          "gray"
+        ],
+        "mode": [
+          "non-modal",
+          "modal"
+        ]
+      },
+      "interactionStates": [
+        "closed",
+        "open"
+      ],
+      "slotContracts": {
+        "close": {
+          "cardinality": "1",
+          "scope": "semi-modal-header",
+          "control": "icon-button",
+          "iconAlias": "action/close",
+          "iconSize": "20px",
+          "trailingInsetToken": "space/5",
+          "trailingInset": "16px"
+        }
+      },
+      "comparisonGroup": "containers"
+    },
+    {
+      "id": "sidebar",
+      "logicalName": "Sidebar Item/Default",
+      "variants": [
+        "default",
+        "selected",
+        "collapsed"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "pressed",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "icon",
+        "selected",
+        "collapsed",
+        "count",
+        "items",
+        "groups",
+        "ariaLabel"
+      ],
+      "slots": [
+        "leading",
+        "label",
+        "trailing"
+      ],
+      "tokenRoles": [
+        "color.sidebar-bg",
+        "color.sidebar-selected",
+        "color.text",
+        "color.primary",
+        "size.list-item-height",
+        "radius.list-item",
+        "typography.body-l"
+      ],
+      "iconAliases": [
+        "navigation/grid",
+        "navigation/recent",
+        "action/more"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/sidebar.html"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/sidebar.html"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "category": "navigation",
+      "categoryLabel": "导航类",
+      "order": 12,
+      "canonicalSection": "[data-runtime-category=\"navigation\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-sidebar\"]",
+      "legacyVisualGroup": "navigation",
+      "canonicalSpecimen": "gallery:navigation:sidebar",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default",
+          "surface": "white"
+        }
+      ],
+      "fixtureId": "fixture-sidebar",
+      "surface": "white",
+      "sizing": "fill",
+      "allowedStates": [
+        "default",
+        "hover",
+        "pressed",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "behaviors": [
+        "select",
+        "keyboard-activation",
+        "disabled"
+      ],
+      "textRoles": [
+        "label:body-l",
+        "count:body-m"
+      ],
+      "iconSlots": [
+        {
+          "alias": "navigation/grid",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "navigation/recent",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "action/more",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconSemantic": "navigation/grid",
+      "comparisonGroup": "navigation"
+    },
+    {
+      "id": "slider",
+      "logicalName": "Slider/Default",
+      "variants": [
+        "style-1",
+        "style-2"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "control",
+        "value"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/advanced.js#slider"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/advanced.js#slider"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "choices",
+      "categoryLabel": "选择类",
+      "order": 417,
+      "canonicalSection": "[data-runtime-category=\"choices\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"choices\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-slider\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "style-1",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-slider",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "action/more",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "form-plus",
+      "canonicalSpecimen": "gallery:choices:slider",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "action/more",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "action/more"
+      ],
+      "comparisonGroup": "choices"
+    },
+    {
+      "id": "snackbar",
+      "logicalName": "Snackbar/Default",
+      "variants": [
+        "title-only",
+        "title-subtitle"
+      ],
+      "states": [
+        "default"
+      ],
+      "props": [
+        "title",
+        "subtitle",
+        "actionLabel",
+        "leftArea",
+        "closable",
+        "onAction",
+        "onClose"
+      ],
+      "slots": [
+        "leading",
+        "title",
+        "subtitle",
+        "action",
+        "close"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "typography.subtitle-s",
+        "typography.body-s",
+        "typography.body-m",
+        "spacing.component-gap",
+        "color.primary",
+        "shadow.3",
+        "radius.5"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#snackbar"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#snackbar"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "display",
+      "categoryLabel": "展示类",
+      "order": 211,
+      "canonicalSection": "[data-runtime-category=\"display\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"display\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-snackbar\"]",
+      "specimens": [
+        {
+          "id": "title-only",
+          "variant": "title-only",
+          "state": "default",
+          "leftArea": "1"
+        },
+        {
+          "id": "title-subtitle",
+          "variant": "title-subtitle",
+          "state": "default",
+          "leftArea": "2"
+        }
+      ],
+      "fixtureId": "fixture-snackbar",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "action",
+        "close"
+      ],
+      "iconSemantic": "status/info",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "feedback",
+      "canonicalSpecimen": "gallery:display:snackbar",
+      "allowedStates": [
+        "default"
+      ],
+      "textRoles": [
+        "title:subtitle-s",
+        "subtitle:body-s",
+        "action:body-m"
+      ],
+      "iconSlots": [
+        {
+          "slot": "leading",
+          "alias": "status/info",
+          "displaySizes": [
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "slot": "close",
+          "alias": "action/close",
+          "displaySizes": [
+            20
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "status/info",
+        "action/close"
+      ],
+      "slotContracts": {
+        "leading": {
+          "cardinality": "1",
+          "scope": "snackbar-main",
+          "iconAlias": "status/info",
+          "iconSize": "24px",
+          "source": "lucide"
+        },
+        "title": {
+          "cardinality": "1",
+          "scope": "snackbar-content",
+          "typographyRole": "subtitle-s"
+        },
+        "subtitle": {
+          "cardinality": "0..1",
+          "scope": "snackbar-content",
+          "typographyRole": "body-s",
+          "activeWhen": "variant=title-subtitle"
+        },
+        "action": {
+          "cardinality": "0..1",
+          "scope": "snackbar-actions",
+          "control": "small-button-slot",
+          "acceptedComponentContract": "button",
+          "requiredSize": "small",
+          "accepts": "any shared Button mode and variant at small size",
+          "defaultControl": "Button/Ghost/Default"
+        },
+        "close": {
+          "cardinality": "0..1",
+          "scope": "snackbar-actions",
+          "control": "icon-button",
+          "iconAlias": "action/close",
+          "iconSize": "20px",
+          "hotZone": "40px",
+          "requiresAccessibleName": true
+        }
+      },
+      "comparisonGroup": "display"
+    },
+    {
+      "id": "sub-tabs",
+      "logicalName": "Sub Tabs/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "props": [
+        "tabs",
+        "value",
+        "defaultValue",
+        "disabled",
+        "onChange"
+      ],
+      "slots": [
+        "label",
+        "content"
+      ],
+      "tokenRoles": [
+        "color.neutral-dark-05",
+        "color.text-muted",
+        "color.brand-10",
+        "color.brand-100",
+        "spacing.gap-subtab-item",
+        "spacing.space-5",
+        "radius.subtab",
+        "size.size-10",
+        "typography.subtitle-m"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#subTabs"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#subTabs"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "navigation",
+      "categoryLabel": "导航类",
+      "order": 13.5,
+      "canonicalSection": "[data-runtime-category=\"navigation\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-sub-tabs\"]",
+      "legacyVisualGroup": "navigation",
+      "canonicalSpecimen": "gallery:navigation:sub-tabs",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-sub-tabs",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "selected",
+        "disabled"
+      ],
+      "behaviors": [
+        "select",
+        "arrow-keys",
+        "focus"
+      ],
+      "textRoles": [
+        "label:subtitle-m",
+        "unselected-label:body-l",
+        "content:body-l"
+      ],
+      "iconAliases": [],
+      "iconSlots": [],
+      "iconSemantic": null,
+      "comparisonGroup": "navigation"
+    },
+    {
+      "id": "switch",
+      "logicalName": "Switch/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "selected"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "color.primary"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#switch"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#switch"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "choices",
+      "categoryLabel": "选择类",
+      "order": 413,
+      "canonicalSection": "[data-runtime-category=\"choices\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"choices\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-switch\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-switch",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "action/check",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "choices",
+      "canonicalSpecimen": "gallery:choices:switch",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "selected"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "action/check",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "action/check"
+      ],
+      "comparisonGroup": "choices"
+    },
+    {
+      "id": "table",
+      "logicalName": "Table/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "selected"
+      ],
+      "props": [
+        "title",
+        "columns",
+        "rows",
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "leading",
+        "title",
+        "description",
+        "content",
+        "trailing"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "spacing.content-inset"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#table"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#table"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "display",
+      "categoryLabel": "展示类",
+      "order": 218,
+      "canonicalSection": "[data-runtime-category=\"display\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"display\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-table\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-table",
+      "surface": "white",
+      "sizing": "fill",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": null,
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "data-display",
+      "canonicalSpecimen": "gallery:display:table",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "selected"
+      ],
+      "textRoles": [
+        "header:body-m",
+        "cell:body-l"
+      ],
+      "iconSlots": [],
+      "iconAliases": [],
+      "comparisonGroup": "display"
+    },
+    {
+      "id": "tabs",
+      "logicalName": "Tabs/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "selected"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "color.primary"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#tabs"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#tabs"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "navigation",
+      "categoryLabel": "导航类",
+      "order": 13,
+      "canonicalSection": "[data-runtime-category=\"navigation\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-tabs\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-tabs",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "select",
+        "arrow-keys",
+        "focus"
+      ],
+      "iconSemantic": "navigation/list",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "navigation",
+      "canonicalSpecimen": "gallery:navigation:tabs",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "selected"
+      ],
+      "textRoles": [
+        "label:body-m"
+      ],
+      "iconSlots": [
+        {
+          "alias": "navigation/list",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "navigation/list"
+      ],
+      "comparisonGroup": "navigation"
+    },
+    {
+      "id": "textarea",
+      "logicalName": "Textarea/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "error"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "leading",
+        "value",
+        "trailing",
+        "help"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#textarea"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#textarea"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "input",
+      "categoryLabel": "输入类",
+      "order": 312,
+      "canonicalSection": "[data-runtime-category=\"input\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"input\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-textarea\"]",
+      "specimens": [
+        {
+          "id": "white-surface",
+          "variant": "default",
+          "state": "default",
+          "surface": "white"
+        },
+        {
+          "id": "gray-surface",
+          "variant": "default",
+          "state": "default",
+          "surface": "gray"
+        }
+      ],
+      "fixtureId": "fixture-textarea",
+      "surface": [
+        "white",
+        "gray"
+      ],
+      "sizing": "fill",
+      "behaviors": [
+        "input",
+        "focus",
+        "disabled",
+        "error"
+      ],
+      "iconSemantic": null,
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "fields",
+      "canonicalSpecimen": "gallery:input:textarea",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "textRoles": [
+        "value:body-l",
+        "placeholder:body-l",
+        "label:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [],
+      "iconAliases": [],
+      "comparisonGroup": "input"
+    },
+    {
+      "id": "time-picker",
+      "logicalName": "Time Picker/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open",
+        "error"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "leading",
+        "value",
+        "trailing",
+        "help"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.component-gap",
+        "spacing.content-inset"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/advanced.js#time-picker"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/advanced.js#time-picker"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "choices",
+      "categoryLabel": "选择类",
+      "order": 421,
+      "canonicalSection": "[data-runtime-category=\"choices\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"choices\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-time-picker\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-time-picker",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "open",
+        "select",
+        "escape"
+      ],
+      "iconSemantic": "field/clock",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "loading-data",
+      "canonicalSpecimen": "gallery:choices:time-picker",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "open",
+        "error"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "iconSlots": [
+        {
+          "alias": "field/clock",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "field/clock"
+      ],
+      "comparisonGroup": "choices"
+    },
+    {
+      "id": "titlebar",
+      "logicalName": "Titlebar/Default",
+      "variants": [
+        "small",
+        "medium",
+        "large",
+        "xlarge"
+      ],
+      "states": [
+        "default",
+        "unfocus",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "paneTitle",
+        "size",
+        "layout",
+        "segmentRole",
+        "slots",
+        "showWindowControls",
+        "showLogo",
+        "logoSrc",
+        "logoAlt",
+        "disabled",
+        "state",
+        "mainDetailActions",
+        "onMainDetailAction",
+        "onAction",
+        "className"
+      ],
+      "slots": [
+        "logo",
+        "label",
+        "secondary-pane-content",
+        "main-content-title",
+        "main-detail-actions",
+        "actions"
+      ],
+      "slotContracts": {
+        "logo": {
+          "cardinality": "0..1",
+          "scope": "titlebar-logo",
+          "valueType": "image-object",
+          "activeRoles": [
+            "global",
+            "primary-navigation",
+            "secondary-pane",
+            "final-pane"
+          ],
+          "fields": [
+            "src",
+            "alt"
+          ],
+          "visibilityProp": "showLogo",
+          "defaultVisibility": {
+            "global": true,
+            "primary-navigation": true,
+            "secondary-pane": false,
+            "final-pane": false
+          }
+        },
+        "secondary-pane-content": {
+          "cardinality": "0..1",
+          "scope": "secondary-pane-titlebar",
+          "valueType": "registered-component-binding",
+          "activeWhen": {
+            "layout": "three-column",
+            "paneRole": "secondary-pane"
+          },
+          "allowedComponents": [
+            "Search/White Surface/Default"
+          ],
+          "defaultPlacement": "secondary-pane-titlebar-content",
+          "horizontalInsetToken": "space/5",
+          "horizontalInset": "16px",
+          "crossAxisAlignment": "center",
+          "verticalInset": "none",
+          "owner": "titlebar-component"
+        },
+        "main-content-leading": {
+          "cardinality": "0..1",
+          "scope": "main-content-pane-global",
+          "valueType": "action-object",
+          "activeWhen": {
+            "layout": "two-column",
+            "paneRole": "final-pane"
+          },
+          "defaultPlacement": "final-pane-leading-slot",
+          "gapToken": "space/2",
+          "gap": "4px",
+          "iconSize": "24px",
+          "allowedButtonVariants": [
+            "ghost"
+          ],
+          "allowedButtonTypes": [
+            "icon",
+            "icon-text-ghost"
+          ],
+          "fields": [
+            "id",
+            "label",
+            "icon",
+            "buttonType"
+          ]
+        },
+        "main-detail-actions": {
+          "cardinality": "0..n",
+          "scope": "main-detail-pane-global",
+          "defaultPlacement": "final-pane-leading-slot",
+          "layout": "compact-horizontal-group",
+          "leadingInsetToken": "layout/main-detail-action-leading-padding",
+          "overflow": {
+            "strategy": "collapse-to-more",
+            "triggerLogicalName": "Icon Button/Ghost/Default",
+            "triggerActionId": "more",
+            "triggerIconAlias": "action/more",
+            "triggerPosition": "last",
+            "eligibleButtonTypes": [
+              "icon",
+              "icon-text-ghost"
+            ],
+            "preserveMode": true,
+            "preserveOrder": true,
+            "fit": "available-width",
+            "staticBoard": {
+              "renderTrigger": true,
+              "renderMenu": false
+            }
+          },
+          "modePolicy": {
+            "type": "uniform-business-actions",
+            "allowedModes": [
+              "icon",
+              "icon-text"
+            ],
+            "mixedModes": "forbidden",
+            "overflowTriggerExcluded": true
+          },
+          "allowedButtonVariants": [
+            "ghost"
+          ],
+          "forbidden": [
+            "page-global-primary",
+            "card-action",
+            "field-action",
+            "section-action",
+            "selection-action",
+            "inline-action"
+          ],
+          "activeWhen": {
+            "layout": "three-column",
+            "paneRole": "final-pane"
+          },
+          "allowedButtonTypes": [
+            "icon",
+            "icon-text-ghost"
+          ],
+          "allowedButtonLogicalNames": [
+            "Icon Button/Ghost/Default",
+            "Icon Text Button/Ghost/Default"
+          ],
+          "buttonTypeContracts": {
+            "icon": {
+              "logicalName": "Icon Button/Ghost/Default",
+              "mode": "icon",
+              "requiredSlots": [
+                "icon"
+              ],
+              "forbiddenSlots": [
+                "label"
+              ]
+            },
+            "icon-text-ghost": {
+              "logicalName": "Icon Text Button/Ghost/Default",
+              "mode": "icon-text",
+              "requiredSlots": [
+                "icon",
+                "label"
+              ]
+            }
+          },
+          "valueType": "action-array"
+        },
+        "main-content-title": {
+          "cardinality": "0..1",
+          "scope": "main-content-pane-global",
+          "valueType": "text",
+          "activeWhen": {
+            "layout": "two-column",
+            "paneRole": "final-pane"
+          },
+          "defaultPlacement": "final-pane-leading-slot",
+          "leadingInsetToken": "layout/main-title-leading-padding"
+        },
+        "label": {
+          "cardinality": "0..1",
+          "valueType": "text",
+          "activeRoles": [
+            "global",
+            "primary-navigation"
+          ]
+        },
+        "actions": {
+          "cardinality": "0..1",
+          "valueType": "boolean",
+          "activeRoles": [
+            "global",
+            "final-pane"
+          ],
+          "implementation": "component-owned-window-controls"
+        },
+        "leading": {
+          "cardinality": "0..1",
+          "valueType": "image-object",
+          "activeRoles": [
+            "global",
+            "primary-navigation"
+          ],
+          "fields": [
+            "src",
+            "alt"
+          ],
+          "deprecatedAliasFor": "logo"
+        }
+      },
+      "layoutRules": {
+        "secondaryListPane": {
+          "surfaceInset": "16px",
+          "contentAxis": "24px",
+          "scrollWrapperPadding": "16px 16px"
+        },
+        "secondaryPaneTitlebar": {
+          "horizontalInsetToken": "space/5",
+          "horizontalInset": "16px",
+          "crossAxisAlignment": "center",
+          "verticalInset": "none",
+          "contentOwner": "titlebar-component",
+          "contentSlot": "secondary-pane-content"
+        },
+        "mainDetailPane": {
+          "paddingInline": "24px",
+          "paddingTop": "16px",
+          "paddingBottom": "0px",
+          "insetOwner": "direct-content-scroll-wrapper"
+        },
+        "mainDetailActions": {
+          "leadingInset": "16px",
+          "insetOwner": "titlebar-final-pane-segment"
+        }
+      },
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "typography.subtitle-m",
+        "typography.title-s",
+        "spacing.component-gap"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#titlebar"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#titlebar"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "navigation",
+      "categoryLabel": "导航类",
+      "order": 10,
+      "canonicalSection": "[data-runtime-category=\"navigation\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-titlebar\"]",
+      "specimens": [
+        {
+          "id": "small-normal",
+          "variant": "small",
+          "state": "default"
+        },
+        {
+          "id": "small-unfocus",
+          "variant": "small",
+          "state": "unfocus"
+        },
+        {
+          "id": "medium-normal",
+          "variant": "medium",
+          "state": "default"
+        },
+        {
+          "id": "medium-unfocus",
+          "variant": "medium",
+          "state": "unfocus"
+        },
+        {
+          "id": "large-normal",
+          "variant": "large",
+          "state": "default"
+        },
+        {
+          "id": "large-unfocus",
+          "variant": "large",
+          "state": "unfocus"
+        },
+        {
+          "id": "xlarge-normal",
+          "variant": "xlarge",
+          "state": "default"
+        },
+        {
+          "id": "xlarge-unfocus",
+          "variant": "xlarge",
+          "state": "unfocus"
+        }
+      ],
+      "fixtureId": "fixture-titlebar",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "window/minimize",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "titlebars",
+      "canonicalSpecimen": "gallery:navigation:titlebar",
+      "allowedStates": [
+        "default",
+        "unfocus",
+        "disabled"
+      ],
+      "textRoles": [
+        "title:title-s",
+        "content:body-l",
+        "description:body-m",
+        "help:body-s"
+      ],
+      "textRolesByVariant": {
+        "small": [
+          "title:subtitle-m"
+        ],
+        "medium": [
+          "title:title-s"
+        ],
+        "large": [
+          "title:title-s"
+        ],
+        "xlarge": [
+          "title:title-s"
+        ]
+      },
+      "iconSlots": [
+        {
+          "alias": "window/minimize",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "window/maximize",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "window/close",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "window/minimize",
+        "window/maximize",
+        "window/close"
+      ],
+      "structuralAxes": {
+        "size": [
+          "small",
+          "medium",
+          "large",
+          "xlarge"
+        ],
+        "layout": [
+          "standalone",
+          "two-column",
+          "three-column"
+        ],
+        "paneRole": [
+          "global",
+          "primary-navigation",
+          "secondary-pane",
+          "final-pane"
+        ],
+        "segmentRole": [
+          "global",
+          "primary-navigation",
+          "secondary-list",
+          "main-content",
+          "main-detail",
+          "secondary-pane",
+          "final-pane"
+        ]
+      },
+      "dividerRules": {
+        "default": "no-horizontal-divider",
+        "standalone": "no-horizontal-divider",
+        "two-column": {
+          "primary-navigation": "no-horizontal-divider",
+          "final-pane": "no-horizontal-divider"
+        },
+        "three-column": {
+          "primary-navigation": "no-horizontal-divider",
+          "secondary-pane": "no-horizontal-divider",
+          "final-pane": "bottom-divider"
+        },
+        "verticalPaneDividers": "owned-by-layout-and-continuous"
+      },
+      "segmentContract": {
+        "owner": "pattern-title-layer",
+        "orderedBy": "titleLayer.segments",
+        "widthOwner": "pattern-renderer",
+        "roles": [
+          "primary-navigation",
+          "secondary-list",
+          "main-content",
+          "main-detail"
+        ],
+        "middleSegments": "optional-registered-content; alignment-owned-by-titlebar",
+        "windowControls": "final-segment-only",
+        "slotAPI": "declarative-content; no arbitrary HTML"
+      },
+      "comparisonGroup": "navigation"
+    },
+    {
+      "id": "tooltip",
+      "logicalName": "Tooltip/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "props": [
+        "label",
+        "value",
+        "disabled",
+        "state",
+        "className"
+      ],
+      "slots": [
+        "label",
+        "content",
+        "description"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.surface",
+        "color.border",
+        "typography.body-l",
+        "spacing.padding-tooltip",
+        "shadow.1",
+        "radius.tooltip"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#tooltip"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#tooltip"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "display",
+      "categoryLabel": "展示类",
+      "order": 212,
+      "canonicalSection": "[data-runtime-category=\"display\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"display\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-tooltip\"]",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-tooltip",
+      "surface": "white",
+      "sizing": "intrinsic",
+      "behaviors": [
+        "focus",
+        "disabled"
+      ],
+      "iconSemantic": "status/info",
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "legacyVisualGroup": "feedback",
+      "canonicalSpecimen": "gallery:display:tooltip",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "disabled"
+      ],
+      "textRoles": [
+        "content:body-l"
+      ],
+      "iconSlots": [
+        {
+          "alias": "status/info",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconAliases": [
+        "status/info"
+      ],
+      "comparisonGroup": "display"
+    },
+    {
+      "id": "tree-view",
+      "logicalName": "Tree View/Default",
+      "variants": [
+        "default"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "selected",
+        "expanded",
+        "disabled"
+      ],
+      "props": [
+        "nodes",
+        "selectedId",
+        "expandedIds",
+        "defaultSelectedId",
+        "defaultExpandedIds",
+        "disabled",
+        "onSelect",
+        "onToggle"
+      ],
+      "slots": [
+        "node-leading",
+        "node-label",
+        "node-trailing"
+      ],
+      "tokenRoles": [
+        "color.text",
+        "color.text-muted",
+        "color.surface",
+        "color.border",
+        "color.primary",
+        "spacing.menu-item-content",
+        "size.tree-item-height",
+        "radius.subtab",
+        "typography.body-l",
+        "typography.body-m"
+      ],
+      "source": "canonical-custom",
+      "status": "partial",
+      "implementations": {
+        "html": "packages/components-html/src/index.js#treeView"
+      },
+      "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+      "sourceStrategy": "canonical-custom",
+      "frameworks": {
+        "html": {
+          "status": "partial",
+          "source": "packages/components-html/src/index.js#treeView"
+        }
+      },
+      "pixso": {
+        "status": "logical-mapping",
+        "libraryPage": "NewComponents",
+        "resolveGuidsAtRuntime": true,
+        "linkedInstanceRequired": true,
+        "variableReadbackRequired": true
+      },
+      "readiness": {
+        "sourceReady": true,
+        "contractReady": true,
+        "visualParity": false,
+        "behaviorParity": false,
+        "accessibilityParity": false,
+        "tokenParity": true
+      },
+      "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+      "category": "navigation",
+      "categoryLabel": "导航类",
+      "order": 14.5,
+      "canonicalSection": "[data-runtime-category=\"navigation\"]",
+      "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-tree-view\"]",
+      "legacyVisualGroup": "navigation",
+      "canonicalSpecimen": "gallery:navigation:tree-view",
+      "specimens": [
+        {
+          "id": "default",
+          "variant": "default",
+          "state": "default"
+        }
+      ],
+      "fixtureId": "fixture-tree-view",
+      "surface": "white",
+      "sizing": "fill",
+      "allowedStates": [
+        "default",
+        "hover",
+        "focus",
+        "selected",
+        "expanded",
+        "disabled"
+      ],
+      "behaviors": [
+        "select",
+        "toggle",
+        "arrow-keys",
+        "focus"
+      ],
+      "textRoles": [
+        "node-label:body-l",
+        "node-trailing:body-m"
+      ],
+      "iconAliases": [
+        "navigation/chevron-right",
+        "navigation/grid",
+        "object/file"
+      ],
+      "iconSlots": [
+        {
+          "alias": "navigation/chevron-right",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "navigation/grid",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        },
+        {
+          "alias": "object/file",
+          "displaySizes": [
+            16,
+            20,
+            24
+          ],
+          "kind": "regular"
+        }
+      ],
+      "iconSemantic": "navigation/chevron-right",
+      "comparisonGroup": "navigation"
+    }
+  ],
+  "registryPolicy": {
+    "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+    "readyRequires": [
+      "sourceReady",
+      "contractReady",
+      "visualParity",
+      "behaviorParity",
+      "accessibilityParity",
+      "tokenParity"
+    ],
+    "partialMayBeUsedFor": [],
+    "partialMustNotBeUsedFor": [
+      "strict-pixso-component-parity",
+      "cross-framework-component-claim"
+    ],
+    "deletedComponents": [
+      "drawer",
+      "sonner",
+      "marker",
+      "message-scroller",
+      "toggle",
+      "spinner",
+      "skeleton",
+      "aspect-ratio",
+      "bubble",
+      "typography",
+      "chart",
+      "empty",
+      "data-table"
+    ],
+    "readinessDimensions": [
+      "sourceReady",
+      "contractReady",
+      "visualParity",
+      "behaviorParity",
+      "accessibilityParity",
+      "tokenParity"
+    ],
+    "readyWhen": "all readinessDimensions are true",
+    "runtimeRule": "只显示结构性 specimens；hover/pressed/focus/open/close 由真实组件交互触发",
+    "comparisonRule": "Framework comparison uses the Monorepo Component Gallery runtime view as its sole visual authority; historical Skill preview pages are not part of the delivery.",
+    "comparisonGroups": [
+      {
+        "id": "navigation",
+        "label": "导航类",
+        "componentIds": [
+          "titlebar",
+          "primary-navigation-item",
+          "sidebar",
+          "tabs",
+          "sub-tabs",
+          "tree-view",
+          "breadcrumb",
+          "menubar",
+          "pagination",
+          "accordion",
+          "collapsible"
+        ]
+      },
+      {
+        "id": "actions",
+        "label": "操作类",
+        "componentIds": [
+          "button",
+          "chips",
+          "context-menu",
+          "dropdown-menu"
+        ]
+      },
+      {
+        "id": "display",
+        "label": "展示类",
+        "componentIds": [
+          "alert",
+          "snackbar",
+          "tooltip",
+          "popover",
+          "hover-card",
+          "avatar",
+          "badge",
+          "color-picker",
+          "table",
+          "progress"
+        ]
+      },
+      {
+        "id": "input",
+        "label": "输入类",
+        "componentIds": [
+          "input",
+          "search",
+          "textarea",
+          "field",
+          "label",
+          "combobox",
+          "number-selector"
+        ]
+      },
+      {
+        "id": "choices",
+        "label": "选择类",
+        "componentIds": [
+          "checkbox",
+          "radio",
+          "radio-group",
+          "switch",
+          "segmented-button",
+          "select",
+          "native-select",
+          "slider",
+          "calendar",
+          "date-picker",
+          "time-picker"
+        ]
+      },
+      {
+        "id": "containers",
+        "label": "容器类",
+        "componentIds": [
+          "form-field",
+          "list-card",
+          "dialog",
+          "alert-dialog",
+          "semi-modal"
+        ]
+      },
+      {
+        "id": "specialized",
+        "label": "特殊组件",
+        "componentIds": [
+          "attachment"
+        ]
+      }
+    ],
+    "categoryOrder": [
+      "navigation",
+      "actions",
+      "display",
+      "input",
+      "choices",
+      "containers",
+      "specialized"
+    ]
+  }
+}

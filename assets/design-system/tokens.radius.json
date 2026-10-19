@@ -1,0 +1,43 @@
+{
+  "radius": {
+    "0": "0px",
+    "1": "4px",
+    "2": "6px",
+    "3": "8px",
+    "4": "12px",
+    "5": "16px",
+    "full": "999px"
+  },
+  "semantic": {
+    "popup-menu-item": "radius.1",
+    "checkbox": "radius.1",
+    "subtab": "radius.3",
+    "sidebar-nav-item": "radius.3",
+    "button": "radius.3",
+    "icon-text-button": "radius.3",
+    "icon-button": "radius.3",
+    "status-button": "radius.3",
+    "dropdown-button": "radius.3",
+    "alert": "radius.3",
+    "select": "radius.3",
+    "input": "radius.3",
+    "textarea": "radius.3",
+    "tooltip": "radius.2",
+    "search": "radius.3",
+    "number-input": "radius.3",
+    "tag": "radius.3",
+    "selection-block": "radius.3",
+    "selection-option": "radius.2",
+    "tab": "radius.3",
+    "list": "radius.4",
+    "list-item": "radius.3",
+    "badge": "radius.full",
+    "progress": "radius.full",
+    "avatar": "radius.full",
+    "card": "radius.4",
+    "table": "radius.4",
+    "pagination-item": "radius.3",
+    "dialog": "radius.5",
+    "modal": "radius.5"
+  }
+}

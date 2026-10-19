@@ -1,0 +1,4955 @@
+{
+  "$schema": "./pixso-component-facts.schema.json",
+  "schemaVersion": 1,
+  "kind": "text-to-ui.pixso-component-facts",
+  "document": "鸿蒙客户端设计规范",
+  "page": "NewComponents",
+  "source": "Pixso Plugin API read-only facts; Search refreshed live and unchanged inventory preserved from the last complete snapshot",
+  "capturedAt": "2026-09-29T09:32:59.559Z",
+  "scope": "page-wide-top-level-component-inventory-with-geometry",
+  "policy": {
+    "identity": "组件名称必须与当前 Pixso Component Set 或 COMPONENT 的 name 完全一致，区分大小写。",
+    "ids": "不保存 GUID、node ID、file key；执行时必须从当前 Pixso 文件重新解析。",
+    "variantSource": "Variant 轴和值只读取 variantProperties；不从 Variant 显示名称推断已删除的轴。",
+    "geometrySource": "几何事实只读取当前 COMPONENT 的 Plugin API 属性，用于同步 Token 映射。",
+    "captureTraversal": "page-descendant-top-level"
+  },
+  "componentSets": [
+    {
+      "name": ".Arrow",
+      "classification": "helper",
+      "variantAxes": {
+        "属性 1": [
+          "down",
+          "right",
+          "up"
+        ]
+      },
+      "variants": [
+        {
+          "name": "属性 1=down",
+          "variantProperties": {
+            "属性 1": "down"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "属性 1=right",
+          "variantProperties": {
+            "属性 1": "right"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "属性 1=up",
+          "variantProperties": {
+            "属性 1": "up"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        }
+      ]
+    },
+    {
+      "name": ".Dialog_Container",
+      "classification": "helper",
+      "variantAxes": {
+        "quantity": [
+          "1_normal",
+          "2_emphasize",
+          "2_normal",
+          "3_emphasize_port"
+        ]
+      },
+      "variants": [
+        {
+          "name": "quantity=1_normal",
+          "variantProperties": {
+            "quantity": "1_normal"
+          },
+          "geometry": {
+            "width": 400,
+            "height": 56,
+            "itemSpacing": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "quantity=2_emphasize",
+          "variantProperties": {
+            "quantity": "2_emphasize"
+          },
+          "geometry": {
+            "width": 400,
+            "height": 56,
+            "itemSpacing": 16,
+            "padding": {
+              "top": 0,
+              "right": 16,
+              "bottom": 16,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "quantity=2_normal",
+          "variantProperties": {
+            "quantity": "2_normal"
+          },
+          "geometry": {
+            "width": 400,
+            "height": 56,
+            "itemSpacing": 16,
+            "padding": {
+              "top": 0,
+              "right": 16,
+              "bottom": 16,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "quantity=3_emphasize_port",
+          "variantProperties": {
+            "quantity": "3_emphasize_port"
+          },
+          "geometry": {
+            "width": 400,
+            "height": 152,
+            "itemSpacing": 8,
+            "padding": {
+              "top": 0,
+              "right": 16,
+              "bottom": 16,
+              "left": 16
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        }
+      ]
+    },
+    {
+      "name": ".Dialog_title",
+      "classification": "helper",
+      "variantAxes": {
+        "属性 1": [
+          ".Titl1e",
+          ".Title"
+        ]
+      },
+      "variants": [
+        {
+          "name": "属性 1=.Titl1e",
+          "variantProperties": {
+            "属性 1": ".Titl1e"
+          },
+          "geometry": {
+            "width": 400,
+            "height": 56,
+            "itemSpacing": 16,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 15,
+              "right": 0,
+              "bottom": 15,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "属性 1=.Title",
+          "variantProperties": {
+            "属性 1": ".Title"
+          },
+          "geometry": {
+            "width": 400,
+            "height": 67,
+            "itemSpacing": 16,
+            "padding": {
+              "top": 12,
+              "right": 0,
+              "bottom": 12,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MAX",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": ".Tab Item",
+      "classification": "helper",
+      "variantAxes": {
+        "state": [
+          "Selected",
+          "Unselected"
+        ]
+      },
+      "variants": [
+        {
+          "name": "state=Selected",
+          "variantProperties": {
+            "state": "Selected"
+          },
+          "geometry": {
+            "width": 64,
+            "height": 36,
+            "itemSpacing": 0,
+            "cornerRadius": 6,
+            "padding": {
+              "top": 0,
+              "right": 16,
+              "bottom": 0,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Unselected",
+          "variantProperties": {
+            "state": "Unselected"
+          },
+          "geometry": {
+            "width": 64,
+            "height": 36,
+            "itemSpacing": 0,
+            "cornerRadius": 6,
+            "padding": {
+              "top": 0,
+              "right": 16,
+              "bottom": 0,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Accordion",
+      "classification": "business",
+      "variantAxes": {
+        "State": [
+          "Collapsed",
+          "Expanded"
+        ]
+      },
+      "variants": [
+        {
+          "name": "State=Collapsed",
+          "variantProperties": {
+            "State": "Collapsed"
+          },
+          "geometry": {
+            "width": 320,
+            "height": 24,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 8,
+              "bottom": 0,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "State=Expanded",
+          "variantProperties": {
+            "State": "Expanded"
+          },
+          "geometry": {
+            "width": 320,
+            "height": 24,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 8,
+              "bottom": 0,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Alert",
+      "classification": "business",
+      "variantAxes": {
+        "属性 1": [
+          "Error",
+          "Info",
+          "Neutral",
+          "Success",
+          "Warning"
+        ]
+      },
+      "variants": [
+        {
+          "name": "属性 1=Error",
+          "variantProperties": {
+            "属性 1": "Error"
+          },
+          "geometry": {
+            "width": 720,
+            "height": 40,
+            "itemSpacing": 12,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 4,
+              "bottom": 0,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "属性 1=Info",
+          "variantProperties": {
+            "属性 1": "Info"
+          },
+          "geometry": {
+            "width": 720,
+            "height": 40,
+            "itemSpacing": 12,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 4,
+              "bottom": 0,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "属性 1=Neutral",
+          "variantProperties": {
+            "属性 1": "Neutral"
+          },
+          "geometry": {
+            "width": 720,
+            "height": 40,
+            "itemSpacing": 12,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 4,
+              "bottom": 0,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "属性 1=Success",
+          "variantProperties": {
+            "属性 1": "Success"
+          },
+          "geometry": {
+            "width": 720,
+            "height": 40,
+            "itemSpacing": 12,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 4,
+              "bottom": 0,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "属性 1=Warning",
+          "variantProperties": {
+            "属性 1": "Warning"
+          },
+          "geometry": {
+            "width": 720,
+            "height": 40,
+            "itemSpacing": 12,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 4,
+              "bottom": 0,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Badge",
+      "classification": "business",
+      "variantAxes": {
+        "属性 1": [
+          "Error",
+          "Info",
+          "Neutral",
+          "Success",
+          "Warning"
+        ]
+      },
+      "variants": [
+        {
+          "name": "属性 1=Error",
+          "variantProperties": {
+            "属性 1": "Error"
+          },
+          "geometry": {
+            "width": 52,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 4,
+            "padding": {
+              "top": 0,
+              "right": 8,
+              "bottom": 0,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "属性 1=Info",
+          "variantProperties": {
+            "属性 1": "Info"
+          },
+          "geometry": {
+            "width": 52,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 4,
+            "padding": {
+              "top": 0,
+              "right": 8,
+              "bottom": 0,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "属性 1=Neutral",
+          "variantProperties": {
+            "属性 1": "Neutral"
+          },
+          "geometry": {
+            "width": 40,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 4,
+            "padding": {
+              "top": 0,
+              "right": 8,
+              "bottom": 0,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "属性 1=Success",
+          "variantProperties": {
+            "属性 1": "Success"
+          },
+          "geometry": {
+            "width": 52,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 4,
+            "padding": {
+              "top": 0,
+              "right": 8,
+              "bottom": 0,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "属性 1=Warning",
+          "variantProperties": {
+            "属性 1": "Warning"
+          },
+          "geometry": {
+            "width": 52,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 4,
+            "padding": {
+              "top": 0,
+              "right": 8,
+              "bottom": 0,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Breadcrumb",
+      "classification": "business",
+      "variantAxes": {
+        "level": [
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "variants": [
+        {
+          "name": "level=2",
+          "variantProperties": {
+            "level": "2"
+          },
+          "geometry": {
+            "width": 470,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "level=3",
+          "variantProperties": {
+            "level": "3"
+          },
+          "geometry": {
+            "width": 470,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "level=4",
+          "variantProperties": {
+            "level": "4"
+          },
+          "geometry": {
+            "width": 470,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Button",
+      "classification": "business",
+      "variantAxes": {
+        "size": [
+          "Medium",
+          "Small"
+        ],
+        "state": [
+          "Default",
+          "Disable",
+          "Hover",
+          "Pressed"
+        ],
+        "type": [
+          "Danger",
+          "Ghost",
+          "Primary",
+          "Secondary"
+        ]
+      },
+      "variants": [
+        {
+          "name": "size=Medium, state=Default, type=Danger",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Default",
+            "type": "Danger"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Default, type=Ghost",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Default",
+            "type": "Ghost"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Default, type=Primary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Default",
+            "type": "Primary"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Default, type=Secondary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Default",
+            "type": "Secondary"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Disable, type=Danger",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Disable",
+            "type": "Danger"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Disable, type=Ghost",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Disable",
+            "type": "Ghost"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Disable, type=Primary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Disable",
+            "type": "Primary"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Disable, type=Secondary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Disable",
+            "type": "Secondary"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Hover, type=Danger",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Hover",
+            "type": "Danger"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Hover, type=Ghost",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Hover",
+            "type": "Ghost"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Hover, type=Primary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Hover",
+            "type": "Primary"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Hover, type=Secondary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Hover",
+            "type": "Secondary"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Pressed, type=Danger",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Pressed",
+            "type": "Danger"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Pressed, type=Ghost",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Pressed",
+            "type": "Ghost"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Pressed, type=Primary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Pressed",
+            "type": "Primary"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Pressed, type=Secondary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Pressed",
+            "type": "Secondary"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 16,
+              "bottom": 4,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Default, type=Danger",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Default",
+            "type": "Danger"
+          },
+          "geometry": {
+            "width": 72,
+            "height": 28,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Default, type=Ghost",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Default",
+            "type": "Ghost"
+          },
+          "geometry": {
+            "width": 72,
+            "height": 28,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Default, type=Primary",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Default",
+            "type": "Primary"
+          },
+          "geometry": {
+            "width": 58,
+            "height": 28,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Default, type=Secondary",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Default",
+            "type": "Secondary"
+          },
+          "geometry": {
+            "width": 58,
+            "height": 28,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Disable, type=Danger",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Disable",
+            "type": "Danger"
+          },
+          "geometry": {
+            "width": 72,
+            "height": 28,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Disable, type=Ghost",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Disable",
+            "type": "Ghost"
+          },
+          "geometry": {
+            "width": 72,
+            "height": 28,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Disable, type=Primary",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Disable",
+            "type": "Primary"
+          },
+          "geometry": {
+            "width": 58,
+            "height": 28,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Disable, type=Secondary",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Disable",
+            "type": "Secondary"
+          },
+          "geometry": {
+            "width": 58,
+            "height": 28,
+            "itemSpacing": 10,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Hover, type=Danger",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Hover",
+            "type": "Danger"
+          },
+          "geometry": {
+            "width": 72,
+            "height": 28,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Hover, type=Ghost",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Hover",
+            "type": "Ghost"
+          },
+          "geometry": {
+            "width": 72,
+            "height": 28,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Hover, type=Primary",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Hover",
+            "type": "Primary"
+          },
+          "geometry": {
+            "width": 58,
+            "height": 28,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Hover, type=Secondary",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Hover",
+            "type": "Secondary"
+          },
+          "geometry": {
+            "width": 58,
+            "height": 28,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Pressed, type=Danger",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Pressed",
+            "type": "Danger"
+          },
+          "geometry": {
+            "width": 72,
+            "height": 28,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Pressed, type=Ghost",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Pressed",
+            "type": "Ghost"
+          },
+          "geometry": {
+            "width": 72,
+            "height": 28,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Pressed, type=Primary",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Pressed",
+            "type": "Primary"
+          },
+          "geometry": {
+            "width": 58,
+            "height": 28,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Small, state=Pressed, type=Secondary",
+          "variantProperties": {
+            "size": "Small",
+            "state": "Pressed",
+            "type": "Secondary"
+          },
+          "geometry": {
+            "width": 58,
+            "height": 28,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 8,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "CheckBox",
+      "classification": "business",
+      "variantAxes": {
+        "checked": [
+          "false",
+          "true"
+        ],
+        "state": [
+          "Default",
+          "Disabled",
+          "Hover"
+        ]
+      },
+      "variants": [
+        {
+          "name": "checked=false, state=Default",
+          "variantProperties": {
+            "checked": "false",
+            "state": "Default"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=false, state=Disabled",
+          "variantProperties": {
+            "checked": "false",
+            "state": "Disabled"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=false, state=Hover",
+          "variantProperties": {
+            "checked": "false",
+            "state": "Hover"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=true, state=Default",
+          "variantProperties": {
+            "checked": "true",
+            "state": "Default"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=true, state=Disabled",
+          "variantProperties": {
+            "checked": "true",
+            "state": "Disabled"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=true, state=Hover",
+          "variantProperties": {
+            "checked": "true",
+            "state": "Hover"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chips",
+      "classification": "business",
+      "variantAxes": {
+        "状态": [
+          "Default",
+          "Disabled",
+          "Hover",
+          "Pressed"
+        ]
+      },
+      "variants": [
+        {
+          "name": "状态=Default",
+          "variantProperties": {
+            "状态": "Default"
+          },
+          "geometry": {
+            "width": 102,
+            "height": 28,
+            "itemSpacing": 4,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "状态=Disabled",
+          "variantProperties": {
+            "状态": "Disabled"
+          },
+          "geometry": {
+            "width": 102,
+            "height": 28,
+            "itemSpacing": 4,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "状态=Hover",
+          "variantProperties": {
+            "状态": "Hover"
+          },
+          "geometry": {
+            "width": 102,
+            "height": 28,
+            "itemSpacing": 4,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "状态=Pressed",
+          "variantProperties": {
+            "状态": "Pressed"
+          },
+          "geometry": {
+            "width": 102,
+            "height": 28,
+            "itemSpacing": 4,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Collapsible",
+      "classification": "business",
+      "variantAxes": {
+        "State": [
+          "Collapsed",
+          "Expanded"
+        ]
+      },
+      "variants": [
+        {
+          "name": "State=Collapsed",
+          "variantProperties": {
+            "State": "Collapsed"
+          },
+          "geometry": {
+            "width": 222,
+            "height": 32,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 8,
+              "bottom": 0,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "SPACE_BETWEEN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "State=Expanded",
+          "variantProperties": {
+            "State": "Expanded"
+          },
+          "geometry": {
+            "width": 222,
+            "height": 32,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 8,
+              "bottom": 0,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "SPACE_BETWEEN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Context Menu",
+      "classification": "business",
+      "variantAxes": {
+        "quantity": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      "variants": [
+        {
+          "name": "quantity=1",
+          "variantProperties": {
+            "quantity": "1"
+          },
+          "geometry": {
+            "width": 224,
+            "height": 48,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "quantity=2",
+          "variantProperties": {
+            "quantity": "2"
+          },
+          "geometry": {
+            "width": 224,
+            "height": 90,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "quantity=3",
+          "variantProperties": {
+            "quantity": "3"
+          },
+          "geometry": {
+            "width": 224,
+            "height": 132,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "quantity=4",
+          "variantProperties": {
+            "quantity": "4"
+          },
+          "geometry": {
+            "width": 224,
+            "height": 174,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "control button",
+      "classification": "business",
+      "variantAxes": {
+        "状态": [
+          "Normal size",
+          "Small size"
+        ]
+      },
+      "variants": [
+        {
+          "name": "状态=Normal size",
+          "variantProperties": {
+            "状态": "Normal size"
+          },
+          "geometry": {
+            "width": 136,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MAX",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "状态=Small size",
+          "variantProperties": {
+            "状态": "Small size"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dialog-2in1",
+      "classification": "business",
+      "variantAxes": {
+        "style": [
+          "1button",
+          "title+2 button",
+          "title+3 button"
+        ]
+      },
+      "variants": [
+        {
+          "name": "style=1button",
+          "variantProperties": {
+            "style": "1button"
+          },
+          "geometry": {
+            "width": 400,
+            "height": 160,
+            "itemSpacing": 16,
+            "cornerRadius": 16,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "style=title+2 button",
+          "variantProperties": {
+            "style": "title+2 button"
+          },
+          "geometry": {
+            "width": 400,
+            "height": 160,
+            "itemSpacing": 16,
+            "cornerRadius": 16,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "style=title+3 button",
+          "variantProperties": {
+            "style": "title+3 button"
+          },
+          "geometry": {
+            "width": 400,
+            "height": 256,
+            "itemSpacing": 16,
+            "cornerRadius": 16,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Form Field",
+      "classification": "business",
+      "variantAxes": {
+        "state": [
+          "Default",
+          "Disabled",
+          "Error",
+          "Focus",
+          "Hover"
+        ],
+        "surface": [
+          "Gray",
+          "White"
+        ]
+      },
+      "variants": [
+        {
+          "name": "state=Default, surface=Gray",
+          "variantProperties": {
+            "state": "Default",
+            "surface": "Gray"
+          },
+          "geometry": {
+            "width": 280,
+            "height": 64,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "state=Default, surface=White",
+          "variantProperties": {
+            "state": "Default",
+            "surface": "White"
+          },
+          "geometry": {
+            "width": 280,
+            "height": 64,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "state=Disabled, surface=Gray",
+          "variantProperties": {
+            "state": "Disabled",
+            "surface": "Gray"
+          },
+          "geometry": {
+            "width": 280,
+            "height": 64,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "state=Disabled, surface=White",
+          "variantProperties": {
+            "state": "Disabled",
+            "surface": "White"
+          },
+          "geometry": {
+            "width": 280,
+            "height": 64,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "state=Error, surface=Gray",
+          "variantProperties": {
+            "state": "Error",
+            "surface": "Gray"
+          },
+          "geometry": {
+            "width": 280,
+            "height": 88,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "state=Error, surface=White",
+          "variantProperties": {
+            "state": "Error",
+            "surface": "White"
+          },
+          "geometry": {
+            "width": 280,
+            "height": 88,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "state=Focus, surface=Gray",
+          "variantProperties": {
+            "state": "Focus",
+            "surface": "Gray"
+          },
+          "geometry": {
+            "width": 280,
+            "height": 64,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "state=Focus, surface=White",
+          "variantProperties": {
+            "state": "Focus",
+            "surface": "White"
+          },
+          "geometry": {
+            "width": 280,
+            "height": 64,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "state=Hover, surface=Gray",
+          "variantProperties": {
+            "state": "Hover",
+            "surface": "Gray"
+          },
+          "geometry": {
+            "width": 280,
+            "height": 64,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "state=Hover, surface=White",
+          "variantProperties": {
+            "state": "Hover",
+            "surface": "White"
+          },
+          "geometry": {
+            "width": 280,
+            "height": 64,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Icon Button",
+      "classification": "business",
+      "variantAxes": {
+        "size": [
+          "Medium"
+        ],
+        "state": [
+          "Default",
+          "Disable",
+          "Hover",
+          "Pressed"
+        ],
+        "type": [
+          "Ghost"
+        ]
+      },
+      "variants": [
+        {
+          "name": "size=Medium, state=Default, type=Ghost",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Default",
+            "type": "Ghost"
+          },
+          "geometry": {
+            "width": 40,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Disable, type=Ghost",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Disable",
+            "type": "Ghost"
+          },
+          "geometry": {
+            "width": 40,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Hover, type=Ghost",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Hover",
+            "type": "Ghost"
+          },
+          "geometry": {
+            "width": 40,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Pressed, type=Ghost",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Pressed",
+            "type": "Ghost"
+          },
+          "geometry": {
+            "width": 40,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "icon-text",
+      "classification": "business",
+      "variantAxes": {
+        "size": [
+          "Medium"
+        ],
+        "state": [
+          "Default",
+          "Disable",
+          "Hover",
+          "Pressed"
+        ],
+        "type": [
+          "ghost",
+          "primary",
+          "secondary"
+        ]
+      },
+      "variants": [
+        {
+          "name": "size=Medium, state=Default, type=ghost",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Default",
+            "type": "ghost"
+          },
+          "geometry": {
+            "width": 108,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Default, type=primary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Default",
+            "type": "primary"
+          },
+          "geometry": {
+            "width": 108,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Default, type=secondary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Default",
+            "type": "secondary"
+          },
+          "geometry": {
+            "width": 108,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Disable, type=ghost",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Disable",
+            "type": "ghost"
+          },
+          "geometry": {
+            "width": 108,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Disable, type=primary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Disable",
+            "type": "primary"
+          },
+          "geometry": {
+            "width": 108,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Disable, type=secondary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Disable",
+            "type": "secondary"
+          },
+          "geometry": {
+            "width": 108,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Hover, type=ghost",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Hover",
+            "type": "ghost"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Hover, type=primary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Hover",
+            "type": "primary"
+          },
+          "geometry": {
+            "width": 108,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Hover, type=secondary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Hover",
+            "type": "secondary"
+          },
+          "geometry": {
+            "width": 120,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Pressed, type=ghost",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Pressed",
+            "type": "ghost"
+          },
+          "geometry": {
+            "width": 108,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Pressed, type=primary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Pressed",
+            "type": "primary"
+          },
+          "geometry": {
+            "width": 108,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Pressed, type=secondary",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Pressed",
+            "type": "secondary"
+          },
+          "geometry": {
+            "width": 108,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 8,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Input",
+      "classification": "business",
+      "variantAxes": {
+        "state": [
+          "Actived",
+          "Default",
+          "Disable",
+          "Error",
+          "Hover",
+          "Typing"
+        ],
+        "surface": [
+          "bg-white",
+          "gb-gray"
+        ]
+      },
+      "variants": [
+        {
+          "name": "state=Actived, surface=bg-white",
+          "variantProperties": {
+            "state": "Actived",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 250,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 4,
+              "bottom": 8,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Actived, surface=gb-gray",
+          "variantProperties": {
+            "state": "Actived",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 250,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 4,
+              "bottom": 8,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Default, surface=bg-white",
+          "variantProperties": {
+            "state": "Default",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 250,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 4,
+              "bottom": 8,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Default, surface=gb-gray",
+          "variantProperties": {
+            "state": "Default",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 250,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 4,
+              "bottom": 8,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Disable, surface=bg-white",
+          "variantProperties": {
+            "state": "Disable",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 250,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 4,
+              "bottom": 8,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Disable, surface=gb-gray",
+          "variantProperties": {
+            "state": "Disable",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 250,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 4,
+              "bottom": 8,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Error, surface=bg-white",
+          "variantProperties": {
+            "state": "Error",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 250,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 24,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "state=Error, surface=gb-gray",
+          "variantProperties": {
+            "state": "Error",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 250,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Hover, surface=bg-white",
+          "variantProperties": {
+            "state": "Hover",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 250,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 4,
+              "bottom": 8,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Hover, surface=gb-gray",
+          "variantProperties": {
+            "state": "Hover",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 250,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 4,
+              "bottom": 8,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Typing, surface=bg-white",
+          "variantProperties": {
+            "state": "Typing",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 250,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 4,
+              "bottom": 8,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Typing, surface=gb-gray",
+          "variantProperties": {
+            "state": "Typing",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 250,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 4,
+              "bottom": 8,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Menubar",
+      "classification": "business",
+      "variantAxes": {
+        "state": [
+          "Default",
+          "Disabled",
+          "Hover",
+          "Pressed"
+        ],
+        "surface": [
+          "bg-white",
+          "gb-gray"
+        ]
+      },
+      "variants": [
+        {
+          "name": "state=Default, surface=bg-white",
+          "variantProperties": {
+            "state": "Default",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 97,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Default, surface=gb-gray",
+          "variantProperties": {
+            "state": "Default",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 97,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Disabled, surface=bg-white",
+          "variantProperties": {
+            "state": "Disabled",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 97,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Disabled, surface=gb-gray",
+          "variantProperties": {
+            "state": "Disabled",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 97,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Hover, surface=bg-white",
+          "variantProperties": {
+            "state": "Hover",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 97,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Hover, surface=gb-gray",
+          "variantProperties": {
+            "state": "Hover",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 97,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Pressed, surface=bg-white",
+          "variantProperties": {
+            "state": "Pressed",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 97,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Pressed, surface=gb-gray",
+          "variantProperties": {
+            "state": "Pressed",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 97,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "classification": "business",
+      "variantAxes": {
+        "checked": [
+          "false",
+          "true"
+        ],
+        "state": [
+          "Default",
+          "Disabled",
+          "Hover"
+        ]
+      },
+      "variants": [
+        {
+          "name": "checked=false, state=Default",
+          "variantProperties": {
+            "checked": "false",
+            "state": "Default"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=false, state=Disabled",
+          "variantProperties": {
+            "checked": "false",
+            "state": "Disabled"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=false, state=Hover",
+          "variantProperties": {
+            "checked": "false",
+            "state": "Hover"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=true, state=Default",
+          "variantProperties": {
+            "checked": "true",
+            "state": "Default"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=true, state=Disabled",
+          "variantProperties": {
+            "checked": "true",
+            "state": "Disabled"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=true, state=Hover",
+          "variantProperties": {
+            "checked": "true",
+            "state": "Hover"
+          },
+          "geometry": {
+            "width": 24,
+            "height": 24,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Search",
+      "classification": "business",
+      "variantAxes": {
+        "state": [
+          "Default",
+          "Disabled",
+          "Filled",
+          "Focus",
+          "Hover-left",
+          "Hover-right",
+          "Pressed-left",
+          "Pressed-right",
+          "Typing"
+        ],
+        "surface": [
+          "bg-white",
+          "gb-gray"
+        ]
+      },
+      "variants": [
+        {
+          "name": "state=Default, surface=bg-white",
+          "variantProperties": {
+            "state": "Default",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Default, surface=gb-gray",
+          "variantProperties": {
+            "state": "Default",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Disabled, surface=bg-white",
+          "variantProperties": {
+            "state": "Disabled",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Disabled, surface=gb-gray",
+          "variantProperties": {
+            "state": "Disabled",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Filled, surface=bg-white",
+          "variantProperties": {
+            "state": "Filled",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Filled, surface=gb-gray",
+          "variantProperties": {
+            "state": "Filled",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Focus, surface=bg-white",
+          "variantProperties": {
+            "state": "Focus",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Focus, surface=gb-gray",
+          "variantProperties": {
+            "state": "Focus",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Hover-left, surface=bg-white",
+          "variantProperties": {
+            "state": "Hover-left",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Hover-left, surface=gb-gray",
+          "variantProperties": {
+            "state": "Hover-left",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Hover-right, surface=bg-white",
+          "variantProperties": {
+            "state": "Hover-right",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Hover-right, surface=gb-gray",
+          "variantProperties": {
+            "state": "Hover-right",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Pressed-left, surface=bg-white",
+          "variantProperties": {
+            "state": "Pressed-left",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Pressed-left, surface=gb-gray",
+          "variantProperties": {
+            "state": "Pressed-left",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Pressed-right, surface=bg-white",
+          "variantProperties": {
+            "state": "Pressed-right",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Pressed-right, surface=gb-gray",
+          "variantProperties": {
+            "state": "Pressed-right",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Typing, surface=bg-white",
+          "variantProperties": {
+            "state": "Typing",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Typing, surface=gb-gray",
+          "variantProperties": {
+            "state": "Typing",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 324,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Segmented Button",
+      "classification": "business",
+      "variantAxes": {
+        "count": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
+      },
+      "variants": [
+        {
+          "name": "count=2",
+          "variantProperties": {
+            "count": "2"
+          },
+          "geometry": {
+            "width": 134,
+            "height": 40,
+            "itemSpacing": 2,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 2
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "count=3",
+          "variantProperties": {
+            "count": "3"
+          },
+          "geometry": {
+            "width": 200,
+            "height": 40,
+            "itemSpacing": 2,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 2
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "count=4",
+          "variantProperties": {
+            "count": "4"
+          },
+          "geometry": {
+            "width": 266,
+            "height": 40,
+            "itemSpacing": 2,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 2
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "count=5",
+          "variantProperties": {
+            "count": "5"
+          },
+          "geometry": {
+            "width": 332,
+            "height": 40,
+            "itemSpacing": 2,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 2
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "count=6",
+          "variantProperties": {
+            "count": "6"
+          },
+          "geometry": {
+            "width": 398,
+            "height": 40,
+            "itemSpacing": 2,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 2
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "count=7",
+          "variantProperties": {
+            "count": "7"
+          },
+          "geometry": {
+            "width": 464,
+            "height": 40,
+            "itemSpacing": 2,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 2
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Selection Dropdown",
+      "classification": "business",
+      "variantAxes": {
+        "size": [
+          "Medium",
+          "small"
+        ],
+        "state": [
+          "Default",
+          "Disabled",
+          "Hover",
+          "Pressed"
+        ]
+      },
+      "variants": [
+        {
+          "name": "size=Medium, state=Default",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Default"
+          },
+          "geometry": {
+            "width": 97,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Disabled",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Disabled"
+          },
+          "geometry": {
+            "width": 97,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Hover",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Hover"
+          },
+          "geometry": {
+            "width": 97,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=Medium, state=Pressed",
+          "variantProperties": {
+            "size": "Medium",
+            "state": "Pressed"
+          },
+          "geometry": {
+            "width": 97,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 8,
+              "right": 8,
+              "bottom": 8,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=small, state=Default",
+          "variantProperties": {
+            "size": "small",
+            "state": "Default"
+          },
+          "geometry": {
+            "width": 74,
+            "height": 28,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "SPACE_BETWEEN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=small, state=Disabled",
+          "variantProperties": {
+            "size": "small",
+            "state": "Disabled"
+          },
+          "geometry": {
+            "width": 74,
+            "height": 28,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "SPACE_BETWEEN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=small, state=Hover",
+          "variantProperties": {
+            "size": "small",
+            "state": "Hover"
+          },
+          "geometry": {
+            "width": 74,
+            "height": 28,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "SPACE_BETWEEN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "size=small, state=Pressed",
+          "variantProperties": {
+            "size": "small",
+            "state": "Pressed"
+          },
+          "geometry": {
+            "width": 74,
+            "height": 28,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "SPACE_BETWEEN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sidebar Item",
+      "classification": "business",
+      "variantAxes": {
+        "state": [
+          "default",
+          "hover",
+          "selected"
+        ]
+      },
+      "variants": [
+        {
+          "name": "state=default",
+          "variantProperties": {
+            "state": "default"
+          },
+          "geometry": {
+            "width": 216,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 12,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=hover",
+          "variantProperties": {
+            "state": "hover"
+          },
+          "geometry": {
+            "width": 216,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 12,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=selected",
+          "variantProperties": {
+            "state": "selected"
+          },
+          "geometry": {
+            "width": 216,
+            "height": 40,
+            "itemSpacing": 8,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 4,
+              "right": 12,
+              "bottom": 4,
+              "left": 8
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Slider",
+      "classification": "business",
+      "variantAxes": {
+        "style": [
+          "style-1",
+          "style-2"
+        ]
+      },
+      "variants": [
+        {
+          "name": "style=style-1",
+          "variantProperties": {
+            "style": "style-1"
+          },
+          "geometry": {
+            "width": 280,
+            "height": 24,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "style=style-2",
+          "variantProperties": {
+            "style": "style-2"
+          },
+          "geometry": {
+            "width": 280,
+            "height": 24,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Snackbar",
+      "classification": "business",
+      "variantAxes": {
+        "左侧区域": [
+          "1",
+          "2"
+        ]
+      },
+      "variants": [
+        {
+          "name": "左侧区域=1",
+          "variantProperties": {
+            "左侧区域": "1"
+          },
+          "geometry": {
+            "width": 328,
+            "height": 48,
+            "itemSpacing": 8,
+            "cornerRadius": 16,
+            "padding": {
+              "top": 0,
+              "right": 8,
+              "bottom": 0,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "左侧区域=2",
+          "variantProperties": {
+            "左侧区域": "2"
+          },
+          "geometry": {
+            "width": 328,
+            "height": 48,
+            "itemSpacing": 8,
+            "cornerRadius": 16,
+            "padding": {
+              "top": 0,
+              "right": 8,
+              "bottom": 0,
+              "left": 12
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "split-dropdown",
+      "classification": "business",
+      "variantAxes": {
+        "state": [
+          "Default",
+          "Disable",
+          "Hover-left",
+          "Hover-right",
+          "Pressed-left",
+          "Pressed-right"
+        ],
+        "type": [
+          "ghost",
+          "icon"
+        ]
+      },
+      "variants": [
+        {
+          "name": "state=Default, type=ghost",
+          "variantProperties": {
+            "state": "Default",
+            "type": "ghost"
+          },
+          "geometry": {
+            "width": 128,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Default, type=icon",
+          "variantProperties": {
+            "state": "Default",
+            "type": "icon"
+          },
+          "geometry": {
+            "width": 60,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Disable, type=ghost",
+          "variantProperties": {
+            "state": "Disable",
+            "type": "ghost"
+          },
+          "geometry": {
+            "width": 128,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Disable, type=icon",
+          "variantProperties": {
+            "state": "Disable",
+            "type": "icon"
+          },
+          "geometry": {
+            "width": 60,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Hover-left, type=ghost",
+          "variantProperties": {
+            "state": "Hover-left",
+            "type": "ghost"
+          },
+          "geometry": {
+            "width": 128,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Hover-left, type=icon",
+          "variantProperties": {
+            "state": "Hover-left",
+            "type": "icon"
+          },
+          "geometry": {
+            "width": 60,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Hover-right, type=ghost",
+          "variantProperties": {
+            "state": "Hover-right",
+            "type": "ghost"
+          },
+          "geometry": {
+            "width": 128,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Hover-right, type=icon",
+          "variantProperties": {
+            "state": "Hover-right",
+            "type": "icon"
+          },
+          "geometry": {
+            "width": 60,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Pressed-left, type=ghost",
+          "variantProperties": {
+            "state": "Pressed-left",
+            "type": "ghost"
+          },
+          "geometry": {
+            "width": 128,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Pressed-left, type=icon",
+          "variantProperties": {
+            "state": "Pressed-left",
+            "type": "icon"
+          },
+          "geometry": {
+            "width": 60,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Pressed-right, type=ghost",
+          "variantProperties": {
+            "state": "Pressed-right",
+            "type": "ghost"
+          },
+          "geometry": {
+            "width": 128,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Pressed-right, type=icon",
+          "variantProperties": {
+            "state": "Pressed-right",
+            "type": "icon"
+          },
+          "geometry": {
+            "width": 60,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sub Tabs Item",
+      "classification": "business",
+      "variantAxes": {
+        "state": [
+          "Selected",
+          "Unselected"
+        ]
+      },
+      "variants": [
+        {
+          "name": "state=Selected",
+          "variantProperties": {
+            "state": "Selected"
+          },
+          "geometry": {
+            "width": 64,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 16,
+              "bottom": 0,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "state=Unselected",
+          "variantProperties": {
+            "state": "Unselected"
+          },
+          "geometry": {
+            "width": 64,
+            "height": 40,
+            "itemSpacing": 0,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 0,
+              "right": 16,
+              "bottom": 0,
+              "left": 16
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Switch",
+      "classification": "business",
+      "variantAxes": {
+        "checked": [
+          "false",
+          "true"
+        ],
+        "state": [
+          "Default",
+          "Disabled",
+          "Hover",
+          "pressed"
+        ]
+      },
+      "variants": [
+        {
+          "name": "checked=false, state=Default",
+          "variantProperties": {
+            "checked": "false",
+            "state": "Default"
+          },
+          "geometry": {
+            "width": 36,
+            "height": 20,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=false, state=Disabled",
+          "variantProperties": {
+            "checked": "false",
+            "state": "Disabled"
+          },
+          "geometry": {
+            "width": 36,
+            "height": 20,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=false, state=Hover",
+          "variantProperties": {
+            "checked": "false",
+            "state": "Hover"
+          },
+          "geometry": {
+            "width": 36,
+            "height": 20,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=false, state=pressed",
+          "variantProperties": {
+            "checked": "false",
+            "state": "pressed"
+          },
+          "geometry": {
+            "width": 36,
+            "height": 20,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=true, state=Default",
+          "variantProperties": {
+            "checked": "true",
+            "state": "Default"
+          },
+          "geometry": {
+            "width": 36,
+            "height": 20,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=true, state=Disabled",
+          "variantProperties": {
+            "checked": "true",
+            "state": "Disabled"
+          },
+          "geometry": {
+            "width": 36,
+            "height": 20,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=true, state=Hover",
+          "variantProperties": {
+            "checked": "true",
+            "state": "Hover"
+          },
+          "geometry": {
+            "width": 36,
+            "height": 20,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "checked=true, state=pressed",
+          "variantProperties": {
+            "checked": "true",
+            "state": "pressed"
+          },
+          "geometry": {
+            "width": 36,
+            "height": 20,
+            "itemSpacing": 0,
+            "cornerRadius": 12,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "NONE",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tabs",
+      "classification": "business",
+      "variantAxes": {
+        "count": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
+      },
+      "variants": [
+        {
+          "name": "count=2",
+          "variantProperties": {
+            "count": "2"
+          },
+          "geometry": {
+            "width": 134,
+            "height": 40,
+            "itemSpacing": 2,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 2
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "count=3",
+          "variantProperties": {
+            "count": "3"
+          },
+          "geometry": {
+            "width": 200,
+            "height": 40,
+            "itemSpacing": 2,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 2
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "count=4",
+          "variantProperties": {
+            "count": "4"
+          },
+          "geometry": {
+            "width": 266,
+            "height": 40,
+            "itemSpacing": 2,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 2
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "count=5",
+          "variantProperties": {
+            "count": "5"
+          },
+          "geometry": {
+            "width": 332,
+            "height": 40,
+            "itemSpacing": 2,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 2
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "count=6",
+          "variantProperties": {
+            "count": "6"
+          },
+          "geometry": {
+            "width": 398,
+            "height": 40,
+            "itemSpacing": 2,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 2
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        },
+        {
+          "name": "count=7",
+          "variantProperties": {
+            "count": "7"
+          },
+          "geometry": {
+            "width": 464,
+            "height": 40,
+            "itemSpacing": 2,
+            "cornerRadius": 8,
+            "padding": {
+              "top": 2,
+              "right": 2,
+              "bottom": 2,
+              "left": 2
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Textarea",
+      "classification": "business",
+      "variantAxes": {
+        "state": [
+          "Default"
+        ],
+        "surface": [
+          "bg-white",
+          "gb-gray"
+        ]
+      },
+      "variants": [
+        {
+          "name": "state=Default, surface=bg-white",
+          "variantProperties": {
+            "state": "Default",
+            "surface": "bg-white"
+          },
+          "geometry": {
+            "width": 280,
+            "height": 126,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        },
+        {
+          "name": "state=Default, surface=gb-gray",
+          "variantProperties": {
+            "state": "Default",
+            "surface": "gb-gray"
+          },
+          "geometry": {
+            "width": 280,
+            "height": 126,
+            "itemSpacing": 8,
+            "cornerRadius": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN"
+          }
+        }
+      ]
+    }
+  ],
+  "standaloneComponents": [
+    {
+      "name": ".Context Menu Line",
+      "classification": "helper",
+      "variantAxes": {}
+    },
+    {
+      "name": ".Scoped",
+      "classification": "helper",
+      "variantAxes": {}
+    },
+    {
+      "name": ".search",
+      "classification": "helper",
+      "variantAxes": {}
+    },
+    {
+      "name": "Input/Tag Entry/Default",
+      "classification": "business",
+      "variantAxes": {}
+    },
+    {
+      "name": "Number Selector/Default",
+      "classification": "business",
+      "variantAxes": {}
+    },
+    {
+      "name": "Pagination/Default",
+      "classification": "business",
+      "variantAxes": {}
+    },
+    {
+      "name": "Progress/Default",
+      "classification": "business",
+      "variantAxes": {}
+    },
+    {
+      "name": "Selection Dropdown/.icon",
+      "classification": "business",
+      "variantAxes": {}
+    },
+    {
+      "name": "Snackbar/ColorPicker-Tablet",
+      "classification": "business",
+      "variantAxes": {}
+    }
+  ],
+  "supportingComponents": {
+    "description": "语义图标和局部辅助 COMPONENT 不进入业务组件映射身份，���会在同步提案中作为事实来源统计。",
+    "inventoryCountFromPixso": 72,
+    "supportingStandaloneCount": 31
+  }
+}

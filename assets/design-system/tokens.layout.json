@@ -1,0 +1,54 @@
+{
+  "frame": {
+    "width": "1728px",
+    "height": "1152px"
+  },
+  "window": {
+    "min-width": "1100px",
+    "min-height": "720px",
+    "max-width": "none",
+    "resize": "fluid-desktop"
+  },
+  "shell": {
+    "titlebar-height": "64px",
+    "sidebar-width": "240px",
+    "sidebar-width-collapsed": "64px",
+    "sidebar-width-wide": "360px",
+    "secondary-pane-width": "360px",
+    "main-pane-width": "1fr",
+    "content-max-width": "none",
+    "navigation-divider-width": "0.5px"
+  },
+  "title-layer-semantics": {
+    "final-pane-leading-slot": {
+      "two-pane": "title",
+      "three-pane": "pane-global-actions"
+    },
+    "window-controls": "pinned-right"
+  },
+  "spacing": {
+    "main-content-padding-x": "space.6",
+    "main-content-padding-top": "space.5",
+    "main-content-padding-bottom": "space.0",
+    "header-padding-x": "space.6",
+    "main-title-leading-padding": "space.6",
+    "main-detail-action-leading-padding": "space.5",
+    "sidebar-padding-x": "space.5",
+    "sidebar-padding-y": "space.5",
+    "primary-action-slot-gap-top": "space.3",
+    "primary-action-slot-gap-bottom": "space.4",
+    "secondary-list-card-inset-x": "space.5",
+    "secondary-list-card-padding-x": "space.3",
+    "secondary-content-axis-x": "space.6",
+    "secondary-pane-padding-x": "space.5",
+    "secondary-pane-padding-y": "space.3",
+    "main-detail-padding-x": "space.6",
+    "main-detail-padding-top": "space.5",
+    "main-detail-padding-bottom": "space.0"
+  },
+  "grid": {
+    "columns": 12,
+    "gutter": "space.6",
+    "behavior": "fluid"
+  }
+}

@@ -1,0 +1,438 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.text-to-ui/page-spec.schema.json",
+  "title": "Text to UI dual-output page specification",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schemaVersion",
+    "workflow",
+    "viewport",
+    "shell",
+    "tokenContract",
+    "layoutTokens",
+    "components"
+  ],
+  "properties": {
+    "constraintContract": {
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "mode",
+        "must",
+        "mustNot",
+        "acceptance"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "mode": {
+          "const": "block-on-failure"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "must": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/contractCheck"
+          }
+        },
+        "mustNot": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/contractCheck"
+          }
+        },
+        "acceptance": {
+          "type": "object",
+          "required": [
+            "requiredStates",
+            "requiredInteractions",
+            "requiredArtifacts"
+          ],
+          "properties": {
+            "requiredStates": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/contractCheck"
+              }
+            },
+            "requiredInteractions": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/contractCheck"
+              }
+            },
+            "requiredArtifacts": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/artifactRequirement"
+              }
+            }
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "runId",
+        "hashAlgorithm",
+        "pageSpecSha256"
+      ],
+      "properties": {
+        "runId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hashAlgorithm": {
+          "const": "sha256"
+        },
+        "pageSpecSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "schemaVersion": {
+      "enum": [1, 2]
+    },
+    "workflow": {
+      "enum": [
+        "html-first",
+        "visual-first",
+        "direct-html"
+      ]
+    },
+    "componentContract": {
+      "type": "object",
+      "required": [
+        "adapterMap",
+        "targetFramework",
+        "sourceAvailability",
+        "strictComponentParity"
+      ],
+      "properties": {
+        "adapterMap": {
+          "const": "assets/design-system/html-component-adapter-map.json"
+        },
+        "targetFramework": {
+          "const": "html"
+        },
+        "sourceAvailability": {
+          "enum": ["source", "compiled-only"]
+        },
+        "reuseStrategy": {
+          "enum": ["registered-components", "import-and-repair", "native-pixso-scene"]
+        },
+        "strictComponentParity": {
+          "type": "boolean"
+        },
+        "libraryPage": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact Pixso component-library page that must be active before resolving or inserting registered instances."
+        }
+      }
+    },
+    "viewport": {
+      "type": "object",
+      "required": [
+        "width",
+        "height"
+      ],
+      "properties": {
+        "width": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "height": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "pixso": {
+      "type": "object",
+      "properties": {
+        "strategy": { "enum": ["native-scene", "html-import", "none"] },
+        "stateScope": { "const": "default-visible" },
+        "targetFrame": { "type": "string", "minLength": 1 },
+        "preserveExistingFrames": { "type": "boolean" },
+        "pageData": { "type": "string", "minLength": 1 },
+        "componentMap": { "type": "string", "minLength": 1 }
+      }
+    },
+    "shell": {
+      "type": "object",
+      "required": [
+        "pattern"
+      ],
+      "properties": {
+        "pattern": {
+          "enum": ["pattern-a-two-pane", "pattern-b-three-pane", "pattern-c-tool-workspace", "pattern-d-inspector"]
+        },
+        "patternContract": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["source", "schemaVersion"],
+          "properties": {
+            "source": { "const": "assets/design-system/pattern-contracts.json" },
+            "schemaVersion": { "const": 1 }
+          }
+        }
+      }
+    },
+    "tokenContract": {
+      "type": "object",
+      "required": [
+        "map",
+        "webStrategy",
+        "pixsoStrategy",
+        "forbidHardcodedStyleValues",
+        "usedTokens"
+      ],
+      "properties": {
+        "map": {
+          "const": "assets/design-system/dual-output-token-map.json"
+        },
+        "webStrategy": {
+          "const": "css-custom-properties"
+        },
+        "pixsoStrategy": {
+          "const": "variable-bindings"
+        },
+        "forbidHardcodedStyleValues": {
+          "const": true
+        },
+        "usedTokens": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "role",
+              "sourceToken",
+              "webCssVariable",
+              "pixsoVariable"
+            ],
+            "properties": {
+              "role": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceToken": {
+                "type": "string",
+                "minLength": 1
+              },
+              "webCssVariable": {
+                "type": "string",
+                "pattern": "^--[a-z0-9-]+$"
+              },
+              "pixsoVariable": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+(?:/[a-z0-9_.-]+)+$"
+              },
+              "webUsageRequired": {
+                "type": "boolean",
+                "default": true,
+                "description": "Whether the current page must consume this shared declaration with var(). Set false only for a declared foundation Token intentionally unused by this page."
+              }
+            }
+          }
+        },
+        "webCoverage": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "selector",
+              "property",
+              "webCssVariable"
+            ],
+            "properties": {
+              "selector": {
+                "type": "string",
+                "minLength": 1
+              },
+              "property": {
+                "type": "string",
+                "pattern": "^[a-z-]+$"
+              },
+              "webCssVariable": {
+                "type": "string",
+                "pattern": "^--[a-z0-9-]+$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "layoutTokens": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "logicalName",
+          "webSelector"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "logicalName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "webSelector": {
+            "type": "string",
+            "minLength": 1
+          },
+          "connectionMode": {
+            "enum": [
+              "source-component",
+              "third-party-wrapper",
+              "compiled-runtime-fallback"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "schemaVersion": {
+            "const": 2
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "constraintContract",
+          "provenance"
+        ]
+      }
+    }
+  ],
+  "$defs": {
+    "contractCheck": {
+      "type": "object",
+      "required": [
+        "id",
+        "description",
+        "scope",
+        "assertion"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scope": {
+          "enum": [
+            "source",
+            "rendered-markup",
+            "runtime-source",
+            "visible-text"
+          ]
+        },
+        "assertion": {
+          "type": "object",
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "kind": {
+              "enum": [
+                "selector-count",
+                "text-present",
+                "pattern-present",
+                "attribute-present",
+                "attribute-equals"
+              ]
+            },
+            "selector": {
+              "type": "string",
+              "minLength": 1
+            },
+            "min": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "max": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "text": {
+              "type": "string"
+            },
+            "patterns": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "regexPatterns": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "attribute": {
+              "type": "string",
+              "minLength": 1
+            },
+            "value": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "artifactRequirement": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+        },
+        "kind": {
+          "enum": [
+            "page-spec",
+            "html",
+            "manifest",
+            "delivery-record",
+            "reuse-plan",
+            "pixso-audit"
+          ]
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "purpose": "Canonical HTML-to-Pixso mapping for HarmonyOS PC visible text.",
+  "fontFamily": {
+    "html": {
+      "cssVariable": "--font-sans",
+      "value": "\"HarmonyOS Sans\", \"HarmonyOS Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "rule": "All generated visible UI text uses this one CSS stack. Source HTML font families are normalized to this token."
+    },
+    "pixso": {
+      "variable": "font/family/sans",
+      "collection": "Typography",
+      "mode": "HarmonyOS Sans",
+      "value": "HarmonyOS Sans",
+      "rule": "All formal Pixso text styles use the single installed HarmonyOS Sans family. CSS fallback fonts are never created as separate Pixso styles."
+    }
+  },
+  "formalStyles": [
+    {"htmlToken":"display-l","htmlCssPrefix":"--type-display-l","pixsoStyle":"$style/Typography/Display_L","fontSize":56,"lineHeight":66,"fontWeight":400},
+    {"htmlToken":"display-m","htmlCssPrefix":"--type-display-m","pixsoStyle":"$style/Typography/Display_M","fontSize":48,"lineHeight":58,"fontWeight":400},
+    {"htmlToken":"display-s","htmlCssPrefix":"--type-display-s","pixsoStyle":"$style/Typography/Display_S","fontSize":38,"lineHeight":44,"fontWeight":400},
+    {"htmlToken":"title-l","htmlCssPrefix":"--type-title-l","pixsoStyle":"$style/Typography/Title_L","fontSize":30,"lineHeight":36,"fontWeight":700},
+    {"htmlToken":"title-m","htmlCssPrefix":"--type-title-m","pixsoStyle":"$style/Typography/Title_M","fontSize":24,"lineHeight":28,"fontWeight":700},
+    {"htmlToken":"title-s","htmlCssPrefix":"--type-title-s","pixsoStyle":"$style/Typography/Title_S","fontSize":20,"lineHeight":24,"fontWeight":700},
+    {"htmlToken":"subtitle-l","htmlCssPrefix":"--type-subtitle-l","pixsoStyle":"$style/Typography/Subtitle_L","fontSize":18,"lineHeight":22,"fontWeight":500},
+    {"htmlToken":"subtitle-m","htmlCssPrefix":"--type-subtitle-m","pixsoStyle":"$style/Typography/Subtitle_M","fontSize":16,"lineHeight":20,"fontWeight":500},
+    {"htmlToken":"subtitle-s","htmlCssPrefix":"--type-subtitle-s","pixsoStyle":"$style/Typography/Subtitle_S","fontSize":14,"lineHeight":16,"fontWeight":500},
+    {"htmlToken":"body-l","htmlCssPrefix":"--type-body-l","pixsoStyle":"$style/Typography/Body_L","fontSize":16,"lineHeight":20,"fontWeight":400},
+    {"htmlToken":"body-m","htmlCssPrefix":"--type-body-m","pixsoStyle":"$style/Typography/Body_M","fontSize":14,"lineHeight":16,"fontWeight":400},
+    {"htmlToken":"body-s","htmlCssPrefix":"--type-body-s","pixsoStyle":"$style/Typography/Body_S","fontSize":12,"lineHeight":14,"fontWeight":400},
+    {"htmlToken":"caption-m","htmlCssPrefix":"--type-caption-m","pixsoStyle":"$style/Typography/Caption_M","fontSize":10,"lineHeight":12,"fontWeight":400}
+  ],
+  "legacyTokens": [
+    {"htmlToken":"caption-l","status":"deprecated","pixsoStyle":null,"migration":"Use body-s for 12px supporting text or caption-m for 10px supporting text; do not create a new Pixso Caption_L style."}
+  ],
+  "excludedPixsoStyles": [
+    {"prefix":"$style/Typography/Component/","reason":"Imported native-component internal text or icon-font dependency; never select for new page text."},
+    {"note":"Legacy Body_YaHei14 and Body_YaHei16 had zero live references and were deleted from Pixso during typography cleanup."}
+  ]
+}
