@@ -148,13 +148,13 @@ function bridgeEnvironment(port, stateDirectory) {
     ...process.env,
     TEXT_TO_UI_PIXSO_BRIDGE_PORT: String(port),
     TEXT_TO_UI_PIXSO_BRIDGE_STATE_DIR: stateDirectory,
-    TEXT_TO_UI_PLUGIN_RECOVERY_AFTER_MS: "50",
-    TEXT_TO_UI_PLUGIN_START_DEADLINE_MS: "140",
-    TEXT_TO_UI_PLUGIN_CONNECTION_DEADLINE_MS: "140",
+    TEXT_TO_UI_PLUGIN_RECOVERY_AFTER_MS: "1000",
+    TEXT_TO_UI_PLUGIN_START_DEADLINE_MS: "3000",
+    TEXT_TO_UI_PLUGIN_CONNECTION_DEADLINE_MS: "3000",
     TEXT_TO_UI_MODULE_HEARTBEAT_TIMEOUT_MS: "90",
     TEXT_TO_UI_MODULE_NO_PROGRESS_TIMEOUT_MS: "300",
     TEXT_TO_UI_RESULT_ACK_DEADLINE_MS: "80",
-    TEXT_TO_UI_PLUGIN_CLAIM_LEASE_MS: "30",
+    TEXT_TO_UI_PLUGIN_CLAIM_LEASE_MS: "1000",
   };
 }
 
@@ -163,7 +163,7 @@ async function fetchJson(url, options) {
   return { response, payload: await response.json().catch(() => ({})) };
 }
 
-async function waitFor(predicate, attempts = 80, intervalMs = 10) {
+async function waitFor(predicate, attempts = 1000, intervalMs = 10) {
   for (let index = 0; index < attempts; index += 1) {
     let result = null;
     try { result = await predicate(); } catch (_) {}

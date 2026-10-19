@@ -21,6 +21,8 @@ export function verifyHandoff({projectRoot,handoffPath,skillRoot=ownRoot}){
  const v=h.viewport;if(!v||![v.width,v.height,v.zoom].every(n=>Number.isFinite(n)&&n>0)||!v.stateId||!Number.isFinite(v.scroll?.x)||!Number.isFinite(v.scroll?.y))throw new Error("Invalid handoff viewport/state");
  const data=verifySharedData(skillRoot);
  if(h.designData?.dataVersion!==data.dataVersion||h.designData?.digest!==data.digest)throw new Error("Unsupported Token/component snapshot in handoff");
+ if(!h.dependencies||!Array.isArray(h.dependencies.files))throw new Error("Missing handoff dependency manifest");
+ for(const key of ["componentUsage","componentBundle","styleBundle","generation"]){if(!h.evidence?.[key]?.path||!/^[0-9a-f]{64}$/.test(h.evidence[key].sha256||""))throw new Error("Missing required handoff evidence: "+key);}
  const current=collectProjectDependencies(projectRoot,h.artifact.entry,{observedLocalFiles:h.dependencies.observedLocalFiles});
  if(JSON.stringify(current)!==JSON.stringify(h.dependencies))throw new Error("HTML dependencies changed after acceptance; regenerate the handoff");
  const refs=[...Object.values(h.evidence||{}),h.validation?.evidence].filter(Boolean);

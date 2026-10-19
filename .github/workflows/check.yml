@@ -10,6 +10,7 @@ jobs:
           node-version: '24'
       - run: npm install -g pnpm@11.25.0
       - run: pnpm install --frozen-lockfile
+      - run: pnpm pixso:plugin:build && git diff --exit-code
       - run: pnpm resources:check && pnpm catalog:check && pnpm index:check && pnpm skill:check
       - run: pnpm test
       - run: pnpm skill:pack --out dist/${{ github.event.repository.name }}-candidate.zip
