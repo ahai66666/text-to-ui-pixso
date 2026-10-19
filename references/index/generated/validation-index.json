@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": [
+    {
+      "path": "package.json",
+      "sha256": "167c79410dfad1e7417a5b8a8da648a503fd67247eb0dc9a6d7b1514784e701a"
+    }
+  ],
+  "modes": {
+    "fast-preview": {
+      "purpose": "Reach the first browser-visible interactive page after blocking checks only.",
+      "commands": [
+        "pnpm resources:check",
+        "pnpm index:check",
+        "node <RULES_ROOT>/scripts/validate-page-project.mjs --project <PROJECT_DIR> --skill-root <RULES_ROOT> --mode fast-preview"
+      ],
+      "requiredEvidence": [
+        "context-packet.json",
+        "layout-contract.json",
+        "page-blueprint.json",
+        "page-content-recipes.json",
+        "page-bindings.json",
+        "styles/style-manifest.json",
+        "component-usage.json",
+        "build-or-open-success",
+        "target-viewport",
+        "primary-path-operable"
+      ]
+    },
+    "release-validation": {
+      "purpose": "Run complete repository and delivery validation after visible direction approval.",
+      "commands": [
+        "pnpm resources:check",
+        "pnpm index:check",
+        "node <RULES_ROOT>/scripts/validate-page-project.mjs --project <PROJECT_DIR> --skill-root <RULES_ROOT> --mode release-validation --runtime-evidence <RUNTIME_EVIDENCE>"
+      ],
+      "requiredEvidence": [
+        "direction-approval",
+        "full-validation-report",
+        "final-browser-review"
+      ]
+    }
+  },
+  "availablePackageScripts": {
+    "resources:build": "node scripts/build-resource-index.mjs --repo .",
+    "resources:check": "node scripts/build-resource-index.mjs --repo . --check",
+    "resources:query": "node scripts/query-resources.mjs",
+    "catalog:build": "node scripts/build-skill-catalog-index.mjs",
+    "catalog:check": "node scripts/build-skill-catalog-index.mjs --check",
+    "index:build": "node scripts/build-navigation-index.mjs --repo . --skill-root .",
+    "index:check": "node scripts/build-navigation-index.mjs --repo . --skill-root . --check",
+    "workflow:route": "node scripts/resolve-workflow-route.mjs",
+    "skill:manifest": "node scripts/skill-distribution.mjs manifest",
+    "skill:check": "node scripts/skill-distribution.mjs check",
+    "skill:pack": "node scripts/skill-distribution.mjs pack",
+    "test": "node --test tests/*.test.mjs",
+    "pixso:import": "node scripts/pixso-import-orchestrator.mjs",
+    "pixso:import:compile": "node scripts/compile-pixso-import.mjs",
+    "pixso:component-library:build": "node scripts/generate-pixso-component-library-plan.mjs",
+    "pixso:component-facts:sync": "node scripts/pixso-component-facts-sync.mjs",
+    "pixso:plugin:build": "node scripts/build-pixso-unified-agent-plugin.mjs",
+    "services:start": "node scripts/start-text-to-ui-services.mjs start",
+    "services:status": "node scripts/start-text-to-ui-services.mjs status",
+    "handoff:check": "node scripts/html-handoff.mjs check",
+    "data:sync": "node scripts/shared-data.mjs sync"
+  }
+}

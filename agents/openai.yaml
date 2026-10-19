@@ -1,0 +1,4 @@
+interface:
+  display_name: "Text to UI Pixso"
+  short_description: "Import approved HTML into editable Pixso and verify it"
+  default_prompt: "Use $text-to-ui-pixso to import my approved rendered page into Pixso with fresh capture, component mapping and readback evidence."

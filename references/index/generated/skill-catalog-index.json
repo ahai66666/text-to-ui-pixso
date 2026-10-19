@@ -1,0 +1,1467 @@
+{
+  "schemaVersion": 1,
+  "kind": "text-to-ui-skill-catalog-index",
+  "skill": "text-to-ui-pixso",
+  "policy": {
+    "canonicalSource": "this repository",
+    "missingOrHashDriftIsBlocking": true
+  },
+  "groups": [
+    {
+      "id": "pixso-runtime",
+      "purpose": "Local executable and normative source closure",
+      "files": [
+        {
+          "path": ".gitignore",
+          "sha256": "46ecc55be95db7426ade891d2ae583959bdd9477c2ed4ea2df1a1f7af4648d80",
+          "availability": "local"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "6b3642061b315f5473e9734f1840c0db26a12bebc8dbca113fd682300a431429",
+          "availability": "local"
+        },
+        {
+          "path": "README.md",
+          "sha256": "0d434af3e3e8fb3235ac0025123dc783d6e7440fc7e01b330c5b01d7597a773f",
+          "availability": "local"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "66d48839bdd0649d1ff40b1597b2a220a036c2292634db5f963ab47332236c1d",
+          "availability": "local"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "6e7a3c231b1494e1c7a321e2e08fe986c99cae5d768b90b6b83160f79bc3b9ae",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/component-usage.schema.json",
+          "sha256": "94e636b01ffde5c9960a08e8eb9fec7c1b7fc66de4ad797eac6798f92b59b2bf",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/core-color-token-table.md",
+          "sha256": "8fbbac71c324bcb1845e3716ed1956b8425b979a676fc10754f484d74e0aeaac",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/core-foundation-token-table.md",
+          "sha256": "e4037a3ed0da16ad51d209e6d5fb0183144cc20f5ae224cc3c2af53e644ff8f6",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/design.md",
+          "sha256": "2e30b5fb2266d63a2088e71d0df7cd23627ae60bc0daa6ee0e28a57be1ffd044",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/dual-output-token-map.json",
+          "sha256": "ed12718e8e32406117f5d7ee9ca42e3ebbbb3c6983d6d7ecca4d95d3f4942a6f",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/effect-style-map.json",
+          "sha256": "41c783e7e2ec6dcc97363a113491e0f7df9794c2db3d85f4a71a6f2dde1f6324",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/harmonyos-component-adapter-map.json",
+          "sha256": "309dddab38eecfe33e289ebd5fe8c17c7d84ba9a197b7a9af054bf03de4dabca",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/harmonyos-component-mapping-table.json",
+          "sha256": "fa91e75fa6295fb2dbb50930af27a03c604af595d33c90f9999702a76f205521",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/html-component-adapter-map.json",
+          "sha256": "001a6d5e35bf589a266e7b36407dc168be99504e11e3f4a4239642cf08b92eff",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/html-component-adapter-map.schema.json",
+          "sha256": "d697c2f0e1a7e826f359c4ff3bad41a4e65d097f23d28e1fc561ae70aeb35108",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/mapping-registry.json",
+          "sha256": "312eb6712a2c517457afc84bb48856976328b52acb88638e4972804323a2b5ef",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/mapping-registry.schema.json",
+          "sha256": "d7a7892ee375880946e7aaa1114109d013464afee86ab5c09b3a314daf6a73eb",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/page-binding-audit.schema.json",
+          "sha256": "1791c9b6fedde83b74f503318b74d9de4faab8d62f83e8071c80b76d2a563180",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/page-spec.example.json",
+          "sha256": "478f31c36326569a47635f9822750eef48d70d07072d0d5d36e7dffa7a5a123b",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/page-spec.schema.json",
+          "sha256": "c34b5b947c216f83e4057be939b42fbe8ceb70e7f858ff5fbf82af3548103e19",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pattern-contracts.json",
+          "sha256": "7c281c8924ddb4533422b34d680c196a2910147c39944b0d7061d3344babd93e",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pattern-contracts.schema.json",
+          "sha256": "30871a1c7620f1c58a7cc45c0025ea76755e4d0bb8db6b6247f88927a0231d4d",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-binding-audit.schema.json",
+          "sha256": "e4529719c30119d0fb53192469b6f243f35c7bf2ed3c70b136379b47ec6b0304",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-component-facts.json",
+          "sha256": "86f2ccf0cbe37646280f1ceda963e358c788d86ce8b964cb4b41116c749d8f7b",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-component-facts.schema.json",
+          "sha256": "7d39e6b5a39b512e920b72cf75bfcf3ed1ed16f5833ac3386501282476697db3",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-component-library-plan.schema.json",
+          "sha256": "ba94a78aa063dabefeeb51be7bd364e3612c53655f763710521bd25cfd3bdab2",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-component-migration.json",
+          "sha256": "0fb78694cf0ee234c16aab3ddb3a95331bcfedbaff986b78b9f05af0b324ca6e",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-component-registry.json",
+          "sha256": "44584f282e801f3e8e34d995792bfaf950623f1ee4c125ae99ad08c4efc0d1d6",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-component-specs.json",
+          "sha256": "af74a087d84b9236fd22180d4ffce9b1036a8f123b6a1bae85f0df3e680efc11",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-core-baseline.json",
+          "sha256": "0bd9ba55043bbee8650d78aabc03c015bf5579d60232e568cd853ce1ced6fbdf",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-icon-map.json",
+          "sha256": "4a9544355cd80c0b9cc0910e99d8b952b38d9afcf56ab9ec71dd5a4db4050ab9",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-manual-additions.json",
+          "sha256": "5415ff603c72c9222554d0fe47943003c46bdfd91968f0b808ebe4f20f329628",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-native-component-map.json",
+          "sha256": "dfa653ba8ffdd3965f7dd83598fc3ca045e101825017d0860edcfded043afb38",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-native-component-map.schema.json",
+          "sha256": "b0b0bdadfcfb289e1a240055e8160ff2081a3b7f6d0be44b794db0eae1bf02e6",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-operation-plan.schema.json",
+          "sha256": "f9c36fd736147540d949a89ee465a33bcb96e6ea6e4ac8012b52d524774e9e1c",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-scene.schema.json",
+          "sha256": "3a5f5b99a72146d5ffa5a0d2dfa6ff514296175e6b709da608ae2ccdae047aa2",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-tokens-studio.json",
+          "sha256": "c6f62fcc22ac09388001e761f9743f39d6b870b25d219da0e5496ac0bd17c55d",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/pixso-variables.json",
+          "sha256": "24ef3b046ecccf6a80b450b66551ada3dff4b02715aadbbb6eb0fdacdee691c8",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/titlebar-scene-contracts.json",
+          "sha256": "56c53568f289e221dc8084f2377a5ee74b3ac6076e5146ae18ec1725b42c2565",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/token-runtime-map.json",
+          "sha256": "af423b313eedd7b3ef1f5b2faa6cc50c21e61cd844b7216b212c689651f91cb6",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/token-utility-map.json",
+          "sha256": "8b5bd25651c7c7b2fa90f2b8999ca3964d24fd47a52525d25ac2c2b013f55eda",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.colors.css",
+          "sha256": "00c25b283287b5c42ba5676efa11a497541710a3269c6e06c80fd19f28b4a94c",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.colors.json",
+          "sha256": "928f56e621856108ae75214339953582707fb418fe9fec7e5ace42bcc666ff12",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.icon.css",
+          "sha256": "e4f2e7f649a7d9842b53bba06de12812590b161495f68246c963f526442e5883",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.icon.json",
+          "sha256": "85c1c790166e6dcd7deccdd0b000bd794a0ad69541522b50044628c019b42598",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.layout.css",
+          "sha256": "6a6bd5f3be075de0797091a4c742f6f0af62c3cc3385a62119c6572a382e73ed",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.layout.json",
+          "sha256": "fad559a9d23786dd44df91a94bf8f15b36cb2b36bb61645c8f4227dc3b390e7c",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.radius.css",
+          "sha256": "5afad92e8bc2f557975c1b73cc5eb9915270b60a4d3e4101d52becebed4cb97d",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.radius.json",
+          "sha256": "f11b993c2d131c34e2b84c5213779609c14bde2cde31257b9fb938178a84eb01",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.shadow.css",
+          "sha256": "77db0d1eb9843c25650a32a9d14d0aeee41f1f6939168569dfab87b4e09337a5",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.shadow.json",
+          "sha256": "5bde2b214516d387a8721bc06dd089ad3737da7ae70f1a66af7fa0fc6506aedd",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.size.css",
+          "sha256": "9c283e4e8764a622ee73ba066c7206e6b202da665d5e41537ac204c58a37e4a7",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.size.json",
+          "sha256": "4aab8b8eb088bb2d1389ba5756bd05d6d1d5811f737367ff104e6a9d12c079a1",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.spacing.css",
+          "sha256": "75cc5f9781105b5037f32d6dab05e561ce03dbebdb419dcb3cb11c9f5063b506",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.spacing.json",
+          "sha256": "a8cd8dfee267fb7f22c988e8a7a69552f538e67438b437e8eb3d42a64964e2ad",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.typography.css",
+          "sha256": "a41abd576aec72d5697aa9d4be5c7d7ed7df7373fd2121f9517741dd4ba66d06",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.typography.json",
+          "sha256": "eb1109551f014197a25eab1e77c374c89211675b4af05e95a1684904595e5657",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/tokens.utility.css",
+          "sha256": "8952af44a1067c6cedce86719f978c34349358f5afcc2d276cfdf909ffc04576",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/typography-style-map.json",
+          "sha256": "6588594641e898f77a9908ecf0f23a7cabe578e7a2cd37976a1f6c38ad063956",
+          "availability": "local"
+        },
+        {
+          "path": "assets/design-system/ui-scene.schema.json",
+          "sha256": "c44acfaaaeb575258229b4eb6c66075e501df251a76f3bc94ee9547a485cabcc",
+          "availability": "local"
+        },
+        {
+          "path": "assets/icons/components/checkbox-check.svg",
+          "sha256": "974f9201822e6916cc24d6b276dd400bb647c3417d77529a646fa02e8f9f0b8c",
+          "availability": "local"
+        },
+        {
+          "path": "assets/icons/icon-aliases.json",
+          "sha256": "45cdccec1de711c0e515f7eaa9cb5527f6d2cf7923f6db031ca8d5629e8027db",
+          "availability": "local"
+        },
+        {
+          "path": "assets/icons/status/danger-circle.svg",
+          "sha256": "fa50b80afbd388656e6b2605b2fceb7a7cbd314c70e1c8f94ceae5a472a82946",
+          "availability": "local"
+        },
+        {
+          "path": "assets/icons/status/info-circle.svg",
+          "sha256": "1168587237cc1197204808497041acb788d32ce5a26dc3f2d8ccba751d6c96fd",
+          "availability": "local"
+        },
+        {
+          "path": "assets/icons/status/neutral-circle.svg",
+          "sha256": "c0e0ea1e69ff0538d9f6d9bb74c1efc187ffc3b52c071707210c43e49ccc444d",
+          "availability": "local"
+        },
+        {
+          "path": "assets/icons/status/success-circle.svg",
+          "sha256": "5352fd2399a04a81ba39b1b98c073ef39566d6138ff6221b8056e5e749e94bd2",
+          "availability": "local"
+        },
+        {
+          "path": "assets/icons/status/warning-circle.svg",
+          "sha256": "8695debbb73dad24701c51651639b4574e474554bcea36511dbcf388b96a077e",
+          "availability": "local"
+        },
+        {
+          "path": "assets/icons/titlebar/README.md",
+          "sha256": "1f87c08f70a51a7cac69d6a08d6e689d09cde59131271120a5344d9846742a04",
+          "availability": "local"
+        },
+        {
+          "path": "assets/icons/titlebar/window-close.svg",
+          "sha256": "0504a832e16b201abdf76cb44415a6d05496113e968b135cde47fda163a5fb5d",
+          "availability": "local"
+        },
+        {
+          "path": "assets/icons/titlebar/window-maximize.svg",
+          "sha256": "4bdb98a0148b667ae7ebf4b83e2f5718ea94a653ab092c0c9bfdea0019399824",
+          "availability": "local"
+        },
+        {
+          "path": "assets/icons/titlebar/window-minimize.svg",
+          "sha256": "8df21e3322cb0ff46162b80537288cc29d8b5208c96482fd438c241e0346fffa",
+          "availability": "local"
+        },
+        {
+          "path": "package.json",
+          "sha256": "167c79410dfad1e7417a5b8a8da648a503fd67247eb0dc9a6d7b1514784e701a",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/package.json",
+          "sha256": "b83b747cb3e6f9eb3b8983e13cd434d410417aa178fb834957024f14f5bbd4f0",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components.json",
+          "sha256": "65b7d4ae603b5dcc829f87c692d21c6e1d2ff463049169935456088c4d9548fc",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/accordion.json",
+          "sha256": "34997266674b5eada3fd7d1d0f24d7608c026badfc9fd560926e87c8c82d936c",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/alert-dialog.json",
+          "sha256": "3eddcdce074177ea25d561b3e2c73dc4ef46b24c523064f85d9bfd0c688b4138",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/alert.json",
+          "sha256": "58f8fd002538bb77c3a1edf9c73ce5edd1f8512b5259ec3b754e7d5a06d4dcea",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/attachment.json",
+          "sha256": "25b6e56a70d8b5f866d97c8c75d2b0357a7721ffcad91114ebcb0f09f0b2a9da",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/avatar.json",
+          "sha256": "85b125b9124e602ce64027bb091ed96e1fd6c13ee7c5099cd3c68117934b7d66",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/badge.json",
+          "sha256": "51c6f7ed8cbd93836b8d2d884b8ee8939557bd594397ecad4219c994d1c97342",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/breadcrumb.json",
+          "sha256": "155e94b27bf9288b8428b8f5e5b942bcd70262169f0dd5af45b10d43547d4385",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/button.json",
+          "sha256": "6a0a601bacba32b899b85bbb5fa69bdc891e6157d786876acbdf9300abde78ae",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/calendar.json",
+          "sha256": "cdaf6d13613579d84df26884a559ffbf97597cd529ae480c0dee5ceb5c495bf6",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/checkbox.json",
+          "sha256": "e8b66e42f4c4de814f8df77b1bd7bb009985ee8177f8b85717a88044b1ba4e7b",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/chips.json",
+          "sha256": "9b01efb731c93229cd30cac009ae33cf0bf01f45153f101eea2c51a37518b42f",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/collapsible.json",
+          "sha256": "1b1862897b81bb5dc19ff0fb219e7aaa8b5df2564095cf72ab5485faa830574e",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/color-picker.json",
+          "sha256": "ea40c18dc5d24a83517f3cad3528a6df5d9eef425fddbf96de03348dd7407649",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/combobox.json",
+          "sha256": "5bb74a89b6079f01c69daec58c6e2fe0572fb315c8182eb2c9ae027a13cf99bf",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/context-menu.json",
+          "sha256": "b5bec0ea9321ebc4b06953d18cce87b1915e64da54b7b80a5d613d788e75801c",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/date-picker.json",
+          "sha256": "000d6f87c3f97d0ba1c30b1486ce7d64eee8bb67b9824054a40f52a3d75405e4",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/dialog.json",
+          "sha256": "dad2fe2671df1cba6897f7455fff35501ac77c0cbb58e05b1d32cda5c020561b",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/dropdown-menu.json",
+          "sha256": "3c22962f7aa1e4bb1eac577e102760caee765cc688736948cb0ef47f827ffab8",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/field.json",
+          "sha256": "65b8c9506c3d8e873522a3ffec98152a0e28990c31b8008c37451b85e8c9d353",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/form-field.json",
+          "sha256": "b09d41a4abdfe20e5b442e5f838327cb8785825ce14ea70294599f7ac9945d90",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/hover-card.json",
+          "sha256": "58116659ed39d2b93f7f1908dfff04ed18f854ac8bfa0acc64cfa7dd19dc64b0",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/input.json",
+          "sha256": "c50333a2b064cb14defcb3ee9454833c78db17790826664408cf1e5510b81062",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/label.json",
+          "sha256": "df4a8a21d190c058db6aed2c4840ccc9f5de8741821878739b4a621274c08d22",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/list-card.json",
+          "sha256": "1561067934fc95b8974c82ff4379eb14efb4a013fe0d1460c2095b45709bc61b",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/menubar.json",
+          "sha256": "a4814444e4c021a7cc0d01a67e39b843cd7a2c41ddfdb04c6eeea31a1eac605a",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/native-select.json",
+          "sha256": "0b01cbf27cc1ea2a42ab5566ff5c74af21ec2367899ee5453f0ca7dc07190a38",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/number-selector.json",
+          "sha256": "95b9561ba059881d90cd3e438bcd4431ab1f5ddd7d96afe7c82a9342509950c3",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/pagination.json",
+          "sha256": "e3e5a411e3e4a28a5780f98f5b0a3df2df9a90d16e3565c04b2385efdac1f0c2",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/popover.json",
+          "sha256": "bf16b589e0cf26ab3588a1186235b6ebce0b08edc373724dab6bab36dd66d246",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/primary-navigation-item.json",
+          "sha256": "bbcb0abe41ea62dbe4a7e5824ceddf43da261e961267289df9c87a7e26a0dd6d",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/progress.json",
+          "sha256": "f0bf09193674b9297ebb5e3d83f363d1bf4618bf93605c7bbaa4cf2faacd0f17",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/radio-group.json",
+          "sha256": "f17ba4e2d2df17194077c6e782e7cf3179f8748c56f966db9a6ef35cc4bde005",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/radio.json",
+          "sha256": "63960a3162641c281723aebb7a13933127e6e497c374cc6e7dd1083f900edfad",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/search.json",
+          "sha256": "bc985283700b4b6e48e3e125bce7bcdbd553a9eec7f94adab106d985f21c4093",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/segmented-button.json",
+          "sha256": "12865a74cfc009d3aa91662993ccde8af741b027ece32e4c68a80a71f858e63d",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/select.json",
+          "sha256": "7103d821cb9921de1ad021b7268860f246ab8f67e25e9d3b221b5bc773db5b12",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/semi-modal.json",
+          "sha256": "fc06fffe7d088d0dbd34535a97296c29953464f65278f5a012641c5b30254642",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/sidebar.json",
+          "sha256": "f1a36195fa43e9c916737de5db45d0c74f07c8bde33d1d28b275a7c78303495e",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/slider.json",
+          "sha256": "5bc21e5d71e0976fa90becad2decd0c8dc92b759451723c74b27222d6b70294c",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/snackbar.json",
+          "sha256": "b6d6d24b9dbe0bcf88b6a9499c70bdceb5478831cf76aaf09485835bfe635186",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/sub-tabs.json",
+          "sha256": "da44811b68707d1f9ad46568bf75dc9eaefd093a4857b055fca623f6e56bfb4f",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/switch.json",
+          "sha256": "b8f34ef9690fe8f2533340bd62a49415009130fd1c93b2c13cd310a6fcb918c0",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/table.json",
+          "sha256": "d3b47cc5437bf13f40521f86f47f351fafdffa3fd0a5a4cb411ffe8d3e86f24b",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/tabs.json",
+          "sha256": "11e1367f0ddba28552459bdb1b6cae4e13082cd0929b6b8aa9b8a74c880310ae",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/textarea.json",
+          "sha256": "e7f44c58c32ae12d0d37e6b3958cae1cfa41015f851a073860f0ab0548d94fb6",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/time-picker.json",
+          "sha256": "84dcfea53c731d00d8240e5d5d00b569450c86c9863d9f409d5415a1d4a054af",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/titlebar.json",
+          "sha256": "74b292c75a069c793d6561e479f74c4365d1c60bc473af142dfbc6f9f429a1ad",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/tooltip.json",
+          "sha256": "e72653cf95c8e6b04f744da985c54f157fac2c60eed094821abb25ded8765d40",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/components/tree-view.json",
+          "sha256": "47554d8df250635aefb5c3b7a4e11996b75dd35d155ac05484d976eaf9e7de22",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/readiness-policy.js",
+          "sha256": "d996debdba568941832ae6103185a7620fc5fe90ce6bd6e357149a412b11fa1f",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/registry.json",
+          "sha256": "1b7e0da34ee92e594b05bc462f251b77f162a064ee37934d0e95c85c074b2e28",
+          "availability": "local"
+        },
+        {
+          "path": "packages/component-contracts/src/titlebar-segments.js",
+          "sha256": "f845ee76d7b26a95d9166a4e3881e58a67f831716b7aefa7dc7dfdb56d19699b",
+          "availability": "local"
+        },
+        {
+          "path": "packages/tokens/package.json",
+          "sha256": "f0c117dd18435a03a3e4bc7e000b99b7879f77c8f3585ad6655c84c620f97b06",
+          "availability": "local"
+        },
+        {
+          "path": "packages/tokens/src/dual-output-token-map.json",
+          "sha256": "ed12718e8e32406117f5d7ee9ca42e3ebbbb3c6983d6d7ecca4d95d3f4942a6f",
+          "availability": "local"
+        },
+        {
+          "path": "packages/tokens/src/index.css",
+          "sha256": "9da5b4d2936e60a47746d82e7fc3ff92870e6d8c29793d00a994c5522ab397fc",
+          "availability": "local"
+        },
+        {
+          "path": "packages/tokens/src/token-runtime-map.json",
+          "sha256": "af423b313eedd7b3ef1f5b2faa6cc50c21e61cd844b7216b212c689651f91cb6",
+          "availability": "local"
+        },
+        {
+          "path": "packages/tokens/src/token-utility-map.json",
+          "sha256": "8b5bd25651c7c7b2fa90f2b8999ca3964d24fd47a52525d25ac2c2b013f55eda",
+          "availability": "local"
+        },
+        {
+          "path": "packages/tokens/src/tokens.colors.css",
+          "sha256": "00c25b283287b5c42ba5676efa11a497541710a3269c6e06c80fd19f28b4a94c",
+          "availability": "local"
+        },
+        {
+          "path": "packages/tokens/src/tokens.icon.css",
+          "sha256": "e4f2e7f649a7d9842b53bba06de12812590b161495f68246c963f526442e5883",
+          "availability": "local"
+        },
+        {
+          "path": "packages/tokens/src/tokens.layout.css",
+          "sha256": "6a6bd5f3be075de0797091a4c742f6f0af62c3cc3385a62119c6572a382e73ed",
+          "availability": "local"
+        },
+        {
+          "path": "packages/tokens/src/tokens.radius.css",
+          "sha256": "5afad92e8bc2f557975c1b73cc5eb9915270b60a4d3e4101d52becebed4cb97d",
+          "availability": "local"
+        },
+        {
+          "path": "packages/tokens/src/tokens.shadow.css",
+          "sha256": "77db0d1eb9843c25650a32a9d14d0aeee41f1f6939168569dfab87b4e09337a5",
+          "availability": "local"
+        },
+        {
+          "path": "packages/tokens/src/tokens.size.css",
+          "sha256": "71a36eb06f88daaf395900c1e419f4bad8f4826b5aaa16d0e05490a98e95a6fe",
+          "availability": "local"
+        },
+        {
+          "path": "packages/tokens/src/tokens.spacing.css",
+          "sha256": "75cc5f9781105b5037f32d6dab05e561ce03dbebdb419dcb3cb11c9f5063b506",
+          "availability": "local"
+        },
+        {
+          "path": "packages/tokens/src/tokens.typography.css",
+          "sha256": "a41abd576aec72d5697aa9d4be5c7d7ed7df7373fd2121f9517741dd4ba66d06",
+          "availability": "local"
+        },
+        {
+          "path": "packages/tokens/src/tokens.utility.css",
+          "sha256": "8952af44a1067c6cedce86719f978c34349358f5afcc2d276cfdf909ffc04576",
+          "availability": "local"
+        },
+        {
+          "path": "pnpm-workspace.yaml",
+          "sha256": "226909e7726c235c6b854540949bc8144625420ccdd6298fca1f7885d8bfe524",
+          "availability": "local"
+        },
+        {
+          "path": "protocol/README.md",
+          "sha256": "f8e7a7134e0e9b32287d0c236e5ab65b446f884b2a47b82d36c3dfe34e4a67a9",
+          "availability": "local"
+        },
+        {
+          "path": "protocol/bridge-message.schema.json",
+          "sha256": "8fc9c679a2b2864e0902acb7bc13fbc81aff1bca9a3ad2fd78bc8a4c99c15945",
+          "availability": "local"
+        },
+        {
+          "path": "protocol/compatibility-matrix.json",
+          "sha256": "9e6003d9f78fd6b5432a77674c3269cd49128c45d52ce2c5155df7d8c51cd888",
+          "availability": "local"
+        },
+        {
+          "path": "protocol/operation-plan-v5.schema.json",
+          "sha256": "3b118fe6b272f00d21aa15bfd2f0e1d28c20a15b0f794368890579a12d653c27",
+          "availability": "local"
+        },
+        {
+          "path": "protocol/permanent-agent-capabilities.json",
+          "sha256": "3c09584249b51f7529a3aa5a1e594b47eaf6b689107582c2f270c5a4a3557a0b",
+          "availability": "local"
+        },
+        {
+          "path": "references/components/component-readiness-policy.json",
+          "sha256": "0537ed9e8cce0556b5208fe3abcbd7a1662f0c689549289a4cdc2588ee77533d",
+          "availability": "local"
+        },
+        {
+          "path": "references/components/component-selection-rules.json",
+          "sha256": "16eebc2aaab67c7430c340e889d902b19a5b03bcb13a6c9f64b5e090a6854d02",
+          "availability": "local"
+        },
+        {
+          "path": "references/components/local-component-delivery.md",
+          "sha256": "743ea017d66ddbd69400b6f570a907cb5144aa567ce6fdb30095e30b445875cf",
+          "availability": "local"
+        },
+        {
+          "path": "references/components/source-resolution.md",
+          "sha256": "cb1510a275fbe4979e7adac8c01aba58707ccc36f024f7cab4150d8357b513e2",
+          "availability": "local"
+        },
+        {
+          "path": "references/distribution.md",
+          "sha256": "da3eb3e44362acaac4712d9c117cb2159a5e9f07d27554263eeb3f5afb09fb94",
+          "availability": "local"
+        },
+        {
+          "path": "references/dual-output-contract.md",
+          "sha256": "d98ef0fa237f6005d9322253ca907b2db93bb14a3c3decdcf7cef9cd96b6cdaf",
+          "availability": "local"
+        },
+        {
+          "path": "references/handoff-protocol.md",
+          "sha256": "25debae6d5cbf7e35caacd9759d7d50d155aa5ef57ad7c109ef9f08774968a5c",
+          "availability": "local"
+        },
+        {
+          "path": "references/icon-selection.md",
+          "sha256": "8dc4e4da9988cc924ee70e143229d032bc046c731a0caca74a4bc3da2e238397",
+          "availability": "local"
+        },
+        {
+          "path": "references/index/capability-aliases.source.json",
+          "sha256": "db9a7dd35f3fb3e50df70d89a754d7774dfa61a960853abea4d5a38b15fff9d3",
+          "availability": "local"
+        },
+        {
+          "path": "references/index/layout-routes.source.json",
+          "sha256": "b231f7d101367b3745da0af619e91720afabb3e87c49f4ae5ac2cae188642bd0",
+          "availability": "local"
+        },
+        {
+          "path": "references/index/task-routes.source.json",
+          "sha256": "478e4a537251859692e5eecada8f7275f8337a3f707621272e59cc0a07fdd0fc",
+          "availability": "local"
+        },
+        {
+          "path": "references/layout-system.md",
+          "sha256": "b510ec9b358f955853c68c39846db0179cd94329f4dded5e128beea8dfb439d4",
+          "availability": "local"
+        },
+        {
+          "path": "references/mapping-registry.md",
+          "sha256": "f86c1d1eae652847812676bfd27fae0fb469283c807fa42e894591df69f95fba",
+          "availability": "local"
+        },
+        {
+          "path": "references/pixso-component-bindings.md",
+          "sha256": "b4fc8f7d21dd00bf230a075a37828771b8d3b0fd8724a78b72b161946f85b538",
+          "availability": "local"
+        },
+        {
+          "path": "references/pixso-component-maintenance.md",
+          "sha256": "62809de69d7856b603eabe8718322283f9b48a5352669df84e52a9e41763d8bd",
+          "availability": "local"
+        },
+        {
+          "path": "references/pixso-component-usage.md",
+          "sha256": "6265f100b6b4127e7d1981362daad06678a4852480901e0cfcd20b837b081ea2",
+          "availability": "local"
+        },
+        {
+          "path": "references/pixso-execution-invariants.md",
+          "sha256": "f4b8bd7dc649dbb432feaea94a044a0d5b9569e7baf1fcbc3985aae53c161453",
+          "availability": "local"
+        },
+        {
+          "path": "references/pixso-fidelity-import-pipeline.md",
+          "sha256": "374023a40de359fe23c8c0bce431fa6ea5f96e11a7c701489130f8165336a939",
+          "availability": "local"
+        },
+        {
+          "path": "references/pixso-fidelity-routing.md",
+          "sha256": "ac142928813896ad5d677904369b52d746c6b9829f2ad60e036ea74570110bb3",
+          "availability": "local"
+        },
+        {
+          "path": "references/pixso-import-details.md",
+          "sha256": "d96e2bfd586be25acca45d69c007804da91e51057dcbb3eb11ef58764176af07",
+          "availability": "local"
+        },
+        {
+          "path": "references/pixso-mcp.md",
+          "sha256": "32b30b9cd7e6c67707e7e0504fd09d866444c74615dd4ea3f4d9f53ce17654c7",
+          "availability": "local"
+        },
+        {
+          "path": "references/pixso-native-scene.md",
+          "sha256": "6b4fec29e29fe78b73add9a80f79198148fa8337d9d7a7d83ecc8f3dccb6d400",
+          "availability": "local"
+        },
+        {
+          "path": "references/pixso-performance.md",
+          "sha256": "4062fd8616491cb309b5aa321208a809baa5407f96ad78c9cbdde7238794c4b3",
+          "availability": "local"
+        },
+        {
+          "path": "references/pixso-visual-parity.md",
+          "sha256": "f8dc07f1b897761c92fd9eca1115bea997b48fda2dd977d8d6fb5d101411a8e5",
+          "availability": "local"
+        },
+        {
+          "path": "references/resource-workflow.md",
+          "sha256": "4a889e526e91617e44b45fdd1fc581877058dbe3846a10920dbd7a2bfb608b25",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/core/delivery.md",
+          "sha256": "f7ac1ba885d591fde8a2a365f351105235d02b446fabf895dcd50c4b83453ddc",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/delivery/pixso.md",
+          "sha256": "743ea017d66ddbd69400b6f570a907cb5144aa567ce6fdb30095e30b445875cf",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/layout/pixso-mapping.md",
+          "sha256": "b510ec9b358f955853c68c39846db0179cd94329f4dded5e128beea8dfb439d4",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-detail/cross-source-mapping-registry.md",
+          "sha256": "4d8d01f31847edff581db89056efd1a221a0df96092563ff52ad0e79837e9c86",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-detail/html-text-sizing-and-truncation.md",
+          "sha256": "5555e808ac97175d5aec62a1ed219ad41baaf89ee048688ffd8d52c74abb4d4c",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-detail/icon-sizing-stroke-and-hot-zone-contract.md",
+          "sha256": "cad15341b0155f7eda636f500d90b8b75af1cc0bdd6be61a20287e8a007c0d4d",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-detail/overview.md",
+          "sha256": "3ab05a1ee4ec6d3690530a143fb5618b258bcf4ba9f56ae0b64a206955b1a247",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-detail/pixso-component-facts-sync.md",
+          "sha256": "3242b68865bc1ebbdb2c678886a858ea78248da417a125e4bfdf5721452378bc",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-detail/typography-mapping-policy.md",
+          "sha256": "a4c90acee38c5f9cfb2227a8b5630d1bc2cd6e1939491fe06514536ed1762aa0",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-mcp/binding-audit.md",
+          "sha256": "ff1b823e381e7b0095139a45516d587ef11cb27aa335cb26ff3e2ca754079a21",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-mcp/connection.md",
+          "sha256": "432ddc17f57b6f84599a0f21de1974a58f7291d08785bfe39a045489cc51a19f",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-mcp/creation-sequence.md",
+          "sha256": "0103cee55aa03ed2ede1dae9cd57ec96241b854b6025a9eafb5feee5336a6382",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-mcp/deliverable-reference.md",
+          "sha256": "4717c910aa984a20d6cb1ca08beffd20e6a54f7ea1c6e71edfdd08dd80518e19",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-mcp/existing-design-and-html-handoff.md",
+          "sha256": "142e29e0743793fe98e2842f771ffd9fcd7f71d98ea9ced47e91713b5009636d",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-mcp/failure-handling.md",
+          "sha256": "332f25be8eab1a8854c5abbac6ef09d5ed9e69284af794e6500fc4af6efade12",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-mcp/overview.md",
+          "sha256": "e938293b2fc2ab0d925d78e894708b2df82e7c5a9a0b45f064bbf45b288c6ccc",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-mcp/page-binding-bridge-token.md",
+          "sha256": "426409e09fc344fe674bb319756477b548f528a7d78167ffdb10818225329666",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-mcp/registered-reuse-performance-and-icon-gates.md",
+          "sha256": "b16392e8449004bd550ab68902ef68933e3074198d50394dbf1b86cc2ab12ddd",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-mcp/target-page-and-path-preflight-failure-derived.md",
+          "sha256": "a9b47b087f9c158a708daa4091c595c431a7cdec2b51c470ad80ce4e5c99aec7",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-mcp/token-gate.md",
+          "sha256": "9d560129eb0cc4d062bb22347f085ed83f3e8fe072d559ec0f0027a97e46c325",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-pipeline/acceptance-gates.md",
+          "sha256": "ae3b60a77da73f1fc3fa699696a640f374cf87a8bb7176912e6d50488a190f75",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-pipeline/capture-browser-computed-evidence.md",
+          "sha256": "8f6236939d9bd6f91726d6528d73dc53b77eb43558a8276690992ce4a0901c20",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-pipeline/compile-dom-visual-ir-only-from-the-current-run.md",
+          "sha256": "1b7e1e07c79232a60b6a822ec580f619bb1a2366daad20b5832729cb24a1be42",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-pipeline/execute-transactionally.md",
+          "sha256": "13590f52fb79d601fa42b3df8396c5c857c8b5fd00406075812ea97519c324e7",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-pipeline/keep-two-evidence-layers-and-one-pixso-output.md",
+          "sha256": "0a37f4d3aa87c2a903f4c1c7d34dfc973b5cf4178ab661ed9a5e84bc2ef0c53f",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-pipeline/normal-fast-path-and-diagnostic-boundary.md",
+          "sha256": "6980beb934aab1983898b5b8ef6660bbe7b0cb58be40bbd3f3a97c2a3ba7be8d",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-pipeline/overview.md",
+          "sha256": "4801ade09f8378776454cdc5ffd7f6ef76d91688ad5d34e1753aecfc04d10a90",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-pipeline/resolve-components-without-changing-geometry.md",
+          "sha256": "6aa03082e1e4062ca329234854bd9d86a4f14add256eb454d495b1253ce51170",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-pipeline/start-an-isolated-run.md",
+          "sha256": "a547bf0beef350954271b569489ba36c1b3ae103fe717182376aaf47274e4ab7",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-scene/divider-ownership.md",
+          "sha256": "7fbd37ee555a3e8bed53976a3eb23259dd5c5f324da819a66032bff718977275",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-scene/dom-visual-ir.md",
+          "sha256": "031bd5d40fc9a74ac68fa2697b6b50615ed9b21267048f71d49b3a5356cd670f",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-scene/html-computed-visual-state.md",
+          "sha256": "ca8406be1dbd0b5fb64ceb83e4f2a8f376ce712e398214a13fd22cf234180e1f",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-scene/mcp-10.md",
+          "sha256": "cf7da034f8232a893208cf4de2c3c17d084b917c73e7cde636ea89ade37e418f",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-scene/mcp.md",
+          "sha256": "da6dc79124f12f22eb987b6f42a64701257c3cd865d8fea841376184878bdcf7",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-scene/overview.md",
+          "sha256": "7f928718fb0dea04d121faa6706984258527649d99fc5a7a69b0fe414894ab99",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-scene/scene.md",
+          "sha256": "d654910301e246321e1775b8e0961e3c9ee1461fe46bb103f603045806f81ce7",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-scene/section-11.md",
+          "sha256": "8a29b1979f8fae3d1b1be133daed681a82d0a6c066e74e390660439b5108ed34",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-scene/section-6.md",
+          "sha256": "e6193653d9ea76941efbaa4f2da6cf116ba516689de07a8fe8a3b8bc0247ba1d",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-scene/section-7.md",
+          "sha256": "35e27832c6cda539b96015f58fb9f363da406f0039ec8c7b2ffb01862ba72612",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-scene/section-8.md",
+          "sha256": "d0a2e2f3aa6ccd0e4043e20f80a62f081f6f563e015dd65c94b0c0fdd95472bd",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/pixso-scene/surface.md",
+          "sha256": "64412a20785af31bb80b47fe57dc290ee268a68984d6c4a8397e442233b6126b",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/source.json",
+          "sha256": "aed46c7c956dd37904fa491d88b03fcbd640d7a525d5dbdd1f46978bace39c5d",
+          "availability": "local"
+        },
+        {
+          "path": "references/resources/source.schema.json",
+          "sha256": "757c4973c64cddcc44b7d4277ac9f4e763e52297d259fd4612f3ea77b68d31c4",
+          "availability": "local"
+        },
+        {
+          "path": "references/routes/converter-diagnosis.md",
+          "sha256": "918537c50d62a7a963cb0a4e9aeeef06b9035b7453e58b5794bb76d7af1c08ae",
+          "availability": "local"
+        },
+        {
+          "path": "references/routes/existing-html-to-pixso.md",
+          "sha256": "2dbf2f3528005402de1ee75992dd8ab65a787da242b17018144179f086d1fd34",
+          "availability": "local"
+        },
+        {
+          "path": "references/routes/index.json",
+          "sha256": "673cf8ec2be26995227eac6e1f8c7ce88982a0d3a907625e325db3b9444fe00a",
+          "availability": "local"
+        },
+        {
+          "path": "references/routes/materials.source.json",
+          "sha256": "be2b9521cf8c0297a606f0046d031c5910c33260ea22837b0fbe6fd38d281656",
+          "availability": "local"
+        },
+        {
+          "path": "references/routes/pixso-component-library.md",
+          "sha256": "78836e5042305c022ac9bd1f672852c4130ebd55c75558fee8b63db5016589b5",
+          "availability": "local"
+        },
+        {
+          "path": "references/routes/skill-maintenance.md",
+          "sha256": "52de4f93130e39f4326c43c8254df1b98ea62715fe6c0b5cdfb750b62786507e",
+          "availability": "local"
+        },
+        {
+          "path": "schemas/html-handoff.schema.json",
+          "sha256": "27c97624d83f4b8bd54e4473b6aee5fd76997b8704bda31bcdcb0b407df0bdf5",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/artifact-dependencies.mjs",
+          "sha256": "84fca6966ee5ae340cc3f4a8fb7ac90e82ff75c1f056430a8757aec35b49742a",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/browser-visual-manifest.js",
+          "sha256": "a4f210d24ff5d5255564c7b3c86aecd2c181bb247dfd7e9e5d4c71c898f1a74f",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/build-component-route-index.mjs",
+          "sha256": "62ca3faa7a41feb5873f38b9cdcd1d5dd406585d0e248a956dee9e6310dffb7c",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/build-navigation-index.mjs",
+          "sha256": "ca4b542c24e9f24a7b702be96184881262638fdf893f3c47935d81570116a6b5",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/build-pixso-component-specs.mjs",
+          "sha256": "12cae7d1268d48c8dd9949dfc7c49632c3ebabf877ede08156db326c28be78e7",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/build-resource-index.mjs",
+          "sha256": "cb04df4f28ca02eb1e0b18507b3e1ff8957718f0d616da202527c377734f1167",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/build-skill-catalog-index.mjs",
+          "sha256": "223b5eb88d2b255a07f96b1560944c75f808881f9282ae4f51f884e74557c2b4",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/compact-paths.mjs",
+          "sha256": "c33612c8251d8918b2cd6ddd55fe8e0f8d0963fe4f8fb5c80e7e24f0a4180c6f",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/compare-pixso-screenshots.mjs",
+          "sha256": "c83b77cc4e13ee7a09a4b722d412e72c34d7fef4e1a075165e6ead6279445eab",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/compile-dom-visual-ir.mjs",
+          "sha256": "824f8a193a3cc9f101b00c6dbf900afd718500d72cf7b77cb2fa6e106528792c",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/compile-pixso-import.mjs",
+          "sha256": "1b441bef4e830271c87df7d93d5975ae55dc8d052aaa55f09c8786409e7b15d7",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/component-mapping-resolver.mjs",
+          "sha256": "7cc446f2adc4ffd79c72facb99f9b285522cdea94048b70652aeb93171781400",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/component-readiness-policy.mjs",
+          "sha256": "5f2599c03dceec7562768a82b268d6c8f32b5f6789efb094d660867a64a1e2d0",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/component-route-index.mjs",
+          "sha256": "10513ac96ac2a38cba62fb5b01ce16b6cf40b7317db60724429fc503aa1193da",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/coremail-semantic-adapter.mjs",
+          "sha256": "6d1df4a68478ab92cb4d75df75b680ad8e7006e55f430a8a66bd9ecf3f764d85",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/create-pixso-import-run.mjs",
+          "sha256": "6e565a0795d152c56b8d152d27145a68e072dd83e03549f0628932f221e798ae",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/dom-visual-ir.mjs",
+          "sha256": "20651aac95758f140d421ce813aa4aaf61f80b6e7a17660d751b11aa2a630a9f",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/generate-pixso-component-library-plan.mjs",
+          "sha256": "a221e8de79b46e7f45cf2813f3e3a0ad5c304ec26d11f66212bd9e55d680ee00",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/generate-pixso-operation-plan.mjs",
+          "sha256": "45f4cf7c93ec9e3086355b9722e711740238c7f0397622160baebfa8d9061316",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/generate-pixso-scene.mjs",
+          "sha256": "9d8b04059c8704bf2c89f9c73b341395708e21be22894fbf3fdaf288510c7471",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/html-artifact-graph.mjs",
+          "sha256": "d562446d719d2d83eec75a9b8c09041450aabd87a689c53b886adf23ef8f805d",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/html-handoff.mjs",
+          "sha256": "d708c6c4b0f5f46c7a60818bb354171d35c1ea03fc76dd82f73d8384c536d9a4",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/html-visual-contract.mjs",
+          "sha256": "8c9ea8b846cd1e4f447b5584e2bf8b9eb1e3415b76e5e20a0a402016b9e947d9",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/icon-tools.mjs",
+          "sha256": "0f6ddae12ed2696ca15a398f24ef33c16462c2a29306c53fb35913a5ec11859d",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/mapping-registry-lib.mjs",
+          "sha256": "5c39f23784152cdf9f227e4b5f8edf629bbf68bcbc4c1ec6a85e815ec22f4176",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/navigation-index-lib.mjs",
+          "sha256": "19db1d400c90535619c8c0f94cacc4d18ab161188dcfb8d956fc0b6c2ac7ba0d",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-capture-bundle.mjs",
+          "sha256": "a8ccf84eca1da370018d9a452f0c9785fc1d034eca3a39e03cd5723af8fa7c8f",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-component-facts-sync.mjs",
+          "sha256": "a9a64ff5869a401092341721a7df912a556ad6b38c8365f29509620616060c56",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-import-governance.mjs",
+          "sha256": "bdfe1b66e490a3c3ec80e46b89ed53c4fec2962fe029b8769138c1eeba4873b7",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-import-orchestrator.mjs",
+          "sha256": "6b448198e37e7cfb76f4454c515c300fa633189a6738772418dff436ec44abb3",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-import-run-state.mjs",
+          "sha256": "4deee744ab1a50cba53f65761c573ff557749df3f031eeb70fae7f2af988d59d",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-native-execution-runtime.js",
+          "sha256": "8a98eef782bf9d56e1638e5c7648afa2675611136d862e5fb59c21be5f530ff9",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-native-execution-runtime.min.js",
+          "sha256": "9f43662e60611b155854c0a024a2c722237427d0f976d0b130d12ec5a7987f02",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-native-scene-lib.mjs",
+          "sha256": "3084fd3f10692adde0cb58e6ff33971f403aa40c685b96d92d0294bdcfff2dc8",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-official-adapter.mjs",
+          "sha256": "5c83c42f64cf24b8092fc086f27aff61e3664a6d55a1c1a1971f6bcde440130a",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-plugin-bridge.mjs",
+          "sha256": "16198ba5852694830b80743cad44af56cd41c680acbc77af07ddf9594f2137e1",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-unified-agent-plugin/README.md",
+          "sha256": "a5f23bd024229813e8b8654e443d999a2956364ced41c20e8b7a4f200f3e6b9d",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-unified-agent-plugin/compatibility-matrix.json",
+          "sha256": "9e6003d9f78fd6b5432a77674c3269cd49128c45d52ce2c5155df7d8c51cd888",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-unified-agent-plugin/main.js",
+          "sha256": "6491b7bdcb06f0870695d4a64ac73f65cf0a273c557f5ec7b64bf3e87e6a3233",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-unified-agent-plugin/manifest.json",
+          "sha256": "9add4f8b64bb3e6be3cdaecbf30b67881412e3949f87c7bc7f49ac6b501d3bab",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-unified-agent-plugin/permanent-agent-capabilities.json",
+          "sha256": "3c09584249b51f7529a3aa5a1e594b47eaf6b689107582c2f270c5a4a3557a0b",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-unified-agent-plugin/pixso-native-component-map.json",
+          "sha256": "72da580525c24069acdd86cbe93fa33fc829dce5eb4ac77b68e593e1bb4aee2a",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-unified-agent-plugin/ui.html",
+          "sha256": "c75d8cea58c4579c31583b9a678ade5775a9f7c2c4ec90d05b3a1bed259bb555",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/pixso-visual-reconcile.mjs",
+          "sha256": "a18fd7119076b25689ff6e05a2b850149f1f329fe0d484d759deef50039e18a4",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/preflight-pixso-import.mjs",
+          "sha256": "c5552662c494a5360c90aaf7badb3341b8d2c1eb084a62ec49553b9e8a28dcce",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/prepare-pixso-binding-html.mjs",
+          "sha256": "39add004cce008d637e4021c56803a9b848f37d0d7e6370f08f9f9b38e7138b9",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/prepare-pixso-html.mjs",
+          "sha256": "bba989ef0606d336bc5f1194469c16def22d7433e1c60d51a9fa85056760301c",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/prepare-pixso-mcp-batches.mjs",
+          "sha256": "631c752a68e2d3c9bf82121501094d8ca9b41326f762bf3e111600d4632b4892",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/prepare-pixso-operation-batches.mjs",
+          "sha256": "97310120d4d166c06610003e483e869cbc7d1eab63eaf8765e95d268a99a08a3",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/query-resources.mjs",
+          "sha256": "b3fed12bb37fcc031ae3fcaf17fdec063eb8339e33a11b451ad97e6b9af95876",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/resolve-pixso-import-url.mjs",
+          "sha256": "00fb96b22085d91dff5771449fe6b926f5c3f79c6900a3490fefb576e44bdc82",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/resolve-workflow-route.mjs",
+          "sha256": "fb824098c101f62addb41730794028cbd72707c650c0d2f8ed5c0bc152b8b7a8",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/resource-index-lib.mjs",
+          "sha256": "eb9f385c0942a0964c6006f92b70f79c8cbd111722041f908a9f24cb35a5176c",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/route-material-lib.mjs",
+          "sha256": "4b9614ea223e2e37795afa2220ea7996a2799df20b20e9b156d2aa6c2c607354",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/shared-data.mjs",
+          "sha256": "42b6309066f7bb2ecc64629f4fa1670d60365d3c6586b64aa7665df573f1f55c",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/skill-distribution.mjs",
+          "sha256": "86f564af92edd006457730f57e09c3180dea015313d1bcf49d41914f410c938e",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/stage-context-lib.mjs",
+          "sha256": "bf179bc2fcd9371c232e9e0528722981aa313f030d1627c60dfafc93b7367fac",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/start-text-to-ui-services.mjs",
+          "sha256": "2e7469fb788573a61207e6414b5b15a4a4197826f67767fdb0134246c11db7c5",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/task-route-lib.mjs",
+          "sha256": "9e0b570fbb8c53de758032318a5a39c7892d49ab158da2821bdf2a2ab7ae1c09",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/update-pixso-import-run.mjs",
+          "sha256": "1da8911b52b1743330f1683efafb6a49b06e05e297c538ab63aaf10aefeb3fd6",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/validate-harmonyos-component-adapter-map.mjs",
+          "sha256": "534b3d946cbf9d3f33b2d6597c22b700e3dde7b0106938021d0ba6168d7ecc42",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/validate-navigation-index.mjs",
+          "sha256": "c6611dd514a746eeebe66147606b43590566486e242b20cfd3f2ad8488bce535",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/validate-pixso-component-library-plan.mjs",
+          "sha256": "7e72c719383b1cb3b3512bc498d9734e02368176d8ee3ea76415a6fb831a35a9",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/validate-pixso-component-migration.mjs",
+          "sha256": "f263cce6c2284127dec935c2a276b1abac6a28c8e75a6b230bdff461613ca829",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/validate-pixso-component-registry.mjs",
+          "sha256": "72a97ab23384138a53cd77261c807c14c4fe87c5b4aae105011f5f9d0b14187c",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/validate-pixso-component-specs.mjs",
+          "sha256": "da8d3edd4ef8e9e46c578bec9d15af6bbb1e3edcd543316286d56121e749a369",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/validate-pixso-icon-map.mjs",
+          "sha256": "5c2be8b7b70d05be41f856bd17033bb256c96037d1c0e145b4661dc0e3193c53",
+          "availability": "local"
+        },
+        {
+          "path": "scripts/validate-pixso-import-run.mjs",
+          "sha256": "75c2209fb8147dde88380478ba77a30c766d2f21a1e22e28120d13730c650439",
+          "availability": "local"
+        },
+        {
+          "path": "skill-profile.json",
+          "sha256": "8484060124f4626e3c805e0c556ba54debe9bd4c16540b237b83ef44188eca55",
+          "availability": "local"
+        }
+      ]
+    }
+  ]
+}

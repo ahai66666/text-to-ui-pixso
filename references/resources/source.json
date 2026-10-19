@@ -1,0 +1,779 @@
+{
+  "$schema": "./source.schema.json",
+  "schemaVersion": 1,
+  "kind": "text-to-ui-resource-sources",
+  "documents": [
+    {
+      "path": "references/layout-system.md",
+      "policy": "generated-compatibility-aggregate",
+      "parts": [
+        "layout.pixso-mapping"
+      ],
+      "baselineSha256": "1b63fe82134fcdc2e36a4b72edc41aa2d08908f700f84d705d6e2452089c6a9e",
+      "baselineBytes": 20610
+    },
+    {
+      "path": "references/components/local-component-delivery.md",
+      "policy": "generated-compatibility-aggregate",
+      "parts": [
+        "delivery.pixso"
+      ],
+      "baselineSha256": "4868a10e8c01443ba6b674c7b84ef520c88f4f3cc9d38521bc462387d00521c6",
+      "baselineBytes": 5628
+    },
+    {
+      "path": "references/pixso-fidelity-import-pipeline.md",
+      "policy": "generated-compatibility-aggregate",
+      "parts": [
+        "pixso-pipeline.overview",
+        "pixso-pipeline.normal-fast-path-and-diagnostic-boundary",
+        "pixso-pipeline.start-an-isolated-run",
+        "pixso-pipeline.capture-browser-computed-evidence",
+        "pixso-pipeline.keep-two-evidence-layers-and-one-pixso-output",
+        "pixso-pipeline.compile-dom-visual-ir-only-from-the-current-run",
+        "pixso-pipeline.resolve-components-without-changing-geometry",
+        "pixso-pipeline.execute-transactionally",
+        "pixso-pipeline.acceptance-gates"
+      ],
+      "baselineSha256": "0ef07b9b12db4109d6af81c5035fec1ee54b5c254190a8f63766ad4cc25e03ba",
+      "baselineBytes": 21033
+    },
+    {
+      "path": "references/pixso-mcp.md",
+      "policy": "generated-compatibility-aggregate",
+      "parts": [
+        "pixso-mcp.overview",
+        "pixso-mcp.connection",
+        "pixso-mcp.target-page-and-path-preflight-failure-derived",
+        "pixso-mcp.creation-sequence",
+        "pixso-mcp.registered-reuse-performance-and-icon-gates",
+        "pixso-mcp.page-binding-bridge-token",
+        "pixso-mcp.token-gate",
+        "pixso-mcp.binding-audit",
+        "pixso-mcp.existing-design-and-html-handoff",
+        "pixso-mcp.failure-handling",
+        "pixso-mcp.deliverable-reference"
+      ],
+      "baselineSha256": "8c74af173188a08fdd2934c81bb6dd0d9311e062173d92988cbb2fb7dd596d8e",
+      "baselineBytes": 20455
+    },
+    {
+      "path": "references/pixso-native-scene.md",
+      "policy": "generated-compatibility-aggregate",
+      "parts": [
+        "pixso-scene.overview",
+        "pixso-scene.html-computed-visual-state",
+        "pixso-scene.dom-visual-ir",
+        "pixso-scene.scene",
+        "pixso-scene.surface",
+        "pixso-scene.divider-ownership",
+        "pixso-scene.section-6",
+        "pixso-scene.section-7",
+        "pixso-scene.section-8",
+        "pixso-scene.mcp",
+        "pixso-scene.mcp-10",
+        "pixso-scene.section-11"
+      ],
+      "baselineSha256": "ac89fe26c495feb0f3909fd13f101711a5818a14a307b46a797607ffa33593d4",
+      "baselineBytes": 19951
+    },
+    {
+      "path": "references/pixso-import-details.md",
+      "policy": "generated-compatibility-aggregate",
+      "parts": [
+        "pixso-detail.overview",
+        "pixso-detail.html-text-sizing-and-truncation",
+        "pixso-detail.icon-sizing-stroke-and-hot-zone-contract",
+        "pixso-detail.cross-source-mapping-registry",
+        "pixso-detail.typography-mapping-policy",
+        "pixso-detail.pixso-component-facts-sync"
+      ],
+      "baselineSha256": "d96e2bfd586be25acca45d69c007804da91e51057dcbb3eb11ef58764176af07",
+      "baselineBytes": 10183
+    }
+  ],
+  "resources": [
+    {
+      "id": "layout.pixso-mapping",
+      "path": "references/resources/layout/pixso-mapping.md",
+      "purpose": "6. Pixso Mapping",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/layout-system.md",
+        "ordinal": 6,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "delivery.pixso",
+      "path": "references/resources/delivery/pixso.md",
+      "purpose": "Pixso 衔接",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/components/local-component-delivery.md",
+        "ordinal": 6,
+        "linkBase": "references/components"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-pipeline.overview",
+      "path": "references/resources/pixso-pipeline/overview.md",
+      "purpose": "HTML → Pixso Fidelity Import Pipeline",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 0,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-pipeline.normal-fast-path-and-diagnostic-boundary",
+      "path": "references/resources/pixso-pipeline/normal-fast-path-and-diagnostic-boundary.md",
+      "purpose": "0. Normal fast path and diagnostic boundary",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "readiness"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 1,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso-pipeline.start-an-isolated-run",
+      "path": "references/resources/pixso-pipeline/start-an-isolated-run.md",
+      "purpose": "1. Start an isolated run",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "readiness"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 2,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso-pipeline.capture-browser-computed-evidence",
+      "path": "references/resources/pixso-pipeline/capture-browser-computed-evidence.md",
+      "purpose": "2. Capture browser-computed evidence",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "capture"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 3,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso-pipeline.keep-two-evidence-layers-and-one-pixso-output",
+      "path": "references/resources/pixso-pipeline/keep-two-evidence-layers-and-one-pixso-output.md",
+      "purpose": "3. Keep two evidence layers and one Pixso output",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "compile"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 4,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso-pipeline.compile-dom-visual-ir-only-from-the-current-run",
+      "path": "references/resources/pixso-pipeline/compile-dom-visual-ir-only-from-the-current-run.md",
+      "purpose": "4. Compile DOM Visual IR only from the current run",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "compile"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 5,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso-pipeline.resolve-components-without-changing-geometry",
+      "path": "references/resources/pixso-pipeline/resolve-components-without-changing-geometry.md",
+      "purpose": "5. Resolve Components without changing geometry",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "compile"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 6,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso-pipeline.execute-transactionally",
+      "path": "references/resources/pixso-pipeline/execute-transactionally.md",
+      "purpose": "6. Execute transactionally",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "publish"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 7,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso-pipeline.acceptance-gates",
+      "path": "references/resources/pixso-pipeline/acceptance-gates.md",
+      "purpose": "7. Acceptance gates",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "readback"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 8,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso-mcp.overview",
+      "path": "references/resources/pixso-mcp/overview.md",
+      "purpose": "Pixso MCP Workflow",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 0,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-mcp.connection",
+      "path": "references/resources/pixso-mcp/connection.md",
+      "purpose": "Connection",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 1,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-mcp.target-page-and-path-preflight-failure-derived",
+      "path": "references/resources/pixso-mcp/target-page-and-path-preflight-failure-derived.md",
+      "purpose": "Target page and path preflight (failure-derived)",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 2,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-mcp.creation-sequence",
+      "path": "references/resources/pixso-mcp/creation-sequence.md",
+      "purpose": "Creation Sequence",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 3,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-mcp.registered-reuse-performance-and-icon-gates",
+      "path": "references/resources/pixso-mcp/registered-reuse-performance-and-icon-gates.md",
+      "purpose": "Registered reuse, performance, and icon gates",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 4,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-mcp.page-binding-bridge-token",
+      "path": "references/resources/pixso-mcp/page-binding-bridge-token.md",
+      "purpose": "Page Binding Bridge（页面 Token 快速通道）",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 5,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-mcp.token-gate",
+      "path": "references/resources/pixso-mcp/token-gate.md",
+      "purpose": "Token Gate",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 6,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-mcp.binding-audit",
+      "path": "references/resources/pixso-mcp/binding-audit.md",
+      "purpose": "Binding Audit",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 7,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-mcp.existing-design-and-html-handoff",
+      "path": "references/resources/pixso-mcp/existing-design-and-html-handoff.md",
+      "purpose": "Existing Design and HTML Handoff",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 8,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-mcp.failure-handling",
+      "path": "references/resources/pixso-mcp/failure-handling.md",
+      "purpose": "Failure Handling",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "diagnosis"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 9,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso-mcp.deliverable-reference",
+      "path": "references/resources/pixso-mcp/deliverable-reference.md",
+      "purpose": "Deliverable Reference",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 10,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-scene.overview",
+      "path": "references/resources/pixso-scene/overview.md",
+      "purpose": "Pixso Native Scene（插件与 MCP 共用）",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 0,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-scene.html-computed-visual-state",
+      "path": "references/resources/pixso-scene/html-computed-visual-state.md",
+      "purpose": "HTML computed visual state",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "capture"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 1,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso-scene.dom-visual-ir",
+      "path": "references/resources/pixso-scene/dom-visual-ir.md",
+      "purpose": "DOM Visual IR 三阶段生成模型",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 2,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-scene.scene",
+      "path": "references/resources/pixso-scene/scene.md",
+      "purpose": "旧 Scene 两阶段生成模型",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 3,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-scene.surface",
+      "path": "references/resources/pixso-scene/surface.md",
+      "purpose": "Surface 继承与透明背景",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 4,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-scene.divider-ownership",
+      "path": "references/resources/pixso-scene/divider-ownership.md",
+      "purpose": "Divider ownership 与单边描边",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 5,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-scene.section-6",
+      "path": "references/resources/pixso-scene/section-6.md",
+      "purpose": "位图资源",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 6,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-scene.section-7",
+      "path": "references/resources/pixso-scene/section-7.md",
+      "purpose": "运行顺序",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 7,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-scene.section-8",
+      "path": "references/resources/pixso-scene/section-8.md",
+      "purpose": "组件规则",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 8,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-scene.mcp",
+      "path": "references/resources/pixso-scene/mcp.md",
+      "purpose": "执行通道：整页导入强制插件，MCP 仅显式诊断",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 9,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-scene.mcp-10",
+      "path": "references/resources/pixso-scene/mcp-10.md",
+      "purpose": "MCP 适配",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 10,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-scene.section-11",
+      "path": "references/resources/pixso-scene/section-11.md",
+      "purpose": "页面状态",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 11,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-detail.overview",
+      "path": "references/resources/pixso-detail/overview.md",
+      "purpose": "Pixso mapping and rendering details",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-import-details.md",
+        "ordinal": 0,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "pixso-detail.html-text-sizing-and-truncation",
+      "path": "references/resources/pixso-detail/html-text-sizing-and-truncation.md",
+      "purpose": "HTML text sizing and truncation",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "capture",
+          "compile"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-import-details.md",
+        "ordinal": 1,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso-detail.icon-sizing-stroke-and-hot-zone-contract",
+      "path": "references/resources/pixso-detail/icon-sizing-stroke-and-hot-zone-contract.md",
+      "purpose": "Icon sizing, stroke, and hot-zone contract",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "capture",
+          "compile"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-import-details.md",
+        "ordinal": 2,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso-detail.cross-source-mapping-registry",
+      "path": "references/resources/pixso-detail/cross-source-mapping-registry.md",
+      "purpose": "Cross-source mapping registry",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "compile"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-import-details.md",
+        "ordinal": 3,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso-detail.typography-mapping-policy",
+      "path": "references/resources/pixso-detail/typography-mapping-policy.md",
+      "purpose": "Typography mapping policy",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "compile"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-import-details.md",
+        "ordinal": 4,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso-detail.pixso-component-facts-sync",
+      "path": "references/resources/pixso-detail/pixso-component-facts-sync.md",
+      "purpose": "Pixso component facts sync",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-import-details.md",
+        "ordinal": 5,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query"
+    },
+    {
+      "id": "core.delivery",
+      "path": "references/resources/core/delivery.md",
+      "purpose": "所有阶段的交付与来源边界",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {},
+      "requires": [],
+      "readPolicy": "stage"
+    },
+    {
+      "id": "pixso.invariants",
+      "path": "references/pixso-execution-invariants.md",
+      "purpose": "Pixso 执行、失败与回读边界",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {},
+      "requires": [
+        "core.delivery"
+      ],
+      "readPolicy": "stage"
+    },
+    {
+      "id": "components.resolution",
+      "path": "references/components/source-resolution.md",
+      "purpose": "组件来源、语义与成熟度",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [
+        "core.delivery"
+      ],
+      "readPolicy": "stage"
+    }
+  ],
+  "aliases": {}
+}

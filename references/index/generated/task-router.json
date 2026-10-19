@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": [
+    {
+      "path": "skill-support/references/index/task-routes.source.json",
+      "sha256": "478e4a537251859692e5eecada8f7275f8337a3f707621272e59cc0a07fdd0fc"
+    },
+    {
+      "path": "packages/component-contracts/src/registry.json",
+      "sha256": "1b7e0da34ee92e594b05bc462f251b77f162a064ee37934d0e95c85c074b2e28"
+    },
+    {
+      "path": "skill-support/references/index/layout-routes.source.json",
+      "sha256": "b231f7d101367b3745da0af619e91720afabb3e87c49f4ae5ac2cae188642bd0"
+    }
+  ],
+  "policy": {
+    "lookupOrder": [
+      "exact-task-route",
+      "complete-alias-or-domain-phrase",
+      "unambiguous-complete-word",
+      "explicit-pattern-for-unknown-task",
+      "layout",
+      "components",
+      "exact-contract"
+    ],
+    "normalizeBeforeMatch": [
+      "unicode-nfkc",
+      "lowercase",
+      "punctuation-to-space"
+    ],
+    "ambiguityPolicy": "stop-and-list-candidate-route-ids; --task-route explicitly selects among matching candidates",
+    "componentSourceOrder": [
+      "real-html-component",
+      "matching-contract",
+      "token-based-custom"
+    ],
+    "exactContractReadRequiredAfterSelection": true
+  },
+  "routes": []
+}
