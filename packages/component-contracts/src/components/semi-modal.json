@@ -1,0 +1,209 @@
+{
+  "id": "semi-modal",
+  "logicalName": "Semi-modal/Default",
+  "variants": [
+    "s",
+    "m",
+    "l",
+    "white",
+    "gray",
+    "non-modal",
+    "modal"
+  ],
+  "states": [
+    "closed",
+    "open"
+  ],
+  "props": [
+    "open",
+    "size",
+    "surface",
+    "mode",
+    "title",
+    "onConfirm",
+    "onCancel",
+    "onClose",
+    "onOpenChange"
+  ],
+  "slots": [
+    "title",
+    "description",
+    "content",
+    "actions",
+    "close"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.surface",
+    "color.border",
+    "typography.body-l",
+    "spacing.component-gap",
+    "shadow.overlay",
+    "radius.card"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/advanced.js#semi-modal"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/advanced.js#semi-modal"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "containers",
+  "categoryLabel": "容器类",
+  "order": 514,
+  "canonicalSection": "[data-runtime-category=\"containers\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"containers\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-semi-modal\"]",
+  "specimens": [
+    {
+      "id": "s-white-non-modal",
+      "variant": "s-white-non-modal",
+      "state": "closed",
+      "size": "s",
+      "surface": "white",
+      "mode": "non-modal"
+    },
+    {
+      "id": "m-white-non-modal",
+      "variant": "m-white-non-modal",
+      "state": "closed",
+      "size": "m",
+      "surface": "white",
+      "mode": "non-modal"
+    },
+    {
+      "id": "l-white-non-modal",
+      "variant": "l-white-non-modal",
+      "state": "closed",
+      "size": "l",
+      "surface": "white",
+      "mode": "non-modal"
+    },
+    {
+      "id": "s-gray-non-modal",
+      "variant": "s-gray-non-modal",
+      "state": "closed",
+      "size": "s",
+      "surface": "gray",
+      "mode": "non-modal"
+    },
+    {
+      "id": "m-gray-non-modal",
+      "variant": "m-gray-non-modal",
+      "state": "closed",
+      "size": "m",
+      "surface": "gray",
+      "mode": "non-modal"
+    },
+    {
+      "id": "l-gray-non-modal",
+      "variant": "l-gray-non-modal",
+      "state": "closed",
+      "size": "l",
+      "surface": "gray",
+      "mode": "non-modal"
+    },
+    {
+      "id": "m-white-modal",
+      "variant": "m-white-modal",
+      "state": "closed",
+      "size": "m",
+      "surface": "white",
+      "mode": "modal"
+    }
+  ],
+  "fixtureId": "fixture-semi-modal",
+  "surface": [
+    "white",
+    "gray"
+  ],
+  "sizing": "overlay",
+  "behaviors": [
+    "open",
+    "confirm",
+    "cancel",
+    "close",
+    "escape",
+    "focus-return",
+    "no-outside-dismiss",
+    "modal-focus-trap"
+  ],
+  "iconSemantic": "action/close",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "overlays",
+  "canonicalSpecimen": "gallery:containers:semi-modal",
+  "allowedStates": [
+    "closed",
+    "open"
+  ],
+  "textRoles": [
+    "title:title-s",
+    "content:body-l",
+    "description:body-m",
+    "help:body-s"
+  ],
+  "iconSlots": [
+    {
+      "slot": "close",
+      "alias": "action/close",
+      "displaySizes": [
+        20
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconAliases": [
+    "action/close"
+  ],
+  "structuralAxes": {
+    "size": [
+      "s",
+      "m",
+      "l"
+    ],
+    "surface": [
+      "white",
+      "gray"
+    ],
+    "mode": [
+      "non-modal",
+      "modal"
+    ]
+  },
+  "interactionStates": [
+    "closed",
+    "open"
+  ],
+  "slotContracts": {
+    "close": {
+      "cardinality": "1",
+      "scope": "semi-modal-header",
+      "control": "icon-button",
+      "iconAlias": "action/close",
+      "iconSize": "20px",
+      "trailingInsetToken": "space/5",
+      "trailingInset": "16px"
+    }
+  },
+  "comparisonGroup": "containers"
+}

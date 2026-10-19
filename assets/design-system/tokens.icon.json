@@ -1,0 +1,73 @@
+{
+  "source": {
+    "library": "Lucide",
+    "url": "https://lucide.dev/",
+    "package": "lucide",
+    "installed-version": "1.24.0",
+    "delivery": "pinned-package-plus-generated-svg",
+    "artboard": "24x24"
+  },
+  "lucide": {
+    "library": "Lucide",
+    "url": "https://lucide.dev/",
+    "package": "lucide",
+    "installed-version": "1.24.0",
+    "official-install-command": "npm install lucide",
+    "project-package-manager": "pnpm",
+    "delivery": "local-package",
+    "local-path": "node_modules/lucide/dist/esm/icons",
+    "icon-module-count": 1746,
+    "exported-name-count": 1991,
+    "artboard": "24x24",
+    "style": "outline",
+    "official-default-stroke-width": 2,
+    "project-stroke-width": 1.5,
+    "project-stroke-width-by-display-size": {"16": 1, "20": 1.25, "24": 1.5},
+    "stroke-scale-rule": "Keep 1.5 on the 24x24 source artboard; scale the SVG root and internal vectors together.",
+    "linecap": "round",
+    "linejoin": "round",
+    "license": "ISC"
+  },
+  "selection-policy": {
+    "priority": [
+      "user-provided-exact-svg",
+      "approved-project-semantic-alias",
+      "lucide",
+      "approved-special-asset",
+      "documented-manual-fallback"
+    ],
+    "workflow": [
+      "define-semantic-intent",
+      "search-by-canonical-english-concept",
+      "shortlist-two-or-three-candidates",
+      "compare-at-actual-render-size",
+      "bind-approved-choice-to-semantic-alias"
+    ],
+    "forbid-first-name-guess": true,
+    "reusable-components-require-semantic-alias": true
+  },
+  "rendering": {
+    "style": "regular-outline",
+    "geometry": "exact-pinned-lucide-nodes",
+    "filled-policy": "forbidden",
+    "manual-fallback-stroke-width": 1.5,
+    "outline-stroke-width-by-display-size": {"16": 1, "20": 1.25, "24": 1.5}
+  },
+  "size": {
+    "xs": "size.4",
+    "sm": "size.5",
+    "md": "size.6",
+    "lg": "size.7"
+  },
+  "semantic": {
+    "window-minimize": "assets/icons/titlebar/window-minimize.svg",
+    "window-maximize": "assets/icons/titlebar/window-maximize.svg",
+    "window-close": "assets/icons/titlebar/window-close.svg",
+    "status-info": "assets/icons/status/info-circle.svg",
+    "status-success": "assets/icons/status/success-circle.svg",
+    "status-warning": "assets/icons/status/warning-circle.svg",
+    "status-danger": "assets/icons/status/danger-circle.svg",
+    "status-neutral": "assets/icons/status/neutral-circle.svg"
+  },
+  "pending": ["public-redistribution-license-review"]
+}

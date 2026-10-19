@@ -1,0 +1,668 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": [
+    {
+      "path": "packages/component-contracts/src/registry.json",
+      "sha256": "1b7e0da34ee92e594b05bc462f251b77f162a064ee37934d0e95c85c074b2e28"
+    },
+    {
+      "path": "references/index/capability-aliases.source.json",
+      "sha256": "db9a7dd35f3fb3e50df70d89a754d7774dfa61a960853abea4d5a38b15fff9d3"
+    }
+  ],
+  "contractRoot": "packages/component-contracts/src/components",
+  "sourceRoot": "skill-root",
+  "frameworkPackages": {
+    "html": "@text-to-ui/components-html"
+  },
+  "componentCount": 49,
+  "components": [
+    {
+      "id": "accordion",
+      "logicalName": "Accordion/Default",
+      "capabilities": [
+        "accordion"
+      ],
+      "contractPath": "packages/component-contracts/src/components/accordion.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "alert-dialog",
+      "logicalName": "Alert Dialog/Default",
+      "capabilities": [
+        "alert-dialog"
+      ],
+      "contractPath": "packages/component-contracts/src/components/alert-dialog.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "alert",
+      "logicalName": "Alert/Default",
+      "capabilities": [
+        "alert"
+      ],
+      "contractPath": "packages/component-contracts/src/components/alert.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "attachment",
+      "logicalName": "Attachment/Default",
+      "capabilities": [
+        "attachment"
+      ],
+      "contractPath": "packages/component-contracts/src/components/attachment.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "avatar",
+      "logicalName": "Avatar/Default",
+      "capabilities": [
+        "avatar"
+      ],
+      "contractPath": "packages/component-contracts/src/components/avatar.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "badge",
+      "logicalName": "Badge/Default",
+      "capabilities": [
+        "badge"
+      ],
+      "contractPath": "packages/component-contracts/src/components/badge.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "breadcrumb",
+      "logicalName": "Breadcrumb/Default",
+      "capabilities": [
+        "breadcrumb"
+      ],
+      "contractPath": "packages/component-contracts/src/components/breadcrumb.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "button",
+      "logicalName": "Button/Primary/Default",
+      "capabilities": [
+        "button",
+        "icon-button",
+        "icon-text-button",
+        "text-button"
+      ],
+      "contractPath": "packages/component-contracts/src/components/button.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "calendar",
+      "logicalName": "Calendar/Default",
+      "capabilities": [
+        "calendar"
+      ],
+      "contractPath": "packages/component-contracts/src/components/calendar.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "checkbox",
+      "logicalName": "Checkbox/Default",
+      "capabilities": [
+        "checkbox"
+      ],
+      "contractPath": "packages/component-contracts/src/components/checkbox.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "chips",
+      "logicalName": "Chips/Default",
+      "capabilities": [
+        "chips"
+      ],
+      "contractPath": "packages/component-contracts/src/components/chips.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "collapsible",
+      "logicalName": "Collapsible/Default",
+      "capabilities": [
+        "collapsible"
+      ],
+      "contractPath": "packages/component-contracts/src/components/collapsible.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "color-picker",
+      "logicalName": "ColorPicker/Tablet",
+      "capabilities": [
+        "color-picker",
+        "colorpicker"
+      ],
+      "contractPath": "packages/component-contracts/src/components/color-picker.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "combobox",
+      "logicalName": "Combobox/Default",
+      "capabilities": [
+        "combobox",
+        "select"
+      ],
+      "contractPath": "packages/component-contracts/src/components/combobox.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "context-menu",
+      "logicalName": "Context Menu/Default",
+      "capabilities": [
+        "context-menu"
+      ],
+      "contractPath": "packages/component-contracts/src/components/context-menu.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "date-picker",
+      "logicalName": "Date Picker/Default",
+      "capabilities": [
+        "date-picker"
+      ],
+      "contractPath": "packages/component-contracts/src/components/date-picker.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "dialog",
+      "logicalName": "Dialog/Default",
+      "capabilities": [
+        "dialog"
+      ],
+      "contractPath": "packages/component-contracts/src/components/dialog.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "dropdown-menu",
+      "logicalName": "Dropdown Menu/Default",
+      "capabilities": [
+        "dropdown-menu"
+      ],
+      "contractPath": "packages/component-contracts/src/components/dropdown-menu.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "field",
+      "logicalName": "Field/Default",
+      "capabilities": [
+        "field"
+      ],
+      "contractPath": "packages/component-contracts/src/components/field.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "form-field",
+      "logicalName": "Form Field/Default",
+      "capabilities": [
+        "form-field"
+      ],
+      "contractPath": "packages/component-contracts/src/components/form-field.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "hover-card",
+      "logicalName": "Hover Card/Default",
+      "capabilities": [
+        "hover-card"
+      ],
+      "contractPath": "packages/component-contracts/src/components/hover-card.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "input",
+      "logicalName": "Input/White Surface/Default",
+      "capabilities": [
+        "input"
+      ],
+      "contractPath": "packages/component-contracts/src/components/input.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "label",
+      "logicalName": "Label/Default",
+      "capabilities": [
+        "label"
+      ],
+      "contractPath": "packages/component-contracts/src/components/label.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "list-card",
+      "logicalName": "List Item/White Surface/Default",
+      "capabilities": [
+        "list-card",
+        "list-item"
+      ],
+      "contractPath": "packages/component-contracts/src/components/list-card.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "menubar",
+      "logicalName": "Menubar/Default",
+      "capabilities": [
+        "menubar"
+      ],
+      "contractPath": "packages/component-contracts/src/components/menubar.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "native-select",
+      "logicalName": "Native Select/Default",
+      "capabilities": [
+        "native-select",
+        "select"
+      ],
+      "contractPath": "packages/component-contracts/src/components/native-select.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "number-selector",
+      "logicalName": "Number Selector/Default",
+      "capabilities": [
+        "number-selector"
+      ],
+      "contractPath": "packages/component-contracts/src/components/number-selector.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "pagination",
+      "logicalName": "Pagination/Default",
+      "capabilities": [
+        "pagination"
+      ],
+      "contractPath": "packages/component-contracts/src/components/pagination.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "popover",
+      "logicalName": "Popover/Default",
+      "capabilities": [
+        "popover"
+      ],
+      "contractPath": "packages/component-contracts/src/components/popover.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "primary-navigation-item",
+      "logicalName": "Primary Navigation Item/Level 1",
+      "capabilities": [
+        "primary-navigation",
+        "primary-navigation-item"
+      ],
+      "contractPath": "packages/component-contracts/src/components/primary-navigation-item.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "progress",
+      "logicalName": "Progress/Default",
+      "capabilities": [
+        "progress"
+      ],
+      "contractPath": "packages/component-contracts/src/components/progress.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "radio-group",
+      "logicalName": "Radio Group/Default",
+      "capabilities": [
+        "radio-group"
+      ],
+      "contractPath": "packages/component-contracts/src/components/radio-group.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "radio",
+      "logicalName": "Radio/Unselected/Default",
+      "capabilities": [
+        "radio"
+      ],
+      "contractPath": "packages/component-contracts/src/components/radio.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "search",
+      "logicalName": "Search/White Surface/Default",
+      "capabilities": [
+        "search"
+      ],
+      "contractPath": "packages/component-contracts/src/components/search.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "segmented-button",
+      "logicalName": "Segmented Button/Default",
+      "capabilities": [
+        "segmented-button"
+      ],
+      "contractPath": "packages/component-contracts/src/components/segmented-button.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "select",
+      "logicalName": "Select/Default",
+      "capabilities": [
+        "select"
+      ],
+      "contractPath": "packages/component-contracts/src/components/select.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "semi-modal",
+      "logicalName": "Semi-modal/Default",
+      "capabilities": [
+        "semi-modal"
+      ],
+      "contractPath": "packages/component-contracts/src/components/semi-modal.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "sidebar",
+      "logicalName": "Sidebar Item/Default",
+      "capabilities": [
+        "sidebar",
+        "sidebar-item"
+      ],
+      "contractPath": "packages/component-contracts/src/components/sidebar.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "slider",
+      "logicalName": "Slider/Default",
+      "capabilities": [
+        "slider"
+      ],
+      "contractPath": "packages/component-contracts/src/components/slider.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "snackbar",
+      "logicalName": "Snackbar/Default",
+      "capabilities": [
+        "snackbar"
+      ],
+      "contractPath": "packages/component-contracts/src/components/snackbar.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "sub-tabs",
+      "logicalName": "Sub Tabs/Default",
+      "capabilities": [
+        "sub-tabs"
+      ],
+      "contractPath": "packages/component-contracts/src/components/sub-tabs.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "switch",
+      "logicalName": "Switch/Default",
+      "capabilities": [
+        "switch"
+      ],
+      "contractPath": "packages/component-contracts/src/components/switch.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "table",
+      "logicalName": "Table/Default",
+      "capabilities": [
+        "table"
+      ],
+      "contractPath": "packages/component-contracts/src/components/table.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "tabs",
+      "logicalName": "Tabs/Default",
+      "capabilities": [
+        "tabs"
+      ],
+      "contractPath": "packages/component-contracts/src/components/tabs.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "textarea",
+      "logicalName": "Textarea/Default",
+      "capabilities": [
+        "textarea"
+      ],
+      "contractPath": "packages/component-contracts/src/components/textarea.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "time-picker",
+      "logicalName": "Time Picker/Default",
+      "capabilities": [
+        "time-picker"
+      ],
+      "contractPath": "packages/component-contracts/src/components/time-picker.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "titlebar",
+      "logicalName": "Titlebar/Default",
+      "capabilities": [
+        "titlebar"
+      ],
+      "contractPath": "packages/component-contracts/src/components/titlebar.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "tooltip",
+      "logicalName": "Tooltip/Default",
+      "capabilities": [
+        "tooltip"
+      ],
+      "contractPath": "packages/component-contracts/src/components/tooltip.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    },
+    {
+      "id": "tree-view",
+      "logicalName": "Tree View/Default",
+      "capabilities": [
+        "tree",
+        "tree-view"
+      ],
+      "contractPath": "packages/component-contracts/src/components/tree-view.json",
+      "frameworks": {
+        "html": {
+          "exists": false
+        }
+      }
+    }
+  ]
+}

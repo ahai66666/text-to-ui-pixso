@@ -1,0 +1,112 @@
+{
+  "id": "radio",
+  "logicalName": "Radio/Unselected/Default",
+  "variants": [
+    "unselected",
+    "selected"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "focus",
+    "disabled",
+    "selected"
+  ],
+  "props": [
+    "checked",
+    "defaultChecked",
+    "label",
+    "name",
+    "value",
+    "disabled",
+    "state",
+    "className"
+  ],
+  "slots": [
+    "control",
+    "label"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.surface",
+    "color.border",
+    "color.primary",
+    "color.primary-text",
+    "size.indicator.radio-size",
+    "radius.full",
+    "spacing.gap.choice-label",
+    "typography.body-m"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/index.js#radio"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/index.js#radio"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "choices",
+  "categoryLabel": "选择类",
+  "order": 411,
+  "canonicalSection": "[data-runtime-category=\"choices\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"choices\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-radio\"]",
+  "legacyVisualGroup": "choices",
+  "canonicalSpecimen": "gallery:choices:radio",
+  "specimens": [
+    {
+      "id": "unselected",
+      "variant": "unselected",
+      "state": "default",
+      "checked": false
+    },
+    {
+      "id": "selected",
+      "variant": "selected",
+      "state": "selected",
+      "checked": true
+    }
+  ],
+  "fixtureId": "fixture-radio",
+  "surface": "white",
+  "sizing": "intrinsic",
+  "allowedStates": [
+    "default",
+    "hover",
+    "focus",
+    "disabled",
+    "selected"
+  ],
+  "behaviors": [
+    "select",
+    "keyboard-activation",
+    "disabled"
+  ],
+  "textRoles": [
+    "label:body-m"
+  ],
+  "iconAliases": [],
+  "iconSlots": [],
+  "iconSemantic": null,
+  "comparisonGroup": "choices"
+}

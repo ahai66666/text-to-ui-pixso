@@ -1,0 +1,2305 @@
+{
+  "schemaVersion": 1,
+  "kind": "text-to-ui-resource-index",
+  "policy": "Machine index; query projections only. Edit resource fragments and rebuild, never edit compatibility aggregates.",
+  "digest": "5f6ca127cb49ece2dbe2f67b4dc93c653ef8c99b6d517cdba8cbeceffdd92ea9",
+  "aliases": {},
+  "sources": [
+    {
+      "path": "assets/design-system/mapping-registry.json",
+      "sha256": "312eb6712a2c517457afc84bb48856976328b52acb88638e4972804323a2b5ef"
+    },
+    {
+      "path": "assets/design-system/pattern-contracts.json",
+      "sha256": "7c281c8924ddb4533422b34d680c196a2910147c39944b0d7061d3344babd93e"
+    },
+    {
+      "path": "packages/component-contracts/src/components/accordion.json",
+      "sha256": "34997266674b5eada3fd7d1d0f24d7608c026badfc9fd560926e87c8c82d936c"
+    },
+    {
+      "path": "packages/component-contracts/src/components/alert-dialog.json",
+      "sha256": "3eddcdce074177ea25d561b3e2c73dc4ef46b24c523064f85d9bfd0c688b4138"
+    },
+    {
+      "path": "packages/component-contracts/src/components/alert.json",
+      "sha256": "58f8fd002538bb77c3a1edf9c73ce5edd1f8512b5259ec3b754e7d5a06d4dcea"
+    },
+    {
+      "path": "packages/component-contracts/src/components/attachment.json",
+      "sha256": "25b6e56a70d8b5f866d97c8c75d2b0357a7721ffcad91114ebcb0f09f0b2a9da"
+    },
+    {
+      "path": "packages/component-contracts/src/components/avatar.json",
+      "sha256": "85b125b9124e602ce64027bb091ed96e1fd6c13ee7c5099cd3c68117934b7d66"
+    },
+    {
+      "path": "packages/component-contracts/src/components/badge.json",
+      "sha256": "51c6f7ed8cbd93836b8d2d884b8ee8939557bd594397ecad4219c994d1c97342"
+    },
+    {
+      "path": "packages/component-contracts/src/components/breadcrumb.json",
+      "sha256": "155e94b27bf9288b8428b8f5e5b942bcd70262169f0dd5af45b10d43547d4385"
+    },
+    {
+      "path": "packages/component-contracts/src/components/button.json",
+      "sha256": "6a0a601bacba32b899b85bbb5fa69bdc891e6157d786876acbdf9300abde78ae"
+    },
+    {
+      "path": "packages/component-contracts/src/components/calendar.json",
+      "sha256": "cdaf6d13613579d84df26884a559ffbf97597cd529ae480c0dee5ceb5c495bf6"
+    },
+    {
+      "path": "packages/component-contracts/src/components/checkbox.json",
+      "sha256": "e8b66e42f4c4de814f8df77b1bd7bb009985ee8177f8b85717a88044b1ba4e7b"
+    },
+    {
+      "path": "packages/component-contracts/src/components/chips.json",
+      "sha256": "9b01efb731c93229cd30cac009ae33cf0bf01f45153f101eea2c51a37518b42f"
+    },
+    {
+      "path": "packages/component-contracts/src/components/collapsible.json",
+      "sha256": "1b1862897b81bb5dc19ff0fb219e7aaa8b5df2564095cf72ab5485faa830574e"
+    },
+    {
+      "path": "packages/component-contracts/src/components/color-picker.json",
+      "sha256": "ea40c18dc5d24a83517f3cad3528a6df5d9eef425fddbf96de03348dd7407649"
+    },
+    {
+      "path": "packages/component-contracts/src/components/combobox.json",
+      "sha256": "5bb74a89b6079f01c69daec58c6e2fe0572fb315c8182eb2c9ae027a13cf99bf"
+    },
+    {
+      "path": "packages/component-contracts/src/components/context-menu.json",
+      "sha256": "b5bec0ea9321ebc4b06953d18cce87b1915e64da54b7b80a5d613d788e75801c"
+    },
+    {
+      "path": "packages/component-contracts/src/components/date-picker.json",
+      "sha256": "000d6f87c3f97d0ba1c30b1486ce7d64eee8bb67b9824054a40f52a3d75405e4"
+    },
+    {
+      "path": "packages/component-contracts/src/components/dialog.json",
+      "sha256": "dad2fe2671df1cba6897f7455fff35501ac77c0cbb58e05b1d32cda5c020561b"
+    },
+    {
+      "path": "packages/component-contracts/src/components/dropdown-menu.json",
+      "sha256": "3c22962f7aa1e4bb1eac577e102760caee765cc688736948cb0ef47f827ffab8"
+    },
+    {
+      "path": "packages/component-contracts/src/components/field.json",
+      "sha256": "65b8c9506c3d8e873522a3ffec98152a0e28990c31b8008c37451b85e8c9d353"
+    },
+    {
+      "path": "packages/component-contracts/src/components/form-field.json",
+      "sha256": "b09d41a4abdfe20e5b442e5f838327cb8785825ce14ea70294599f7ac9945d90"
+    },
+    {
+      "path": "packages/component-contracts/src/components/hover-card.json",
+      "sha256": "58116659ed39d2b93f7f1908dfff04ed18f854ac8bfa0acc64cfa7dd19dc64b0"
+    },
+    {
+      "path": "packages/component-contracts/src/components/input.json",
+      "sha256": "c50333a2b064cb14defcb3ee9454833c78db17790826664408cf1e5510b81062"
+    },
+    {
+      "path": "packages/component-contracts/src/components/label.json",
+      "sha256": "df4a8a21d190c058db6aed2c4840ccc9f5de8741821878739b4a621274c08d22"
+    },
+    {
+      "path": "packages/component-contracts/src/components/list-card.json",
+      "sha256": "1561067934fc95b8974c82ff4379eb14efb4a013fe0d1460c2095b45709bc61b"
+    },
+    {
+      "path": "packages/component-contracts/src/components/menubar.json",
+      "sha256": "a4814444e4c021a7cc0d01a67e39b843cd7a2c41ddfdb04c6eeea31a1eac605a"
+    },
+    {
+      "path": "packages/component-contracts/src/components/native-select.json",
+      "sha256": "0b01cbf27cc1ea2a42ab5566ff5c74af21ec2367899ee5453f0ca7dc07190a38"
+    },
+    {
+      "path": "packages/component-contracts/src/components/number-selector.json",
+      "sha256": "95b9561ba059881d90cd3e438bcd4431ab1f5ddd7d96afe7c82a9342509950c3"
+    },
+    {
+      "path": "packages/component-contracts/src/components/pagination.json",
+      "sha256": "e3e5a411e3e4a28a5780f98f5b0a3df2df9a90d16e3565c04b2385efdac1f0c2"
+    },
+    {
+      "path": "packages/component-contracts/src/components/popover.json",
+      "sha256": "bf16b589e0cf26ab3588a1186235b6ebce0b08edc373724dab6bab36dd66d246"
+    },
+    {
+      "path": "packages/component-contracts/src/components/primary-navigation-item.json",
+      "sha256": "bbcb0abe41ea62dbe4a7e5824ceddf43da261e961267289df9c87a7e26a0dd6d"
+    },
+    {
+      "path": "packages/component-contracts/src/components/progress.json",
+      "sha256": "f0bf09193674b9297ebb5e3d83f363d1bf4618bf93605c7bbaa4cf2faacd0f17"
+    },
+    {
+      "path": "packages/component-contracts/src/components/radio-group.json",
+      "sha256": "f17ba4e2d2df17194077c6e782e7cf3179f8748c56f966db9a6ef35cc4bde005"
+    },
+    {
+      "path": "packages/component-contracts/src/components/radio.json",
+      "sha256": "63960a3162641c281723aebb7a13933127e6e497c374cc6e7dd1083f900edfad"
+    },
+    {
+      "path": "packages/component-contracts/src/components/search.json",
+      "sha256": "bc985283700b4b6e48e3e125bce7bcdbd553a9eec7f94adab106d985f21c4093"
+    },
+    {
+      "path": "packages/component-contracts/src/components/segmented-button.json",
+      "sha256": "12865a74cfc009d3aa91662993ccde8af741b027ece32e4c68a80a71f858e63d"
+    },
+    {
+      "path": "packages/component-contracts/src/components/select.json",
+      "sha256": "7103d821cb9921de1ad021b7268860f246ab8f67e25e9d3b221b5bc773db5b12"
+    },
+    {
+      "path": "packages/component-contracts/src/components/semi-modal.json",
+      "sha256": "fc06fffe7d088d0dbd34535a97296c29953464f65278f5a012641c5b30254642"
+    },
+    {
+      "path": "packages/component-contracts/src/components/sidebar.json",
+      "sha256": "f1a36195fa43e9c916737de5db45d0c74f07c8bde33d1d28b275a7c78303495e"
+    },
+    {
+      "path": "packages/component-contracts/src/components/slider.json",
+      "sha256": "5bc21e5d71e0976fa90becad2decd0c8dc92b759451723c74b27222d6b70294c"
+    },
+    {
+      "path": "packages/component-contracts/src/components/snackbar.json",
+      "sha256": "b6d6d24b9dbe0bcf88b6a9499c70bdceb5478831cf76aaf09485835bfe635186"
+    },
+    {
+      "path": "packages/component-contracts/src/components/sub-tabs.json",
+      "sha256": "da44811b68707d1f9ad46568bf75dc9eaefd093a4857b055fca623f6e56bfb4f"
+    },
+    {
+      "path": "packages/component-contracts/src/components/switch.json",
+      "sha256": "b8f34ef9690fe8f2533340bd62a49415009130fd1c93b2c13cd310a6fcb918c0"
+    },
+    {
+      "path": "packages/component-contracts/src/components/table.json",
+      "sha256": "d3b47cc5437bf13f40521f86f47f351fafdffa3fd0a5a4cb411ffe8d3e86f24b"
+    },
+    {
+      "path": "packages/component-contracts/src/components/tabs.json",
+      "sha256": "11e1367f0ddba28552459bdb1b6cae4e13082cd0929b6b8aa9b8a74c880310ae"
+    },
+    {
+      "path": "packages/component-contracts/src/components/textarea.json",
+      "sha256": "e7f44c58c32ae12d0d37e6b3958cae1cfa41015f851a073860f0ab0548d94fb6"
+    },
+    {
+      "path": "packages/component-contracts/src/components/time-picker.json",
+      "sha256": "84dcfea53c731d00d8240e5d5d00b569450c86c9863d9f409d5415a1d4a054af"
+    },
+    {
+      "path": "packages/component-contracts/src/components/titlebar.json",
+      "sha256": "74b292c75a069c793d6561e479f74c4365d1c60bc473af142dfbc6f9f429a1ad"
+    },
+    {
+      "path": "packages/component-contracts/src/components/tooltip.json",
+      "sha256": "e72653cf95c8e6b04f744da985c54f157fac2c60eed094821abb25ded8765d40"
+    },
+    {
+      "path": "packages/component-contracts/src/components/tree-view.json",
+      "sha256": "47554d8df250635aefb5c3b7a4e11996b75dd35d155ac05484d976eaf9e7de22"
+    },
+    {
+      "path": "packages/component-contracts/src/registry.json",
+      "sha256": "1b7e0da34ee92e594b05bc462f251b77f162a064ee37934d0e95c85c074b2e28"
+    },
+    {
+      "path": "packages/tokens/src/index.css",
+      "sha256": "9da5b4d2936e60a47746d82e7fc3ff92870e6d8c29793d00a994c5522ab397fc"
+    },
+    {
+      "path": "packages/tokens/src/token-runtime-map.json",
+      "sha256": "af423b313eedd7b3ef1f5b2faa6cc50c21e61cd844b7216b212c689651f91cb6"
+    },
+    {
+      "path": "packages/tokens/src/tokens.colors.css",
+      "sha256": "00c25b283287b5c42ba5676efa11a497541710a3269c6e06c80fd19f28b4a94c"
+    },
+    {
+      "path": "packages/tokens/src/tokens.icon.css",
+      "sha256": "e4f2e7f649a7d9842b53bba06de12812590b161495f68246c963f526442e5883"
+    },
+    {
+      "path": "packages/tokens/src/tokens.layout.css",
+      "sha256": "6a6bd5f3be075de0797091a4c742f6f0af62c3cc3385a62119c6572a382e73ed"
+    },
+    {
+      "path": "packages/tokens/src/tokens.radius.css",
+      "sha256": "5afad92e8bc2f557975c1b73cc5eb9915270b60a4d3e4101d52becebed4cb97d"
+    },
+    {
+      "path": "packages/tokens/src/tokens.shadow.css",
+      "sha256": "77db0d1eb9843c25650a32a9d14d0aeee41f1f6939168569dfab87b4e09337a5"
+    },
+    {
+      "path": "packages/tokens/src/tokens.size.css",
+      "sha256": "71a36eb06f88daaf395900c1e419f4bad8f4826b5aaa16d0e05490a98e95a6fe"
+    },
+    {
+      "path": "packages/tokens/src/tokens.spacing.css",
+      "sha256": "75cc5f9781105b5037f32d6dab05e561ce03dbebdb419dcb3cb11c9f5063b506"
+    },
+    {
+      "path": "packages/tokens/src/tokens.typography.css",
+      "sha256": "a41abd576aec72d5697aa9d4be5c7d7ed7df7373fd2121f9517741dd4ba66d06"
+    },
+    {
+      "path": "packages/tokens/src/tokens.utility.css",
+      "sha256": "8952af44a1067c6cedce86719f978c34349358f5afcc2d276cfdf909ffc04576"
+    },
+    {
+      "path": "references/components/component-readiness-policy.json",
+      "sha256": "0537ed9e8cce0556b5208fe3abcbd7a1662f0c689549289a4cdc2588ee77533d"
+    },
+    {
+      "path": "references/components/component-selection-rules.json",
+      "sha256": "16eebc2aaab67c7430c340e889d902b19a5b03bcb13a6c9f64b5e090a6854d02"
+    },
+    {
+      "path": "references/components/local-component-delivery.md",
+      "sha256": "743ea017d66ddbd69400b6f570a907cb5144aa567ce6fdb30095e30b445875cf"
+    },
+    {
+      "path": "references/components/source-resolution.md",
+      "sha256": "cb1510a275fbe4979e7adac8c01aba58707ccc36f024f7cab4150d8357b513e2"
+    },
+    {
+      "path": "references/index/capability-aliases.source.json",
+      "sha256": "db9a7dd35f3fb3e50df70d89a754d7774dfa61a960853abea4d5a38b15fff9d3"
+    },
+    {
+      "path": "references/index/task-routes.source.json",
+      "sha256": "478e4a537251859692e5eecada8f7275f8337a3f707621272e59cc0a07fdd0fc"
+    },
+    {
+      "path": "references/layout-system.md",
+      "sha256": "b510ec9b358f955853c68c39846db0179cd94329f4dded5e128beea8dfb439d4"
+    },
+    {
+      "path": "references/pixso-execution-invariants.md",
+      "sha256": "f4b8bd7dc649dbb432feaea94a044a0d5b9569e7baf1fcbc3985aae53c161453"
+    },
+    {
+      "path": "references/pixso-fidelity-import-pipeline.md",
+      "sha256": "374023a40de359fe23c8c0bce431fa6ea5f96e11a7c701489130f8165336a939"
+    },
+    {
+      "path": "references/pixso-import-details.md",
+      "sha256": "d96e2bfd586be25acca45d69c007804da91e51057dcbb3eb11ef58764176af07"
+    },
+    {
+      "path": "references/pixso-mcp.md",
+      "sha256": "32b30b9cd7e6c67707e7e0504fd09d866444c74615dd4ea3f4d9f53ce17654c7"
+    },
+    {
+      "path": "references/pixso-native-scene.md",
+      "sha256": "6b4fec29e29fe78b73add9a80f79198148fa8337d9d7a7d83ecc8f3dccb6d400"
+    },
+    {
+      "path": "references/resource-workflow.md",
+      "sha256": "4a889e526e91617e44b45fdd1fc581877058dbe3846a10920dbd7a2bfb608b25"
+    },
+    {
+      "path": "references/resources/core/delivery.md",
+      "sha256": "f7ac1ba885d591fde8a2a365f351105235d02b446fabf895dcd50c4b83453ddc"
+    },
+    {
+      "path": "references/resources/delivery/pixso.md",
+      "sha256": "743ea017d66ddbd69400b6f570a907cb5144aa567ce6fdb30095e30b445875cf"
+    },
+    {
+      "path": "references/resources/layout/pixso-mapping.md",
+      "sha256": "b510ec9b358f955853c68c39846db0179cd94329f4dded5e128beea8dfb439d4"
+    },
+    {
+      "path": "references/resources/pixso-detail/cross-source-mapping-registry.md",
+      "sha256": "4d8d01f31847edff581db89056efd1a221a0df96092563ff52ad0e79837e9c86"
+    },
+    {
+      "path": "references/resources/pixso-detail/html-text-sizing-and-truncation.md",
+      "sha256": "5555e808ac97175d5aec62a1ed219ad41baaf89ee048688ffd8d52c74abb4d4c"
+    },
+    {
+      "path": "references/resources/pixso-detail/icon-sizing-stroke-and-hot-zone-contract.md",
+      "sha256": "cad15341b0155f7eda636f500d90b8b75af1cc0bdd6be61a20287e8a007c0d4d"
+    },
+    {
+      "path": "references/resources/pixso-detail/overview.md",
+      "sha256": "3ab05a1ee4ec6d3690530a143fb5618b258bcf4ba9f56ae0b64a206955b1a247"
+    },
+    {
+      "path": "references/resources/pixso-detail/pixso-component-facts-sync.md",
+      "sha256": "3242b68865bc1ebbdb2c678886a858ea78248da417a125e4bfdf5721452378bc"
+    },
+    {
+      "path": "references/resources/pixso-detail/typography-mapping-policy.md",
+      "sha256": "a4c90acee38c5f9cfb2227a8b5630d1bc2cd6e1939491fe06514536ed1762aa0"
+    },
+    {
+      "path": "references/resources/pixso-mcp/binding-audit.md",
+      "sha256": "ff1b823e381e7b0095139a45516d587ef11cb27aa335cb26ff3e2ca754079a21"
+    },
+    {
+      "path": "references/resources/pixso-mcp/connection.md",
+      "sha256": "432ddc17f57b6f84599a0f21de1974a58f7291d08785bfe39a045489cc51a19f"
+    },
+    {
+      "path": "references/resources/pixso-mcp/creation-sequence.md",
+      "sha256": "0103cee55aa03ed2ede1dae9cd57ec96241b854b6025a9eafb5feee5336a6382"
+    },
+    {
+      "path": "references/resources/pixso-mcp/deliverable-reference.md",
+      "sha256": "4717c910aa984a20d6cb1ca08beffd20e6a54f7ea1c6e71edfdd08dd80518e19"
+    },
+    {
+      "path": "references/resources/pixso-mcp/existing-design-and-html-handoff.md",
+      "sha256": "142e29e0743793fe98e2842f771ffd9fcd7f71d98ea9ced47e91713b5009636d"
+    },
+    {
+      "path": "references/resources/pixso-mcp/failure-handling.md",
+      "sha256": "332f25be8eab1a8854c5abbac6ef09d5ed9e69284af794e6500fc4af6efade12"
+    },
+    {
+      "path": "references/resources/pixso-mcp/overview.md",
+      "sha256": "e938293b2fc2ab0d925d78e894708b2df82e7c5a9a0b45f064bbf45b288c6ccc"
+    },
+    {
+      "path": "references/resources/pixso-mcp/page-binding-bridge-token.md",
+      "sha256": "426409e09fc344fe674bb319756477b548f528a7d78167ffdb10818225329666"
+    },
+    {
+      "path": "references/resources/pixso-mcp/registered-reuse-performance-and-icon-gates.md",
+      "sha256": "b16392e8449004bd550ab68902ef68933e3074198d50394dbf1b86cc2ab12ddd"
+    },
+    {
+      "path": "references/resources/pixso-mcp/target-page-and-path-preflight-failure-derived.md",
+      "sha256": "a9b47b087f9c158a708daa4091c595c431a7cdec2b51c470ad80ce4e5c99aec7"
+    },
+    {
+      "path": "references/resources/pixso-mcp/token-gate.md",
+      "sha256": "9d560129eb0cc4d062bb22347f085ed83f3e8fe072d559ec0f0027a97e46c325"
+    },
+    {
+      "path": "references/resources/pixso-pipeline/acceptance-gates.md",
+      "sha256": "ae3b60a77da73f1fc3fa699696a640f374cf87a8bb7176912e6d50488a190f75"
+    },
+    {
+      "path": "references/resources/pixso-pipeline/capture-browser-computed-evidence.md",
+      "sha256": "8f6236939d9bd6f91726d6528d73dc53b77eb43558a8276690992ce4a0901c20"
+    },
+    {
+      "path": "references/resources/pixso-pipeline/compile-dom-visual-ir-only-from-the-current-run.md",
+      "sha256": "1b7e1e07c79232a60b6a822ec580f619bb1a2366daad20b5832729cb24a1be42"
+    },
+    {
+      "path": "references/resources/pixso-pipeline/execute-transactionally.md",
+      "sha256": "13590f52fb79d601fa42b3df8396c5c857c8b5fd00406075812ea97519c324e7"
+    },
+    {
+      "path": "references/resources/pixso-pipeline/keep-two-evidence-layers-and-one-pixso-output.md",
+      "sha256": "0a37f4d3aa87c2a903f4c1c7d34dfc973b5cf4178ab661ed9a5e84bc2ef0c53f"
+    },
+    {
+      "path": "references/resources/pixso-pipeline/normal-fast-path-and-diagnostic-boundary.md",
+      "sha256": "6980beb934aab1983898b5b8ef6660bbe7b0cb58be40bbd3f3a97c2a3ba7be8d"
+    },
+    {
+      "path": "references/resources/pixso-pipeline/overview.md",
+      "sha256": "4801ade09f8378776454cdc5ffd7f6ef76d91688ad5d34e1753aecfc04d10a90"
+    },
+    {
+      "path": "references/resources/pixso-pipeline/resolve-components-without-changing-geometry.md",
+      "sha256": "6aa03082e1e4062ca329234854bd9d86a4f14add256eb454d495b1253ce51170"
+    },
+    {
+      "path": "references/resources/pixso-pipeline/start-an-isolated-run.md",
+      "sha256": "a547bf0beef350954271b569489ba36c1b3ae103fe717182376aaf47274e4ab7"
+    },
+    {
+      "path": "references/resources/pixso-scene/divider-ownership.md",
+      "sha256": "7fbd37ee555a3e8bed53976a3eb23259dd5c5f324da819a66032bff718977275"
+    },
+    {
+      "path": "references/resources/pixso-scene/dom-visual-ir.md",
+      "sha256": "031bd5d40fc9a74ac68fa2697b6b50615ed9b21267048f71d49b3a5356cd670f"
+    },
+    {
+      "path": "references/resources/pixso-scene/html-computed-visual-state.md",
+      "sha256": "ca8406be1dbd0b5fb64ceb83e4f2a8f376ce712e398214a13fd22cf234180e1f"
+    },
+    {
+      "path": "references/resources/pixso-scene/mcp-10.md",
+      "sha256": "cf7da034f8232a893208cf4de2c3c17d084b917c73e7cde636ea89ade37e418f"
+    },
+    {
+      "path": "references/resources/pixso-scene/mcp.md",
+      "sha256": "da6dc79124f12f22eb987b6f42a64701257c3cd865d8fea841376184878bdcf7"
+    },
+    {
+      "path": "references/resources/pixso-scene/overview.md",
+      "sha256": "7f928718fb0dea04d121faa6706984258527649d99fc5a7a69b0fe414894ab99"
+    },
+    {
+      "path": "references/resources/pixso-scene/scene.md",
+      "sha256": "d654910301e246321e1775b8e0961e3c9ee1461fe46bb103f603045806f81ce7"
+    },
+    {
+      "path": "references/resources/pixso-scene/section-11.md",
+      "sha256": "8a29b1979f8fae3d1b1be133daed681a82d0a6c066e74e390660439b5108ed34"
+    },
+    {
+      "path": "references/resources/pixso-scene/section-6.md",
+      "sha256": "e6193653d9ea76941efbaa4f2da6cf116ba516689de07a8fe8a3b8bc0247ba1d"
+    },
+    {
+      "path": "references/resources/pixso-scene/section-7.md",
+      "sha256": "35e27832c6cda539b96015f58fb9f363da406f0039ec8c7b2ffb01862ba72612"
+    },
+    {
+      "path": "references/resources/pixso-scene/section-8.md",
+      "sha256": "d0a2e2f3aa6ccd0e4043e20f80a62f081f6f563e015dd65c94b0c0fdd95472bd"
+    },
+    {
+      "path": "references/resources/pixso-scene/surface.md",
+      "sha256": "64412a20785af31bb80b47fe57dc290ee268a68984d6c4a8397e442233b6126b"
+    },
+    {
+      "path": "references/resources/source.json",
+      "sha256": "aed46c7c956dd37904fa491d88b03fcbd640d7a525d5dbdd1f46978bace39c5d"
+    },
+    {
+      "path": "references/resources/source.schema.json",
+      "sha256": "757c4973c64cddcc44b7d4277ac9f4e763e52297d259fd4612f3ea77b68d31c4"
+    },
+    {
+      "path": "references/routes/index.json",
+      "sha256": "673cf8ec2be26995227eac6e1f8c7ce88982a0d3a907625e325db3b9444fe00a"
+    },
+    {
+      "path": "references/routes/materials.source.json",
+      "sha256": "be2b9521cf8c0297a606f0046d031c5910c33260ea22837b0fbe6fd38d281656"
+    },
+    {
+      "path": "scripts/build-resource-index.mjs",
+      "sha256": "cb04df4f28ca02eb1e0b18507b3e1ff8957718f0d616da202527c377734f1167"
+    },
+    {
+      "path": "scripts/query-resources.mjs",
+      "sha256": "b3fed12bb37fcc031ae3fcaf17fdec063eb8339e33a11b451ad97e6b9af95876"
+    },
+    {
+      "path": "scripts/resource-index-lib.mjs",
+      "sha256": "eb9f385c0942a0964c6006f92b70f79c8cbd111722041f908a9f24cb35a5176c"
+    },
+    {
+      "path": "scripts/stage-context-lib.mjs",
+      "sha256": "bf179bc2fcd9371c232e9e0528722981aa313f030d1627c60dfafc93b7367fac"
+    },
+    {
+      "path": "skill-profile.json",
+      "sha256": "8484060124f4626e3c805e0c556ba54debe9bd4c16540b237b83ef44188eca55"
+    }
+  ],
+  "resources": [
+    {
+      "id": "layout.pixso-mapping",
+      "path": "references/resources/layout/pixso-mapping.md",
+      "purpose": "6. Pixso Mapping",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/layout-system.md",
+        "ordinal": 6,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 503,
+      "sha256": "b510ec9b358f955853c68c39846db0179cd94329f4dded5e128beea8dfb439d4",
+      "kind": "document"
+    },
+    {
+      "id": "delivery.pixso",
+      "path": "references/resources/delivery/pixso.md",
+      "purpose": "Pixso 衔接",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/components/local-component-delivery.md",
+        "ordinal": 6,
+        "linkBase": "references/components"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 647,
+      "sha256": "743ea017d66ddbd69400b6f570a907cb5144aa567ce6fdb30095e30b445875cf",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-pipeline.overview",
+      "path": "references/resources/pixso-pipeline/overview.md",
+      "purpose": "HTML → Pixso Fidelity Import Pipeline",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 0,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 387,
+      "sha256": "4801ade09f8378776454cdc5ffd7f6ef76d91688ad5d34e1753aecfc04d10a90",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-pipeline.normal-fast-path-and-diagnostic-boundary",
+      "path": "references/resources/pixso-pipeline/normal-fast-path-and-diagnostic-boundary.md",
+      "purpose": "0. Normal fast path and diagnostic boundary",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "readiness"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 1,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage",
+      "bytes": 4819,
+      "sha256": "6980beb934aab1983898b5b8ef6660bbe7b0cb58be40bbd3f3a97c2a3ba7be8d",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-pipeline.start-an-isolated-run",
+      "path": "references/resources/pixso-pipeline/start-an-isolated-run.md",
+      "purpose": "1. Start an isolated run",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "readiness"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 2,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage",
+      "bytes": 2502,
+      "sha256": "a547bf0beef350954271b569489ba36c1b3ae103fe717182376aaf47274e4ab7",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-pipeline.capture-browser-computed-evidence",
+      "path": "references/resources/pixso-pipeline/capture-browser-computed-evidence.md",
+      "purpose": "2. Capture browser-computed evidence",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "capture"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 3,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage",
+      "bytes": 4775,
+      "sha256": "8f6236939d9bd6f91726d6528d73dc53b77eb43558a8276690992ce4a0901c20",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-pipeline.keep-two-evidence-layers-and-one-pixso-output",
+      "path": "references/resources/pixso-pipeline/keep-two-evidence-layers-and-one-pixso-output.md",
+      "purpose": "3. Keep two evidence layers and one Pixso output",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "compile"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 4,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage",
+      "bytes": 1160,
+      "sha256": "0a37f4d3aa87c2a903f4c1c7d34dfc973b5cf4178ab661ed9a5e84bc2ef0c53f",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-pipeline.compile-dom-visual-ir-only-from-the-current-run",
+      "path": "references/resources/pixso-pipeline/compile-dom-visual-ir-only-from-the-current-run.md",
+      "purpose": "4. Compile DOM Visual IR only from the current run",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "compile"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 5,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage",
+      "bytes": 2093,
+      "sha256": "1b7e1e07c79232a60b6a822ec580f619bb1a2366daad20b5832729cb24a1be42",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-pipeline.resolve-components-without-changing-geometry",
+      "path": "references/resources/pixso-pipeline/resolve-components-without-changing-geometry.md",
+      "purpose": "5. Resolve Components without changing geometry",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "compile"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 6,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage",
+      "bytes": 1992,
+      "sha256": "6aa03082e1e4062ca329234854bd9d86a4f14add256eb454d495b1253ce51170",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-pipeline.execute-transactionally",
+      "path": "references/resources/pixso-pipeline/execute-transactionally.md",
+      "purpose": "6. Execute transactionally",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "publish"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 7,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage",
+      "bytes": 2534,
+      "sha256": "13590f52fb79d601fa42b3df8396c5c857c8b5fd00406075812ea97519c324e7",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-pipeline.acceptance-gates",
+      "path": "references/resources/pixso-pipeline/acceptance-gates.md",
+      "purpose": "7. Acceptance gates",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "readback"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-fidelity-import-pipeline.md",
+        "ordinal": 8,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage",
+      "bytes": 1623,
+      "sha256": "ae3b60a77da73f1fc3fa699696a640f374cf87a8bb7176912e6d50488a190f75",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-mcp.overview",
+      "path": "references/resources/pixso-mcp/overview.md",
+      "purpose": "Pixso MCP Workflow",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 0,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 453,
+      "sha256": "e938293b2fc2ab0d925d78e894708b2df82e7c5a9a0b45f064bbf45b288c6ccc",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-mcp.connection",
+      "path": "references/resources/pixso-mcp/connection.md",
+      "purpose": "Connection",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 1,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 754,
+      "sha256": "432ddc17f57b6f84599a0f21de1974a58f7291d08785bfe39a045489cc51a19f",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-mcp.target-page-and-path-preflight-failure-derived",
+      "path": "references/resources/pixso-mcp/target-page-and-path-preflight-failure-derived.md",
+      "purpose": "Target page and path preflight (failure-derived)",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 2,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 2013,
+      "sha256": "a9b47b087f9c158a708daa4091c595c431a7cdec2b51c470ad80ce4e5c99aec7",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-mcp.creation-sequence",
+      "path": "references/resources/pixso-mcp/creation-sequence.md",
+      "purpose": "Creation Sequence",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 3,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 962,
+      "sha256": "0103cee55aa03ed2ede1dae9cd57ec96241b854b6025a9eafb5feee5336a6382",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-mcp.registered-reuse-performance-and-icon-gates",
+      "path": "references/resources/pixso-mcp/registered-reuse-performance-and-icon-gates.md",
+      "purpose": "Registered reuse, performance, and icon gates",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 4,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 633,
+      "sha256": "b16392e8449004bd550ab68902ef68933e3074198d50394dbf1b86cc2ab12ddd",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-mcp.page-binding-bridge-token",
+      "path": "references/resources/pixso-mcp/page-binding-bridge-token.md",
+      "purpose": "Page Binding Bridge（页面 Token 快速通道）",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 5,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 2044,
+      "sha256": "426409e09fc344fe674bb319756477b548f528a7d78167ffdb10818225329666",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-mcp.token-gate",
+      "path": "references/resources/pixso-mcp/token-gate.md",
+      "purpose": "Token Gate",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 6,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 3136,
+      "sha256": "9d560129eb0cc4d062bb22347f085ed83f3e8fe072d559ec0f0027a97e46c325",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-mcp.binding-audit",
+      "path": "references/resources/pixso-mcp/binding-audit.md",
+      "purpose": "Binding Audit",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 7,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 2396,
+      "sha256": "ff1b823e381e7b0095139a45516d587ef11cb27aa335cb26ff3e2ca754079a21",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-mcp.existing-design-and-html-handoff",
+      "path": "references/resources/pixso-mcp/existing-design-and-html-handoff.md",
+      "purpose": "Existing Design and HTML Handoff",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 8,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 706,
+      "sha256": "142e29e0743793fe98e2842f771ffd9fcd7f71d98ea9ced47e91713b5009636d",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-mcp.failure-handling",
+      "path": "references/resources/pixso-mcp/failure-handling.md",
+      "purpose": "Failure Handling",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "diagnosis"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 9,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage",
+      "bytes": 1353,
+      "sha256": "332f25be8eab1a8854c5abbac6ef09d5ed9e69284af794e6500fc4af6efade12",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-mcp.deliverable-reference",
+      "path": "references/resources/pixso-mcp/deliverable-reference.md",
+      "purpose": "Deliverable Reference",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-mcp.md",
+        "ordinal": 10,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 189,
+      "sha256": "4717c910aa984a20d6cb1ca08beffd20e6a54f7ea1c6e71edfdd08dd80518e19",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-scene.overview",
+      "path": "references/resources/pixso-scene/overview.md",
+      "purpose": "Pixso Native Scene（插件与 MCP 共用）",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 0,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 1170,
+      "sha256": "7f928718fb0dea04d121faa6706984258527649d99fc5a7a69b0fe414894ab99",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-scene.html-computed-visual-state",
+      "path": "references/resources/pixso-scene/html-computed-visual-state.md",
+      "purpose": "HTML computed visual state",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "capture"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 1,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage",
+      "bytes": 837,
+      "sha256": "ca8406be1dbd0b5fb64ceb83e4f2a8f376ce712e398214a13fd22cf234180e1f",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-scene.dom-visual-ir",
+      "path": "references/resources/pixso-scene/dom-visual-ir.md",
+      "purpose": "DOM Visual IR 三阶段生成模型",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 2,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 592,
+      "sha256": "031bd5d40fc9a74ac68fa2697b6b50615ed9b21267048f71d49b3a5356cd670f",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-scene.scene",
+      "path": "references/resources/pixso-scene/scene.md",
+      "purpose": "旧 Scene 两阶段生成模型",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 3,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 3005,
+      "sha256": "d654910301e246321e1775b8e0961e3c9ee1461fe46bb103f603045806f81ce7",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-scene.surface",
+      "path": "references/resources/pixso-scene/surface.md",
+      "purpose": "Surface 继承与透明背景",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 4,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 759,
+      "sha256": "64412a20785af31bb80b47fe57dc290ee268a68984d6c4a8397e442233b6126b",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-scene.divider-ownership",
+      "path": "references/resources/pixso-scene/divider-ownership.md",
+      "purpose": "Divider ownership 与单边描边",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 5,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 615,
+      "sha256": "7fbd37ee555a3e8bed53976a3eb23259dd5c5f324da819a66032bff718977275",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-scene.section-6",
+      "path": "references/resources/pixso-scene/section-6.md",
+      "purpose": "位图资源",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 6,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 613,
+      "sha256": "e6193653d9ea76941efbaa4f2da6cf116ba516689de07a8fe8a3b8bc0247ba1d",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-scene.section-7",
+      "path": "references/resources/pixso-scene/section-7.md",
+      "purpose": "运行顺序",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 7,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 879,
+      "sha256": "35e27832c6cda539b96015f58fb9f363da406f0039ec8c7b2ffb01862ba72612",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-scene.section-8",
+      "path": "references/resources/pixso-scene/section-8.md",
+      "purpose": "组件规则",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 8,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 2679,
+      "sha256": "d0a2e2f3aa6ccd0e4043e20f80a62f081f6f563e015dd65c94b0c0fdd95472bd",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-scene.mcp",
+      "path": "references/resources/pixso-scene/mcp.md",
+      "purpose": "执行通道：整页导入强制插件，MCP 仅显式诊断",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 9,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 3968,
+      "sha256": "da6dc79124f12f22eb987b6f42a64701257c3cd865d8fea841376184878bdcf7",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-scene.mcp-10",
+      "path": "references/resources/pixso-scene/mcp-10.md",
+      "purpose": "MCP 适配",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 10,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 2647,
+      "sha256": "cf7da034f8232a893208cf4de2c3c17d084b917c73e7cde636ea89ade37e418f",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-scene.section-11",
+      "path": "references/resources/pixso-scene/section-11.md",
+      "purpose": "页面状态",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-native-scene.md",
+        "ordinal": 11,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 1492,
+      "sha256": "8a29b1979f8fae3d1b1be133daed681a82d0a6c066e74e390660439b5108ed34",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-detail.overview",
+      "path": "references/resources/pixso-detail/overview.md",
+      "purpose": "Pixso mapping and rendering details",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-import-details.md",
+        "ordinal": 0,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 112,
+      "sha256": "3ab05a1ee4ec6d3690530a143fb5618b258bcf4ba9f56ae0b64a206955b1a247",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-detail.html-text-sizing-and-truncation",
+      "path": "references/resources/pixso-detail/html-text-sizing-and-truncation.md",
+      "purpose": "HTML text sizing and truncation",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "capture",
+          "compile"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-import-details.md",
+        "ordinal": 1,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage",
+      "bytes": 1527,
+      "sha256": "5555e808ac97175d5aec62a1ed219ad41baaf89ee048688ffd8d52c74abb4d4c",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-detail.icon-sizing-stroke-and-hot-zone-contract",
+      "path": "references/resources/pixso-detail/icon-sizing-stroke-and-hot-zone-contract.md",
+      "purpose": "Icon sizing, stroke, and hot-zone contract",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "capture",
+          "compile"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-import-details.md",
+        "ordinal": 2,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage",
+      "bytes": 1634,
+      "sha256": "cad15341b0155f7eda636f500d90b8b75af1cc0bdd6be61a20287e8a007c0d4d",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-detail.cross-source-mapping-registry",
+      "path": "references/resources/pixso-detail/cross-source-mapping-registry.md",
+      "purpose": "Cross-source mapping registry",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "compile"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-import-details.md",
+        "ordinal": 3,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage",
+      "bytes": 2751,
+      "sha256": "4d8d01f31847edff581db89056efd1a221a0df96092563ff52ad0e79837e9c86",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-detail.typography-mapping-policy",
+      "path": "references/resources/pixso-detail/typography-mapping-policy.md",
+      "purpose": "Typography mapping policy",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {
+        "phases": [
+          "compile"
+        ]
+      },
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-import-details.md",
+        "ordinal": 4,
+        "linkBase": "references"
+      },
+      "readPolicy": "stage",
+      "bytes": 2911,
+      "sha256": "a4c90acee38c5f9cfb2227a8b5630d1bc2cd6e1939491fe06514536ed1762aa0",
+      "kind": "document"
+    },
+    {
+      "id": "pixso-detail.pixso-component-facts-sync",
+      "path": "references/resources/pixso-detail/pixso-component-facts-sync.md",
+      "purpose": "Pixso component facts sync",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [],
+      "source": {
+        "aggregate": "references/pixso-import-details.md",
+        "ordinal": 5,
+        "linkBase": "references"
+      },
+      "readPolicy": "explicit-query",
+      "bytes": 1248,
+      "sha256": "3242b68865bc1ebbdb2c678886a858ea78248da417a125e4bfdf5721452378bc",
+      "kind": "document"
+    },
+    {
+      "id": "core.delivery",
+      "path": "references/resources/core/delivery.md",
+      "purpose": "所有阶段的交付与来源边界",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {},
+      "requires": [],
+      "readPolicy": "stage",
+      "bytes": 467,
+      "sha256": "f7ac1ba885d591fde8a2a365f351105235d02b446fabf895dcd50c4b83453ddc",
+      "kind": "document"
+    },
+    {
+      "id": "pixso.invariants",
+      "path": "references/pixso-execution-invariants.md",
+      "purpose": "Pixso 执行、失败与回读边界",
+      "stage": [
+        "pixso"
+      ],
+      "appliesTo": {},
+      "requires": [
+        "core.delivery"
+      ],
+      "readPolicy": "stage",
+      "bytes": 6655,
+      "sha256": "f4b8bd7dc649dbb432feaea94a044a0d5b9569e7baf1fcbc3985aae53c161453",
+      "kind": "document"
+    },
+    {
+      "id": "components.resolution",
+      "path": "references/components/source-resolution.md",
+      "purpose": "组件来源、语义与成熟度",
+      "stage": [],
+      "appliesTo": {},
+      "requires": [
+        "core.delivery"
+      ],
+      "readPolicy": "stage",
+      "bytes": 3103,
+      "sha256": "cb1510a275fbe4979e7adac8c01aba58707ccc36f024f7cab4150d8357b513e2",
+      "kind": "document"
+    },
+    {
+      "id": "component.accordion",
+      "kind": "component",
+      "purpose": "Accordion/Default",
+      "path": "packages/component-contracts/src/components/accordion.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "accordion"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2481,
+      "sha256": "34997266674b5eada3fd7d1d0f24d7608c026badfc9fd560926e87c8c82d936c"
+    },
+    {
+      "id": "component.alert-dialog",
+      "kind": "component",
+      "purpose": "Alert Dialog/Default",
+      "path": "packages/component-contracts/src/components/alert-dialog.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "alert-dialog"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2892,
+      "sha256": "3eddcdce074177ea25d561b3e2c73dc4ef46b24c523064f85d9bfd0c688b4138"
+    },
+    {
+      "id": "component.alert",
+      "kind": "component",
+      "purpose": "Alert/Default",
+      "path": "packages/component-contracts/src/components/alert.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "alert"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 4488,
+      "sha256": "58f8fd002538bb77c3a1edf9c73ce5edd1f8512b5259ec3b754e7d5a06d4dcea"
+    },
+    {
+      "id": "component.attachment",
+      "kind": "component",
+      "purpose": "Attachment/Default",
+      "path": "packages/component-contracts/src/components/attachment.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "attachment"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 3572,
+      "sha256": "25b6e56a70d8b5f866d97c8c75d2b0357a7721ffcad91114ebcb0f09f0b2a9da"
+    },
+    {
+      "id": "component.avatar",
+      "kind": "component",
+      "purpose": "Avatar/Default",
+      "path": "packages/component-contracts/src/components/avatar.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "avatar"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2505,
+      "sha256": "85b125b9124e602ce64027bb091ed96e1fd6c13ee7c5099cd3c68117934b7d66"
+    },
+    {
+      "id": "component.badge",
+      "kind": "component",
+      "purpose": "Badge/Default",
+      "path": "packages/component-contracts/src/components/badge.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "badge"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2168,
+      "sha256": "51c6f7ed8cbd93836b8d2d884b8ee8939557bd594397ecad4219c994d1c97342"
+    },
+    {
+      "id": "component.breadcrumb",
+      "kind": "component",
+      "purpose": "Breadcrumb/Default",
+      "path": "packages/component-contracts/src/components/breadcrumb.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "breadcrumb"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2494,
+      "sha256": "155e94b27bf9288b8428b8f5e5b942bcd70262169f0dd5af45b10d43547d4385"
+    },
+    {
+      "id": "component.button",
+      "kind": "component",
+      "purpose": "Button/Primary/Default",
+      "path": "packages/component-contracts/src/components/button.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "button"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 5733,
+      "sha256": "6a0a601bacba32b899b85bbb5fa69bdc891e6157d786876acbdf9300abde78ae"
+    },
+    {
+      "id": "component.calendar",
+      "kind": "component",
+      "purpose": "Calendar/Default",
+      "path": "packages/component-contracts/src/components/calendar.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "calendar"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2479,
+      "sha256": "cdaf6d13613579d84df26884a559ffbf97597cd529ae480c0dee5ceb5c495bf6"
+    },
+    {
+      "id": "component.checkbox",
+      "kind": "component",
+      "purpose": "Checkbox/Default",
+      "path": "packages/component-contracts/src/components/checkbox.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "checkbox"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2462,
+      "sha256": "e8b66e42f4c4de814f8df77b1bd7bb009985ee8177f8b85717a88044b1ba4e7b"
+    },
+    {
+      "id": "component.chips",
+      "kind": "component",
+      "purpose": "Chips/Default",
+      "path": "packages/component-contracts/src/components/chips.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "chips"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 3080,
+      "sha256": "9b01efb731c93229cd30cac009ae33cf0bf01f45153f101eea2c51a37518b42f"
+    },
+    {
+      "id": "component.collapsible",
+      "kind": "component",
+      "purpose": "Collapsible/Default",
+      "path": "packages/component-contracts/src/components/collapsible.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "collapsible"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2573,
+      "sha256": "1b1862897b81bb5dc19ff0fb219e7aaa8b5df2564095cf72ab5485faa830574e"
+    },
+    {
+      "id": "component.color-picker",
+      "kind": "component",
+      "purpose": "ColorPicker/Tablet",
+      "path": "packages/component-contracts/src/components/color-picker.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "color-picker"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2550,
+      "sha256": "ea40c18dc5d24a83517f3cad3528a6df5d9eef425fddbf96de03348dd7407649"
+    },
+    {
+      "id": "component.combobox",
+      "kind": "component",
+      "purpose": "Combobox/Default",
+      "path": "packages/component-contracts/src/components/combobox.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "combobox"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2556,
+      "sha256": "5bb74a89b6079f01c69daec58c6e2fe0572fb315c8182eb2c9ae027a13cf99bf"
+    },
+    {
+      "id": "component.context-menu",
+      "kind": "component",
+      "purpose": "Context Menu/Default",
+      "path": "packages/component-contracts/src/components/context-menu.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "context-menu"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2547,
+      "sha256": "b5bec0ea9321ebc4b06953d18cce87b1915e64da54b7b80a5d613d788e75801c"
+    },
+    {
+      "id": "component.date-picker",
+      "kind": "component",
+      "purpose": "Date Picker/Default",
+      "path": "packages/component-contracts/src/components/date-picker.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "date-picker"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2580,
+      "sha256": "000d6f87c3f97d0ba1c30b1486ce7d64eee8bb67b9824054a40f52a3d75405e4"
+    },
+    {
+      "id": "component.dialog",
+      "kind": "component",
+      "purpose": "Dialog/Default",
+      "path": "packages/component-contracts/src/components/dialog.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "dialog"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 4024,
+      "sha256": "dad2fe2671df1cba6897f7455fff35501ac77c0cbb58e05b1d32cda5c020561b"
+    },
+    {
+      "id": "component.dropdown-menu",
+      "kind": "component",
+      "purpose": "Dropdown Menu/Default",
+      "path": "packages/component-contracts/src/components/dropdown-menu.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "dropdown-menu"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2583,
+      "sha256": "3c22962f7aa1e4bb1eac577e102760caee765cc688736948cb0ef47f827ffab8"
+    },
+    {
+      "id": "component.field",
+      "kind": "component",
+      "purpose": "Field/Default",
+      "path": "packages/component-contracts/src/components/field.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "field"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2276,
+      "sha256": "65b8c9506c3d8e873522a3ffec98152a0e28990c31b8008c37451b85e8c9d353"
+    },
+    {
+      "id": "component.form-field",
+      "kind": "component",
+      "purpose": "Form Field/Default",
+      "path": "packages/component-contracts/src/components/form-field.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "form-field"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2945,
+      "sha256": "b09d41a4abdfe20e5b442e5f838327cb8785825ce14ea70294599f7ac9945d90"
+    },
+    {
+      "id": "component.hover-card",
+      "kind": "component",
+      "purpose": "Hover Card/Default",
+      "path": "packages/component-contracts/src/components/hover-card.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "hover-card"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2548,
+      "sha256": "58116659ed39d2b93f7f1908dfff04ed18f854ac8bfa0acc64cfa7dd19dc64b0"
+    },
+    {
+      "id": "component.input",
+      "kind": "component",
+      "purpose": "Input/White Surface/Default",
+      "path": "packages/component-contracts/src/components/input.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "input"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2751,
+      "sha256": "c50333a2b064cb14defcb3ee9454833c78db17790826664408cf1e5510b81062"
+    },
+    {
+      "id": "component.label",
+      "kind": "component",
+      "purpose": "Label/Default",
+      "path": "packages/component-contracts/src/components/label.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "label"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2453,
+      "sha256": "df4a8a21d190c058db6aed2c4840ccc9f5de8741821878739b4a621274c08d22"
+    },
+    {
+      "id": "component.list-card",
+      "kind": "component",
+      "purpose": "List Item/White Surface/Default",
+      "path": "packages/component-contracts/src/components/list-card.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "list-card"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 3475,
+      "sha256": "1561067934fc95b8974c82ff4379eb14efb4a013fe0d1460c2095b45709bc61b"
+    },
+    {
+      "id": "component.menubar",
+      "kind": "component",
+      "purpose": "Menubar/Default",
+      "path": "packages/component-contracts/src/components/menubar.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "menubar"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 3522,
+      "sha256": "a4814444e4c021a7cc0d01a67e39b843cd7a2c41ddfdb04c6eeea31a1eac605a"
+    },
+    {
+      "id": "component.native-select",
+      "kind": "component",
+      "purpose": "Native Select/Default",
+      "path": "packages/component-contracts/src/components/native-select.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "native-select"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2520,
+      "sha256": "0b01cbf27cc1ea2a42ab5566ff5c74af21ec2367899ee5453f0ca7dc07190a38"
+    },
+    {
+      "id": "component.number-selector",
+      "kind": "component",
+      "purpose": "Number Selector/Default",
+      "path": "packages/component-contracts/src/components/number-selector.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "number-selector"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2433,
+      "sha256": "95b9561ba059881d90cd3e438bcd4431ab1f5ddd7d96afe7c82a9342509950c3"
+    },
+    {
+      "id": "component.pagination",
+      "kind": "component",
+      "purpose": "Pagination/Default",
+      "path": "packages/component-contracts/src/components/pagination.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "pagination"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2715,
+      "sha256": "e3e5a411e3e4a28a5780f98f5b0a3df2df9a90d16e3565c04b2385efdac1f0c2"
+    },
+    {
+      "id": "component.popover",
+      "kind": "component",
+      "purpose": "Popover/Default",
+      "path": "packages/component-contracts/src/components/popover.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "popover"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2527,
+      "sha256": "bf16b589e0cf26ab3588a1186235b6ebce0b08edc373724dab6bab36dd66d246"
+    },
+    {
+      "id": "component.primary-navigation-item",
+      "kind": "component",
+      "purpose": "Primary Navigation Item/Level 1",
+      "path": "packages/component-contracts/src/components/primary-navigation-item.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "primary-navigation-item"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 3473,
+      "sha256": "bbcb0abe41ea62dbe4a7e5824ceddf43da261e961267289df9c87a7e26a0dd6d"
+    },
+    {
+      "id": "component.progress",
+      "kind": "component",
+      "purpose": "Progress/Default",
+      "path": "packages/component-contracts/src/components/progress.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "progress"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2548,
+      "sha256": "f0bf09193674b9297ebb5e3d83f363d1bf4618bf93605c7bbaa4cf2faacd0f17"
+    },
+    {
+      "id": "component.radio-group",
+      "kind": "component",
+      "purpose": "Radio Group/Default",
+      "path": "packages/component-contracts/src/components/radio-group.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "radio-group"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2481,
+      "sha256": "f17ba4e2d2df17194077c6e782e7cf3179f8748c56f966db9a6ef35cc4bde005"
+    },
+    {
+      "id": "component.radio",
+      "kind": "component",
+      "purpose": "Radio/Unselected/Default",
+      "path": "packages/component-contracts/src/components/radio.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "radio"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2538,
+      "sha256": "63960a3162641c281723aebb7a13933127e6e497c374cc6e7dd1083f900edfad"
+    },
+    {
+      "id": "component.search",
+      "kind": "component",
+      "purpose": "Search/White Surface/Default",
+      "path": "packages/component-contracts/src/components/search.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "search"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 4777,
+      "sha256": "bc985283700b4b6e48e3e125bce7bcdbd553a9eec7f94adab106d985f21c4093"
+    },
+    {
+      "id": "component.segmented-button",
+      "kind": "component",
+      "purpose": "Segmented Button/Default",
+      "path": "packages/component-contracts/src/components/segmented-button.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "segmented-button"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2393,
+      "sha256": "12865a74cfc009d3aa91662993ccde8af741b027ece32e4c68a80a71f858e63d"
+    },
+    {
+      "id": "component.select",
+      "kind": "component",
+      "purpose": "Select/Default",
+      "path": "packages/component-contracts/src/components/select.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "select"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2671,
+      "sha256": "7103d821cb9921de1ad021b7268860f246ab8f67e25e9d3b221b5bc773db5b12"
+    },
+    {
+      "id": "component.semi-modal",
+      "kind": "component",
+      "purpose": "Semi-modal/Default",
+      "path": "packages/component-contracts/src/components/semi-modal.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "semi-modal"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 4389,
+      "sha256": "fc06fffe7d088d0dbd34535a97296c29953464f65278f5a012641c5b30254642"
+    },
+    {
+      "id": "component.sidebar",
+      "kind": "component",
+      "purpose": "Sidebar Item/Default",
+      "path": "packages/component-contracts/src/components/sidebar.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "sidebar"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2960,
+      "sha256": "f1a36195fa43e9c916737de5db45d0c74f07c8bde33d1d28b275a7c78303495e"
+    },
+    {
+      "id": "component.slider",
+      "kind": "component",
+      "purpose": "Slider/Default",
+      "path": "packages/component-contracts/src/components/slider.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "slider"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2430,
+      "sha256": "5bc21e5d71e0976fa90becad2decd0c8dc92b759451723c74b27222d6b70294c"
+    },
+    {
+      "id": "component.snackbar",
+      "kind": "component",
+      "purpose": "Snackbar/Default",
+      "path": "packages/component-contracts/src/components/snackbar.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "snackbar"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 3846,
+      "sha256": "b6d6d24b9dbe0bcf88b6a9499c70bdceb5478831cf76aaf09485835bfe635186"
+    },
+    {
+      "id": "component.sub-tabs",
+      "kind": "component",
+      "purpose": "Sub Tabs/Default",
+      "path": "packages/component-contracts/src/components/sub-tabs.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "sub-tabs"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2409,
+      "sha256": "da44811b68707d1f9ad46568bf75dc9eaefd093a4857b055fca623f6e56bfb4f"
+    },
+    {
+      "id": "component.switch",
+      "kind": "component",
+      "purpose": "Switch/Default",
+      "path": "packages/component-contracts/src/components/switch.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "switch"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2469,
+      "sha256": "b8f34ef9690fe8f2533340bd62a49415009130fd1c93b2c13cd310a6fcb918c0"
+    },
+    {
+      "id": "component.table",
+      "kind": "component",
+      "purpose": "Table/Default",
+      "path": "packages/component-contracts/src/components/table.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "table"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2323,
+      "sha256": "d3b47cc5437bf13f40521f86f47f351fafdffa3fd0a5a4cb411ffe8d3e86f24b"
+    },
+    {
+      "id": "component.tabs",
+      "kind": "component",
+      "purpose": "Tabs/Default",
+      "path": "packages/component-contracts/src/components/tabs.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "tabs"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2429,
+      "sha256": "11e1367f0ddba28552459bdb1b6cae4e13082cd0929b6b8aa9b8a74c880310ae"
+    },
+    {
+      "id": "component.textarea",
+      "kind": "component",
+      "purpose": "Textarea/Default",
+      "path": "packages/component-contracts/src/components/textarea.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "textarea"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2502,
+      "sha256": "e7f44c58c32ae12d0d37e6b3958cae1cfa41015f851a073860f0ab0548d94fb6"
+    },
+    {
+      "id": "component.time-picker",
+      "kind": "component",
+      "purpose": "Time Picker/Default",
+      "path": "packages/component-contracts/src/components/time-picker.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "time-picker"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2571,
+      "sha256": "84dcfea53c731d00d8240e5d5d00b569450c86c9863d9f409d5415a1d4a054af"
+    },
+    {
+      "id": "component.titlebar",
+      "kind": "component",
+      "purpose": "Titlebar/Default",
+      "path": "packages/component-contracts/src/components/titlebar.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "titlebar"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 10857,
+      "sha256": "74b292c75a069c793d6561e479f74c4365d1c60bc473af142dfbc6f9f429a1ad"
+    },
+    {
+      "id": "component.tooltip",
+      "kind": "component",
+      "purpose": "Tooltip/Default",
+      "path": "packages/component-contracts/src/components/tooltip.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "tooltip"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 2395,
+      "sha256": "e72653cf95c8e6b04f744da985c54f157fac2c60eed094821abb25ded8765d40"
+    },
+    {
+      "id": "component.tree-view",
+      "kind": "component",
+      "purpose": "Tree View/Default",
+      "path": "packages/component-contracts/src/components/tree-view.json",
+      "stage": [
+        "discovery",
+        "bindings"
+      ],
+      "appliesTo": {
+        "components": [
+          "tree-view"
+        ]
+      },
+      "requires": [
+        "core.delivery"
+      ],
+      "bytes": 3073,
+      "sha256": "47554d8df250635aefb5c3b7a4e11996b75dd35d155ac05484d976eaf9e7de22"
+    }
+  ]
+}

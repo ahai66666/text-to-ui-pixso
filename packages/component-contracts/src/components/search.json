@@ -1,0 +1,214 @@
+{
+  "id": "search",
+  "logicalName": "Search/White Surface/Default",
+  "variants": [
+    "default",
+    "focused",
+    "with-value",
+    "advanced-search",
+    "scoped-search",
+    "scoped-advanced-search"
+  ],
+  "states": [
+    "default",
+    "focus",
+    "typing",
+    "filled",
+    "hover-left",
+    "hover-right",
+    "pressed-left",
+    "pressed-right",
+    "disabled"
+  ],
+  "props": [
+    "value",
+    "defaultValue",
+    "placeholder",
+    "disabled",
+    "state",
+    "surface",
+    "scope",
+    "defaultScope",
+    "scopeOptions",
+    "scopeLabel",
+    "onScopeChange",
+    "advancedSearch",
+    "advancedSearchLabel",
+    "onAdvancedSearch",
+    "onChange",
+    "onClear"
+  ],
+  "slots": [
+    "scope-selector",
+    "leading",
+    "value",
+    "clear",
+    "advanced-search"
+  ],
+  "tokenRoles": [
+    "color.input-bg",
+    "color.text",
+    "color.icon",
+    "size.search-height",
+    "radius.search",
+    "spacing.padding-search-x",
+    "typography.body-l"
+  ],
+  "iconAliases": [
+    "field/search",
+    "action/close"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/index.js#search"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/index.js#search"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "input",
+  "categoryLabel": "输入类",
+  "order": 311,
+  "canonicalSection": "[data-runtime-category=\"input\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"input\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-search\"]",
+  "legacyVisualGroup": "fields",
+  "canonicalSpecimen": "gallery:input:search",
+  "specimens": [
+    {
+      "id": "white-surface",
+      "variant": "default",
+      "state": "default",
+      "surface": "white"
+    },
+    {
+      "id": "gray-surface",
+      "variant": "default",
+      "state": "default",
+      "surface": "gray"
+    }
+  ],
+  "fixtureId": "fixture-search",
+  "surface": [
+    "white",
+    "gray"
+  ],
+  "sizing": "fill",
+  "allowedStates": [
+    "default",
+    "focus",
+    "typing",
+    "filled",
+    "hover-left",
+    "hover-right",
+    "pressed-left",
+    "pressed-right",
+    "disabled"
+  ],
+  "behaviors": [
+    "input",
+    "scope-select",
+    "clear",
+    "advanced-search",
+    "focus",
+    "disabled"
+  ],
+  "textRoles": [
+    "value:body-l",
+    "placeholder:body-l"
+  ],
+  "iconSlots": [
+    {
+      "alias": "field/search",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "action/close",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconSemantic": "field/search",
+  "slotContracts": {
+    "scope-selector": {
+      "cardinality": "0..1",
+      "optional": true,
+      "configurable": true,
+      "configurationProps": [
+        "scopeOptions",
+        "scope",
+        "defaultScope",
+        "scopeLabel",
+        "onScopeChange"
+      ],
+      "scope": "search-query-builder",
+      "defaultPlacement": "leading-before-search-icon",
+      "control": "dropdown-menu",
+      "defaultLabel": "搜索范围",
+      "defaultValue": "first-scope-option",
+      "dividerToken": "color.border",
+      "interaction": "change-search-scope",
+      "coexistenceOrder": [
+        "scope-selector",
+        "leading",
+        "value",
+        "clear",
+        "advanced-search"
+      ]
+    },
+    "advanced-search": {
+      "cardinality": "0..1",
+      "optional": true,
+      "configurable": true,
+      "configurationProps": [
+        "advancedSearch",
+        "advancedSearchLabel",
+        "onAdvancedSearch"
+      ],
+      "scope": "search-query-builder",
+      "defaultPlacement": "trailing-after-clear",
+      "control": "small-text-button",
+      "variant": "ghost",
+      "size": "small",
+      "mode": "text",
+      "textColorToken": "color.text-muted",
+      "trailingInsetToken": "space/2",
+      "requiresAccessibleName": true,
+      "interaction": "open-advanced-search-layer",
+      "coexistenceOrder": [
+        "clear",
+        "advanced-search"
+      ]
+    }
+  },
+  "comparisonGroup": "input"
+}

@@ -1,0 +1,196 @@
+:root {
+  --color-brand-05: #0A59F70C;
+  --color-brand-10: #0A59F719;
+  --color-brand-15: #0A59F726;
+  --color-brand-20: #0A59F733;
+  --color-brand-30: #0A59F74D;
+  --color-brand-40: #0A59F766;
+  --color-brand-50: #0A59F77F;
+  --color-brand-60: #0A59F799;
+  --color-brand-70: #0A59F7B2;
+  --color-brand-80: #0A59F7CC;
+  --color-brand-90: #0A59F7E5;
+  --color-brand-100: #0A59F7FF;
+
+  --color-neutral-dark-05: #0000000C;
+  --color-neutral-dark-10: #00000019;
+  --color-neutral-dark-15: #00000026;
+  --color-neutral-dark-20: #00000033;
+  --color-neutral-dark-30: #0000004D;
+  --color-neutral-dark-40: #00000066;
+  --color-neutral-dark-50: #0000007F;
+  --color-neutral-dark-60: #00000099;
+  --color-neutral-dark-70: #000000B2;
+  --color-neutral-dark-80: #000000CC;
+  --color-neutral-dark-90: #000000E5;
+  --color-neutral-dark-100: #000000FF;
+
+  --color-neutral-light-05: #FFFFFF0C;
+  --color-neutral-light-10: #FFFFFF19;
+  --color-neutral-light-15: #FFFFFF26;
+  --color-neutral-light-20: #FFFFFF33;
+  --color-neutral-light-30: #FFFFFF4D;
+  --color-neutral-light-40: #FFFFFF66;
+  --color-neutral-light-50: #FFFFFF7F;
+  --color-neutral-light-60: #FFFFFF99;
+  --color-neutral-light-70: #FFFFFFB2;
+  --color-neutral-light-80: #FFFFFFCC;
+  --color-neutral-light-90: #FFFFFFE5;
+  --color-neutral-light-100: #FFFFFFFF;
+
+  --color-function-success-10: #64BB5C19;
+  --color-function-success-20: #64BB5C33;
+  --color-function-success-100: #64BB5CFF;
+  --color-function-warning-10: #ED6F2119;
+  --color-function-warning-20: #ED6F2133;
+  --color-function-warning-100: #ED6F21FF;
+  --color-function-danger-10: #E8402619;
+  --color-function-danger-20: #E8402633;
+  --color-function-danger-100: #E84026FF;
+
+  --color-multi-01: #564AF7;
+  --color-multi-02: #46B1E3;
+  --color-multi-03: #61CFBE;
+  --color-multi-04: #A5D61D;
+  --color-multi-05: #AC49F5;
+  --color-multi-06: #E64566;
+  --color-multi-07: #F9A01E;
+  --color-multi-08: #F7CE00;
+  --color-multi-09: #64BB5C;
+  --color-multi-10: #E84026;
+  --color-multi-11: #ED6F21;
+
+  /* Compatibility aliases stay in code only; do not create them as Pixso variables. */
+  --color-brand-5: var(--color-brand-05);
+  --color-neutral-dark-5: var(--color-neutral-dark-05);
+  --color-neutral-light-5: var(--color-neutral-light-05);
+  --color-white: var(--color-neutral-light-100);
+  --color-black: var(--color-neutral-dark-100);
+  --color-gray-01: var(--color-neutral-dark-05);
+  --color-warning: var(--color-function-warning-100);
+  --color-warning-10: var(--color-function-warning-10);
+  --color-warning-20: var(--color-function-warning-20);
+  --color-alert: var(--color-function-danger-100);
+  --color-alert-20: var(--color-function-danger-20);
+  --color-confirm: var(--color-function-success-100);
+  --color-confirm-10: var(--color-function-success-10);
+  --color-confirm-20: var(--color-function-success-20);
+
+  --color-bg: var(--color-neutral-light-100);
+  --color-bg-subtle: var(--color-neutral-dark-05);
+  --color-surface: var(--color-neutral-light-100);
+  --color-surface-raised: var(--color-neutral-light-100);
+  --color-surface-muted: var(--color-neutral-dark-05);
+  --color-titlebar-normal-bg: transparent;
+  --color-titlebar-unfocus-bg: transparent;
+  --color-overlay: var(--color-neutral-dark-40);
+  --color-dialog-bg: var(--color-surface-raised);
+  --color-modal-bg-white: var(--color-surface-raised);
+  --color-modal-bg-gray: var(--color-surface-muted);
+  --color-secondary: var(--color-neutral-dark-05);
+  --color-secondary-hover: var(--color-neutral-dark-10);
+  --color-button-secondary-bg: var(--color-secondary);
+  --color-button-secondary-hover-bg: var(--color-secondary-hover);
+  --color-button-secondary-text: var(--color-text);
+  --color-button-ghost-bg: transparent;
+  --color-button-ghost-hover-bg: var(--color-neutral-dark-05);
+  --color-button-ghost-text: var(--color-brand-100);
+  --color-button-danger-bg: var(--color-secondary);
+  --color-button-danger-hover-bg: var(--color-secondary-hover);
+  --color-button-danger-text: var(--color-function-danger-100);
+  --color-icon-text-button-ghost-bg: transparent;
+  --color-icon-text-button-ghost-hover-bg: var(--color-neutral-dark-05);
+  --color-icon-text-button-ghost-content: var(--color-neutral-dark-90);
+  --color-accent: var(--color-brand-100);
+  --color-accent-hover: var(--color-accent);
+  --color-accent-hover-layer: var(--color-neutral-dark-05);
+  --color-sidebar-bg: var(--color-neutral-dark-05);
+  --color-sidebar-accent: var(--color-neutral-dark-05);
+  --color-sidebar-accent-text: var(--color-brand-100);
+  --color-sidebar-selected: var(--color-brand-10);
+  --color-sidebar-selected-text: var(--color-brand-100);
+  --color-tab-list-bg: var(--color-neutral-dark-05);
+  --color-tab-text: var(--color-neutral-dark-60);
+  --color-tab-hover-bg: var(--color-neutral-dark-10);
+  --color-tab-selected-bg: var(--color-white);
+  --color-tab-selected-text: var(--color-neutral-dark-90);
+  --color-tooltip-bg: var(--color-surface);
+  --color-tooltip-text: var(--color-text);
+
+  /* Input and search fields share these state semantics. */
+  --color-input-border: transparent;
+
+  /* Fields on white/default page surfaces. */
+  --color-input-bg: var(--color-neutral-dark-05);
+  --color-input-bg-on-default: var(--color-neutral-dark-05);
+  --color-input-hover-bg: var(--color-neutral-dark-10);
+  --color-input-hover-bg-on-default: var(--color-neutral-dark-10);
+  --color-input-focus-bg: var(--color-neutral-dark-05);
+  --color-input-focus-bg-on-default: var(--color-neutral-dark-05);
+  --color-input-error-bg: var(--color-neutral-dark-05);
+  --color-input-error-bg-on-default: var(--color-neutral-dark-05);
+
+  /* Fields on gray/subtle page surfaces. */
+  --color-input-bg-on-subtle: var(--color-white);
+  --color-input-hover-bg-on-subtle: var(--color-white);
+  --color-input-hover-bg-on-subtle-layer: var(--color-neutral-dark-05);
+  --color-input-hover-border-on-subtle: var(--color-white);
+  --color-input-focus-bg-on-subtle: var(--color-white);
+  --color-input-error-bg-on-subtle: var(--color-white);
+
+  --color-input-error-border: var(--color-function-danger-100);
+
+  --color-text: var(--color-neutral-dark-90);
+  --color-text-muted: var(--color-neutral-dark-60);
+  --color-text-subtle: var(--color-neutral-dark-40);
+  --color-text-inverse: var(--color-neutral-light-100);
+  --color-text-brand: var(--color-brand-100);
+  --color-link: var(--color-neutral-dark-100);
+
+  --color-icon: var(--color-neutral-dark-90);
+  --color-icon-muted: var(--color-neutral-dark-60);
+  --color-primary-level-unselected: var(--color-icon-subtle);
+  --color-icon-subtle: var(--color-neutral-dark-40);
+  --color-icon-inverse: var(--color-neutral-light-100);
+
+  --color-border: var(--color-neutral-dark-10);
+  --color-divider: var(--color-neutral-dark-20);
+  --color-focus-ring: var(--color-brand-100);
+
+  --color-primary: var(--color-brand-100);
+  --color-primary-text: var(--color-neutral-light-100);
+
+  --color-success: var(--color-function-success-100);
+  --color-success-subtle: var(--color-function-success-10);
+  --color-warning-subtle: var(--color-function-warning-10);
+  --color-danger: var(--color-function-danger-100);
+  --color-danger-subtle: var(--color-function-danger-10);
+  --color-info: var(--color-brand-100);
+  --color-info-subtle: var(--color-brand-10);
+  --color-alert-neutral: var(--color-text-muted);
+  --color-alert-neutral-subtle: var(--color-neutral-dark-05);
+  --color-badge-neutral-text: var(--color-text-muted);
+  --color-badge-neutral-bg: var(--color-neutral-dark-10);
+  --color-badge-info-text: var(--color-info);
+  --color-badge-info-bg: var(--color-brand-10);
+  --color-badge-success-text: var(--color-function-success-100);
+  --color-badge-success-bg: var(--color-function-success-10);
+  --color-badge-warning-text: var(--color-function-warning-100);
+  --color-badge-warning-bg: var(--color-function-warning-10);
+  --color-badge-danger-text: var(--color-function-danger-100);
+  --color-badge-danger-bg: var(--color-function-danger-10);
+
+  --color-chart-1: var(--color-multi-01);
+  --color-chart-2: var(--color-multi-02);
+  --color-chart-3: var(--color-multi-03);
+  --color-chart-4: var(--color-multi-04);
+  --color-chart-5: var(--color-multi-05);
+
+  --state-layer-hover: var(--color-neutral-dark-05);
+  --state-layer-pressed: var(--color-neutral-dark-10);
+  --state-layer-selected: var(--color-neutral-dark-10);
+  --state-layer-focus: var(--color-brand-10);
+  --opacity-40: 0.4;
+  --state-disabled-opacity: var(--opacity-40);
+  --state-window-unfocus-opacity: var(--opacity-40);
+}

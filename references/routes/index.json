@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "text-to-ui-workflow-route-index",
+  "routes": {
+    "existing-html-to-pixso": {
+      "description": "Import a named existing rendered HTML page into Pixso without redesign.",
+      "exactReferencesToRead": [
+        "references/routes/existing-html-to-pixso.md"
+      ]
+    },
+    "pixso-component-library": {
+      "description": "Build, repair, or synchronize Pixso component-library assets.",
+      "exactReferencesToRead": [
+        "references/routes/pixso-component-library.md"
+      ]
+    },
+    "converter-diagnosis": {
+      "description": "Diagnose a failed HTML-to-Pixso converter or import run.",
+      "exactReferencesToRead": [
+        "references/routes/converter-diagnosis.md"
+      ]
+    },
+    "skill-maintenance": {
+      "description": "Audit or repair Skill implementation, mapping governance, tests, and delivery mirrors.",
+      "exactReferencesToRead": [
+        "references/routes/skill-maintenance.md"
+      ]
+    }
+  }
+}

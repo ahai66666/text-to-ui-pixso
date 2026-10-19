@@ -1,0 +1,716 @@
+{
+  "Color": {
+    "brand": {
+      "10": {
+        "value": "#0A59F719",
+        "type": "color",
+        "description": "tokens.colors.json:brand"
+      },
+      "15": {
+        "value": "#0A59F726",
+        "type": "color",
+        "description": "tokens.colors.json:brand"
+      },
+      "20": {
+        "value": "#0A59F733",
+        "type": "color",
+        "description": "tokens.colors.json:brand"
+      },
+      "30": {
+        "value": "#0A59F74D",
+        "type": "color",
+        "description": "tokens.colors.json:brand"
+      },
+      "40": {
+        "value": "#0A59F766",
+        "type": "color",
+        "description": "tokens.colors.json:brand"
+      },
+      "50": {
+        "value": "#0A59F77F",
+        "type": "color",
+        "description": "tokens.colors.json:brand"
+      },
+      "60": {
+        "value": "#0A59F799",
+        "type": "color",
+        "description": "tokens.colors.json:brand"
+      },
+      "70": {
+        "value": "#0A59F7B2",
+        "type": "color",
+        "description": "tokens.colors.json:brand"
+      },
+      "80": {
+        "value": "#0A59F7CC",
+        "type": "color",
+        "description": "tokens.colors.json:brand"
+      },
+      "90": {
+        "value": "#0A59F7E5",
+        "type": "color",
+        "description": "tokens.colors.json:brand"
+      },
+      "100": {
+        "value": "#0A59F7FF",
+        "type": "color",
+        "description": "tokens.colors.json:brand"
+      },
+      "05": {
+        "value": "#0A59F70C",
+        "type": "color",
+        "description": "tokens.colors.json:brand"
+      }
+    },
+    "neutral-dark": {
+      "10": {
+        "value": "#00000019",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-dark"
+      },
+      "15": {
+        "value": "#00000026",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-dark"
+      },
+      "20": {
+        "value": "#00000033",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-dark"
+      },
+      "30": {
+        "value": "#0000004D",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-dark"
+      },
+      "40": {
+        "value": "#00000066",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-dark"
+      },
+      "50": {
+        "value": "#0000007F",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-dark"
+      },
+      "60": {
+        "value": "#00000099",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-dark"
+      },
+      "70": {
+        "value": "#000000B2",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-dark"
+      },
+      "80": {
+        "value": "#000000CC",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-dark"
+      },
+      "90": {
+        "value": "#000000E5",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-dark"
+      },
+      "100": {
+        "value": "#000000FF",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-dark"
+      },
+      "05": {
+        "value": "#0000000C",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-dark"
+      }
+    },
+    "neutral-light": {
+      "10": {
+        "value": "#FFFFFF19",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-light"
+      },
+      "15": {
+        "value": "#FFFFFF26",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-light"
+      },
+      "20": {
+        "value": "#FFFFFF33",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-light"
+      },
+      "30": {
+        "value": "#FFFFFF4D",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-light"
+      },
+      "40": {
+        "value": "#FFFFFF66",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-light"
+      },
+      "50": {
+        "value": "#FFFFFF7F",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-light"
+      },
+      "60": {
+        "value": "#FFFFFF99",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-light"
+      },
+      "70": {
+        "value": "#FFFFFFB2",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-light"
+      },
+      "80": {
+        "value": "#FFFFFFCC",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-light"
+      },
+      "90": {
+        "value": "#FFFFFFE5",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-light"
+      },
+      "100": {
+        "value": "#FFFFFFFF",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-light"
+      },
+      "05": {
+        "value": "#FFFFFF0C",
+        "type": "color",
+        "description": "tokens.colors.json:neutral-light"
+      }
+    },
+    "function": {
+      "success": {
+        "10": {
+          "value": "#64BB5C19",
+          "type": "color",
+          "description": "tokens.colors.json:function"
+        },
+        "20": {
+          "value": "#64BB5C33",
+          "type": "color",
+          "description": "tokens.colors.json:function"
+        },
+        "100": {
+          "value": "#64BB5CFF",
+          "type": "color",
+          "description": "tokens.colors.json:function"
+        }
+      },
+      "warning": {
+        "10": {
+          "value": "#ED6F2119",
+          "type": "color",
+          "description": "tokens.colors.json:function"
+        },
+        "20": {
+          "value": "#ED6F2133",
+          "type": "color",
+          "description": "tokens.colors.json:function"
+        },
+        "100": {
+          "value": "#ED6F21FF",
+          "type": "color",
+          "description": "tokens.colors.json:function"
+        }
+      },
+      "danger": {
+        "10": {
+          "value": "#E8402619",
+          "type": "color",
+          "description": "tokens.colors.json:function"
+        },
+        "20": {
+          "value": "#E8402633",
+          "type": "color",
+          "description": "tokens.colors.json:function"
+        },
+        "100": {
+          "value": "#E84026FF",
+          "type": "color",
+          "description": "tokens.colors.json:function"
+        }
+      }
+    },
+    "multi": {
+      "10": {
+        "value": "#E84026",
+        "type": "color",
+        "description": "tokens.colors.json:multi"
+      },
+      "11": {
+        "value": "#ED6F21",
+        "type": "color",
+        "description": "tokens.colors.json:multi"
+      },
+      "01": {
+        "value": "#564AF7",
+        "type": "color",
+        "description": "tokens.colors.json:multi"
+      },
+      "02": {
+        "value": "#46B1E3",
+        "type": "color",
+        "description": "tokens.colors.json:multi"
+      },
+      "03": {
+        "value": "#61CFBE",
+        "type": "color",
+        "description": "tokens.colors.json:multi"
+      },
+      "04": {
+        "value": "#A5D61D",
+        "type": "color",
+        "description": "tokens.colors.json:multi"
+      },
+      "05": {
+        "value": "#AC49F5",
+        "type": "color",
+        "description": "tokens.colors.json:multi"
+      },
+      "06": {
+        "value": "#E64566",
+        "type": "color",
+        "description": "tokens.colors.json:multi"
+      },
+      "07": {
+        "value": "#F9A01E",
+        "type": "color",
+        "description": "tokens.colors.json:multi"
+      },
+      "08": {
+        "value": "#F7CE00",
+        "type": "color",
+        "description": "tokens.colors.json:multi"
+      },
+      "09": {
+        "value": "#64BB5C",
+        "type": "color",
+        "description": "tokens.colors.json:multi"
+      }
+    }
+  },
+  "Spacing": {
+    "space": {
+      "0": {
+        "value": "0px",
+        "type": "dimension",
+        "description": "tokens.spacing.json:space.0"
+      },
+      "1": {
+        "value": "2px",
+        "type": "dimension",
+        "description": "tokens.spacing.json:space.1"
+      },
+      "2": {
+        "value": "4px",
+        "type": "dimension",
+        "description": "tokens.spacing.json:space.2"
+      },
+      "3": {
+        "value": "8px",
+        "type": "dimension",
+        "description": "tokens.spacing.json:space.3"
+      },
+      "4": {
+        "value": "12px",
+        "type": "dimension",
+        "description": "tokens.spacing.json:space.4"
+      },
+      "5": {
+        "value": "16px",
+        "type": "dimension",
+        "description": "tokens.spacing.json:space.5"
+      },
+      "6": {
+        "value": "24px",
+        "type": "dimension",
+        "description": "tokens.spacing.json:space.6"
+      },
+      "7": {
+        "value": "32px",
+        "type": "dimension",
+        "description": "tokens.spacing.json:space.7"
+      }
+    }
+  },
+  "Size & Layout": {
+    "size": {
+      "12": {
+        "value": "12px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.4"
+      },
+      "16": {
+        "value": "16px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.5"
+      },
+      "20": {
+        "value": "20px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.6"
+      },
+      "24": {
+        "value": "24px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.7"
+      },
+      "28": {
+        "value": "28px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.8"
+      },
+      "32": {
+        "value": "32px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.9"
+      },
+      "36": {
+        "value": "36px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.10"
+      },
+      "40": {
+        "value": "40px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.11"
+      },
+      "44": {
+        "value": "44px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.12"
+      },
+      "48": {
+        "value": "48px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.13"
+      },
+      "56": {
+        "value": "56px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.14"
+      },
+      "64": {
+        "value": "64px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.15"
+      },
+      "72": {
+        "value": "72px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.16"
+      },
+      "80": {
+        "value": "80px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.17"
+      },
+      "04": {
+        "value": "4px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.1"
+      },
+      "06": {
+        "value": "6px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.2"
+      },
+      "08": {
+        "value": "8px",
+        "type": "dimension",
+        "description": "tokens.size.json:size.3"
+      }
+    },
+    "icon": {
+      "stroke": {
+        "16": {
+          "value": "1px",
+          "type": "dimension",
+          "description": "tokens.icon.json:lucide.project-stroke-width-by-display-size.16"
+        },
+        "20": {
+          "value": "1.25px",
+          "type": "dimension",
+          "description": "tokens.icon.json:lucide.project-stroke-width-by-display-size.20"
+        },
+        "24": {
+          "value": "1.5px",
+          "type": "dimension",
+          "description": "tokens.icon.json:lucide.project-stroke-width-by-display-size.24"
+        }
+      }
+    },
+    "radius": {
+      "0": {
+        "value": "0px",
+        "type": "dimension",
+        "description": "tokens.radius.json:radius.0"
+      },
+      "12": {
+        "value": "12px",
+        "type": "dimension",
+        "description": "tokens.radius.json:radius.4"
+      },
+      "16": {
+        "value": "16px",
+        "type": "dimension",
+        "description": "tokens.radius.json:radius.5"
+      },
+      "04": {
+        "value": "4px",
+        "type": "dimension",
+        "description": "tokens.radius.json:radius.1"
+      },
+      "06": {
+        "value": "6px",
+        "type": "dimension",
+        "description": "tokens.radius.json:radius.2"
+      },
+      "08": {
+        "value": "8px",
+        "type": "dimension",
+        "description": "tokens.radius.json:radius.3"
+      },
+      "full": {
+        "value": "999px",
+        "type": "dimension",
+        "description": "tokens.radius.json:radius.full"
+      }
+    },
+    "layout": {
+      "divider": {
+        "0.5": {
+          "value": "0.5px",
+          "type": "dimension",
+          "description": "tokens.layout.json:shell.navigation-divider-width"
+        }
+      },
+      "width": {
+        "240": {
+          "value": "240px",
+          "type": "dimension",
+          "description": "tokens.layout.json:shell.sidebar-width"
+        },
+        "360": {
+          "value": "360px",
+          "type": "dimension",
+          "description": "tokens.layout.json:shell.secondary-pane-width"
+        },
+        "400": {
+          "value": "400px",
+          "type": "dimension",
+          "description": "tokens.size.json:modal.dialog-width"
+        },
+        "480": {
+          "value": "480px",
+          "type": "dimension",
+          "description": "tokens.size.json:modal.width-s"
+        },
+        "640": {
+          "value": "640px",
+          "type": "dimension",
+          "description": "tokens.size.json:modal.width-m"
+        },
+        "800": {
+          "value": "800px",
+          "type": "dimension",
+          "description": "tokens.size.json:modal.width-l"
+        },
+        "1100": {
+          "value": "1100px",
+          "type": "dimension",
+          "description": "tokens.layout.json:window.min-width"
+        },
+        "1728": {
+          "value": "1728px",
+          "type": "dimension",
+          "description": "tokens.layout.json:frame.width"
+        }
+      },
+      "height": {
+        "720": {
+          "value": "720px",
+          "type": "dimension",
+          "description": "tokens.layout.json:window.min-height"
+        },
+        "1152": {
+          "value": "1152px",
+          "type": "dimension",
+          "description": "tokens.layout.json:frame.height"
+        }
+      }
+    },
+    "opacity": {
+      "40": {
+        "value": 40,
+        "type": "number",
+        "description": "tokens.colors.json:semantic.state-disabled-opacity"
+      }
+    }
+  },
+  "Typography": {
+    "font": {
+      "family": {
+        "sans": {
+          "value": "HarmonyOS Sans",
+          "type": "text",
+          "description": "tokens.typography.json:font-family.sans"
+        }
+      },
+      "size": {
+        "10": {
+          "value": "10px",
+          "type": "dimension",
+          "description": "tokens.typography.json:font-size.10"
+        },
+        "12": {
+          "value": "12px",
+          "type": "dimension",
+          "description": "tokens.typography.json:font-size.12"
+        },
+        "14": {
+          "value": "14px",
+          "type": "dimension",
+          "description": "tokens.typography.json:font-size.14"
+        },
+        "16": {
+          "value": "16px",
+          "type": "dimension",
+          "description": "tokens.typography.json:font-size.16"
+        },
+        "18": {
+          "value": "18px",
+          "type": "dimension",
+          "description": "tokens.typography.json:font-size.18"
+        },
+        "20": {
+          "value": "20px",
+          "type": "dimension",
+          "description": "tokens.typography.json:font-size.20"
+        },
+        "24": {
+          "value": "24px",
+          "type": "dimension",
+          "description": "tokens.typography.json:font-size.24"
+        },
+        "30": {
+          "value": "30px",
+          "type": "dimension",
+          "description": "tokens.typography.json:font-size.30"
+        },
+        "38": {
+          "value": "38px",
+          "type": "dimension",
+          "description": "tokens.typography.json:font-size.38"
+        },
+        "48": {
+          "value": "48px",
+          "type": "dimension",
+          "description": "tokens.typography.json:font-size.48"
+        },
+        "56": {
+          "value": "56px",
+          "type": "dimension",
+          "description": "tokens.typography.json:font-size.56"
+        }
+      },
+      "line-height": {
+        "12": {
+          "value": "12px",
+          "type": "dimension",
+          "description": "tokens.typography.json:line-height.12"
+        },
+        "14": {
+          "value": "14px",
+          "type": "dimension",
+          "description": "tokens.typography.json:line-height.14"
+        },
+        "16": {
+          "value": "16px",
+          "type": "dimension",
+          "description": "tokens.typography.json:line-height.16"
+        },
+        "20": {
+          "value": "20px",
+          "type": "dimension",
+          "description": "tokens.typography.json:line-height.20"
+        },
+        "22": {
+          "value": "22px",
+          "type": "dimension",
+          "description": "tokens.typography.json:line-height.22"
+        },
+        "24": {
+          "value": "24px",
+          "type": "dimension",
+          "description": "tokens.typography.json:line-height.24"
+        },
+        "28": {
+          "value": "28px",
+          "type": "dimension",
+          "description": "tokens.typography.json:line-height.28"
+        },
+        "36": {
+          "value": "36px",
+          "type": "dimension",
+          "description": "tokens.typography.json:line-height.36"
+        },
+        "44": {
+          "value": "44px",
+          "type": "dimension",
+          "description": "tokens.typography.json:line-height.44"
+        },
+        "58": {
+          "value": "58px",
+          "type": "dimension",
+          "description": "tokens.typography.json:line-height.58"
+        },
+        "66": {
+          "value": "66px",
+          "type": "dimension",
+          "description": "tokens.typography.json:line-height.66"
+        }
+      },
+      "weight": {
+        "400": {
+          "value": 400,
+          "type": "number",
+          "description": "tokens.typography.json:font-weight.400"
+        },
+        "500": {
+          "value": 500,
+          "type": "number",
+          "description": "tokens.typography.json:font-weight.500"
+        },
+        "700": {
+          "value": 700,
+          "type": "number",
+          "description": "tokens.typography.json:font-weight.700"
+        }
+      },
+      "letter-spacing": {
+        "0": {
+          "value": "0px",
+          "type": "dimension",
+          "description": "tokens.typography.json:letter-spacing.normal"
+        }
+      }
+    }
+  },
+  "$metadata": {
+    "tokenSetOrder": [
+      "Color",
+      "Spacing",
+      "Size & Layout",
+      "Typography"
+    ]
+  }
+}

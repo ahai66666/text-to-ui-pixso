@@ -1,0 +1,156 @@
+[
+  {
+    "skill": "old",
+    "task": "button",
+    "entryBytes": 6244,
+    "modelPackBytes": 6498,
+    "selectedSourceBytes": 13811,
+    "selectedFileCount": 5,
+    "tokenCount": null,
+    "resources": [
+      "core.delivery",
+      "supplement.universal-contract",
+      "component.button"
+    ]
+  },
+  {
+    "skill": "old",
+    "task": "styling",
+    "entryBytes": 6244,
+    "modelPackBytes": 5655,
+    "selectedSourceBytes": 156899,
+    "selectedFileCount": 7,
+    "tokenCount": null,
+    "resources": [
+      "core.delivery",
+      "layout.grid",
+      "delivery.styles"
+    ]
+  },
+  {
+    "skill": "old",
+    "task": "readiness",
+    "entryBytes": 6244,
+    "modelPackBytes": 16235,
+    "selectedSourceBytes": 14101,
+    "selectedFileCount": 4,
+    "tokenCount": null,
+    "resources": [
+      "core.delivery",
+      "pixso-pipeline.normal-fast-path-and-diagnostic-boundary",
+      "pixso-pipeline.start-an-isolated-run",
+      "pixso.invariants"
+    ]
+  },
+  {
+    "skill": "old",
+    "task": "compile",
+    "entryBytes": 6244,
+    "modelPackBytes": 24963,
+    "selectedSourceBytes": 21700,
+    "selectedFileCount": 9,
+    "tokenCount": null,
+    "resources": [
+      "core.delivery",
+      "pixso-pipeline.keep-two-evidence-layers-and-one-pixso-output",
+      "pixso-pipeline.compile-dom-visual-ir-only-from-the-current-run",
+      "pixso-pipeline.resolve-components-without-changing-geometry",
+      "pixso-detail.html-text-sizing-and-truncation",
+      "pixso-detail.icon-sizing-stroke-and-hot-zone-contract",
+      "pixso-detail.cross-source-mapping-registry",
+      "pixso-detail.typography-mapping-policy",
+      "pixso.invariants"
+    ]
+  },
+  {
+    "skill": "old",
+    "task": "readback",
+    "entryBytes": 6244,
+    "modelPackBytes": 11084,
+    "selectedSourceBytes": 9255,
+    "selectedFileCount": 3,
+    "tokenCount": null,
+    "resources": [
+      "core.delivery",
+      "pixso-pipeline.acceptance-gates",
+      "pixso.invariants"
+    ]
+  },
+  {
+    "skill": "html",
+    "task": "button",
+    "entryBytes": 3448,
+    "modelPackBytes": 5996,
+    "selectedSourceBytes": 13315,
+    "selectedFileCount": 5,
+    "tokenCount": null,
+    "resources": [
+      "core.delivery",
+      "supplement.universal-contract",
+      "component.button"
+    ]
+  },
+  {
+    "skill": "html",
+    "task": "styling",
+    "entryBytes": 3448,
+    "modelPackBytes": 5153,
+    "selectedSourceBytes": 156403,
+    "selectedFileCount": 7,
+    "tokenCount": null,
+    "resources": [
+      "core.delivery",
+      "layout.grid",
+      "delivery.styles"
+    ]
+  },
+  {
+    "skill": "pixso",
+    "task": "readiness",
+    "entryBytes": 3085,
+    "modelPackBytes": 16575,
+    "selectedSourceBytes": 14443,
+    "selectedFileCount": 4,
+    "tokenCount": null,
+    "resources": [
+      "core.delivery",
+      "pixso-pipeline.normal-fast-path-and-diagnostic-boundary",
+      "pixso-pipeline.start-an-isolated-run",
+      "pixso.invariants"
+    ]
+  },
+  {
+    "skill": "pixso",
+    "task": "compile",
+    "entryBytes": 3085,
+    "modelPackBytes": 24447,
+    "selectedSourceBytes": 21190,
+    "selectedFileCount": 9,
+    "tokenCount": null,
+    "resources": [
+      "core.delivery",
+      "pixso-pipeline.keep-two-evidence-layers-and-one-pixso-output",
+      "pixso-pipeline.compile-dom-visual-ir-only-from-the-current-run",
+      "pixso-pipeline.resolve-components-without-changing-geometry",
+      "pixso-detail.html-text-sizing-and-truncation",
+      "pixso-detail.icon-sizing-stroke-and-hot-zone-contract",
+      "pixso-detail.cross-source-mapping-registry",
+      "pixso-detail.typography-mapping-policy",
+      "pixso.invariants"
+    ]
+  },
+  {
+    "skill": "pixso",
+    "task": "readback",
+    "entryBytes": 3085,
+    "modelPackBytes": 10568,
+    "selectedSourceBytes": 8745,
+    "selectedFileCount": 3,
+    "tokenCount": null,
+    "resources": [
+      "core.delivery",
+      "pixso-pipeline.acceptance-gates",
+      "pixso.invariants"
+    ]
+  }
+]

@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.text-to-ui/ui-scene.schema.json",
+  "title": "Text-to-UI canonical UI Scene",
+  "type": "object",
+  "required": ["schemaVersion", "kind", "page", "nodes"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "kind": { "const": "text-to-ui-scene" },
+    "source": { "type": "object" },
+    "page": {
+      "type": "object",
+      "required": ["name", "viewport", "pattern", "stateScope"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "targetPage": { "type": ["string", "null"] },
+        "viewport": {
+          "type": "object",
+          "required": ["width", "height"],
+          "properties": { "width": { "type": "number", "exclusiveMinimum": 0 }, "height": { "type": "number", "exclusiveMinimum": 0 } }
+        },
+        "pattern": { "enum": ["pattern-a-two-pane", "pattern-b-three-pane", "pattern-c-tool-workspace", "pattern-d-inspector"] },
+        "patternContract": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["source", "schemaVersion"],
+          "properties": {
+            "source": { "const": "assets/design-system/pattern-contracts.json" },
+            "schemaVersion": { "const": 1 },
+            "patternDigest": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+            "structureDigest": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+          }
+        },
+        "slotBindings": {
+          "type": "object",
+          "additionalProperties": {
+            "oneOf": [
+              { "type": "string", "minLength": 1 },
+              { "type": "array", "items": { "type": "string", "minLength": 1 } }
+            ]
+          }
+        },
+        "stateScope": { "const": "default-visible" }
+      }
+    },
+    "nodes": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/node" } }
+  },
+  "$defs": {
+    "dimension": {
+      "oneOf": [
+        { "enum": ["fill", "hug"] },
+        { "type": "number", "exclusiveMinimum": 0 },
+        {
+          "type": "object",
+          "required": ["mode"],
+          "properties": {
+            "mode": { "enum": ["fill", "hug", "fixed"] },
+            "token": { "type": "string" },
+            "value": { "type": "number", "exclusiveMinimum": 0 }
+          }
+        }
+      ]
+    },
+    "layout": {
+      "type": "object",
+      "required": ["direction", "width", "height"],
+      "properties": {
+        "direction": { "enum": ["HORIZONTAL", "VERTICAL"] },
+        "width": { "$ref": "#/$defs/dimension" },
+        "height": { "$ref": "#/$defs/dimension" },
+        "minWidth": { "$ref": "#/$defs/dimension" },
+        "maxWidth": { "$ref": "#/$defs/dimension" },
+        "minHeight": { "$ref": "#/$defs/dimension" },
+        "maxHeight": { "$ref": "#/$defs/dimension" },
+        "padding": { "type": "object" },
+        "gap": { "type": ["string", "number", "null"] },
+        "primaryAlign": { "enum": ["MIN", "CENTER", "MAX"] },
+        "counterAlign": { "enum": ["MIN", "CENTER", "MAX"] },
+        "distribution": { "enum": ["PACKED", "SPACE_BETWEEN"] },
+        "clipsContent": { "type": "boolean" },
+        "maxLines": { "type": "integer", "minimum": 1 },
+        "overflow": { "enum": ["visible", "clip", "truncate"] }
+      }
+    },
+    "background": {
+      "oneOf": [
+        { "type": "object", "required": ["kind"], "properties": { "kind": { "const": "transparent" } } },
+        { "type": "object", "required": ["kind", "token"], "properties": { "kind": { "const": "token" }, "token": { "type": "string" } } },
+        { "type": "object", "required": ["kind", "stops"], "properties": { "kind": { "const": "linear-gradient" }, "angle": { "type": "number" }, "stops": { "type": "array", "minItems": 2 } } }
+      ]
+    },
+    "style": {
+      "type": "object",
+      "properties": {
+        "background": { "$ref": "#/$defs/background" },
+        "borderToken": { "type": "string" },
+        "border": {
+          "type": "object",
+          "required": ["token", "edges"],
+          "properties": {
+            "token": { "type": "string" },
+            "edges": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "enum": ["top", "right", "bottom", "left"] } }
+          }
+        },
+        "radiusToken": { "type": "string" },
+        "shadowRole": { "type": "string" },
+        "textColorToken": { "type": "string" },
+        "textRole": { "type": "string" }
+      }
+    },
+    "component": {
+      "type": "object",
+      "required": ["logicalName", "rendererKey", "reuse", "props", "slots"],
+      "properties": {
+        "logicalName": { "type": "string" },
+        "rendererKey": { "type": "string" },
+        "reuse": { "enum": ["required", "preferred", "native"] },
+        "state": { "type": "string" },
+        "props": { "type": "object" },
+        "slots": { "type": "object" },
+        "fallbackRecipe": { "type": "string" }
+      }
+    },
+    "node": {
+      "type": "object",
+      "required": ["id", "name", "type", "region", "layout", "style"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "name": { "type": "string" },
+        "type": { "enum": ["frame", "text", "icon", "component", "rectangle", "ellipse"] },
+        "region": { "type": "string" },
+        "slot": { "type": "string", "minLength": 1 },
+        "layout": { "$ref": "#/$defs/layout" },
+        "style": { "$ref": "#/$defs/style" },
+        "content": { "type": "string" },
+        "semanticIcon": { "type": "string" },
+        "iconSize": { "type": "number" },
+        "hotZone": {
+          "type": "object",
+          "properties": {
+            "alignment": { "const": "CENTER" },
+            "axes": { "const": "BOTH" }
+          }
+        },
+        "component": { "$ref": "#/$defs/component" },
+        "children": { "type": "array", "items": { "$ref": "#/$defs/node" } }
+      }
+    }
+  }
+}

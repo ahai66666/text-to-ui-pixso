@@ -1,0 +1,157 @@
+{
+  "id": "list-card",
+  "logicalName": "List Item/White Surface/Default",
+  "variants": [
+    "default",
+    "selected",
+    "unread"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "pressed",
+    "focus",
+    "selected",
+    "disabled"
+  ],
+  "props": [
+    "title",
+    "description",
+    "meta",
+    "selected",
+    "unread"
+  ],
+  "slots": [
+    "leading",
+    "title",
+    "description",
+    "trailing"
+  ],
+  "tokenRoles": [
+    "color.surface",
+    "color.sidebar-selected",
+    "color.text",
+    "color.text-muted",
+    "size.list-item-height",
+    "radius.list-item",
+    "typography.body-l",
+    "typography.body-m"
+  ],
+  "iconAliases": [
+    "navigation/list"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/list-card.html"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/list-card.html"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "containers",
+  "categoryLabel": "容器类",
+  "order": 510,
+  "canonicalSection": "[data-runtime-category=\"containers\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"containers\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-list-card\"]",
+  "legacyVisualGroup": "navigation",
+  "canonicalSpecimen": "gallery:containers:list-card",
+  "specimens": [
+    {
+      "id": "single-text-arrow",
+      "variant": "single-line",
+      "state": "default",
+      "lines": 1,
+      "trailing": "text-arrow"
+    },
+    {
+      "id": "double-icon",
+      "variant": "double-line",
+      "state": "default",
+      "lines": 2,
+      "trailing": "icon"
+    },
+    {
+      "id": "triple-radio",
+      "variant": "triple-line",
+      "state": "default",
+      "lines": 3,
+      "trailing": "radio"
+    },
+    {
+      "id": "single-checkbox",
+      "variant": "single-line",
+      "state": "default",
+      "lines": 1,
+      "trailing": "checkbox"
+    },
+    {
+      "id": "single-switch",
+      "variant": "single-line",
+      "state": "default",
+      "lines": 1,
+      "trailing": "switch"
+    },
+    {
+      "id": "single-notification-arrow",
+      "variant": "single-line",
+      "state": "default",
+      "lines": 1,
+      "trailing": "notification-arrow"
+    }
+  ],
+  "fixtureId": "fixture-list-card",
+  "surface": "white",
+  "sizing": "fill",
+  "allowedStates": [
+    "default",
+    "hover",
+    "pressed",
+    "focus",
+    "selected",
+    "disabled"
+  ],
+  "behaviors": [
+    "select",
+    "keyboard-activation",
+    "disabled"
+  ],
+  "textRoles": [
+    "title:title-s",
+    "description:body-m",
+    "meta:body-m"
+  ],
+  "iconSlots": [
+    {
+      "alias": "navigation/list",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconSemantic": "navigation/list",
+  "comparisonGroup": "containers"
+}

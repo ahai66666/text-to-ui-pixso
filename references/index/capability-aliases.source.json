@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "aliases": {
+    "primary-navigation": ["primary-navigation-item", "primary-nav-item", "level-one-navigation"],
+    "primary-navigation-item": ["primary-navigation", "primary-nav-item", "level-one-navigation"],
+    "list-item": ["list-card", "list", "item"],
+    "icon-button": ["button"],
+    "icon-text-button": ["button"],
+    "text-button": ["button"],
+    "select": ["native-select", "combobox", "select"],
+    "tree": ["tree-view", "tree"],
+    "breadcrumb": ["breadcrumb"]
+  }
+}

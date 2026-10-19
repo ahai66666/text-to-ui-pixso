@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0.0",
+  "aliasRegistry": "assets/icons/icon-aliases.json",
+  "sourceArtboard": 24,
+  "rendering": {
+    "lucide": {"strokeWidth": 1.5, "strokeWidthByDisplaySize": {"16": 1, "20": 1.25, "24": 1.5}, "strokeScaleRule": "Keep stroke-width 1.5 on the 24x24 source artboard and scale the SVG root and internal vectors together.", "strokeWeightFormula": "supported display sizes use strokeWidthByDisplaySize[displaySize]; other approved sizes use 1.5 * displaySize / sourceArtboard", "strokeLinecap": "round", "strokeLinejoin": "round"},
+    "color": "currentColor",
+    "resizeRule": "Resize the SVG root and every internal vector together to the target display size; never resize only its outer Frame.",
+    "hotZone": {"alignment": "CENTER", "axes": "BOTH", "overflow": "VISIBLE", "verificationTolerance": 0.5}
+  },
+  "displayContracts": [
+    {"name":"compact-control","aliases":["choice/check","field/search","field/date","field/time","navigation/back","navigation/chevron-down","navigation/chevron-right","navigation/chevron-up"],"displaySize":16,"displaySizeToken":"size/16"},
+    {"name":"standard-control","aliases":["action/add","action/archive","action/check","action/close","action/copy","action/delete","action/download","action/filter","action/forward","action/mark-important","action/mark-unread","action/more","action/multi-select","action/refresh","action/rename","action/reply","action/reply-all","action/save","action/sort-ascending","field/clock","navigation/archive","navigation/forward","navigation/inbox","navigation/list","navigation/outbox","navigation/panel-left","navigation/recent","navigation/sent","navigation/spam","navigation/starred","navigation/deleted","navigation/drafts","object/attachment","object/device","object/file","object/avatar","status/error","status/danger","status/info","status/loading","status/neutral","status/success","status/warning"],"displaySize":20,"displaySizeToken":"size/20"},
+    {"name":"primary-navigation","aliases":["navigation/grid","field/calendar","navigation/contacts","navigation/mail-unread","action/settings","primary-level/overview","primary-level/calendar","primary-level/contacts","primary-level/mail","primary-level/settings"],"displaySize":24,"displaySizeToken":"size/24","sourceRequirement":"lucide","rule":"Use Lucide Regular linear geometry for first-level navigation at 24px; do not use filled or solid icon geometry."},
+    {"name":"titlebar-control","aliases":["window/minimize","window/maximize","window/close"],"displaySize":16,"displaySizeToken":"size/16","sourceRequirement":"asset"}
+  ],
+  "exceptions": {
+    "displaySize24":"Only when a component specification explicitly declares iconSize: 24.",
+    "nativeSourceComponents":"Existing HarmonyOS-native component sets may retain icon fonts as source evidence, but are not eligible for Text to UI page generation."
+  },
+  "pixsoAudit": {
+    "forbidForGeneratedTextToUiNodes":["HM Symbol","icon_font"],
+    "require":["semanticAlias","sourceProvenance","displaySizeToken","rootAndVectorGeometryMatch"],
+    "allowedDisplaySizes":[16,20,24]
+  }
+}

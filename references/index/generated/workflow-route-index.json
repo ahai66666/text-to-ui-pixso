@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": [
+    {
+      "path": "skill-support/references/routes/index.json",
+      "sha256": "673cf8ec2be26995227eac6e1f8c7ce88982a0d3a907625e325db3b9444fe00a"
+    }
+  ],
+  "kind": "text-to-ui-workflow-route-index",
+  "routes": [
+    {
+      "id": "existing-html-to-pixso",
+      "description": "Import a named existing rendered HTML page into Pixso without redesign.",
+      "exactReferencesToRead": [
+        "references/routes/existing-html-to-pixso.md"
+      ]
+    },
+    {
+      "id": "pixso-component-library",
+      "description": "Build, repair, or synchronize Pixso component-library assets.",
+      "exactReferencesToRead": [
+        "references/routes/pixso-component-library.md"
+      ]
+    },
+    {
+      "id": "converter-diagnosis",
+      "description": "Diagnose a failed HTML-to-Pixso converter or import run.",
+      "exactReferencesToRead": [
+        "references/routes/converter-diagnosis.md"
+      ]
+    },
+    {
+      "id": "skill-maintenance",
+      "description": "Audit or repair Skill implementation, mapping governance, tests, and delivery mirrors.",
+      "exactReferencesToRead": [
+        "references/routes/skill-maintenance.md"
+      ]
+    }
+  ]
+}

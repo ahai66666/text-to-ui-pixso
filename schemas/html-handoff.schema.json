@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Text-to-UI HTML handoff",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "kind",
+    "producer",
+    "artifact",
+    "viewport",
+    "readiness",
+    "dependencies",
+    "designData",
+    "evidence",
+    "validation"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "kind": {
+      "const": "text-to-ui-html-handoff"
+    },
+    "producer": {
+      "type": "object",
+      "required": [
+        "skill",
+        "version"
+      ],
+      "properties": {
+        "skill": {
+          "const": "text-to-ui-html"
+        },
+        "version": {
+          "type": "string"
+        }
+      }
+    },
+    "artifact": {
+      "type": "object",
+      "required": [
+        "entry",
+        "previewUrl"
+      ],
+      "properties": {
+        "entry": {
+          "type": "string",
+          "minLength": 1
+        },
+        "serveCommand": {
+          "type": "string"
+        },
+        "previewUrl": {
+          "type": "string",
+          "pattern": "^https?://"
+        }
+      }
+    },
+    "viewport": {
+      "type": "object",
+      "required": [
+        "width",
+        "height",
+        "zoom",
+        "stateId",
+        "scroll"
+      ],
+      "properties": {
+        "width": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "height": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "zoom": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "stateId": {
+          "type": "string"
+        },
+        "scroll": {
+          "type": "object",
+          "required": [
+            "x",
+            "y"
+          ]
+        }
+      }
+    },
+    "readiness": {
+      "type": "object",
+      "required": [
+        "kind"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "tui-promise",
+            "document-ready"
+          ]
+        }
+      }
+    },
+    "dependencies": {
+      "type": "object",
+      "required": [
+        "entry",
+        "files",
+        "digest",
+        "remoteResources"
+      ],
+      "properties": {
+        "entry": {
+          "type": "string"
+        },
+        "digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "files": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "path",
+              "sha256",
+              "bytes"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "bytes": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        },
+        "remoteResources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "designData": {
+      "type": "object",
+      "required": [
+        "dataVersion",
+        "digest",
+        "pattern"
+      ]
+    },
+    "evidence": {
+      "type": "object"
+    },
+    "validation": {
+      "type": "object",
+      "required": [
+        "source",
+        "build",
+        "browser",
+        "visual",
+        "evidence"
+      ],
+      "properties": {
+        "source": {
+          "const": "passed"
+        },
+        "build": {
+          "const": "passed"
+        },
+        "browser": {
+          "const": "passed"
+        },
+        "visual": {
+          "enum": [
+            "passed",
+            "pending",
+            "failed"
+          ]
+        },
+        "evidence": {
+          "type": "object",
+          "required": [
+            "path",
+            "sha256"
+          ]
+        }
+      }
+    }
+  }
+}

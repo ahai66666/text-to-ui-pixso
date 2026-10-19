@@ -1,0 +1,26 @@
+{
+  "shadow-1": {"elevation": 4, "x": 0, "y": 0, "blur": 4, "spread": 0, "opacity": 0.15, "color": "#00001E", "css": "0 0 4px 0 rgb(0 0 30 / 15%)"},
+  "shadow-2": {"elevation": 20, "x": 0, "y": 0, "blur": 20, "spread": 0, "opacity": 0.08, "color": "#00001E", "css": "0 0 20px 0 rgb(0 0 30 / 8%)"},
+  "shadow-3": {"elevation": 50, "x": 0, "y": 10, "blur": 50, "spread": 0, "opacity": 0.15, "color": "#00001E", "css": "0 10px 50px 0 rgb(0 0 30 / 15%)"},
+  "shadow-4": {"elevation": 50, "x": 0, "y": 10, "blur": 50, "spread": 0, "opacity": 0.30, "color": "#00001E", "css": "0 10px 50px 0 rgb(0 0 30 / 30%)"},
+  "shadow-5": {"elevation": 55, "x": 0, "y": 10, "blur": 55, "spread": 0, "opacity": 0.25, "color": "#00001E", "css": "0 10px 55px 0 rgb(0 0 30 / 25%)"},
+  "shadow-6": {"elevation": 70, "x": 0, "y": 10, "blur": 70, "spread": 0, "opacity": 0.45, "color": "#00001E", "css": "0 10px 70px 0 rgb(0 0 30 / 45%)"},
+  "roles": {
+    "snackbar": "shadow-1",
+    "tooltip": "shadow-1",
+    "popover": "shadow-2",
+    "hover-card": "shadow-2",
+    "dropdown-menu": "shadow-2",
+    "context-menu": "shadow-3",
+    "dialog": "shadow-4",
+    "alert-dialog": "shadow-4",
+    "semi-modal": "shadow-5"
+  },
+  "usagePolicy": {
+    "allowed": ["Snackbar", "Tooltip", "Popover", "Hover Card", "Dialog", "Alert Dialog", "Semi-modal", "Dropdown Menu", "Context Menu"],
+    "outsideContexts": "none-by-default",
+    "exceptionPolicy": "explicit-project-design-rule-required",
+    "separationFallback": "border-or-surface-contrast",
+    "unassignedLevels": ["shadow-6"]
+  }
+}

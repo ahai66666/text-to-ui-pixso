@@ -1,0 +1,2826 @@
+{
+  ".gitignore": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "LICENSE": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "README.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "SKILL.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "agents/openai.yaml": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "assets/design-system/component-usage.schema.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/core-color-token-table.md": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/core-foundation-token-table.md": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/design.md": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/dual-output-token-map.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/effect-style-map.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/harmonyos-component-adapter-map.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/harmonyos-component-mapping-table.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/html-component-adapter-map.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/html-component-adapter-map.schema.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/mapping-registry.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/mapping-registry.schema.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/page-binding-audit.schema.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/page-spec.example.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/page-spec.schema.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pattern-contracts.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pattern-contracts.schema.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-binding-audit.schema.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-component-facts.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-component-facts.schema.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-component-library-plan.schema.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-component-migration.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-component-registry.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-component-specs.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-core-baseline.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-icon-map.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-manual-additions.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-native-component-map.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-native-component-map.schema.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-operation-plan.schema.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-scene.schema.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-tokens-studio.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/pixso-variables.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/titlebar-scene-contracts.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/token-runtime-map.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/token-utility-map.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.colors.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.colors.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.icon.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.icon.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.layout.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.layout.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.radius.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.radius.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.shadow.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.shadow.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.size.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.size.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.spacing.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.spacing.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.typography.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.typography.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/tokens.utility.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/typography-style-map.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/design-system/ui-scene.schema.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/harmonyos-layout-references/reference-manifest.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "assets/harmonyos-layout-references/screenshot_20260713_103843_com.huawei.hmsapp.appgallery.webp": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "assets/harmonyos-layout-references/screenshot_20260713_103912_com.huawei.hmsapp.music.webp": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "assets/harmonyos-layout-references/screenshot_20260713_103926_com.huawei.hmsapp.thememanager.webp": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "assets/harmonyos-layout-references/screenshot_20260713_103935_com.huawei.hmos.settings.webp": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "assets/harmonyos-layout-references/screenshot_20260713_103946_com.huawei.hmos.settings.webp": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "assets/harmonyos-layout-references/screenshot_20260713_103954_com.huawei.hmos.filemanager.webp": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "assets/harmonyos-layout-references/screenshot_20260713_104037_com.huawei.hmos.myhuawei.webp": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "assets/harmonyos-layout-references/screenshot_20260713_104122_com.huawei.hmsapp.totemweather.webp": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "assets/harmonyos-layout-references/screenshot_20260713_104138_com.huawei.hmos.notepad.webp": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "assets/icons/components/checkbox-check.svg": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/icons/icon-aliases.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/icons/status/danger-circle.svg": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/icons/status/info-circle.svg": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/icons/status/neutral-circle.svg": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/icons/status/success-circle.svg": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/icons/status/warning-circle.svg": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/icons/titlebar/README.md": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/icons/titlebar/window-close.svg": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/icons/titlebar/window-maximize.svg": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "assets/icons/titlebar/window-minimize.svg": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "maintenance/resource-routing-validation.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "maintenance/resource-routing-validation.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "package.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "packages/component-contracts/package.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/accordion.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/alert-dialog.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/alert.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/attachment.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/avatar.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/badge.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/breadcrumb.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/button.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/calendar.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/checkbox.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/chips.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/collapsible.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/color-picker.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/combobox.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/context-menu.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/date-picker.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/dialog.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/dropdown-menu.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/field.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/form-field.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/hover-card.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/input.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/label.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/list-card.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/menubar.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/native-select.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/number-selector.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/pagination.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/popover.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/primary-navigation-item.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/progress.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/radio-group.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/radio.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/search.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/segmented-button.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/select.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/semi-modal.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/sidebar.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/slider.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/snackbar.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/sub-tabs.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/switch.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/table.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/tabs.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/textarea.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/time-picker.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/titlebar.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/tooltip.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/components/tree-view.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/readiness-policy.js": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/registry.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-contracts/src/titlebar-segments.js": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-styles/package.json": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/component-styles/src/index.css": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/package.json": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/advanced.js": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/button.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/component-icons.svg": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/alert-dialog.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/alert.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/attachment.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/avatar.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/badge.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/breadcrumb.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/calendar.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/chart.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/checkbox.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/collapsible.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/color-picker.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/combobox.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/context-menu.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/data-table.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/date-picker.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/dialog.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/dropdown-menu.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/empty.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/field.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/form-field.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/gallery.js": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/hover-card.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/index.js": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/input-otp.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/kbd.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/label.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/menubar.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/native-select.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/number-selector.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/pagination.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/popover.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/progress.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/radio-group.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/segmented-button.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/select.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/semi-modal.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/slider.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/switch.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/table.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/tabs.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/textarea.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/time-picker.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/titlebar.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/toast.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/generated/tooltip.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/icon-map.js": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/index.js": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/input.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/list-card.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/pattern-shell.css": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/primary-navigation-item.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/search.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/sidebar.html": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/styles.css": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/components-html/src/titlebar-overflow.js": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/pattern-runtime/README.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/pattern-runtime/package.json": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/pattern-runtime/src/index.js": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/pattern-runtime/src/styles.css": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/tokens/package.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/tokens/src/dual-output-token-map.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/tokens/src/index.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/tokens/src/token-runtime-map.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/tokens/src/token-utility-map.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/tokens/src/tokens.colors.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/tokens/src/tokens.icon.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/tokens/src/tokens.layout.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/tokens/src/tokens.radius.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/tokens/src/tokens.shadow.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/tokens/src/tokens.size.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/tokens/src/tokens.spacing.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/tokens/src/tokens.typography.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "packages/tokens/src/tokens.utility.css": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "pnpm-lock.yaml": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "pnpm-workspace.yaml": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "preview/layout-inset-test.html": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "preview/lucide-source-test.html": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "protocol/README.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "protocol/bridge-message.schema.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "protocol/compatibility-matrix.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "protocol/operation-plan-v5.schema.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "protocol/permanent-agent-capabilities.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/approved-pages/README.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/approved-pages/index.json": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/component-coverage.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/component-package-integration.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/component-specs-extended.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/components/component-readiness-policy.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/components/component-selection-rules.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/components/core-component-acceptance.json": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/components/local-component-delivery.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/components/page-composition.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/components/source-resolution.md": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/components/titlebar-segments.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/design-system.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/distribution.md": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/domains/email-workbench.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/dual-output-contract.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/governance/major-version-update-checklist.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/governance/skill-catalog-refresh.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/harmonyos-component-mapping-table.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/harmonyos-layout-patterns.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/html-component-mapping.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/html-component-reuse-gate.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/html-draft-delivery.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/html-output-rules.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/icon-selection.md": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/index/capability-aliases.source.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/index/generated/component-index.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/index/generated/layout-index.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/index/generated/resource-index.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/index/generated/route-material-index.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/index/generated/skill-catalog-index.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/index/generated/task-router.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/index/generated/token-index.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/index/generated/validation-index.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/index/generated/workflow-route-index.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/index/layout-routes.source.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/index/task-routes.source.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/input-checklist.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/interaction-spec.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/layout-system.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/layouts/html-layout-routing.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/mapping-registry.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/offline-distribution.md": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/page-blueprint-design.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/page-contract.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/page-design-guidance.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/pc-framework-layout-gate.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/pixso-component-bindings.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/pixso-component-maintenance.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/pixso-component-usage.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/pixso-execution-invariants.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/pixso-fidelity-import-pipeline.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/pixso-fidelity-routing.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/pixso-import-details.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/pixso-mcp.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/pixso-native-scene.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/pixso-performance.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/pixso-visual-parity.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/progressive-review-gates.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/registered-reuse-mode.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/requirement-spec.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/resource-workflow.md": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/blueprint/design-before-assembly.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/blueprint/minimal-shape.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/blueprint/overview.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/blueprint/pattern-b-assembly-decisions.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/blueprint/required-decisions.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/component-visual/buttons.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/component-visual/cards.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/component-visual/data.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/component-visual/feedback-and-overlays.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/component-visual/inputs.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/component-visual/navigation-and-lists.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/component-visual/tooltip.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/composition/content-recipes-decide-before-binding.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/composition/executable-html-business-composites.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/composition/overview.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/composition/pattern-owned-navigation-shells.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/composition/plans.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/composition/stroke-ownership.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/core/delivery.md": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/delivery/calling.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/delivery/overview.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/delivery/pixso.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/delivery/prepare.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/delivery/project-output.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/delivery/reading.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/delivery/styles.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/design/design-at-the-real-content-width.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/design/one-deliberate-first-preview.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/design/overview.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/design/reuse-controls-design-missing-business-composites.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/design/start-with-the-task-not-the-inventory.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/design/visual-alignment-and-grouping.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/foundations/colors.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/foundations/radius.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/foundations/shadows.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/foundations/size.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/foundations/spacing.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/foundations/typography.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/common-shortcuts.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/date-picker.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/forms-and-validation.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/interaction-qa-gate.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/interactive-frontend-demonstration.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/keyboard-and-focus.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/motion-sound-and-accessibility.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/navigation-and-selection.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/official-platform-principles.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/overlay-selection.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/overview.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/per-interaction-record.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/pointer-and-mouse.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/scope-and-source-levels.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/state-feedback.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/time-picker.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/undo-and-destructive-actions.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/interaction/window-and-resize-behavior.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/layout/application-shell.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/layout/decisions-to-confirm.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/layout/grid.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/layout/html-mapping.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/layout/overview.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/layout/page-spacing.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/layout/pixso-mapping.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/layout/resize-rules.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/layout/window-foundation.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/context-area.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/final-pane-leading-slot.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/inspector.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/left-brand-anchor.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/main-content.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/overview.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/pattern-a-two-pane-navigation-content.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/pattern-b-three-pane-navigation-list-detail.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/pattern-c-navigation-tool-workspace.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/pattern-d-optional-inspector.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/primary-navigation.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/primary-shell-global-primary-slot.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/reusable-pattern-primary-navigation-shell.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/reusable-pattern-secondary-page-hierarchy.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/right-action-and-window-area.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/scrolling.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/secondary-pane.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/shared-window-anatomy.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/shell-selection-rule.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/surface-and-divider-behavior.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/patterns/system-ui-boundary.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-detail/cross-source-mapping-registry.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-detail/html-text-sizing-and-truncation.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-detail/icon-sizing-stroke-and-hot-zone-contract.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-detail/overview.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-detail/pixso-component-facts-sync.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-detail/typography-mapping-policy.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-mcp/binding-audit.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-mcp/connection.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-mcp/creation-sequence.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-mcp/deliverable-reference.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-mcp/existing-design-and-html-handoff.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-mcp/failure-handling.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-mcp/overview.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-mcp/page-binding-bridge-token.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-mcp/registered-reuse-performance-and-icon-gates.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-mcp/target-page-and-path-preflight-failure-derived.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-mcp/token-gate.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-pipeline/acceptance-gates.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-pipeline/capture-browser-computed-evidence.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-pipeline/compile-dom-visual-ir-only-from-the-current-run.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-pipeline/execute-transactionally.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-pipeline/keep-two-evidence-layers-and-one-pixso-output.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-pipeline/normal-fast-path-and-diagnostic-boundary.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-pipeline/overview.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-pipeline/resolve-components-without-changing-geometry.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-pipeline/start-an-isolated-run.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-scene/divider-ownership.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-scene/dom-visual-ir.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-scene/html-computed-visual-state.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-scene/mcp-10.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-scene/mcp.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-scene/overview.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-scene/scene.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-scene/section-11.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-scene/section-6.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-scene/section-7.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-scene/section-8.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/pixso-scene/surface.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/requirements/adaptive-question-policy.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/requirements/anti-patterns.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/requirements/contents.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/requirements/first-preview-planning.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/requirements/fixed-harmonyos-defaults-from-native-references.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/requirements/generated-requirement-contract.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/requirements/intake-principle.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/requirements/overview.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/requirements/three-decision-layers.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/requirements/user-input-guidance.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/source.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/resources/source.schema.json": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/supplement/form-composition.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/supplement/loading-data-and-dates.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/supplement/navigation-and-disclosure.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/supplement/overlays-and-commands.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/supplement/overview.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/supplement/specialized-content-and-layout.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/supplement/universal-contract.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/titlebar/executable-html-slots.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/titlebar/generated-titlebar-scene.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/titlebar/overview.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/titlebar/scenarios.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/titlebar/title-typography.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/resources/titlebar/trailing-inset.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/routes/converter-diagnosis.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/routes/existing-html-to-pixso.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/routes/index.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/routes/materials.source.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "references/routes/micro-revision.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/routes/new-page.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/routes/pixso-component-library.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/routes/skill-maintenance.md": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/routing-guide.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/skill-update-workflow.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/tool-design-intelligence.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/tool-design-qa.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/visual-qa.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/workflows/fast-preview.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "references/workflows/release-validation.md": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/audit-core-colors.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/audit-icons.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/browser-visual-manifest.js": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/build-compact-distribution.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/build-component-acceptance-report.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/build-component-contract-registry.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/build-component-route-index.mjs": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/build-dual-output-token-map.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/build-harmonyos-component-mapping-table.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/build-mapping-registry-doc.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/build-navigation-index.mjs": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/build-obsidian-mapping-workbook.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/build-pixso-component-specs.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/build-pixso-native-renderer-plugin.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/build-pixso-token-manifest.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/build-pixso-unified-agent-plugin.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/build-resource-index.mjs": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/build-skill-catalog-index.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/build-token-runtime-map.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/build-token-utility-map.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/compact-paths.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/compare-pixso-screenshots.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/compile-dom-visual-ir.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/compile-pixso-import.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/compile-ui-scene.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/component-contract-loader.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/component-mapping-resolver.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/component-readiness-policy.mjs": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/component-route-index.mjs": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/component-selection.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/coremail-semantic-adapter.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/create-login-page-plan.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/create-pixso-import-run.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/distribution-policy.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/dom-visual-ir.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/export-icon-sprite.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/generate-compliant-page.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/generate-html-component-skeleton.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/generate-html-page.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/generate-layout-contract.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/generate-pixso-component-library-plan.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/generate-pixso-operation-plan.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/generate-pixso-scene.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/html-artifact-graph.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/html-renderer-contract.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/html-visual-contract.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/icon-tools.mjs": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/locate-monorepo.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/maintenance-command.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/mapping-registry-lib.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/navigation-index-lib.mjs": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/obsidian-mapping-edit-lib.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/offline-runner.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/page-blueprint.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/page-content-recipes.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/page-contract.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/page-runtime-preflight.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/page-token-usage-lib.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/page-ui-scene.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/page-viewport-boundary.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pattern-contract-lib.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-capture-bundle.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-component-facts-sync.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-component-registry-sync-plugin/README.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-component-registry-sync-plugin/main.js": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-component-registry-sync-plugin/manifest.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-component-registry-sync-plugin/ui.html": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-core-token-sync-plugin/main.js": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-core-token-sync-plugin/manifest.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-icon-helper-v8-add/README.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-icon-helper-v8-add/main.js": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-icon-helper-v8-add/manifest.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-import-governance.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-import-orchestrator.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-import-run-state.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-native-execution-runtime.js": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-execution-runtime.min.js": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/README.md": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/compatibility-matrix.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/main.js": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/main.template.js": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/manifest.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/permanent-agent-capabilities.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/pixso-capture-bundle.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/pixso-mail-list-module-test-plan.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/pixso-native-component-map.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/pixso-native-execution-runtime.js": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/pixso-official-adapter.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/pixso-pattern-b-shell-test-plan.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/pixso-plugin-bridge.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/pixso-plugin-smoke-test-plan.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-renderer-plugin/ui.html": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-native-scene-lib.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-official-adapter.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-page-binding-bridge-plugin/README.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-page-binding-bridge-plugin/fixtures/page-binding-audit.valid.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-page-binding-bridge-plugin/fixtures/page-binding-manifest.invalid.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-page-binding-bridge-plugin/fixtures/page-binding-source.html": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-page-binding-bridge-plugin/main.js": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-page-binding-bridge-plugin/manifest.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-page-binding-bridge-plugin/page-binding-manifest.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-plugin-bridge.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-token-probe-plugin/main.js": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-token-probe-plugin/manifest.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-token-sync-plugin/main.js": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-token-sync-plugin/manifest.json": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/pixso-unified-agent-plugin/README.md": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-unified-agent-plugin/compatibility-matrix.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-unified-agent-plugin/main.js": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-unified-agent-plugin/main.template.js": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-unified-agent-plugin/manifest.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-unified-agent-plugin/permanent-agent-capabilities.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-unified-agent-plugin/pixso-capture-bundle.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-unified-agent-plugin/pixso-native-component-map.json": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-unified-agent-plugin/pixso-native-execution-runtime.js": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-unified-agent-plugin/pixso-official-adapter.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-unified-agent-plugin/pixso-plugin-bridge.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-unified-agent-plugin/ui.html": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/pixso-visual-reconcile.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/plan-registered-reuse.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/preflight-pixso-import.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/prepare-page-components.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/prepare-page-styles.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/prepare-pixso-binding-html.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/prepare-pixso-html.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/prepare-pixso-mcp-batches.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/prepare-pixso-operation-batches.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/prepare-pixso-spacing-trial.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/query-components.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/query-layouts.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/query-resources.mjs": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/query-tokens.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/register-approved-page-reference.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/resolve-component-selection.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/resolve-context.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/resolve-pattern-contract.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/resolve-pixso-import-url.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/resolve-workflow-route.mjs": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/resource-index-lib.mjs": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/route-material-lib.mjs": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/scaffold-standalone-project.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/search-lucide-icons.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/skill-delivery.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/stage-context-lib.mjs": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/stamp-html-artifact.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/stamp-page-contract.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/start-text-to-ui-services.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/sync-mapping-registry.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/sync-obsidian-mapping-edits.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/sync-runtime-token-projections.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/task-route-lib.mjs": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/test-approved-page-reference-policy.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-browser-visual-manifest.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-business-component-styles.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-component-readiness-policy.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-component-selection-rules.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-component-selection.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-core-component-acceptance.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-design-discovery.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-disclosure-spacing.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-dom-visual-ir-publication.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-dom-visual-ir.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-html-artifact-graph.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-html-business-props.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-html-strict-reuse-pipeline.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-html-visual-contract.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-mapping-registry.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-obsidian-mapping-sync.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-page-blueprint.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-page-composite-boundaries.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-page-content-recipes.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-page-css-boundaries.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pattern-contract-resolution.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pattern-runtime.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-capture-bundle.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-component-facts-sync.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-component-library-runtime.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-delivery-mirrors.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-dropdown-direct-composition.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-gradient-runtime.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-icon-library-repair.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-image-runtime.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-import-fast-path.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-import-governance.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-import-run.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-import-url.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-mcp-call-plan.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-native-scene.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-official-adapter.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-permanent-agent-protocol.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-radius-runtime.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-readback-applicable-properties.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-runtime-loader.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-two-phase-icons.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-unified-agent-plugin.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-pixso-visual-diff.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-primary-navigation-resolution.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-resolve-context-pattern-gate.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-resource-routing.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-route-materials.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-skill-catalog-index.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-standalone-project.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-task-route-resolution.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-titlebar-action-contract.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-titlebar-scene.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-ui-scene-complex-benchmark.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-ui-scene-pattern-binding.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-validate-layout-markers.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-validate-page-contract.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-validate-page-layout-binding.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-validate-page-token-usage.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-validate-pc-framework-layout.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-validate-web-component-reuse.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-verify-html-artifact.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/test-workflow-route.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/titlebar-scene.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/ui-scene-core.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/ui-scene-lib.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/update-pixso-import-run.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/update_preview_cache.py": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-dual-output.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-harmonyos-component-adapter-map.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-layout-markers.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-mapping-registry.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-navigation-index.mjs": {
+    "classification": "shared",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-page-binding-audit.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-page-binding-manifest.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-page-blueprint.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-page-composite-boundaries.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-page-content-recipes.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-page-contract.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-page-css-boundaries.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-page-layout-binding.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-page-project.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-page-spec.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-page-token-usage.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-pattern-contracts.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-pc-framework-layout.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-pixso-component-library-plan.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-pixso-component-migration.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-pixso-component-registry.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-pixso-component-specs.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-pixso-icon-map.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-pixso-import-package.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-pixso-import-run.mjs": {
+    "classification": "pixso",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-runtime-component-reuse.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/validate-token-utility-map.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-ui-scene-pattern-binding.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-visual-parity.mjs": {
+    "classification": "maintenance-or-excluded",
+    "reason": "replaced entry/generated data, development-only or historical source; excluded from new runtime"
+  },
+  "scripts/validate-web-component-reuse.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/verify-context-materials.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/verify-fast-preview.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/verify-html-artifact.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  },
+  "scripts/verify-route-materials.mjs": {
+    "classification": "html",
+    "reason": "independent runtime dependency closure"
+  }
+}

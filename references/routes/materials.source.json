@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "kind": "text-to-ui-route-material-manifest",
+  "description": "Canonical route material closure. Paths are repository-relative so the source Skill, repository mirror, installed Skill, and Pixso delivery can share one manifest.",
+  "baseMaterials": [
+    {
+      "path": "packages/tokens/src/token-runtime-map.json",
+      "role": "token-registry"
+    },
+    {
+      "path": "skill-support/assets/icons/icon-aliases.json",
+      "role": "icon-registry"
+    },
+    {
+      "path": "skill-support/references/resources/source.json",
+      "role": "resource-source-manifest"
+    },
+    {
+      "path": "skill-support/references/resource-workflow.md",
+      "role": "stage-resource-workflow"
+    },
+    {
+      "path": "skill-support/references/index/generated/resource-index.json",
+      "role": "focused-resource-index"
+    }
+  ],
+  "routes": {
+    "existing-html-to-pixso": {
+      "materials": [
+        {
+          "path": "skill-support/references/routes/existing-html-to-pixso.md",
+          "role": "route"
+        },
+        {
+          "path": "skill-support/references/pixso-import-details.md",
+          "role": "pixso-import"
+        },
+        {
+          "path": "skill-support/references/pixso-execution-invariants.md",
+          "role": "pixso-execution"
+        },
+        {
+          "path": "skill-support/references/pixso-fidelity-import-pipeline.md",
+          "role": "pixso-fidelity"
+        }
+      ]
+    },
+    "pixso-component-library": {
+      "materials": [
+        {
+          "path": "skill-support/references/routes/pixso-component-library.md",
+          "role": "route"
+        },
+        {
+          "path": "skill-support/references/pixso-import-details.md",
+          "role": "pixso-import"
+        },
+        {
+          "path": "skill-support/references/pixso-execution-invariants.md",
+          "role": "pixso-execution"
+        },
+        {
+          "path": "skill-support/references/mapping-registry.md",
+          "role": "mapping-registry"
+        },
+        {
+          "path": "skill-support/references/pixso-component-maintenance.md",
+          "role": "component-maintenance"
+        },
+        {
+          "path": "skill-support/references/pixso-component-usage.md",
+          "role": "component-usage"
+        },
+        {
+          "path": "skill-support/references/pixso-native-scene.md",
+          "role": "native-scene"
+        }
+      ]
+    },
+    "converter-diagnosis": {
+      "materials": [
+        {
+          "path": "skill-support/references/routes/converter-diagnosis.md",
+          "role": "route"
+        },
+        {
+          "path": "skill-support/references/pixso-import-details.md",
+          "role": "pixso-import"
+        },
+        {
+          "path": "skill-support/references/pixso-execution-invariants.md",
+          "role": "pixso-execution"
+        },
+        {
+          "path": "skill-support/references/pixso-fidelity-import-pipeline.md",
+          "role": "pixso-fidelity"
+        },
+        {
+          "path": "skill-support/references/pixso-native-scene.md",
+          "role": "native-scene"
+        },
+        {
+          "path": "skill-support/references/pixso-mcp.md",
+          "role": "pixso-diagnostic"
+        },
+        {
+          "path": "skill-support/references/pixso-visual-parity.md",
+          "role": "visual-diagnostic"
+        }
+      ]
+    },
+    "skill-maintenance": {
+      "materials": [
+        {
+          "path": "skill-support/references/routes/skill-maintenance.md",
+          "role": "route"
+        },
+        {
+          "path": "skill-support/assets/design-system/titlebar-scene-contracts.json",
+          "role": "titlebar-scene-contract"
+        },
+        {
+          "path": "skill-support/references/pixso-import-details.md",
+          "role": "pixso-import"
+        },
+        {
+          "path": "skill-support/references/pixso-execution-invariants.md",
+          "role": "pixso-execution"
+        }
+      ]
+    }
+  }
+}

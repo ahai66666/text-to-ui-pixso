@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.text-to-ui/pixso-binding-audit.schema.json",
+  "title": "Pixso live binding audit",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "frameId",
+    "availableVariables",
+    "bindings",
+    "coverageSummary",
+    "componentInstances",
+    "literalStyleFindings"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "frameId": {
+      "type": "string",
+      "pattern": "^[0-9]+:[0-9]+$"
+    },
+    "libraryPage": {
+      "type": "string",
+      "minLength": 1
+    },
+    "activePage": {
+      "type": "string",
+      "minLength": 1
+    },
+    "targetPage": {
+      "type": "string",
+      "minLength": 1
+    },
+    "libraryPhaseCompleted": {
+      "type": "boolean"
+    },
+    "activePageMismatch": {
+      "type": "boolean"
+    },
+    "iconCropFindings": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "performance": {
+      "type": "object",
+      "required": [
+        "pixsoCallCount",
+        "slowestCallMs",
+        "codeToDesignMs",
+        "canonicalNodeCount",
+        "retryCount",
+        "abortedByBudget"
+      ],
+      "properties": {
+        "pixsoCallCount": {
+          "type": "number",
+          "minimum": 0
+        },
+        "slowestCallMs": {
+          "type": "number",
+          "minimum": 0
+        },
+        "codeToDesignMs": {
+          "type": "number",
+          "minimum": 0
+        },
+        "canonicalNodeCount": {
+          "type": "number",
+          "minimum": 0
+        },
+        "retryCount": {
+          "type": "number",
+          "minimum": 0
+        },
+        "abortedByBudget": {
+          "type": "boolean"
+        }
+      }
+    },
+    "availableVariables": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "nodeId",
+          "property",
+          "variable"
+        ],
+        "properties": {
+          "nodeId": {
+            "type": "string"
+          },
+          "property": {
+            "type": "string"
+          },
+          "variable": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "coverageSummary": {
+      "type": "object",
+      "required": [
+        "uniqueNodes",
+        "colorBearingNodes",
+        "variableBoundColorNodes",
+        "literalPaintNodes",
+        "layerOpacityLiteralNodes",
+        "intrinsicAlphaPaints"
+      ],
+      "properties": {
+        "uniqueNodes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "colorBearingNodes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "variableBoundColorNodes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "literalPaintNodes": {
+          "const": 0
+        },
+        "layerOpacityLiteralNodes": {
+          "const": 0
+        },
+        "intrinsicAlphaPaints": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "componentInstances": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "logicalName",
+          "instanceId"
+        ],
+        "properties": {
+          "logicalName": {
+            "type": "string"
+          },
+          "instanceId": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "literalStyleFindings": {
+      "type": "array",
+      "maxItems": 0
+    }
+  }
+}

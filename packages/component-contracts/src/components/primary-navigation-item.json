@@ -1,0 +1,158 @@
+{
+  "id": "primary-navigation-item",
+  "logicalName": "Primary Navigation Item/Level 1",
+  "variants": [
+    "default",
+    "selected"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "pressed",
+    "focus",
+    "selected",
+    "disabled"
+  ],
+  "props": [
+    "label",
+    "ariaLabel",
+    "icon",
+    "selected",
+    "disabled",
+    "state",
+    "onSelect",
+    "className"
+  ],
+  "slots": [
+    "icon",
+    "tooltip"
+  ],
+  "tokenRoles": [
+    "color.primary-level-unselected",
+    "color.sidebar-accent",
+    "color.sidebar-selected-text",
+    "color.focus-ring",
+    "size.icon-button",
+    "icon-size-lg",
+    "radius.icon-button"
+  ],
+  "structuralAxes": {
+    "placement": [
+      "primary-navigation-shell"
+    ],
+    "alignment": [
+      "bottom"
+    ],
+    "presentation": [
+      "icon-only"
+    ]
+  },
+  "iconAliases": [
+    "navigation/grid",
+    "field/calendar",
+    "navigation/mail-unread",
+    "action/settings"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/primary-navigation-item.html"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/primary-navigation-item.html"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "navigation",
+  "categoryLabel": "导航类",
+  "order": 11,
+  "canonicalSection": "[data-runtime-category=\"navigation\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"navigation\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-primary-navigation-item\"]",
+  "legacyVisualGroup": "navigation",
+  "canonicalSpecimen": "gallery:navigation:primary-navigation-item",
+  "specimens": [
+    {
+      "id": "default",
+      "variant": "default",
+      "state": "default",
+      "surface": "white"
+    }
+  ],
+  "fixtureId": "fixture-primary-navigation-item",
+  "surface": "white",
+  "sizing": "intrinsic",
+  "allowedStates": [
+    "default",
+    "hover",
+    "pressed",
+    "focus",
+    "selected",
+    "disabled"
+  ],
+  "behaviors": [
+    "select",
+    "keyboard-activation",
+    "disabled"
+  ],
+  "textRoles": [],
+  "iconSlots": [
+    {
+      "alias": "navigation/grid",
+      "displaySizes": [
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "field/calendar",
+      "displaySizes": [
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "navigation/mail-unread",
+      "displaySizes": [
+        24
+      ],
+      "kind": "regular"
+    },
+    {
+      "alias": "action/settings",
+      "displaySizes": [
+        24
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconSemantic": "navigation/grid",
+  "slotContracts": {
+    "icon": {
+      "cardinality": "1",
+      "scope": "primary-navigation-item",
+      "displaySize": "24px",
+      "kind": "regular",
+      "source": "lucide"
+    }
+  },
+  "comparisonGroup": "navigation"
+}

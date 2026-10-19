@@ -1,0 +1,111 @@
+{
+  "id": "avatar",
+  "logicalName": "Avatar/Default",
+  "variants": [
+    "default"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "focus",
+    "disabled"
+  ],
+  "props": [
+    "label",
+    "value",
+    "description",
+    "checked",
+    "name",
+    "ariaLabel",
+    "disabled",
+    "state",
+    "className"
+  ],
+  "slots": [
+    "label",
+    "content",
+    "description"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.surface",
+    "color.border",
+    "typography.body-l",
+    "spacing.component-gap"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/index.js#avatar"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/index.js#avatar"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "display",
+  "categoryLabel": "展示类",
+  "order": 215,
+  "canonicalSection": "[data-runtime-category=\"display\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"display\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-avatar\"]",
+  "specimens": [
+    {
+      "id": "fallback-32",
+      "variant": "size-32",
+      "state": "default",
+      "size": 32,
+      "content": "initials"
+    },
+    {
+      "id": "fallback-40",
+      "variant": "size-40",
+      "state": "default",
+      "size": 40,
+      "content": "initials"
+    }
+  ],
+  "fixtureId": "fixture-avatar",
+  "surface": "white",
+  "sizing": "intrinsic",
+  "behaviors": [
+    "focus",
+    "disabled"
+  ],
+  "iconSemantic": null,
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "data-display",
+  "canonicalSpecimen": "gallery:display:avatar",
+  "allowedStates": [
+    "default",
+    "hover",
+    "focus",
+    "disabled"
+  ],
+  "textRoles": [
+    "title:title-s",
+    "content:body-l",
+    "description:body-m",
+    "help:body-s"
+  ],
+  "iconSlots": [],
+  "iconAliases": [],
+  "comparisonGroup": "display"
+}

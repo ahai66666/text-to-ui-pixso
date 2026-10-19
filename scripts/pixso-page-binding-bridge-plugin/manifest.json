@@ -1,0 +1,11 @@
+{
+  "name": "Text-to-UI Page Binding Bridge v2",
+  "id": "text-to-ui-page-binding-bridge-v2",
+  "editorType": ["pixso"],
+  "main": "./main.js",
+  "menu": [
+    { "name": "预检当前页面绑定（只读）", "command": "preflight" },
+    { "name": "批量绑定当前页面 Token", "command": "bind" },
+    { "name": "审计当前页面绑定（只读）", "command": "audit" }
+  ]
+}

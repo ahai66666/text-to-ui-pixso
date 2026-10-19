@@ -1,0 +1,8 @@
+:root {
+  --shadow-1: 0 0 4px 0 rgb(0 0 30 / 15%);
+  --shadow-2: 0 0 20px 0 rgb(0 0 30 / 8%);
+  --shadow-3: 0 10px 50px 0 rgb(0 0 30 / 15%);
+  --shadow-4: 0 10px 50px 0 rgb(0 0 30 / 30%);
+  --shadow-5: 0 10px 55px 0 rgb(0 0 30 / 25%);
+  --shadow-6: 0 10px 70px 0 rgb(0 0 30 / 45%);
+}

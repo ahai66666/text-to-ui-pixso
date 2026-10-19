@@ -1,0 +1,158 @@
+{
+  "id": "attachment",
+  "logicalName": "Attachment/Default",
+  "variants": [
+    "default"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "focus",
+    "disabled"
+  ],
+  "props": [
+    "type",
+    "name",
+    "meta",
+    "leading",
+    "content",
+    "actions",
+    "disabled",
+    "onAction",
+    "onPreview",
+    "onDownload"
+  ],
+  "slots": [
+    "leading",
+    "title",
+    "content",
+    "description",
+    "actions",
+    "menu-trigger",
+    "menu"
+  ],
+  "slotContracts": {
+    "actions": {
+      "cardinality": "0..1",
+      "scope": "attachment-surface",
+      "defaultPlacement": "trailing-end",
+      "control": "attachment-action-menu",
+      "interaction": "open-attachment-action-menu",
+      "menuItems": [
+        "preview",
+        "download"
+      ]
+    },
+    "menu-trigger": {
+      "cardinality": "0..1",
+      "scope": "attachment-action-menu",
+      "defaultVisibility": "visible",
+      "iconAlias": "navigation/chevron-down",
+      "iconSize": "20px",
+      "ariaHasPopup": "menu"
+    },
+    "menu": {
+      "cardinality": "0..1",
+      "scope": "attachment-action-menu",
+      "role": "menu",
+      "items": [
+        "preview",
+        "download"
+      ],
+      "closeOn": [
+        "escape",
+        "outside-click",
+        "select"
+      ]
+    }
+  },
+  "tokenRoles": [
+    "color.text",
+    "color.surface-muted",
+    "typography.subtitle-s",
+    "typography.body-s",
+    "spacing.component-gap"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/advanced.js#attachment"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/advanced.js#attachment"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "specialized",
+  "categoryLabel": "特殊组件",
+  "order": 610,
+  "canonicalSection": "[data-runtime-category=\"specialized\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"specialized\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-attachment\"]",
+  "specimens": [
+    {
+      "id": "default",
+      "variant": "default",
+      "state": "default"
+    }
+  ],
+  "fixtureId": "fixture-attachment",
+  "surface": "white",
+  "sizing": "intrinsic",
+  "behaviors": [
+    "open",
+    "select",
+    "preview",
+    "download",
+    "escape",
+    "outside-click",
+    "disabled"
+  ],
+  "iconSemantic": "navigation/chevron-down",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "specialized",
+  "canonicalSpecimen": "gallery:specialized:attachment",
+  "allowedStates": [
+    "default",
+    "hover",
+    "focus",
+    "disabled"
+  ],
+  "textRoles": [
+    "title:subtitle-s",
+    "content:body-m",
+    "description:body-s",
+    "help:body-s"
+  ],
+  "iconSlots": [
+    {
+      "slot": "menu-trigger",
+      "alias": "navigation/chevron-down",
+      "displaySizes": [
+        20
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconAliases": [
+    "navigation/chevron-down"
+  ],
+  "comparisonGroup": "specialized"
+}

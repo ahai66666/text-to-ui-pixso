@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 2,
+  "workflow": "html-first",
+  "componentContract": {
+    "adapterMap": "assets/design-system/html-component-adapter-map.json",
+    "targetFramework": "html",
+    "sourceAvailability": "source",
+    "reuseStrategy": "registered-components",
+    "strictComponentParity": true,
+    "libraryPage": "NewComponents"
+  },
+  "viewport": {
+    "width": 1728,
+    "height": 1152,
+    "resize": "fluid-desktop"
+  },
+  "shell": {
+    "pattern": "pattern-b-three-pane",
+    "patternContract": {
+      "source": "assets/design-system/pattern-contracts.json",
+      "schemaVersion": 1
+    },
+    "paneOrder": [
+      "primary-navigation",
+      "secondary-list",
+      "main-detail"
+    ],
+    "finalPaneLeadingSlot": "main-detail-operations",
+    "requiredSlots": [
+      "primary-navigation-shell",
+      "global-title-layer",
+      "global-primary-action",
+      "main-detail-actions"
+    ],
+    "titlebar": "L",
+    "surface": "white"
+  },
+  "constraintContract": {
+    "schemaVersion": 1,
+    "mode": "block-on-failure",
+    "source": "page-spec.example.json",
+    "must": [
+      {
+        "id": "shell.create-project",
+        "description": "The primary action is represented exactly once.",
+        "scope": "source",
+        "assertion": {
+          "kind": "selector-count",
+          "selector": "[data-component='create-project']",
+          "min": 1,
+          "max": 1
+        }
+      }
+    ],
+    "mustNot": [],
+    "acceptance": {
+      "requiredStates": [],
+      "requiredInteractions": [
+        {
+          "id": "interaction.select-project",
+          "description": "The page exposes the list-to-detail interaction.",
+          "scope": "source",
+          "assertion": {
+            "kind": "pattern-present",
+            "patterns": [
+              "select-project"
+            ]
+          }
+        }
+      ],
+      "requiredArtifacts": [
+        {
+          "id": "artifact.page-spec",
+          "kind": "page-spec",
+          "path": "page-spec.example.json"
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "runId": "page-spec-example-20260806",
+    "hashAlgorithm": "sha256",
+    "pageSpecSha256": "d3f03cd1c91baba4132ce0e1ba501e960b0442998ce9c327c91de733cc75da02"
+  },
+  "tokenContract": {
+    "map": "assets/design-system/dual-output-token-map.json",
+    "webStrategy": "css-custom-properties",
+    "pixsoStrategy": "variable-bindings",
+    "forbidHardcodedStyleValues": true,
+    "usedTokens": [
+      {
+        "role": "frame.width",
+        "sourceToken": "tokens.layout.json:frame.width",
+        "webCssVariable": "--layout-frame-width",
+        "pixsoVariable": "layout/width/1728"
+      },
+      {
+        "role": "frame.height",
+        "sourceToken": "tokens.layout.json:frame.height",
+        "webCssVariable": "--layout-frame-height",
+        "pixsoVariable": "layout/height/1152"
+      },
+      {
+        "role": "shell.sidebar.width",
+        "sourceToken": "tokens.layout.json:shell.sidebar-width",
+        "webCssVariable": "--layout-sidebar-width",
+        "pixsoVariable": "layout/width/240"
+      },
+      {
+        "role": "shell.secondary-pane.width",
+        "sourceToken": "tokens.layout.json:shell.secondary-pane-width",
+        "webCssVariable": "--layout-secondary-pane-width",
+        "pixsoVariable": "layout/width/360"
+      },
+      {
+        "role": "shell.sidebar.padding-x",
+        "sourceToken": "tokens.layout.json:spacing.sidebar-padding-x",
+        "webCssVariable": "--layout-sidebar-padding-x",
+        "pixsoVariable": "space/5"
+      },
+      {
+        "role": "detail.padding-x",
+        "sourceToken": "tokens.layout.json:spacing.main-detail-padding-x",
+        "webCssVariable": "--layout-main-detail-padding-x",
+        "pixsoVariable": "space/6"
+      },
+      {
+        "role": "action.primary.background",
+        "sourceToken": "tokens.colors.json:brand.100",
+        "webCssVariable": "--color-brand-100",
+        "pixsoVariable": "brand/100"
+      },
+      {
+        "role": "action.primary.content",
+        "sourceToken": "tokens.colors.json:neutral-light.100",
+        "webCssVariable": "--color-neutral-light-100",
+        "pixsoVariable": "neutral-light/100"
+      },
+      {
+        "role": "surface.subtle",
+        "sourceToken": "tokens.colors.json:neutral-dark.05",
+        "webCssVariable": "--color-neutral-dark-05",
+        "pixsoVariable": "neutral-dark/05"
+      },
+      {
+        "role": "control.button.height",
+        "sourceToken": "tokens.size.json:component.button-height",
+        "webCssVariable": "--height-button",
+        "pixsoVariable": "size/40"
+      },
+      {
+        "role": "control.button.radius",
+        "sourceToken": "tokens.radius.json:semantic.button",
+        "webCssVariable": "--radius-button",
+        "pixsoVariable": "radius/08"
+      }
+    ],
+    "webCoverage": [
+      {
+        "selector": "[data-component=\"create-project\"]",
+        "property": "background",
+        "webCssVariable": "--color-brand-100"
+      },
+      {
+        "selector": "[data-component=\"create-project\"]",
+        "property": "color",
+        "webCssVariable": "--color-neutral-light-100"
+      },
+      {
+        "selector": "[data-component=\"project-search\"]",
+        "property": "background",
+        "webCssVariable": "--color-neutral-dark-05"
+      }
+    ]
+  },
+  "panes": [
+    {
+      "id": "primary",
+      "role": "primary-navigation",
+      "layout": "vertical",
+      "widthToken": "layout/width/240",
+      "paddingTokens": {
+        "x": "space/5"
+      }
+    },
+    {
+      "id": "list",
+      "role": "secondary-list",
+      "layout": "vertical",
+      "widthToken": "layout/width/360"
+    },
+    {
+      "id": "detail",
+      "role": "main-detail",
+      "layout": "vertical",
+      "paddingTokens": {
+        "x": "space/6"
+      }
+    }
+  ],
+  "layoutTokens": [
+    "layout/width/1728",
+    "layout/height/1152",
+    "layout/width/240",
+    "layout/width/360",
+    "space/5",
+    "space/6"
+  ],
+  "components": [
+    {
+      "id": "create-project",
+      "logicalName": "Icon Text Button/Primary/Default",
+      "connectionMode": "source-component",
+      "pane": "primary",
+      "provider": "registry-active",
+      "placementWidth": "fill",
+      "webSelector": "[data-component='create-project']",
+      "instanceContentStatus": "verified",
+      "textSlots": {
+        "Label": "新建项目"
+      },
+      "iconSlots": [
+        {
+          "slot": "Leading",
+          "alias": "action/add",
+          "sourceArtboard": 24,
+          "displaySizeToken": "size/20",
+          "displaySize": 20,
+          "colorRole": "neutral-light/100"
+        }
+      ]
+    },
+    {
+      "id": "project-search",
+      "logicalName": "Search/White Surface/Default",
+      "connectionMode": "source-component",
+      "pane": "list",
+      "provider": "registry-active",
+      "placementWidth": "fill",
+      "webSelector": "[data-component='project-search']",
+      "instanceContentStatus": "verified",
+      "textSlots": {
+        "Placeholder": "搜索项目"
+      },
+      "iconSlots": [
+        {
+          "slot": "Leading",
+          "alias": "field/search",
+          "sourceArtboard": 24,
+          "displaySizeToken": "size/16",
+          "displaySize": 16,
+          "colorRole": "neutral-dark/60"
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "id": "select-project",
+      "trigger": "click list item",
+      "action": "replace main detail content",
+      "preserves": [
+        "primary navigation selection",
+        "list scroll position"
+      ]
+    }
+  ]
+}

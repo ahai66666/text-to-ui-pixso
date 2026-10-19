@@ -1,0 +1,33 @@
+{
+  "font-family": {
+    "sans": ["HarmonyOS Sans", "HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei", "sans-serif"],
+    "display": "font-family.sans"
+  },
+  "font-size": {
+    "10": "10px", "12": "12px", "14": "14px", "16": "16px",
+    "18": "18px", "20": "20px", "24": "24px", "30": "30px",
+    "38": "38px", "48": "48px", "56": "56px"
+  },
+  "line-height": {
+    "12": "12px", "14": "14px", "16": "16px", "20": "20px",
+    "22": "22px", "24": "24px", "28": "28px", "36": "36px",
+    "44": "44px", "58": "58px", "66": "66px"
+  },
+  "font-weight": {"400": 400, "500": 500, "700": 700},
+  "letter-spacing": {"normal": "0"},
+  "styles": {
+    "display-l": {"font-family": "font-family.sans", "font-size": "font-size.56", "line-height": "line-height.66", "font-weight": "font-weight.400", "description": "展示类标题", "usage": "大号展示标题"},
+    "display-m": {"font-family": "font-family.sans", "font-size": "font-size.48", "line-height": "line-height.58", "font-weight": "font-weight.400", "description": "展示类标题", "usage": "中号展示标题"},
+    "display-s": {"font-family": "font-family.sans", "font-size": "font-size.38", "line-height": "line-height.44", "font-weight": "font-weight.400", "description": "展示类标题", "usage": "小号展示标题"},
+    "title-l": {"font-family": "font-family.sans", "font-size": "font-size.30", "line-height": "line-height.36", "font-weight": "font-weight.700", "description": "主标题", "usage": "页面主标题"},
+    "title-m": {"font-family": "font-family.sans", "font-size": "font-size.24", "line-height": "line-height.28", "font-weight": "font-weight.700", "description": "主标题", "usage": "标题栏文本"},
+    "title-s": {"font-family": "font-family.sans", "font-size": "font-size.20", "line-height": "line-height.24", "font-weight": "font-weight.700", "description": "主标题", "usage": "卡片标题、半模态弹窗标题、弹窗标题"},
+    "subtitle-l": {"font-family": "font-family.sans", "font-size": "font-size.18", "line-height": "line-height.22", "font-weight": "font-weight.500", "description": "次标题", "usage": "普通内容子标题、菜单标题"},
+    "subtitle-m": {"font-family": "font-family.sans", "font-size": "font-size.16", "line-height": "line-height.20", "font-weight": "font-weight.500", "description": "次标题", "usage": "标题辅助文本、列表文本、气泡提示主标题"},
+    "subtitle-s": {"font-family": "font-family.sans", "font-size": "font-size.14", "line-height": "line-height.16", "font-weight": "font-weight.500", "description": "次标题", "usage": "列表子标题、普通副标题"},
+    "body-l": {"font-family": "font-family.sans", "font-size": "font-size.16", "line-height": "line-height.20", "font-weight": "font-weight.400", "description": "主文本", "usage": "客户端默认正文、Sidebar、表格单元格、列表主文本、40px 菜单与操作控件"},
+    "body-m": {"font-family": "font-family.sans", "font-size": "font-size.14", "line-height": "line-height.16", "font-weight": "font-weight.400", "description": "副文本", "usage": "列表摘要与时间、普通描述、Toast、Tabs 与 28px Small Button"},
+    "body-s": {"font-family": "font-family.sans", "font-size": "font-size.12", "line-height": "line-height.14", "font-weight": "font-weight.400", "description": "小号正文", "usage": "辅助文本、次要说明"},
+    "caption-m": {"font-family": "font-family.sans", "font-size": "font-size.10", "line-height": "line-height.12", "font-weight": "font-weight.400", "description": "小号说明", "usage": "极小字号的辅助说明"}
+  }
+}

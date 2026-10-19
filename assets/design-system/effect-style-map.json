@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "purpose": "Canonical HTML-to-Pixso mapping for HarmonyOS PC shadows and effects.",
+  "publicPixsoStyles": [
+    {"htmlToken":"shadow-1","cssVariable":"--shadow-1","pixsoStyle":"$style/Effect/Foundation/shadow-1","usage":"Snackbar and Tooltip only"},
+    {"htmlToken":"shadow-2","cssVariable":"--shadow-2","pixsoStyle":"$style/Effect/Foundation/shadow-2","usage":"Popover, Hover Card, and Dropdown Menu only"},
+    {"htmlToken":"shadow-3","cssVariable":"--shadow-3","pixsoStyle":"$style/Effect/Foundation/shadow-3","usage":"Context Menu only"},
+    {"htmlToken":"shadow-4","cssVariable":"--shadow-4","pixsoStyle":"$style/Effect/Foundation/shadow-4","usage":"Dialog and Alert Dialog only"},
+    {"htmlToken":"shadow-5","cssVariable":"--shadow-5","pixsoStyle":"$style/Effect/Foundation/shadow-5","usage":"Semi-modal only"},
+    {"htmlToken":"shadow-6","cssVariable":"--shadow-6","pixsoStyle":"$style/Effect/Foundation/shadow-6","usage":"unassigned; do not use in public page design"}
+  ],
+  "semanticAliases": {
+    "snackbar":"$style/Effect/Foundation/shadow-1",
+    "tooltip":"$style/Effect/Foundation/shadow-1",
+    "popover":"$style/Effect/Foundation/shadow-2",
+    "hover-card":"$style/Effect/Foundation/shadow-2",
+    "dropdown-menu":"$style/Effect/Foundation/shadow-2",
+    "context-menu":"$style/Effect/Foundation/shadow-3",
+    "dialog":"$style/Effect/Foundation/shadow-4",
+    "alert-dialog":"$style/Effect/Foundation/shadow-4",
+    "semi-modal":"$style/Effect/Foundation/shadow-5"
+  },
+  "nativeInternalStyles": [
+    {"style":"$style/Effect/Component/menu","rule":"Imported native component dependency; still referenced."},
+    {"style":"$style/Effect/Component/blur-120","rule":"Imported native component dependency; still referenced."},
+    {"style":"$style/Effect/Component/blur-80","rule":"Imported native component dependency; still referenced."},
+    {"style":"$style/Effect/Component/slider-thumb","rule":"Imported native component dependency; still referenced."}
+  ],
+  "removed": [
+    "$style/Effect/Semantic/raised-control",
+    "$style/Effect/Semantic/floating-menu",
+    "$style/Effect/Semantic/floating-feedback",
+    "$style/Effect/Semantic/dialog",
+    "$style/Effect/Semantic/highest-overlay",
+    "$style/Effect/Component/tab-active",
+    "$style/Effect/Component/dialog",
+    "$style/Effect/Component/snackbar"
+  ]
+}

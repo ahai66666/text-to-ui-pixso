@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": 2,
+  "componentCount": 49,
+  "sourceRevision": "c8c0220",
+  "registryPolicy": {
+    "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+    "readyRequires": [
+      "sourceReady",
+      "contractReady",
+      "visualParity",
+      "behaviorParity",
+      "accessibilityParity",
+      "tokenParity"
+    ],
+    "partialMayBeUsedFor": [],
+    "partialMustNotBeUsedFor": [
+      "strict-pixso-component-parity",
+      "cross-framework-component-claim"
+    ],
+    "deletedComponents": [
+      "drawer",
+      "sonner",
+      "marker",
+      "message-scroller",
+      "toggle",
+      "spinner",
+      "skeleton",
+      "aspect-ratio",
+      "bubble",
+      "typography",
+      "chart",
+      "empty",
+      "data-table"
+    ],
+    "readinessDimensions": [
+      "sourceReady",
+      "contractReady",
+      "visualParity",
+      "behaviorParity",
+      "accessibilityParity",
+      "tokenParity"
+    ],
+    "readyWhen": "all readinessDimensions are true",
+    "runtimeRule": "只显示结构性 specimens；hover/pressed/focus/open/close 由真实组件交互触发",
+    "comparisonRule": "Framework comparison uses the Monorepo Component Gallery runtime view as its sole visual authority; historical Skill preview pages are not part of the delivery.",
+    "comparisonGroups": [
+      {
+        "id": "navigation",
+        "label": "导航类",
+        "componentIds": [
+          "titlebar",
+          "primary-navigation-item",
+          "sidebar",
+          "tabs",
+          "sub-tabs",
+          "tree-view",
+          "breadcrumb",
+          "menubar",
+          "pagination",
+          "accordion",
+          "collapsible"
+        ]
+      },
+      {
+        "id": "actions",
+        "label": "操作类",
+        "componentIds": [
+          "button",
+          "chips",
+          "context-menu",
+          "dropdown-menu"
+        ]
+      },
+      {
+        "id": "display",
+        "label": "展示类",
+        "componentIds": [
+          "alert",
+          "snackbar",
+          "tooltip",
+          "popover",
+          "hover-card",
+          "avatar",
+          "badge",
+          "color-picker",
+          "table",
+          "progress"
+        ]
+      },
+      {
+        "id": "input",
+        "label": "输入类",
+        "componentIds": [
+          "input",
+          "search",
+          "textarea",
+          "field",
+          "label",
+          "combobox",
+          "number-selector"
+        ]
+      },
+      {
+        "id": "choices",
+        "label": "选择类",
+        "componentIds": [
+          "checkbox",
+          "radio",
+          "radio-group",
+          "switch",
+          "segmented-button",
+          "select",
+          "native-select",
+          "slider",
+          "calendar",
+          "date-picker",
+          "time-picker"
+        ]
+      },
+      {
+        "id": "containers",
+        "label": "容器类",
+        "componentIds": [
+          "form-field",
+          "list-card",
+          "dialog",
+          "alert-dialog",
+          "semi-modal"
+        ]
+      },
+      {
+        "id": "specialized",
+        "label": "特殊组件",
+        "componentIds": [
+          "attachment"
+        ]
+      }
+    ],
+    "categoryOrder": [
+      "navigation",
+      "actions",
+      "display",
+      "input",
+      "choices",
+      "containers",
+      "specialized"
+    ]
+  },
+  "sourceDigest": "65b7d4ae603b5dcc829f87c692d21c6e1d2ff463049169935456088c4d9548fc"
+}

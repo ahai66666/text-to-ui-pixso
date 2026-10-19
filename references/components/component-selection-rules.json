@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "rules": [
+    {
+      "capabilities": [
+        "primary-navigation",
+        "primary-navigation-item",
+        "level-one-navigation"
+      ],
+      "context": "primary-navigation-shell",
+      "logicalName": "Primary Navigation Item/Level 1",
+      "rendererKey": "primary-navigation-item",
+      "requiredOptions": {},
+      "forbiddenLogicalNames": [
+        "Sidebar Item/Default"
+      ]
+    },
+    {
+      "capabilities": [
+        "sidebar",
+        "sidebar-item",
+        "level-two-navigation"
+      ],
+      "context": "secondary-navigation",
+      "logicalName": "Sidebar Item/Default",
+      "rendererKey": "sidebar",
+      "requiredOptions": {},
+      "forbiddenLogicalNames": [
+        "Primary Navigation Item/Level 1"
+      ]
+    },
+    {
+      "capabilities": [
+        "button",
+        "page-primary-action"
+      ],
+      "context": "page-primary-action",
+      "logicalName": "Button/Primary/Default",
+      "rendererKey": "button",
+      "requiredOptions": {
+        "variant": "primary",
+        "size": "standard",
+        "mode": "text"
+      }
+    },
+    {
+      "capabilities": [
+        "icon-button",
+        "toolbar-icon-action"
+      ],
+      "context": "toolbar-action",
+      "logicalName": "Button/Primary/Default",
+      "rendererKey": "button",
+      "requiredOptions": {
+        "variant": "ghost",
+        "size": "small",
+        "mode": "icon"
+      }
+    },
+    {
+      "capabilities": [
+        "icon-text-button",
+        "toolbar-icon-text-action"
+      ],
+      "context": "toolbar-action",
+      "logicalName": "Button/Primary/Default",
+      "rendererKey": "button",
+      "requiredOptions": {
+        "variant": "ghost",
+        "size": "standard",
+        "mode": "icon-text"
+      }
+    },
+    {
+      "capabilities": [
+        "icon-button",
+        "icon-text-button",
+        "main-detail-action"
+      ],
+      "context": "titlebar-main-detail-actions",
+      "logicalName": "Button/Primary/Default",
+      "rendererKey": "button",
+      "requiredOptions": {
+        "variant": "ghost"
+      },
+      "allowedModes": [
+        "icon",
+        "icon-text"
+      ],
+      "requiredSlot": "main-detail-actions"
+    },
+    {
+      "capabilities": [
+        "button",
+        "destructive-action"
+      ],
+      "context": "destructive-action",
+      "logicalName": "Button/Primary/Default",
+      "rendererKey": "button",
+      "requiredOptions": {
+        "variant": "danger",
+        "size": "standard",
+        "mode": "text"
+      }
+    },
+    {
+      "capabilities": [
+        "titlebar",
+        "page-titlebar"
+      ],
+      "context": "main-detail-titlebar",
+      "logicalName": "Titlebar/Default",
+      "rendererKey": "titlebar",
+      "requiredOptions": {
+        "layout": "three-column",
+        "segmentRole": "main-detail"
+      },
+      "requiredSlot": "main-detail-title"
+    },
+    {
+      "capabilities": [
+        "titlebar",
+        "primary-navigation-titlebar"
+      ],
+      "context": "primary-navigation-titlebar",
+      "logicalName": "Titlebar/Default",
+      "rendererKey": "titlebar",
+      "requiredOptions": {
+        "segmentRole": "primary-navigation"
+      }
+    },
+    {
+      "capabilities": [
+        "titlebar",
+        "global-titlebar"
+      ],
+      "context": "global-titlebar",
+      "logicalName": "Titlebar/Default",
+      "rendererKey": "titlebar",
+      "requiredOptions": {},
+      "requiredSlot": "global-title-layer"
+    },
+    {
+      "capabilities": [
+        "search",
+        "list-search"
+      ],
+      "context": "secondary-list-search",
+      "logicalName": "Search/White Surface/Default",
+      "rendererKey": "search",
+      "requiredOptions": {
+        "surface": "white"
+      },
+      "requiredSlot": "secondary-list-title"
+    },
+    {
+      "capabilities": [
+        "list-item",
+        "list-row"
+      ],
+      "context": "repeated-list-row",
+      "logicalName": "List Item/White Surface/Default",
+      "rendererKey": "list-card",
+      "requiredOptions": {}
+    },
+    {
+      "capabilities": [
+        "checkbox",
+        "selection-control"
+      ],
+      "context": "selection-control",
+      "logicalName": "Checkbox/Default",
+      "rendererKey": "checkbox",
+      "requiredOptions": {}
+    },
+    {
+      "capabilities": [
+        "attachment",
+        "message-attachment"
+      ],
+      "context": "message-attachment",
+      "logicalName": "Attachment/Default",
+      "rendererKey": "attachment",
+      "requiredOptions": {}
+    },
+    {
+      "capabilities": [
+        "form-field",
+        "field-wrapper"
+      ],
+      "context": "form-field",
+      "logicalName": "Form Field/Default",
+      "rendererKey": "form-field",
+      "requiredOptions": {}
+    }
+  ]
+}

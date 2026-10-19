@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.text-to-ui/pixso-native-component-map.schema.json",
+  "type": "object",
+  "required": ["schemaVersion", "libraryPage", "mappings"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "libraryPage": { "type": "string", "minLength": 1 },
+    "policy": {
+      "type": "object",
+      "properties": {
+        "editSource": { "const": "mapping-registry.json" },
+        "mappedInstanceColorOwner": { "const": "pixso-variant" },
+        "mappedIconColorSource": { "const": "variant-content" }
+      },
+      "additionalProperties": true
+    },
+    "projectionKind": { "const": "generated-compatibility-projection" },
+    "generatedFrom": { "const": "mapping-registry.json" },
+    "generatedBy": { "const": "scripts/sync-mapping-registry.mjs" },
+    "readOnly": { "const": true },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["logicalName", "rendererKey", "availability", "supportedProps", "supportedSlots"],
+        "properties": {
+          "logicalName": { "type": "string", "minLength": 1 },
+          "rendererKey": { "type": "string", "minLength": 1 },
+          "pixsoName": { "type": ["string", "null"] },
+          "componentSetName": { "type": ["string", "null"] },
+          "availability": { "enum": ["mapped", "native-only", "pending-review", "blocked"] },
+          "variant": { "type": "object" },
+          "supportedProps": { "type": "array", "items": { "type": "string" } },
+          "supportedSlots": { "type": "array", "items": { "type": "string" } },
+          "iconColorSource": { "const": "variant-content" },
+          "contentColor": {
+            "oneOf": [
+              { "type": "string", "minLength": 1 },
+              {
+                "type": "object",
+                "required": ["text", "icon"],
+                "properties": {
+                  "text": { "type": "string", "minLength": 1 },
+                  "icon": { "type": "string", "minLength": 1 }
+                },
+                "additionalProperties": false
+              }
+            ]
+          }
+        }
+      }
+    },
+    "endpointComponentMappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["endpointComponentId", "contractId", "logicalName", "pixsoName", "availability", "variant", "mappingStatus"],
+        "properties": {
+          "endpointComponentId": { "type": "string", "minLength": 1 },
+          "contractId": { "type": "string", "minLength": 1 },
+          "logicalName": { "type": "string", "minLength": 1 },
+          "pixsoName": { "type": ["string", "null"] },
+          "componentSetName": { "type": ["string", "null"] },
+          "availability": { "enum": ["mapped", "native-only", "pending-review", "blocked"] },
+          "variant": { "type": "object" },
+          "mappingStatus": { "type": "string", "minLength": 1 },
+          "sourceMappingTarget": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}

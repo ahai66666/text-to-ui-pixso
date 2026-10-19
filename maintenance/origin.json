@@ -712,5 +712,8 @@
     "scripts/verify-html-artifact.mjs": "1c1c6457c8f6203a4c5e7f685085a55da0b264c5b2a682b9d352c36851664494",
     "scripts/verify-route-materials.mjs": "dcc9a101b4fe61a56ff4262a95adedea4dccfc02d742d0316f66a5ac67e2fd2b"
   },
-  "note": "Frozen local authoring input; remote commit identifies the older main. Differences are preserved by file hashes, not assumed to be remote parity."
+  "note": "Frozen local authoring input; remote commit identifies the older main. Differences are preserved by file hashes, not assumed to be remote parity.",
+  "frozenSourceArchiveSha256": "67935255c2c5691b226a550134eb2b79c20a628a6ee65cfb7ed07aa95eccc537",
+  "remoteComparison": "maintenance/source-vs-remote.json",
+  "sharedDataPublisher": "ahai66666/text-to-ui-html"
 }

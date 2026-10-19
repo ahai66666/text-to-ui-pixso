@@ -1,0 +1,130 @@
+{
+  "id": "input",
+  "logicalName": "Input/White Surface/Default",
+  "variants": [
+    "default",
+    "error",
+    "disabled",
+    "tag-entry"
+  ],
+  "states": [
+    "default",
+    "hover",
+    "focus",
+    "disabled",
+    "error"
+  ],
+  "props": [
+    "value",
+    "placeholder",
+    "disabled",
+    "error",
+    "variant",
+    "label",
+    "options",
+    "tags",
+    "defaultTags",
+    "surface"
+  ],
+  "slots": [
+    "label",
+    "leading",
+    "value",
+    "trailing",
+    "help",
+    "tags",
+    "suggestions"
+  ],
+  "tokenRoles": [
+    "color.input-bg",
+    "color.icon",
+    "color.text",
+    "color.text-muted",
+    "color.text-subtle",
+    "color.border",
+    "size.input-height",
+    "radius.input",
+    "typography.body-l",
+    "typography.body-m"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/input.html"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/input.html"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "input",
+  "categoryLabel": "输入类",
+  "order": 310,
+  "canonicalSection": "[data-runtime-category=\"input\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"input\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-input\"]",
+  "legacyVisualGroup": "fields",
+  "canonicalSpecimen": "gallery:input:input",
+  "specimens": [
+    {
+      "id": "white-surface",
+      "variant": "default",
+      "state": "default",
+      "surface": "white"
+    },
+    {
+      "id": "gray-surface",
+      "variant": "default",
+      "state": "default",
+      "surface": "gray"
+    }
+  ],
+  "fixtureId": "fixture-input",
+  "surface": [
+    "white",
+    "gray"
+  ],
+  "sizing": "fill",
+  "allowedStates": [
+    "default",
+    "hover",
+    "focus",
+    "filled",
+    "error",
+    "disabled"
+  ],
+  "behaviors": [
+    "input",
+    "focus",
+    "disabled",
+    "error"
+  ],
+  "textRoles": [
+    "value:body-l",
+    "placeholder:body-l",
+    "label:body-m",
+    "help:body-s"
+  ],
+  "iconAliases": [],
+  "iconSlots": [],
+  "iconSemantic": null,
+  "comparisonGroup": "input"
+}

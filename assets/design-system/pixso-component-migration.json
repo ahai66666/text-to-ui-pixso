@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "library": "鸿蒙客户端设计规范",
+  "nativeSource": {
+    "library": "HarmonyOS Component Library",
+    "adapterMap": "assets/design-system/harmonyos-component-adapter-map.json",
+    "origin": "harmonyos-native",
+    "deletionAllowed": false
+  },
+  "policy": {
+    "persistGuids": false,
+    "nativeDeletionAllowed": false,
+    "generatedDeletionRequiresSupersededStatus": true,
+    "generatedDeletionRequiresZeroInstances": true,
+    "generatedDeletionRequiresFreshGuidRead": true
+  },
+  "takeovers": [],
+  "deletionAllowlist": []
+}

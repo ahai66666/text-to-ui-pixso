@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "text-to-ui-resource-sources",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "kind",
+    "documents",
+    "resources"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "kind": {
+      "const": "text-to-ui-resource-sources"
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "purpose",
+          "stage",
+          "appliesTo",
+          "path",
+          "requires"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9.-]+$"
+          },
+          "purpose": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "stage": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "intake",
+                "design",
+                "discovery",
+                "bindings",
+                "styling",
+                "validation",
+                "pixso"
+              ]
+            }
+          },
+          "appliesTo": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "requires": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "source": {
+            "type": "object",
+            "properties": {
+              "aggregate": {
+                "type": "string"
+              },
+              "ordinal": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "linkBase": {
+                "type": "string"
+              }
+            }
+          },
+          "readPolicy": {
+            "enum": [
+              "stage",
+              "explicit-query"
+            ]
+          },
+          "extensionReferences": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "parts",
+          "policy"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "policy": {
+            "const": "generated-compatibility-aggregate"
+          },
+          "parts": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "aliases": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}

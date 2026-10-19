@@ -1,0 +1,180 @@
+{
+  "id": "dialog",
+  "logicalName": "Dialog/Default",
+  "variants": [
+    "single",
+    "double",
+    "triple"
+  ],
+  "states": [
+    "closed",
+    "open"
+  ],
+  "props": [
+    "open",
+    "title",
+    "description",
+    "intent",
+    "actionLayout",
+    "confirmLabel",
+    "cancelLabel",
+    "thirdActionLabel",
+    "onConfirm",
+    "onCancel",
+    "onThirdAction",
+    "onOpenChange"
+  ],
+  "slots": [
+    "titlebar",
+    "description",
+    "content",
+    "actions"
+  ],
+  "slotContracts": {
+    "titlebar": {
+      "cardinality": "1",
+      "scope": "dialog-header",
+      "acceptedContent": "Dialog title slot",
+      "variants": [
+        "title-only",
+        "title-subtitle"
+      ],
+      "pixsoComponent": ".Title",
+      "pixsoVariants": {
+        "title-only": "2 Line=OFF",
+        "title-subtitle": "2 Line=ON"
+      }
+    },
+    "actions": {
+      "cardinality": "1",
+      "scope": "dialog-actions",
+      "acceptedContent": "Button instances",
+      "buttonCount": {
+        "min": 1,
+        "max": 3
+      },
+      "layouts": [
+        "one-button",
+        "two-buttons",
+        "three-buttons"
+      ],
+      "pixsoComponent": ".Dialog_Container",
+      "pixsoVariants": {
+        "one-button": "quantity=1_normal",
+        "two-buttons": [
+          "quantity=2_normal",
+          "quantity=2_emphasize"
+        ],
+        "three-buttons": "quantity=3_emphasize_port"
+      }
+    }
+  },
+  "tokenRoles": [
+    "color.text",
+    "color.surface",
+    "color.border",
+    "typography.body-l",
+    "spacing.component-gap",
+    "shadow.overlay",
+    "radius.card"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/advanced.js#dialog"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/advanced.js#dialog"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "containers",
+  "categoryLabel": "容器类",
+  "order": 512,
+  "canonicalSection": "[data-runtime-category=\"containers\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"containers\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-dialog\"]",
+  "specimens": [
+    {
+      "id": "single-default",
+      "variant": "single",
+      "state": "closed",
+      "actionLayout": "single",
+      "intent": "default"
+    },
+    {
+      "id": "double-default",
+      "variant": "double",
+      "state": "closed",
+      "actionLayout": "double",
+      "intent": "default"
+    },
+    {
+      "id": "triple-default",
+      "variant": "triple",
+      "state": "closed",
+      "actionLayout": "triple",
+      "intent": "default"
+    }
+  ],
+  "fixtureId": "fixture-dialog",
+  "surface": "white",
+  "sizing": "overlay",
+  "behaviors": [
+    "open",
+    "confirm",
+    "cancel",
+    "escape",
+    "focus-return",
+    "no-outside-dismiss"
+  ],
+  "iconSemantic": null,
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "overlays",
+  "canonicalSpecimen": "gallery:containers:dialog",
+  "allowedStates": [
+    "closed",
+    "open"
+  ],
+  "textRoles": [
+    "title:title-s",
+    "content:body-l",
+    "description:body-m",
+    "help:body-s"
+  ],
+  "iconSlots": [],
+  "iconAliases": [],
+  "structuralAxes": {
+    "actionLayout": [
+      "single",
+      "double",
+      "triple"
+    ],
+    "intent": [
+      "default",
+      "danger"
+    ]
+  },
+  "interactionStates": [
+    "closed",
+    "open"
+  ],
+  "comparisonGroup": "containers"
+}

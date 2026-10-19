@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "text-to-ui-pixso",
+  "kind": "pixso",
+  "version": "1.0.0",
+  "handoffSchemaVersions": [
+    1
+  ],
+  "workflows": [
+    "existing-html-to-pixso",
+    "pixso-component-library",
+    "converter-diagnosis",
+    "skill-maintenance"
+  ],
+  "stages": [
+    "pixso"
+  ],
+  "sharedDataPublisher": "ahai66666/text-to-ui-html",
+  "releaseStatus": "candidate"
+}

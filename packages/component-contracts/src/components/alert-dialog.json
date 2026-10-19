@@ -1,0 +1,134 @@
+{
+  "id": "alert-dialog",
+  "logicalName": "Alert Dialog/Default",
+  "variants": [
+    "danger"
+  ],
+  "states": [
+    "closed",
+    "open"
+  ],
+  "props": [
+    "open",
+    "title",
+    "description",
+    "confirmLabel",
+    "cancelLabel",
+    "statusIcon",
+    "onConfirm",
+    "onCancel",
+    "onOpenChange"
+  ],
+  "slots": [
+    "title",
+    "description",
+    "content",
+    "actions"
+  ],
+  "tokenRoles": [
+    "color.text",
+    "color.surface",
+    "color.border",
+    "typography.body-l",
+    "spacing.component-gap",
+    "shadow.overlay",
+    "radius.card"
+  ],
+  "source": "canonical-custom",
+  "status": "partial",
+  "implementations": {
+    "html": "packages/components-html/src/advanced.js#alert-dialog"
+  },
+  "visualAuthority": "apps/component-gallery/index.html#runtime-view",
+  "sourceStrategy": "canonical-custom",
+  "frameworks": {
+    "html": {
+      "status": "partial",
+      "source": "packages/components-html/src/advanced.js#alert-dialog"
+    }
+  },
+  "pixso": {
+    "status": "logical-mapping",
+    "libraryPage": "NewComponents",
+    "resolveGuidsAtRuntime": true,
+    "linkedInstanceRequired": true,
+    "variableReadbackRequired": true
+  },
+  "contractNotes": "已保留当前组件契约；运行时适配器仍需按本组件真实结构、行为和可访问性逐批验收。",
+  "category": "containers",
+  "categoryLabel": "容器类",
+  "order": 513,
+  "canonicalSection": "[data-runtime-category=\"containers\"]",
+  "canonicalSelector": "#runtime-view [data-runtime-category=\"containers\"] .tui-runtime-card__preview[data-fixture-id=\"fixture-alert-dialog\"]",
+  "specimens": [
+    {
+      "id": "danger-confirm",
+      "variant": "danger",
+      "state": "closed",
+      "actionLayout": "double",
+      "intent": "danger"
+    }
+  ],
+  "fixtureId": "fixture-alert-dialog",
+  "surface": "white",
+  "sizing": "overlay",
+  "behaviors": [
+    "open",
+    "confirm",
+    "cancel",
+    "escape",
+    "focus-return",
+    "no-outside-dismiss"
+  ],
+  "iconSemantic": "status/warning",
+  "readiness": {
+    "sourceReady": true,
+    "contractReady": true,
+    "visualParity": false,
+    "behaviorParity": false,
+    "accessibilityParity": false,
+    "tokenParity": true
+  },
+  "legacyVisualGroup": "overlays",
+  "canonicalSpecimen": "gallery:containers:alert-dialog",
+  "allowedStates": [
+    "closed",
+    "open"
+  ],
+  "textRoles": [
+    "title:title-s",
+    "content:body-l",
+    "description:body-m",
+    "help:body-s"
+  ],
+  "iconSlots": [
+    {
+      "alias": "status/warning",
+      "displaySizes": [
+        16,
+        20,
+        24
+      ],
+      "kind": "regular"
+    }
+  ],
+  "iconAliases": [
+    "status/warning"
+  ],
+  "structuralAxes": {
+    "actionLayout": [
+      "double"
+    ],
+    "intent": [
+      "danger"
+    ],
+    "mode": [
+      "modal"
+    ]
+  },
+  "interactionStates": [
+    "closed",
+    "open"
+  ],
+  "comparisonGroup": "containers"
+}

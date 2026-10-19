@@ -1,0 +1,1115 @@
+{
+  "$schema": "https://tokens.studio/schema.json",
+  "name": "HarmonyOS PC / Pixso Token Manifest",
+  "version": 3,
+  "platform": "HarmonyOS PC client",
+  "generatedFrom": [
+    "assets/design-system/tokens.colors.json",
+    "assets/design-system/tokens.spacing.json",
+    "assets/design-system/tokens.size.json",
+    "assets/design-system/tokens.radius.json",
+    "assets/design-system/tokens.shadow.json",
+    "assets/design-system/tokens.typography.json",
+    "assets/design-system/tokens.layout.json",
+    "assets/design-system/tokens.icon.json",
+    "assets/design-system/pixso-core-baseline.json"
+  ],
+  "importOrder": [
+    "Color",
+    "Spacing",
+    "Size & Layout",
+    "Typography",
+    "Text Styles",
+    "Effect Styles"
+  ],
+  "collections": [
+    {
+      "name": "Color",
+      "modes": [
+        "Light"
+      ],
+      "variables": {
+        "brand/05": {
+          "type": "color",
+          "value": "#0A59F70C",
+          "source": "tokens.colors.json:brand"
+        },
+        "brand/10": {
+          "type": "color",
+          "value": "#0A59F719",
+          "source": "tokens.colors.json:brand"
+        },
+        "brand/15": {
+          "type": "color",
+          "value": "#0A59F726",
+          "source": "tokens.colors.json:brand"
+        },
+        "brand/20": {
+          "type": "color",
+          "value": "#0A59F733",
+          "source": "tokens.colors.json:brand"
+        },
+        "brand/30": {
+          "type": "color",
+          "value": "#0A59F74D",
+          "source": "tokens.colors.json:brand"
+        },
+        "brand/40": {
+          "type": "color",
+          "value": "#0A59F766",
+          "source": "tokens.colors.json:brand"
+        },
+        "brand/50": {
+          "type": "color",
+          "value": "#0A59F77F",
+          "source": "tokens.colors.json:brand"
+        },
+        "brand/60": {
+          "type": "color",
+          "value": "#0A59F799",
+          "source": "tokens.colors.json:brand"
+        },
+        "brand/70": {
+          "type": "color",
+          "value": "#0A59F7B2",
+          "source": "tokens.colors.json:brand"
+        },
+        "brand/80": {
+          "type": "color",
+          "value": "#0A59F7CC",
+          "source": "tokens.colors.json:brand"
+        },
+        "brand/90": {
+          "type": "color",
+          "value": "#0A59F7E5",
+          "source": "tokens.colors.json:brand"
+        },
+        "brand/100": {
+          "type": "color",
+          "value": "#0A59F7FF",
+          "source": "tokens.colors.json:brand"
+        },
+        "neutral-dark/05": {
+          "type": "color",
+          "value": "#0000000C",
+          "source": "tokens.colors.json:neutral-dark"
+        },
+        "neutral-dark/10": {
+          "type": "color",
+          "value": "#00000019",
+          "source": "tokens.colors.json:neutral-dark"
+        },
+        "neutral-dark/15": {
+          "type": "color",
+          "value": "#00000026",
+          "source": "tokens.colors.json:neutral-dark"
+        },
+        "neutral-dark/20": {
+          "type": "color",
+          "value": "#00000033",
+          "source": "tokens.colors.json:neutral-dark"
+        },
+        "neutral-dark/30": {
+          "type": "color",
+          "value": "#0000004D",
+          "source": "tokens.colors.json:neutral-dark"
+        },
+        "neutral-dark/40": {
+          "type": "color",
+          "value": "#00000066",
+          "source": "tokens.colors.json:neutral-dark"
+        },
+        "neutral-dark/50": {
+          "type": "color",
+          "value": "#0000007F",
+          "source": "tokens.colors.json:neutral-dark"
+        },
+        "neutral-dark/60": {
+          "type": "color",
+          "value": "#00000099",
+          "source": "tokens.colors.json:neutral-dark"
+        },
+        "neutral-dark/70": {
+          "type": "color",
+          "value": "#000000B2",
+          "source": "tokens.colors.json:neutral-dark"
+        },
+        "neutral-dark/80": {
+          "type": "color",
+          "value": "#000000CC",
+          "source": "tokens.colors.json:neutral-dark"
+        },
+        "neutral-dark/90": {
+          "type": "color",
+          "value": "#000000E5",
+          "source": "tokens.colors.json:neutral-dark"
+        },
+        "neutral-dark/100": {
+          "type": "color",
+          "value": "#000000FF",
+          "source": "tokens.colors.json:neutral-dark"
+        },
+        "neutral-light/05": {
+          "type": "color",
+          "value": "#FFFFFF0C",
+          "source": "tokens.colors.json:neutral-light"
+        },
+        "neutral-light/10": {
+          "type": "color",
+          "value": "#FFFFFF19",
+          "source": "tokens.colors.json:neutral-light"
+        },
+        "neutral-light/15": {
+          "type": "color",
+          "value": "#FFFFFF26",
+          "source": "tokens.colors.json:neutral-light"
+        },
+        "neutral-light/20": {
+          "type": "color",
+          "value": "#FFFFFF33",
+          "source": "tokens.colors.json:neutral-light"
+        },
+        "neutral-light/30": {
+          "type": "color",
+          "value": "#FFFFFF4D",
+          "source": "tokens.colors.json:neutral-light"
+        },
+        "neutral-light/40": {
+          "type": "color",
+          "value": "#FFFFFF66",
+          "source": "tokens.colors.json:neutral-light"
+        },
+        "neutral-light/50": {
+          "type": "color",
+          "value": "#FFFFFF7F",
+          "source": "tokens.colors.json:neutral-light"
+        },
+        "neutral-light/60": {
+          "type": "color",
+          "value": "#FFFFFF99",
+          "source": "tokens.colors.json:neutral-light"
+        },
+        "neutral-light/70": {
+          "type": "color",
+          "value": "#FFFFFFB2",
+          "source": "tokens.colors.json:neutral-light"
+        },
+        "neutral-light/80": {
+          "type": "color",
+          "value": "#FFFFFFCC",
+          "source": "tokens.colors.json:neutral-light"
+        },
+        "neutral-light/90": {
+          "type": "color",
+          "value": "#FFFFFFE5",
+          "source": "tokens.colors.json:neutral-light"
+        },
+        "neutral-light/100": {
+          "type": "color",
+          "value": "#FFFFFFFF",
+          "source": "tokens.colors.json:neutral-light"
+        },
+        "function/success/10": {
+          "type": "color",
+          "value": "#64BB5C19",
+          "source": "tokens.colors.json:function"
+        },
+        "function/success/20": {
+          "type": "color",
+          "value": "#64BB5C33",
+          "source": "tokens.colors.json:function"
+        },
+        "function/success/100": {
+          "type": "color",
+          "value": "#64BB5CFF",
+          "source": "tokens.colors.json:function"
+        },
+        "function/warning/10": {
+          "type": "color",
+          "value": "#ED6F2119",
+          "source": "tokens.colors.json:function"
+        },
+        "function/warning/20": {
+          "type": "color",
+          "value": "#ED6F2133",
+          "source": "tokens.colors.json:function"
+        },
+        "function/warning/100": {
+          "type": "color",
+          "value": "#ED6F21FF",
+          "source": "tokens.colors.json:function"
+        },
+        "function/danger/10": {
+          "type": "color",
+          "value": "#E8402619",
+          "source": "tokens.colors.json:function"
+        },
+        "function/danger/20": {
+          "type": "color",
+          "value": "#E8402633",
+          "source": "tokens.colors.json:function"
+        },
+        "function/danger/100": {
+          "type": "color",
+          "value": "#E84026FF",
+          "source": "tokens.colors.json:function"
+        },
+        "multi/01": {
+          "type": "color",
+          "value": "#564AF7",
+          "source": "tokens.colors.json:multi"
+        },
+        "multi/02": {
+          "type": "color",
+          "value": "#46B1E3",
+          "source": "tokens.colors.json:multi"
+        },
+        "multi/03": {
+          "type": "color",
+          "value": "#61CFBE",
+          "source": "tokens.colors.json:multi"
+        },
+        "multi/04": {
+          "type": "color",
+          "value": "#A5D61D",
+          "source": "tokens.colors.json:multi"
+        },
+        "multi/05": {
+          "type": "color",
+          "value": "#AC49F5",
+          "source": "tokens.colors.json:multi"
+        },
+        "multi/06": {
+          "type": "color",
+          "value": "#E64566",
+          "source": "tokens.colors.json:multi"
+        },
+        "multi/07": {
+          "type": "color",
+          "value": "#F9A01E",
+          "source": "tokens.colors.json:multi"
+        },
+        "multi/08": {
+          "type": "color",
+          "value": "#F7CE00",
+          "source": "tokens.colors.json:multi"
+        },
+        "multi/09": {
+          "type": "color",
+          "value": "#64BB5C",
+          "source": "tokens.colors.json:multi"
+        },
+        "multi/10": {
+          "type": "color",
+          "value": "#E84026",
+          "source": "tokens.colors.json:multi"
+        },
+        "multi/11": {
+          "type": "color",
+          "value": "#ED6F21",
+          "source": "tokens.colors.json:multi"
+        }
+      }
+    },
+    {
+      "name": "Spacing",
+      "modes": [
+        "Compact"
+      ],
+      "variables": {
+        "space/0": {
+          "type": "number",
+          "value": 0,
+          "source": "tokens.spacing.json:space.0"
+        },
+        "space/1": {
+          "type": "number",
+          "value": 2,
+          "source": "tokens.spacing.json:space.1"
+        },
+        "space/2": {
+          "type": "number",
+          "value": 4,
+          "source": "tokens.spacing.json:space.2"
+        },
+        "space/3": {
+          "type": "number",
+          "value": 8,
+          "source": "tokens.spacing.json:space.3"
+        },
+        "space/4": {
+          "type": "number",
+          "value": 12,
+          "source": "tokens.spacing.json:space.4"
+        },
+        "space/5": {
+          "type": "number",
+          "value": 16,
+          "source": "tokens.spacing.json:space.5"
+        },
+        "space/6": {
+          "type": "number",
+          "value": 24,
+          "source": "tokens.spacing.json:space.6"
+        },
+        "space/7": {
+          "type": "number",
+          "value": 32,
+          "source": "tokens.spacing.json:space.7"
+        }
+      }
+    },
+    {
+      "name": "Size & Layout",
+      "modes": [
+        "Desktop"
+      ],
+      "variables": {
+        "size/04": {
+          "type": "number",
+          "value": 4,
+          "source": "tokens.size.json:size.1"
+        },
+        "size/06": {
+          "type": "number",
+          "value": 6,
+          "source": "tokens.size.json:size.2"
+        },
+        "size/08": {
+          "type": "number",
+          "value": 8,
+          "source": "tokens.size.json:size.3"
+        },
+        "size/12": {
+          "type": "number",
+          "value": 12,
+          "source": "tokens.size.json:size.4"
+        },
+        "size/16": {
+          "type": "number",
+          "value": 16,
+          "source": "tokens.size.json:size.5"
+        },
+        "size/20": {
+          "type": "number",
+          "value": 20,
+          "source": "tokens.size.json:size.6"
+        },
+        "size/24": {
+          "type": "number",
+          "value": 24,
+          "source": "tokens.size.json:size.7"
+        },
+        "size/28": {
+          "type": "number",
+          "value": 28,
+          "source": "tokens.size.json:size.8"
+        },
+        "size/32": {
+          "type": "number",
+          "value": 32,
+          "source": "tokens.size.json:size.9"
+        },
+        "size/36": {
+          "type": "number",
+          "value": 36,
+          "source": "tokens.size.json:size.10"
+        },
+        "size/40": {
+          "type": "number",
+          "value": 40,
+          "source": "tokens.size.json:size.11"
+        },
+        "size/44": {
+          "type": "number",
+          "value": 44,
+          "source": "tokens.size.json:size.12"
+        },
+        "size/48": {
+          "type": "number",
+          "value": 48,
+          "source": "tokens.size.json:size.13"
+        },
+        "size/56": {
+          "type": "number",
+          "value": 56,
+          "source": "tokens.size.json:size.14"
+        },
+        "size/64": {
+          "type": "number",
+          "value": 64,
+          "source": "tokens.size.json:size.15"
+        },
+        "size/72": {
+          "type": "number",
+          "value": 72,
+          "source": "tokens.size.json:size.16"
+        },
+        "size/80": {
+          "type": "number",
+          "value": 80,
+          "source": "tokens.size.json:size.17"
+        },
+        "icon/stroke/16": {
+          "type": "number",
+          "value": 1,
+          "source": "tokens.icon.json:lucide.project-stroke-width-by-display-size.16"
+        },
+        "icon/stroke/20": {
+          "type": "number",
+          "value": 1.25,
+          "source": "tokens.icon.json:lucide.project-stroke-width-by-display-size.20"
+        },
+        "icon/stroke/24": {
+          "type": "number",
+          "value": 1.5,
+          "source": "tokens.icon.json:lucide.project-stroke-width-by-display-size.24"
+        },
+        "radius/0": {
+          "type": "number",
+          "value": 0,
+          "source": "tokens.radius.json:radius.0"
+        },
+        "radius/04": {
+          "type": "number",
+          "value": 4,
+          "source": "tokens.radius.json:radius.1"
+        },
+        "radius/06": {
+          "type": "number",
+          "value": 6,
+          "source": "tokens.radius.json:radius.2"
+        },
+        "radius/08": {
+          "type": "number",
+          "value": 8,
+          "source": "tokens.radius.json:radius.3"
+        },
+        "radius/12": {
+          "type": "number",
+          "value": 12,
+          "source": "tokens.radius.json:radius.4"
+        },
+        "radius/16": {
+          "type": "number",
+          "value": 16,
+          "source": "tokens.radius.json:radius.5"
+        },
+        "radius/full": {
+          "type": "number",
+          "value": 999,
+          "source": "tokens.radius.json:radius.full"
+        },
+        "layout/divider/0.5": {
+          "type": "number",
+          "value": 0.5,
+          "source": "tokens.layout.json:shell.navigation-divider-width"
+        },
+        "layout/width/240": {
+          "type": "number",
+          "value": 240,
+          "source": "tokens.layout.json:shell.sidebar-width"
+        },
+        "layout/width/360": {
+          "type": "number",
+          "value": 360,
+          "source": "tokens.layout.json:shell.secondary-pane-width"
+        },
+        "layout/width/400": {
+          "type": "number",
+          "value": 400,
+          "source": "tokens.size.json:modal.dialog-width"
+        },
+        "layout/width/480": {
+          "type": "number",
+          "value": 480,
+          "source": "tokens.size.json:modal.width-s"
+        },
+        "layout/width/640": {
+          "type": "number",
+          "value": 640,
+          "source": "tokens.size.json:modal.width-m"
+        },
+        "layout/width/800": {
+          "type": "number",
+          "value": 800,
+          "source": "tokens.size.json:modal.width-l"
+        },
+        "layout/width/1100": {
+          "type": "number",
+          "value": 1100,
+          "source": "tokens.layout.json:window.min-width"
+        },
+        "layout/width/1728": {
+          "type": "number",
+          "value": 1728,
+          "source": "tokens.layout.json:frame.width"
+        },
+        "layout/height/720": {
+          "type": "number",
+          "value": 720,
+          "source": "tokens.layout.json:window.min-height"
+        },
+        "layout/height/1152": {
+          "type": "number",
+          "value": 1152,
+          "source": "tokens.layout.json:frame.height"
+        },
+        "opacity/40": {
+          "type": "number",
+          "value": 40,
+          "webValue": 0.4,
+          "cssVariable": "--opacity-40",
+          "valueTransform": "pixso-percent-to-css-unit-interval",
+          "source": "tokens.colors.json:semantic.state-disabled-opacity"
+        }
+      }
+    },
+    {
+      "name": "Typography",
+      "modes": [
+        "HarmonyOS Sans"
+      ],
+      "variables": {
+        "font/family/sans": {
+          "type": "string",
+          "value": "HarmonyOS Sans",
+          "source": "tokens.typography.json:font-family.sans"
+        },
+        "font/size/10": {
+          "type": "number",
+          "value": 10,
+          "source": "tokens.typography.json:font-size.10"
+        },
+        "font/size/12": {
+          "type": "number",
+          "value": 12,
+          "source": "tokens.typography.json:font-size.12"
+        },
+        "font/size/14": {
+          "type": "number",
+          "value": 14,
+          "source": "tokens.typography.json:font-size.14"
+        },
+        "font/size/16": {
+          "type": "number",
+          "value": 16,
+          "source": "tokens.typography.json:font-size.16"
+        },
+        "font/size/18": {
+          "type": "number",
+          "value": 18,
+          "source": "tokens.typography.json:font-size.18"
+        },
+        "font/size/20": {
+          "type": "number",
+          "value": 20,
+          "source": "tokens.typography.json:font-size.20"
+        },
+        "font/size/24": {
+          "type": "number",
+          "value": 24,
+          "source": "tokens.typography.json:font-size.24"
+        },
+        "font/size/30": {
+          "type": "number",
+          "value": 30,
+          "source": "tokens.typography.json:font-size.30"
+        },
+        "font/size/38": {
+          "type": "number",
+          "value": 38,
+          "source": "tokens.typography.json:font-size.38"
+        },
+        "font/size/48": {
+          "type": "number",
+          "value": 48,
+          "source": "tokens.typography.json:font-size.48"
+        },
+        "font/size/56": {
+          "type": "number",
+          "value": 56,
+          "source": "tokens.typography.json:font-size.56"
+        },
+        "font/line-height/12": {
+          "type": "number",
+          "value": 12,
+          "source": "tokens.typography.json:line-height.12"
+        },
+        "font/line-height/14": {
+          "type": "number",
+          "value": 14,
+          "source": "tokens.typography.json:line-height.14"
+        },
+        "font/line-height/16": {
+          "type": "number",
+          "value": 16,
+          "source": "tokens.typography.json:line-height.16"
+        },
+        "font/line-height/20": {
+          "type": "number",
+          "value": 20,
+          "source": "tokens.typography.json:line-height.20"
+        },
+        "font/line-height/22": {
+          "type": "number",
+          "value": 22,
+          "source": "tokens.typography.json:line-height.22"
+        },
+        "font/line-height/24": {
+          "type": "number",
+          "value": 24,
+          "source": "tokens.typography.json:line-height.24"
+        },
+        "font/line-height/28": {
+          "type": "number",
+          "value": 28,
+          "source": "tokens.typography.json:line-height.28"
+        },
+        "font/line-height/36": {
+          "type": "number",
+          "value": 36,
+          "source": "tokens.typography.json:line-height.36"
+        },
+        "font/line-height/44": {
+          "type": "number",
+          "value": 44,
+          "source": "tokens.typography.json:line-height.44"
+        },
+        "font/line-height/58": {
+          "type": "number",
+          "value": 58,
+          "source": "tokens.typography.json:line-height.58"
+        },
+        "font/line-height/66": {
+          "type": "number",
+          "value": 66,
+          "source": "tokens.typography.json:line-height.66"
+        },
+        "font/weight/400": {
+          "type": "number",
+          "value": 400,
+          "source": "tokens.typography.json:font-weight.400"
+        },
+        "font/weight/500": {
+          "type": "number",
+          "value": 500,
+          "source": "tokens.typography.json:font-weight.500"
+        },
+        "font/weight/700": {
+          "type": "number",
+          "value": 700,
+          "source": "tokens.typography.json:font-weight.700"
+        },
+        "font/letter-spacing/0": {
+          "type": "number",
+          "value": 0,
+          "source": "tokens.typography.json:letter-spacing.normal"
+        }
+      }
+    }
+  ],
+  "styles": {
+    "text": {
+      "Typography/Display_L": {
+        "type": "text",
+        "fontFamily": "HarmonyOS Sans",
+        "fontSize": 56,
+        "lineHeight": "66px",
+        "fontWeight": 400,
+        "letterSpacing": "0px",
+        "source": "tokens.typography.json:styles.display-l"
+      },
+      "Typography/Display_M": {
+        "type": "text",
+        "fontFamily": "HarmonyOS Sans",
+        "fontSize": 48,
+        "lineHeight": "58px",
+        "fontWeight": 400,
+        "letterSpacing": "0px",
+        "source": "tokens.typography.json:styles.display-m"
+      },
+      "Typography/Display_S": {
+        "type": "text",
+        "fontFamily": "HarmonyOS Sans",
+        "fontSize": 38,
+        "lineHeight": "44px",
+        "fontWeight": 400,
+        "letterSpacing": "0px",
+        "source": "tokens.typography.json:styles.display-s"
+      },
+      "Typography/Title_L": {
+        "type": "text",
+        "fontFamily": "HarmonyOS Sans",
+        "fontSize": 30,
+        "lineHeight": "36px",
+        "fontWeight": 700,
+        "letterSpacing": "0px",
+        "source": "tokens.typography.json:styles.title-l"
+      },
+      "Typography/Title_M": {
+        "type": "text",
+        "fontFamily": "HarmonyOS Sans",
+        "fontSize": 24,
+        "lineHeight": "28px",
+        "fontWeight": 700,
+        "letterSpacing": "0px",
+        "source": "tokens.typography.json:styles.title-m"
+      },
+      "Typography/Title_S": {
+        "type": "text",
+        "fontFamily": "HarmonyOS Sans",
+        "fontSize": 20,
+        "lineHeight": "24px",
+        "fontWeight": 700,
+        "letterSpacing": "0px",
+        "source": "tokens.typography.json:styles.title-s"
+      },
+      "Typography/Subtitle_L": {
+        "type": "text",
+        "fontFamily": "HarmonyOS Sans",
+        "fontSize": 18,
+        "lineHeight": "22px",
+        "fontWeight": 500,
+        "letterSpacing": "0px",
+        "source": "tokens.typography.json:styles.subtitle-l"
+      },
+      "Typography/Subtitle_M": {
+        "type": "text",
+        "fontFamily": "HarmonyOS Sans",
+        "fontSize": 16,
+        "lineHeight": "20px",
+        "fontWeight": 500,
+        "letterSpacing": "0px",
+        "source": "tokens.typography.json:styles.subtitle-m"
+      },
+      "Typography/Subtitle_S": {
+        "type": "text",
+        "fontFamily": "HarmonyOS Sans",
+        "fontSize": 14,
+        "lineHeight": "16px",
+        "fontWeight": 500,
+        "letterSpacing": "0px",
+        "source": "tokens.typography.json:styles.subtitle-s"
+      },
+      "Typography/Body_L": {
+        "type": "text",
+        "fontFamily": "HarmonyOS Sans",
+        "fontSize": 16,
+        "lineHeight": "20px",
+        "fontWeight": 400,
+        "letterSpacing": "0px",
+        "source": "tokens.typography.json:styles.body-l"
+      },
+      "Typography/Body_M": {
+        "type": "text",
+        "fontFamily": "HarmonyOS Sans",
+        "fontSize": 14,
+        "lineHeight": "16px",
+        "fontWeight": 400,
+        "letterSpacing": "0px",
+        "source": "tokens.typography.json:styles.body-m"
+      },
+      "Typography/Body_S": {
+        "type": "text",
+        "fontFamily": "HarmonyOS Sans",
+        "fontSize": 12,
+        "lineHeight": "14px",
+        "fontWeight": 400,
+        "letterSpacing": "0px",
+        "source": "tokens.typography.json:styles.body-s"
+      },
+      "Typography/Caption_M": {
+        "type": "text",
+        "fontFamily": "HarmonyOS Sans",
+        "fontSize": 10,
+        "lineHeight": "12px",
+        "fontWeight": 400,
+        "letterSpacing": "0px",
+        "source": "tokens.typography.json:styles.caption-m"
+      }
+    },
+    "effect": {
+      "Effect/Foundation/shadow-1": {
+        "type": "effect",
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "color": "#00001E",
+            "opacity": 0.15,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": 4,
+            "spread": 0,
+            "visible": true
+          }
+        ],
+        "source": "tokens.shadow.json:shadow-1"
+      },
+      "Effect/Foundation/shadow-2": {
+        "type": "effect",
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "color": "#00001E",
+            "opacity": 0.08,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": 20,
+            "spread": 0,
+            "visible": true
+          }
+        ],
+        "source": "tokens.shadow.json:shadow-2"
+      },
+      "Effect/Foundation/shadow-3": {
+        "type": "effect",
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "color": "#00001E",
+            "opacity": 0.15,
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "radius": 50,
+            "spread": 0,
+            "visible": true
+          }
+        ],
+        "source": "tokens.shadow.json:shadow-3"
+      },
+      "Effect/Foundation/shadow-4": {
+        "type": "effect",
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "color": "#00001E",
+            "opacity": 0.3,
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "radius": 50,
+            "spread": 0,
+            "visible": true
+          }
+        ],
+        "source": "tokens.shadow.json:shadow-4"
+      },
+      "Effect/Foundation/shadow-5": {
+        "type": "effect",
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "color": "#00001E",
+            "opacity": 0.25,
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "radius": 55,
+            "spread": 0,
+            "visible": true
+          }
+        ],
+        "source": "tokens.shadow.json:shadow-5"
+      },
+      "Effect/Foundation/shadow-6": {
+        "type": "effect",
+        "effects": [
+          {
+            "type": "DROP_SHADOW",
+            "color": "#00001E",
+            "opacity": 0.45,
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "radius": 70,
+            "spread": 0,
+            "visible": true
+          }
+        ],
+        "source": "tokens.shadow.json:shadow-6"
+      }
+    }
+  },
+  "aliasGraph": {
+    "component/spacing/gap/list-item": "space.1",
+    "component/spacing/gap/selection-option": "space.1",
+    "component/spacing/gap/tabs-list": "space.1",
+    "component/spacing/gap/menu-item": "space.1",
+    "component/spacing/gap/nav-item": "space.1",
+    "component/spacing/gap/button-icon-label": "space.3",
+    "component/spacing/gap/button-group": "space.3",
+    "component/spacing/gap/menu-item-content": "space.3",
+    "component/spacing/gap/breadcrumb-item": "space.3",
+    "component/spacing/gap/subtab-item": "space.3",
+    "component/spacing/gap/alert-content": "space.3",
+    "component/spacing/gap/field-label": "space.3",
+    "component/spacing/gap/form-field": "space.5",
+    "component/spacing/gap/choice-label": "space.3",
+    "component/spacing/gap/titlebar-brand": "space.4",
+    "component/spacing/gap/cross-group-control": "space.5",
+    "component/spacing/gap/menu-section": "space.6",
+    "component/spacing/gap/page-section": "space.7",
+    "component/spacing/padding/segmented-control": "space.1",
+    "component/spacing/padding/popup-menu": "space.2",
+    "component/spacing/padding/list-card": "space.2",
+    "component/spacing/padding/tooltip": "space.3",
+    "component/spacing/padding/alert": "space.3",
+    "component/spacing/padding/alert-left": "space.3",
+    "component/spacing/padding/alert-right": "space.2",
+    "component/spacing/padding/selection-option": "space.3",
+    "component/spacing/padding/tab-x": "space.4",
+    "component/spacing/padding/tab-panel": "space.5",
+    "component/spacing/padding/titlebar-leading": "space.6",
+    "component/spacing/padding/titlebar-trailing-s": "space.0",
+    "component/spacing/padding/titlebar-trailing-m": "space.3",
+    "component/spacing/padding/titlebar-trailing-l": "space.4",
+    "component/spacing/padding/titlebar-trailing-xl": "space.5",
+    "component/spacing/padding/button-sm-x": "space.3",
+    "component/spacing/padding/split-button-main-x": "space.3",
+    "component/spacing/padding/split-button-trigger": "space.0",
+    "component/spacing/padding/list": "space.3",
+    "component/spacing/padding/tag-x": "space.4",
+    "component/spacing/padding/select-x": "space.4",
+    "component/spacing/padding/textarea-x": "space.4",
+    "component/spacing/padding/textarea-y": "space.3",
+    "component/spacing/padding/search-x": "space.4",
+    "component/spacing/padding/menu-item-x": "space.4",
+    "component/spacing/padding/button-x": "space.5",
+    "component/spacing/padding/card": "space.6",
+    "component/spacing/padding/table": "space.6",
+    "component/spacing/padding/dialog": "space.6",
+    "component/spacing/padding/dialog-content": "space.6",
+    "component/spacing/padding/modal-content-x": "space.6",
+    "component/spacing/padding/modal-content-y": "space.0",
+    "component/spacing/padding/modal-header-top": "space.3",
+    "component/spacing/padding/modal-header-x": "space.6",
+    "component/spacing/padding/modal-footer-x": "space.6",
+    "component/size/icon/xs": "size.4",
+    "component/size/icon/sm": "size.5",
+    "component/size/icon/md": "size.6",
+    "component/size/icon/lg": "size.7",
+    "component/size/indicator/notification-dot-sm": "size.2",
+    "component/size/indicator/notification-badge-size": "size.5",
+    "component/size/indicator/checkbox-size": "size.6",
+    "component/size/indicator/radio-size": "size.6",
+    "component/size/indicator/switch-height": "size.6",
+    "component/size/indicator/switch-width": "size.11",
+    "component/size/indicator/badge-height": "size.7",
+    "component/size/indicator/progress-height": "size.3",
+    "component/size/indicator/avatar-sm-size": "size.9",
+    "component/size/indicator/avatar-md-size": "size.11",
+    "component/size/component/button-sm-height": "size.8",
+    "component/size/component/input-sm-height": "size.8",
+    "component/size/component/select-sm-height": "size.8",
+    "component/size/component/search-sm-height": "size.8",
+    "component/size/component/tag-height": "size.8",
+    "component/size/component/selection-option-height": "size.8",
+    "component/size/component/selection-block-height": "size.9",
+    "component/size/component/chips-tab-height": "size.10",
+    "component/size/component/tab-line-height": "size.11",
+    "component/size/component/tab-vertical-height": "size.11",
+    "component/size/component/menu-item-height": "size.11",
+    "component/size/component/list-item-height": "size.11",
+    "component/size/component/list-item-single-line-height": "size.13",
+    "component/size/component/list-item-double-line-height": "size.14",
+    "component/size/component/list-item-triple-line-height": "size.17",
+    "component/size/component/list-heading-height": "size.11",
+    "component/size/component/tree-item-height": "size.11",
+    "component/size/component/button-height": "size.11",
+    "component/size/component/icon-button-size": "size.11",
+    "component/size/component/icon-text-button-height": "size.11",
+    "component/size/component/dropdown-control-height": "size.11",
+    "component/size/component/split-button-trigger-width": "size.5",
+    "component/size/component/select-height": "size.11",
+    "component/size/component/search-height": "size.11",
+    "component/size/component/input-height": "size.11",
+    "component/size/component/textarea-min-height": "size.17",
+    "component/size/component/alert-height": "size.11",
+    "component/size/component/alert-min-height": "size.11",
+    "component/size/component/snackbar-height": "size.13",
+    "component/size/component/pagination-item-height": "size.9",
+    "component/size/component/table-header-height": "size.11",
+    "component/size/component/table-row-height": "size.13",
+    "component/size/component/titlebar-sm-height": "size.11",
+    "component/size/component/titlebar-md-height": "size.14",
+    "component/size/component/titlebar-lg-height": "size.15",
+    "component/size/component/titlebar-xl-height": "size.16",
+    "component/size/component/dialog-header-height": "size.14",
+    "component/size/component/modal-header-height": "size.14",
+    "component/size/component/modal-footer-height": "size.17",
+    "component/radius/popup-menu-item": "radius.1",
+    "component/radius/checkbox": "radius.1",
+    "component/radius/subtab": "radius.3",
+    "component/radius/sidebar-nav-item": "radius.3",
+    "component/radius/button": "radius.3",
+    "component/radius/icon-text-button": "radius.3",
+    "component/radius/icon-button": "radius.3",
+    "component/radius/status-button": "radius.3",
+    "component/radius/dropdown-button": "radius.3",
+    "component/radius/alert": "radius.3",
+    "component/radius/select": "radius.3",
+    "component/radius/input": "radius.3",
+    "component/radius/textarea": "radius.3",
+    "component/radius/tooltip": "radius.2",
+    "component/radius/search": "radius.3",
+    "component/radius/number-input": "radius.3",
+    "component/radius/tag": "radius.3",
+    "component/radius/selection-block": "radius.3",
+    "component/radius/selection-option": "radius.2",
+    "component/radius/tab": "radius.3",
+    "component/radius/list": "radius.4",
+    "component/radius/list-item": "radius.3",
+    "component/radius/badge": "radius.full",
+    "component/radius/progress": "radius.full",
+    "component/radius/avatar": "radius.full",
+    "component/radius/card": "radius.4",
+    "component/radius/table": "radius.4",
+    "component/radius/pagination-item": "radius.3",
+    "component/radius/dialog": "radius.5",
+    "component/radius/modal": "radius.5",
+    "layout/grid/gutter": "space.6",
+    "layout/spacing/main-content-padding-x": "space.6",
+    "layout/spacing/main-content-padding-top": "space.5",
+    "layout/spacing/main-content-padding-bottom": "space.0",
+    "layout/spacing/header-padding-x": "space.6",
+    "layout/spacing/main-title-leading-padding": "space.6",
+    "layout/spacing/main-detail-action-leading-padding": "space.5",
+    "layout/spacing/sidebar-padding-x": "space.5",
+    "layout/spacing/sidebar-padding-y": "space.5",
+    "layout/spacing/primary-action-slot-gap-top": "space.3",
+    "layout/spacing/primary-action-slot-gap-bottom": "space.4",
+    "layout/spacing/secondary-list-card-inset-x": "space.5",
+    "layout/spacing/secondary-list-card-padding-x": "space.3",
+    "layout/spacing/secondary-content-axis-x": "space.6",
+    "layout/spacing/secondary-pane-padding-x": "space.5",
+    "layout/spacing/secondary-pane-padding-y": "space.3",
+    "layout/spacing/main-detail-padding-x": "space.6",
+    "layout/spacing/main-detail-padding-top": "space.5",
+    "layout/spacing/main-detail-padding-bottom": "space.0"
+  },
+  "pixsoLimitations": [
+    "Pixso MCP variable aliases are flattened to resolved values; aliasOf preserves provenance.",
+    "Composite typography is represented by shared text styles plus atomic variables.",
+    "Shadows are represented by shared effect styles, not variables.",
+    "Opacity variables use Pixso percentage values; opacity/40 is 40 in Pixso and 0.4 in CSS."
+  ],
+  "rules": [
+    "Create and read back variables before creating components.",
+    "Bind Pixso colors directly to Brand, Neutral Dark, Neutral Light, Function, or Multi core variables.",
+    "Do not create duplicate semantic color aliases in Pixso.",
+    "Keep only the 127 primitive variables declared by pixso-core-baseline.json.",
+    "Map code-side semantic aliases to primitives; never create component/* or layout/shell/* variables.",
+    "Main Content and Main Detail use X 24px, T 16px, B 0px.",
+    "All Button and Split Button icon-label pairs use the 8px component spacing token."
+  ]
+}

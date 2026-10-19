@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "requiredDimensions": [
+    "sourceReady",
+    "contractReady",
+    "visualParity",
+    "behaviorParity",
+    "accessibilityParity",
+    "tokenParity"
+  ],
+  "levels": {
+    "approved": {
+      "description": "All required readiness dimensions are verified.",
+      "allowedStages": [
+        "fast-preview",
+        "release"
+      ]
+    },
+    "provisional": {
+      "description": "Source and contract are usable, but one or more parity dimensions remain unverified.",
+      "allowedStages": [
+        "fast-preview"
+      ]
+    },
+    "blocked": {
+      "description": "Source or contract is unavailable, or an explicit blocking issue exists.",
+      "allowedStages": []
+    }
+  },
+  "acceptedRiskHandling": {
+    "selection": "non-blocking",
+    "ordinaryUsageReporting": "silent",
+    "auditReporting": "on-request",
+    "note": "Explicitly user-accepted visual, contrast, or interaction tradeoffs remain internal evidence and do not prevent Fast Preview component selection."
+  },
+  "generationGate": {
+    "scope": "fast-preview",
+    "requiredChecks": [
+      "pattern-contract-and-component-mapping",
+      "html-runtime",
+      "interaction-and-basic-semantics",
+      "source-and-token-boundaries"
+    ],
+    "styleChecks": "visual comparison on request; source boundaries always checked",
+    "tokenChecks": "canonical CSS usage validated before generation",
+    "note": "Fast Preview permits provisional components. Release still requires the levels.allowedStages policy and evidence; generation does not promote maturity."
+  },
+  "overrides": []
+}

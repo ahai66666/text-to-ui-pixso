@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "bridgeVersion": 1,
+  "auditScope": "managed-bindings",
+  "frameId": "86:2137",
+  "frameName": "Coremail Mail Workbench",
+  "libraryPage": "NewComponents",
+  "activePage": "coremail",
+  "targetPage": "coremail",
+  "libraryPhaseCompleted": false,
+  "activePageMismatch": false,
+  "iconCropFindings": [],
+  "availableVariables": ["neutral-light/100"],
+  "bindings": [
+    { "nodeId": "86:2139", "key": "page.root.surface", "property": "fills", "variable": "neutral-light/100", "verified": true, "status": "verified" }
+  ],
+  "bindingFindings": [],
+  "componentInstances": [],
+  "literalStyleFindings": [],
+  "coverageSummary": {
+    "coverageScope": "managed-bindings",
+    "uniqueNodes": 1,
+    "colorBearingNodes": 1,
+    "variableBoundColorNodes": 1,
+    "literalPaintNodes": 0,
+    "layerOpacityLiteralNodes": 0,
+    "intrinsicAlphaPaints": 0
+  },
+  "performance": {
+    "pixsoCallCount": 2,
+    "slowestCallMs": 20,
+    "codeToDesignMs": 0,
+    "canonicalNodeCount": 314,
+    "retryCount": 0,
+    "abortedByBudget": false,
+    "bridgeDurationMs": 22
+  }
+}

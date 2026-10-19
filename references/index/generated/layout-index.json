@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": [
+    {
+      "path": "skill-support/assets/design-system/pattern-contracts.json",
+      "sha256": "7c281c8924ddb4533422b34d680c196a2910147c39944b0d7061d3344babd93e"
+    },
+    {
+      "path": "skill-support/references/index/layout-routes.source.json",
+      "sha256": "b231f7d101367b3745da0af619e91720afabb3e87c49f4ae5ac2cae188642bd0"
+    },
+    {
+      "path": "skill-support/references/harmonyos-layout-patterns.md",
+      "sha256": "8484060124f4626e3c805e0c556ba54debe9bd4c16540b237b83ef44188eca55"
+    }
+  ],
+  "authority": "assets/design-system/pattern-contracts.json",
+  "layouts": []
+}
